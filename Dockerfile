@@ -4,9 +4,10 @@ USER root
 RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
  && apk update\
  && apk upgrade --available\
- && apk add --no-cache bash bash-completion tar gzip mc tmux python3\
+ && apk add --no-cache bash bash-completion vim tar gzip mc tmux python3\
  && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/bin\
  && /openaf/opack install py-textual\
+ && /openaf/opack install plugin-xls\
  && mkdir /openaf/ojobs\
  && /openaf/ojob ojob.io/get job=ojob.io/oaf/colorFormats.yaml > /openaf/ojobs/colorFormats.yaml\
  && /openaf/oaf --sb /openaf/ojobs/colorFormats.yaml\
