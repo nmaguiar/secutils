@@ -4,7 +4,7 @@ USER root
 RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
  && apk update\
  && apk upgrade --available\
- && apk add --no-cache bash bash-completion vim tar gzip mc tmux python3\
+ && apk add --no-cache bash bash-completion vim tar gzip mc tmux python3 py3-pip grype syft\
  && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/bin\
  && /openaf/opack install py-textual\
  && /openaf/opack install plugin-xls\
@@ -23,7 +23,8 @@ RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
 RUN /openaf/oaf --bashcompletion all > /openaf/.openaf_completion.sh\
  && chmod a+x /openaf/.openaf_*.sh\
  && chown openaf:openaf /openaf/.openaf_*.sh\
- && echo ". /openaf/.openaf_completion.sh" >> /etc/bash/start.sh
+ && echo ". /openaf/.openaf_completion.sh" >> /etc/bash/start.sh\
+ && echo ". <(grype completion bash)" >> /etc/bash/start.sh
 
 # Setup secutils folder
 # ---------------------
@@ -61,8 +62,10 @@ RUN apk add --no-cache go\
 # -------------
 COPY scripts/get_cwe_db.sh /usr/bin/get_cwe_db
 COPY scripts/get_trivy_db.sh /usr/bin/get_trivy_db
+COPY scripts/get_grype_db.sh /usr/bin/get_grype_db
 RUN chmod a+x /usr/bin/get_cwe_db\
- && chmod a+x /usr/bin/get_trivy_db
+ && chmod a+x /usr/bin/get_trivy_db\
+ && chmod a+x /usr/bin/get_grype_db
 
 # Setup usage and examples
 # ------------------------
