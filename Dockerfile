@@ -4,13 +4,21 @@ USER root
 RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
  && apk update\
  && apk upgrade --available\
- && apk add --no-cache bash bash-completion vim tar gzip mc tmux python3 py3-pip grype syft\
+ && apk add --no-cache bash bash-completion vim tar gzip mc tmux python3 py3-pip syft docker\
  && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/bin\
+ && curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/bin\
  && /openaf/opack install py-textual\
  && /openaf/opack install plugin-xls\
+ && /openaf/opack install jdbc-sqlite\
  && mkdir /openaf/ojobs\
  && /openaf/ojob ojob.io/get job=ojob.io/oaf/colorFormats.yaml > /openaf/ojobs/colorFormats.yaml\
+ && /openaf/ojob ojob.io/get job=ojob.io/sec/trivy.yaml > /openaf/ojobs/trivy.yaml\
+ && /openaf/ojob ojob.io/get job=ojob.io/sec/trivySummary.yaml > /openaf/ojobs/trivySummary.yaml\
+ && /openaf/ojob ojob.io/get job=ojob.io/sec/genSecBadge.yaml > /openaf/ojobs/genSecBadge.yaml\
  && /openaf/oaf --sb /openaf/ojobs/colorFormats.yaml\
+ && /openaf/oaf --sb /openaf/ojobs/trivy.yaml\
+ && /openaf/oaf --sb /openaf/ojobs/trivySummary.yaml\
+ && /openaf/oaf --sb /openaf/ojobs/genSecBadge.yaml\
  && chown -R openaf:0 /openaf\
  && chown openaf:0 /openaf/.opack.db\
  && chmod -R u+rwx,g+rwx,o+rx,o-w /openaf/*\
@@ -24,7 +32,9 @@ RUN /openaf/oaf --bashcompletion all > /openaf/.openaf_completion.sh\
  && chmod a+x /openaf/.openaf_*.sh\
  && chown openaf:openaf /openaf/.openaf_*.sh\
  && echo ". /openaf/.openaf_completion.sh" >> /etc/bash/start.sh\
- && echo ". <(grype completion bash)" >> /etc/bash/start.sh
+ && echo ". <(grype completion bash)" >> /etc/bash/start.sh\
+ && echo ". <(syft completion bash)" >> /etc/bash/start.sh\
+ && echo ". <(trivy completion bash)" >> /etc/bash/start.sh
 
 # Setup secutils folder
 # ---------------------

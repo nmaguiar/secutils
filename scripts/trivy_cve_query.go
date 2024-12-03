@@ -10,13 +10,13 @@ import (
 )
 
 func main() {
-    if len(os.Args) != 3 {
-        fmt.Printf("Usage: %s <trivy_db_path> <CVE_ID>\n", os.Args[0])
+    if len(os.Args) != 2 {
+        fmt.Printf("Usage: %s <CVE_ID>\n", os.Args[0])
         os.Exit(1)
     }
 
-    dbPath := os.Args[1]
-    cveID := os.Args[2]
+    dbPath := fmt.Sprintf("%s/.cache/trivy/db/trivy.db", os.Getenv("HOME"))
+    cveID := os.Args[1]
 
     db, err := bolt.Open(dbPath, 0600, nil)
     if err != nil {
