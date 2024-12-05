@@ -74,9 +74,11 @@ RUN apk add --no-cache go\
 COPY scripts/get_cwe_db.sh /usr/bin/get_cwe_db
 COPY scripts/get_trivy_db.sh /usr/bin/get_trivy_db
 COPY scripts/get_grype_db.sh /usr/bin/get_grype_db
+COPY scripts/grype_cve_query.sh /usr/bin/grype_cve_query
 RUN chmod a+x /usr/bin/get_cwe_db\
  && chmod a+x /usr/bin/get_trivy_db\
- && chmod a+x /usr/bin/get_grype_db
+ && chmod a+x /usr/bin/get_grype_db\
+ && chmod a+x /usr/bin/grype_cve_query
 
 # Setup usage and examples
 # ------------------------

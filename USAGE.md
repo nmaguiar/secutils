@@ -20,5 +20,10 @@
 | Alias | oafptab | Parses the stdin input ascii table (e.g. crictl images) into an ascii table with oafp query functionality |
 | Command | usage-help | Displays the image's usage help |
 | Command | examples-help | Displays the image's examples help |
+| Command | get_cwe_db | Updates the local CWE DB cache |
+| Command | get_grype_db | Updates the local Grype's DB cache |
+| Command | get_trivy_db | Updates the local Trivy's DB cache |
+| Command | grype_cve_query | Given a CVE id retrieves relevant information from the Grype's DB |
+| Command | trivy_cve_query | Given a CVE id retrieved relevant information from the Trivy's DB |
 
 ---
