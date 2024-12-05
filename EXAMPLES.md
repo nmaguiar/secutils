@@ -5,6 +5,8 @@ List of examples:
 | Category | Example title |
 |----------|---------------|
 | AI | Categorize vulnerabilties' impacts |
+| DB | Check for a specific CVE on Grype's DB |
+| DB | Compare data of a specific CVE between data sources using Grype's DB |
 | JSON | Scan an image with grype and output in JSON |
 | JSON | Scan an image with trivy and output in JSON |
 
@@ -67,9 +69,40 @@ trivy image library/alpine -f json | oafp path="Results[].Vulnerabilities[].{ID:
 
 ## 🔎 Scan an image with grype and output in JSON
 
+Scans a designated image and outputs the results in JSON:
+
 ```bash
+sudo grype docker:library/alpine --output json
+```
+
+---
+
+## 🔎 Check for a specific CVE on Grype's DB
+
+```bash
+get_grype_db.sh
 cd ~/.cache/grype/db/5
 oafp in=db indblib=sqlite indbjdbc="jdbc:sqlite:vulnerability.db" data="select * from vulnerability_metadata where id='CVE-2024-9143'" out=ctree
+```
+
+---
+
+## 📚 Compare data of a specific CVE between data sources using Grype's DB
+
+Comparing severities:
+
+```bash
+get_grype_db.sh
+cd ~/.cache/grype/db/5
+oafp in=db indblib=sqlite indbjdbc="jdbc:sqlite:vulnerability.db" data="select id, namespace, data_source, record_source, severity from vulnerability_metadata where id='CVE-2024-10963'" out=ctable
+```
+
+Comparing descriptions:
+
+```bash
+get_grype_db.sh
+cd ~/.cache/grype/db/5
+oafp in=db indblib=sqlite indbjdbc="jdbc:sqlite:vulnerability.db" data="select distinct id, SUBSTR(namespace, 1, INSTR(namespace, ':') - 1) AS namespace_prefix, severity, description from vulnerability_metadata where id='CVE-2024-9143'" out=map
 ```
 
 ---
