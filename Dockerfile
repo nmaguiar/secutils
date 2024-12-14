@@ -4,9 +4,11 @@ USER root
 RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
  && apk update\
  && apk upgrade --available\
- && apk add --no-cache bash bash-completion vim tar gzip mc tmux python3 py3-pip syft docker\
+ && apk add --no-cache bash bash-completion vim tar gzip mc tmux libmagic python3 py3-pip syft docker\
  && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/bin\
  && curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/bin\
+ #&& pip3 install typecode-libmagic --break-system-packages\
+ #&& pip3 install scancode-toolkit --break-system-packages\
  && /openaf/opack install py-textual\
  && /openaf/opack install plugin-xls\
  && /openaf/opack install jdbc-sqlite\
@@ -42,6 +44,30 @@ RUN mkdir /secutils\
  && chmod a+rwx /secutils\
  && chown openaf:0 /secutils
 
+# Build Quay Clair and ClairCtl
+# -----------------------------
+RUN apk add --no-cache go git make\
+ && git clone https://github.com/quay/clair.git /clair\
+ && cd /clair\
+ && make\
+ && go mod download\
+ && mkdir bin\
+ && go build -o bin ./cmd/...\
+ && cp bin/clair /usr/bin/clair\
+ && cp bin/clairctl /usr/bin/clairctl\
+ && rm -rf /clair /clairctl\
+ && apk del go git make\
+ && rm -rf /var/cache/apk/*
+
+# Setup the latest DependencyCheck
+# --------------------------------
+RUN VERSION=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)\
+ && curl -Ls "https://github.com/jeremylong/DependencyCheck/releases/download/v$VERSION/dependency-check-$VERSION-release.zip" --output dependency-check.zip\
+ && unzip dependency-check.zip -d /opt\
+ && rm dependency-check.zip\
+ && ln -s /opt/dependency-check/bin/dependency-check.sh /usr/bin/dependency-check\
+ && chmod a+x /usr/bin/dependency-check
+
 # Setup welcome message and vars
 # ------------------------------
 COPY welcome.txt /etc/secutils
@@ -74,11 +100,13 @@ RUN apk add --no-cache go\
 COPY scripts/get_cwe_db.sh /usr/bin/get_cwe_db
 COPY scripts/get_trivy_db.sh /usr/bin/get_trivy_db
 COPY scripts/get_grype_db.sh /usr/bin/get_grype_db
+COPY scripts/get_nvd_db.sh /usr/bin/get_nvd_db
 COPY scripts/grype_cve_query.sh /usr/bin/grype_cve_query
 RUN chmod a+x /usr/bin/get_cwe_db\
  && chmod a+x /usr/bin/get_trivy_db\
  && chmod a+x /usr/bin/get_grype_db\
- && chmod a+x /usr/bin/grype_cve_query
+ && chmod a+x /usr/bin/grype_cve_query\
+ && chmod a+x /usr/bin/get_nvd_db
 
 # Setup usage and examples
 # ------------------------
