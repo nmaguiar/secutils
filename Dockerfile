@@ -89,14 +89,17 @@ RUN apk add --no-cache go\
 
 # Setup scancode-toolkit
 # ----------------------
-RUN python3 -m venv /opt/scancode-toolkit\
+RUN apk add --no-cache gcc\
+&& python3 -m venv /opt/scancode-toolkit\
 && source /opt/scancode-toolkit/bin/activate\
 && pip install python-magic\
 && pip install scancode-toolkit\
 && deactivate\
 && ln -s /opt/scancode-toolkit/bin/scancode /usr/bin/scancode\
 && ln -s /opt/scancode-toolkit/bin/scancode-license-data /usr/bin/scancode-license-data\
-&& ln -s /opt/scancode-toolkit/bin/scancode-reindex-licenses /usr/bin/scancode-reindex-licenses
+&& ln -s /opt/scancode-toolkit/bin/scancode-reindex-licenses /usr/bin/scancode-reindex-licenses\
+&& apk del gcc\
+&& rm -rf /var/cache/apk/*
 
 # Setup scripts
 # -------------
