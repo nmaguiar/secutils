@@ -25,16 +25,6 @@ RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
  && chmod a+rwx /openaf\
  && rm /lib/apk/db/*\
  && sed -i "s/\/bin\/sh/\/bin\/bash/g" /etc/passwd
- 
-# Setup bash completion
-# ---------------------
-RUN /openaf/oaf --bashcompletion all > /openaf/.openaf_completion.sh\
- && chmod a+x /openaf/.openaf_*.sh\
- && chown openaf:openaf /openaf/.openaf_*.sh\
- && echo ". /openaf/.openaf_completion.sh" >> /etc/bash/start.sh\
- && echo ". <(grype completion bash)" >> /etc/bash/start.sh\
- && echo ". <(syft completion bash)" >> /etc/bash/start.sh\
- && echo ". <(trivy completion bash)" >> /etc/bash/start.sh
 
 # Setup secutils folder
 # ---------------------
@@ -116,6 +106,17 @@ RUN chmod a+x /usr/bin/get_cwe_db\
  && chmod a+x /usr/bin/get_grype_db\
  && chmod a+x /usr/bin/grype_cve_query\
  && chmod a+x /usr/bin/get_nvd_db
+
+# Setup bash completion
+# ---------------------
+RUN /openaf/oaf --bashcompletion all > /openaf/.openaf_completion.sh\
+ && chmod a+x /openaf/.openaf_*.sh\
+ && chown openaf:openaf /openaf/.openaf_*.sh\
+ && echo ". /openaf/.openaf_completion.sh" >> /etc/bash/start.sh\
+ && echo ". <(grype completion bash)" >> /etc/bash/start.sh\
+ && echo ". <(syft completion bash)" >> /etc/bash/start.sh\
+ && echo ". <(trivy completion bash)" >> /etc/bash/start.sh\
+ && echo ". /opt/dependency-check/bin/completion-for-dependency-check.sh" >> /etc/bash/start.sh
 
 # Setup usage and examples
 # ------------------------
