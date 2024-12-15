@@ -7,8 +7,6 @@ RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
  && apk add --no-cache bash bash-completion vim tar gzip mc tmux libmagic python3 py3-pip syft docker\
  && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/bin\
  && curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/bin\
- #&& pip3 install typecode-libmagic --break-system-packages\
- #&& pip3 install scancode-toolkit --break-system-packages\
  && /openaf/opack install py-textual\
  && /openaf/opack install plugin-xls\
  && /openaf/opack install jdbc-sqlite\
@@ -94,6 +92,17 @@ RUN apk add --no-cache go\
  && rm -rf /trivy_cve_query\
  && apk del go\
  && rm -rf /var/cache/apk/*
+
+# Setup scancode-toolkit
+# ----------------------
+RUN python3 -m venv /opt/scancode-toolkit\
+&& source /opt/scancode-toolkit/bin/activate\
+&& pip install python-magic\
+&& pip install scancode-toolkit\
+&& deactivate\
+&& ln -s /opt/scancode-toolkit/bin/scancode /usr/bin/scancode\
+&& ln -s /opt/scancode-toolkit/bin/scancode-license-data /usr/bin/scancode-license-data\
+&& ln -s /opt/scancode-toolkit/bin/scancode-reindex-licenses /usr/bin/scancode-reindex-licenses
 
 # Setup scripts
 # -------------
