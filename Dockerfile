@@ -89,16 +89,18 @@ RUN apk add --no-cache go\
 
 # Setup scancode-toolkit
 # ----------------------
-RUN apk add --no-cache gcc\
+RUN apk add --no-cache gcc build-base python3-dev libffi-dev g++\
 && python3 -m venv /opt/scancode-toolkit\
 && source /opt/scancode-toolkit/bin/activate\
+&& pip install pyahocorasick\
+&& pip install intbitset\
 && pip install python-magic\
 && pip install scancode-toolkit\
 && deactivate\
 && ln -s /opt/scancode-toolkit/bin/scancode /usr/bin/scancode\
 && ln -s /opt/scancode-toolkit/bin/scancode-license-data /usr/bin/scancode-license-data\
 && ln -s /opt/scancode-toolkit/bin/scancode-reindex-licenses /usr/bin/scancode-reindex-licenses\
-&& apk del gcc\
+&& apk del gcc build-base python3-dev libffi-dev g++\
 && rm -rf /var/cache/apk/*
 
 # Setup scripts
