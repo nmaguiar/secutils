@@ -4,7 +4,7 @@ USER root
 RUN sed -i 's/v[0-9]*\.[0-9]*/edge/g' /etc/apk/repositories\
  && apk update\
  && apk upgrade --available\
- && apk add --no-cache bash bash-completion vim tar gzip mc tmux libmagic python3 py3-pip syft docker\
+ && apk add --no-cache bash bash-completion vim tar gzip mc tmux libmagic python3 py3-pip docker\
  && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/bin\
  && curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/bin\
  && /openaf/opack install py-textual\
@@ -34,18 +34,22 @@ RUN mkdir /secutils\
 
 # Build Quay Clair and ClairCtl
 # -----------------------------
-RUN apk add --no-cache go git make\
- && git clone https://github.com/quay/clair.git /clair\
- && cd /clair\
- && make\
- && go mod download\
- && mkdir bin\
- && go build -o bin ./cmd/...\
- && cp bin/clair /usr/bin/clair\
- && cp bin/clairctl /usr/bin/clairctl\
- && rm -rf /clair /clairctl\
- && apk del go git make\
- && rm -rf /var/cache/apk/*
+# RUN apk add --no-cache go git make\
+#  && git clone https://github.com/quay/clair.git /clair\
+#  && cd /clair\
+#  && make\
+#  && go mod download\
+#  && mkdir bin\
+#  && go build -o bin ./cmd/...\
+#  && cp bin/clair /usr/bin/clair\
+#  && cp bin/clairctl /usr/bin/clairctl\
+#  && rm -rf /clair /clairctl\
+#  && apk del go git make\
+#  && rm -rf /var/cache/apk/*
+
+# Setup the lastest syft
+# -----------------------
+RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/bin
 
 # Setup the latest DependencyCheck
 # --------------------------------

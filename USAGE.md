@@ -4,7 +4,11 @@
 
 | Utility | Use for     |
 |---------|-------------|
+| dependency-check | Helps you find and fix security vulnerabilities in the third-party libraries your project uses. |
 | grype | Scanning container images and filesystems for vulnerabilities using SBOMs. |
+| scancode | Helps understanding the licensing, copyright, and composition of a codebase |
+| scancode-license-data | Helps keeping the license detection capabilities of 'scancode' accurate and up-to-date |
+| scancode-reindex-licenses | Helps maintain the performance and accuracy of 'scancode''s license detection by rebuilding its internal index |
 | syft | Generating a Software Bill of Materials (SBOM) for container images and filesystems. |
 | trivy | Scanning container images and filesystems for vulnerabilities. |
 
@@ -23,6 +27,7 @@
 | Command | get_cwe_db | Updates the local CWE DB cache |
 | Command | get_grype_db | Updates the local Grype's DB cache |
 | Command | get_trivy_db | Updates the local Trivy's DB cache |
+| Command | get_nvd_db | Updates the local NVD DB cache for dependency-check |
 | Command | grype_cve_query | Given a CVE id retrieves relevant information from the Grype's DB |
 | Command | trivy_cve_query | Given a CVE id retrieved relevant information from the Trivy's DB |
 
