@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.11 
 │                       │     ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:664a5a83e648aaf0a1eb5a1ae3a48652d9336f69d2cb5
-│                       │     │                  │         5ac66130918b87a5512 
-│                       │     │                  ╰ DiffID: sha256:744c163bacea68afcfd7199f00223db705517c1823867
-│                       │     │                            9b3bcc466ad20cfc2b2 
+│                       │     ├ Layer            ╭ Digest: sha256:7b2d80d98c53e10b783cf3b2ce28402f33ca651e072e5
+│                       │     │                  │         045e073a69c4046350f 
+│                       │     │                  ╰ DiffID: sha256:e2281f253753ff3caa740bc9d1ca0ee562dad6cac9046
+│                       │     │                            c24083dc00ca27308a1 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -71,10 +71,10 @@
 │                             ├ InstalledVersion: 1.2.11 
 │                             ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:664a5a83e648aaf0a1eb5a1ae3a48652d9336f69d2cb5
-│                             │                  │         5ac66130918b87a5512 
-│                             │                  ╰ DiffID: sha256:744c163bacea68afcfd7199f00223db705517c1823867
-│                             │                            9b3bcc466ad20cfc2b2 
+│                             ├ Layer            ╭ Digest: sha256:7b2d80d98c53e10b783cf3b2ce28402f33ca651e072e5
+│                             │                  │         045e073a69c4046350f 
+│                             │                  ╰ DiffID: sha256:e2281f253753ff3caa740bc9d1ca0ee562dad6cac9046
+│                             │                            c24083dc00ca27308a1 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -141,10 +141,10 @@
 │                             ├ InstalledVersion: v0.29.0 
 │                             ├ FixedVersion    : 0.31.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:664a5a83e648aaf0a1eb5a1ae3a48652d9336f69d2cb5
-│                             │                  │         5ac66130918b87a5512 
-│                             │                  ╰ DiffID: sha256:744c163bacea68afcfd7199f00223db705517c1823867
-│                             │                            9b3bcc466ad20cfc2b2 
+│                             ├ Layer            ╭ Digest: sha256:7b2d80d98c53e10b783cf3b2ce28402f33ca651e072e5
+│                             │                  │         045e073a69c4046350f 
+│                             │                  ╰ DiffID: sha256:e2281f253753ff3caa740bc9d1ca0ee562dad6cac9046
+│                             │                            c24083dc00ca27308a1 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45337 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -200,9 +200,9 @@
 │                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
 │                             │                  │        │           A:N 
 │                             │                  │        ╰ V3Score : 9.1 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/
+│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/
 │                             │                           │           A:N 
-│                             │                           ╰ V3Score : 7.7 
+│                             │                           ╰ V3Score : 8.2 
 │                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
 │                             │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-45337 
 │                             │                  ├ [2]: https://github.com/golang/crypto 
