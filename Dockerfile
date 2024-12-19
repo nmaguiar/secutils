@@ -60,7 +60,8 @@ RUN VERSION=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)\
  && unzip dependency-check.zip -d /opt\
  && rm dependency-check.zip\
  && ln -s /opt/dependency-check/bin/dependency-check.sh /usr/bin/dependency-check\
- && chmod a+x /usr/bin/dependency-check
+ && chmod a+x /usr/bin/dependency-check\
+ && chown -R openaf:0 /opt/dependency-check
 
 # Setup welcome message and vars
 # ------------------------------
