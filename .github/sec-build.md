@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.11 
 │                       │     ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:d373871280a995fa10076a1d9e373820532638acf1afe
-│                       │     │                  │         8c8b5f5116952b7a50c 
-│                       │     │                  ╰ DiffID: sha256:8d0db6777857a5c3395d17cac502e5d7321fa49cc9ebd
-│                       │     │                            b0ca7bb9799cc7ae951 
+│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                       │     │                  │         07b92b812255015e50b 
+│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                       │     │                            ccd2723a6c7381639d1 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -63,64 +63,158 @@
 │                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2023-6378 
 │                       │     ├ PublishedDate   : 2023-11-29T12:15:07.543Z 
 │                       │     ╰ LastModifiedDate: 2024-11-29T12:15:06.597Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2023-6378 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2023-6378 
+│                       │     ├ PkgName         : ch.qos.logback:logback-core 
+│                       │     ├ PkgPath         : opt/dependency-check/lib/logback-core-1.2.11.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.11 
+│                       │     │                  ╰ UID : 45d594114f76754 
+│                       │     ├ InstalledVersion: 1.2.11 
+│                       │     ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                       │     │                  │         07b92b812255015e50b 
+│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                       │     │                            ccd2723a6c7381639d1 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Title           : logback: serialization vulnerability in logback receiver 
+│                       │     ├ Description     : A serialization vulnerability in logback receiver component
+│                       │     │                   part of 
+│                       │     │                   logback version 1.4.11 allows an attacker to mount a
+│                       │     │                   Denial-Of-Service 
+│                       │     │                   attack by sending poisoned data.
+│                       │     │                    
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-502 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │     │                  ├ nvd   : 3 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.1 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2023-6378 
+│                       │     │                  ├ [1] : https://github.com/qos-ch/logback 
+│                       │     │                  ├ [2] : https://github.com/qos-ch/logback/commit/9c782b45be4ab
+│                       │     │                  │       dafb7e17481e24e7354c2acd1eb 
+│                       │     │                  ├ [3] : https://github.com/qos-ch/logback/commit/b8eac23a9de9e
+│                       │     │                  │       05fb6d51160b3f46acd91af9731 
+│                       │     │                  ├ [4] : https://github.com/qos-ch/logback/commit/bb095154be011
+│                       │     │                  │       267b64e37a1d401546e7cc2b7c3 
+│                       │     │                  ├ [5] : https://github.com/qos-ch/logback/issues/745#issuecomm
+│                       │     │                  │       ent-1836227158 
+│                       │     │                  ├ [6] : https://logback.qos.ch/manual/receivers.html 
+│                       │     │                  ├ [7] : https://logback.qos.ch/news.html#1.2.13 
+│                       │     │                  ├ [8] : https://logback.qos.ch/news.html#1.3.12 
+│                       │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2023-6378 
+│                       │     │                  ├ [10]: https://security.netapp.com/advisory/ntap-20241129-0012 
+│                       │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20241129-0012/ 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2023-6378 
+│                       │     ├ PublishedDate   : 2023-11-29T12:15:07.543Z 
+│                       │     ╰ LastModifiedDate: 2024-11-29T12:15:06.597Z 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2024-12798 
+│                       │     ├ PkgName         : ch.qos.logback:logback-core 
+│                       │     ├ PkgPath         : opt/dependency-check/lib/logback-core-1.2.11.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.11 
+│                       │     │                  ╰ UID : 45d594114f76754 
+│                       │     ├ InstalledVersion: 1.2.11 
+│                       │     ├ FixedVersion    : 1.5.13 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                       │     │                  │         07b92b812255015e50b 
+│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                       │     │                            ccd2723a6c7381639d1 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Title           : ACE vulnerability in JaninoEventEvaluator  by QOS.CH
+│                       │     │                   logback-core      ... 
+│                       │     ├ Description     : ACE vulnerability in JaninoEventEvaluator  by QOS.CH
+│                       │     │                   logback-core
+│                       │     │                         upto and including version 1.5.12 in Java applications
+│                       │     │                   allows
+│                       │     │                         attacker to execute arbitrary code by compromising an
+│                       │     │                   existing
+│                       │     │                         logback configuration file or by injecting an
+│                       │     │                   environment variable
+│                       │     │                         before program execution.
+│                       │     │                   
+│                       │     │                   Malicious logback configuration files can allow the attacker
+│                       │     │                   to execute 
+│                       │     │                   arbitrary code using the JaninoEventEvaluator extension.
+│                       │     │                   A successful attack requires the user to have write access to
+│                       │     │                    a 
+│                       │     │                   configuration file. Alternatively, the attacker could inject
+│                       │     │                   a malicious 
+│                       │     │                   environment variable pointing to a malicious configuration
+│                       │     │                   file. In both 
+│                       │     │                   cases, the attack requires existing privilege. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-917 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: https://github.com/qos-ch/logback 
+│                       │     │                  ├ [1]: https://github.com/qos-ch/logback/commit/2cb6d520df7592
+│                       │     │                  │      ef1c3a198f1b5df3c10c93e183 
+│                       │     │                  ├ [2]: https://logback.qos.ch/news.html#1.5.13 
+│                       │     │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2024-12798 
+│                       │     ├ PublishedDate   : 2024-12-19T16:15:07.557Z 
+│                       │     ╰ LastModifiedDate: 2024-12-19T16:15:07.557Z 
+│                       ╰ [3] ╭ VulnerabilityID : CVE-2024-12801 
 │                             ├ PkgName         : ch.qos.logback:logback-core 
 │                             ├ PkgPath         : opt/dependency-check/lib/logback-core-1.2.11.jar 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.11 
 │                             │                  ╰ UID : 45d594114f76754 
 │                             ├ InstalledVersion: 1.2.11 
-│                             ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
+│                             ├ FixedVersion    : 1.5.13 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:d373871280a995fa10076a1d9e373820532638acf1afe
-│                             │                  │         8c8b5f5116952b7a50c 
-│                             │                  ╰ DiffID: sha256:8d0db6777857a5c3395d17cac502e5d7321fa49cc9ebd
-│                             │                            b0ca7bb9799cc7ae951 
+│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                             │                  │         07b92b812255015e50b 
+│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                             │                            ccd2723a6c7381639d1 
 │                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
 │                             │                  ├ Name: GitHub Security Advisory Maven 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Amaven 
-│                             ├ Title           : logback: serialization vulnerability in logback receiver 
-│                             ├ Description     : A serialization vulnerability in logback receiver component
-│                             │                   part of 
-│                             │                   logback version 1.4.11 allows an attacker to mount a
-│                             │                   Denial-Of-Service 
-│                             │                   attack by sending poisoned data.
-│                             │                    
-│                             ├ Severity        : HIGH 
-│                             ├ CweIDs           ─ [0]: CWE-502 
-│                             ├ VendorSeverity   ╭ ghsa  : 3 
-│                             │                  ├ nvd   : 3 
-│                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/
-│                             │                  │        │           A:H 
-│                             │                  │        ╰ V3Score : 7.1 
-│                             │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                  │        │           A:H 
-│                             │                  │        ╰ V3Score : 7.5 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 7.5 
-│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2023-6378 
-│                             │                  ├ [1] : https://github.com/qos-ch/logback 
-│                             │                  ├ [2] : https://github.com/qos-ch/logback/commit/9c782b45be4ab
-│                             │                  │       dafb7e17481e24e7354c2acd1eb 
-│                             │                  ├ [3] : https://github.com/qos-ch/logback/commit/b8eac23a9de9e
-│                             │                  │       05fb6d51160b3f46acd91af9731 
-│                             │                  ├ [4] : https://github.com/qos-ch/logback/commit/bb095154be011
-│                             │                  │       267b64e37a1d401546e7cc2b7c3 
-│                             │                  ├ [5] : https://github.com/qos-ch/logback/issues/745#issuecomm
-│                             │                  │       ent-1836227158 
-│                             │                  ├ [6] : https://logback.qos.ch/manual/receivers.html 
-│                             │                  ├ [7] : https://logback.qos.ch/news.html#1.2.13 
-│                             │                  ├ [8] : https://logback.qos.ch/news.html#1.3.12 
-│                             │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2023-6378 
-│                             │                  ├ [10]: https://security.netapp.com/advisory/ntap-20241129-0012 
-│                             │                  ├ [11]: https://security.netapp.com/advisory/ntap-20241129-0012/ 
-│                             │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2023-6378 
-│                             ├ PublishedDate   : 2023-11-29T12:15:07.543Z 
-│                             ╰ LastModifiedDate: 2024-11-29T12:15:06.597Z 
+│                             ├ Title           : logback-core: SaxEventRecorder vulnerable to Server-Side
+│                             │                   Request Forgery (SSRF) attacks 
+│                             ├ Description     : Server-Side Request Forgery (SSRF) in SaxEventRecorder by
+│                             │                   QOS.CH logback version 1.5.12 on the Java platform, allows an
+│                             │                    attacker to 
+│                             │                   forge requests by compromising logback configuration files in
+│                             │                    XML.
+│                             │                   
+│                             │                   The attacks involves the modification of DOCTYPE declaration
+│                             │                   in  XML configuration files. 
+│                             ├ Severity        : LOW 
+│                             ├ CweIDs           ─ [0]: CWE-918 
+│                             ├ VendorSeverity   ╭ ghsa  : 1 
+│                             │                  ╰ redhat: 1 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 3.3 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-12801 
+│                             │                  ├ [1]: https://github.com/qos-ch/logback 
+│                             │                  ├ [2]: https://github.com/qos-ch/logback/commit/5f05041cba4c4a
+│                             │                  │      c0a62748c5c527a2da48999f2d 
+│                             │                  ├ [3]: https://logback.qos.ch/news.html#1.5.13 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-12801 
+│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-12801 
+│                             ├ PublishedDate   : 2024-12-19T17:15:08.93Z 
+│                             ╰ LastModifiedDate: 2024-12-19T17:15:08.93Z 
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
@@ -135,10 +229,10 @@
 │                             ├ InstalledVersion: v0.32.0 
 │                             ├ FixedVersion    : 0.33.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:d373871280a995fa10076a1d9e373820532638acf1afe
-│                             │                  │         8c8b5f5116952b7a50c 
-│                             │                  ╰ DiffID: sha256:8d0db6777857a5c3395d17cac502e5d7321fa49cc9ebd
-│                             │                            b0ca7bb9799cc7ae951 
+│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                             │                  │         07b92b812255015e50b 
+│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                             │                            ccd2723a6c7381639d1 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -174,10 +268,10 @@
 │                             ├ InstalledVersion: v0.32.0 
 │                             ├ FixedVersion    : 0.33.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:d373871280a995fa10076a1d9e373820532638acf1afe
-│                             │                  │         8c8b5f5116952b7a50c 
-│                             │                  ╰ DiffID: sha256:8d0db6777857a5c3395d17cac502e5d7321fa49cc9ebd
-│                             │                            b0ca7bb9799cc7ae951 
+│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                             │                  │         07b92b812255015e50b 
+│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                             │                            ccd2723a6c7381639d1 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -213,10 +307,10 @@
 │                       │     ├ InstalledVersion: v0.29.0 
 │                       │     ├ FixedVersion    : 0.31.0 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:d373871280a995fa10076a1d9e373820532638acf1afe
-│                       │     │                  │         8c8b5f5116952b7a50c 
-│                       │     │                  ╰ DiffID: sha256:8d0db6777857a5c3395d17cac502e5d7321fa49cc9ebd
-│                       │     │                            b0ca7bb9799cc7ae951 
+│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                       │     │                  │         07b92b812255015e50b 
+│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                       │     │                            ccd2723a6c7381639d1 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45337 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -267,8 +361,9 @@
 │                       │     │                   authentication attempts; users of third-party libraries
 │                       │     │                   should refer to the relevant projects for guidance. 
 │                       │     ├ Severity        : CRITICAL 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 4 
-│                       │     │                  ╰ redhat: 3 
+│                       │     ├ VendorSeverity   ╭ cbl-mariner: 4 
+│                       │     │                  ├ ghsa       : 4 
+│                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 9.1 
@@ -297,10 +392,10 @@
 │                             ├ InstalledVersion: v0.31.0 
 │                             ├ FixedVersion    : 0.33.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:d373871280a995fa10076a1d9e373820532638acf1afe
-│                             │                  │         8c8b5f5116952b7a50c 
-│                             │                  ╰ DiffID: sha256:8d0db6777857a5c3395d17cac502e5d7321fa49cc9ebd
-│                             │                            b0ca7bb9799cc7ae951 
+│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
+│                             │                  │         07b92b812255015e50b 
+│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
+│                             │                            ccd2723a6c7381639d1 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
 │                             ├ DataSource       ╭ ID  : ghsa 
