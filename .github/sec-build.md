@@ -1,5 +1,5 @@
 ````yaml
-╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.21.0) 
+╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20241224) 
 │     ├ Class : os-pkgs 
 │     ╰ Type  : alpine 
 ├ [1] ╭ Target         : Java 
@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.11 
 │                       │     ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                       │     │                  │         07b92b812255015e50b 
-│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                       │     │                            ccd2723a6c7381639d1 
+│                       │     ├ Layer            ╭ Digest: sha256:d03f5d24d2e428719828b9457bf476d6540318812627c
+│                       │     │                  │         f4a3c5ec3fb85e28dc1 
+│                       │     │                  ╰ DiffID: sha256:050e6db893152f76b63b9414bbf617295b83fabf65e07
+│                       │     │                            0cd6aa94999a9daf9e6 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -71,10 +71,10 @@
 │                       │     ├ InstalledVersion: 1.2.11 
 │                       │     ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                       │     │                  │         07b92b812255015e50b 
-│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                       │     │                            ccd2723a6c7381639d1 
+│                       │     ├ Layer            ╭ Digest: sha256:d03f5d24d2e428719828b9457bf476d6540318812627c
+│                       │     │                  │         f4a3c5ec3fb85e28dc1 
+│                       │     │                  ╰ DiffID: sha256:050e6db893152f76b63b9414bbf617295b83fabf65e07
+│                       │     │                            0cd6aa94999a9daf9e6 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -129,10 +129,10 @@
 │                       │     ├ InstalledVersion: 1.2.11 
 │                       │     ├ FixedVersion    : 1.5.13 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                       │     │                  │         07b92b812255015e50b 
-│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                       │     │                            ccd2723a6c7381639d1 
+│                       │     ├ Layer            ╭ Digest: sha256:d03f5d24d2e428719828b9457bf476d6540318812627c
+│                       │     │                  │         f4a3c5ec3fb85e28dc1 
+│                       │     │                  ╰ DiffID: sha256:050e6db893152f76b63b9414bbf617295b83fabf65e07
+│                       │     │                            0cd6aa94999a9daf9e6 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -184,10 +184,10 @@
 │                             ├ InstalledVersion: 1.2.11 
 │                             ├ FixedVersion    : 1.5.13 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                             │                  │         07b92b812255015e50b 
-│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                             │                            ccd2723a6c7381639d1 
+│                             ├ Layer            ╭ Digest: sha256:d03f5d24d2e428719828b9457bf476d6540318812627c
+│                             │                  │         f4a3c5ec3fb85e28dc1 
+│                             │                  ╰ DiffID: sha256:050e6db893152f76b63b9414bbf617295b83fabf65e07
+│                             │                            0cd6aa94999a9daf9e6 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -220,116 +220,9 @@
 │                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-12801 
 │                             ├ PublishedDate   : 2024-12-19T17:15:08.93Z 
 │                             ╰ LastModifiedDate: 2024-12-19T17:15:08.93Z 
-├ [2] ╭ Target         : Python 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : python-pkg 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-56201 
-│                       │     ├ PkgName         : Jinja2 
-│                       │     ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/jinja2-3.1.
-│                       │     │                   4.dist-info/METADATA 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:pypi/jinja2@3.1.4 
-│                       │     │                  ╰ UID : 71164d3fce2fe053 
-│                       │     ├ InstalledVersion: 3.1.4 
-│                       │     ├ FixedVersion    : 3.1.5 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                       │     │                  │         07b92b812255015e50b 
-│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                       │     │                            ccd2723a6c7381639d1 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56201 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory pip 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Apip 
-│                       │     ├ Title           : jinja2: Jinja has a sandbox breakout through malicious
-│                       │     │                   filenames 
-│                       │     ├ Description     : Jinja is an extensible templating engine. Prior to 3.1.5, a
-│                       │     │                   bug in the Jinja compiler allows an attacker that controls
-│                       │     │                   both the content and filename of a template to execute
-│                       │     │                   arbitrary Python code, regardless of if Jinja's sandbox is
-│                       │     │                   used. To exploit the vulnerability, an attacker needs to
-│                       │     │                   control both the filename and the contents of a template.
-│                       │     │                   Whether that is the case depends on the type of application
-│                       │     │                   using Jinja. This vulnerability impacts users of applications
-│                       │     │                    which execute untrusted templates where the template author
-│                       │     │                   can also choose the template filename. This vulnerability is
-│                       │     │                   fixed in 3.1.5. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-150 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.3 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-56201 
-│                       │     │                  ├ [1]: https://github.com/pallets/jinja 
-│                       │     │                  ├ [2]: https://github.com/pallets/jinja/commit/767b23617628419
-│                       │     │                  │      ae3709ccfb02f9602ae9fe51f 
-│                       │     │                  ├ [3]: https://github.com/pallets/jinja/issues/1792 
-│                       │     │                  ├ [4]: https://github.com/pallets/jinja/releases/tag/3.1.5 
-│                       │     │                  ├ [5]: https://github.com/pallets/jinja/security/advisories/GH
-│                       │     │                  │      SA-gmj6-6f8f-6699 
-│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-56201 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-56201 
-│                       │     ├ PublishedDate   : 2024-12-23T16:15:07.41Z 
-│                       │     ╰ LastModifiedDate: 2024-12-24T02:15:06.58Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2024-56326 
-│                             ├ PkgName         : Jinja2 
-│                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/jinja2-3.1.
-│                             │                   4.dist-info/METADATA 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:pypi/jinja2@3.1.4 
-│                             │                  ╰ UID : 71164d3fce2fe053 
-│                             ├ InstalledVersion: 3.1.4 
-│                             ├ FixedVersion    : 3.1.5 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                             │                  │         07b92b812255015e50b 
-│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                             │                            ccd2723a6c7381639d1 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-56326 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory pip 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Apip 
-│                             ├ Title           : jinja2: Jinja has a sandbox breakout through indirect
-│                             │                   reference to format method 
-│                             ├ Description     : Jinja is an extensible templating engine. Prior to 3.1.5, An
-│                             │                   oversight in how the Jinja sandboxed environment detects
-│                             │                   calls to str.format allows an attacker that controls the
-│                             │                   content of a template to execute arbitrary Python code. To
-│                             │                   exploit the vulnerability, an attacker needs to control the
-│                             │                   content of a template. Whether that is the case depends on
-│                             │                   the type of application using Jinja. This vulnerability
-│                             │                   impacts users of applications which execute untrusted
-│                             │                   templates. Jinja's sandbox does catch calls to str.format and
-│                             │                    ensures they don't escape the sandbox. However, it's
-│                             │                   possible to store a reference to a malicious string's format
-│                             │                   method, then pass that to a filter that calls it. No such
-│                             │                   filters are built-in to Jinja, but could be present through
-│                             │                   custom filters in an application. After the fix, such
-│                             │                   indirect calls are also handled by the sandbox. This
-│                             │                   vulnerability is fixed in 3.1.5. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ╭ [0]: CWE-693 
-│                             │                  ╰ [1]: CWE-1336 
-│                             ├ VendorSeverity   ╭ ghsa  : 2 
-│                             │                  ╰ redhat: 3 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 7.3 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-56326 
-│                             │                  ├ [1]: https://github.com/pallets/jinja 
-│                             │                  ├ [2]: https://github.com/pallets/jinja/commit/48b0687e05a5466
-│                             │                  │      a91cd5812d604fa37ad0943b4 
-│                             │                  ├ [3]: https://github.com/pallets/jinja/releases/tag/3.1.5 
-│                             │                  ├ [4]: https://github.com/pallets/jinja/security/advisories/GH
-│                             │                  │      SA-q2x7-8rv6-6q7h 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-56326 
-│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-56326 
-│                             ├ PublishedDate   : 2024-12-23T16:15:07.59Z 
-│                             ╰ LastModifiedDate: 2024-12-24T02:15:06.74Z 
+├ [2] ╭ Target: Python 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : python-pkg 
 ├ [3] ╭ Target         : usr/bin/grype 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -341,10 +234,10 @@
 │                             ├ InstalledVersion: v0.32.0 
 │                             ├ FixedVersion    : 0.33.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                             │                  │         07b92b812255015e50b 
-│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                             │                            ccd2723a6c7381639d1 
+│                             ├ Layer            ╭ Digest: sha256:d03f5d24d2e428719828b9457bf476d6540318812627c
+│                             │                  │         f4a3c5ec3fb85e28dc1 
+│                             │                  ╰ DiffID: sha256:050e6db893152f76b63b9414bbf617295b83fabf65e07
+│                             │                            0cd6aa94999a9daf9e6 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -386,10 +279,10 @@
 │                             ├ InstalledVersion: v0.32.0 
 │                             ├ FixedVersion    : 0.33.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                             │                  │         07b92b812255015e50b 
-│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                             │                            ccd2723a6c7381639d1 
+│                             ├ Layer            ╭ Digest: sha256:d03f5d24d2e428719828b9457bf476d6540318812627c
+│                             │                  │         f4a3c5ec3fb85e28dc1 
+│                             │                  ╰ DiffID: sha256:050e6db893152f76b63b9414bbf617295b83fabf65e07
+│                             │                            0cd6aa94999a9daf9e6 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -420,137 +313,9 @@
 │                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                             ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
 │                             ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
-├ [5] ╭ Target         : usr/bin/trivy 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-45337 
-│                       │     ├ PkgID           : golang.org/x/crypto@v0.29.0 
-│                       │     ├ PkgName         : golang.org/x/crypto 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/crypto@v0.29.0 
-│                       │     │                  ╰ UID : 984067be4fa4a6e1 
-│                       │     ├ InstalledVersion: v0.29.0 
-│                       │     ├ FixedVersion    : 0.31.0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                       │     │                  │         07b92b812255015e50b 
-│                       │     │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                       │     │                            ccd2723a6c7381639d1 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45337 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : golang.org/x/crypto/ssh: Misuse of
-│                       │     │                   ServerConfig.PublicKeyCallback may cause authorization bypass
-│                       │     │                    in golang.org/x/crypto 
-│                       │     ├ Description     : Applications and libraries which misuse the
-│                       │     │                   ServerConfig.PublicKeyCallback callback may be susceptible to
-│                       │     │                    an authorization bypass. The documentation for
-│                       │     │                   ServerConfig.PublicKeyCallback says that "A call to this
-│                       │     │                   function does not guarantee that the key offered is in fact
-│                       │     │                   used to authenticate." Specifically, the SSH protocol allows
-│                       │     │                   clients to inquire about whether a public key is acceptable
-│                       │     │                   before proving control of the corresponding private key.
-│                       │     │                   PublicKeyCallback may be called with multiple keys, and the
-│                       │     │                   order in which the keys were provided cannot be used to infer
-│                       │     │                    which key the client successfully authenticated with, if
-│                       │     │                   any. Some applications, which store the key(s) passed to
-│                       │     │                   PublicKeyCallback (or derived information) and make security
-│                       │     │                   relevant determinations based on it once the connection is
-│                       │     │                   established, may make incorrect assumptions. For example, an
-│                       │     │                   attacker may send public keys A and B, and then authenticate
-│                       │     │                   with A. PublicKeyCallback would be called only twice, first
-│                       │     │                   with A and then with B. A vulnerable application may then
-│                       │     │                   make authorization decisions based on key B for which the
-│                       │     │                   attacker does not actually control the private key. Since
-│                       │     │                   this API is widely misused, as a partial mitigation
-│                       │     │                   golang.org/x/cry...@v0.31.0 enforces the property that, when
-│                       │     │                   successfully authenticating via public key, the last key
-│                       │     │                   passed to ServerConfig.PublicKeyCallback will be the key used
-│                       │     │                    to authenticate the connection. PublicKeyCallback will now
-│                       │     │                   be called multiple times with the same key, if necessary.
-│                       │     │                   Note that the client may still not control the last key
-│                       │     │                   passed to PublicKeyCallback if the connection is then
-│                       │     │                   authenticated with a different method, such as
-│                       │     │                   PasswordCallback, KeyboardInteractiveCallback, or
-│                       │     │                   NoClientAuth. Users should be using the Extensions field of
-│                       │     │                   the Permissions return value from the various authentication
-│                       │     │                   callbacks to record data associated with the authentication
-│                       │     │                   attempt instead of referencing external state. Once the
-│                       │     │                   connection is established the state corresponding to the
-│                       │     │                   successful authentication attempt can be retrieved via the
-│                       │     │                   ServerConn.Permissions field. Note that some third-party
-│                       │     │                   libraries misuse the Permissions type by sharing it across
-│                       │     │                   authentication attempts; users of third-party libraries
-│                       │     │                   should refer to the relevant projects for guidance. 
-│                       │     ├ Severity        : CRITICAL 
-│                       │     ├ VendorSeverity   ╭ azure      : 4 
-│                       │     │                  ├ cbl-mariner: 4 
-│                       │     │                  ├ ghsa       : 4 
-│                       │     │                  ╰ redhat     : 3 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 9.1 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 8.2 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/12/11/2 
-│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-45337 
-│                       │     │                  ├ [2]: https://github.com/golang/crypto 
-│                       │     │                  ├ [3]: https://github.com/golang/crypto/commit/b4f1988a35dee11
-│                       │     │                  │      ec3e05d6bf3e90b695fbd8909 
-│                       │     │                  ├ [4]: https://go.dev/cl/635315 
-│                       │     │                  ├ [5]: https://go.dev/issue/70779 
-│                       │     │                  ├ [6]: https://groups.google.com/g/golang-announce/c/-nPEi39gI
-│                       │     │                  │      4Q/m/cGVPJCqdAQAJ 
-│                       │     │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2024-45337 
-│                       │     │                  ├ [8]: https://pkg.go.dev/vuln/GO-2024-3321 
-│                       │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-45337 
-│                       │     ├ PublishedDate   : 2024-12-12T02:02:07.97Z 
-│                       │     ╰ LastModifiedDate: 2024-12-12T21:15:08.5Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2024-45338 
-│                             ├ PkgID           : golang.org/x/net@v0.31.0 
-│                             ├ PkgName         : golang.org/x/net 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.31.0 
-│                             │                  ╰ UID : 4ea55e976ccde95b 
-│                             ├ InstalledVersion: v0.31.0 
-│                             ├ FixedVersion    : 0.33.0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:5b78058fcbdd46d9c8324393a1524101d9dc80ce8e232
-│                             │                  │         07b92b812255015e50b 
-│                             │                  ╰ DiffID: sha256:f0dd8859b28ba95b11622f7935d428f1fc4e11c546bcc
-│                             │                            ccd2723a6c7381639d1 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/html: Non-linear parsing of case-insensitive
-│                             │                    content in golang.org/x/net/html 
-│                             ├ Description     : An attacker can craft an input to the Parse functions that
-│                             │                   would be processed non-linearly with respect to its length,
-│                             │                   resulting in extremely slow parsing. This could cause a
-│                             │                   denial of service. 
-│                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ╭ ghsa  : 3 
-│                             │                  ╰ redhat: 3 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 7.5 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-45338 
-│                             │                  ├ [1]: https://cs.opensource.google/go/x/net 
-│                             │                  ├ [2]: https://github.com/golang/go/issues/70906 
-│                             │                  ├ [3]: https://go.dev/cl/637536 
-│                             │                  ├ [4]: https://go.dev/issue/70906 
-│                             │                  ├ [5]: https://groups.google.com/g/golang-announce/c/wSCRmFnNm
-│                             │                  │      PA/m/Lvcd0mRMAwAJ 
-│                             │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-45338 
-│                             │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
-│                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
-│                             ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                             ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+├ [5] ╭ Target: usr/bin/trivy 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
