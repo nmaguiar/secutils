@@ -251,6 +251,7 @@
 │                             │                   resulting in extremely slow parsing. This could cause a
 │                             │                   denial of service. 
 │                             ├ Severity        : HIGH 
+│                             ├ CweIDs           ─ [0]: CWE-1333 
 │                             ├ VendorSeverity   ╭ ghsa  : 3 
 │                             │                  ╰ redhat: 3 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
@@ -267,7 +268,7 @@
 │                             │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                             ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                             ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                             ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -296,6 +297,7 @@
 │                             │                   resulting in extremely slow parsing. This could cause a
 │                             │                   denial of service. 
 │                             ├ Severity        : HIGH 
+│                             ├ CweIDs           ─ [0]: CWE-1333 
 │                             ├ VendorSeverity   ╭ ghsa  : 3 
 │                             │                  ╰ redhat: 3 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
@@ -312,7 +314,7 @@
 │                             │                  ├ [7]: https://pkg.go.dev/vuln/GO-2024-3333 
 │                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45338 
 │                             ├ PublishedDate   : 2024-12-18T21:15:08.173Z 
-│                             ╰ LastModifiedDate: 2024-12-18T21:15:08.173Z 
+│                             ╰ LastModifiedDate: 2024-12-31T20:16:06.603Z 
 ├ [5] ╭ Target: usr/bin/trivy 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
