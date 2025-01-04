@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.11 
 │                       │     ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:64db79765cded386fe2e2aee924a588e048904913778b
-│                       │     │                  │         a024595897a2ec711b6 
-│                       │     │                  ╰ DiffID: sha256:b69768e659b4f95297fe69d96c0b4ed0a86713978cd9d
-│                       │     │                            e067bc540258a8aedaa 
+│                       │     ├ Layer            ╭ Digest: sha256:684df2783b0feb44452020dce63c5badbab036ddc8f56
+│                       │     │                  │         76aa7a417b72864c5b7 
+│                       │     │                  ╰ DiffID: sha256:01a3bb04146b888d6332877e0fbb7fefe1ad575dbf88e
+│                       │     │                            2a32416c85fef0c70aa 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -71,10 +71,10 @@
 │                       │     ├ InstalledVersion: 1.2.11 
 │                       │     ├ FixedVersion    : 1.3.12, 1.4.12, 1.2.13 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:64db79765cded386fe2e2aee924a588e048904913778b
-│                       │     │                  │         a024595897a2ec711b6 
-│                       │     │                  ╰ DiffID: sha256:b69768e659b4f95297fe69d96c0b4ed0a86713978cd9d
-│                       │     │                            e067bc540258a8aedaa 
+│                       │     ├ Layer            ╭ Digest: sha256:684df2783b0feb44452020dce63c5badbab036ddc8f56
+│                       │     │                  │         76aa7a417b72864c5b7 
+│                       │     │                  ╰ DiffID: sha256:01a3bb04146b888d6332877e0fbb7fefe1ad575dbf88e
+│                       │     │                            2a32416c85fef0c70aa 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-6378 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -127,12 +127,12 @@
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.11 
 │                       │     │                  ╰ UID : 45d594114f76754 
 │                       │     ├ InstalledVersion: 1.2.11 
-│                       │     ├ FixedVersion    : 1.5.13 
+│                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:64db79765cded386fe2e2aee924a588e048904913778b
-│                       │     │                  │         a024595897a2ec711b6 
-│                       │     │                  ╰ DiffID: sha256:b69768e659b4f95297fe69d96c0b4ed0a86713978cd9d
-│                       │     │                            e067bc540258a8aedaa 
+│                       │     ├ Layer            ╭ Digest: sha256:684df2783b0feb44452020dce63c5badbab036ddc8f56
+│                       │     │                  │         76aa7a417b72864c5b7 
+│                       │     │                  ╰ DiffID: sha256:01a3bb04146b888d6332877e0fbb7fefe1ad575dbf88e
+│                       │     │                            2a32416c85fef0c70aa 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -142,8 +142,8 @@
 │                       │     ├ Title           : logback-core: arbitrary code execution via JaninoEventEvaluator 
 │                       │     ├ Description     : ACE vulnerability in JaninoEventEvaluator  by QOS.CH
 │                       │     │                   logback-core
-│                       │     │                         upto and including version 1.5.12 in Java applications
-│                       │     │                   allows
+│                       │     │                         upto including version 0.1 to 1.3.14 and 1.4.0 to
+│                       │     │                   1.5.12 in Java applications allows
 │                       │     │                         attacker to execute arbitrary code by compromising an
 │                       │     │                   existing
 │                       │     │                         logback configuration file or by injecting an
@@ -171,23 +171,24 @@
 │                       │     │                  ├ [1]: https://github.com/qos-ch/logback 
 │                       │     │                  ├ [2]: https://github.com/qos-ch/logback/commit/2cb6d520df7592
 │                       │     │                  │      ef1c3a198f1b5df3c10c93e183 
-│                       │     │                  ├ [3]: https://logback.qos.ch/news.html#1.5.13 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-12798 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-12798 
+│                       │     │                  ├ [3]: https://logback.qos.ch/news.html#1.3.15 
+│                       │     │                  ├ [4]: https://logback.qos.ch/news.html#1.5.13 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-12798 
+│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-12798 
 │                       │     ├ PublishedDate   : 2024-12-19T16:15:07.557Z 
-│                       │     ╰ LastModifiedDate: 2024-12-19T16:15:07.557Z 
+│                       │     ╰ LastModifiedDate: 2025-01-03T14:15:24.37Z 
 │                       ╰ [3] ╭ VulnerabilityID : CVE-2024-12801 
 │                             ├ PkgName         : ch.qos.logback:logback-core 
 │                             ├ PkgPath         : opt/dependency-check/lib/logback-core-1.2.11.jar 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.11 
 │                             │                  ╰ UID : 45d594114f76754 
 │                             ├ InstalledVersion: 1.2.11 
-│                             ├ FixedVersion    : 1.5.13 
+│                             ├ FixedVersion    : 1.5.13, 1.3.15 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:64db79765cded386fe2e2aee924a588e048904913778b
-│                             │                  │         a024595897a2ec711b6 
-│                             │                  ╰ DiffID: sha256:b69768e659b4f95297fe69d96c0b4ed0a86713978cd9d
-│                             │                            e067bc540258a8aedaa 
+│                             ├ Layer            ╭ Digest: sha256:684df2783b0feb44452020dce63c5badbab036ddc8f56
+│                             │                  │         76aa7a417b72864c5b7 
+│                             │                  ╰ DiffID: sha256:01a3bb04146b888d6332877e0fbb7fefe1ad575dbf88e
+│                             │                            2a32416c85fef0c70aa 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -197,8 +198,8 @@
 │                             ├ Title           : logback-core: SaxEventRecorder vulnerable to Server-Side
 │                             │                   Request Forgery (SSRF) attacks 
 │                             ├ Description     : Server-Side Request Forgery (SSRF) in SaxEventRecorder by
-│                             │                   QOS.CH logback version 1.5.12 on the Java platform, allows an
-│                             │                    attacker to 
+│                             │                   QOS.CH logback version 0.1 to 1.3.14 and 1.4.0 to 1.5.12  on
+│                             │                   the Java platform, allows an attacker to 
 │                             │                   forge requests by compromising logback configuration files in
 │                             │                    XML.
 │                             │                   
@@ -215,11 +216,12 @@
 │                             │                  ├ [1]: https://github.com/qos-ch/logback 
 │                             │                  ├ [2]: https://github.com/qos-ch/logback/commit/5f05041cba4c4a
 │                             │                  │      c0a62748c5c527a2da48999f2d 
-│                             │                  ├ [3]: https://logback.qos.ch/news.html#1.5.13 
-│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-12801 
-│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-12801 
+│                             │                  ├ [3]: https://logback.qos.ch/news.html#1.3.15 
+│                             │                  ├ [4]: https://logback.qos.ch/news.html#1.5.13 
+│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-12801 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-12801 
 │                             ├ PublishedDate   : 2024-12-19T17:15:08.93Z 
-│                             ╰ LastModifiedDate: 2024-12-19T17:15:08.93Z 
+│                             ╰ LastModifiedDate: 2025-01-03T14:15:24.5Z 
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
@@ -234,10 +236,10 @@
 │                             ├ InstalledVersion: v0.32.0 
 │                             ├ FixedVersion    : 0.33.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:64db79765cded386fe2e2aee924a588e048904913778b
-│                             │                  │         a024595897a2ec711b6 
-│                             │                  ╰ DiffID: sha256:b69768e659b4f95297fe69d96c0b4ed0a86713978cd9d
-│                             │                            e067bc540258a8aedaa 
+│                             ├ Layer            ╭ Digest: sha256:684df2783b0feb44452020dce63c5badbab036ddc8f56
+│                             │                  │         76aa7a417b72864c5b7 
+│                             │                  ╰ DiffID: sha256:01a3bb04146b888d6332877e0fbb7fefe1ad575dbf88e
+│                             │                            2a32416c85fef0c70aa 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -280,10 +282,10 @@
 │                             ├ InstalledVersion: v0.32.0 
 │                             ├ FixedVersion    : 0.33.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:64db79765cded386fe2e2aee924a588e048904913778b
-│                             │                  │         a024595897a2ec711b6 
-│                             │                  ╰ DiffID: sha256:b69768e659b4f95297fe69d96c0b4ed0a86713978cd9d
-│                             │                            e067bc540258a8aedaa 
+│                             ├ Layer            ╭ Digest: sha256:684df2783b0feb44452020dce63c5badbab036ddc8f56
+│                             │                  │         76aa7a417b72864c5b7 
+│                             │                  ╰ DiffID: sha256:01a3bb04146b888d6332877e0fbb7fefe1ad575dbf88e
+│                             │                            2a32416c85fef0c70aa 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45338 
 │                             ├ DataSource       ╭ ID  : ghsa 
