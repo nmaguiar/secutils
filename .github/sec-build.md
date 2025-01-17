@@ -398,8 +398,9 @@
 │                       │     │                   This vulnerability is fixed in 5.13.0. 
 │                       │     ├ Severity        : CRITICAL 
 │                       │     ├ CweIDs           ─ [0]: CWE-88 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 4 
-│                       │     │                  ╰ redhat: 3 
+│                       │     ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 4 
+│                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                  │        │           A:H 
 │                       │     │                  │        ╰ V3Score : 9.8 
@@ -446,8 +447,9 @@
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ╭ [0]: CWE-400 
 │                       │     │                  ╰ [1]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │     │                  ╰ redhat: 3 
+│                       │     ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                       │     │                  │        │           A:H 
 │                       │     │                  │        ╰ V3Score : 7.5 
@@ -541,8 +543,9 @@
 │                       │     │                   This vulnerability is fixed in 5.13.0. 
 │                       │     ├ Severity        : CRITICAL 
 │                       │     ├ CweIDs           ─ [0]: CWE-88 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 4 
-│                       │     │                  ╰ redhat: 3 
+│                       │     ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 4 
+│                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                  │        │           A:H 
 │                       │     │                  │        ╰ V3Score : 9.8 
@@ -589,8 +592,9 @@
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ╭ [0]: CWE-400 
 │                       │     │                  ╰ [1]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │     │                  ╰ redhat: 3 
+│                       │     ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                       │     │                  │        │           A:H 
 │                       │     │                  │        ╰ V3Score : 7.5 
@@ -684,8 +688,9 @@
 │                       │     │                   This vulnerability is fixed in 5.13.0. 
 │                       │     ├ Severity        : CRITICAL 
 │                       │     ├ CweIDs           ─ [0]: CWE-88 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 4 
-│                       │     │                  ╰ redhat: 3 
+│                       │     ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │     │                  ├ ghsa       : 4 
+│                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                  │        │           A:H 
 │                       │     │                  │        ╰ V3Score : 9.8 
@@ -732,8 +737,9 @@
 │                             ├ Severity        : HIGH 
 │                             ├ CweIDs           ╭ [0]: CWE-400 
 │                             │                  ╰ [1]: CWE-770 
-│                             ├ VendorSeverity   ╭ ghsa  : 3 
-│                             │                  ╰ redhat: 3 
+│                             ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                             │                  ├ ghsa       : 3 
+│                             │                  ╰ redhat     : 3 
 │                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                             │                  │        │           A:H 
 │                             │                  │        ╰ V3Score : 7.5 
