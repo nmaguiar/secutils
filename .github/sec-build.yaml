@@ -342,6 +342,7 @@
     CweIDs:
     - CWE-88
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 4
       redhat: 3
     CVSS:
@@ -384,6 +385,7 @@
     - CWE-400
     - CWE-770
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 3
       redhat: 3
     CVSS:
@@ -475,6 +477,7 @@
     CweIDs:
     - CWE-88
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 4
       redhat: 3
     CVSS:
@@ -517,6 +520,7 @@
     - CWE-400
     - CWE-770
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 3
       redhat: 3
     CVSS:
@@ -608,6 +612,7 @@
     CweIDs:
     - CWE-88
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 4
       redhat: 3
     CVSS:
@@ -650,6 +655,7 @@
     - CWE-400
     - CWE-770
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 3
       redhat: 3
     CVSS:
