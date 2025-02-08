@@ -1,211 +1,7 @@
 ````yaml
-╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
-│     ├ Class          : os-pkgs 
-│     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-0167 
-│                       │     ├ PkgID           : curl@8.11.1-r1 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.11.1-r1?arch=x86_64&distro=3.22.
-│                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : d983b519bda75ed2 
-│                       │     ├ InstalledVersion: 8.11.1-r1 
-│                       │     ├ FixedVersion    : 8.12.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0167 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : When asked to use a `.netrc` file for credentials **and** to
-│                       │     │                   follow HT ... 
-│                       │     ├ Description     : When asked to use a `.netrc` file for credentials **and** to
-│                       │     │                   follow HTTP
-│                       │     │                   redirects, curl could leak the password used for the first
-│                       │     │                   host to the
-│                       │     │                   followed-to host under certain circumstances.
-│                       │     │                   
-│                       │     │                   This flaw only manifests itself if the netrc file has a
-│                       │     │                   `default` entry that
-│                       │     │                   omits both login and password. A rare circumstance. 
-│                       │     ├ Severity        : LOW 
-│                       │     ├ VendorSeverity   ─ ubuntu: 1 
-│                       │     ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
-│                       │     │                  ├ [2]: https://hackerone.com/reports/2917232 
-│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
-│                       │     ├ PublishedDate   : 2025-02-05T10:15:22.71Z 
-│                       │     ╰ LastModifiedDate: 2025-02-06T15:15:16.967Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-0665 
-│                       │     ├ PkgID           : curl@8.11.1-r1 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.11.1-r1?arch=x86_64&distro=3.22.
-│                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : d983b519bda75ed2 
-│                       │     ├ InstalledVersion: 8.11.1-r1 
-│                       │     ├ FixedVersion    : 8.12.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0665 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : libcurl would wrongly close the same eventfd file descriptor
-│                       │     │                   twice whe ... 
-│                       │     ├ Description     : libcurl would wrongly close the same eventfd file descriptor
-│                       │     │                   twice when taking
-│                       │     │                   down a connection channel after having completed a threaded
-│                       │     │                   name resolve. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ CweIDs           ─ [0]: CWE-1341 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/05/2 
-│                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/05/5 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-0665.html 
-│                       │     │                  ├ [3]: https://curl.se/docs/CVE-2025-0665.json 
-│                       │     │                  ╰ [4]: https://hackerone.com/reports/2954286 
-│                       │     ├ PublishedDate   : 2025-02-05T10:15:22.857Z 
-│                       │     ╰ LastModifiedDate: 2025-02-05T20:15:45.31Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-0725 
-│                       │     ├ PkgID           : curl@8.11.1-r1 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.11.1-r1?arch=x86_64&distro=3.22.
-│                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : d983b519bda75ed2 
-│                       │     ├ InstalledVersion: 8.11.1-r1 
-│                       │     ├ FixedVersion    : 8.12.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0725 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : When libcurl is asked to perform automatic gzip decompression
-│                       │     │                    of conte ... 
-│                       │     ├ Description     : When libcurl is asked to perform automatic gzip decompression
-│                       │     │                    of
-│                       │     │                   content-encoded HTTP responses with the
-│                       │     │                   `CURLOPT_ACCEPT_ENCODING` option,
-│                       │     │                   **using zlib 1.2.0.3 or older**, an attacker-controlled
-│                       │     │                   integer overflow would
-│                       │     │                   make libcurl perform a buffer overflow. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/05/3 
-│                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/06/2 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-0725.html 
-│                       │     │                  ├ [3]: https://curl.se/docs/CVE-2025-0725.json 
-│                       │     │                  ╰ [4]: https://hackerone.com/reports/2956023 
-│                       │     ├ PublishedDate   : 2025-02-05T10:15:22.98Z 
-│                       │     ╰ LastModifiedDate: 2025-02-06T11:15:09.683Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-0167 
-│                       │     ├ PkgID           : libcurl@8.11.1-r1 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.11.1-r1?arch=x86_64&distro=3.
-│                       │     │                  │       22.0_alpha20250108 
-│                       │     │                  ╰ UID : 6c77bf13220af880 
-│                       │     ├ InstalledVersion: 8.11.1-r1 
-│                       │     ├ FixedVersion    : 8.12.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0167 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : When asked to use a `.netrc` file for credentials **and** to
-│                       │     │                   follow HT ... 
-│                       │     ├ Description     : When asked to use a `.netrc` file for credentials **and** to
-│                       │     │                   follow HTTP
-│                       │     │                   redirects, curl could leak the password used for the first
-│                       │     │                   host to the
-│                       │     │                   followed-to host under certain circumstances.
-│                       │     │                   
-│                       │     │                   This flaw only manifests itself if the netrc file has a
-│                       │     │                   `default` entry that
-│                       │     │                   omits both login and password. A rare circumstance. 
-│                       │     ├ Severity        : LOW 
-│                       │     ├ VendorSeverity   ─ ubuntu: 1 
-│                       │     ├ References       ╭ [0]: https://curl.se/docs/CVE-2025-0167.html 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-0167.json 
-│                       │     │                  ├ [2]: https://hackerone.com/reports/2917232 
-│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-0167 
-│                       │     ├ PublishedDate   : 2025-02-05T10:15:22.71Z 
-│                       │     ╰ LastModifiedDate: 2025-02-06T15:15:16.967Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-0665 
-│                       │     ├ PkgID           : libcurl@8.11.1-r1 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.11.1-r1?arch=x86_64&distro=3.
-│                       │     │                  │       22.0_alpha20250108 
-│                       │     │                  ╰ UID : 6c77bf13220af880 
-│                       │     ├ InstalledVersion: 8.11.1-r1 
-│                       │     ├ FixedVersion    : 8.12.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0665 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : libcurl would wrongly close the same eventfd file descriptor
-│                       │     │                   twice whe ... 
-│                       │     ├ Description     : libcurl would wrongly close the same eventfd file descriptor
-│                       │     │                   twice when taking
-│                       │     │                   down a connection channel after having completed a threaded
-│                       │     │                   name resolve. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ CweIDs           ─ [0]: CWE-1341 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/05/2 
-│                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/05/5 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-0665.html 
-│                       │     │                  ├ [3]: https://curl.se/docs/CVE-2025-0665.json 
-│                       │     │                  ╰ [4]: https://hackerone.com/reports/2954286 
-│                       │     ├ PublishedDate   : 2025-02-05T10:15:22.857Z 
-│                       │     ╰ LastModifiedDate: 2025-02-05T20:15:45.31Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-0725 
-│                             ├ PkgID           : libcurl@8.11.1-r1 
-│                             ├ PkgName         : libcurl 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.11.1-r1?arch=x86_64&distro=3.
-│                             │                  │       22.0_alpha20250108 
-│                             │                  ╰ UID : 6c77bf13220af880 
-│                             ├ InstalledVersion: 8.11.1-r1 
-│                             ├ FixedVersion    : 8.12.0-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                             │                  │         3c08431690bdf74db49 
-│                             │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                             │                            d08c3de014c7255353a 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0725 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Title           : When libcurl is asked to perform automatic gzip decompression
-│                             │                    of conte ... 
-│                             ├ Description     : When libcurl is asked to perform automatic gzip decompression
-│                             │                    of
-│                             │                   content-encoded HTTP responses with the
-│                             │                   `CURLOPT_ACCEPT_ENCODING` option,
-│                             │                   **using zlib 1.2.0.3 or older**, an attacker-controlled
-│                             │                   integer overflow would
-│                             │                   make libcurl perform a buffer overflow. 
-│                             ├ Severity        : UNKNOWN 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/05/3 
-│                             │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/06/2 
-│                             │                  ├ [2]: https://curl.se/docs/CVE-2025-0725.html 
-│                             │                  ├ [3]: https://curl.se/docs/CVE-2025-0725.json 
-│                             │                  ╰ [4]: https://hackerone.com/reports/2956023 
-│                             ├ PublishedDate   : 2025-02-05T10:15:22.98Z 
-│                             ╰ LastModifiedDate: 2025-02-06T11:15:09.683Z 
+╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
+│     ├ Class : os-pkgs 
+│     ╰ Type  : alpine 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -217,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -273,10 +69,10 @@
 │                             ├ InstalledVersion: 1.2.13 
 │                             ├ FixedVersion    : 1.5.13, 1.3.15 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                             │                  │         3c08431690bdf74db49 
-│                             │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                             │                            d08c3de014c7255353a 
+│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                             │                  │         3d2eae65adf4198ace9 
+│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                             │                            25647b72ba40f5c3b4b 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -324,10 +120,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45336 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -372,10 +168,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45341 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -388,8 +184,9 @@
 │                       │     │                   URIs are not permitted in the web PKI, so this only affects
 │                       │     │                   users of private PKIs which make use of URIs. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ╰ redhat : 1 
+│                       │     ├ VendorSeverity   ╭ bitnami    : 2 
+│                       │     │                  ├ cbl-mariner: 2 
+│                       │     │                  ╰ redhat     : 1 
 │                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
 │                       │     │                  │         │           /A:N 
 │                       │     │                  │         ╰ V3Score : 6.1 
@@ -416,16 +213,16 @@
 │                             ├ InstalledVersion: v1.23.4 
 │                             ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                             │                  │         3c08431690bdf74db49 
-│                             │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                             │                            d08c3de014c7255353a 
+│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                             │                  │         3d2eae65adf4198ace9 
+│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                             │                            25647b72ba40f5c3b4b 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Timing sidechannel for P-256 on ppc64le in
-│                             │                   crypto/internal/nistec 
+│                             ├ Title           : Due to the usage of a variable time instruction in the
+│                             │                   assembly implem ... 
 │                             ├ Description     : Due to the usage of a variable time instruction in the
 │                             │                   assembly implementation of an internal function, a small
 │                             │                   number of bits of secret scalars are leaked on the ppc64le
@@ -450,10 +247,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45336 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -498,10 +295,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45341 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -514,8 +311,9 @@
 │                       │     │                   URIs are not permitted in the web PKI, so this only affects
 │                       │     │                   users of private PKIs which make use of URIs. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ╰ redhat : 1 
+│                       │     ├ VendorSeverity   ╭ bitnami    : 2 
+│                       │     │                  ├ cbl-mariner: 2 
+│                       │     │                  ╰ redhat     : 1 
 │                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
 │                       │     │                  │         │           /A:N 
 │                       │     │                  │         ╰ V3Score : 6.1 
@@ -542,16 +340,16 @@
 │                             ├ InstalledVersion: v1.23.4 
 │                             ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                             │                  │         3c08431690bdf74db49 
-│                             │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                             │                            d08c3de014c7255353a 
+│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                             │                  │         3d2eae65adf4198ace9 
+│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                             │                            25647b72ba40f5c3b4b 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Timing sidechannel for P-256 on ppc64le in
-│                             │                   crypto/internal/nistec 
+│                             ├ Title           : Due to the usage of a variable time instruction in the
+│                             │                   assembly implem ... 
 │                             ├ Description     : Due to the usage of a variable time instruction in the
 │                             │                   assembly implementation of an internal function, a small
 │                             │                   number of bits of secret scalars are leaked on the ppc64le
@@ -568,116 +366,24 @@
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-45336 
-│                       │     ├ PkgID           : stdlib@v1.23.4 
-│                       │     ├ PkgName         : stdlib 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.4 
-│                       │     │                  ╰ UID : 3ab6eecae5178565 
-│                       │     ├ InstalledVersion: v1.23.4 
-│                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45336 
-│                       │     ├ DataSource       ╭ ID  : govulndb 
-│                       │     │                  ├ Name: The Go Vulnerability Database 
-│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │     ├ Title           : golang: net/http: net/http: sensitive headers incorrectly
-│                       │     │                   sent after cross-domain redirect 
-│                       │     ├ Description     : The HTTP client drops sensitive headers after following a
-│                       │     │                   cross-domain redirect. For example, a request to a.com/
-│                       │     │                   containing an Authorization header which is redirected to
-│                       │     │                   b.com/ will not send that header to b.com. In the event that
-│                       │     │                   the client received a subsequent same-domain redirect,
-│                       │     │                   however, the sensitive headers would be restored. For
-│                       │     │                   example, a chain of redirects from a.com/, to b.com/1, and
-│                       │     │                   finally to b.com/2 would incorrectly send the Authorization
-│                       │     │                   header to b.com/2. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ╰ redhat : 2 
-│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
-│                       │     │                  │         │           /A:N 
-│                       │     │                  │         ╰ V3Score : 6.1 
-│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-│                       │     │                            │           /A:N 
-│                       │     │                            ╰ V3Score : 5.9 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-45336 
-│                       │     │                  ├ [1]: https://go.dev/cl/643100 
-│                       │     │                  ├ [2]: https://go.dev/issue/70530 
-│                       │     │                  ├ [3]: https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/
-│                       │     │                  │      bk9LAa-lCgAJ 
-│                       │     │                  ├ [4]: https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/
-│                       │     │                  │      G461hA6lCgAJ 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-45336 
-│                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3420 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
-│                       │     ├ PublishedDate   : 2025-01-28T02:15:28.807Z 
-│                       │     ╰ LastModifiedDate: 2025-01-28T16:15:38.22Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2024-45341 
-│                       │     ├ PkgID           : stdlib@v1.23.4 
-│                       │     ├ PkgName         : stdlib 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.4 
-│                       │     │                  ╰ UID : 3ab6eecae5178565 
-│                       │     ├ InstalledVersion: v1.23.4 
-│                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                       │     │                  │         3c08431690bdf74db49 
-│                       │     │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                       │     │                            d08c3de014c7255353a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45341 
-│                       │     ├ DataSource       ╭ ID  : govulndb 
-│                       │     │                  ├ Name: The Go Vulnerability Database 
-│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │     ├ Title           : golang: crypto/x509: crypto/x509: usage of IPv6 zone IDs can
-│                       │     │                   bypass URI name constraints 
-│                       │     ├ Description     : A certificate with a URI which has a IPv6 address with a zone
-│                       │     │                    ID may incorrectly satisfy a URI name constraint that
-│                       │     │                   applies to the certificate chain. Certificates containing
-│                       │     │                   URIs are not permitted in the web PKI, so this only affects
-│                       │     │                   users of private PKIs which make use of URIs. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ╰ redhat : 1 
-│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
-│                       │     │                  │         │           /A:N 
-│                       │     │                  │         ╰ V3Score : 6.1 
-│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L
-│                       │     │                            │           /A:N 
-│                       │     │                            ╰ V3Score : 4.2 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-45341 
-│                       │     │                  ├ [1]: https://go.dev/cl/643099 
-│                       │     │                  ├ [2]: https://go.dev/issue/71156 
-│                       │     │                  ├ [3]: https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/
-│                       │     │                  │      bk9LAa-lCgAJ 
-│                       │     │                  ├ [4]: https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/
-│                       │     │                  │      G461hA6lCgAJ 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-45341 
-│                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3373 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
-│                       │     ├ PublishedDate   : 2025-01-28T02:15:29.147Z 
-│                       │     ╰ LastModifiedDate: 2025-01-28T16:15:38.65Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22866 
-│                             ├ PkgID           : stdlib@v1.23.4 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22866 
+│                             ├ PkgID           : stdlib@v1.23.5 
 │                             ├ PkgName         : stdlib 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.4 
-│                             │                  ╰ UID : 3ab6eecae5178565 
-│                             ├ InstalledVersion: v1.23.4 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
+│                             │                  ╰ UID : 18a68a96db7a92e2 
+│                             ├ InstalledVersion: v1.23.5 
 │                             ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-│                             │                  │         3c08431690bdf74db49 
-│                             │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-│                             │                            d08c3de014c7255353a 
+│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                             │                  │         3d2eae65adf4198ace9 
+│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                             │                            25647b72ba40f5c3b4b 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Timing sidechannel for P-256 on ppc64le in
-│                             │                   crypto/internal/nistec 
+│                             ├ Title           : Due to the usage of a variable time instruction in the
+│                             │                   assembly implem ... 
 │                             ├ Description     : Due to the usage of a variable time instruction in the
 │                             │                   assembly implementation of an internal function, a small
 │                             │                   number of bits of secret scalars are leaked on the ppc64le
@@ -702,16 +408,16 @@
                               ├ InstalledVersion: v1.23.5 
                               ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:a955741d5692904eac14536c7a5fe3e57b21ad3882ddb
-                              │                  │         3c08431690bdf74db49 
-                              │                  ╰ DiffID: sha256:5a2c313213a2bb4e76411cd69960937229dbe68216bad
-                              │                            d08c3de014c7255353a 
+                              ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+                              │                  │         3d2eae65adf4198ace9 
+                              │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+                              │                            25647b72ba40f5c3b4b 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
                               ├ DataSource       ╭ ID  : govulndb 
                               │                  ├ Name: The Go Vulnerability Database 
                               │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Title           : Timing sidechannel for P-256 on ppc64le in
-                              │                   crypto/internal/nistec 
+                              ├ Title           : Due to the usage of a variable time instruction in the
+                              │                   assembly implem ... 
                               ├ Description     : Due to the usage of a variable time instruction in the
                               │                   assembly implementation of an internal function, a small
                               │                   number of bits of secret scalars are leaked on the ppc64le
