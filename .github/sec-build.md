@@ -106,9 +106,83 @@
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-12801 
 │                             ├ PublishedDate   : 2024-12-19T17:15:08.93Z 
 │                             ╰ LastModifiedDate: 2025-01-03T14:15:24.5Z 
-├ [2] ╭ Target: Python 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : python-pkg 
+├ [2] ╭ Target         : Python 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : python-pkg 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-12797 
+│                             ├ PkgName         : cryptography 
+│                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/cryptograph
+│                             │                   y-44.0.0.dist-info/METADATA 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:pypi/cryptography@44.0.0 
+│                             │                  ╰ UID : de133b053c574d7 
+│                             ├ InstalledVersion: 44.0.0 
+│                             ├ FixedVersion    : 44.0.1 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                             │                  │         3d2eae65adf4198ace9 
+│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                             │                            25647b72ba40f5c3b4b 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory pip 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Apip 
+│                             ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                             │                   to authent ... 
+│                             ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                             │                   to authenticate a
+│                             │                   server may fail to notice that the server was not
+│                             │                   authenticated, because
+│                             │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                             │                   verification mode
+│                             │                   is set.
+│                             │                   
+│                             │                   Impact summary: TLS and DTLS connections using raw public
+│                             │                   keys may be
+│                             │                   vulnerable to man-in-middle attacks when server
+│                             │                   authentication failure is not
+│                             │                   detected by clients.
+│                             │                   RPKs are disabled by default in both TLS clients and TLS
+│                             │                   servers.  The issue
+│                             │                   only arises when TLS clients explicitly enable RPK use by the
+│                             │                    server, and the
+│                             │                   server, likewise, enables sending of an RPK instead of an
+│                             │                   X.509 certificate
+│                             │                   chain.  The affected clients are those that then rely on the
+│                             │                   handshake to
+│                             │                   fail when the server's RPK fails to match one of the expected
+│                             │                    public keys,
+│                             │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                             │                   Clients that enable server-side raw public keys can still
+│                             │                   find out that raw
+│                             │                   public key verification failed by calling
+│                             │                   SSL_get_verify_result(), and those
+│                             │                   that do, and take appropriate action, are not affected.  This
+│                             │                    issue was
+│                             │                   introduced in the initial implementation of RPK support in
+│                             │                   OpenSSL 3.2.
+│                             │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                             │                   affected by this issue. 
+│                             ├ Severity        : LOW 
+│                             ├ CweIDs           ─ [0]: CWE-392 
+│                             ├ VendorSeverity   ╭ ghsa  : 1 
+│                             │                  ╰ ubuntu: 3 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                             │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdeaad
+│                             │                  │      57660dcba50a619fafced3fd5e9 
+│                             │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d434945
+│                             │                  │      49b611233f92652f0da5328fbe7 
+│                             │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203feffc
+│                             │                  │      f92ad5889df92f90bb0ee10a699 
+│                             │                  ├ [4]: https://github.com/pyca/cryptography 
+│                             │                  ├ [5]: https://github.com/pyca/cryptography/security/advisorie
+│                             │                  │      s/GHSA-79v4-65xg-pq4g 
+│                             │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                             │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
+│                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                             ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                             ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
 ├ [3] ╭ Target         : usr/bin/grype 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -230,10 +304,14 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.4 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 5.3 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                             │                  ├ [1]: https://go.dev/cl/643735 
 │                             │                  ├ [2]: https://go.dev/issue/71383 
@@ -242,7 +320,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -364,10 +442,14 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.4 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 5.3 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                             │                  ├ [1]: https://go.dev/cl/643735 
 │                             │                  ├ [2]: https://go.dev/issue/71383 
@@ -376,7 +458,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -405,10 +487,14 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.4 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 5.3 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
 │                             │                  ├ [1]: https://go.dev/cl/643735 
 │                             │                  ├ [2]: https://go.dev/issue/71383 
@@ -417,7 +503,7 @@
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -446,10 +532,14 @@
                               │                    believe this leakage is enough to allow recovery of the
                               │                   private key when P-256 is used in any well known protocols. 
                               ├ Severity        : MEDIUM 
-                              ├ VendorSeverity   ─ redhat: 2 
-                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-                              │                           │           A:N 
-                              │                           ╰ V3Score : 5.3 
+                              ├ VendorSeverity   ╭ bitnami: 3 
+                              │                  ╰ redhat : 2 
+                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
+                              │                  │         │           /A:H 
+                              │                  │         ╰ V3Score : 8.4 
+                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+                              │                            │           /A:N 
+                              │                            ╰ V3Score : 5.3 
                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
                               │                  ├ [1]: https://go.dev/cl/643735 
                               │                  ├ [2]: https://go.dev/issue/71383 
@@ -458,5 +548,5 @@
                               │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
                               │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
                               ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-                              ╰ LastModifiedDate: 2025-02-10T21:15:22.477Z 
+                              ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
 ````
