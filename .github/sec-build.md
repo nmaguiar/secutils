@@ -1,7 +1,394 @@
 ````yaml
-╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
-│     ├ Class : os-pkgs 
-│     ╰ Type  : alpine 
+╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
+│     ├ Class          : os-pkgs 
+│     ├ Type           : alpine 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-12797 
+│                       │     ├ PkgID           : libcrypto3@3.3.2-r5 
+│                       │     ├ PkgName         : libcrypto3 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.2-r5?arch=x86_64&distro=
+│                       │     │                  │       3.22.0_alpha20250108 
+│                       │     │                  ╰ UID : b20a74519786ec00 
+│                       │     ├ InstalledVersion: 3.3.2-r5 
+│                       │     ├ FixedVersion    : 3.3.3-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+│                       │     │                   don't abort as expected 
+│                       │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                       │     │                   to authenticate a
+│                       │     │                   server may fail to notice that the server was not
+│                       │     │                   authenticated, because
+│                       │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                       │     │                   verification mode
+│                       │     │                   is set.
+│                       │     │                   
+│                       │     │                   Impact summary: TLS and DTLS connections using raw public
+│                       │     │                   keys may be
+│                       │     │                   vulnerable to man-in-middle attacks when server
+│                       │     │                   authentication failure is not
+│                       │     │                   detected by clients.
+│                       │     │                   RPKs are disabled by default in both TLS clients and TLS
+│                       │     │                   servers.  The issue
+│                       │     │                   only arises when TLS clients explicitly enable RPK use by the
+│                       │     │                    server, and the
+│                       │     │                   server, likewise, enables sending of an RPK instead of an
+│                       │     │                   X.509 certificate
+│                       │     │                   chain.  The affected clients are those that then rely on the
+│                       │     │                   handshake to
+│                       │     │                   fail when the server's RPK fails to match one of the expected
+│                       │     │                    public keys,
+│                       │     │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                       │     │                   Clients that enable server-side raw public keys can still
+│                       │     │                   find out that raw
+│                       │     │                   public key verification failed by calling
+│                       │     │                   SSL_get_verify_result(), and those
+│                       │     │                   that do, and take appropriate action, are not affected.  This
+│                       │     │                    issue was
+│                       │     │                   introduced in the initial implementation of RPK support in
+│                       │     │                   OpenSSL 3.2.
+│                       │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │     │                   affected by this issue. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-392 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │     │                  ├ redhat: 3 
+│                       │     │                  ╰ ubuntu: 3 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 7.4 
+│                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+│                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │     │                  │       d57660dcba50a619fafced3fd5e9 
+│                       │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                       │     │                  │       549b611233f92652f0da5328fbe7 
+│                       │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
+│                       │     │                  ├ [6] : https://github.com/pyca/cryptography 
+│                       │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
+│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2024-12797 
+│                       │     ├ PkgID           : libssl3@3.3.2-r5 
+│                       │     ├ PkgName         : libssl3 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.2-r5?arch=x86_64&distro=3.2
+│                       │     │                  │       2.0_alpha20250108 
+│                       │     │                  ╰ UID : 6f051c1e41193b6c 
+│                       │     ├ InstalledVersion: 3.3.2-r5 
+│                       │     ├ FixedVersion    : 3.3.3-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+│                       │     │                   don't abort as expected 
+│                       │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                       │     │                   to authenticate a
+│                       │     │                   server may fail to notice that the server was not
+│                       │     │                   authenticated, because
+│                       │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                       │     │                   verification mode
+│                       │     │                   is set.
+│                       │     │                   
+│                       │     │                   Impact summary: TLS and DTLS connections using raw public
+│                       │     │                   keys may be
+│                       │     │                   vulnerable to man-in-middle attacks when server
+│                       │     │                   authentication failure is not
+│                       │     │                   detected by clients.
+│                       │     │                   RPKs are disabled by default in both TLS clients and TLS
+│                       │     │                   servers.  The issue
+│                       │     │                   only arises when TLS clients explicitly enable RPK use by the
+│                       │     │                    server, and the
+│                       │     │                   server, likewise, enables sending of an RPK instead of an
+│                       │     │                   X.509 certificate
+│                       │     │                   chain.  The affected clients are those that then rely on the
+│                       │     │                   handshake to
+│                       │     │                   fail when the server's RPK fails to match one of the expected
+│                       │     │                    public keys,
+│                       │     │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                       │     │                   Clients that enable server-side raw public keys can still
+│                       │     │                   find out that raw
+│                       │     │                   public key verification failed by calling
+│                       │     │                   SSL_get_verify_result(), and those
+│                       │     │                   that do, and take appropriate action, are not affected.  This
+│                       │     │                    issue was
+│                       │     │                   introduced in the initial implementation of RPK support in
+│                       │     │                   OpenSSL 3.2.
+│                       │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │     │                   affected by this issue. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-392 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │     │                  ├ redhat: 3 
+│                       │     │                  ╰ ubuntu: 3 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 7.4 
+│                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+│                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │     │                  │       d57660dcba50a619fafced3fd5e9 
+│                       │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                       │     │                  │       549b611233f92652f0da5328fbe7 
+│                       │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
+│                       │     │                  ├ [6] : https://github.com/pyca/cryptography 
+│                       │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
+│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2024-12797 
+│                       │     ├ PkgID           : openssl@3.3.2-r5 
+│                       │     ├ PkgName         : openssl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.2-r5?arch=x86_64&distro=3.2
+│                       │     │                  │       2.0_alpha20250108 
+│                       │     │                  ╰ UID : 135f64f0427e34c 
+│                       │     ├ InstalledVersion: 3.3.2-r5 
+│                       │     ├ FixedVersion    : 3.3.3-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+│                       │     │                   don't abort as expected 
+│                       │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+│                       │     │                   to authenticate a
+│                       │     │                   server may fail to notice that the server was not
+│                       │     │                   authenticated, because
+│                       │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+│                       │     │                   verification mode
+│                       │     │                   is set.
+│                       │     │                   
+│                       │     │                   Impact summary: TLS and DTLS connections using raw public
+│                       │     │                   keys may be
+│                       │     │                   vulnerable to man-in-middle attacks when server
+│                       │     │                   authentication failure is not
+│                       │     │                   detected by clients.
+│                       │     │                   RPKs are disabled by default in both TLS clients and TLS
+│                       │     │                   servers.  The issue
+│                       │     │                   only arises when TLS clients explicitly enable RPK use by the
+│                       │     │                    server, and the
+│                       │     │                   server, likewise, enables sending of an RPK instead of an
+│                       │     │                   X.509 certificate
+│                       │     │                   chain.  The affected clients are those that then rely on the
+│                       │     │                   handshake to
+│                       │     │                   fail when the server's RPK fails to match one of the expected
+│                       │     │                    public keys,
+│                       │     │                   by setting the verification mode to SSL_VERIFY_PEER.
+│                       │     │                   Clients that enable server-side raw public keys can still
+│                       │     │                   find out that raw
+│                       │     │                   public key verification failed by calling
+│                       │     │                   SSL_get_verify_result(), and those
+│                       │     │                   that do, and take appropriate action, are not affected.  This
+│                       │     │                    issue was
+│                       │     │                   introduced in the initial implementation of RPK support in
+│                       │     │                   OpenSSL 3.2.
+│                       │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │     │                   affected by this issue. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-392 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │     │                  ├ redhat: 3 
+│                       │     │                  ╰ ubuntu: 3 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 7.4 
+│                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+│                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │     │                  │       d57660dcba50a619fafced3fd5e9 
+│                       │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                       │     │                  │       549b611233f92652f0da5328fbe7 
+│                       │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
+│                       │     │                  ├ [6] : https://github.com/pyca/cryptography 
+│                       │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
+│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+│                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-24014 
+│                       │     ├ PkgID           : vim@9.1.1012-r0 
+│                       │     ├ PkgName         : vim 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1012-r0?arch=x86_64&distro=3.22
+│                       │     │                  │       .0_alpha20250108 
+│                       │     │                  ╰ UID : f746eb2388df2edf 
+│                       │     ├ InstalledVersion: 9.1.1012-r0 
+│                       │     ├ FixedVersion    : 9.1.1105-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                       │     ├ Description     : Vim is an open source, command line text editor. A
+│                       │     │                   segmentation fault was found in Vim before 9.1.1043. In
+│                       │     │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                       │     │                   and just operates silently in batch mode. However, it is
+│                       │     │                   still possible to trigger the function that handles the
+│                       │     │                   scrolling of a gui version of Vim by feeding some binary
+│                       │     │                   characters to Vim. The function that handles the scrolling
+│                       │     │                   however may be triggering a redraw, which will access the
+│                       │     │                   ScreenLines pointer, even so this variable hasn't been
+│                       │     │                   allocated (since there is no screen). This vulnerability is
+│                       │     │                   fixed in 9.1.1043. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-787 
+│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     │                  ├ cbl-mariner: 2 
+│                       │     │                  ├ redhat     : 1 
+│                       │     │                  ╰ ubuntu     : 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 4.2 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                       │     │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                       │     │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8a
+│                       │     │                  │      484f5e9163c40e63919 
+│                       │     │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3g
+│                       │     │                  │      9-wg22-v955 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                       │     │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                       │     ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                       │     ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-24014 
+│                       │     ├ PkgID           : vim-common@9.1.1012-r0 
+│                       │     ├ PkgName         : vim-common 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1012-r0?arch=x86_64&dist
+│                       │     │                  │       ro=3.22.0_alpha20250108 
+│                       │     │                  ╰ UID : bf42b34b6032e955 
+│                       │     ├ InstalledVersion: 9.1.1012-r0 
+│                       │     ├ FixedVersion    : 9.1.1105-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                       │     ├ Description     : Vim is an open source, command line text editor. A
+│                       │     │                   segmentation fault was found in Vim before 9.1.1043. In
+│                       │     │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                       │     │                   and just operates silently in batch mode. However, it is
+│                       │     │                   still possible to trigger the function that handles the
+│                       │     │                   scrolling of a gui version of Vim by feeding some binary
+│                       │     │                   characters to Vim. The function that handles the scrolling
+│                       │     │                   however may be triggering a redraw, which will access the
+│                       │     │                   ScreenLines pointer, even so this variable hasn't been
+│                       │     │                   allocated (since there is no screen). This vulnerability is
+│                       │     │                   fixed in 9.1.1043. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-787 
+│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     │                  ├ cbl-mariner: 2 
+│                       │     │                  ├ redhat     : 1 
+│                       │     │                  ╰ ubuntu     : 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 4.2 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                       │     │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                       │     │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8a
+│                       │     │                  │      484f5e9163c40e63919 
+│                       │     │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3g
+│                       │     │                  │      9-wg22-v955 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                       │     │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                       │     ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                       │     ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
+│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-24014 
+│                             ├ PkgID           : xxd@9.1.1012-r0 
+│                             ├ PkgName         : xxd 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1012-r0?arch=x86_64&distro=3.22
+│                             │                  │       .0_alpha20250108 
+│                             │                  ╰ UID : e4c16ff3a45f6d1b 
+│                             ├ InstalledVersion: 9.1.1012-r0 
+│                             ├ FixedVersion    : 9.1.1105-r0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                             │                  │         3d2eae65adf4198ace9 
+│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                             │                            25647b72ba40f5c3b4b 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
+│                             ├ DataSource       ╭ ID  : alpine 
+│                             │                  ├ Name: Alpine Secdb 
+│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                             ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
+│                             ├ Description     : Vim is an open source, command line text editor. A
+│                             │                   segmentation fault was found in Vim before 9.1.1043. In
+│                             │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
+│                             │                   and just operates silently in batch mode. However, it is
+│                             │                   still possible to trigger the function that handles the
+│                             │                   scrolling of a gui version of Vim by feeding some binary
+│                             │                   characters to Vim. The function that handles the scrolling
+│                             │                   however may be triggering a redraw, which will access the
+│                             │                   ScreenLines pointer, even so this variable hasn't been
+│                             │                   allocated (since there is no screen). This vulnerability is
+│                             │                   fixed in 9.1.1043. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-787 
+│                             ├ VendorSeverity   ╭ azure      : 2 
+│                             │                  ├ cbl-mariner: 2 
+│                             │                  ├ redhat     : 1 
+│                             │                  ╰ ubuntu     : 2 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
+│                             │                           │           A:L 
+│                             │                           ╰ V3Score : 4.2 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
+│                             │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
+│                             │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
+│                             │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8a
+│                             │                  │      484f5e9163c40e63919 
+│                             │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3g
+│                             │                  │      9-wg22-v955 
+│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
+│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
+│                             ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
+│                             ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -128,8 +515,8 @@
 │                             │                  ├ Name: GitHub Security Advisory pip 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Apip 
-│                             ├ Title           : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
-│                             │                   to authent ... 
+│                             ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+│                             │                   don't abort as expected 
 │                             ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
 │                             │                   to authenticate a
 │                             │                   server may fail to notice that the server was not
@@ -167,22 +554,29 @@
 │                             ├ Severity        : LOW 
 │                             ├ CweIDs           ─ [0]: CWE-392 
 │                             ├ VendorSeverity   ╭ ghsa  : 1 
+│                             │                  ├ redhat: 3 
 │                             │                  ╰ ubuntu: 3 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/11/3 
-│                             │                  ├ [1]: https://github.com/openssl/openssl/commit/738d4f9fdeaad
-│                             │                  │      57660dcba50a619fafced3fd5e9 
-│                             │                  ├ [2]: https://github.com/openssl/openssl/commit/798779d434945
-│                             │                  │      49b611233f92652f0da5328fbe7 
-│                             │                  ├ [3]: https://github.com/openssl/openssl/commit/87ebd203feffc
-│                             │                  │      f92ad5889df92f90bb0ee10a699 
-│                             │                  ├ [4]: https://github.com/pyca/cryptography 
-│                             │                  ├ [5]: https://github.com/pyca/cryptography/security/advisorie
-│                             │                  │      s/GHSA-79v4-65xg-pq4g 
-│                             │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                             │                  ├ [7]: https://openssl-library.org/news/secadv/20250211.txt 
-│                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 7.4 
+│                             ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+│                             │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+│                             │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                             │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                             │                  │       d57660dcba50a619fafced3fd5e9 
+│                             │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                             │                  │       549b611233f92652f0da5328fbe7 
+│                             │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                             │                  │       cf92ad5889df92f90bb0ee10a699 
+│                             │                  ├ [6] : https://github.com/pyca/cryptography 
+│                             │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                             │                  │       es/GHSA-79v4-65xg-pq4g 
+│                             │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                             │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+│                             │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+│                             │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
 │                             ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-│                             ╰ LastModifiedDate: 2025-02-11T16:15:38.827Z 
+│                             ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
 ├ [3] ╭ Target         : usr/bin/grype 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -304,11 +698,11 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
 │                             │                  ╰ redhat : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                             │                  │         │           /A:H 
-│                             │                  │         ╰ V3Score : 8.4 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 4 
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 5.3 
@@ -442,11 +836,11 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
 │                             │                  ╰ redhat : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                             │                  │         │           /A:H 
-│                             │                  │         ╰ V3Score : 8.4 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 4 
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 5.3 
@@ -487,11 +881,11 @@
 │                             │                    believe this leakage is enough to allow recovery of the
 │                             │                   private key when P-256 is used in any well known protocols. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
 │                             │                  ╰ redhat : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                             │                  │         │           /A:H 
-│                             │                  │         ╰ V3Score : 8.4 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 4 
 │                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 5.3 
@@ -532,11 +926,11 @@
                               │                    believe this leakage is enough to allow recovery of the
                               │                   private key when P-256 is used in any well known protocols. 
                               ├ Severity        : MEDIUM 
-                              ├ VendorSeverity   ╭ bitnami: 3 
+                              ├ VendorSeverity   ╭ bitnami: 2 
                               │                  ╰ redhat : 2 
-                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H
-                              │                  │         │           /A:H 
-                              │                  │         ╰ V3Score : 8.4 
+                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
+                              │                  │         │           /A:N 
+                              │                  │         ╰ V3Score : 4 
                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
                               │                            │           /A:N 
                               │                            ╰ V3Score : 5.3 
