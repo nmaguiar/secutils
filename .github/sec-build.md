@@ -57,28 +57,35 @@
 │                       │     │                   affected by this issue. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-392 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
-│                       │     │                  ├ redhat: 3 
-│                       │     │                  ╰ ubuntu: 3 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ ghsa       : 1 
+│                       │     │                  ├ oracle-oval: 3 
+│                       │     │                  ├ redhat     : 3 
+│                       │     │                  ╰ ubuntu     : 3 
 │                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 7.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
 │                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                       │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
+│                       │     │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2342757 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
+│                       │     │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
 │                       │     │                  │       d57660dcba50a619fafced3fd5e9 
-│                       │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                       │     │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
 │                       │     │                  │       549b611233f92652f0da5328fbe7 
-│                       │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │     │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
 │                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
-│                       │     │                  ├ [6] : https://github.com/pyca/cryptography 
-│                       │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                       │     │                  ├ [9] : https://github.com/pyca/cryptography 
+│                       │     │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
 │                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
-│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │     │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
+│                       │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
+│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
+│                       │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
 │                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
 │                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2024-12797 
@@ -136,31 +143,72 @@
 │                       │     │                   affected by this issue. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-392 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
-│                       │     │                  ├ redhat: 3 
-│                       │     │                  ╰ ubuntu: 3 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ ghsa       : 1 
+│                       │     │                  ├ oracle-oval: 3 
+│                       │     │                  ├ redhat     : 3 
+│                       │     │                  ╰ ubuntu     : 3 
 │                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 7.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
 │                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                       │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
+│                       │     │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2342757 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
+│                       │     │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
 │                       │     │                  │       d57660dcba50a619fafced3fd5e9 
-│                       │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                       │     │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
 │                       │     │                  │       549b611233f92652f0da5328fbe7 
-│                       │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │     │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
 │                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
-│                       │     │                  ├ [6] : https://github.com/pyca/cryptography 
-│                       │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                       │     │                  ├ [9] : https://github.com/pyca/cryptography 
+│                       │     │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
 │                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
-│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │     │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
+│                       │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
+│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
+│                       │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
 │                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
 │                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2024-12797 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-26519 
+│                       │     ├ PkgID           : musl@1.2.5-r9 
+│                       │     ├ PkgName         : musl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r9?arch=x86_64&distro=3.22.0
+│                       │     │                  │       _alpha20250108 
+│                       │     │                  ╰ UID : 5f24e6e13113e0ec 
+│                       │     ├ InstalledVersion: 1.2.5-r9 
+│                       │     ├ FixedVersion    : 1.2.5-r10 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-26519 
+│                       │     ├ PkgID           : musl-utils@1.2.5-r9 
+│                       │     ├ PkgName         : musl-utils 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=
+│                       │     │                  │       3.22.0_alpha20250108 
+│                       │     │                  ╰ UID : 7828f14cf08ceb6a 
+│                       │     ├ InstalledVersion: 1.2.5-r9 
+│                       │     ├ FixedVersion    : 1.2.5-r10 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
+│                       │     │                  │         3d2eae65adf4198ace9 
+│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
+│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2024-12797 
 │                       │     ├ PkgID           : openssl@3.3.2-r5 
 │                       │     ├ PkgName         : openssl 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.2-r5?arch=x86_64&distro=3.2
@@ -215,31 +263,38 @@
 │                       │     │                   affected by this issue. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-392 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
-│                       │     │                  ├ redhat: 3 
-│                       │     │                  ╰ ubuntu: 3 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ ghsa       : 1 
+│                       │     │                  ├ oracle-oval: 3 
+│                       │     │                  ├ redhat     : 3 
+│                       │     │                  ╰ ubuntu     : 3 
 │                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 7.4 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
 │                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                       │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                       │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
+│                       │     │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2342757 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
+│                       │     │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
 │                       │     │                  │       d57660dcba50a619fafced3fd5e9 
-│                       │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                       │     │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
 │                       │     │                  │       549b611233f92652f0da5328fbe7 
-│                       │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                       │     │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
 │                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
-│                       │     │                  ├ [6] : https://github.com/pyca/cryptography 
-│                       │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                       │     │                  ├ [9] : https://github.com/pyca/cryptography 
+│                       │     │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
 │                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
-│                       │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                       │     │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
+│                       │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
+│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                       │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
+│                       │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
+│                       │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
 │                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
 │                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │     ├ PkgID           : vim@9.1.1012-r0 
 │                       │     ├ PkgName         : vim 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1012-r0?arch=x86_64&distro=3.22
@@ -289,7 +344,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │     ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │     ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ├ [6] ╭ VulnerabilityID : CVE-2025-24014 
 │                       │     ├ PkgID           : vim-common@9.1.1012-r0 
 │                       │     ├ PkgName         : vim-common 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1012-r0?arch=x86_64&dist
@@ -339,7 +394,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
 │                       │     ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
 │                       │     ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-24014 
+│                       ╰ [7] ╭ VulnerabilityID : CVE-2025-24014 
 │                             ├ PkgID           : xxd@9.1.1012-r0 
 │                             ├ PkgName         : xxd 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1012-r0?arch=x86_64&distro=3.22
@@ -553,28 +608,35 @@
 │                             │                   affected by this issue. 
 │                             ├ Severity        : LOW 
 │                             ├ CweIDs           ─ [0]: CWE-392 
-│                             ├ VendorSeverity   ╭ ghsa  : 1 
-│                             │                  ├ redhat: 3 
-│                             │                  ╰ ubuntu: 3 
+│                             ├ VendorSeverity   ╭ alma       : 3 
+│                             │                  ├ ghsa       : 1 
+│                             │                  ├ oracle-oval: 3 
+│                             │                  ├ redhat     : 3 
+│                             │                  ╰ ubuntu     : 3 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 7.4 
 │                             ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
 │                             │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                             │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                             │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+│                             │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
+│                             │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
+│                             │                  ├ [4] : https://bugzilla.redhat.com/2342757 
+│                             │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
+│                             │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
 │                             │                  │       d57660dcba50a619fafced3fd5e9 
-│                             │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+│                             │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
 │                             │                  │       549b611233f92652f0da5328fbe7 
-│                             │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+│                             │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
 │                             │                  │       cf92ad5889df92f90bb0ee10a699 
-│                             │                  ├ [6] : https://github.com/pyca/cryptography 
-│                             │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+│                             │                  ├ [9] : https://github.com/pyca/cryptography 
+│                             │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
 │                             │                  │       es/GHSA-79v4-65xg-pq4g 
-│                             │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                             │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
-│                             │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
-│                             │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+│                             │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
+│                             │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
+│                             │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+│                             │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
+│                             │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
+│                             │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
 │                             ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
 │                             ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
 ├ [3] ╭ Target         : usr/bin/grype 
@@ -608,8 +670,9 @@
 │                       │     │                   finally to b.com/2 would incorrectly send the Authorization
 │                       │     │                   header to b.com/2. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ╰ redhat : 2 
+│                       │     ├ VendorSeverity   ╭ bitnami    : 2 
+│                       │     │                  ├ cbl-mariner: 3 
+│                       │     │                  ╰ redhat     : 2 
 │                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
 │                       │     │                  │         │           /A:N 
 │                       │     │                  │         ╰ V3Score : 6.1 
@@ -746,8 +809,9 @@
 │                       │     │                   finally to b.com/2 would incorrectly send the Authorization
 │                       │     │                   header to b.com/2. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ╰ redhat : 2 
+│                       │     ├ VendorSeverity   ╭ bitnami    : 2 
+│                       │     │                  ├ cbl-mariner: 3 
+│                       │     │                  ╰ redhat     : 2 
 │                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L
 │                       │     │                  │         │           /A:N 
 │                       │     │                  │         ╰ V3Score : 6.1 
