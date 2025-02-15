@@ -1,449 +1,7 @@
 ````yaml
-╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
-│     ├ Class          : os-pkgs 
-│     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-12797 
-│                       │     ├ PkgID           : libcrypto3@3.3.2-r5 
-│                       │     ├ PkgName         : libcrypto3 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.2-r5?arch=x86_64&distro=
-│                       │     │                  │       3.22.0_alpha20250108 
-│                       │     │                  ╰ UID : b20a74519786ec00 
-│                       │     ├ InstalledVersion: 3.3.2-r5 
-│                       │     ├ FixedVersion    : 3.3.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
-│                       │     │                   don't abort as expected 
-│                       │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
-│                       │     │                   to authenticate a
-│                       │     │                   server may fail to notice that the server was not
-│                       │     │                   authenticated, because
-│                       │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
-│                       │     │                   verification mode
-│                       │     │                   is set.
-│                       │     │                   
-│                       │     │                   Impact summary: TLS and DTLS connections using raw public
-│                       │     │                   keys may be
-│                       │     │                   vulnerable to man-in-middle attacks when server
-│                       │     │                   authentication failure is not
-│                       │     │                   detected by clients.
-│                       │     │                   RPKs are disabled by default in both TLS clients and TLS
-│                       │     │                   servers.  The issue
-│                       │     │                   only arises when TLS clients explicitly enable RPK use by the
-│                       │     │                    server, and the
-│                       │     │                   server, likewise, enables sending of an RPK instead of an
-│                       │     │                   X.509 certificate
-│                       │     │                   chain.  The affected clients are those that then rely on the
-│                       │     │                   handshake to
-│                       │     │                   fail when the server's RPK fails to match one of the expected
-│                       │     │                    public keys,
-│                       │     │                   by setting the verification mode to SSL_VERIFY_PEER.
-│                       │     │                   Clients that enable server-side raw public keys can still
-│                       │     │                   find out that raw
-│                       │     │                   public key verification failed by calling
-│                       │     │                   SSL_get_verify_result(), and those
-│                       │     │                   that do, and take appropriate action, are not affected.  This
-│                       │     │                    issue was
-│                       │     │                   introduced in the initial implementation of RPK support in
-│                       │     │                   OpenSSL 3.2.
-│                       │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-│                       │     │                   affected by this issue. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-392 
-│                       │     ├ VendorSeverity   ╭ alma       : 3 
-│                       │     │                  ├ ghsa       : 1 
-│                       │     │                  ├ oracle-oval: 3 
-│                       │     │                  ├ redhat     : 3 
-│                       │     │                  ╰ ubuntu     : 3 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 7.4 
-│                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
-│                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                       │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
-│                       │     │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2342757 
-│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
-│                       │     │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
-│                       │     │                  │       d57660dcba50a619fafced3fd5e9 
-│                       │     │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
-│                       │     │                  │       549b611233f92652f0da5328fbe7 
-│                       │     │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
-│                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
-│                       │     │                  ├ [9] : https://github.com/pyca/cryptography 
-│                       │     │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
-│                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
-│                       │     │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
-│                       │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
-│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
-│                       │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
-│                       │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
-│                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-│                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2024-12797 
-│                       │     ├ PkgID           : libssl3@3.3.2-r5 
-│                       │     ├ PkgName         : libssl3 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.2-r5?arch=x86_64&distro=3.2
-│                       │     │                  │       2.0_alpha20250108 
-│                       │     │                  ╰ UID : 6f051c1e41193b6c 
-│                       │     ├ InstalledVersion: 3.3.2-r5 
-│                       │     ├ FixedVersion    : 3.3.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
-│                       │     │                   don't abort as expected 
-│                       │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
-│                       │     │                   to authenticate a
-│                       │     │                   server may fail to notice that the server was not
-│                       │     │                   authenticated, because
-│                       │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
-│                       │     │                   verification mode
-│                       │     │                   is set.
-│                       │     │                   
-│                       │     │                   Impact summary: TLS and DTLS connections using raw public
-│                       │     │                   keys may be
-│                       │     │                   vulnerable to man-in-middle attacks when server
-│                       │     │                   authentication failure is not
-│                       │     │                   detected by clients.
-│                       │     │                   RPKs are disabled by default in both TLS clients and TLS
-│                       │     │                   servers.  The issue
-│                       │     │                   only arises when TLS clients explicitly enable RPK use by the
-│                       │     │                    server, and the
-│                       │     │                   server, likewise, enables sending of an RPK instead of an
-│                       │     │                   X.509 certificate
-│                       │     │                   chain.  The affected clients are those that then rely on the
-│                       │     │                   handshake to
-│                       │     │                   fail when the server's RPK fails to match one of the expected
-│                       │     │                    public keys,
-│                       │     │                   by setting the verification mode to SSL_VERIFY_PEER.
-│                       │     │                   Clients that enable server-side raw public keys can still
-│                       │     │                   find out that raw
-│                       │     │                   public key verification failed by calling
-│                       │     │                   SSL_get_verify_result(), and those
-│                       │     │                   that do, and take appropriate action, are not affected.  This
-│                       │     │                    issue was
-│                       │     │                   introduced in the initial implementation of RPK support in
-│                       │     │                   OpenSSL 3.2.
-│                       │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-│                       │     │                   affected by this issue. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-392 
-│                       │     ├ VendorSeverity   ╭ alma       : 3 
-│                       │     │                  ├ ghsa       : 1 
-│                       │     │                  ├ oracle-oval: 3 
-│                       │     │                  ├ redhat     : 3 
-│                       │     │                  ╰ ubuntu     : 3 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 7.4 
-│                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
-│                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                       │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
-│                       │     │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2342757 
-│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
-│                       │     │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
-│                       │     │                  │       d57660dcba50a619fafced3fd5e9 
-│                       │     │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
-│                       │     │                  │       549b611233f92652f0da5328fbe7 
-│                       │     │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
-│                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
-│                       │     │                  ├ [9] : https://github.com/pyca/cryptography 
-│                       │     │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
-│                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
-│                       │     │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
-│                       │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
-│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
-│                       │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
-│                       │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
-│                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-│                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-26519 
-│                       │     ├ PkgID           : musl@1.2.5-r9 
-│                       │     ├ PkgName         : musl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r9?arch=x86_64&distro=3.22.0
-│                       │     │                  │       _alpha20250108 
-│                       │     │                  ╰ UID : 5f24e6e13113e0ec 
-│                       │     ├ InstalledVersion: 1.2.5-r9 
-│                       │     ├ FixedVersion    : 1.2.5-r10 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ╰ Severity        : UNKNOWN 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-26519 
-│                       │     ├ PkgID           : musl-utils@1.2.5-r9 
-│                       │     ├ PkgName         : musl-utils 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=
-│                       │     │                  │       3.22.0_alpha20250108 
-│                       │     │                  ╰ UID : 7828f14cf08ceb6a 
-│                       │     ├ InstalledVersion: 1.2.5-r9 
-│                       │     ├ FixedVersion    : 1.2.5-r10 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ╰ Severity        : UNKNOWN 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2024-12797 
-│                       │     ├ PkgID           : openssl@3.3.2-r5 
-│                       │     ├ PkgName         : openssl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.2-r5?arch=x86_64&distro=3.2
-│                       │     │                  │       2.0_alpha20250108 
-│                       │     │                  ╰ UID : 135f64f0427e34c 
-│                       │     ├ InstalledVersion: 3.3.2-r5 
-│                       │     ├ FixedVersion    : 3.3.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
-│                       │     │                   don't abort as expected 
-│                       │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
-│                       │     │                   to authenticate a
-│                       │     │                   server may fail to notice that the server was not
-│                       │     │                   authenticated, because
-│                       │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
-│                       │     │                   verification mode
-│                       │     │                   is set.
-│                       │     │                   
-│                       │     │                   Impact summary: TLS and DTLS connections using raw public
-│                       │     │                   keys may be
-│                       │     │                   vulnerable to man-in-middle attacks when server
-│                       │     │                   authentication failure is not
-│                       │     │                   detected by clients.
-│                       │     │                   RPKs are disabled by default in both TLS clients and TLS
-│                       │     │                   servers.  The issue
-│                       │     │                   only arises when TLS clients explicitly enable RPK use by the
-│                       │     │                    server, and the
-│                       │     │                   server, likewise, enables sending of an RPK instead of an
-│                       │     │                   X.509 certificate
-│                       │     │                   chain.  The affected clients are those that then rely on the
-│                       │     │                   handshake to
-│                       │     │                   fail when the server's RPK fails to match one of the expected
-│                       │     │                    public keys,
-│                       │     │                   by setting the verification mode to SSL_VERIFY_PEER.
-│                       │     │                   Clients that enable server-side raw public keys can still
-│                       │     │                   find out that raw
-│                       │     │                   public key verification failed by calling
-│                       │     │                   SSL_get_verify_result(), and those
-│                       │     │                   that do, and take appropriate action, are not affected.  This
-│                       │     │                    issue was
-│                       │     │                   introduced in the initial implementation of RPK support in
-│                       │     │                   OpenSSL 3.2.
-│                       │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-│                       │     │                   affected by this issue. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-392 
-│                       │     ├ VendorSeverity   ╭ alma       : 3 
-│                       │     │                  ├ ghsa       : 1 
-│                       │     │                  ├ oracle-oval: 3 
-│                       │     │                  ├ redhat     : 3 
-│                       │     │                  ╰ ubuntu     : 3 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 7.4 
-│                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
-│                       │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                       │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
-│                       │     │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2342757 
-│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
-│                       │     │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
-│                       │     │                  │       d57660dcba50a619fafced3fd5e9 
-│                       │     │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
-│                       │     │                  │       549b611233f92652f0da5328fbe7 
-│                       │     │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
-│                       │     │                  │       cf92ad5889df92f90bb0ee10a699 
-│                       │     │                  ├ [9] : https://github.com/pyca/cryptography 
-│                       │     │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
-│                       │     │                  │       es/GHSA-79v4-65xg-pq4g 
-│                       │     │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
-│                       │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
-│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                       │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
-│                       │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
-│                       │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
-│                       │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-│                       │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
-│                       ├ [5] ╭ VulnerabilityID : CVE-2025-24014 
-│                       │     ├ PkgID           : vim@9.1.1012-r0 
-│                       │     ├ PkgName         : vim 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1012-r0?arch=x86_64&distro=3.22
-│                       │     │                  │       .0_alpha20250108 
-│                       │     │                  ╰ UID : f746eb2388df2edf 
-│                       │     ├ InstalledVersion: 9.1.1012-r0 
-│                       │     ├ FixedVersion    : 9.1.1105-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
-│                       │     ├ Description     : Vim is an open source, command line text editor. A
-│                       │     │                   segmentation fault was found in Vim before 9.1.1043. In
-│                       │     │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
-│                       │     │                   and just operates silently in batch mode. However, it is
-│                       │     │                   still possible to trigger the function that handles the
-│                       │     │                   scrolling of a gui version of Vim by feeding some binary
-│                       │     │                   characters to Vim. The function that handles the scrolling
-│                       │     │                   however may be triggering a redraw, which will access the
-│                       │     │                   ScreenLines pointer, even so this variable hasn't been
-│                       │     │                   allocated (since there is no screen). This vulnerability is
-│                       │     │                   fixed in 9.1.1043. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-787 
-│                       │     ├ VendorSeverity   ╭ azure      : 2 
-│                       │     │                  ├ cbl-mariner: 2 
-│                       │     │                  ├ redhat     : 1 
-│                       │     │                  ╰ ubuntu     : 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
-│                       │     │                           │           A:L 
-│                       │     │                           ╰ V3Score : 4.2 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
-│                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
-│                       │     │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
-│                       │     │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8a
-│                       │     │                  │      484f5e9163c40e63919 
-│                       │     │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3g
-│                       │     │                  │      9-wg22-v955 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
-│                       │     │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
-│                       │     ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
-│                       │     ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ├ [6] ╭ VulnerabilityID : CVE-2025-24014 
-│                       │     ├ PkgID           : vim-common@9.1.1012-r0 
-│                       │     ├ PkgName         : vim-common 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1012-r0?arch=x86_64&dist
-│                       │     │                  │       ro=3.22.0_alpha20250108 
-│                       │     │                  ╰ UID : bf42b34b6032e955 
-│                       │     ├ InstalledVersion: 9.1.1012-r0 
-│                       │     ├ FixedVersion    : 9.1.1105-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
-│                       │     ├ Description     : Vim is an open source, command line text editor. A
-│                       │     │                   segmentation fault was found in Vim before 9.1.1043. In
-│                       │     │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
-│                       │     │                   and just operates silently in batch mode. However, it is
-│                       │     │                   still possible to trigger the function that handles the
-│                       │     │                   scrolling of a gui version of Vim by feeding some binary
-│                       │     │                   characters to Vim. The function that handles the scrolling
-│                       │     │                   however may be triggering a redraw, which will access the
-│                       │     │                   ScreenLines pointer, even so this variable hasn't been
-│                       │     │                   allocated (since there is no screen). This vulnerability is
-│                       │     │                   fixed in 9.1.1043. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-787 
-│                       │     ├ VendorSeverity   ╭ azure      : 2 
-│                       │     │                  ├ cbl-mariner: 2 
-│                       │     │                  ├ redhat     : 1 
-│                       │     │                  ╰ ubuntu     : 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
-│                       │     │                           │           A:L 
-│                       │     │                           ╰ V3Score : 4.2 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
-│                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
-│                       │     │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
-│                       │     │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8a
-│                       │     │                  │      484f5e9163c40e63919 
-│                       │     │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3g
-│                       │     │                  │      9-wg22-v955 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
-│                       │     │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
-│                       │     ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
-│                       │     ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
-│                       ╰ [7] ╭ VulnerabilityID : CVE-2025-24014 
-│                             ├ PkgID           : xxd@9.1.1012-r0 
-│                             ├ PkgName         : xxd 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1012-r0?arch=x86_64&distro=3.22
-│                             │                  │       .0_alpha20250108 
-│                             │                  ╰ UID : e4c16ff3a45f6d1b 
-│                             ├ InstalledVersion: 9.1.1012-r0 
-│                             ├ FixedVersion    : 9.1.1105-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                             │                  │         3d2eae65adf4198ace9 
-│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                             │                            25647b72ba40f5c3b4b 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24014 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Title           : vim: segmentation fault in win_line() in Vim < 9.1.1043 
-│                             ├ Description     : Vim is an open source, command line text editor. A
-│                             │                   segmentation fault was found in Vim before 9.1.1043. In
-│                             │                   silent Ex mode (-s -e), Vim typically doesn't show a screen
-│                             │                   and just operates silently in batch mode. However, it is
-│                             │                   still possible to trigger the function that handles the
-│                             │                   scrolling of a gui version of Vim by feeding some binary
-│                             │                   characters to Vim. The function that handles the scrolling
-│                             │                   however may be triggering a redraw, which will access the
-│                             │                   ScreenLines pointer, even so this variable hasn't been
-│                             │                   allocated (since there is no screen). This vulnerability is
-│                             │                   fixed in 9.1.1043. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-787 
-│                             ├ VendorSeverity   ╭ azure      : 2 
-│                             │                  ├ cbl-mariner: 2 
-│                             │                  ├ redhat     : 1 
-│                             │                  ╰ ubuntu     : 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
-│                             │                           │           A:L 
-│                             │                           ╰ V3Score : 4.2 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/01/20/4 
-│                             │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/01/21/1 
-│                             │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-24014 
-│                             │                  ├ [3]: https://github.com/vim/vim/commit/9d1bed5eccdbb46a26b8a
-│                             │                  │      484f5e9163c40e63919 
-│                             │                  ├ [4]: https://github.com/vim/vim/security/advisories/GHSA-j3g
-│                             │                  │      9-wg22-v955 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-24014 
-│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7261-1 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-24014 
-│                             ├ PublishedDate   : 2025-01-20T23:15:07.73Z 
-│                             ╰ LastModifiedDate: 2025-01-21T03:15:06.393Z 
+╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
+│     ├ Class : os-pkgs 
+│     ╰ Type  : alpine 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -455,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                       │     │                  │         2b13a5fbfcf93756ed5 
+│                       │     │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                       │     │                            53a6bfe4d10870606bb 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -511,10 +69,10 @@
 │                             ├ InstalledVersion: 1.2.13 
 │                             ├ FixedVersion    : 1.5.13, 1.3.15 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                             │                  │         3d2eae65adf4198ace9 
-│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                             │                            25647b72ba40f5c3b4b 
+│                             ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                             │                  │         2b13a5fbfcf93756ed5 
+│                             │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                             │                            53a6bfe4d10870606bb 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -548,97 +106,9 @@
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-12801 
 │                             ├ PublishedDate   : 2024-12-19T17:15:08.93Z 
 │                             ╰ LastModifiedDate: 2025-01-03T14:15:24.5Z 
-├ [2] ╭ Target         : Python 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : python-pkg 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-12797 
-│                             ├ PkgName         : cryptography 
-│                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/cryptograph
-│                             │                   y-44.0.0.dist-info/METADATA 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:pypi/cryptography@44.0.0 
-│                             │                  ╰ UID : de133b053c574d7 
-│                             ├ InstalledVersion: 44.0.0 
-│                             ├ FixedVersion    : 44.0.1 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                             │                  │         3d2eae65adf4198ace9 
-│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                             │                            25647b72ba40f5c3b4b 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory pip 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Apip 
-│                             ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
-│                             │                   don't abort as expected 
-│                             ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
-│                             │                   to authenticate a
-│                             │                   server may fail to notice that the server was not
-│                             │                   authenticated, because
-│                             │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
-│                             │                   verification mode
-│                             │                   is set.
-│                             │                   
-│                             │                   Impact summary: TLS and DTLS connections using raw public
-│                             │                   keys may be
-│                             │                   vulnerable to man-in-middle attacks when server
-│                             │                   authentication failure is not
-│                             │                   detected by clients.
-│                             │                   RPKs are disabled by default in both TLS clients and TLS
-│                             │                   servers.  The issue
-│                             │                   only arises when TLS clients explicitly enable RPK use by the
-│                             │                    server, and the
-│                             │                   server, likewise, enables sending of an RPK instead of an
-│                             │                   X.509 certificate
-│                             │                   chain.  The affected clients are those that then rely on the
-│                             │                   handshake to
-│                             │                   fail when the server's RPK fails to match one of the expected
-│                             │                    public keys,
-│                             │                   by setting the verification mode to SSL_VERIFY_PEER.
-│                             │                   Clients that enable server-side raw public keys can still
-│                             │                   find out that raw
-│                             │                   public key verification failed by calling
-│                             │                   SSL_get_verify_result(), and those
-│                             │                   that do, and take appropriate action, are not affected.  This
-│                             │                    issue was
-│                             │                   introduced in the initial implementation of RPK support in
-│                             │                   OpenSSL 3.2.
-│                             │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-│                             │                   affected by this issue. 
-│                             ├ Severity        : LOW 
-│                             ├ CweIDs           ─ [0]: CWE-392 
-│                             ├ VendorSeverity   ╭ alma       : 3 
-│                             │                  ├ ghsa       : 1 
-│                             │                  ├ oracle-oval: 3 
-│                             │                  ├ redhat     : 3 
-│                             │                  ╰ ubuntu     : 3 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 7.4 
-│                             ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
-│                             │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
-│                             │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:1330 
-│                             │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2024-12797 
-│                             │                  ├ [4] : https://bugzilla.redhat.com/2342757 
-│                             │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-1330.html 
-│                             │                  ├ [6] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
-│                             │                  │       d57660dcba50a619fafced3fd5e9 
-│                             │                  ├ [7] : https://github.com/openssl/openssl/commit/798779d43494
-│                             │                  │       549b611233f92652f0da5328fbe7 
-│                             │                  ├ [8] : https://github.com/openssl/openssl/commit/87ebd203feff
-│                             │                  │       cf92ad5889df92f90bb0ee10a699 
-│                             │                  ├ [9] : https://github.com/pyca/cryptography 
-│                             │                  ├ [10]: https://github.com/pyca/cryptography/security/advisori
-│                             │                  │       es/GHSA-79v4-65xg-pq4g 
-│                             │                  ├ [11]: https://linux.oracle.com/cve/CVE-2024-12797.html 
-│                             │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
-│                             │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
-│                             │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
-│                             │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
-│                             │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
-│                             ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-│                             ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+├ [2] ╭ Target: Python 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : python-pkg 
 ├ [3] ╭ Target         : usr/bin/grype 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -650,10 +120,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                       │     │                  │         2b13a5fbfcf93756ed5 
+│                       │     │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                       │     │                            53a6bfe4d10870606bb 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45336 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -699,10 +169,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                       │     │                  │         2b13a5fbfcf93756ed5 
+│                       │     │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                       │     │                            53a6bfe4d10870606bb 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45341 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -744,10 +214,10 @@
 │                             ├ InstalledVersion: v1.23.4 
 │                             ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                             │                  │         3d2eae65adf4198ace9 
-│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                             │                            25647b72ba40f5c3b4b 
+│                             ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                             │                  │         2b13a5fbfcf93756ed5 
+│                             │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                             │                            53a6bfe4d10870606bb 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
@@ -789,10 +259,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                       │     │                  │         2b13a5fbfcf93756ed5 
+│                       │     │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                       │     │                            53a6bfe4d10870606bb 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45336 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -838,10 +308,10 @@
 │                       │     ├ InstalledVersion: v1.23.4 
 │                       │     ├ FixedVersion    : 1.22.11, 1.23.5, 1.24.0-rc.2 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                       │     │                  │         3d2eae65adf4198ace9 
-│                       │     │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                       │     │                            25647b72ba40f5c3b4b 
+│                       │     ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                       │     │                  │         2b13a5fbfcf93756ed5 
+│                       │     │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                       │     │                            53a6bfe4d10870606bb 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-45341 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -883,10 +353,10 @@
 │                             ├ InstalledVersion: v1.23.4 
 │                             ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                             │                  │         3d2eae65adf4198ace9 
-│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                             │                            25647b72ba40f5c3b4b 
+│                             ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                             │                  │         2b13a5fbfcf93756ed5 
+│                             │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                             │                            53a6bfe4d10870606bb 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
@@ -928,10 +398,10 @@
 │                             ├ InstalledVersion: v1.23.5 
 │                             ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-│                             │                  │         3d2eae65adf4198ace9 
-│                             │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-│                             │                            25647b72ba40f5c3b4b 
+│                             ├ Layer            ╭ Digest: sha256:40ee0c193cfddf7288e545393524363a4c6bd007a253b
+│                             │                  │         2b13a5fbfcf93756ed5 
+│                             │                  ╰ DiffID: sha256:6f3b11d2235d7ae6bb859328273c78c80e4f4dc07d246
+│                             │                            53a6bfe4d10870606bb 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
@@ -962,49 +432,7 @@
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
 │                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
-╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
-      ├ Class          : lang-pkgs 
-      ├ Type           : gobinary 
-      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22866 
-                              ├ PkgID           : stdlib@v1.23.5 
-                              ├ PkgName         : stdlib 
-                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
-                              │                  ╰ UID : 5337d53bed57bdb0 
-                              ├ InstalledVersion: v1.23.5 
-                              ├ FixedVersion    : 1.22.12, 1.23.6, 1.24.0-rc.3 
-                              ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:3146ed9ddeb6b129d75f86891a23ef56b622255029185
-                              │                  │         3d2eae65adf4198ace9 
-                              │                  ╰ DiffID: sha256:00357bbfb0a11dfcfd00feb548efd0b48035dfb783ce9
-                              │                            25647b72ba40f5c3b4b 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22866 
-                              ├ DataSource       ╭ ID  : govulndb 
-                              │                  ├ Name: The Go Vulnerability Database 
-                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Title           : crypto/internal/nistec: golang: Timing sidechannel for P-256
-                              │                   on ppc64le in crypto/internal/nistec 
-                              ├ Description     : Due to the usage of a variable time instruction in the
-                              │                   assembly implementation of an internal function, a small
-                              │                   number of bits of secret scalars are leaked on the ppc64le
-                              │                   architecture. Due to the way this function is used, we do not
-                              │                    believe this leakage is enough to allow recovery of the
-                              │                   private key when P-256 is used in any well known protocols. 
-                              ├ Severity        : MEDIUM 
-                              ├ VendorSeverity   ╭ bitnami: 2 
-                              │                  ╰ redhat : 2 
-                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N
-                              │                  │         │           /A:N 
-                              │                  │         ╰ V3Score : 4 
-                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-                              │                            │           /A:N 
-                              │                            ╰ V3Score : 5.3 
-                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22866 
-                              │                  ├ [1]: https://go.dev/cl/643735 
-                              │                  ├ [2]: https://go.dev/issue/71383 
-                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k 
-                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
-                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
-                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
-                              ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-                              ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
+╰ [6] ╭ Target: usr/bin/trivy_cve_query 
+      ├ Class : lang-pkgs 
+      ╰ Type  : gobinary 
 ````
