@@ -158,9 +158,10 @@
 │                       │     │                  │      G461hA6lCgAJ 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-45336 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3420 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250221-0003/ 
+│                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:28.807Z 
-│                       │     ╰ LastModifiedDate: 2025-01-28T16:15:38.22Z 
+│                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.4Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2024-45341 
 │                       │     ├ PkgID           : stdlib@v1.23.4 
 │                       │     ├ PkgName         : stdlib 
@@ -203,9 +204,10 @@
 │                       │     │                  │      G461hA6lCgAJ 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-45341 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3373 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250221-0004/ 
+│                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:29.147Z 
-│                       │     ╰ LastModifiedDate: 2025-01-28T16:15:38.65Z 
+│                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.96Z 
 │                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22866 
 │                             ├ PkgID           : stdlib@v1.23.4 
 │                             ├ PkgName         : stdlib 
@@ -245,9 +247,10 @@
 │                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k 
 │                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
-│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
+│                             │                  ├ [6]: https://security.netapp.com/advisory/ntap-20250221-0002/ 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
+│                             ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -297,9 +300,10 @@
 │                       │     │                  │      G461hA6lCgAJ 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-45336 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3420 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250221-0003/ 
+│                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45336 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:28.807Z 
-│                       │     ╰ LastModifiedDate: 2025-01-28T16:15:38.22Z 
+│                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.4Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2024-45341 
 │                       │     ├ PkgID           : stdlib@v1.23.4 
 │                       │     ├ PkgName         : stdlib 
@@ -342,9 +346,10 @@
 │                       │     │                  │      G461hA6lCgAJ 
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-45341 
 │                       │     │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3373 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
+│                       │     │                  ├ [7]: https://security.netapp.com/advisory/ntap-20250221-0004/ 
+│                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2024-45341 
 │                       │     ├ PublishedDate   : 2025-01-28T02:15:29.147Z 
-│                       │     ╰ LastModifiedDate: 2025-01-28T16:15:38.65Z 
+│                       │     ╰ LastModifiedDate: 2025-02-21T18:15:17.96Z 
 │                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22866 
 │                             ├ PkgID           : stdlib@v1.23.4 
 │                             ├ PkgName         : stdlib 
@@ -384,9 +389,10 @@
 │                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k 
 │                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
-│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
+│                             │                  ├ [6]: https://security.netapp.com/advisory/ntap-20250221-0002/ 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
+│                             ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -429,9 +435,10 @@
 │                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/xU1ZCHUZw3k 
 │                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22866 
 │                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3447 
-│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
+│                             │                  ├ [6]: https://security.netapp.com/advisory/ntap-20250221-0002/ 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22866 
 │                             ├ PublishedDate   : 2025-02-06T17:15:21.41Z 
-│                             ╰ LastModifiedDate: 2025-02-11T15:15:20.87Z 
+│                             ╰ LastModifiedDate: 2025-02-21T18:15:32.243Z 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
