@@ -257,7 +257,53 @@
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22866 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-27144 
+│                       │     ├ PkgID           : github.com/go-jose/go-jose/v4@v4.0.4 
+│                       │     ├ PkgName         : github.com/go-jose/go-jose/v4 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-jose/go-jose/v4@v4.0.4 
+│                       │     │                  ╰ UID : d08cba66401fbb49 
+│                       │     ├ InstalledVersion: v4.0.4 
+│                       │     ├ FixedVersion    : 4.0.5 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:5a67fc450c70ced81aad0dfe7b13fbde0fe4faaf31b79
+│                       │     │                  │         e58c492c60270f84b6b 
+│                       │     │                  ╰ DiffID: sha256:48879e816ca524166e35df28ad3a336a3bc53622b2d4e
+│                       │     │                            29a0575bbbeb4b8ac73 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-27144 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : DoS in go-jose Parsing 
+│                       │     ├ Description     : ### Impact
+│                       │     │                   When parsing compact JWS or JWE input, go-jose could use
+│                       │     │                   excessive memory. The code used strings.Split(token, ".") to
+│                       │     │                   split JWT tokens, which is vulnerable to excessive memory
+│                       │     │                   consumption when processing maliciously crafted tokens with a
+│                       │     │                    large number of '.' characters.  An attacker could exploit
+│                       │     │                   this by sending numerous malformed tokens, leading to memory
+│                       │     │                   exhaustion and a Denial of Service.
+│                       │     │                   
+│                       │     │                   ### Patches
+│                       │     │                   Version 4.0.5 fixes this issue
+│                       │     │                   ### Workarounds
+│                       │     │                   Applications could pre-validate payloads passed to go-jose do
+│                       │     │                    not contain an excessive number of '.' characters.
+│                       │     │                   ### References
+│                       │     │                   This is the same sort of issue as in the
+│                       │     │                   golang.org/x/oauth2/jws package as CVE-2025-22868 and Go
+│                       │     │                   issue https://go.dev/issue/71490. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ╰ References       ╭ [0]: https://github.com/go-jose/go-jose 
+│                       │                        ├ [1]: https://github.com/go-jose/go-jose/commit/99b346cec4e86
+│                       │                        │      d102284642c5dcbe9bb0cacfc22 
+│                       │                        ├ [2]: https://github.com/go-jose/go-jose/security/advisories/
+│                       │                        │      GHSA-c6gw-w398-hv78 
+│                       │                        ├ [3]: https://github.com/golang/go/issues/71490 
+│                       │                        ╰ [4]: https://go.dev/issue/71490 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22866 
 │                             ├ PkgID           : stdlib@v1.23.5 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.23.5 
