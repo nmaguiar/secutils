@@ -55,7 +55,7 @@ RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | 
 
 # Setup the latest DependencyCheck
 # --------------------------------
-RUN VERSION=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)\
+RUN VERSION=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt | head -1)\
  && curl -Ls "https://github.com/jeremylong/DependencyCheck/releases/download/v$VERSION/dependency-check-$VERSION-release.zip" --output dependency-check.zip\
  && unzip dependency-check.zip -d /opt\
  && rm dependency-check.zip\
