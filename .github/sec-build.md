@@ -275,34 +275,42 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : DoS in go-jose Parsing 
-│                       │     ├ Description     : ### Impact
-│                       │     │                   When parsing compact JWS or JWE input, go-jose could use
-│                       │     │                   excessive memory. The code used strings.Split(token, ".") to
-│                       │     │                   split JWT tokens, which is vulnerable to excessive memory
-│                       │     │                   consumption when processing maliciously crafted tokens with a
-│                       │     │                    large number of '.' characters.  An attacker could exploit
-│                       │     │                   this by sending numerous malformed tokens, leading to memory
-│                       │     │                   exhaustion and a Denial of Service.
-│                       │     │                   
-│                       │     │                   ### Patches
-│                       │     │                   Version 4.0.5 fixes this issue
-│                       │     │                   ### Workarounds
-│                       │     │                   Applications could pre-validate payloads passed to go-jose do
-│                       │     │                    not contain an excessive number of '.' characters.
-│                       │     │                   ### References
-│                       │     │                   This is the same sort of issue as in the
-│                       │     │                   golang.org/x/oauth2/jws package as CVE-2025-22868 and Go
-│                       │     │                   issue https://go.dev/issue/71490. 
+│                       │     ├ Title           : go-jose: Go JOSE's Parsing Vulnerable to Denial of Service 
+│                       │     ├ Description     : Go JOSE provides an implementation of the Javascript Object
+│                       │     │                   Signing and Encryption set of standards in Go, including
+│                       │     │                   support for JSON Web Encryption (JWE), JSON Web Signature
+│                       │     │                   (JWS), and JSON Web Token (JWT) standards. In versions on the
+│                       │     │                    4.x branch prior to version 4.0.5, when parsing compact JWS
+│                       │     │                   or JWE input, Go JOSE could use excessive memory. The code
+│                       │     │                   used strings.Split(token, ".") to split JWT tokens, which is
+│                       │     │                   vulnerable to excessive memory consumption when processing
+│                       │     │                   maliciously crafted tokens with a large number of `.`
+│                       │     │                   characters.  An attacker could exploit this by sending
+│                       │     │                   numerous malformed tokens, leading to memory exhaustion and a
+│                       │     │                    Denial of Service. Version 4.0.5 fixes this issue. As a
+│                       │     │                   workaround, applications could pre-validate that payloads
+│                       │     │                   passed to Go JOSE do not contain an excessive number of `.`
+│                       │     │                   characters. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ╰ References       ╭ [0]: https://github.com/go-jose/go-jose 
-│                       │                        ├ [1]: https://github.com/go-jose/go-jose/commit/99b346cec4e86
-│                       │                        │      d102284642c5dcbe9bb0cacfc22 
-│                       │                        ├ [2]: https://github.com/go-jose/go-jose/security/advisories/
-│                       │                        │      GHSA-c6gw-w398-hv78 
-│                       │                        ├ [3]: https://github.com/golang/go/issues/71490 
-│                       │                        ╰ [4]: https://go.dev/issue/71490 
+│                       │     ├ CweIDs           ─ [0]: CWE-770 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27144 
+│                       │     │                  ├ [1]: https://github.com/go-jose/go-jose 
+│                       │     │                  ├ [2]: https://github.com/go-jose/go-jose/commit/99b346cec4e86
+│                       │     │                  │      d102284642c5dcbe9bb0cacfc22 
+│                       │     │                  ├ [3]: https://github.com/go-jose/go-jose/releases/tag/v4.0.5 
+│                       │     │                  ├ [4]: https://github.com/go-jose/go-jose/security/advisories/
+│                       │     │                  │      GHSA-c6gw-w398-hv78 
+│                       │     │                  ├ [5]: https://github.com/golang/go/issues/71490 
+│                       │     │                  ├ [6]: https://go.dev/issue/71490 
+│                       │     │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-27144 
+│                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-27144 
+│                       │     ├ PublishedDate   : 2025-02-24T23:15:11.427Z 
+│                       │     ╰ LastModifiedDate: 2025-02-24T23:15:11.427Z 
 │                       ╰ [1] ╭ VulnerabilityID : CVE-2025-22866 
 │                             ├ PkgID           : stdlib@v1.23.5 
 │                             ├ PkgName         : stdlib 
