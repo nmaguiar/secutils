@@ -112,12 +112,82 @@
 ├ [3] ╭ Target: usr/bin/grype 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
-├ [4] ╭ Target: usr/bin/syft 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
-├ [5] ╭ Target: usr/bin/trivy 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
+├ [4] ╭ Target         : usr/bin/syft 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22870 
+│                             ├ PkgID           : golang.org/x/net@v0.35.0 
+│                             ├ PkgName         : golang.org/x/net 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.35.0 
+│                             │                  ╰ UID : 7d2d5895ed519e74 
+│                             ├ InstalledVersion: v0.35.0 
+│                             ├ FixedVersion    : 0.36.0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:6e1e4f5a3813003cb98a3992c12f1b7b4f03284aff45c
+│                             │                  │         1cf45cef17ac106c520 
+│                             │                  ╰ DiffID: sha256:5e59f48e96145d161053649f9b94146f48897b84c47ba
+│                             │                            cafce4134f4eaa2a53c 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory Go 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Ago 
+│                             ├ Title           : Matching of hosts against proxy patterns can improperly treat
+│                             │                    an IPv6  ... 
+│                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                             │                    an IPv6 zone ID as a hostname component. For example, when
+│                             │                   the NO_PROXY environment variable is set to "*.example.com",
+│                             │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                             │                    and not be proxied. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                             │                  ├ [1]: https://go-review.googlesource.com/q/project:net 
+│                             │                  ├ [2]: https://go.dev/cl/654697 
+│                             │                  ├ [3]: https://go.dev/issue/71984 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                             │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                             ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                             ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
+├ [5] ╭ Target         : usr/bin/trivy 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22870 
+│                             ├ PkgID           : golang.org/x/net@v0.35.0 
+│                             ├ PkgName         : golang.org/x/net 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.35.0 
+│                             │                  ╰ UID : 325e684f5d1e2a9e 
+│                             ├ InstalledVersion: v0.35.0 
+│                             ├ FixedVersion    : 0.36.0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:6e1e4f5a3813003cb98a3992c12f1b7b4f03284aff45c
+│                             │                  │         1cf45cef17ac106c520 
+│                             │                  ╰ DiffID: sha256:5e59f48e96145d161053649f9b94146f48897b84c47ba
+│                             │                            cafce4134f4eaa2a53c 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory Go 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Ago 
+│                             ├ Title           : Matching of hosts against proxy patterns can improperly treat
+│                             │                    an IPv6  ... 
+│                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
+│                             │                    an IPv6 zone ID as a hostname component. For example, when
+│                             │                   the NO_PROXY environment variable is set to "*.example.com",
+│                             │                   a request to "[::1%25.example.com]:80` will incorrectly match
+│                             │                    and not be proxied. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
+│                             │                  ├ [1]: https://go-review.googlesource.com/q/project:net 
+│                             │                  ├ [2]: https://go.dev/cl/654697 
+│                             │                  ├ [3]: https://go.dev/issue/71984 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
+│                             │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-3503 
+│                             ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
+│                             ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
