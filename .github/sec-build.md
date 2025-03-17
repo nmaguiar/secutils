@@ -1,7 +1,127 @@
 ````yaml
-╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
-│     ├ Class : os-pkgs 
-│     ╰ Type  : alpine 
+╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
+│     ├ Class          : os-pkgs 
+│     ├ Type           : alpine 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-29768 
+│                       │     ├ PkgID           : vim@9.1.1164-r0 
+│                       │     ├ PkgName         : vim 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1164-r0?arch=x86_64&distro=3.22
+│                       │     │                  │       .0_alpha20250108 
+│                       │     │                  ╰ UID : a05b1bcef8f6b159 
+│                       │     ├ InstalledVersion: 9.1.1164-r0 
+│                       │     ├ FixedVersion    : 9.1.1202-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
+│                       │     │                  │         a9deefcb27f6f856c9b 
+│                       │     │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
+│                       │     │                            c89f1e399177a248bee 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-29768 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : vim: Vim vulnerable to potential data loss with zip.vim and
+│                       │     │                   special crafted zip files 
+│                       │     ├ Description     : Vim, a text editor, is vulnerable to potential data loss with
+│                       │     │                    zip.vim and special crafted zip files in versions prior to
+│                       │     │                   9.1.1198. The impact is medium because a user must be made to
+│                       │     │                    view such an archive with Vim and then press 'x' on such a
+│                       │     │                   strange filename. The issue has been fixed as of Vim patch
+│                       │     │                   v9.1.1198. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-88 
+│                       │     ├ VendorSeverity   ─ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 4.4 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-29768 
+│                       │     │                  ├ [1]: https://github.com/vim/vim/commit/f209dcd3defb95bae21b2
+│                       │     │                  │      740910e6aa7bb940531 
+│                       │     │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-693
+│                       │     │                  │      p-m996-3rmf 
+│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-29768 
+│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29768 
+│                       │     ├ PublishedDate   : 2025-03-13T17:15:37.623Z 
+│                       │     ╰ LastModifiedDate: 2025-03-13T17:15:37.623Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-29768 
+│                       │     ├ PkgID           : vim-common@9.1.1164-r0 
+│                       │     ├ PkgName         : vim-common 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1164-r0?arch=x86_64&dist
+│                       │     │                  │       ro=3.22.0_alpha20250108 
+│                       │     │                  ╰ UID : e8574bb3ddc93fc 
+│                       │     ├ InstalledVersion: 9.1.1164-r0 
+│                       │     ├ FixedVersion    : 9.1.1202-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
+│                       │     │                  │         a9deefcb27f6f856c9b 
+│                       │     │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
+│                       │     │                            c89f1e399177a248bee 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-29768 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : vim: Vim vulnerable to potential data loss with zip.vim and
+│                       │     │                   special crafted zip files 
+│                       │     ├ Description     : Vim, a text editor, is vulnerable to potential data loss with
+│                       │     │                    zip.vim and special crafted zip files in versions prior to
+│                       │     │                   9.1.1198. The impact is medium because a user must be made to
+│                       │     │                    view such an archive with Vim and then press 'x' on such a
+│                       │     │                   strange filename. The issue has been fixed as of Vim patch
+│                       │     │                   v9.1.1198. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-88 
+│                       │     ├ VendorSeverity   ─ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 4.4 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-29768 
+│                       │     │                  ├ [1]: https://github.com/vim/vim/commit/f209dcd3defb95bae21b2
+│                       │     │                  │      740910e6aa7bb940531 
+│                       │     │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-693
+│                       │     │                  │      p-m996-3rmf 
+│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-29768 
+│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29768 
+│                       │     ├ PublishedDate   : 2025-03-13T17:15:37.623Z 
+│                       │     ╰ LastModifiedDate: 2025-03-13T17:15:37.623Z 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-29768 
+│                             ├ PkgID           : xxd@9.1.1164-r0 
+│                             ├ PkgName         : xxd 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1164-r0?arch=x86_64&distro=3.22
+│                             │                  │       .0_alpha20250108 
+│                             │                  ╰ UID : 263eb45890c82db2 
+│                             ├ InstalledVersion: 9.1.1164-r0 
+│                             ├ FixedVersion    : 9.1.1202-r0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
+│                             │                  │         a9deefcb27f6f856c9b 
+│                             │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
+│                             │                            c89f1e399177a248bee 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-29768 
+│                             ├ DataSource       ╭ ID  : alpine 
+│                             │                  ├ Name: Alpine Secdb 
+│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                             ├ Title           : vim: Vim vulnerable to potential data loss with zip.vim and
+│                             │                   special crafted zip files 
+│                             ├ Description     : Vim, a text editor, is vulnerable to potential data loss with
+│                             │                    zip.vim and special crafted zip files in versions prior to
+│                             │                   9.1.1198. The impact is medium because a user must be made to
+│                             │                    view such an archive with Vim and then press 'x' on such a
+│                             │                   strange filename. The issue has been fixed as of Vim patch
+│                             │                   v9.1.1198. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-88 
+│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 4.4 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-29768 
+│                             │                  ├ [1]: https://github.com/vim/vim/commit/f209dcd3defb95bae21b2
+│                             │                  │      740910e6aa7bb940531 
+│                             │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-693
+│                             │                  │      p-m996-3rmf 
+│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-29768 
+│                             │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29768 
+│                             ├ PublishedDate   : 2025-03-13T17:15:37.623Z 
+│                             ╰ LastModifiedDate: 2025-03-13T17:15:37.623Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
