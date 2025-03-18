@@ -1,127 +1,7 @@
 ````yaml
-╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
-│     ├ Class          : os-pkgs 
-│     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-29768 
-│                       │     ├ PkgID           : vim@9.1.1164-r0 
-│                       │     ├ PkgName         : vim 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1164-r0?arch=x86_64&distro=3.22
-│                       │     │                  │       .0_alpha20250108 
-│                       │     │                  ╰ UID : a05b1bcef8f6b159 
-│                       │     ├ InstalledVersion: 9.1.1164-r0 
-│                       │     ├ FixedVersion    : 9.1.1202-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
-│                       │     │                  │         a9deefcb27f6f856c9b 
-│                       │     │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
-│                       │     │                            c89f1e399177a248bee 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-29768 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : vim: Vim vulnerable to potential data loss with zip.vim and
-│                       │     │                   special crafted zip files 
-│                       │     ├ Description     : Vim, a text editor, is vulnerable to potential data loss with
-│                       │     │                    zip.vim and special crafted zip files in versions prior to
-│                       │     │                   9.1.1198. The impact is medium because a user must be made to
-│                       │     │                    view such an archive with Vim and then press 'x' on such a
-│                       │     │                   strange filename. The issue has been fixed as of Vim patch
-│                       │     │                   v9.1.1198. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-88 
-│                       │     ├ VendorSeverity   ─ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 4.4 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-29768 
-│                       │     │                  ├ [1]: https://github.com/vim/vim/commit/f209dcd3defb95bae21b2
-│                       │     │                  │      740910e6aa7bb940531 
-│                       │     │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-693
-│                       │     │                  │      p-m996-3rmf 
-│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-29768 
-│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29768 
-│                       │     ├ PublishedDate   : 2025-03-13T17:15:37.623Z 
-│                       │     ╰ LastModifiedDate: 2025-03-13T17:15:37.623Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-29768 
-│                       │     ├ PkgID           : vim-common@9.1.1164-r0 
-│                       │     ├ PkgName         : vim-common 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1164-r0?arch=x86_64&dist
-│                       │     │                  │       ro=3.22.0_alpha20250108 
-│                       │     │                  ╰ UID : e8574bb3ddc93fc 
-│                       │     ├ InstalledVersion: 9.1.1164-r0 
-│                       │     ├ FixedVersion    : 9.1.1202-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
-│                       │     │                  │         a9deefcb27f6f856c9b 
-│                       │     │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
-│                       │     │                            c89f1e399177a248bee 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-29768 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : vim: Vim vulnerable to potential data loss with zip.vim and
-│                       │     │                   special crafted zip files 
-│                       │     ├ Description     : Vim, a text editor, is vulnerable to potential data loss with
-│                       │     │                    zip.vim and special crafted zip files in versions prior to
-│                       │     │                   9.1.1198. The impact is medium because a user must be made to
-│                       │     │                    view such an archive with Vim and then press 'x' on such a
-│                       │     │                   strange filename. The issue has been fixed as of Vim patch
-│                       │     │                   v9.1.1198. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-88 
-│                       │     ├ VendorSeverity   ─ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 4.4 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-29768 
-│                       │     │                  ├ [1]: https://github.com/vim/vim/commit/f209dcd3defb95bae21b2
-│                       │     │                  │      740910e6aa7bb940531 
-│                       │     │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-693
-│                       │     │                  │      p-m996-3rmf 
-│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-29768 
-│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29768 
-│                       │     ├ PublishedDate   : 2025-03-13T17:15:37.623Z 
-│                       │     ╰ LastModifiedDate: 2025-03-13T17:15:37.623Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-29768 
-│                             ├ PkgID           : xxd@9.1.1164-r0 
-│                             ├ PkgName         : xxd 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1164-r0?arch=x86_64&distro=3.22
-│                             │                  │       .0_alpha20250108 
-│                             │                  ╰ UID : 263eb45890c82db2 
-│                             ├ InstalledVersion: 9.1.1164-r0 
-│                             ├ FixedVersion    : 9.1.1202-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
-│                             │                  │         a9deefcb27f6f856c9b 
-│                             │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
-│                             │                            c89f1e399177a248bee 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-29768 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Title           : vim: Vim vulnerable to potential data loss with zip.vim and
-│                             │                   special crafted zip files 
-│                             ├ Description     : Vim, a text editor, is vulnerable to potential data loss with
-│                             │                    zip.vim and special crafted zip files in versions prior to
-│                             │                   9.1.1198. The impact is medium because a user must be made to
-│                             │                    view such an archive with Vim and then press 'x' on such a
-│                             │                   strange filename. The issue has been fixed as of Vim patch
-│                             │                   v9.1.1198. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-88 
-│                             ├ VendorSeverity   ─ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 4.4 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-29768 
-│                             │                  ├ [1]: https://github.com/vim/vim/commit/f209dcd3defb95bae21b2
-│                             │                  │      740910e6aa7bb940531 
-│                             │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-693
-│                             │                  │      p-m996-3rmf 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-29768 
-│                             │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-29768 
-│                             ├ PublishedDate   : 2025-03-13T17:15:37.623Z 
-│                             ╰ LastModifiedDate: 2025-03-13T17:15:37.623Z 
+╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
+│     ├ Class : os-pkgs 
+│     ╰ Type  : alpine 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -133,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
-│                       │     │                  │         a9deefcb27f6f856c9b 
-│                       │     │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
-│                       │     │                            c89f1e399177a248bee 
+│                       │     ├ Layer            ╭ Digest: sha256:92230dc713b7dcefc525df3b10456975dedc49f69275a
+│                       │     │                  │         95b84ddbeb2e881597f 
+│                       │     │                  ╰ DiffID: sha256:a5218a37121c1ab740336a1b73c2022da8f83315d29d0
+│                       │     │                            172f7994249fff6d588 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -189,10 +69,10 @@
 │                             ├ InstalledVersion: 1.2.13 
 │                             ├ FixedVersion    : 1.5.13, 1.3.15 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
-│                             │                  │         a9deefcb27f6f856c9b 
-│                             │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
-│                             │                            c89f1e399177a248bee 
+│                             ├ Layer            ╭ Digest: sha256:92230dc713b7dcefc525df3b10456975dedc49f69275a
+│                             │                  │         95b84ddbeb2e881597f 
+│                             │                  ╰ DiffID: sha256:a5218a37121c1ab740336a1b73c2022da8f83315d29d0
+│                             │                            172f7994249fff6d588 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -232,50 +112,9 @@
 ├ [3] ╭ Target: usr/bin/grype 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
-├ [4] ╭ Target         : usr/bin/syft 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22870 
-│                             ├ PkgID           : golang.org/x/net@v0.35.0 
-│                             ├ PkgName         : golang.org/x/net 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.35.0 
-│                             │                  ╰ UID : 7d2d5895ed519e74 
-│                             ├ InstalledVersion: v0.35.0 
-│                             ├ FixedVersion    : 0.36.0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
-│                             │                  │         a9deefcb27f6f856c9b 
-│                             │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
-│                             │                            c89f1e399177a248bee 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/http/httpproxy: golang.org/x/net/proxy: HTTP
-│                             │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
-│                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
-│                             │                    an IPv6 zone ID as a hostname component. For example, when
-│                             │                   the NO_PROXY environment variable is set to "*.example.com",
-│                             │                   a request to "[::1%25.example.com]:80` will incorrectly match
-│                             │                    and not be proxied. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ ghsa  : 2 
-│                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:L 
-│                             │                           ╰ V3Score : 4.4 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
-│                             │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22870 
-│                             │                  ├ [2]: https://go-review.googlesource.com/q/project:net 
-│                             │                  ├ [3]: https://go.dev/cl/654697 
-│                             │                  ├ [4]: https://go.dev/issue/71984 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3503 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
-│                             ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
-│                             ╰ LastModifiedDate: 2025-03-12T19:15:38.31Z 
+├ [4] ╭ Target: usr/bin/syft 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -287,10 +126,10 @@
 │                             ├ InstalledVersion: v0.35.0 
 │                             ├ FixedVersion    : 0.36.0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:854296ecd5b70136f81a85bf400d19fa0ba9aa24851ce
-│                             │                  │         a9deefcb27f6f856c9b 
-│                             │                  ╰ DiffID: sha256:7050471725af33dcaf9114ae2e0571d254ff76cbd29fd
-│                             │                            c89f1e399177a248bee 
+│                             ├ Layer            ╭ Digest: sha256:92230dc713b7dcefc525df3b10456975dedc49f69275a
+│                             │                  │         95b84ddbeb2e881597f 
+│                             │                  ╰ DiffID: sha256:a5218a37121c1ab740336a1b73c2022da8f83315d29d0
+│                             │                            172f7994249fff6d588 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
 │                             ├ DataSource       ╭ ID  : ghsa 
