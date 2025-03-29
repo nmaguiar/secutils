@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                       │     │                  │         2379a4c039125ac27d2 
-│                       │     │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                       │     │                            23dd48a8a916f8f4c05 
+│                       │     ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
+│                       │     │                  │         ae3fd74f8b018dac43e 
+│                       │     │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
+│                       │     │                            bfa1f358060077d560f 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -69,10 +69,10 @@
 │                             ├ InstalledVersion: 1.2.13 
 │                             ├ FixedVersion    : 1.5.13, 1.3.15 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                             │                  │         2379a4c039125ac27d2 
-│                             │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                             │                            23dd48a8a916f8f4c05 
+│                             ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
+│                             │                  │         ae3fd74f8b018dac43e 
+│                             │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
+│                             │                            bfa1f358060077d560f 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -120,10 +120,10 @@
 │                             ├ InstalledVersion: v1.7.26 
 │                             ├ FixedVersion    : 1.7.27, 1.6.38 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                             │                  │         2379a4c039125ac27d2 
-│                             │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                             │                            23dd48a8a916f8f4c05 
+│                             ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
+│                             │                  │         ae3fd74f8b018dac43e 
+│                             │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
+│                             │                            bfa1f358060077d560f 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -184,10 +184,10 @@
 │                             ├ InstalledVersion: v1.7.26 
 │                             ├ FixedVersion    : 1.7.27, 1.6.38 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                             │                  │         2379a4c039125ac27d2 
-│                             │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                             │                            23dd48a8a916f8f4c05 
+│                             ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
+│                             │                  │         ae3fd74f8b018dac43e 
+│                             │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
+│                             │                            bfa1f358060077d560f 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -237,279 +237,9 @@
 │                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
 │                             ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
 │                             ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
-├ [5] ╭ Target         : usr/bin/trivy 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-40635 
-│                       │     ├ PkgID           : github.com/containerd/containerd@v1.7.25 
-│                       │     ├ PkgName         : github.com/containerd/containerd 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/containerd/containerd@v1.7.25 
-│                       │     │                  ╰ UID : 8240b491a8d158b4 
-│                       │     ├ InstalledVersion: v1.7.25 
-│                       │     ├ FixedVersion    : 1.7.27, 1.6.38 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                       │     │                  │         2379a4c039125ac27d2 
-│                       │     │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                       │     │                            23dd48a8a916f8f4c05 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : containerd: containerd has an integer overflow in User ID
-│                       │     │                   handling 
-│                       │     ├ Description     : containerd is an open-source container runtime. A bug was
-│                       │     │                   found in containerd prior to versions 1.6.38, 1.7.27, and
-│                       │     │                   2.0.4 where containers launched with a User set as a
-│                       │     │                   `UID:GID` larger than the maximum 32-bit signed integer can
-│                       │     │                   cause an overflow condition where the container ultimately
-│                       │     │                   runs as root (UID 0). This could cause unexpected behavior
-│                       │     │                   for environments that require containers to run as a non-root
-│                       │     │                    user. This bug has been fixed in containerd 1.6.38, 1.7.27,
-│                       │     │                   and 2.04. As a workaround, ensure that only trusted images
-│                       │     │                   are used and that only trusted users have permissions to
-│                       │     │                   import images. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-190 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ├ redhat: 2 
-│                       │     │                  ╰ ubuntu: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 4.6 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-40635 
-│                       │     │                  ├ [1] : https://github.com/containerd/containerd 
-│                       │     │                  ├ [2] : https://github.com/containerd/containerd/commit/05044e
-│                       │     │                  │       c0a9a75232cad458027ca83437aae3f4da 
-│                       │     │                  ├ [3] : https://github.com/containerd/containerd/commit/11504c
-│                       │     │                  │       3fc5f45634f2d93d57743a998194430b82 (v1.7.27) 
-│                       │     │                  ├ [4] : https://github.com/containerd/containerd/commit/1a43cb
-│                       │     │                  │       6a1035441f9aca8f5666a9b3ef9e70ab20 
-│                       │     │                  ├ [5] : https://github.com/containerd/containerd/commit/9639b9
-│                       │     │                  │       625554183d0c4d8d072dccb84fedd2320f (v1.6.38) 
-│                       │     │                  ├ [6] : https://github.com/containerd/containerd/commit/cf158e
-│                       │     │                  │       884cfe4812a6c371b59e4ea9bc4c46e51a 
-│                       │     │                  ├ [7] : https://github.com/containerd/containerd/security/advi
-│                       │     │                  │       sories/GHSA-265r-hfxg-fhmg 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
-│                       │     │                  ├ [9] : https://ubuntu.com/security/notices/USN-7374-1 
-│                       │     │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
-│                       │     ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
-│                       │     ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2024-40635 
-│                       │     ├ PkgID           : github.com/containerd/containerd/v2@v2.0.2 
-│                       │     ├ PkgName         : github.com/containerd/containerd/v2 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/containerd/containerd/v2@v2.0.2 
-│                       │     │                  ╰ UID : f231ef62045c0603 
-│                       │     ├ InstalledVersion: v2.0.2 
-│                       │     ├ FixedVersion    : 2.0.4 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                       │     │                  │         2379a4c039125ac27d2 
-│                       │     │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                       │     │                            23dd48a8a916f8f4c05 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : containerd: containerd has an integer overflow in User ID
-│                       │     │                   handling 
-│                       │     ├ Description     : containerd is an open-source container runtime. A bug was
-│                       │     │                   found in containerd prior to versions 1.6.38, 1.7.27, and
-│                       │     │                   2.0.4 where containers launched with a User set as a
-│                       │     │                   `UID:GID` larger than the maximum 32-bit signed integer can
-│                       │     │                   cause an overflow condition where the container ultimately
-│                       │     │                   runs as root (UID 0). This could cause unexpected behavior
-│                       │     │                   for environments that require containers to run as a non-root
-│                       │     │                    user. This bug has been fixed in containerd 1.6.38, 1.7.27,
-│                       │     │                   and 2.04. As a workaround, ensure that only trusted images
-│                       │     │                   are used and that only trusted users have permissions to
-│                       │     │                   import images. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-190 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ├ redhat: 2 
-│                       │     │                  ╰ ubuntu: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 4.6 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-40635 
-│                       │     │                  ├ [1] : https://github.com/containerd/containerd 
-│                       │     │                  ├ [2] : https://github.com/containerd/containerd/commit/05044e
-│                       │     │                  │       c0a9a75232cad458027ca83437aae3f4da 
-│                       │     │                  ├ [3] : https://github.com/containerd/containerd/commit/11504c
-│                       │     │                  │       3fc5f45634f2d93d57743a998194430b82 (v1.7.27) 
-│                       │     │                  ├ [4] : https://github.com/containerd/containerd/commit/1a43cb
-│                       │     │                  │       6a1035441f9aca8f5666a9b3ef9e70ab20 
-│                       │     │                  ├ [5] : https://github.com/containerd/containerd/commit/9639b9
-│                       │     │                  │       625554183d0c4d8d072dccb84fedd2320f (v1.6.38) 
-│                       │     │                  ├ [6] : https://github.com/containerd/containerd/commit/cf158e
-│                       │     │                  │       884cfe4812a6c371b59e4ea9bc4c46e51a 
-│                       │     │                  ├ [7] : https://github.com/containerd/containerd/security/advi
-│                       │     │                  │       sories/GHSA-265r-hfxg-fhmg 
-│                       │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
-│                       │     │                  ├ [9] : https://ubuntu.com/security/notices/USN-7374-1 
-│                       │     │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
-│                       │     ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
-│                       │     ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-30204 
-│                       │     ├ PkgID           : github.com/golang-jwt/jwt/v4@v4.5.1 
-│                       │     ├ PkgName         : github.com/golang-jwt/jwt/v4 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/golang-jwt/jwt/v4@v4.5.1 
-│                       │     │                  ╰ UID : ef284d3652aede40 
-│                       │     ├ InstalledVersion: v4.5.1 
-│                       │     ├ FixedVersion    : 4.5.2 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                       │     │                  │         2379a4c039125ac27d2 
-│                       │     │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                       │     │                            23dd48a8a916f8f4c05 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-30204 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : golang-jwt/jwt: jwt-go allows excessive memory allocation
-│                       │     │                   during header parsing 
-│                       │     ├ Description     : golang-jwt is a Go implementation of JSON Web Tokens. Prior
-│                       │     │                   to 
-│                       │     │                   5.2.2 and 4.5.2, the function parse.ParseUnverified splits
-│                       │     │                   (via a call to strings.Split) its argument (which is
-│                       │     │                   untrusted data) on periods. As a result, in the face of a
-│                       │     │                   malicious request whose Authorization header consists of
-│                       │     │                   Bearer  followed by many period characters, a call to that
-│                       │     │                   function incurs allocations to the tune of O(n) bytes (where
-│                       │     │                   n stands for the length of the function's argument), with a
-│                       │     │                   constant factor of about 16. This issue is fixed in 5.2.2 and
-│                       │     │                    4.5.2. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-405 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 7.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-30204 
-│                       │     │                  ├ [1]: https://github.com/golang-jwt/jwt 
-│                       │     │                  ├ [2]: https://github.com/golang-jwt/jwt/commit/0951d184286dec
-│                       │     │                  │      e21f73c85673fd308786ffe9c3 
-│                       │     │                  ├ [3]: https://github.com/golang-jwt/jwt/security/advisories/G
-│                       │     │                  │      HSA-mh63-6h87-95cp 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-30204 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-30204 
-│                       │     ├ PublishedDate   : 2025-03-21T22:15:26.42Z 
-│                       │     ╰ LastModifiedDate: 2025-03-21T22:15:26.42Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-30204 
-│                       │     ├ PkgID           : github.com/golang-jwt/jwt/v5@v5.2.1 
-│                       │     ├ PkgName         : github.com/golang-jwt/jwt/v5 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/golang-jwt/jwt/v5@v5.2.1 
-│                       │     │                  ╰ UID : c8cf692079723bbb 
-│                       │     ├ InstalledVersion: v5.2.1 
-│                       │     ├ FixedVersion    : 5.2.2 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                       │     │                  │         2379a4c039125ac27d2 
-│                       │     │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                       │     │                            23dd48a8a916f8f4c05 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-30204 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : golang-jwt/jwt: jwt-go allows excessive memory allocation
-│                       │     │                   during header parsing 
-│                       │     ├ Description     : golang-jwt is a Go implementation of JSON Web Tokens. Prior
-│                       │     │                   to 
-│                       │     │                   5.2.2 and 4.5.2, the function parse.ParseUnverified splits
-│                       │     │                   (via a call to strings.Split) its argument (which is
-│                       │     │                   untrusted data) on periods. As a result, in the face of a
-│                       │     │                   malicious request whose Authorization header consists of
-│                       │     │                   Bearer  followed by many period characters, a call to that
-│                       │     │                   function incurs allocations to the tune of O(n) bytes (where
-│                       │     │                   n stands for the length of the function's argument), with a
-│                       │     │                   constant factor of about 16. This issue is fixed in 5.2.2 and
-│                       │     │                    4.5.2. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-405 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 7.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-30204 
-│                       │     │                  ├ [1]: https://github.com/golang-jwt/jwt 
-│                       │     │                  ├ [2]: https://github.com/golang-jwt/jwt/commit/0951d184286dec
-│                       │     │                  │      e21f73c85673fd308786ffe9c3 
-│                       │     │                  ├ [3]: https://github.com/golang-jwt/jwt/security/advisories/G
-│                       │     │                  │      HSA-mh63-6h87-95cp 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-30204 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-30204 
-│                       │     ├ PublishedDate   : 2025-03-21T22:15:26.42Z 
-│                       │     ╰ LastModifiedDate: 2025-03-21T22:15:26.42Z 
-│                       ╰ [4] ╭ VulnerabilityID : CVE-2025-22870 
-│                             ├ PkgID           : golang.org/x/net@v0.35.0 
-│                             ├ PkgName         : golang.org/x/net 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.35.0 
-│                             │                  ╰ UID : 325e684f5d1e2a9e 
-│                             ├ InstalledVersion: v0.35.0 
-│                             ├ FixedVersion    : 0.36.0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:51175ec55754c747bef65520858f50b79fa8a1bf2e4c8
-│                             │                  │         2379a4c039125ac27d2 
-│                             │                  ╰ DiffID: sha256:8599814c7e75b9781b03462b0c1e943f1ce9765d7a7f5
-│                             │                            23dd48a8a916f8f4c05 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22870 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP
-│                             │                    Proxy bypass using IPv6 Zone IDs in golang.org/x/net 
-│                             ├ Description     : Matching of hosts against proxy patterns can improperly treat
-│                             │                    an IPv6 zone ID as a hostname component. For example, when
-│                             │                   the NO_PROXY environment variable is set to "*.example.com",
-│                             │                   a request to "[::1%25.example.com]:80` will incorrectly match
-│                             │                    and not be proxied. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-115 
-│                             ├ VendorSeverity   ╭ amazon: 2 
-│                             │                  ├ ghsa  : 2 
-│                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-│                             │                  │        │           A:L 
-│                             │                  │        ╰ V3Score : 4.4 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:L 
-│                             │                           ╰ V3Score : 4.4 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/03/07/2 
-│                             │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22870 
-│                             │                  ├ [2]: https://go-review.googlesource.com/q/project:net 
-│                             │                  ├ [3]: https://go.dev/cl/654697 
-│                             │                  ├ [4]: https://go.dev/issue/71984 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22870 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3503 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22870 
-│                             ├ PublishedDate   : 2025-03-12T19:15:38.31Z 
-│                             ╰ LastModifiedDate: 2025-03-18T17:15:45.467Z 
+├ [5] ╭ Target: usr/bin/trivy 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
