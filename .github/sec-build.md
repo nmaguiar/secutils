@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
-│                       │     │                  │         ae3fd74f8b018dac43e 
-│                       │     │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
-│                       │     │                            bfa1f358060077d560f 
+│                       │     ├ Layer            ╭ Digest: sha256:87f78453ae9872ab60c96f6d78e7f81a532110b9a2510
+│                       │     │                  │         e5ec5a18c10bed70770 
+│                       │     │                  ╰ DiffID: sha256:d44b728dcf951f4c7f33bd3315e4e3efc556f40d9cca3
+│                       │     │                            b5879368c97c03de92c 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -69,10 +69,10 @@
 │                             ├ InstalledVersion: 1.2.13 
 │                             ├ FixedVersion    : 1.5.13, 1.3.15 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
-│                             │                  │         ae3fd74f8b018dac43e 
-│                             │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
-│                             │                            bfa1f358060077d560f 
+│                             ├ Layer            ╭ Digest: sha256:87f78453ae9872ab60c96f6d78e7f81a532110b9a2510
+│                             │                  │         e5ec5a18c10bed70770 
+│                             │                  ╰ DiffID: sha256:d44b728dcf951f4c7f33bd3315e4e3efc556f40d9cca3
+│                             │                            b5879368c97c03de92c 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -109,136 +109,12 @@
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
-├ [3] ╭ Target         : usr/bin/grype 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-40635 
-│                             ├ PkgID           : github.com/containerd/containerd@v1.7.26 
-│                             ├ PkgName         : github.com/containerd/containerd 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/containerd/containerd@v1.7.26 
-│                             │                  ╰ UID : 5c7bb43084464733 
-│                             ├ InstalledVersion: v1.7.26 
-│                             ├ FixedVersion    : 1.7.27, 1.6.38 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
-│                             │                  │         ae3fd74f8b018dac43e 
-│                             │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
-│                             │                            bfa1f358060077d560f 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : containerd: containerd has an integer overflow in User ID
-│                             │                   handling 
-│                             ├ Description     : containerd is an open-source container runtime. A bug was
-│                             │                   found in containerd prior to versions 1.6.38, 1.7.27, and
-│                             │                   2.0.4 where containers launched with a User set as a
-│                             │                   `UID:GID` larger than the maximum 32-bit signed integer can
-│                             │                   cause an overflow condition where the container ultimately
-│                             │                   runs as root (UID 0). This could cause unexpected behavior
-│                             │                   for environments that require containers to run as a non-root
-│                             │                    user. This bug has been fixed in containerd 1.6.38, 1.7.27,
-│                             │                   and 2.04. As a workaround, ensure that only trusted images
-│                             │                   are used and that only trusted users have permissions to
-│                             │                   import images. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-190 
-│                             ├ VendorSeverity   ╭ amazon: 2 
-│                             │                  ├ ghsa  : 2 
-│                             │                  ├ redhat: 2 
-│                             │                  ╰ ubuntu: 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                             │                  │        │           A:N 
-│                             │                  │        ╰ V3Score : 4.6 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 4.6 
-│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-40635 
-│                             │                  ├ [1] : https://github.com/containerd/containerd 
-│                             │                  ├ [2] : https://github.com/containerd/containerd/commit/05044e
-│                             │                  │       c0a9a75232cad458027ca83437aae3f4da 
-│                             │                  ├ [3] : https://github.com/containerd/containerd/commit/11504c
-│                             │                  │       3fc5f45634f2d93d57743a998194430b82 (v1.7.27) 
-│                             │                  ├ [4] : https://github.com/containerd/containerd/commit/1a43cb
-│                             │                  │       6a1035441f9aca8f5666a9b3ef9e70ab20 
-│                             │                  ├ [5] : https://github.com/containerd/containerd/commit/9639b9
-│                             │                  │       625554183d0c4d8d072dccb84fedd2320f (v1.6.38) 
-│                             │                  ├ [6] : https://github.com/containerd/containerd/commit/cf158e
-│                             │                  │       884cfe4812a6c371b59e4ea9bc4c46e51a 
-│                             │                  ├ [7] : https://github.com/containerd/containerd/security/advi
-│                             │                  │       sories/GHSA-265r-hfxg-fhmg 
-│                             │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
-│                             │                  ├ [9] : https://ubuntu.com/security/notices/USN-7374-1 
-│                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
-│                             ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
-│                             ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
-├ [4] ╭ Target         : usr/bin/syft 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-40635 
-│                             ├ PkgID           : github.com/containerd/containerd@v1.7.26 
-│                             ├ PkgName         : github.com/containerd/containerd 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/containerd/containerd@v1.7.26 
-│                             │                  ╰ UID : 1816dbc8dcaf0317 
-│                             ├ InstalledVersion: v1.7.26 
-│                             ├ FixedVersion    : 1.7.27, 1.6.38 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:793b451fb13cab78b36dc37d7721a1f9e25e37955e41f
-│                             │                  │         ae3fd74f8b018dac43e 
-│                             │                  ╰ DiffID: sha256:016ac243d409f0620e91d60829287381ecb6abd83caae
-│                             │                            bfa1f358060077d560f 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-40635 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : containerd: containerd has an integer overflow in User ID
-│                             │                   handling 
-│                             ├ Description     : containerd is an open-source container runtime. A bug was
-│                             │                   found in containerd prior to versions 1.6.38, 1.7.27, and
-│                             │                   2.0.4 where containers launched with a User set as a
-│                             │                   `UID:GID` larger than the maximum 32-bit signed integer can
-│                             │                   cause an overflow condition where the container ultimately
-│                             │                   runs as root (UID 0). This could cause unexpected behavior
-│                             │                   for environments that require containers to run as a non-root
-│                             │                    user. This bug has been fixed in containerd 1.6.38, 1.7.27,
-│                             │                   and 2.04. As a workaround, ensure that only trusted images
-│                             │                   are used and that only trusted users have permissions to
-│                             │                   import images. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-190 
-│                             ├ VendorSeverity   ╭ amazon: 2 
-│                             │                  ├ ghsa  : 2 
-│                             │                  ├ redhat: 2 
-│                             │                  ╰ ubuntu: 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                             │                  │        │           A:N 
-│                             │                  │        ╰ V3Score : 4.6 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 4.6 
-│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-40635 
-│                             │                  ├ [1] : https://github.com/containerd/containerd 
-│                             │                  ├ [2] : https://github.com/containerd/containerd/commit/05044e
-│                             │                  │       c0a9a75232cad458027ca83437aae3f4da 
-│                             │                  ├ [3] : https://github.com/containerd/containerd/commit/11504c
-│                             │                  │       3fc5f45634f2d93d57743a998194430b82 (v1.7.27) 
-│                             │                  ├ [4] : https://github.com/containerd/containerd/commit/1a43cb
-│                             │                  │       6a1035441f9aca8f5666a9b3ef9e70ab20 
-│                             │                  ├ [5] : https://github.com/containerd/containerd/commit/9639b9
-│                             │                  │       625554183d0c4d8d072dccb84fedd2320f (v1.6.38) 
-│                             │                  ├ [6] : https://github.com/containerd/containerd/commit/cf158e
-│                             │                  │       884cfe4812a6c371b59e4ea9bc4c46e51a 
-│                             │                  ├ [7] : https://github.com/containerd/containerd/security/advi
-│                             │                  │       sories/GHSA-265r-hfxg-fhmg 
-│                             │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-40635 
-│                             │                  ├ [9] : https://ubuntu.com/security/notices/USN-7374-1 
-│                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2024-40635 
-│                             ├ PublishedDate   : 2025-03-17T22:15:13.15Z 
-│                             ╰ LastModifiedDate: 2025-03-17T22:15:13.15Z 
+├ [3] ╭ Target: usr/bin/grype 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
+├ [4] ╭ Target: usr/bin/syft 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
 ├ [5] ╭ Target: usr/bin/trivy 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
