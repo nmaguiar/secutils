@@ -1,7 +1,53 @@
 ````yaml
-╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
-│     ├ Class : os-pkgs 
-│     ╰ Type  : alpine 
+╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.22.0_alpha20250108) 
+│     ├ Class          : os-pkgs 
+│     ├ Type           : alpine 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-31498 
+│                             ├ PkgID           : c-ares@1.34.4-r0 
+│                             ├ PkgName         : c-ares 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/c-ares@1.34.4-r0?arch=x86_64&distro=3.2
+│                             │                  │       2.0_alpha20250108 
+│                             │                  ╰ UID : d08c3f13cf9b48a0 
+│                             ├ InstalledVersion: 1.34.4-r0 
+│                             ├ FixedVersion    : 1.34.5-r0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:87f78453ae9872ab60c96f6d78e7f81a532110b9a2510
+│                             │                  │         e5ec5a18c10bed70770 
+│                             │                  ╰ DiffID: sha256:d44b728dcf951f4c7f33bd3315e4e3efc556f40d9cca3
+│                             │                            b5879368c97c03de92c 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-31498 
+│                             ├ DataSource       ╭ ID  : alpine 
+│                             │                  ├ Name: Alpine Secdb 
+│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                             ├ Title           : c-ares is an asynchronous resolver library. From 1.32.3
+│                             │                   through 1.34.4 ... 
+│                             ├ Description     : c-ares is an asynchronous resolver library. From 1.32.3
+│                             │                   through 1.34.4, there is a use-after-free in read_answers()
+│                             │                   when process_answer() may re-enqueue a query either due to a
+│                             │                   DNS Cookie Failure or when the upstream server does not
+│                             │                   properly support EDNS, or possibly on TCP queries if the
+│                             │                   remote closed the connection immediately after a response. If
+│                             │                    there was an issue trying to put that new transaction on the
+│                             │                    wire, it would close the connection handle, but
+│                             │                   read_answers() was still expecting the connection handle to
+│                             │                   be available to possibly dequeue other responses. In theory a
+│                             │                    remote attacker might be able to trigger this by flooding
+│                             │                   the target with ICMP UNREACHABLE packets if they also control
+│                             │                    the upstream nameserver and can return a result with one of
+│                             │                   those conditions, this has been untested. Otherwise only a
+│                             │                   local attacker might be able to change system behavior to
+│                             │                   make send()/write() return a failure condition. This
+│                             │                   vulnerability is fixed in 1.34.5. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ CweIDs           ─ [0]: CWE-416 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/08/3 
+│                             │                  ├ [1]: https://github.com/c-ares/c-ares/commit/29d38719112639d
+│                             │                  │      8c0ba910254a3dd4f482ea2d1 
+│                             │                  ├ [2]: https://github.com/c-ares/c-ares/pull/821 
+│                             │                  ╰ [3]: https://github.com/c-ares/c-ares/security/advisories/GH
+│                             │                         SA-6hxc-62jh-p29v 
+│                             ├ PublishedDate   : 2025-04-08T14:15:35.293Z 
+│                             ╰ LastModifiedDate: 2025-04-08T15:15:50.31Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -109,16 +155,140 @@
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
-├ [3] ╭ Target: usr/bin/grype 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
-├ [4] ╭ Target: usr/bin/syft 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
-├ [5] ╭ Target: usr/bin/trivy 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
-╰ [6] ╭ Target: usr/bin/trivy_cve_query 
-      ├ Class : lang-pkgs 
-      ╰ Type  : gobinary 
+├ [3] ╭ Target         : usr/bin/grype 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22871 
+│                             ├ PkgID           : stdlib@v1.24.1 
+│                             ├ PkgName         : stdlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.1 
+│                             │                  ╰ UID : 65ca895f24942279 
+│                             ├ InstalledVersion: v1.24.1 
+│                             ├ FixedVersion    : 1.23.8, 1.24.2 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:87f78453ae9872ab60c96f6d78e7f81a532110b9a2510
+│                             │                  │         e5ec5a18c10bed70770 
+│                             │                  ╰ DiffID: sha256:d44b728dcf951f4c7f33bd3315e4e3efc556f40d9cca3
+│                             │                            b5879368c97c03de92c 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+│                             ├ DataSource       ╭ ID  : govulndb 
+│                             │                  ├ Name: The Go Vulnerability Database 
+│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                             ├ Title           : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator ... 
+│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator in chunked data chunk-size lines. This can permit
+│                             │                   request smuggling if a net/http server is used in conjunction
+│                             │                    with a server that incorrectly accepts a bare LF as part of
+│                             │                   a chunk-ext. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+│                             │                  ├ [1]: https://go.dev/cl/652998 
+│                             │                  ├ [2]: https://go.dev/issue/71988 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+│                             ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
+├ [4] ╭ Target         : usr/bin/syft 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22871 
+│                             ├ PkgID           : stdlib@v1.24.1 
+│                             ├ PkgName         : stdlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.1 
+│                             │                  ╰ UID : c16316e32d1afd39 
+│                             ├ InstalledVersion: v1.24.1 
+│                             ├ FixedVersion    : 1.23.8, 1.24.2 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:87f78453ae9872ab60c96f6d78e7f81a532110b9a2510
+│                             │                  │         e5ec5a18c10bed70770 
+│                             │                  ╰ DiffID: sha256:d44b728dcf951f4c7f33bd3315e4e3efc556f40d9cca3
+│                             │                            b5879368c97c03de92c 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+│                             ├ DataSource       ╭ ID  : govulndb 
+│                             │                  ├ Name: The Go Vulnerability Database 
+│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                             ├ Title           : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator ... 
+│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator in chunked data chunk-size lines. This can permit
+│                             │                   request smuggling if a net/http server is used in conjunction
+│                             │                    with a server that incorrectly accepts a bare LF as part of
+│                             │                   a chunk-ext. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+│                             │                  ├ [1]: https://go.dev/cl/652998 
+│                             │                  ├ [2]: https://go.dev/issue/71988 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+│                             ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
+├ [5] ╭ Target         : usr/bin/trivy 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22871 
+│                             ├ PkgID           : stdlib@v1.24.1 
+│                             ├ PkgName         : stdlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.1 
+│                             │                  ╰ UID : 7aba090ce18913b7 
+│                             ├ InstalledVersion: v1.24.1 
+│                             ├ FixedVersion    : 1.23.8, 1.24.2 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:87f78453ae9872ab60c96f6d78e7f81a532110b9a2510
+│                             │                  │         e5ec5a18c10bed70770 
+│                             │                  ╰ DiffID: sha256:d44b728dcf951f4c7f33bd3315e4e3efc556f40d9cca3
+│                             │                            b5879368c97c03de92c 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+│                             ├ DataSource       ╭ ID  : govulndb 
+│                             │                  ├ Name: The Go Vulnerability Database 
+│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                             ├ Title           : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator ... 
+│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
+│                             │                   terminator in chunked data chunk-size lines. This can permit
+│                             │                   request smuggling if a net/http server is used in conjunction
+│                             │                    with a server that incorrectly accepts a bare LF as part of
+│                             │                   a chunk-ext. 
+│                             ├ Severity        : UNKNOWN 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+│                             │                  ├ [1]: https://go.dev/cl/652998 
+│                             │                  ├ [2]: https://go.dev/issue/71988 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+│                             ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
+╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
+      ├ Class          : lang-pkgs 
+      ├ Type           : gobinary 
+      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22871 
+                              ├ PkgID           : stdlib@v1.24.1 
+                              ├ PkgName         : stdlib 
+                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.1 
+                              │                  ╰ UID : b5fb81b8f7a10cb5 
+                              ├ InstalledVersion: v1.24.1 
+                              ├ FixedVersion    : 1.23.8, 1.24.2 
+                              ├ Status          : fixed 
+                              ├ Layer            ╭ Digest: sha256:87f78453ae9872ab60c96f6d78e7f81a532110b9a2510
+                              │                  │         e5ec5a18c10bed70770 
+                              │                  ╰ DiffID: sha256:d44b728dcf951f4c7f33bd3315e4e3efc556f40d9cca3
+                              │                            b5879368c97c03de92c 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
+                              ├ DataSource       ╭ ID  : govulndb 
+                              │                  ├ Name: The Go Vulnerability Database 
+                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                              ├ Title           : The net/http package improperly accepts a bare LF as a line
+                              │                   terminator ... 
+                              ├ Description     : The net/http package improperly accepts a bare LF as a line
+                              │                   terminator in chunked data chunk-size lines. This can permit
+                              │                   request smuggling if a net/http server is used in conjunction
+                              │                    with a server that incorrectly accepts a bare LF as part of
+                              │                   a chunk-ext. 
+                              ├ Severity        : UNKNOWN 
+                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
+                              │                  ├ [1]: https://go.dev/cl/652998 
+                              │                  ├ [2]: https://go.dev/issue/71988 
+                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
+                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3563 
+                              ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
+                              ╰ LastModifiedDate: 2025-04-08T21:15:48.173Z 
 ````
