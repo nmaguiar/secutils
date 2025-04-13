@@ -223,14 +223,18 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ╭ [0]: CWE-770 
 │                       │     │                  ╰ [1]: CWE-789 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 6.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 6.5 
+│                       │     ├ VendorSeverity   ╭ bitnami: 2 
+│                       │     │                  ├ ghsa   : 2 
+│                       │     │                  ╰ redhat : 2 
+│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                       │     │                  │         │           /A:H 
+│                       │     │                  │         ╰ V3Score : 6.5 
+│                       │     │                  ├ ghsa    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                       │     │                  │         │           /A:H 
+│                       │     │                  │         ╰ V3Score : 6.5 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                       │     │                            │           /A:H 
+│                       │     │                            ╰ V3Score : 6.5 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32386 
 │                       │     │                  ├ [1]: https://github.com/helm/helm 
 │                       │     │                  ├ [2]: https://github.com/helm/helm/commit/d8ca55fc669645c10c0
@@ -240,7 +244,7 @@
 │                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32386 
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32386 
 │                       │     ├ PublishedDate   : 2025-04-09T23:15:37.75Z 
-│                       │     ╰ LastModifiedDate: 2025-04-09T23:15:37.75Z 
+│                       │     ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-32387 
 │                       │     ├ PkgID           : helm.sh/helm/v3@v3.17.2 
 │                       │     ├ PkgName         : helm.sh/helm/v3 
@@ -269,14 +273,18 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ╭ [0]: CWE-121 
 │                       │     │                  ╰ [1]: CWE-674 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 6.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 6.5 
+│                       │     ├ VendorSeverity   ╭ bitnami: 2 
+│                       │     │                  ├ ghsa   : 2 
+│                       │     │                  ╰ redhat : 2 
+│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                       │     │                  │         │           /A:H 
+│                       │     │                  │         ╰ V3Score : 6.5 
+│                       │     │                  ├ ghsa    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                       │     │                  │         │           /A:H 
+│                       │     │                  │         ╰ V3Score : 6.5 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                       │     │                            │           /A:H 
+│                       │     │                            ╰ V3Score : 6.5 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32387 
 │                       │     │                  ├ [1]: https://github.com/helm/helm 
 │                       │     │                  ├ [2]: https://github.com/helm/helm/commit/d8ca55fc669645c10c0
@@ -286,7 +294,7 @@
 │                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32387 
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32387 
 │                       │     ├ PublishedDate   : 2025-04-09T23:15:37.903Z 
-│                       │     ╰ LastModifiedDate: 2025-04-09T23:15:37.903Z 
+│                       │     ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
 │                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22871 
 │                             ├ PkgID           : stdlib@v1.24.1 
 │                             ├ PkgName         : stdlib 
