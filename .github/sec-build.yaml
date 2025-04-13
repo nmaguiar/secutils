@@ -199,9 +199,13 @@
     - CWE-770
     - CWE-789
     VendorSeverity:
+      bitnami: 2
       ghsa: 2
       redhat: 2
     CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
         V3Score: 6.5
@@ -216,7 +220,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-32386
     - https://www.cve.org/CVERecord?id=CVE-2025-32386
     PublishedDate: '2025-04-09T23:15:37.75Z'
-    LastModifiedDate: '2025-04-09T23:15:37.75Z'
+    LastModifiedDate: '2025-04-11T15:40:10.277Z'
   - VulnerabilityID: CVE-2025-32387
     PkgID: helm.sh/helm/v3@v3.17.2
     PkgName: helm.sh/helm/v3
@@ -242,9 +246,13 @@
     - CWE-121
     - CWE-674
     VendorSeverity:
+      bitnami: 2
       ghsa: 2
       redhat: 2
     CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
         V3Score: 6.5
@@ -259,7 +267,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-32387
     - https://www.cve.org/CVERecord?id=CVE-2025-32387
     PublishedDate: '2025-04-09T23:15:37.903Z'
-    LastModifiedDate: '2025-04-09T23:15:37.903Z'
+    LastModifiedDate: '2025-04-11T15:40:10.277Z'
   - VulnerabilityID: CVE-2025-22871
     PkgID: stdlib@v1.24.1
     PkgName: stdlib
