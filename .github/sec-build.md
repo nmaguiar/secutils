@@ -136,7 +136,8 @@
 │                             │                    with a server that incorrectly accepts a bare LF as part of
 │                             │                   a chunk-ext. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 5.4 
@@ -177,7 +178,8 @@
 │                             │                    with a server that incorrectly accepts a bare LF as part of
 │                             │                   a chunk-ext. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 5.4 
@@ -319,7 +321,8 @@
 │                             │                    with a server that incorrectly accepts a bare LF as part of
 │                             │                   a chunk-ext. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 5.4 
@@ -360,7 +363,8 @@
                               │                    with a server that incorrectly accepts a bare LF as part of
                               │                   a chunk-ext. 
                               ├ Severity        : MEDIUM 
-                              ├ VendorSeverity   ─ redhat: 2 
+                              ├ VendorSeverity   ╭ amazon: 3 
+                              │                  ╰ redhat: 2 
                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
                               │                           │           A:N 
                               │                           ╰ V3Score : 5.4 
