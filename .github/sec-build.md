@@ -196,7 +196,43 @@
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-32386 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-22872 
+│                       │     ├ PkgID           : golang.org/x/net@v0.37.0 
+│                       │     ├ PkgName         : golang.org/x/net 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/golang.org/x/net@v0.37.0 
+│                       │     │                  ╰ UID : abd61e51bfafa535 
+│                       │     ├ InstalledVersion: v0.37.0 
+│                       │     ├ FixedVersion    : 0.38.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
+│                       │     │                  │         c6a52ce16284552b56f 
+│                       │     │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
+│                       │     │                            6a80dcb94c7832e9fb2 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22872 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : golang.org/x/net vulnerable to Cross-site Scripting 
+│                       │     ├ Description     : The tokenizer incorrectly interprets tags with unquoted
+│                       │     │                   attribute values that end with a solidus character (/) as
+│                       │     │                   self-closing. When directly using Tokenizer, this can result
+│                       │     │                   in such tags incorrectly being marked as self-closing, and
+│                       │     │                   when using the Parse functions, this can result in content
+│                       │     │                   following such tags as being placed in the wrong scope during
+│                       │     │                    DOM construction, but only when tags are in foreign content
+│                       │     │                   (e.g. <math>, <svg>, etc contexts). 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: https://go.dev/cl/662715 
+│                       │     │                  ├ [1]: https://go.dev/issue/73070 
+│                       │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ezSKR9vqbqA 
+│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-22872 
+│                       │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3595 
+│                       │     ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
+│                       │     ╰ LastModifiedDate: 2025-04-16T21:15:46.64Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-32386 
 │                       │     ├ PkgID           : helm.sh/helm/v3@v3.17.2 
 │                       │     ├ PkgName         : helm.sh/helm/v3 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.17.2 
@@ -247,7 +283,7 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32386 
 │                       │     ├ PublishedDate   : 2025-04-09T23:15:37.75Z 
 │                       │     ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-32387 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-32387 
 │                       │     ├ PkgID           : helm.sh/helm/v3@v3.17.2 
 │                       │     ├ PkgName         : helm.sh/helm/v3 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.17.2 
@@ -297,7 +333,7 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32387 
 │                       │     ├ PublishedDate   : 2025-04-09T23:15:37.903Z 
 │                       │     ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22871 
+│                       ╰ [3] ╭ VulnerabilityID : CVE-2025-22871 
 │                             ├ PkgID           : stdlib@v1.24.1 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.1 
