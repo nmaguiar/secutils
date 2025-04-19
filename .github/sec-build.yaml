@@ -15,8 +15,8 @@
     FixedVersion: 1.5.13, 1.3.15
     Status: fixed
     Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
+      Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e79f865c4e7786b00a08e
+      DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe3dea12053f4a27ea640
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-12798
     DataSource:
@@ -55,8 +55,8 @@
     FixedVersion: 1.5.13, 1.3.15
     Status: fixed
     Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
+      Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e79f865c4e7786b00a08e
+      DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe3dea12053f4a27ea640
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-12801
     DataSource:
@@ -102,8 +102,8 @@
     FixedVersion: 1.23.8, 1.24.2
     Status: fixed
     Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
+      Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e79f865c4e7786b00a08e
+      DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe3dea12053f4a27ea640
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22871
     DataSource:
       ID: govulndb
@@ -144,8 +144,8 @@
     FixedVersion: 1.23.8, 1.24.2
     Status: fixed
     Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
+      Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e79f865c4e7786b00a08e
+      DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe3dea12053f4a27ea640
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22871
     DataSource:
       ID: govulndb
@@ -186,15 +186,15 @@
     FixedVersion: 0.38.0
     Status: fixed
     Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
+      Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e79f865c4e7786b00a08e
+      DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe3dea12053f4a27ea640
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22872
     DataSource:
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: golang.org/x/net vulnerable to Cross-site Scripting
+    Title: The tokenizer incorrectly interprets tags with unquoted attribute valu ...
     Description: The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).
     Severity: MEDIUM
     VendorSeverity:
@@ -206,7 +206,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-22872
     - https://pkg.go.dev/vuln/GO-2025-3595
     PublishedDate: '2025-04-16T18:16:04.183Z'
-    LastModifiedDate: '2025-04-16T21:15:46.64Z'
+    LastModifiedDate: '2025-04-17T20:22:16.24Z'
   - VulnerabilityID: CVE-2025-32386
     PkgID: helm.sh/helm/v3@v3.17.2
     PkgName: helm.sh/helm/v3
@@ -217,8 +217,8 @@
     FixedVersion: 3.17.3
     Status: fixed
     Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
+      Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e79f865c4e7786b00a08e
+      DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe3dea12053f4a27ea640
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-32386
     DataSource:
@@ -264,8 +264,8 @@
     FixedVersion: 3.17.3
     Status: fixed
     Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
+      Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e79f865c4e7786b00a08e
+      DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe3dea12053f4a27ea640
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-32387
     DataSource:
@@ -301,83 +301,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-32387
     PublishedDate: '2025-04-09T23:15:37.903Z'
     LastModifiedDate: '2025-04-11T15:40:10.277Z'
-  - VulnerabilityID: CVE-2025-22871
-    PkgID: stdlib@v1.24.1
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.1
-      UID: 7aba090ce18913b7
-    InstalledVersion: v1.24.1
-    FixedVersion: 1.23.8, 1.24.2
-    Status: fixed
-    Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22871
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'net/http: Request smuggling due to acceptance of invalid chunked data in net/http'
-    Description: The net/http package improperly accepts a bare LF as a line terminator in chunked data chunk-size lines. This can permit request smuggling if a net/http server is used in conjunction with a server that incorrectly accepts a bare LF as part of a chunk-ext.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      redhat: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N
-        V3Score: 5.4
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/security/cve/CVE-2025-22871
-    - https://go.dev/cl/652998
-    - https://go.dev/issue/71988
-    - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
-    - https://pkg.go.dev/vuln/GO-2025-3563
-    - https://www.cve.org/CVERecord?id=CVE-2025-22871
-    PublishedDate: '2025-04-08T20:15:20.183Z'
-    LastModifiedDate: '2025-04-09T20:02:41.86Z'
 - Target: usr/bin/trivy_cve_query
   Class: lang-pkgs
   Type: gobinary
-  Vulnerabilities:
-  - VulnerabilityID: CVE-2025-22871
-    PkgID: stdlib@v1.24.1
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.1
-      UID: b5fb81b8f7a10cb5
-    InstalledVersion: v1.24.1
-    FixedVersion: 1.23.8, 1.24.2
-    Status: fixed
-    Layer:
-      Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6ac6a52ce16284552b56f
-      DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b426946a80dcb94c7832e9fb2
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-22871
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'net/http: Request smuggling due to acceptance of invalid chunked data in net/http'
-    Description: The net/http package improperly accepts a bare LF as a line terminator in chunked data chunk-size lines. This can permit request smuggling if a net/http server is used in conjunction with a server that incorrectly accepts a bare LF as part of a chunk-ext.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      redhat: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N
-        V3Score: 5.4
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/04/04/4
-    - https://access.redhat.com/security/cve/CVE-2025-22871
-    - https://go.dev/cl/652998
-    - https://go.dev/issue/71988
-    - https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-22871
-    - https://pkg.go.dev/vuln/GO-2025-3563
-    - https://www.cve.org/CVERecord?id=CVE-2025-22871
-    PublishedDate: '2025-04-08T20:15:20.183Z'
-    LastModifiedDate: '2025-04-09T20:02:41.86Z'
