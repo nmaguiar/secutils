@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                       │     │                  │         c6a52ce16284552b56f 
-│                       │     │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                       │     │                            6a80dcb94c7832e9fb2 
+│                       │     ├ Layer            ╭ Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e7
+│                       │     │                  │         9f865c4e7786b00a08e 
+│                       │     │                  ╰ DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe
+│                       │     │                            3dea12053f4a27ea640 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -69,10 +69,10 @@
 │                             ├ InstalledVersion: 1.2.13 
 │                             ├ FixedVersion    : 1.5.13, 1.3.15 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                             │                  │         c6a52ce16284552b56f 
-│                             │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                             │                            6a80dcb94c7832e9fb2 
+│                             ├ Layer            ╭ Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e7
+│                             │                  │         9f865c4e7786b00a08e 
+│                             │                  ╰ DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe
+│                             │                            3dea12053f4a27ea640 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -120,10 +120,10 @@
 │                             ├ InstalledVersion: v1.24.1 
 │                             ├ FixedVersion    : 1.23.8, 1.24.2 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                             │                  │         c6a52ce16284552b56f 
-│                             │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                             │                            6a80dcb94c7832e9fb2 
+│                             ├ Layer            ╭ Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e7
+│                             │                  │         9f865c4e7786b00a08e 
+│                             │                  ╰ DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe
+│                             │                            3dea12053f4a27ea640 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
@@ -162,10 +162,10 @@
 │                             ├ InstalledVersion: v1.24.1 
 │                             ├ FixedVersion    : 1.23.8, 1.24.2 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                             │                  │         c6a52ce16284552b56f 
-│                             │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                             │                            6a80dcb94c7832e9fb2 
+│                             ├ Layer            ╭ Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e7
+│                             │                  │         9f865c4e7786b00a08e 
+│                             │                  ╰ DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe
+│                             │                            3dea12053f4a27ea640 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
@@ -204,17 +204,18 @@
 │                       │     ├ InstalledVersion: v0.37.0 
 │                       │     ├ FixedVersion    : 0.38.0 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                       │     │                  │         c6a52ce16284552b56f 
-│                       │     │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                       │     │                            6a80dcb94c7832e9fb2 
+│                       │     ├ Layer            ╭ Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e7
+│                       │     │                  │         9f865c4e7786b00a08e 
+│                       │     │                  ╰ DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe
+│                       │     │                            3dea12053f4a27ea640 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22872 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : golang.org/x/net vulnerable to Cross-site Scripting 
+│                       │     ├ Title           : The tokenizer incorrectly interprets tags with unquoted
+│                       │     │                   attribute valu ... 
 │                       │     ├ Description     : The tokenizer incorrectly interprets tags with unquoted
 │                       │     │                   attribute values that end with a solidus character (/) as
 │                       │     │                   self-closing. When directly using Tokenizer, this can result
@@ -231,7 +232,7 @@
 │                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-22872 
 │                       │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3595 
 │                       │     ├ PublishedDate   : 2025-04-16T18:16:04.183Z 
-│                       │     ╰ LastModifiedDate: 2025-04-16T21:15:46.64Z 
+│                       │     ╰ LastModifiedDate: 2025-04-17T20:22:16.24Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-32386 
 │                       │     ├ PkgID           : helm.sh/helm/v3@v3.17.2 
 │                       │     ├ PkgName         : helm.sh/helm/v3 
@@ -240,10 +241,10 @@
 │                       │     ├ InstalledVersion: v3.17.2 
 │                       │     ├ FixedVersion    : 3.17.3 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                       │     │                  │         c6a52ce16284552b56f 
-│                       │     │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                       │     │                            6a80dcb94c7832e9fb2 
+│                       │     ├ Layer            ╭ Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e7
+│                       │     │                  │         9f865c4e7786b00a08e 
+│                       │     │                  ╰ DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe
+│                       │     │                            3dea12053f4a27ea640 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32386 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -283,135 +284,57 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32386 
 │                       │     ├ PublishedDate   : 2025-04-09T23:15:37.75Z 
 │                       │     ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-32387 
-│                       │     ├ PkgID           : helm.sh/helm/v3@v3.17.2 
-│                       │     ├ PkgName         : helm.sh/helm/v3 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.17.2 
-│                       │     │                  ╰ UID : e21562ef302c4c3d 
-│                       │     ├ InstalledVersion: v3.17.2 
-│                       │     ├ FixedVersion    : 3.17.3 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                       │     │                  │         c6a52ce16284552b56f 
-│                       │     │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                       │     │                            6a80dcb94c7832e9fb2 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32387 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : helm.sh/helm/v3: Helm Allows A Specially Crafted JSON Schema
-│                       │     │                   To Cause A Stack Overflow 
-│                       │     ├ Description     : Helm is a package manager for Charts for Kubernetes. A JSON
-│                       │     │                   Schema file within a chart can be crafted with a deeply
-│                       │     │                   nested chain of references, leading to parser recursion that
-│                       │     │                   can exceed the stack size limit and trigger a stack overflow.
-│                       │     │                    This issue has been resolved in Helm v3.17.3. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ╭ [0]: CWE-121 
-│                       │     │                  ╰ [1]: CWE-674 
-│                       │     ├ VendorSeverity   ╭ bitnami: 2 
-│                       │     │                  ├ ghsa   : 2 
-│                       │     │                  ╰ redhat : 2 
-│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
-│                       │     │                  │         │           /A:H 
-│                       │     │                  │         ╰ V3Score : 6.5 
-│                       │     │                  ├ ghsa    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
-│                       │     │                  │         │           /A:H 
-│                       │     │                  │         ╰ V3Score : 6.5 
-│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
-│                       │     │                            │           /A:H 
-│                       │     │                            ╰ V3Score : 6.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32387 
-│                       │     │                  ├ [1]: https://github.com/helm/helm 
-│                       │     │                  ├ [2]: https://github.com/helm/helm/commit/d8ca55fc669645c10c0
-│                       │     │                  │      681d49723f4bb8c0b1ce7 
-│                       │     │                  ├ [3]: https://github.com/helm/helm/security/advisories/GHSA-5
-│                       │     │                  │      xqw-8hwv-wg92 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32387 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32387 
-│                       │     ├ PublishedDate   : 2025-04-09T23:15:37.903Z 
-│                       │     ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
-│                       ╰ [3] ╭ VulnerabilityID : CVE-2025-22871 
-│                             ├ PkgID           : stdlib@v1.24.1 
-│                             ├ PkgName         : stdlib 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.1 
-│                             │                  ╰ UID : 7aba090ce18913b7 
-│                             ├ InstalledVersion: v1.24.1 
-│                             ├ FixedVersion    : 1.23.8, 1.24.2 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-32387 
+│                             ├ PkgID           : helm.sh/helm/v3@v3.17.2 
+│                             ├ PkgName         : helm.sh/helm/v3 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.17.2 
+│                             │                  ╰ UID : e21562ef302c4c3d 
+│                             ├ InstalledVersion: v3.17.2 
+│                             ├ FixedVersion    : 3.17.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-│                             │                  │         c6a52ce16284552b56f 
-│                             │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-│                             │                            6a80dcb94c7832e9fb2 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
-│                             ├ DataSource       ╭ ID  : govulndb 
-│                             │                  ├ Name: The Go Vulnerability Database 
-│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : net/http: Request smuggling due to acceptance of invalid
-│                             │                   chunked data in net/http 
-│                             ├ Description     : The net/http package improperly accepts a bare LF as a line
-│                             │                   terminator in chunked data chunk-size lines. This can permit
-│                             │                   request smuggling if a net/http server is used in conjunction
-│                             │                    with a server that incorrectly accepts a bare LF as part of
-│                             │                   a chunk-ext. 
+│                             ├ Layer            ╭ Digest: sha256:f8e5c3cfc49e8af2f6133d70c37f97c775ab908b397e7
+│                             │                  │         9f865c4e7786b00a08e 
+│                             │                  ╰ DiffID: sha256:ad135fec4ef7f81ad6576f400bd3dbba45b81da46bdbe
+│                             │                            3dea12053f4a27ea640 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32387 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory Go 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Ago 
+│                             ├ Title           : helm.sh/helm/v3: Helm Allows A Specially Crafted JSON Schema
+│                             │                   To Cause A Stack Overflow 
+│                             ├ Description     : Helm is a package manager for Charts for Kubernetes. A JSON
+│                             │                   Schema file within a chart can be crafted with a deeply
+│                             │                   nested chain of references, leading to parser recursion that
+│                             │                   can exceed the stack size limit and trigger a stack overflow.
+│                             │                    This issue has been resolved in Helm v3.17.3. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ amazon: 3 
-│                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.4 
-│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
-│                             │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22871 
-│                             │                  ├ [2]: https://go.dev/cl/652998 
-│                             │                  ├ [3]: https://go.dev/issue/71988 
-│                             │                  ├ [4]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
-│                             │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3563 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
-│                             ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
-│                             ╰ LastModifiedDate: 2025-04-09T20:02:41.86Z 
-╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
-      ├ Class          : lang-pkgs 
-      ├ Type           : gobinary 
-      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-22871 
-                              ├ PkgID           : stdlib@v1.24.1 
-                              ├ PkgName         : stdlib 
-                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.1 
-                              │                  ╰ UID : b5fb81b8f7a10cb5 
-                              ├ InstalledVersion: v1.24.1 
-                              ├ FixedVersion    : 1.23.8, 1.24.2 
-                              ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:616906adfb278aaf2ca9b4f179de5cd1fe81043128e6a
-                              │                  │         c6a52ce16284552b56f 
-                              │                  ╰ DiffID: sha256:baf893a1d5320e1b3098918ccdb6b4f6e34fa57b42694
-                              │                            6a80dcb94c7832e9fb2 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22871 
-                              ├ DataSource       ╭ ID  : govulndb 
-                              │                  ├ Name: The Go Vulnerability Database 
-                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Title           : net/http: Request smuggling due to acceptance of invalid
-                              │                   chunked data in net/http 
-                              ├ Description     : The net/http package improperly accepts a bare LF as a line
-                              │                   terminator in chunked data chunk-size lines. This can permit
-                              │                   request smuggling if a net/http server is used in conjunction
-                              │                    with a server that incorrectly accepts a bare LF as part of
-                              │                   a chunk-ext. 
-                              ├ Severity        : MEDIUM 
-                              ├ VendorSeverity   ╭ amazon: 3 
-                              │                  ╰ redhat: 2 
-                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/
-                              │                           │           A:N 
-                              │                           ╰ V3Score : 5.4 
-                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/04/4 
-                              │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-22871 
-                              │                  ├ [2]: https://go.dev/cl/652998 
-                              │                  ├ [3]: https://go.dev/issue/71988 
-                              │                  ├ [4]: https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk 
-                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-22871 
-                              │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3563 
-                              │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-22871 
-                              ├ PublishedDate   : 2025-04-08T20:15:20.183Z 
-                              ╰ LastModifiedDate: 2025-04-09T20:02:41.86Z 
+│                             ├ CweIDs           ╭ [0]: CWE-121 
+│                             │                  ╰ [1]: CWE-674 
+│                             ├ VendorSeverity   ╭ bitnami: 2 
+│                             │                  ├ ghsa   : 2 
+│                             │                  ╰ redhat : 2 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 6.5 
+│                             │                  ├ ghsa    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 6.5 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+│                             │                            │           /A:H 
+│                             │                            ╰ V3Score : 6.5 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-32387 
+│                             │                  ├ [1]: https://github.com/helm/helm 
+│                             │                  ├ [2]: https://github.com/helm/helm/commit/d8ca55fc669645c10c0
+│                             │                  │      681d49723f4bb8c0b1ce7 
+│                             │                  ├ [3]: https://github.com/helm/helm/security/advisories/GHSA-5
+│                             │                  │      xqw-8hwv-wg92 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-32387 
+│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-32387 
+│                             ├ PublishedDate   : 2025-04-09T23:15:37.903Z 
+│                             ╰ LastModifiedDate: 2025-04-11T15:40:10.277Z 
+╰ [6] ╭ Target: usr/bin/trivy_cve_query 
+      ├ Class : lang-pkgs 
+      ╰ Type  : gobinary 
 ````
