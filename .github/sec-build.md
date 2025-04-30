@@ -125,24 +125,33 @@
 │                             │                  ├ Name: GitHub Security Advisory Maven 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Amaven 
-│                             ├ Title           : Apache HttpClient disables domain checks 
+│                             ├ Title           : org.apache.httpcomponents.client5/httpclient5: Apache
+│                             │                   HttpComponents: PSL (Public Suffix List) validation bypass 
 │                             ├ Description     : A bug in PSL validation logic in Apache HttpClient 5.4.x
 │                             │                   disables domain checks, affecting cookie management and host
 │                             │                   name verification. Discovered by the Apache HttpClient team.
 │                             │                   Fixed in the 5.4.3 release 
 │                             ├ Severity        : HIGH 
 │                             ├ CweIDs           ─ [0]: CWE-295 
-│                             ├ VendorSeverity   ─ ghsa: 3 
-│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
-│                             │                         ╰ V3Score : 7.5 
-│                             ├ References       ╭ [0]: https://github.com/apache/httpcomponents-client 
-│                             │                  ├ [1]: https://github.com/apache/httpcomponents-client/pull/574 
-│                             │                  ├ [2]: https://github.com/apache/httpcomponents-client/pull/621 
-│                             │                  ├ [3]: https://hc.apache.org/httpcomponents-client-5.4.x/index
+│                             ├ VendorSeverity   ╭ ghsa  : 3 
+│                             │                  ╰ redhat: 2 
+│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/
+│                             │                  │        │           A:N 
+│                             │                  │        ╰ V3Score : 7.5 
+│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 6.5 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27820 
+│                             │                  ├ [1]: https://github.com/advisories/GHSA-73m2-qfq3-56cx 
+│                             │                  ├ [2]: https://github.com/apache/httpcomponents-client 
+│                             │                  ├ [3]: https://github.com/apache/httpcomponents-client/pull/574 
+│                             │                  ├ [4]: https://github.com/apache/httpcomponents-client/pull/621 
+│                             │                  ├ [5]: https://hc.apache.org/httpcomponents-client-5.4.x/index
 │                             │                  │      .html 
-│                             │                  ├ [4]: https://lists.apache.org/thread/55xhs40ncqv97qvoocok449
+│                             │                  ├ [6]: https://lists.apache.org/thread/55xhs40ncqv97qvoocok449
 │                             │                  │      95xp5kqn8 
-│                             │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-27820 
+│                             │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-27820 
+│                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
 │                             ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
 │                             ╰ LastModifiedDate: 2025-04-24T15:15:57.787Z 
 ├ [2] ╭ Target: Python 
