@@ -129,7 +129,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-27820
     - https://www.cve.org/CVERecord?id=CVE-2025-27820
     PublishedDate: '2025-04-24T12:15:16.723Z'
-    LastModifiedDate: '2025-04-24T15:15:57.787Z'
+    LastModifiedDate: '2025-04-29T13:52:47.47Z'
 - Target: Python
   Class: lang-pkgs
   Type: python-pkg
