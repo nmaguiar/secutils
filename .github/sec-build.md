@@ -141,19 +141,21 @@
 │                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/
 │                             │                           │           A:N 
 │                             │                           ╰ V3Score : 6.5 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-27820 
-│                             │                  ├ [1]: https://github.com/advisories/GHSA-73m2-qfq3-56cx 
-│                             │                  ├ [2]: https://github.com/apache/httpcomponents-client 
-│                             │                  ├ [3]: https://github.com/apache/httpcomponents-client/pull/574 
-│                             │                  ├ [4]: https://github.com/apache/httpcomponents-client/pull/621 
-│                             │                  ├ [5]: https://hc.apache.org/httpcomponents-client-5.4.x/index
-│                             │                  │      .html 
-│                             │                  ├ [6]: https://lists.apache.org/thread/55xhs40ncqv97qvoocok449
-│                             │                  │      95xp5kqn8 
-│                             │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-27820 
-│                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
+│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-27820 
+│                             │                  ├ [1] : https://github.com/advisories/GHSA-73m2-qfq3-56cx 
+│                             │                  ├ [2] : https://github.com/apache/httpcomponents-client 
+│                             │                  ├ [3] : https://github.com/apache/httpcomponents-client/pull/574 
+│                             │                  ├ [4] : https://github.com/apache/httpcomponents-client/pull/621 
+│                             │                  ├ [5] : https://hc.apache.org/httpcomponents-client-5.4.x/inde
+│                             │                  │       x.html 
+│                             │                  ├ [6] : https://lists.apache.org/thread/55xhs40ncqv97qvoocok44
+│                             │                  │       995xp5kqn8 
+│                             │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-27820 
+│                             │                  ├ [8] : https://security.netapp.com/advisory/ntap-20250516-0003 
+│                             │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250516-0003/ 
+│                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
 │                             ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
-│                             ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+│                             ╰ LastModifiedDate: 2025-05-16T23:15:20.193Z 
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
