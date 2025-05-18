@@ -127,9 +127,11 @@
     - https://hc.apache.org/httpcomponents-client-5.4.x/index.html
     - https://lists.apache.org/thread/55xhs40ncqv97qvoocok44995xp5kqn8
     - https://nvd.nist.gov/vuln/detail/CVE-2025-27820
+    - https://security.netapp.com/advisory/ntap-20250516-0003
+    - https://security.netapp.com/advisory/ntap-20250516-0003/
     - https://www.cve.org/CVERecord?id=CVE-2025-27820
     PublishedDate: '2025-04-24T12:15:16.723Z'
-    LastModifiedDate: '2025-04-29T13:52:47.47Z'
+    LastModifiedDate: '2025-05-16T23:15:20.193Z'
 - Target: Python
   Class: lang-pkgs
   Type: python-pkg
