@@ -42,7 +42,7 @@
 │                       │     │                  │      ories/GHSA-cm76-qm8v-3j95 
 │                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47290 
 │                       │     ├ PublishedDate   : 2025-05-20T19:15:50.157Z 
-│                       │     ╰ LastModifiedDate: 2025-05-20T19:15:50.157Z 
+│                       │     ╰ LastModifiedDate: 2025-05-21T20:24:58.133Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-4516 
 │                       │     ├ PkgID           : pyc@3.12.10-r0 
 │                       │     ├ PkgName         : pyc 
