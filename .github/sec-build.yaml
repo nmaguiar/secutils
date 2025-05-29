@@ -1,6 +1,115 @@
 - Target: nmaguiar/secutils:build (alpine 3.22.0_alpha20250108)
   Class: os-pkgs
   Type: alpine
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-4947
+    PkgID: curl@8.13.0-r1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.13.0-r1?arch=x86_64&distro=3.22.0_alpha20250108
+      UID: 6db1def41caf0d6d
+    InstalledVersion: 8.13.0-r1
+    FixedVersion: 8.14.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:f465c08687bbede2d7389ec667cae2572fe4028b046ba4a63aba86c0b442910f
+      DiffID: sha256:4f6f2a667799d721dfc3261c8c0aee5cf82de785ba46c5c7be6a07e1dc236717
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-4947
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: libcurl accidentally skips the certificate verification for QUIC conne ...
+    Description: libcurl accidentally skips the certificate verification for QUIC connections when connecting to a host specified as an IP address in the URL. Therefore, it does not detect impostors or man-in-the-middle attacks.
+    Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/05/28/4
+    - https://curl.se/docs/CVE-2025-4947.html
+    - https://curl.se/docs/CVE-2025-4947.json
+    - https://hackerone.com/reports/3150884
+    PublishedDate: '2025-05-28T07:15:24.78Z'
+    LastModifiedDate: '2025-05-28T15:01:30.72Z'
+  - VulnerabilityID: CVE-2025-5025
+    PkgID: curl@8.13.0-r1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.13.0-r1?arch=x86_64&distro=3.22.0_alpha20250108
+      UID: 6db1def41caf0d6d
+    InstalledVersion: 8.13.0-r1
+    FixedVersion: 8.14.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:f465c08687bbede2d7389ec667cae2572fe4028b046ba4a63aba86c0b442910f
+      DiffID: sha256:4f6f2a667799d721dfc3261c8c0aee5cf82de785ba46c5c7be6a07e1dc236717
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-5025
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: libcurl supports *pinning* of the server certificate public key for HT ...
+    Description: libcurl supports *pinning* of the server certificate public key for HTTPS transfers. Due to an omission, this check is not performed when connecting with QUIC for HTTP/3, when the TLS backend is wolfSSL. Documentation says the option works with wolfSSL, failing to specify that it does not for QUIC and HTTP/3. Since pinning makes the transfer succeed if the pin is fine, users could unwittingly connect to an impostor server without noticing.
+    Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/05/28/5
+    - https://curl.se/docs/CVE-2025-5025.html
+    - https://curl.se/docs/CVE-2025-5025.json
+    - https://hackerone.com/reports/3153497
+    PublishedDate: '2025-05-28T07:15:24.91Z'
+    LastModifiedDate: '2025-05-28T15:01:30.72Z'
+  - VulnerabilityID: CVE-2025-4947
+    PkgID: libcurl@8.13.0-r1
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.13.0-r1?arch=x86_64&distro=3.22.0_alpha20250108
+      UID: cca1848e5e1821a7
+    InstalledVersion: 8.13.0-r1
+    FixedVersion: 8.14.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:f465c08687bbede2d7389ec667cae2572fe4028b046ba4a63aba86c0b442910f
+      DiffID: sha256:4f6f2a667799d721dfc3261c8c0aee5cf82de785ba46c5c7be6a07e1dc236717
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-4947
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: libcurl accidentally skips the certificate verification for QUIC conne ...
+    Description: libcurl accidentally skips the certificate verification for QUIC connections when connecting to a host specified as an IP address in the URL. Therefore, it does not detect impostors or man-in-the-middle attacks.
+    Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/05/28/4
+    - https://curl.se/docs/CVE-2025-4947.html
+    - https://curl.se/docs/CVE-2025-4947.json
+    - https://hackerone.com/reports/3150884
+    PublishedDate: '2025-05-28T07:15:24.78Z'
+    LastModifiedDate: '2025-05-28T15:01:30.72Z'
+  - VulnerabilityID: CVE-2025-5025
+    PkgID: libcurl@8.13.0-r1
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.13.0-r1?arch=x86_64&distro=3.22.0_alpha20250108
+      UID: cca1848e5e1821a7
+    InstalledVersion: 8.13.0-r1
+    FixedVersion: 8.14.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:f465c08687bbede2d7389ec667cae2572fe4028b046ba4a63aba86c0b442910f
+      DiffID: sha256:4f6f2a667799d721dfc3261c8c0aee5cf82de785ba46c5c7be6a07e1dc236717
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-5025
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: libcurl supports *pinning* of the server certificate public key for HT ...
+    Description: libcurl supports *pinning* of the server certificate public key for HTTPS transfers. Due to an omission, this check is not performed when connecting with QUIC for HTTP/3, when the TLS backend is wolfSSL. Documentation says the option works with wolfSSL, failing to specify that it does not for QUIC and HTTP/3. Since pinning makes the transfer succeed if the pin is fine, users could unwittingly connect to an impostor server without noticing.
+    Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/05/28/5
+    - https://curl.se/docs/CVE-2025-5025.html
+    - https://curl.se/docs/CVE-2025-5025.json
+    - https://hackerone.com/reports/3153497
+    PublishedDate: '2025-05-28T07:15:24.91Z'
+    LastModifiedDate: '2025-05-28T15:01:30.72Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
@@ -85,6 +194,64 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-12801
     PublishedDate: '2024-12-19T17:15:08.93Z'
     LastModifiedDate: '2025-01-03T14:15:24.5Z'
+  - VulnerabilityID: CVE-2025-48734
+    PkgName: commons-beanutils:commons-beanutils
+    PkgPath: opt/dependency-check/lib/commons-beanutils-1.9.4.jar
+    PkgIdentifier:
+      PURL: pkg:maven/commons-beanutils/commons-beanutils@1.9.4
+      UID: 87543632af4cfff7
+    InstalledVersion: 1.9.4
+    FixedVersion: 1.11.0
+    Status: fixed
+    Layer:
+      Digest: sha256:f465c08687bbede2d7389ec667cae2572fe4028b046ba4a63aba86c0b442910f
+      DiffID: sha256:4f6f2a667799d721dfc3261c8c0aee5cf82de785ba46c5c7be6a07e1dc236717
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-48734
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Title: Improper Access Control vulnerability in Apache Commons.    A special  ...
+    Description: |-
+      Improper Access Control vulnerability in Apache Commons.
+
+
+
+      A special BeanIntrospector class was added in version 1.9.2. This can be used to stop attackers from using the declared class property of Java enum objects to get access to the classloader. However this protection was not enabled by default. PropertyUtilsBean (and consequently BeanUtilsBean) now disallows declared class level property access by default.
+
+
+
+
+
+      Releases 1.11.0 and 2.0.0-M2 address a potential security issue when accessing enum properties in an uncontrolled way. If an application using Commons BeanUtils passes property paths from an external source directly to the getProperty() method of PropertyUtilsBean, an attacker can access the enum’s class loader via the “declaredClass” property available on all Java “enum” objects. Accessing the enum’s “declaredClass” allows remote attackers to access the ClassLoader and execute arbitrary code. The same issue exists with PropertyUtilsBean.getNestedProperty().
+      Starting in versions 1.11.0 and 2.0.0-M2 a special BeanIntrospector suppresses the “declaredClass” property. Note that this new BeanIntrospector is enabled by default, but you can disable it to regain the old behavior; see section 2.5 of the user's guide and the unit tests.
+
+      This issue affects Apache Commons BeanUtils 1.x before 1.11.0, and 2.x before 2.0.0-M2.Users of the artifact commons-beanutils:commons-beanutils
+
+       1.x are recommended to upgrade to version 1.11.0, which fixes the issue.
+
+
+      Users of the artifact org.apache.commons:commons-beanutils2
+
+       2.x are recommended to upgrade to version 2.0.0-M2, which fixes the issue.
+    Severity: HIGH
+    CweIDs:
+    - CWE-284
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/05/28/6
+    - https://github.com/apache/commons-beanutils
+    - https://github.com/apache/commons-beanutils/commit/bd20740da25b69552ddef8523beec0837297eaf9
+    - https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqtfohb0of1g9
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-48734
+    PublishedDate: '2025-05-28T14:15:34.07Z'
+    LastModifiedDate: '2025-05-28T15:01:30.72Z'
   - VulnerabilityID: CVE-2025-27820
     PkgName: org.apache.httpcomponents.client5:httpclient5
     PkgPath: opt/dependency-check/lib/httpclient5-5.4.2.jar
