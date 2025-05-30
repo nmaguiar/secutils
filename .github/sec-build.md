@@ -7,7 +7,7 @@
 │                       │     ├ PkgName         : curl 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.13.0-r1?arch=x86_64&distro=3.22.
 │                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : 6db1def41caf0d6d 
+│                       │     │                  ╰ UID : 852bc70963a76a45 
 │                       │     ├ InstalledVersion: 8.13.0-r1 
 │                       │     ├ FixedVersion    : 8.14.0-r0 
 │                       │     ├ Status          : fixed 
@@ -37,7 +37,7 @@
 │                       │     ├ PkgName         : curl 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.13.0-r1?arch=x86_64&distro=3.22.
 │                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : 6db1def41caf0d6d 
+│                       │     │                  ╰ UID : 852bc70963a76a45 
 │                       │     ├ InstalledVersion: 8.13.0-r1 
 │                       │     ├ FixedVersion    : 8.14.0-r0 
 │                       │     ├ Status          : fixed 
@@ -71,7 +71,7 @@
 │                       │     ├ PkgName         : libcurl 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.13.0-r1?arch=x86_64&distro=3.
 │                       │     │                  │       22.0_alpha20250108 
-│                       │     │                  ╰ UID : cca1848e5e1821a7 
+│                       │     │                  ╰ UID : 209aff70b6f57dd2 
 │                       │     ├ InstalledVersion: 8.13.0-r1 
 │                       │     ├ FixedVersion    : 8.14.0-r0 
 │                       │     ├ Status          : fixed 
@@ -101,7 +101,7 @@
 │                             ├ PkgName         : libcurl 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.13.0-r1?arch=x86_64&distro=3.
 │                             │                  │       22.0_alpha20250108 
-│                             │                  ╰ UID : cca1848e5e1821a7 
+│                             │                  ╰ UID : 209aff70b6f57dd2 
 │                             ├ InstalledVersion: 8.13.0-r1 
 │                             ├ FixedVersion    : 8.14.0-r0 
 │                             ├ Status          : fixed 
@@ -252,8 +252,9 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Maven 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Amaven 
-│                       │     ├ Title           : Improper Access Control vulnerability in Apache Commons.    A
-│                       │     │                    special  ... 
+│                       │     ├ Title           : commons-beanutils: Apache Commons BeanUtils:
+│                       │     │                   PropertyUtilsBean does not suppresses an enum's declaredClass
+│                       │     │                    property by default 
 │                       │     ├ Description     : Improper Access Control vulnerability in Apache Commons.
 │                       │     │                   
 │                       │     │                   A special BeanIntrospector class was added in version 1.9.2.
@@ -287,18 +288,28 @@
 │                       │     │                    2.x are recommended to upgrade to version 2.0.0-M2, which 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-284 
-│                       │     ├ VendorSeverity   ─ ghsa: 3 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H 
-│                       │     │                         ╰ V3Score : 8.8 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │     │                  ╰ redhat: 3 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 8.8 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1]: https://github.com/apache/commons-beanutils 
-│                       │     │                  ├ [2]: https://github.com/apache/commons-beanutils/commit/bd20
+│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-48734 
+│                       │     │                  ├ [2]: https://github.com/apache/commons-beanutils 
+│                       │     │                  ├ [3]: https://github.com/apache/commons-beanutils/commit/28ad
+│                       │     │                  │      955a1613ed5885870cc7da52093c1ce739dc 
+│                       │     │                  ├ [4]: https://github.com/apache/commons-beanutils/commit/bd20
 │                       │     │                  │      740da25b69552ddef8523beec0837297eaf9 
-│                       │     │                  ├ [3]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqtf
+│                       │     │                  ├ [5]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqtf
 │                       │     │                  │      ohb0of1g9 
-│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
-│                       │     ╰ LastModifiedDate: 2025-05-28T15:01:30.72Z 
+│                       │     ╰ LastModifiedDate: 2025-05-28T18:15:27.41Z 
 │                       ╰ [3] ╭ VulnerabilityID : CVE-2025-27820 
 │                             ├ PkgName         : org.apache.httpcomponents.client5:httpclient5 
 │                             ├ PkgPath         : opt/dependency-check/lib/httpclient5-5.4.2.jar 
