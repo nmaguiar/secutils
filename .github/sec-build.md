@@ -166,8 +166,8 @@
 │                       │     │                  │        │           A:H 
 │                       │     │                  │        ╰ V3Score : 8.8 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 8.8 
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 8.3 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [2]: https://github.com/apache/commons-beanutils 
