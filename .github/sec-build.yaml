@@ -201,6 +201,57 @@
 - Target: Python
   Class: lang-pkgs
   Type: python-pkg
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2024-47081
+    PkgName: requests
+    PkgPath: opt/scancode-toolkit/lib/python3.12/site-packages/requests-2.32.3.dist-info/METADATA
+    PkgIdentifier:
+      PURL: pkg:pypi/requests@2.32.3
+      UID: f9f41359e2a200cb
+    InstalledVersion: 2.32.3
+    FixedVersion: 2.32.4
+    Status: fixed
+    Layer:
+      Digest: sha256:199afb063e00d010c6fad30d61758daedfea5abde652ca12a045bd2d39840b17
+      DiffID: sha256:39e6476a307b3df6d5cade50aa44ddb8cdc1480212b5751edda8f12cf685c80c
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-47081
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory pip
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
+    Title: Requests vulnerable to .netrc credentials leak via malicious URLs
+    Description: |-
+      ### Impact
+
+      Due to a URL parsing issue, Requests releases prior to 2.32.4 may leak .netrc credentials to third parties for specific maliciously-crafted URLs.
+
+      ### Workarounds
+      For older versions of Requests, use of the .netrc file can be disabled with `trust_env=False` on your Requests Session ([docs](https://requests.readthedocs.io/en/latest/api/#requests.Session.trust_env)).
+
+      ### References
+      https://github.com/psf/requests/pull/6965
+      https://seclists.org/fulldisclosure/2025/Jun/2
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N
+        V3Score: 5.3
+    References:
+    - http://seclists.org/fulldisclosure/2025/Jun/2
+    - http://www.openwall.com/lists/oss-security/2025/06/03/11
+    - http://www.openwall.com/lists/oss-security/2025/06/03/9
+    - http://www.openwall.com/lists/oss-security/2025/06/04/1
+    - http://www.openwall.com/lists/oss-security/2025/06/04/6
+    - https://github.com/psf/requests
+    - https://github.com/psf/requests/commit/96ba401c1296ab1dda74a2365ef36d88f7d144ef
+    - https://github.com/psf/requests/pull/6965
+    - https://github.com/psf/requests/security/advisories/GHSA-9hjg-9r4m-mvj7
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-47081
+    - https://requests.readthedocs.io/en/latest/api/#requests.Session.trust_env
+    - https://seclists.org/fulldisclosure/2025/Jun/2
 - Target: usr/bin/grype
   Class: lang-pkgs
   Type: gobinary
