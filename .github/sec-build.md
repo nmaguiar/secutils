@@ -232,9 +232,62 @@
 │                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
 │                             ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
 │                             ╰ LastModifiedDate: 2025-05-16T23:15:20.193Z 
-├ [2] ╭ Target: Python 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : python-pkg 
+├ [2] ╭ Target         : Python 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : python-pkg 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2024-47081 
+│                             ├ PkgName         : requests 
+│                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/requests-2.
+│                             │                   32.3.dist-info/METADATA 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:pypi/requests@2.32.3 
+│                             │                  ╰ UID : f9f41359e2a200cb 
+│                             ├ InstalledVersion: 2.32.3 
+│                             ├ FixedVersion    : 2.32.4 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:199afb063e00d010c6fad30d61758daedfea5abde652c
+│                             │                  │         a12a045bd2d39840b17 
+│                             │                  ╰ DiffID: sha256:39e6476a307b3df6d5cade50aa44ddb8cdc1480212b57
+│                             │                            51edda8f12cf685c80c 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-47081 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory pip 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Apip 
+│                             ├ Title           : Requests vulnerable to .netrc credentials leak via malicious
+│                             │                   URLs 
+│                             ├ Description     : ### Impact
+│                             │                   
+│                             │                   Due to a URL parsing issue, Requests releases prior to 2.32.4
+│                             │                    may leak .netrc credentials to third parties for specific
+│                             │                   maliciously-crafted URLs.
+│                             │                   ### Workarounds
+│                             │                   For older versions of Requests, use of the .netrc file can be
+│                             │                    disabled with `trust_env=False` on your Requests Session
+│                             │                   ([docs](https://requests.readthedocs.io/en/latest/api/#reques
+│                             │                   ts.Session.trust_env)).
+│                             │                   ### References
+│                             │                   https://github.com/psf/requests/pull/6965
+│                             │                   https://seclists.org/fulldisclosure/2025/Jun/2 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N 
+│                             │                         ╰ V3Score : 5.3 
+│                             ╰ References       ╭ [0] : http://seclists.org/fulldisclosure/2025/Jun/2 
+│                                                ├ [1] : http://www.openwall.com/lists/oss-security/2025/06/03/11 
+│                                                ├ [2] : http://www.openwall.com/lists/oss-security/2025/06/03/9 
+│                                                ├ [3] : http://www.openwall.com/lists/oss-security/2025/06/04/1 
+│                                                ├ [4] : http://www.openwall.com/lists/oss-security/2025/06/04/6 
+│                                                ├ [5] : https://github.com/psf/requests 
+│                                                ├ [6] : https://github.com/psf/requests/commit/96ba401c1296ab1
+│                                                │       dda74a2365ef36d88f7d144ef 
+│                                                ├ [7] : https://github.com/psf/requests/pull/6965 
+│                                                ├ [8] : https://github.com/psf/requests/security/advisories/GH
+│                                                │       SA-9hjg-9r4m-mvj7 
+│                                                ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-47081 
+│                                                ├ [10]: https://requests.readthedocs.io/en/latest/api/#request
+│                                                │       s.Session.trust_env 
+│                                                ╰ [11]: https://seclists.org/fulldisclosure/2025/Jun/2 
 ├ [3] ╭ Target: usr/bin/grype 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
