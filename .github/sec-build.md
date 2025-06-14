@@ -1,5 +1,5 @@
 ````yaml
-╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.22.0) 
+╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
 │     ├ Class : os-pkgs 
 │     ╰ Type  : alpine 
 ├ [1] ╭ Target         : Java 
@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-│                       │     │                  │         863216c18d09bf5fa2c 
-│                       │     │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-│                       │     │                            1e704184f7d97827a1c 
+│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
+│                       │     │                  │         65f70e070fb0f0841ac 
+│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
+│                       │     │                            dde371d1e6c0645be9f 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -69,10 +69,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-│                       │     │                  │         863216c18d09bf5fa2c 
-│                       │     │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-│                       │     │                            1e704184f7d97827a1c 
+│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
+│                       │     │                  │         65f70e070fb0f0841ac 
+│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
+│                       │     │                            dde371d1e6c0645be9f 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -114,10 +114,10 @@
 │                       │     ├ InstalledVersion: 1.9.4 
 │                       │     ├ FixedVersion    : 1.11.0 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-│                       │     │                  │         863216c18d09bf5fa2c 
-│                       │     │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-│                       │     │                            1e704184f7d97827a1c 
+│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
+│                       │     │                  │         65f70e070fb0f0841ac 
+│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
+│                       │     │                            dde371d1e6c0645be9f 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48734 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -192,10 +192,10 @@
 │                             ├ InstalledVersion: 5.4.2 
 │                             ├ FixedVersion    : 5.4.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-│                             │                  │         863216c18d09bf5fa2c 
-│                             │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-│                             │                            1e704184f7d97827a1c 
+│                             ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
+│                             │                  │         65f70e070fb0f0841ac 
+│                             │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
+│                             │                            dde371d1e6c0645be9f 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-27820 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -245,7 +245,7 @@
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-4673 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-22874 
 │                       │     ├ PkgID           : stdlib@v1.24.2 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
@@ -253,10 +253,46 @@
 │                       │     ├ InstalledVersion: v1.24.2 
 │                       │     ├ FixedVersion    : 1.23.10, 1.24.4 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-│                       │     │                  │         863216c18d09bf5fa2c 
-│                       │     │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-│                       │     │                            1e704184f7d97827a1c 
+│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
+│                       │     │                  │         65f70e070fb0f0841ac 
+│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
+│                       │     │                            dde371d1e6c0645be9f 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22874 
+│                       │     ├ DataSource       ╭ ID  : govulndb 
+│                       │     │                  ├ Name: The Go Vulnerability Database 
+│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │     ├ Title           : crypto/x509: Usage of ExtKeyUsageAny disables policy
+│                       │     │                   validation in crypto/x509 
+│                       │     ├ Description     : Calling Verify with a VerifyOptions.KeyUsages that contains
+│                       │     │                   ExtKeyUsageAny unintentionally disabledpolicy validation.
+│                       │     │                   This only affected certificate chains which contain policy
+│                       │     │                   graphs, which are rather uncommon. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ redhat: 3 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22874 
+│                       │     │                  ├ [1]: https://go.dev/cl/670375 
+│                       │     │                  ├ [2]: https://go.dev/issue/73612 
+│                       │     │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22874 
+│                       │     │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3749 
+│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22874 
+│                       │     ├ PublishedDate   : 2025-06-11T17:15:42.167Z 
+│                       │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-4673 
+│                       │     ├ PkgID           : stdlib@v1.24.2 
+│                       │     ├ PkgName         : stdlib 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
+│                       │     │                  ╰ UID : 2475b985111415cc 
+│                       │     ├ InstalledVersion: v1.24.2 
+│                       │     ├ FixedVersion    : 1.23.10, 1.24.4 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
+│                       │     │                  │         65f70e070fb0f0841ac 
+│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
+│                       │     │                            dde371d1e6c0645be9f 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4673 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -275,40 +311,7 @@
 │                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
 │                       │     ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
 │                       │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-0913 
-│                       │     ├ PkgID           : stdlib@v1.24.2 
-│                       │     ├ PkgName         : stdlib 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
-│                       │     │                  ╰ UID : 2475b985111415cc 
-│                       │     ├ InstalledVersion: v1.24.2 
-│                       │     ├ FixedVersion    : 1.23.10, 1.24.4 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-│                       │     │                  │         863216c18d09bf5fa2c 
-│                       │     │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-│                       │     │                            1e704184f7d97827a1c 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0913 
-│                       │     ├ DataSource       ╭ ID  : govulndb 
-│                       │     │                  ├ Name: The Go Vulnerability Database 
-│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │     ├ Title           : Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows
-│                       │     │                   in os in syscall 
-│                       │     ├ Description     : os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on
-│                       │     │                   Unix and Windows systems when the target path was a dangling
-│                       │     │                   symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL
-│                       │     │                   flags never follows symlinks. On Windows, when the target
-│                       │     │                   path was a symlink to a nonexistent location, OpenFile would
-│                       │     │                   create a file in that location. OpenFile now always returns
-│                       │     │                   an error when the O_CREATE and O_EXCL flags are both set and
-│                       │     │                   the target path is a symlink. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ References       ╭ [0]: https://go.dev/cl/672396 
-│                       │     │                  ├ [1]: https://go.dev/issue/73702 
-│                       │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                       │     │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3750 
-│                       │     ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
-│                       │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-22874 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-0913 
 │                             ├ PkgID           : stdlib@v1.24.2 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
@@ -316,120 +319,32 @@
 │                             ├ InstalledVersion: v1.24.2 
 │                             ├ FixedVersion    : 1.23.10, 1.24.4 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-│                             │                  │         863216c18d09bf5fa2c 
-│                             │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-│                             │                            1e704184f7d97827a1c 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22874 
+│                             ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
+│                             │                  │         65f70e070fb0f0841ac 
+│                             │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
+│                             │                            dde371d1e6c0645be9f 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0913 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Calling Verify with a VerifyOptions.KeyUsages that contains
-│                             │                   ExtKeyUsag ... 
-│                             ├ Description     : Calling Verify with a VerifyOptions.KeyUsages that contains
-│                             │                   ExtKeyUsageAny unintentionally disabledpolicy validation.
-│                             │                   This only affected certificate chains which contain policy
-│                             │                   graphs, which are rather uncommon. 
+│                             ├ Title           : Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows
+│                             │                   in os in syscall 
+│                             ├ Description     : os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on
+│                             │                   Unix and Windows systems when the target path was a dangling
+│                             │                   symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL
+│                             │                   flags never follows symlinks. On Windows, when the target
+│                             │                   path was a symlink to a nonexistent location, OpenFile would
+│                             │                   create a file in that location. OpenFile now always returns
+│                             │                   an error when the O_CREATE and O_EXCL flags are both set and
+│                             │                   the target path is a symlink. 
 │                             ├ Severity        : UNKNOWN 
-│                             ├ References       ╭ [0]: https://go.dev/cl/670375 
-│                             │                  ├ [1]: https://go.dev/issue/73612 
+│                             ├ References       ╭ [0]: https://go.dev/cl/672396 
+│                             │                  ├ [1]: https://go.dev/issue/73702 
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3749 
-│                             ├ PublishedDate   : 2025-06-11T17:15:42.167Z 
+│                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3750 
+│                             ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
 │                             ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
-      ├ Class          : lang-pkgs 
-      ├ Type           : gobinary 
-      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-4673 
-                        │     ├ PkgID           : stdlib@v1.24.3 
-                        │     ├ PkgName         : stdlib 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.3 
-                        │     │                  ╰ UID : e34f02b4cc33716e 
-                        │     ├ InstalledVersion: v1.24.3 
-                        │     ├ FixedVersion    : 1.23.10, 1.24.4 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-                        │     │                  │         863216c18d09bf5fa2c 
-                        │     │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-                        │     │                            1e704184f7d97827a1c 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4673 
-                        │     ├ DataSource       ╭ ID  : govulndb 
-                        │     │                  ├ Name: The Go Vulnerability Database 
-                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │     ├ Title           : Proxy-Authorization and Proxy-Authenticate headers persisted
-                        │     │                   on cross- ... 
-                        │     ├ Description     : Proxy-Authorization and Proxy-Authenticate headers persisted
-                        │     │                   on cross-origin redirects potentially leaking sensitive
-                        │     │                   information. 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ─ ubuntu: 2 
-                        │     ├ References       ╭ [0]: https://go.dev/cl/679257 
-                        │     │                  ├ [1]: https://go.dev/issue/73816 
-                        │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-                        │     │                  ├ [3]: https://pkg.go.dev/vuln/GO-2025-3751 
-                        │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
-                        │     ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
-                        │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-                        ├ [1] ╭ VulnerabilityID : CVE-2025-0913 
-                        │     ├ PkgID           : stdlib@v1.24.3 
-                        │     ├ PkgName         : stdlib 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.3 
-                        │     │                  ╰ UID : e34f02b4cc33716e 
-                        │     ├ InstalledVersion: v1.24.3 
-                        │     ├ FixedVersion    : 1.23.10, 1.24.4 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-                        │     │                  │         863216c18d09bf5fa2c 
-                        │     │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-                        │     │                            1e704184f7d97827a1c 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0913 
-                        │     ├ DataSource       ╭ ID  : govulndb 
-                        │     │                  ├ Name: The Go Vulnerability Database 
-                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │     ├ Title           : Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows
-                        │     │                   in os in syscall 
-                        │     ├ Description     : os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on
-                        │     │                   Unix and Windows systems when the target path was a dangling
-                        │     │                   symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL
-                        │     │                   flags never follows symlinks. On Windows, when the target
-                        │     │                   path was a symlink to a nonexistent location, OpenFile would
-                        │     │                   create a file in that location. OpenFile now always returns
-                        │     │                   an error when the O_CREATE and O_EXCL flags are both set and
-                        │     │                   the target path is a symlink. 
-                        │     ├ Severity        : UNKNOWN 
-                        │     ├ References       ╭ [0]: https://go.dev/cl/672396 
-                        │     │                  ├ [1]: https://go.dev/issue/73702 
-                        │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-                        │     │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3750 
-                        │     ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
-                        │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-                        ╰ [2] ╭ VulnerabilityID : CVE-2025-22874 
-                              ├ PkgID           : stdlib@v1.24.3 
-                              ├ PkgName         : stdlib 
-                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.3 
-                              │                  ╰ UID : e34f02b4cc33716e 
-                              ├ InstalledVersion: v1.24.3 
-                              ├ FixedVersion    : 1.23.10, 1.24.4 
-                              ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:016cd53180182dfdc7b0d87f1c472497f50c5b3a47e5f
-                              │                  │         863216c18d09bf5fa2c 
-                              │                  ╰ DiffID: sha256:d94f57738b5b41e059d1c0d813fe72fbaf318b8acaa9e
-                              │                            1e704184f7d97827a1c 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22874 
-                              ├ DataSource       ╭ ID  : govulndb 
-                              │                  ├ Name: The Go Vulnerability Database 
-                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Title           : Calling Verify with a VerifyOptions.KeyUsages that contains
-                              │                   ExtKeyUsag ... 
-                              ├ Description     : Calling Verify with a VerifyOptions.KeyUsages that contains
-                              │                   ExtKeyUsageAny unintentionally disabledpolicy validation.
-                              │                   This only affected certificate chains which contain policy
-                              │                   graphs, which are rather uncommon. 
-                              ├ Severity        : UNKNOWN 
-                              ├ References       ╭ [0]: https://go.dev/cl/670375 
-                              │                  ├ [1]: https://go.dev/issue/73612 
-                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3749 
-                              ├ PublishedDate   : 2025-06-11T17:15:42.167Z 
-                              ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
+╰ [6] ╭ Target: usr/bin/trivy_cve_query 
+      ├ Class : lang-pkgs 
+      ╰ Type  : gobinary 
 ````
