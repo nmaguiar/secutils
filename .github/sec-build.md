@@ -251,7 +251,7 @@
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
 │                       │     │                  ╰ UID : 2475b985111415cc 
 │                       │     ├ InstalledVersion: v1.24.2 
-│                       │     ├ FixedVersion    : 1.23.10, 1.24.4 
+│                       │     ├ FixedVersion    : 1.24.4 
 │                       │     ├ Status          : fixed 
 │                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
 │                       │     │                  │         65f70e070fb0f0841ac 
