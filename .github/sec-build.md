@@ -160,27 +160,31 @@
 │                       │     │                    2.x are recommended to upgrade to version 2.0.0-M2, which 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-284 
-│                       │     ├ VendorSeverity   ╭ amazon: 3 
-│                       │     │                  ├ ghsa  : 3 
-│                       │     │                  ╰ redhat: 3 
+│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ├ oracle-oval: 3 
+│                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/
 │                       │     │                  │        │           A:H 
 │                       │     │                  │        ╰ V3Score : 8.8 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/
 │                       │     │                           │           A:L 
 │                       │     │                           ╰ V3Score : 8.3 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-48734 
-│                       │     │                  ├ [2]: https://github.com/apache/commons-beanutils 
-│                       │     │                  ├ [3]: https://github.com/apache/commons-beanutils/commit/28ad
-│                       │     │                  │      955a1613ed5885870cc7da52093c1ce739dc 
-│                       │     │                  ├ [4]: https://github.com/apache/commons-beanutils/commit/bd20
-│                       │     │                  │      740da25b69552ddef8523beec0837297eaf9 
-│                       │     │                  ├ [5]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqtf
-│                       │     │                  │      ohb0of1g9 
-│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
-│                       │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
-│                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48734 
+│                       │     │                  ├ [2] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
+│                       │     │                  ├ [3] : https://github.com/apache/commons-beanutils 
+│                       │     │                  ├ [4] : https://github.com/apache/commons-beanutils/commit/28a
+│                       │     │                  │       d955a1613ed5885870cc7da52093c1ce739dc 
+│                       │     │                  ├ [5] : https://github.com/apache/commons-beanutils/commit/bd2
+│                       │     │                  │       0740da25b69552ddef8523beec0837297eaf9 
+│                       │     │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-48734.html 
+│                       │     │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-9114.html 
+│                       │     │                  ├ [8] : https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
+│                       │     │                  │       fohb0of1g9 
+│                       │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
 │                       │     ╰ LastModifiedDate: 2025-06-09T18:56:26.37Z 
 │                       ╰ [3] ╭ VulnerabilityID : CVE-2025-27820 
@@ -255,60 +259,29 @@
 │                       │     │                  ├ Name: GitHub Security Advisory pip 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Apip 
-│                       │     ├ Title           : urllib3 redirects are not disabled when retries are disabled
-│                       │     │                   on PoolManager instantiation 
-│                       │     ├ Description     : urllib3 handles redirects and retries using the same
-│                       │     │                   mechanism, which is controlled by the `Retry` object. The
-│                       │     │                   most common way to disable redirects is at the request level,
-│                       │     │                    as follows:
-│                       │     │                   
-│                       │     │                   ```python
-│                       │     │                   resp = urllib3.request("GET",
-│                       │     │                   "https://httpbin.org/redirect/1", redirect=False)
-│                       │     │                   print(resp.status)
-│                       │     │                   # 302
-│                       │     │                   ```
-│                       │     │                   However, it is also possible to disable redirects, for all
-│                       │     │                   requests, by instantiating a `PoolManager` and specifying
-│                       │     │                   `retries` in a way that disable redirects:
-│                       │     │                   import urllib3
-│                       │     │                   http = urllib3.PoolManager(retries=0)  # should raise
-│                       │     │                   MaxRetryError on redirect
-│                       │     │                   http = urllib3.PoolManager(retries=urllib3.Retry(redirect=0))
-│                       │     │                     # equivalent to the above
-│                       │     │                   http = urllib3.PoolManager(retries=False)  # should return
-│                       │     │                   the first response
-│                       │     │                   resp = http.request("GET", "https://httpbin.org/redirect/1")
-│                       │     │                   However, the `retries` parameter is currently ignored, which
-│                       │     │                   means all the above examples don't disable redirects.
-│                       │     │                   ## Affected usages
-│                       │     │                   Passing `retries` on `PoolManager` instantiation to disable
-│                       │     │                   redirects or restrict their number.
-│                       │     │                   By default, requests and botocore users are not affected.
-│                       │     │                   ## Impact
-│                       │     │                   Redirects are often used to exploit SSRF vulnerabilities. An
-│                       │     │                   application attempting to mitigate SSRF or open redirect
-│                       │     │                   vulnerabilities by disabling redirects at the PoolManager
-│                       │     │                   level will remain vulnerable.
-│                       │     │                   ## Remediation
-│                       │     │                   You can remediate this vulnerability with the following
-│                       │     │                   steps:
-│                       │     │                    * Upgrade to a patched version of urllib3. If your
-│                       │     │                   organization would benefit from the continued support of
-│                       │     │                   urllib3 1.x, please contact
-│                       │     │                   [sethmichaellarson@gmail.com](mailto:sethmichaellarson@gmail.
-│                       │     │                   com) to discuss sponsorship or contribution opportunities.
-│                       │     │                    * Disable redirects at the `request()` level instead of the
-│                       │     │                   `PoolManager()` level. 
+│                       │     ├ Title           : urllib3 is a user-friendly HTTP client library for Python.
+│                       │     │                   Prior to 2. ... 
+│                       │     ├ Description     : urllib3 is a user-friendly HTTP client library for Python.
+│                       │     │                   Prior to 2.5.0, it is possible to disable redirects for all
+│                       │     │                   requests by instantiating a PoolManager and specifying
+│                       │     │                   retries in a way that disable redirects. By default, requests
+│                       │     │                    and botocore users are not affected. An application
+│                       │     │                   attempting to mitigate SSRF or open redirect vulnerabilities
+│                       │     │                   by disabling redirects at the PoolManager level will remain
+│                       │     │                   vulnerable. This issue has been patched in version 2.5.0. 
 │                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-601 
 │                       │     ├ VendorSeverity   ─ ghsa: 2 
 │                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N 
 │                       │     │                         ╰ V3Score : 5.3 
-│                       │     ╰ References       ╭ [0]: https://github.com/urllib3/urllib3 
-│                       │                        ├ [1]: https://github.com/urllib3/urllib3/commit/f05b1329126d5
-│                       │                        │      be6de501f9d1e3e36738bc08857 
-│                       │                        ╰ [2]: https://github.com/urllib3/urllib3/security/advisories/
-│                       │                               GHSA-pq67-6m6q-mj2v 
+│                       │     ├ References       ╭ [0]: https://github.com/urllib3/urllib3 
+│                       │     │                  ├ [1]: https://github.com/urllib3/urllib3/commit/f05b1329126d5
+│                       │     │                  │      be6de501f9d1e3e36738bc08857 
+│                       │     │                  ├ [2]: https://github.com/urllib3/urllib3/security/advisories/
+│                       │     │                  │      GHSA-pq67-6m6q-mj2v 
+│                       │     │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-50181 
+│                       │     ├ PublishedDate   : 2025-06-19T01:15:24.453Z 
+│                       │     ╰ LastModifiedDate: 2025-06-19T01:15:24.453Z 
 │                       ╰ [1] ╭ VulnerabilityID : CVE-2025-50182 
 │                             ├ PkgName         : urllib3 
 │                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/urllib3-2.4
@@ -328,48 +301,31 @@
 │                             │                  ├ Name: GitHub Security Advisory pip 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Apip 
-│                             ├ Title           : urllib3 does not control redirects in browsers and Node.js 
-│                             ├ Description     : urllib3
-│                             │                   [supports](https://urllib3.readthedocs.io/en/2.4.0/reference/
-│                             │                   contrib/emscripten.html) being used in a Pyodide runtime
-│                             │                   utilizing the [JavaScript Fetch
-│                             │                   API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_A
-│                             │                   PI) or falling back on
-│                             │                   [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web
-│                             │                   /API/XMLHttpRequest). This means you can use Python libraries
-│                             │                    to make HTTP requests from your browser or Node.js.
-│                             │                   Additionally, urllib3 provides [a
-│                             │                   mechanism](https://urllib3.readthedocs.io/en/2.4.0/user-guide
-│                             │                   .html#retrying-requests) to control redirects.
-│                             │                   
-│                             │                   However, the `retries` and `redirect` parameters are ignored
-│                             │                   with Pyodide; the runtime itself determines redirect
-│                             │                   behavior.
-│                             │                   ## Affected usages
-│                             │                   Any code which relies on urllib3 to control the number of
-│                             │                   redirects for an HTTP request in a Pyodide runtime.
-│                             │                   ## Impact
-│                             │                   Redirects are often used to exploit SSRF vulnerabilities. An
-│                             │                   application attempting to mitigate SSRF or open redirect
-│                             │                   vulnerabilities by disabling redirects may remain vulnerable
-│                             │                   if a Pyodide runtime redirect mechanism is unsuitable.
-│                             │                   ## Remediation
-│                             │                   If you use urllib3 in Node.js, upgrade to a patched version
-│                             │                   of urllib3.
-│                             │                   Unfortunately, browsers provide no suitable way which urllib3
-│                             │                    can use: `XMLHttpRequest` provides no control over
-│                             │                   redirects, the Fetch API returns `opaqueredirect` responses
-│                             │                   lacking data when redirects are controlled manually. Expect
-│                             │                   default browser behavior for redirects. 
+│                             ├ Title           : urllib3 is a user-friendly HTTP client library for Python.
+│                             │                   Prior to 2. ... 
+│                             ├ Description     : urllib3 is a user-friendly HTTP client library for Python.
+│                             │                   Prior to 2.5.0, urllib3 does not control redirects in
+│                             │                   browsers and Node.js. urllib3 supports being used in a
+│                             │                   Pyodide runtime utilizing the JavaScript Fetch API or falling
+│                             │                    back on XMLHttpRequest. This means Python libraries can be
+│                             │                   used to make HTTP requests from a browser or Node.js.
+│                             │                   Additionally, urllib3 provides a mechanism to control
+│                             │                   redirects, but the retries and redirect parameters are
+│                             │                   ignored with Pyodide; the runtime itself determines redirect
+│                             │                   behavior. This issue has been patched in version 2.5.0. 
 │                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-601 
 │                             ├ VendorSeverity   ─ ghsa: 2 
 │                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N 
 │                             │                         ╰ V3Score : 5.3 
-│                             ╰ References       ╭ [0]: https://github.com/urllib3/urllib3 
-│                                                ├ [1]: https://github.com/urllib3/urllib3/commit/7eb4a2aafe49a
-│                                                │      279c29b6d1f0ed0f42e9736194f 
-│                                                ╰ [2]: https://github.com/urllib3/urllib3/security/advisories/
-│                                                       GHSA-48p4-8xcf-vxj5 
+│                             ├ References       ╭ [0]: https://github.com/urllib3/urllib3 
+│                             │                  ├ [1]: https://github.com/urllib3/urllib3/commit/7eb4a2aafe49a
+│                             │                  │      279c29b6d1f0ed0f42e9736194f 
+│                             │                  ├ [2]: https://github.com/urllib3/urllib3/security/advisories/
+│                             │                  │      GHSA-48p4-8xcf-vxj5 
+│                             │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-50182 
+│                             ├ PublishedDate   : 2025-06-19T02:15:17.967Z 
+│                             ╰ LastModifiedDate: 2025-06-19T02:15:17.967Z 
 ├ [3] ╭ Target: usr/bin/grype 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
@@ -473,23 +429,29 @@
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Proxy-Authorization and Proxy-Authenticate headers persisted
-│                             │                   on cross- ... 
+│                             ├ Title           : net/http: Sensitive headers not cleared on cross-origin
+│                             │                   redirect in net/http 
 │                             ├ Description     : Proxy-Authorization and Proxy-Authenticate headers persisted
 │                             │                   on cross-origin redirects potentially leaking sensitive
 │                             │                   information. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ VendorSeverity   ╭ bitnami: 2 
+│                             │                  ├ redhat : 2 
 │                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
+│                             │                  │         │           /A:N 
+│                             │                  │         ╰ V3Score : 6.8 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
 │                             │                            │           /A:N 
 │                             │                            ╰ V3Score : 6.8 
-│                             ├ References       ╭ [0]: https://go.dev/cl/679257 
-│                             │                  ├ [1]: https://go.dev/issue/73816 
-│                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
-│                             │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-3751 
-│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4673 
+│                             │                  ├ [1]: https://go.dev/cl/679257 
+│                             │                  ├ [2]: https://go.dev/issue/73816 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
+│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3751 
+│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7574-1 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
 │                             ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
 │                             ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
