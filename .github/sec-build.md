@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                       │     │                  │         65f70e070fb0f0841ac 
-│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                       │     │                            dde371d1e6c0645be9f 
+│                       │     ├ Layer            ╭ Digest: sha256:0073bda5747faf3248f5d9df2f720055873c20d2a48b1
+│                       │     │                  │         2a670ad6611f3512836 
+│                       │     │                  ╰ DiffID: sha256:aa1192171ff1aba0cd52e30232b90c0490e19eaa8412d
+│                       │     │                            ac776af4d672854df4d 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -69,10 +69,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                       │     │                  │         65f70e070fb0f0841ac 
-│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                       │     │                            dde371d1e6c0645be9f 
+│                       │     ├ Layer            ╭ Digest: sha256:0073bda5747faf3248f5d9df2f720055873c20d2a48b1
+│                       │     │                  │         2a670ad6611f3512836 
+│                       │     │                  ╰ DiffID: sha256:aa1192171ff1aba0cd52e30232b90c0490e19eaa8412d
+│                       │     │                            ac776af4d672854df4d 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -114,10 +114,10 @@
 │                       │     ├ InstalledVersion: 1.9.4 
 │                       │     ├ FixedVersion    : 1.11.0 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                       │     │                  │         65f70e070fb0f0841ac 
-│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                       │     │                            dde371d1e6c0645be9f 
+│                       │     ├ Layer            ╭ Digest: sha256:0073bda5747faf3248f5d9df2f720055873c20d2a48b1
+│                       │     │                  │         2a670ad6611f3512836 
+│                       │     │                  ╰ DiffID: sha256:aa1192171ff1aba0cd52e30232b90c0490e19eaa8412d
+│                       │     │                            ac776af4d672854df4d 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48734 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -196,10 +196,10 @@
 │                             ├ InstalledVersion: 5.4.2 
 │                             ├ FixedVersion    : 5.4.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                             │                  │         65f70e070fb0f0841ac 
-│                             │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                             │                            dde371d1e6c0645be9f 
+│                             ├ Layer            ╭ Digest: sha256:0073bda5747faf3248f5d9df2f720055873c20d2a48b1
+│                             │                  │         2a670ad6611f3512836 
+│                             │                  ╰ DiffID: sha256:aa1192171ff1aba0cd52e30232b90c0490e19eaa8412d
+│                             │                            ac776af4d672854df4d 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-27820 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -237,95 +237,9 @@
 │                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
 │                             ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
 │                             ╰ LastModifiedDate: 2025-05-16T23:15:20.193Z 
-├ [2] ╭ Target         : Python 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : python-pkg 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-50181 
-│                       │     ├ PkgName         : urllib3 
-│                       │     ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/urllib3-2.4
-│                       │     │                   .0.dist-info/METADATA 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:pypi/urllib3@2.4.0 
-│                       │     │                  ╰ UID : 170847c8402fd73d 
-│                       │     ├ InstalledVersion: 2.4.0 
-│                       │     ├ FixedVersion    : 2.5.0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                       │     │                  │         65f70e070fb0f0841ac 
-│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                       │     │                            dde371d1e6c0645be9f 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-50181 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory pip 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Apip 
-│                       │     ├ Title           : urllib3 is a user-friendly HTTP client library for Python.
-│                       │     │                   Prior to 2. ... 
-│                       │     ├ Description     : urllib3 is a user-friendly HTTP client library for Python.
-│                       │     │                   Prior to 2.5.0, it is possible to disable redirects for all
-│                       │     │                   requests by instantiating a PoolManager and specifying
-│                       │     │                   retries in a way that disable redirects. By default, requests
-│                       │     │                    and botocore users are not affected. An application
-│                       │     │                   attempting to mitigate SSRF or open redirect vulnerabilities
-│                       │     │                   by disabling redirects at the PoolManager level will remain
-│                       │     │                   vulnerable. This issue has been patched in version 2.5.0. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-601 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N 
-│                       │     │                         ╰ V3Score : 5.3 
-│                       │     ├ References       ╭ [0]: https://github.com/urllib3/urllib3 
-│                       │     │                  ├ [1]: https://github.com/urllib3/urllib3/commit/f05b1329126d5
-│                       │     │                  │      be6de501f9d1e3e36738bc08857 
-│                       │     │                  ├ [2]: https://github.com/urllib3/urllib3/security/advisories/
-│                       │     │                  │      GHSA-pq67-6m6q-mj2v 
-│                       │     │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-50181 
-│                       │     ├ PublishedDate   : 2025-06-19T01:15:24.453Z 
-│                       │     ╰ LastModifiedDate: 2025-06-19T01:15:24.453Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-50182 
-│                             ├ PkgName         : urllib3 
-│                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/urllib3-2.4
-│                             │                   .0.dist-info/METADATA 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:pypi/urllib3@2.4.0 
-│                             │                  ╰ UID : 170847c8402fd73d 
-│                             ├ InstalledVersion: 2.4.0 
-│                             ├ FixedVersion    : 2.5.0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                             │                  │         65f70e070fb0f0841ac 
-│                             │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                             │                            dde371d1e6c0645be9f 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-50182 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory pip 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Apip 
-│                             ├ Title           : urllib3 is a user-friendly HTTP client library for Python.
-│                             │                   Prior to 2. ... 
-│                             ├ Description     : urllib3 is a user-friendly HTTP client library for Python.
-│                             │                   Prior to 2.5.0, urllib3 does not control redirects in
-│                             │                   browsers and Node.js. urllib3 supports being used in a
-│                             │                   Pyodide runtime utilizing the JavaScript Fetch API or falling
-│                             │                    back on XMLHttpRequest. This means Python libraries can be
-│                             │                   used to make HTTP requests from a browser or Node.js.
-│                             │                   Additionally, urllib3 provides a mechanism to control
-│                             │                   redirects, but the retries and redirect parameters are
-│                             │                   ignored with Pyodide; the runtime itself determines redirect
-│                             │                   behavior. This issue has been patched in version 2.5.0. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-601 
-│                             ├ VendorSeverity   ─ ghsa: 2 
-│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N 
-│                             │                         ╰ V3Score : 5.3 
-│                             ├ References       ╭ [0]: https://github.com/urllib3/urllib3 
-│                             │                  ├ [1]: https://github.com/urllib3/urllib3/commit/7eb4a2aafe49a
-│                             │                  │      279c29b6d1f0ed0f42e9736194f 
-│                             │                  ├ [2]: https://github.com/urllib3/urllib3/security/advisories/
-│                             │                  │      GHSA-48p4-8xcf-vxj5 
-│                             │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-50182 
-│                             ├ PublishedDate   : 2025-06-19T02:15:17.967Z 
-│                             ╰ LastModifiedDate: 2025-06-19T02:15:17.967Z 
+├ [2] ╭ Target: Python 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : python-pkg 
 ├ [3] ╭ Target: usr/bin/grype 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
@@ -343,10 +257,10 @@
 │                       │     ├ InstalledVersion: v1.24.2 
 │                       │     ├ FixedVersion    : 1.24.4 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                       │     │                  │         65f70e070fb0f0841ac 
-│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                       │     │                            dde371d1e6c0645be9f 
+│                       │     ├ Layer            ╭ Digest: sha256:0073bda5747faf3248f5d9df2f720055873c20d2a48b1
+│                       │     │                  │         2a670ad6611f3512836 
+│                       │     │                  ╰ DiffID: sha256:aa1192171ff1aba0cd52e30232b90c0490e19eaa8412d
+│                       │     │                            ac776af4d672854df4d 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22874 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -383,10 +297,10 @@
 │                       │     ├ InstalledVersion: v1.24.2 
 │                       │     ├ FixedVersion    : 1.23.10, 1.24.4 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                       │     │                  │         65f70e070fb0f0841ac 
-│                       │     │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                       │     │                            dde371d1e6c0645be9f 
+│                       │     ├ Layer            ╭ Digest: sha256:0073bda5747faf3248f5d9df2f720055873c20d2a48b1
+│                       │     │                  │         2a670ad6611f3512836 
+│                       │     │                  ╰ DiffID: sha256:aa1192171ff1aba0cd52e30232b90c0490e19eaa8412d
+│                       │     │                            ac776af4d672854df4d 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0913 
 │                       │     ├ DataSource       ╭ ID  : govulndb 
 │                       │     │                  ├ Name: The Go Vulnerability Database 
@@ -421,10 +335,10 @@
 │                             ├ InstalledVersion: v1.24.2 
 │                             ├ FixedVersion    : 1.23.10, 1.24.4 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3a54a8a575c9502a8a877c0de1273bd359c3898c84e6d
-│                             │                  │         65f70e070fb0f0841ac 
-│                             │                  ╰ DiffID: sha256:ebab47ce30173a633cc1ee1da310ed9d35d92a8d20dd7
-│                             │                            dde371d1e6c0645be9f 
+│                             ├ Layer            ╭ Digest: sha256:0073bda5747faf3248f5d9df2f720055873c20d2a48b1
+│                             │                  │         2a670ad6611f3512836 
+│                             │                  ╰ DiffID: sha256:aa1192171ff1aba0cd52e30232b90c0490e19eaa8412d
+│                             │                            ac776af4d672854df4d 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4673 
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
