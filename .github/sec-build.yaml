@@ -31,6 +31,7 @@
     VendorSeverity:
       ghsa: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:H/A:L
@@ -71,6 +72,7 @@
     VendorSeverity:
       ghsa: 1
       redhat: 1
+      ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N
@@ -237,6 +239,7 @@
     Description: Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.
     Severity: HIGH
     VendorSeverity:
+      amazon: 2
       bitnami: 3
       redhat: 3
     CVSS:
@@ -311,6 +314,7 @@
     Description: Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       bitnami: 2
       redhat: 2
       ubuntu: 2
