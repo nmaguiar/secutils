@@ -47,8 +47,7 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-917 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ├ redhat: 2 
-│                       │     │                  ╰ ubuntu: 2 
+│                       │     │                  ╰ redhat: 2 
 │                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:H/
 │                       │     │                           │           A:L 
 │                       │     │                           ╰ V3Score : 5.5 
@@ -93,8 +92,7 @@
 │                       │     ├ Severity        : LOW 
 │                       │     ├ CweIDs           ─ [0]: CWE-918 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 1 
-│                       │     │                  ├ redhat: 1 
-│                       │     │                  ╰ ubuntu: 2 
+│                       │     │                  ╰ redhat: 1 
 │                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 3.3 
