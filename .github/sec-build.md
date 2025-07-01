@@ -1,7 +1,64 @@
 ````yaml
-╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
-│     ├ Class : os-pkgs 
-│     ╰ Type  : alpine 
+╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
+│     ├ Class          : os-pkgs 
+│     ├ Type           : alpine 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-32462 
+│                       │     ├ PkgID           : sudo@1.9.17-r0 
+│                       │     ├ PkgName         : sudo 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/sudo@1.9.17-r0?arch=x86_64&distro=3.23.
+│                       │     │                  │       0_alpha20250612 
+│                       │     │                  ╰ UID : f452168152faeaa2 
+│                       │     ├ InstalledVersion: 1.9.17-r0 
+│                       │     ├ FixedVersion    : 1.9.17_p1-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
+│                       │     │                  │         51c2eff201438c2e187 
+│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
+│                       │     │                            59fae058b8e1e54a03c 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32462 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [Local Privilege Escalation via host option] 
+│                       │     ├ Description     : Sudo's host (`-h` or `--host`) option is intended to be used
+│                       │     │                   in conjunction with the list option (`-l` or `--list`) to
+│                       │     │                   list a user's sudo privileges on a host other than the
+│                       │     │                   current one.  However, due to a bug it was not restricted to
+│                       │     │                   listing privileges and could be used when running a command
+│                       │     │                   via `sudo` or editing a file with `sudoedit`.  Depending on
+│                       │     │                   the rules present in the sudoers file this could allow a
+│                       │     │                   local privilege escalation attack. Sudo versions 1.8.8 to
+│                       │     │                   1.9.17 inclusive are affected. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ ubuntu: 3 
+│                       │     ╰ References       ╭ [0]: https://www.cve.org/CVERecord?id=CVE-2025-32462 
+│                       │                        ╰ [1]: https://www.sudo.ws/security/advisories/host_any/ 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-32463 
+│                             ├ PkgID           : sudo@1.9.17-r0 
+│                             ├ PkgName         : sudo 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/sudo@1.9.17-r0?arch=x86_64&distro=3.23.
+│                             │                  │       0_alpha20250612 
+│                             │                  ╰ UID : f452168152faeaa2 
+│                             ├ InstalledVersion: 1.9.17-r0 
+│                             ├ FixedVersion    : 1.9.17_p1-r0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
+│                             │                  │         51c2eff201438c2e187 
+│                             │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
+│                             │                            59fae058b8e1e54a03c 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32463 
+│                             ├ DataSource       ╭ ID  : alpine 
+│                             │                  ├ Name: Alpine Secdb 
+│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                             ├ Title           : [Local Privilege Escalation via chroot option] 
+│                             ├ Description     : An attacker can leverage sudo's `-R` (`--chroot`) option to
+│                             │                   run arbitrary commands as root, even if they are not listed
+│                             │                   in the sudoers file. Sudo versions 1.9.14 to 1.9.17 inclusive
+│                             │                    are affected. 
+│                             ├ Severity        : HIGH 
+│                             ├ VendorSeverity   ─ ubuntu: 3 
+│                             ╰ References       ╭ [0]: https://www.cve.org/CVERecord?id=CVE-2025-32463 
+│                                                ╰ [1]: https://www.sudo.ws/security/advisories/chroot_bug/ 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
