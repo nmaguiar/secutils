@@ -211,10 +211,10 @@
 │                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 7 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:10110 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:9978 
 │                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-32462 
 │                       │     │                  ├ [2] : https://bugzilla.redhat.com/2374692 
-│                       │     │                  ├ [3] : https://errata.almalinux.org/8/ALSA-2025-10110.html 
+│                       │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-9978.html 
 │                       │     │                  ├ [4] : https://linux.oracle.com/cve/CVE-2025-32462.html 
 │                       │     │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2025-9978.html 
 │                       │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-32462 
@@ -228,7 +228,7 @@
 │                       │     │                  ├ [13]: https://www.sudo.ws/security/advisories/ 
 │                       │     │                  ╰ [14]: https://www.sudo.ws/security/advisories/host_any/ 
 │                       │     ├ PublishedDate   : 2025-06-30T21:15:30.08Z 
-│                       │     ╰ LastModifiedDate: 2025-06-30T21:15:30.08Z 
+│                       │     ╰ LastModifiedDate: 2025-07-03T15:14:12.767Z 
 │                       ╰ [4] ╭ VulnerabilityID : CVE-2025-32463 
 │                             ├ PkgID           : sudo@1.9.17-r0 
 │                             ├ PkgName         : sudo 
@@ -277,7 +277,7 @@
 │                             │                  ╰ [14]: https://www.suse.com/support/update/announcement/2025/
 │                             │                          suse-su-202502177-1/ 
 │                             ├ PublishedDate   : 2025-06-30T21:15:30.257Z 
-│                             ╰ LastModifiedDate: 2025-07-01T20:15:24.673Z 
+│                             ╰ LastModifiedDate: 2025-07-03T15:14:12.767Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -436,7 +436,8 @@
 │                       │     │                    2.x are recommended to upgrade to version 2.0.0-M2, which 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-284 
-│                       │     ├ VendorSeverity   ╭ amazon     : 3 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ amazon     : 3 
 │                       │     │                  ├ ghsa       : 3 
 │                       │     │                  ├ oracle-oval: 3 
 │                       │     │                  ╰ redhat     : 3 
@@ -447,20 +448,23 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-48734 
-│                       │     │                  ├ [2] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
-│                       │     │                  ├ [3] : https://github.com/apache/commons-beanutils 
-│                       │     │                  ├ [4] : https://github.com/apache/commons-beanutils/commit/28a
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
+│                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
+│                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
+│                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
+│                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
+│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
 │                       │     │                  │       d955a1613ed5885870cc7da52093c1ce739dc 
-│                       │     │                  ├ [5] : https://github.com/apache/commons-beanutils/commit/bd2
+│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/bd2
 │                       │     │                  │       0740da25b69552ddef8523beec0837297eaf9 
-│                       │     │                  ├ [6] : https://linux.oracle.com/cve/CVE-2025-48734.html 
-│                       │     │                  ├ [7] : https://linux.oracle.com/errata/ELSA-2025-9166.html 
-│                       │     │                  ├ [8] : https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
+│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-48734.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9166.html 
+│                       │     │                  ├ [11]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
 │                       │     │                  │       fohb0of1g9 
-│                       │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
-│                       │     │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
-│                       │     │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
 │                       │     ╰ LastModifiedDate: 2025-06-09T18:56:26.37Z 
 │                       ╰ [3] ╭ VulnerabilityID : CVE-2025-27820 
