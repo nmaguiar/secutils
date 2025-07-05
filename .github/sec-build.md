@@ -1,283 +1,7 @@
 ````yaml
-╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
-│     ├ Class          : os-pkgs 
-│     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-4575 
-│                       │     ├ PkgID           : libcrypto3@3.5.0-r0 
-│                       │     ├ PkgName         : libcrypto3 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.0-r0?arch=x86_64&distro=
-│                       │     │                  │       3.23.0_alpha20250612 
-│                       │     │                  ╰ UID : a4f80010e7087a11 
-│                       │     ├ InstalledVersion: 3.5.0-r0 
-│                       │     ├ FixedVersion    : 3.5.1-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4575 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : Issue summary: Use of -addreject option with the openssl x509
-│                       │     │                    applicat ... 
-│                       │     ├ Description     : Issue summary: Use of -addreject option with the openssl x509
-│                       │     │                    application adds
-│                       │     │                   a trusted use instead of a rejected use for a certificate.
-│                       │     │                   
-│                       │     │                   Impact summary: If a user intends to make a trusted
-│                       │     │                   certificate rejected for
-│                       │     │                   a particular use it will be instead marked as trusted for
-│                       │     │                   that use.
-│                       │     │                   A copy & paste error during minor refactoring of the code
-│                       │     │                   introduced this
-│                       │     │                   issue in the OpenSSL 3.5 version. If, for example, a trusted
-│                       │     │                   CA certificate
-│                       │     │                   should be trusted only for the purpose of authenticating TLS
-│                       │     │                   servers but not
-│                       │     │                   for CMS signature verification and the CMS signature
-│                       │     │                   verification is intended
-│                       │     │                   to be marked as rejected with the -addreject option, the
-│                       │     │                   resulting CA
-│                       │     │                   certificate will be trusted for CMS signature verification
-│                       │     │                   purpose instead.
-│                       │     │                   Only users which use the trusted certificate format who use
-│                       │     │                   the openssl x509
-│                       │     │                   command line application to add rejected uses are affected by
-│                       │     │                    this issue.
-│                       │     │                   The issues affecting only the command line application are
-│                       │     │                   considered to
-│                       │     │                   be Low severity.
-│                       │     │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-│                       │     │                   affected by this
-│                       │     │                   issue.
-│                       │     │                   OpenSSL 3.4, 3.3, 3.2, 3.1, 3.0, 1.1.1 and 1.0.2 are also not
-│                       │     │                    affected by this 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ CweIDs           ─ [0]: CWE-295 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/22/1 
-│                       │     │                  ├ [1]: https://github.com/openssl/openssl/commit/e96d22446e633
-│                       │     │                  │      d117e6c9904cb15b4693e956eaa 
-│                       │     │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
-│                       │     ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
-│                       │     ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-4575 
-│                       │     ├ PkgID           : libssl3@3.5.0-r0 
-│                       │     ├ PkgName         : libssl3 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.0-r0?arch=x86_64&distro=3.2
-│                       │     │                  │       3.0_alpha20250612 
-│                       │     │                  ╰ UID : 7a86a4ef5d4ce4a6 
-│                       │     ├ InstalledVersion: 3.5.0-r0 
-│                       │     ├ FixedVersion    : 3.5.1-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4575 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : Issue summary: Use of -addreject option with the openssl x509
-│                       │     │                    applicat ... 
-│                       │     ├ Description     : Issue summary: Use of -addreject option with the openssl x509
-│                       │     │                    application adds
-│                       │     │                   a trusted use instead of a rejected use for a certificate.
-│                       │     │                   
-│                       │     │                   Impact summary: If a user intends to make a trusted
-│                       │     │                   certificate rejected for
-│                       │     │                   a particular use it will be instead marked as trusted for
-│                       │     │                   that use.
-│                       │     │                   A copy & paste error during minor refactoring of the code
-│                       │     │                   introduced this
-│                       │     │                   issue in the OpenSSL 3.5 version. If, for example, a trusted
-│                       │     │                   CA certificate
-│                       │     │                   should be trusted only for the purpose of authenticating TLS
-│                       │     │                   servers but not
-│                       │     │                   for CMS signature verification and the CMS signature
-│                       │     │                   verification is intended
-│                       │     │                   to be marked as rejected with the -addreject option, the
-│                       │     │                   resulting CA
-│                       │     │                   certificate will be trusted for CMS signature verification
-│                       │     │                   purpose instead.
-│                       │     │                   Only users which use the trusted certificate format who use
-│                       │     │                   the openssl x509
-│                       │     │                   command line application to add rejected uses are affected by
-│                       │     │                    this issue.
-│                       │     │                   The issues affecting only the command line application are
-│                       │     │                   considered to
-│                       │     │                   be Low severity.
-│                       │     │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-│                       │     │                   affected by this
-│                       │     │                   issue.
-│                       │     │                   OpenSSL 3.4, 3.3, 3.2, 3.1, 3.0, 1.1.1 and 1.0.2 are also not
-│                       │     │                    affected by this 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ CweIDs           ─ [0]: CWE-295 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/22/1 
-│                       │     │                  ├ [1]: https://github.com/openssl/openssl/commit/e96d22446e633
-│                       │     │                  │      d117e6c9904cb15b4693e956eaa 
-│                       │     │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
-│                       │     ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
-│                       │     ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-4575 
-│                       │     ├ PkgID           : openssl@3.5.0-r0 
-│                       │     ├ PkgName         : openssl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.0-r0?arch=x86_64&distro=3.2
-│                       │     │                  │       3.0_alpha20250612 
-│                       │     │                  ╰ UID : eb8f3721924b72d7 
-│                       │     ├ InstalledVersion: 3.5.0-r0 
-│                       │     ├ FixedVersion    : 3.5.1-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4575 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : Issue summary: Use of -addreject option with the openssl x509
-│                       │     │                    applicat ... 
-│                       │     ├ Description     : Issue summary: Use of -addreject option with the openssl x509
-│                       │     │                    application adds
-│                       │     │                   a trusted use instead of a rejected use for a certificate.
-│                       │     │                   
-│                       │     │                   Impact summary: If a user intends to make a trusted
-│                       │     │                   certificate rejected for
-│                       │     │                   a particular use it will be instead marked as trusted for
-│                       │     │                   that use.
-│                       │     │                   A copy & paste error during minor refactoring of the code
-│                       │     │                   introduced this
-│                       │     │                   issue in the OpenSSL 3.5 version. If, for example, a trusted
-│                       │     │                   CA certificate
-│                       │     │                   should be trusted only for the purpose of authenticating TLS
-│                       │     │                   servers but not
-│                       │     │                   for CMS signature verification and the CMS signature
-│                       │     │                   verification is intended
-│                       │     │                   to be marked as rejected with the -addreject option, the
-│                       │     │                   resulting CA
-│                       │     │                   certificate will be trusted for CMS signature verification
-│                       │     │                   purpose instead.
-│                       │     │                   Only users which use the trusted certificate format who use
-│                       │     │                   the openssl x509
-│                       │     │                   command line application to add rejected uses are affected by
-│                       │     │                    this issue.
-│                       │     │                   The issues affecting only the command line application are
-│                       │     │                   considered to
-│                       │     │                   be Low severity.
-│                       │     │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-│                       │     │                   affected by this
-│                       │     │                   issue.
-│                       │     │                   OpenSSL 3.4, 3.3, 3.2, 3.1, 3.0, 1.1.1 and 1.0.2 are also not
-│                       │     │                    affected by this 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ CweIDs           ─ [0]: CWE-295 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/22/1 
-│                       │     │                  ├ [1]: https://github.com/openssl/openssl/commit/e96d22446e633
-│                       │     │                  │      d117e6c9904cb15b4693e956eaa 
-│                       │     │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
-│                       │     ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
-│                       │     ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-32462 
-│                       │     ├ PkgID           : sudo@1.9.17-r0 
-│                       │     ├ PkgName         : sudo 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/sudo@1.9.17-r0?arch=x86_64&distro=3.23.
-│                       │     │                  │       0_alpha20250612 
-│                       │     │                  ╰ UID : f452168152faeaa2 
-│                       │     ├ InstalledVersion: 1.9.17-r0 
-│                       │     ├ FixedVersion    : 1.9.17_p1-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32462 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : sudo: LPE via host option 
-│                       │     ├ Description     : Sudo before 1.9.17p1, when used with a sudoers file that
-│                       │     │                   specifies a host that is neither the current host nor ALL,
-│                       │     │                   allows listed users to execute commands on unintended
-│                       │     │                   machines. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-863 
-│                       │     ├ VendorSeverity   ╭ alma       : 3 
-│                       │     │                  ├ oracle-oval: 3 
-│                       │     │                  ├ photon     : 1 
-│                       │     │                  ├ redhat     : 3 
-│                       │     │                  ╰ ubuntu     : 3 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:9978 
-│                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-32462 
-│                       │     │                  ├ [2] : https://bugzilla.redhat.com/2374692 
-│                       │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2025-9978.html 
-│                       │     │                  ├ [4] : https://linux.oracle.com/cve/CVE-2025-32462.html 
-│                       │     │                  ├ [5] : https://linux.oracle.com/errata/ELSA-2025-9978.html 
-│                       │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-32462 
-│                       │     │                  ├ [7] : https://ubuntu.com/security/notices/USN-7604-1 
-│                       │     │                  ├ [8] : https://ubuntu.com/security/notices/USN-7604-2 
-│                       │     │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2025-32462 
-│                       │     │                  ├ [10]: https://www.openwall.com/lists/oss-security/2025/06/30/2 
-│                       │     │                  ├ [11]: https://www.stratascale.com/vulnerability-alert-CVE-20
-│                       │     │                  │       25-32462-sudo-host 
-│                       │     │                  ├ [12]: https://www.sudo.ws/releases/changelog/ 
-│                       │     │                  ├ [13]: https://www.sudo.ws/security/advisories/ 
-│                       │     │                  ╰ [14]: https://www.sudo.ws/security/advisories/host_any/ 
-│                       │     ├ PublishedDate   : 2025-06-30T21:15:30.08Z 
-│                       │     ╰ LastModifiedDate: 2025-07-03T15:14:12.767Z 
-│                       ╰ [4] ╭ VulnerabilityID : CVE-2025-32463 
-│                             ├ PkgID           : sudo@1.9.17-r0 
-│                             ├ PkgName         : sudo 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/sudo@1.9.17-r0?arch=x86_64&distro=3.23.
-│                             │                  │       0_alpha20250612 
-│                             │                  ╰ UID : f452168152faeaa2 
-│                             ├ InstalledVersion: 1.9.17-r0 
-│                             ├ FixedVersion    : 1.9.17_p1-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                             │                  │         51c2eff201438c2e187 
-│                             │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                             │                            59fae058b8e1e54a03c 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-32463 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Title           : sudo: LPE via chroot option 
-│                             ├ Description     : Sudo before 1.9.17p1 allows local users to obtain root access
-│                             │                    because /etc/nsswitch.conf from a user-controlled directory
-│                             │                   is used with the --chroot option. 
-│                             ├ Severity        : HIGH 
-│                             ├ CweIDs           ─ [0]: CWE-829 
-│                             ├ VendorSeverity   ╭ photon: 4 
-│                             │                  ├ redhat: 3 
-│                             │                  ╰ ubuntu: 3 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 7.8 
-│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-32463 
-│                             │                  ├ [1] : https://access.redhat.com/security/cve/cve-2025-32463 
-│                             │                  ├ [2] : https://bugs.gentoo.org/show_bug.cgi?id=CVE-2025-32463 
-│                             │                  ├ [3] : https://explore.alas.aws.amazon.com/CVE-2025-32463.html 
-│                             │                  ├ [4] : https://nvd.nist.gov/vuln/detail/CVE-2025-32463 
-│                             │                  ├ [5] : https://security-tracker.debian.org/tracker/CVE-2025-3
-│                             │                  │       2463 
-│                             │                  ├ [6] : https://ubuntu.com/security/notices/USN-7604-1 
-│                             │                  ├ [7] : https://www.cve.org/CVERecord?id=CVE-2025-32463 
-│                             │                  ├ [8] : https://www.openwall.com/lists/oss-security/2025/06/30/3 
-│                             │                  ├ [9] : https://www.stratascale.com/vulnerability-alert-CVE-20
-│                             │                  │       25-32463-sudo-chroot 
-│                             │                  ├ [10]: https://www.sudo.ws/releases/changelog/ 
-│                             │                  ├ [11]: https://www.sudo.ws/security/advisories/ 
-│                             │                  ├ [12]: https://www.sudo.ws/security/advisories/chroot_bug/ 
-│                             │                  ├ [13]: https://www.suse.com/security/cve/CVE-2025-32463.html 
-│                             │                  ╰ [14]: https://www.suse.com/support/update/announcement/2025/
-│                             │                          suse-su-202502177-1/ 
-│                             ├ PublishedDate   : 2025-06-30T21:15:30.257Z 
-│                             ╰ LastModifiedDate: 2025-07-03T15:14:12.767Z 
+╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
+│     ├ Class : os-pkgs 
+│     ╰ Type  : alpine 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -289,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
+│                       │     ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
+│                       │     │                  │         48178724b81c269d946 
+│                       │     │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
+│                       │     │                            7336bbd28f1a209b3c8 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -345,10 +69,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
+│                       │     ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
+│                       │     │                  │         48178724b81c269d946 
+│                       │     │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
+│                       │     │                            7336bbd28f1a209b3c8 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -390,10 +114,10 @@
 │                       │     ├ InstalledVersion: 1.9.4 
 │                       │     ├ FixedVersion    : 1.11.0 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
+│                       │     ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
+│                       │     │                  │         48178724b81c269d946 
+│                       │     │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
+│                       │     │                            7336bbd28f1a209b3c8 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48734 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -448,23 +172,24 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9318 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
-│                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
-│                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
-│                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
-│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
+│                       │     │                  ├ [3] : https://bugzilla.redhat.com/1767483 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2368956 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2025-9318.html 
+│                       │     │                  ├ [6] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
+│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils 
+│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/28a
 │                       │     │                  │       d955a1613ed5885870cc7da52093c1ce739dc 
-│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/bd2
+│                       │     │                  ├ [9] : https://github.com/apache/commons-beanutils/commit/bd2
 │                       │     │                  │       0740da25b69552ddef8523beec0837297eaf9 
-│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-48734.html 
-│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9166.html 
-│                       │     │                  ├ [11]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
+│                       │     │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-48734.html 
+│                       │     │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-9166.html 
+│                       │     │                  ├ [12]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
 │                       │     │                  │       fohb0of1g9 
-│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
-│                       │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
-│                       │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [15]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
 │                       │     ╰ LastModifiedDate: 2025-06-09T18:56:26.37Z 
 │                       ╰ [3] ╭ VulnerabilityID : CVE-2025-27820 
@@ -476,10 +201,10 @@
 │                             ├ InstalledVersion: 5.4.2 
 │                             ├ FixedVersion    : 5.4.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                             │                  │         51c2eff201438c2e187 
-│                             │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                             │                            59fae058b8e1e54a03c 
+│                             ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
+│                             │                  │         48178724b81c269d946 
+│                             │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
+│                             │                            7336bbd28f1a209b3c8 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-27820 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -520,427 +245,15 @@
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
-├ [3] ╭ Target         : usr/bin/grype 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : GHSA-fv92-fjc5-jj9h 
-│                             ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.2.1 
-│                             ├ PkgName         : github.com/go-viper/mapstructure/v2 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-viper/mapstructure/v2@v2.2.1 
-│                             │                  ╰ UID : c480ecdc8d2bead9 
-│                             ├ InstalledVersion: v2.2.1 
-│                             ├ FixedVersion    : 2.3.0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                             │                  │         51c2eff201438c2e187 
-│                             │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                             │                            59fae058b8e1e54a03c 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://github.com/advisories/GHSA-fv92-fjc5-jj9h 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : mapstructure May Leak Sensitive Information in Logs When
-│                             │                   Processing Malformed Data 
-│                             ├ Description     : ### Summary
-│                             │                   
-│                             │                   Use of this library in a security-critical context may result
-│                             │                    in leaking sensitive information, if used to process
-│                             │                   sensitive fields.
-│                             │                   ### Details
-│                             │                   OpenBao (and presumably HashiCorp Vault) have surfaced error
-│                             │                   messages from `mapstructure` as follows:
-│                             │                   https://github.com/openbao/openbao/blob/98c3a59c040efca724353
-│                             │                   ca46ca79bd5cdbab920/sdk/framework/field_data.go#L43-L50
-│                             │                   ```go
-│                             │                   			_, _, err := d.getPrimitive(field, schema)
-│                             │                   			if err != nil {
-│                             │                   				return fmt.Errorf("error converting input for field %q:
-│                             │                   %w", field, err)
-│                             │                   			}
-│                             │                   ```
-│                             │                   where this calls `mapstructure.WeakDecode(...)`:
-│                             │                   ca46ca79bd5cdbab920/sdk/framework/field_data.go#L181-L193
-│                             │                   func (d *FieldData) getPrimitive(k string, schema
-│                             │                   *FieldSchema) (interface{}, bool, error) {
-│                             │                   	raw, ok := d.Raw[k]
-│                             │                   	if !ok {
-│                             │                   		return nil, false, nil
-│                             │                   	}
-│                             │                   	switch t := schema.Type; t {
-│                             │                   	case TypeBool:
-│                             │                   		var result bool
-│                             │                   		if err := mapstructure.WeakDecode(raw, &result); err != nil
-│                             │                    {
-│                             │                   			return nil, false, err
-│                             │                   		}
-│                             │                   		return result, true, nil
-│                             │                   Notably, `WeakDecode(...)` eventually calls one of the decode
-│                             │                    helpers, which surfaces the original value:
-│                             │                   https://github.com/go-viper/mapstructure/blob/1a66224d5e54d87
-│                             │                   57f63bd66339cf764c3292c21/mapstructure.go#L679-L686
-│                             │                   57f63bd66339cf764c3292c21/mapstructure.go#L726-L730
-│                             │                   57f63bd66339cf764c3292c21/mapstructure.go#L783-L787
-│                             │                   & more.
-│                             │                   ### PoC
-│                             │                   To reproduce with OpenBao:
-│                             │                   $ podman run -p 8300:8300 openbao/openbao:latest server -dev
-│                             │                   -dev-root-token-id=root -dev-listen-address=0.0.0.0:8300
-│                             │                   and in a new tab:
-│                             │                   $ BAO_TOKEN=root BAO_ADDR=http://localhost:8300 bao auth
-│                             │                   enable userpass
-│                             │                   Success! Enabled userpass auth method at: userpass/
-│                             │                   $ curl -X PUT -H "X-Vault-Request: true" -H "X-Vault-Token:
-│                             │                   root" -d '{"password":{"asdf":"my-sensitive-value"}}'
-│                             │                   "http://localhost:8300/v1/auth/userpass/users/adsf"
-│                             │                   {"errors":["error converting input for field \"password\": ''
-│                             │                    expected type 'string', got unconvertible type
-│                             │                   'map[string]interface {}', value:
-│                             │                   'map[asdf:my-sensitive-value]'"]}
-│                             │                   ### Impact
-│                             │                   This is an information disclosure bug with little mitigation.
-│                             │                    See
-│                             │                   https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expos
-│                             │                   e-sensitive-information-in-error-logs-when-processing-malform
-│                             │                   ed-data-with-the-kv-v2-plugin/74717 for a previous version.
-│                             │                   That version was fixed, but this is in the second part of
-│                             │                   that error message (starting at `'' expected a map, got
-│                             │                   'string'` -- when the field type is `string` and a `map` is
-│                             │                   provided, we see the above information leak -- the previous
-│                             │                   example had a `map` type field with a `string` value
-│                             │                   provided).
-│                             │                   This was rated 4.5 Medium by HashiCorp in the past iteration. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ ghsa: 2 
-│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N 
-│                             │                         ╰ V3Score : 5.3 
-│                             ├ References       ╭ [0]: https://github.com/go-viper/mapstructure 
-│                             │                  ╰ [1]: https://github.com/go-viper/mapstructure/security/advis
-│                             │                         ories/GHSA-fv92-fjc5-jj9h 
-│                             ├ PublishedDate   : 2025-06-27T16:24:59Z 
-│                             ╰ LastModifiedDate: 2025-06-27T16:24:59Z 
-├ [4] ╭ Target         : usr/bin/syft 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : GHSA-fv92-fjc5-jj9h 
-│                             ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.2.1 
-│                             ├ PkgName         : github.com/go-viper/mapstructure/v2 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-viper/mapstructure/v2@v2.2.1 
-│                             │                  ╰ UID : d731bbbe20c19c71 
-│                             ├ InstalledVersion: v2.2.1 
-│                             ├ FixedVersion    : 2.3.0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                             │                  │         51c2eff201438c2e187 
-│                             │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                             │                            59fae058b8e1e54a03c 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://github.com/advisories/GHSA-fv92-fjc5-jj9h 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Go 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Ago 
-│                             ├ Title           : mapstructure May Leak Sensitive Information in Logs When
-│                             │                   Processing Malformed Data 
-│                             ├ Description     : ### Summary
-│                             │                   
-│                             │                   Use of this library in a security-critical context may result
-│                             │                    in leaking sensitive information, if used to process
-│                             │                   sensitive fields.
-│                             │                   ### Details
-│                             │                   OpenBao (and presumably HashiCorp Vault) have surfaced error
-│                             │                   messages from `mapstructure` as follows:
-│                             │                   https://github.com/openbao/openbao/blob/98c3a59c040efca724353
-│                             │                   ca46ca79bd5cdbab920/sdk/framework/field_data.go#L43-L50
-│                             │                   ```go
-│                             │                   			_, _, err := d.getPrimitive(field, schema)
-│                             │                   			if err != nil {
-│                             │                   				return fmt.Errorf("error converting input for field %q:
-│                             │                   %w", field, err)
-│                             │                   			}
-│                             │                   ```
-│                             │                   where this calls `mapstructure.WeakDecode(...)`:
-│                             │                   ca46ca79bd5cdbab920/sdk/framework/field_data.go#L181-L193
-│                             │                   func (d *FieldData) getPrimitive(k string, schema
-│                             │                   *FieldSchema) (interface{}, bool, error) {
-│                             │                   	raw, ok := d.Raw[k]
-│                             │                   	if !ok {
-│                             │                   		return nil, false, nil
-│                             │                   	}
-│                             │                   	switch t := schema.Type; t {
-│                             │                   	case TypeBool:
-│                             │                   		var result bool
-│                             │                   		if err := mapstructure.WeakDecode(raw, &result); err != nil
-│                             │                    {
-│                             │                   			return nil, false, err
-│                             │                   		}
-│                             │                   		return result, true, nil
-│                             │                   Notably, `WeakDecode(...)` eventually calls one of the decode
-│                             │                    helpers, which surfaces the original value:
-│                             │                   https://github.com/go-viper/mapstructure/blob/1a66224d5e54d87
-│                             │                   57f63bd66339cf764c3292c21/mapstructure.go#L679-L686
-│                             │                   57f63bd66339cf764c3292c21/mapstructure.go#L726-L730
-│                             │                   57f63bd66339cf764c3292c21/mapstructure.go#L783-L787
-│                             │                   & more.
-│                             │                   ### PoC
-│                             │                   To reproduce with OpenBao:
-│                             │                   $ podman run -p 8300:8300 openbao/openbao:latest server -dev
-│                             │                   -dev-root-token-id=root -dev-listen-address=0.0.0.0:8300
-│                             │                   and in a new tab:
-│                             │                   $ BAO_TOKEN=root BAO_ADDR=http://localhost:8300 bao auth
-│                             │                   enable userpass
-│                             │                   Success! Enabled userpass auth method at: userpass/
-│                             │                   $ curl -X PUT -H "X-Vault-Request: true" -H "X-Vault-Token:
-│                             │                   root" -d '{"password":{"asdf":"my-sensitive-value"}}'
-│                             │                   "http://localhost:8300/v1/auth/userpass/users/adsf"
-│                             │                   {"errors":["error converting input for field \"password\": ''
-│                             │                    expected type 'string', got unconvertible type
-│                             │                   'map[string]interface {}', value:
-│                             │                   'map[asdf:my-sensitive-value]'"]}
-│                             │                   ### Impact
-│                             │                   This is an information disclosure bug with little mitigation.
-│                             │                    See
-│                             │                   https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expos
-│                             │                   e-sensitive-information-in-error-logs-when-processing-malform
-│                             │                   ed-data-with-the-kv-v2-plugin/74717 for a previous version.
-│                             │                   That version was fixed, but this is in the second part of
-│                             │                   that error message (starting at `'' expected a map, got
-│                             │                   'string'` -- when the field type is `string` and a `map` is
-│                             │                   provided, we see the above information leak -- the previous
-│                             │                   example had a `map` type field with a `string` value
-│                             │                   provided).
-│                             │                   This was rated 4.5 Medium by HashiCorp in the past iteration. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ─ ghsa: 2 
-│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N 
-│                             │                         ╰ V3Score : 5.3 
-│                             ├ References       ╭ [0]: https://github.com/go-viper/mapstructure 
-│                             │                  ╰ [1]: https://github.com/go-viper/mapstructure/security/advis
-│                             │                         ories/GHSA-fv92-fjc5-jj9h 
-│                             ├ PublishedDate   : 2025-06-27T16:24:59Z 
-│                             ╰ LastModifiedDate: 2025-06-27T16:24:59Z 
-├ [5] ╭ Target         : usr/bin/trivy 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : GHSA-fv92-fjc5-jj9h 
-│                       │     ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.2.1 
-│                       │     ├ PkgName         : github.com/go-viper/mapstructure/v2 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-viper/mapstructure/v2@v2.2.1 
-│                       │     │                  ╰ UID : 5eed76ca10d6867 
-│                       │     ├ InstalledVersion: v2.2.1 
-│                       │     ├ FixedVersion    : 2.3.0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://github.com/advisories/GHSA-fv92-fjc5-jj9h 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Go 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : mapstructure May Leak Sensitive Information in Logs When
-│                       │     │                   Processing Malformed Data 
-│                       │     ├ Description     : ### Summary
-│                       │     │                   
-│                       │     │                   Use of this library in a security-critical context may result
-│                       │     │                    in leaking sensitive information, if used to process
-│                       │     │                   sensitive fields.
-│                       │     │                   ### Details
-│                       │     │                   OpenBao (and presumably HashiCorp Vault) have surfaced error
-│                       │     │                   messages from `mapstructure` as follows:
-│                       │     │                   https://github.com/openbao/openbao/blob/98c3a59c040efca724353
-│                       │     │                   ca46ca79bd5cdbab920/sdk/framework/field_data.go#L43-L50
-│                       │     │                   ```go
-│                       │     │                   			_, _, err := d.getPrimitive(field, schema)
-│                       │     │                   			if err != nil {
-│                       │     │                   				return fmt.Errorf("error converting input for field %q:
-│                       │     │                   %w", field, err)
-│                       │     │                   			}
-│                       │     │                   ```
-│                       │     │                   where this calls `mapstructure.WeakDecode(...)`:
-│                       │     │                   ca46ca79bd5cdbab920/sdk/framework/field_data.go#L181-L193
-│                       │     │                   func (d *FieldData) getPrimitive(k string, schema
-│                       │     │                   *FieldSchema) (interface{}, bool, error) {
-│                       │     │                   	raw, ok := d.Raw[k]
-│                       │     │                   	if !ok {
-│                       │     │                   		return nil, false, nil
-│                       │     │                   	}
-│                       │     │                   	switch t := schema.Type; t {
-│                       │     │                   	case TypeBool:
-│                       │     │                   		var result bool
-│                       │     │                   		if err := mapstructure.WeakDecode(raw, &result); err != nil
-│                       │     │                    {
-│                       │     │                   			return nil, false, err
-│                       │     │                   		}
-│                       │     │                   		return result, true, nil
-│                       │     │                   Notably, `WeakDecode(...)` eventually calls one of the decode
-│                       │     │                    helpers, which surfaces the original value:
-│                       │     │                   https://github.com/go-viper/mapstructure/blob/1a66224d5e54d87
-│                       │     │                   57f63bd66339cf764c3292c21/mapstructure.go#L679-L686
-│                       │     │                   57f63bd66339cf764c3292c21/mapstructure.go#L726-L730
-│                       │     │                   57f63bd66339cf764c3292c21/mapstructure.go#L783-L787
-│                       │     │                   & more.
-│                       │     │                   ### PoC
-│                       │     │                   To reproduce with OpenBao:
-│                       │     │                   $ podman run -p 8300:8300 openbao/openbao:latest server -dev
-│                       │     │                   -dev-root-token-id=root -dev-listen-address=0.0.0.0:8300
-│                       │     │                   and in a new tab:
-│                       │     │                   $ BAO_TOKEN=root BAO_ADDR=http://localhost:8300 bao auth
-│                       │     │                   enable userpass
-│                       │     │                   Success! Enabled userpass auth method at: userpass/
-│                       │     │                   $ curl -X PUT -H "X-Vault-Request: true" -H "X-Vault-Token:
-│                       │     │                   root" -d '{"password":{"asdf":"my-sensitive-value"}}'
-│                       │     │                   "http://localhost:8300/v1/auth/userpass/users/adsf"
-│                       │     │                   {"errors":["error converting input for field \"password\": ''
-│                       │     │                    expected type 'string', got unconvertible type
-│                       │     │                   'map[string]interface {}', value:
-│                       │     │                   'map[asdf:my-sensitive-value]'"]}
-│                       │     │                   ### Impact
-│                       │     │                   This is an information disclosure bug with little mitigation.
-│                       │     │                    See
-│                       │     │                   https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expos
-│                       │     │                   e-sensitive-information-in-error-logs-when-processing-malform
-│                       │     │                   ed-data-with-the-kv-v2-plugin/74717 for a previous version.
-│                       │     │                   That version was fixed, but this is in the second part of
-│                       │     │                   that error message (starting at `'' expected a map, got
-│                       │     │                   'string'` -- when the field type is `string` and a `map` is
-│                       │     │                   provided, we see the above information leak -- the previous
-│                       │     │                   example had a `map` type field with a `string` value
-│                       │     │                   provided).
-│                       │     │                   This was rated 4.5 Medium by HashiCorp in the past iteration. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N 
-│                       │     │                         ╰ V3Score : 5.3 
-│                       │     ├ References       ╭ [0]: https://github.com/go-viper/mapstructure 
-│                       │     │                  ╰ [1]: https://github.com/go-viper/mapstructure/security/advis
-│                       │     │                         ories/GHSA-fv92-fjc5-jj9h 
-│                       │     ├ PublishedDate   : 2025-06-27T16:24:59Z 
-│                       │     ╰ LastModifiedDate: 2025-06-27T16:24:59Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-22874 
-│                       │     ├ PkgID           : stdlib@v1.24.2 
-│                       │     ├ PkgName         : stdlib 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
-│                       │     │                  ╰ UID : 2475b985111415cc 
-│                       │     ├ InstalledVersion: v1.24.2 
-│                       │     ├ FixedVersion    : 1.24.4 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-22874 
-│                       │     ├ DataSource       ╭ ID  : govulndb 
-│                       │     │                  ├ Name: The Go Vulnerability Database 
-│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │     ├ Title           : crypto/x509: Usage of ExtKeyUsageAny disables policy
-│                       │     │                   validation in crypto/x509 
-│                       │     ├ Description     : Calling Verify with a VerifyOptions.KeyUsages that contains
-│                       │     │                   ExtKeyUsageAny unintentionally disabledpolicy validation.
-│                       │     │                   This only affected certificate chains which contain policy
-│                       │     │                   graphs, which are rather uncommon. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ VendorSeverity   ╭ amazon : 2 
-│                       │     │                  ├ bitnami: 3 
-│                       │     │                  ╰ redhat : 3 
-│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H
-│                       │     │                  │         │           /A:N 
-│                       │     │                  │         ╰ V3Score : 7.5 
-│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H
-│                       │     │                            │           /A:N 
-│                       │     │                            ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-22874 
-│                       │     │                  ├ [1]: https://go.dev/cl/670375 
-│                       │     │                  ├ [2]: https://go.dev/issue/73612 
-│                       │     │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-22874 
-│                       │     │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3749 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-22874 
-│                       │     ├ PublishedDate   : 2025-06-11T17:15:42.167Z 
-│                       │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-0913 
-│                       │     ├ PkgID           : stdlib@v1.24.2 
-│                       │     ├ PkgName         : stdlib 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
-│                       │     │                  ╰ UID : 2475b985111415cc 
-│                       │     ├ InstalledVersion: v1.24.2 
-│                       │     ├ FixedVersion    : 1.23.10, 1.24.4 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                       │     │                  │         51c2eff201438c2e187 
-│                       │     │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                       │     │                            59fae058b8e1e54a03c 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-0913 
-│                       │     ├ DataSource       ╭ ID  : govulndb 
-│                       │     │                  ├ Name: The Go Vulnerability Database 
-│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │     ├ Title           : Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows
-│                       │     │                   in os in syscall 
-│                       │     ├ Description     : os.OpenFile(path, os.O_CREATE|O_EXCL) behaved differently on
-│                       │     │                   Unix and Windows systems when the target path was a dangling
-│                       │     │                   symlink. On Unix systems, OpenFile with O_CREATE and O_EXCL
-│                       │     │                   flags never follows symlinks. On Windows, when the target
-│                       │     │                   path was a symlink to a nonexistent location, OpenFile would
-│                       │     │                   create a file in that location. OpenFile now always returns
-│                       │     │                   an error when the O_CREATE and O_EXCL flags are both set and
-│                       │     │                   the target path is a symlink. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ─ bitnami: 2 
-│                       │     ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H
-│                       │     │                            │           /A:N 
-│                       │     │                            ╰ V3Score : 5.5 
-│                       │     ├ References       ╭ [0]: https://go.dev/cl/672396 
-│                       │     │                  ├ [1]: https://go.dev/issue/73702 
-│                       │     │                  ├ [2]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-0913 
-│                       │     │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3750 
-│                       │     ├ PublishedDate   : 2025-06-11T18:15:24.627Z 
-│                       │     ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
-│                       ╰ [3] ╭ VulnerabilityID : CVE-2025-4673 
-│                             ├ PkgID           : stdlib@v1.24.2 
-│                             ├ PkgName         : stdlib 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.2 
-│                             │                  ╰ UID : 2475b985111415cc 
-│                             ├ InstalledVersion: v1.24.2 
-│                             ├ FixedVersion    : 1.23.10, 1.24.4 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:cc460b0ea5a2ccb4619d0a36b262eefa46989364cd092
-│                             │                  │         51c2eff201438c2e187 
-│                             │                  ╰ DiffID: sha256:56550e2e223133013dae7e98693b65792714e75abb91e
-│                             │                            59fae058b8e1e54a03c 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4673 
-│                             ├ DataSource       ╭ ID  : govulndb 
-│                             │                  ├ Name: The Go Vulnerability Database 
-│                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : net/http: Sensitive headers not cleared on cross-origin
-│                             │                   redirect in net/http 
-│                             ├ Description     : Proxy-Authorization and Proxy-Authenticate headers persisted
-│                             │                   on cross-origin redirects potentially leaking sensitive
-│                             │                   information. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ amazon : 2 
-│                             │                  ├ bitnami: 2 
-│                             │                  ├ redhat : 2 
-│                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
-│                             │                  │         │           /A:N 
-│                             │                  │         ╰ V3Score : 6.8 
-│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N
-│                             │                            │           /A:N 
-│                             │                            ╰ V3Score : 6.8 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-4673 
-│                             │                  ├ [1]: https://go.dev/cl/679257 
-│                             │                  ├ [2]: https://go.dev/issue/73816 
-│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A 
-│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-4673 
-│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3751 
-│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7574-1 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-4673 
-│                             ├ PublishedDate   : 2025-06-11T17:15:42.993Z 
-│                             ╰ LastModifiedDate: 2025-06-12T16:06:20.18Z 
+├ [3] ╭ Target: usr/bin/grype 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
+├ [4] ╭ Target: usr/bin/syft 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
+├ [5] ╭ Target: usr/bin/trivy 
+│     ├ Class : lang-pkgs 
+│     ╰ Type  : gobinary 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
