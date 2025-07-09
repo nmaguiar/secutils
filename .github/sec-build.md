@@ -250,9 +250,70 @@
 ├ [4] ╭ Target: usr/bin/syft 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : gobinary 
-├ [5] ╭ Target: usr/bin/trivy 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
+├ [5] ╭ Target         : usr/bin/trivy 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-53547 
+│                             ├ PkgID           : helm.sh/helm/v3@v3.18.3 
+│                             ├ PkgName         : helm.sh/helm/v3 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.18.3 
+│                             │                  ╰ UID : cf2480296004620c 
+│                             ├ InstalledVersion: v3.18.3 
+│                             ├ FixedVersion    : 3.18.4 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
+│                             │                  │         48178724b81c269d946 
+│                             │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
+│                             │                            7336bbd28f1a209b3c8 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-53547 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory Go 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Ago 
+│                             ├ Title           : Helm vulnerable to Code Injection through malicious
+│                             │                   chart.yaml content 
+│                             ├ Description     : A Helm contributor discovered that a specially crafted
+│                             │                   `Chart.yaml` file along with a specially linked `Chart.lock`
+│                             │                   file can lead to local code execution when dependencies are
+│                             │                   updated.
+│                             │                   
+│                             │                   ### Impact
+│                             │                   Fields in a `Chart.yaml` file, that are carried over to a
+│                             │                   `Chart.lock` file when dependencies are updated and this file
+│                             │                    is written, can be crafted in a way that can cause execution
+│                             │                    if that same content were in a file that is executed (e.g.,
+│                             │                   a `bash.rc` file or shell script). If the `Chart.lock` file
+│                             │                   is symlinked to one of these files updating dependencies will
+│                             │                    write the lock file content to the symlinked file. This can
+│                             │                   lead to unwanted execution. Helm warns of the symlinked file
+│                             │                   but did not stop execution due to symlinking.
+│                             │                   This affects when dependencies are updated. When using the
+│                             │                   `helm` command this happens when `helm dependency update` is
+│                             │                   run. `helm dependency build` can write a lock file when one
+│                             │                   does not exist but this vector requires one to already exist.
+│                             │                    This affects the Helm SDK when the downloader `Manager`
+│                             │                   performs an update.
+│                             │                   ### Patches
+│                             │                   This issue has been resolved in Helm v3.18.4
+│                             │                   ### Workarounds
+│                             │                   Ensure the `Chart.lock` file in a chart is not a symlink
+│                             │                   prior to updating dependencies.
+│                             │                   ### For more information
+│                             │                   Helm's security policy is spelled out in detail in our
+│                             │                   [SECURITY](https://github.com/helm/community/blob/master/SECU
+│                             │                   RITY.md) document.
+│                             │                   ### Credits
+│                             │                   Disclosed by Jakub Ciolek at AlphaSense. 
+│                             ├ Severity        : HIGH 
+│                             ├ VendorSeverity   ─ ghsa: 3 
+│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:H 
+│                             │                         ╰ V3Score : 8.5 
+│                             ╰ References       ╭ [0]: https://github.com/helm/helm 
+│                                                ├ [1]: https://github.com/helm/helm/commit/4b8e61093d8f579f116
+│                                                │      5cdc6bd4b43fa5455f571 
+│                                                ╰ [2]: https://github.com/helm/helm/security/advisories/GHSA-5
+│                                                       57j-xg8c-q2mm 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
