@@ -183,7 +183,7 @@
 │                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/bd2
 │                       │     │                  │       0740da25b69552ddef8523beec0837297eaf9 
 │                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-48734.html 
-│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9166.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
 │                       │     │                  ├ [11]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
 │                       │     │                  │       fohb0of1g9 
 │                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
@@ -271,49 +271,42 @@
 │                             │                  ├ Name: GitHub Security Advisory Go 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Ago 
-│                             ├ Title           : Helm vulnerable to Code Injection through malicious
-│                             │                   chart.yaml content 
-│                             ├ Description     : A Helm contributor discovered that a specially crafted
-│                             │                   `Chart.yaml` file along with a specially linked `Chart.lock`
-│                             │                   file can lead to local code execution when dependencies are
-│                             │                   updated.
-│                             │                   
-│                             │                   ### Impact
-│                             │                   Fields in a `Chart.yaml` file, that are carried over to a
-│                             │                   `Chart.lock` file when dependencies are updated and this file
-│                             │                    is written, can be crafted in a way that can cause execution
-│                             │                    if that same content were in a file that is executed (e.g.,
-│                             │                   a `bash.rc` file or shell script). If the `Chart.lock` file
-│                             │                   is symlinked to one of these files updating dependencies will
-│                             │                    write the lock file content to the symlinked file. This can
-│                             │                   lead to unwanted execution. Helm warns of the symlinked file
-│                             │                   but did not stop execution due to symlinking.
-│                             │                   This affects when dependencies are updated. When using the
-│                             │                   `helm` command this happens when `helm dependency update` is
-│                             │                   run. `helm dependency build` can write a lock file when one
-│                             │                   does not exist but this vector requires one to already exist.
-│                             │                    This affects the Helm SDK when the downloader `Manager`
-│                             │                   performs an update.
-│                             │                   ### Patches
-│                             │                   This issue has been resolved in Helm v3.18.4
-│                             │                   ### Workarounds
-│                             │                   Ensure the `Chart.lock` file in a chart is not a symlink
-│                             │                   prior to updating dependencies.
-│                             │                   ### For more information
-│                             │                   Helm's security policy is spelled out in detail in our
-│                             │                   [SECURITY](https://github.com/helm/community/blob/master/SECU
-│                             │                   RITY.md) document.
-│                             │                   ### Credits
-│                             │                   Disclosed by Jakub Ciolek at AlphaSense. 
+│                             ├ Title           : helm.sh/helm/v3: Helm Chart Code Execution 
+│                             ├ Description     : Helm is a package manager for Charts for Kubernetes. Prior to
+│                             │                    3.18.4, a specially crafted Chart.yaml file along with a
+│                             │                   specially linked Chart.lock file can lead to local code
+│                             │                   execution when dependencies are updated. Fields in a
+│                             │                   Chart.yaml file, that are carried over to a Chart.lock file
+│                             │                   when dependencies are updated and this file is written, can
+│                             │                   be crafted in a way that can cause execution if that same
+│                             │                   content were in a file that is executed (e.g., a bash.rc file
+│                             │                    or shell script). If the Chart.lock file is symlinked to one
+│                             │                    of these files updating dependencies will write the lock
+│                             │                   file content to the symlinked file. This can lead to unwanted
+│                             │                    execution. Helm warns of the symlinked file but did not stop
+│                             │                    execution due to symlinking. This issue has been resolved in
+│                             │                    Helm v3.18.4. 
 │                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ─ ghsa: 3 
-│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:H 
-│                             │                         ╰ V3Score : 8.5 
-│                             ╰ References       ╭ [0]: https://github.com/helm/helm 
-│                                                ├ [1]: https://github.com/helm/helm/commit/4b8e61093d8f579f116
-│                                                │      5cdc6bd4b43fa5455f571 
-│                                                ╰ [2]: https://github.com/helm/helm/security/advisories/GHSA-5
-│                                                       57j-xg8c-q2mm 
+│                             ├ CweIDs           ─ [0]: CWE-94 
+│                             ├ VendorSeverity   ╭ ghsa  : 3 
+│                             │                  ╰ redhat: 3 
+│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H/
+│                             │                  │        │           A:H 
+│                             │                  │        ╰ V3Score : 8.5 
+│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H/
+│                             │                           │           A:H 
+│                             │                           ╰ V3Score : 8.5 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-53547 
+│                             │                  ├ [1]: https://github.com/helm/helm 
+│                             │                  ├ [2]: https://github.com/helm/helm/commit/4b8e61093d8f579f116
+│                             │                  │      5cdc6bd4b43fa5455f571 
+│                             │                  ├ [3]: https://github.com/helm/helm/security/advisories/GHSA-5
+│                             │                  │      57j-xg8c-q2mm 
+│                             │                  ├ [4]: https://news.ycombinator.com/item?id=44506696 
+│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-53547 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-53547 
+│                             ├ PublishedDate   : 2025-07-08T22:15:27.897Z 
+│                             ╰ LastModifiedDate: 2025-07-09T17:15:31.153Z 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
