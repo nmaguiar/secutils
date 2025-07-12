@@ -13,10 +13,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
-│                       │     │                  │         48178724b81c269d946 
-│                       │     │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
-│                       │     │                            7336bbd28f1a209b3c8 
+│                       │     ├ Layer            ╭ Digest: sha256:4f2d5cc653c19ec482b7ffe2ecf0f6a0fb585a0dc995d
+│                       │     │                  │         025a4c5f06b607e5e56 
+│                       │     │                  ╰ DiffID: sha256:a47f959830dc7f9089ab12b7962af67f3f0f8caa8d168
+│                       │     │                            7091e5ae09e692bba2a 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12798 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -69,10 +69,10 @@
 │                       │     ├ InstalledVersion: 1.2.13 
 │                       │     ├ FixedVersion    : 1.5.13, 1.3.15 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
-│                       │     │                  │         48178724b81c269d946 
-│                       │     │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
-│                       │     │                            7336bbd28f1a209b3c8 
+│                       │     ├ Layer            ╭ Digest: sha256:4f2d5cc653c19ec482b7ffe2ecf0f6a0fb585a0dc995d
+│                       │     │                  │         025a4c5f06b607e5e56 
+│                       │     │                  ╰ DiffID: sha256:a47f959830dc7f9089ab12b7962af67f3f0f8caa8d168
+│                       │     │                            7091e5ae09e692bba2a 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12801 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -114,10 +114,10 @@
 │                       │     ├ InstalledVersion: 1.9.4 
 │                       │     ├ FixedVersion    : 1.11.0 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
-│                       │     │                  │         48178724b81c269d946 
-│                       │     │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
-│                       │     │                            7336bbd28f1a209b3c8 
+│                       │     ├ Layer            ╭ Digest: sha256:4f2d5cc653c19ec482b7ffe2ecf0f6a0fb585a0dc995d
+│                       │     │                  │         025a4c5f06b607e5e56 
+│                       │     │                  ╰ DiffID: sha256:a47f959830dc7f9089ab12b7962af67f3f0f8caa8d168
+│                       │     │                            7091e5ae09e692bba2a 
 │                       │     ├ SeveritySource  : ghsa 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-48734 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
@@ -200,10 +200,10 @@
 │                             ├ InstalledVersion: 5.4.2 
 │                             ├ FixedVersion    : 5.4.3 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
-│                             │                  │         48178724b81c269d946 
-│                             │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
-│                             │                            7336bbd28f1a209b3c8 
+│                             ├ Layer            ╭ Digest: sha256:4f2d5cc653c19ec482b7ffe2ecf0f6a0fb585a0dc995d
+│                             │                  │         025a4c5f06b607e5e56 
+│                             │                  ╰ DiffID: sha256:a47f959830dc7f9089ab12b7962af67f3f0f8caa8d168
+│                             │                            7091e5ae09e692bba2a 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-27820 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -261,10 +261,10 @@
 │                             ├ InstalledVersion: v3.18.3 
 │                             ├ FixedVersion    : 3.18.4 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:339e96b52849de93245fee974722a2ddc203802a23768
-│                             │                  │         48178724b81c269d946 
-│                             │                  ╰ DiffID: sha256:b5fdf7069bff762377396137863f587100d15432a35f9
-│                             │                            7336bbd28f1a209b3c8 
+│                             ├ Layer            ╭ Digest: sha256:4f2d5cc653c19ec482b7ffe2ecf0f6a0fb585a0dc995d
+│                             │                  │         025a4c5f06b607e5e56 
+│                             │                  ╰ DiffID: sha256:a47f959830dc7f9089ab12b7962af67f3f0f8caa8d168
+│                             │                            7091e5ae09e692bba2a 
 │                             ├ SeveritySource  : ghsa 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-53547 
 │                             ├ DataSource       ╭ ID  : ghsa 
@@ -288,14 +288,18 @@
 │                             │                    Helm v3.18.4. 
 │                             ├ Severity        : HIGH 
 │                             ├ CweIDs           ─ [0]: CWE-94 
-│                             ├ VendorSeverity   ╭ ghsa  : 3 
-│                             │                  ╰ redhat: 3 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H/
-│                             │                  │        │           A:H 
-│                             │                  │        ╰ V3Score : 8.5 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 8.5 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ├ ghsa   : 3 
+│                             │                  ╰ redhat : 3 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.5 
+│                             │                  ├ ghsa    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H
+│                             │                  │         │           /A:H 
+│                             │                  │         ╰ V3Score : 8.5 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H
+│                             │                            │           /A:H 
+│                             │                            ╰ V3Score : 8.5 
 │                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-53547 
 │                             │                  ├ [1]: https://github.com/helm/helm 
 │                             │                  ├ [2]: https://github.com/helm/helm/commit/4b8e61093d8f579f116
@@ -306,7 +310,7 @@
 │                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-53547 
 │                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-53547 
 │                             ├ PublishedDate   : 2025-07-08T22:15:27.897Z 
-│                             ╰ LastModifiedDate: 2025-07-09T17:15:31.153Z 
+│                             ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
 ╰ [6] ╭ Target: usr/bin/trivy_cve_query 
       ├ Class : lang-pkgs 
       ╰ Type  : gobinary 
