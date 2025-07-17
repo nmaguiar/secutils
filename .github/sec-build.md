@@ -342,7 +342,7 @@
 │                             │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250516-0003/ 
 │                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
 │                             ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
-│                             ╰ LastModifiedDate: 2025-05-16T23:15:20.193Z 
+│                             ╰ LastModifiedDate: 2025-07-16T14:48:52.213Z 
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
@@ -361,7 +361,7 @@
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.18.3 
 │                             │                  ╰ UID : cf2480296004620c 
 │                             ├ InstalledVersion: v3.18.3 
-│                             ├ FixedVersion    : 3.18.4 
+│                             ├ FixedVersion    : 3.18.4, 3.17.4 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:4f2d5cc653c19ec482b7ffe2ecf0f6a0fb585a0dc995d
 │                             │                  │         025a4c5f06b607e5e56 
