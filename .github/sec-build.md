@@ -390,9 +390,10 @@
 │                             │                    Helm v3.18.4. 
 │                             ├ Severity        : HIGH 
 │                             ├ CweIDs           ─ [0]: CWE-94 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
-│                             │                  ├ ghsa   : 3 
-│                             │                  ╰ redhat : 3 
+│                             ├ VendorSeverity   ╭ bitnami    : 3 
+│                             │                  ├ cbl-mariner: 3 
+│                             │                  ├ ghsa       : 3 
+│                             │                  ╰ redhat     : 3 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H
 │                             │                  │         │           /A:H 
 │                             │                  │         ╰ V3Score : 8.5 
