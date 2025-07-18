@@ -329,6 +329,7 @@
     - CWE-94
     VendorSeverity:
       bitnami: 3
+      cbl-mariner: 3
       ghsa: 3
       redhat: 3
     CVSS:
