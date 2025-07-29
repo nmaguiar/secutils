@@ -241,7 +241,7 @@
 │                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48924 
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
 │                       │     ├ PublishedDate   : 2025-07-11T15:15:24.347Z 
-│                       │     ╰ LastModifiedDate: 2025-07-15T13:14:49.98Z 
+│                       │     ╰ LastModifiedDate: 2025-07-28T13:45:38.647Z 
 │                       ╰ [4] ╭ VulnerabilityID : CVE-2025-27820 
 │                             ├ PkgName         : org.apache.httpcomponents.client5:httpclient5 
 │                             ├ PkgPath         : opt/dependency-check/lib/httpclient5-5.4.2.jar 
