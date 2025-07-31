@@ -1,7 +1,195 @@
 ````yaml
-╭ [0] ╭ Target: nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
-│     ├ Class : os-pkgs 
-│     ╰ Type  : alpine 
+╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
+│     ├ Class          : os-pkgs 
+│     ├ Type           : alpine 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-54388 
+│                       │     ├ PkgID           : docker@28.3.2-r0 
+│                       │     ├ PkgName         : docker 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.2
+│                       │     │                  │       3.0_alpha20250612 
+│                       │     │                  ╰ UID : a3a094e5b97da25e 
+│                       │     ├ InstalledVersion: 28.3.2-r0 
+│                       │     ├ FixedVersion    : 28.3.3-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : Moby firewalld reload makes published container ports
+│                       │     │                   accessible from remote hosts  
+│                       │     ├ Description     : Moby is an open source container framework developed by
+│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │     │                   Container Runtime, and various other downstream
+│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │     │                   the firewalld service is reloaded it removes all iptables
+│                       │     │                   rules including those created by Docker. While Docker should
+│                       │     │                   automatically recreate these rules, versions before 28.3.3
+│                       │     │                   fail to recreate the specific rules that block external
+│                       │     │                   access to containers. This means that after a firewalld
+│                       │     │                   reload, containers with ports published to localhost (like
+│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │     │                   have network routing to the Docker bridge, even though they
+│                       │     │                   should only be accessible from the host itself. The
+│                       │     │                   vulnerability only affects explicitly published ports -
+│                       │     │                   unpublished ports remain protected. This issue is fixed in
+│                       │     │                   version 28.3.3. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-909 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
+│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     │                  │      820b97c4eadc7c87fabb0 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  │      4rx-4gw3-53p4 
+│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-54388 
+│                       │     ├ PkgID           : docker-bash-completion@28.3.2-r0 
+│                       │     ├ PkgName         : docker-bash-completion 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=x
+│                       │     │                  │       86_64&distro=3.23.0_alpha20250612 
+│                       │     │                  ╰ UID : 65d5c5763fc4e499 
+│                       │     ├ InstalledVersion: 28.3.2-r0 
+│                       │     ├ FixedVersion    : 28.3.3-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : Moby firewalld reload makes published container ports
+│                       │     │                   accessible from remote hosts  
+│                       │     ├ Description     : Moby is an open source container framework developed by
+│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │     │                   Container Runtime, and various other downstream
+│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │     │                   the firewalld service is reloaded it removes all iptables
+│                       │     │                   rules including those created by Docker. While Docker should
+│                       │     │                   automatically recreate these rules, versions before 28.3.3
+│                       │     │                   fail to recreate the specific rules that block external
+│                       │     │                   access to containers. This means that after a firewalld
+│                       │     │                   reload, containers with ports published to localhost (like
+│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │     │                   have network routing to the Docker bridge, even though they
+│                       │     │                   should only be accessible from the host itself. The
+│                       │     │                   vulnerability only affects explicitly published ports -
+│                       │     │                   unpublished ports remain protected. This issue is fixed in
+│                       │     │                   version 28.3.3. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-909 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
+│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     │                  │      820b97c4eadc7c87fabb0 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  │      4rx-4gw3-53p4 
+│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-54388 
+│                       │     ├ PkgID           : docker-cli@28.3.2-r0 
+│                       │     ├ PkgName         : docker-cli 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distro
+│                       │     │                  │       =3.23.0_alpha20250612 
+│                       │     │                  ╰ UID : 8656405a0a652f40 
+│                       │     ├ InstalledVersion: 28.3.2-r0 
+│                       │     ├ FixedVersion    : 28.3.3-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : Moby firewalld reload makes published container ports
+│                       │     │                   accessible from remote hosts  
+│                       │     ├ Description     : Moby is an open source container framework developed by
+│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │     │                   Container Runtime, and various other downstream
+│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │     │                   the firewalld service is reloaded it removes all iptables
+│                       │     │                   rules including those created by Docker. While Docker should
+│                       │     │                   automatically recreate these rules, versions before 28.3.3
+│                       │     │                   fail to recreate the specific rules that block external
+│                       │     │                   access to containers. This means that after a firewalld
+│                       │     │                   reload, containers with ports published to localhost (like
+│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │     │                   have network routing to the Docker bridge, even though they
+│                       │     │                   should only be accessible from the host itself. The
+│                       │     │                   vulnerability only affects explicitly published ports -
+│                       │     │                   unpublished ports remain protected. This issue is fixed in
+│                       │     │                   version 28.3.3. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-909 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
+│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     │                  │      820b97c4eadc7c87fabb0 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  │      4rx-4gw3-53p4 
+│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
+│                       ╰ [3] ╭ VulnerabilityID : CVE-2025-54388 
+│                             ├ PkgID           : docker-engine@28.3.2-r0 
+│                             ├ PkgName         : docker-engine 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&dis
+│                             │                  │       tro=3.23.0_alpha20250612 
+│                             │                  ╰ UID : 7402f05110c51fa5 
+│                             ├ InstalledVersion: 28.3.2-r0 
+│                             ├ FixedVersion    : 28.3.3-r0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                             │                  │         01dd6062bd50a4b6afe 
+│                             │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                             │                            7d38461b41e40aab9e7 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                             ├ DataSource       ╭ ID  : alpine 
+│                             │                  ├ Name: Alpine Secdb 
+│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                             ├ Title           : Moby firewalld reload makes published container ports
+│                             │                   accessible from remote hosts  
+│                             ├ Description     : Moby is an open source container framework developed by
+│                             │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                             │                   Container Runtime, and various other downstream
+│                             │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                             │                   the firewalld service is reloaded it removes all iptables
+│                             │                   rules including those created by Docker. While Docker should
+│                             │                   automatically recreate these rules, versions before 28.3.3
+│                             │                   fail to recreate the specific rules that block external
+│                             │                   access to containers. This means that after a firewalld
+│                             │                   reload, containers with ports published to localhost (like
+│                             │                   127.0.0.1:8080) become accessible from remote machines that
+│                             │                   have network routing to the Docker bridge, even though they
+│                             │                   should only be accessible from the host itself. The
+│                             │                   vulnerability only affects explicitly published ports -
+│                             │                   unpublished ports remain protected. This issue is fixed in
+│                             │                   version 28.3.3. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-909 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ References       ╭ [0]: https://github.com/moby/moby 
+│                             │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                             │                  │      820b97c4eadc7c87fabb0 
+│                             │                  ├ [2]: https://github.com/moby/moby/pull/50506 
+│                             │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                             │                  │      4rx-4gw3-53p4 
+│                             │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                             ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -172,10 +360,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
@@ -295,16 +483,163 @@
 ├ [2] ╭ Target: Python 
 │     ├ Class : lang-pkgs 
 │     ╰ Type  : python-pkg 
-├ [3] ╭ Target: usr/bin/grype 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
-├ [4] ╭ Target: usr/bin/syft 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : gobinary 
+├ [3] ╭ Target         : usr/bin/grype 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-54388 
+│                             ├ PkgID           : github.com/docker/docker@v28.3.2+incompatible 
+│                             ├ PkgName         : github.com/docker/docker 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/docker/docker@v28.3.2%2Bincompat
+│                             │                  │       ible 
+│                             │                  ╰ UID : 28dbb657111de354 
+│                             ├ InstalledVersion: v28.3.2+incompatible 
+│                             ├ FixedVersion    : 28.3.3 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                             │                  │         01dd6062bd50a4b6afe 
+│                             │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                             │                            7d38461b41e40aab9e7 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory Go 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Ago 
+│                             ├ Title           : Moby firewalld reload makes published container ports
+│                             │                   accessible from remote hosts  
+│                             ├ Description     : Moby is an open source container framework developed by
+│                             │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                             │                   Container Runtime, and various other downstream
+│                             │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                             │                   the firewalld service is reloaded it removes all iptables
+│                             │                   rules including those created by Docker. While Docker should
+│                             │                   automatically recreate these rules, versions before 28.3.3
+│                             │                   fail to recreate the specific rules that block external
+│                             │                   access to containers. This means that after a firewalld
+│                             │                   reload, containers with ports published to localhost (like
+│                             │                   127.0.0.1:8080) become accessible from remote machines that
+│                             │                   have network routing to the Docker bridge, even though they
+│                             │                   should only be accessible from the host itself. The
+│                             │                   vulnerability only affects explicitly published ports -
+│                             │                   unpublished ports remain protected. This issue is fixed in
+│                             │                   version 28.3.3. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-909 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ References       ╭ [0]: https://github.com/moby/moby 
+│                             │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                             │                  │      820b97c4eadc7c87fabb0 
+│                             │                  ├ [2]: https://github.com/moby/moby/pull/50506 
+│                             │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                             │                  │      4rx-4gw3-53p4 
+│                             │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                             ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
+├ [4] ╭ Target         : usr/bin/syft 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : gobinary 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-54388 
+│                             ├ PkgID           : github.com/docker/docker@v28.2.2+incompatible 
+│                             ├ PkgName         : github.com/docker/docker 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/docker/docker@v28.2.2%2Bincompat
+│                             │                  │       ible 
+│                             │                  ╰ UID : 3c7ce1b3f4e63f81 
+│                             ├ InstalledVersion: v28.2.2+incompatible 
+│                             ├ FixedVersion    : 28.3.3 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                             │                  │         01dd6062bd50a4b6afe 
+│                             │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                             │                            7d38461b41e40aab9e7 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory Go 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Ago 
+│                             ├ Title           : Moby firewalld reload makes published container ports
+│                             │                   accessible from remote hosts  
+│                             ├ Description     : Moby is an open source container framework developed by
+│                             │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                             │                   Container Runtime, and various other downstream
+│                             │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                             │                   the firewalld service is reloaded it removes all iptables
+│                             │                   rules including those created by Docker. While Docker should
+│                             │                   automatically recreate these rules, versions before 28.3.3
+│                             │                   fail to recreate the specific rules that block external
+│                             │                   access to containers. This means that after a firewalld
+│                             │                   reload, containers with ports published to localhost (like
+│                             │                   127.0.0.1:8080) become accessible from remote machines that
+│                             │                   have network routing to the Docker bridge, even though they
+│                             │                   should only be accessible from the host itself. The
+│                             │                   vulnerability only affects explicitly published ports -
+│                             │                   unpublished ports remain protected. This issue is fixed in
+│                             │                   version 28.3.3. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-909 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ References       ╭ [0]: https://github.com/moby/moby 
+│                             │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                             │                  │      820b97c4eadc7c87fabb0 
+│                             │                  ├ [2]: https://github.com/moby/moby/pull/50506 
+│                             │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                             │                  │      4rx-4gw3-53p4 
+│                             │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                             ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-53547 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-54388 
+│                       │     ├ PkgID           : github.com/docker/docker@v28.2.2+incompatible 
+│                       │     ├ PkgName         : github.com/docker/docker 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/docker/docker@v28.2.2%2Bincompat
+│                       │     │                  │       ible 
+│                       │     │                  ╰ UID : 4efd45e96b63ab87 
+│                       │     ├ InstalledVersion: v28.2.2+incompatible 
+│                       │     ├ FixedVersion    : 28.3.3 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : Moby firewalld reload makes published container ports
+│                       │     │                   accessible from remote hosts  
+│                       │     ├ Description     : Moby is an open source container framework developed by
+│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │     │                   Container Runtime, and various other downstream
+│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │     │                   the firewalld service is reloaded it removes all iptables
+│                       │     │                   rules including those created by Docker. While Docker should
+│                       │     │                   automatically recreate these rules, versions before 28.3.3
+│                       │     │                   fail to recreate the specific rules that block external
+│                       │     │                   access to containers. This means that after a firewalld
+│                       │     │                   reload, containers with ports published to localhost (like
+│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │     │                   have network routing to the Docker bridge, even though they
+│                       │     │                   should only be accessible from the host itself. The
+│                       │     │                   vulnerability only affects explicitly published ports -
+│                       │     │                   unpublished ports remain protected. This issue is fixed in
+│                       │     │                   version 28.3.3. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-909 
+│                       │     ├ VendorSeverity   ─ ghsa: 2 
+│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
+│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     │                  │      820b97c4eadc7c87fabb0 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  │      4rx-4gw3-53p4 
+│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-53547 
 │                             ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                             ├ PkgName         : helm.sh/helm/v3 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.18.3 
