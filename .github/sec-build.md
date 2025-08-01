@@ -19,8 +19,8 @@
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
 │                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : Moby firewalld reload makes published container ports
-│                       │     │                   accessible from remote hosts  
+│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
+│                       │     │                    ports accessible 
 │                       │     ├ Description     : Moby is an open source container framework developed by
 │                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                       │     │                   Container Runtime, and various other downstream
@@ -39,14 +39,20 @@
 │                       │     │                   version 28.3.3. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
-│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 5.2 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │     │                  ├ [1]: https://github.com/moby/moby 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
 │                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
 │                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-54388 
@@ -66,8 +72,8 @@
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
 │                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : Moby firewalld reload makes published container ports
-│                       │     │                   accessible from remote hosts  
+│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
+│                       │     │                    ports accessible 
 │                       │     ├ Description     : Moby is an open source container framework developed by
 │                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                       │     │                   Container Runtime, and various other downstream
@@ -86,14 +92,20 @@
 │                       │     │                   version 28.3.3. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
-│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 5.2 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │     │                  ├ [1]: https://github.com/moby/moby 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
 │                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
 │                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2025-54388 
@@ -113,8 +125,8 @@
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
 │                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : Moby firewalld reload makes published container ports
-│                       │     │                   accessible from remote hosts  
+│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
+│                       │     │                    ports accessible 
 │                       │     ├ Description     : Moby is an open source container framework developed by
 │                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                       │     │                   Container Runtime, and various other downstream
@@ -133,14 +145,20 @@
 │                       │     │                   version 28.3.3. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
-│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 5.2 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │     │                  ├ [1]: https://github.com/moby/moby 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
 │                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
 │                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 │                       ╰ [3] ╭ VulnerabilityID : CVE-2025-54388 
@@ -160,8 +178,8 @@
 │                             ├ DataSource       ╭ ID  : alpine 
 │                             │                  ├ Name: Alpine Secdb 
 │                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Title           : Moby firewalld reload makes published container ports
-│                             │                   accessible from remote hosts  
+│                             ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
+│                             │                    ports accessible 
 │                             ├ Description     : Moby is an open source container framework developed by
 │                             │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                             │                   Container Runtime, and various other downstream
@@ -180,14 +198,20 @@
 │                             │                   version 28.3.3. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ CweIDs           ─ [0]: CWE-909 
-│                             ├ VendorSeverity   ─ ghsa: 2 
-│                             ├ References       ╭ [0]: https://github.com/moby/moby 
-│                             │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                             ├ VendorSeverity   ╭ ghsa  : 2 
+│                             │                  ╰ redhat: 2 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 5.2 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                             │                  ├ [1]: https://github.com/moby/moby 
+│                             │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
 │                             │                  │      820b97c4eadc7c87fabb0 
-│                             │                  ├ [2]: https://github.com/moby/moby/pull/50506 
-│                             │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                             │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                             │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
 │                             │                  │      4rx-4gw3-53p4 
-│                             │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                             ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                             ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 ├ [1] ╭ Target         : Java 
@@ -360,23 +384,24 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9318 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
-│                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
-│                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
-│                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
-│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
+│                       │     │                  ├ [3] : https://bugzilla.redhat.com/1767483 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2368956 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2025-9318.html 
+│                       │     │                  ├ [6] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
+│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils 
+│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/28a
 │                       │     │                  │       d955a1613ed5885870cc7da52093c1ce739dc 
-│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/bd2
+│                       │     │                  ├ [9] : https://github.com/apache/commons-beanutils/commit/bd2
 │                       │     │                  │       0740da25b69552ddef8523beec0837297eaf9 
-│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-48734.html 
-│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
-│                       │     │                  ├ [11]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
+│                       │     │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-48734.html 
+│                       │     │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
+│                       │     │                  ├ [12]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
 │                       │     │                  │       fohb0of1g9 
-│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
-│                       │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
-│                       │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [15]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
 │                       │     ╰ LastModifiedDate: 2025-06-09T18:56:26.37Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2025-48924 
@@ -505,8 +530,8 @@
 │                             │                  ├ Name: GitHub Security Advisory Go 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Ago 
-│                             ├ Title           : Moby firewalld reload makes published container ports
-│                             │                   accessible from remote hosts  
+│                             ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
+│                             │                    ports accessible 
 │                             ├ Description     : Moby is an open source container framework developed by
 │                             │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                             │                   Container Runtime, and various other downstream
@@ -525,14 +550,20 @@
 │                             │                   version 28.3.3. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ CweIDs           ─ [0]: CWE-909 
-│                             ├ VendorSeverity   ─ ghsa: 2 
-│                             ├ References       ╭ [0]: https://github.com/moby/moby 
-│                             │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                             ├ VendorSeverity   ╭ ghsa  : 2 
+│                             │                  ╰ redhat: 2 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 5.2 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                             │                  ├ [1]: https://github.com/moby/moby 
+│                             │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
 │                             │                  │      820b97c4eadc7c87fabb0 
-│                             │                  ├ [2]: https://github.com/moby/moby/pull/50506 
-│                             │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                             │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                             │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
 │                             │                  │      4rx-4gw3-53p4 
-│                             │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                             ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                             ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 ├ [4] ╭ Target         : usr/bin/syft 
@@ -557,8 +588,8 @@
 │                             │                  ├ Name: GitHub Security Advisory Go 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Ago 
-│                             ├ Title           : Moby firewalld reload makes published container ports
-│                             │                   accessible from remote hosts  
+│                             ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
+│                             │                    ports accessible 
 │                             ├ Description     : Moby is an open source container framework developed by
 │                             │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                             │                   Container Runtime, and various other downstream
@@ -577,14 +608,20 @@
 │                             │                   version 28.3.3. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ CweIDs           ─ [0]: CWE-909 
-│                             ├ VendorSeverity   ─ ghsa: 2 
-│                             ├ References       ╭ [0]: https://github.com/moby/moby 
-│                             │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                             ├ VendorSeverity   ╭ ghsa  : 2 
+│                             │                  ╰ redhat: 2 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 5.2 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                             │                  ├ [1]: https://github.com/moby/moby 
+│                             │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
 │                             │                  │      820b97c4eadc7c87fabb0 
-│                             │                  ├ [2]: https://github.com/moby/moby/pull/50506 
-│                             │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                             │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                             │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
 │                             │                  │      4rx-4gw3-53p4 
-│                             │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                             ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                             ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
@@ -609,8 +646,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : Moby firewalld reload makes published container ports
-│                       │     │                   accessible from remote hosts  
+│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
+│                       │     │                    ports accessible 
 │                       │     ├ Description     : Moby is an open source container framework developed by
 │                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
 │                       │     │                   Container Runtime, and various other downstream
@@ -629,14 +666,20 @@
 │                       │     │                   version 28.3.3. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ References       ╭ [0]: https://github.com/moby/moby 
-│                       │     │                  ├ [1]: https://github.com/moby/moby/commit/bea959c7b793b32a893
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 5.2 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │     │                  ├ [1]: https://github.com/moby/moby 
+│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
 │                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/security/advisories/GHSA-x
+│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
 │                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-07-30T14:15:28.693Z 
 │                       ╰ [1] ╭ VulnerabilityID : CVE-2025-53547 
