@@ -453,6 +453,33 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-54388
     PublishedDate: '2025-07-30T14:15:28.693Z'
     LastModifiedDate: '2025-07-31T18:42:37.87Z'
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f1435be1373e471b
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
 - Target: usr/bin/syft
   Class: lang-pkgs
   Type: gobinary
@@ -497,6 +524,33 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-54388
     PublishedDate: '2025-07-30T14:15:28.693Z'
     LastModifiedDate: '2025-07-31T18:42:37.87Z'
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: ebfdcee22f3690eb
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
 - Target: usr/bin/trivy
   Class: lang-pkgs
   Type: gobinary
@@ -589,6 +643,61 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-53547
     PublishedDate: '2025-07-08T22:15:27.897Z'
     LastModifiedDate: '2025-07-10T13:18:53.83Z'
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 2bd9acee40f6eed
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
 - Target: usr/bin/trivy_cve_query
   Class: lang-pkgs
   Type: gobinary
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-47907
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: 7927e62558d558ff
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.23.12, 1.24.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47907
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: Cancelling a query (e.g. by cancelling the context passed to one of th ...
+    Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/693735
+    - https://go.dev/issue/74831
+    - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://pkg.go.dev/vuln/GO-2025-3849
+    PublishedDate: '2025-08-07T16:15:30.357Z'
+    LastModifiedDate: '2025-08-07T16:15:30.357Z'
