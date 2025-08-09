@@ -596,7 +596,7 @@
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
 │                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                             ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-│                             ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+│                             ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -686,7 +686,7 @@
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
 │                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                             ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-│                             ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+│                             ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -835,7 +835,7 @@
 │                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
 │                             │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                             ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-│                             ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+│                             ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -870,5 +870,5 @@
                               │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
                               │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3849 
                               ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
-                              ╰ LastModifiedDate: 2025-08-07T16:15:30.357Z 
+                              ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ````
