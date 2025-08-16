@@ -384,10 +384,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
@@ -581,8 +581,7 @@
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Cancelling a query (e.g. by cancelling the context passed to
-│                             │                   one of th ... 
+│                             ├ Title           : database/sql: Postgres Scan Race Condition 
 │                             ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
 │                             │                   one of the query methods) during a call to the Scan method of
 │                             │                    the returned Rows can result in unexpected results if other
@@ -591,15 +590,21 @@
 │                             │                    of another query, causing the call to Scan to return either
 │                             │                   unexpected results from the other query or an error. 
 │                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ─ bitnami: 3 
-│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 3 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+│                             │                  │         │           /A:L 
+│                             │                  │         ╰ V3Score : 7 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
 │                             │                            │           /A:L 
 │                             │                            ╰ V3Score : 7 
-│                             ├ References       ╭ [0]: https://go.dev/cl/693735 
-│                             │                  ├ [1]: https://go.dev/issue/74831 
-│                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
-│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3849 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-47907 
+│                             │                  ├ [1]: https://go.dev/cl/693735 
+│                             │                  ├ [2]: https://go.dev/issue/74831 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
+│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3849 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                             ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                             ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [4] ╭ Target         : usr/bin/syft 
@@ -676,8 +681,7 @@
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Cancelling a query (e.g. by cancelling the context passed to
-│                             │                   one of th ... 
+│                             ├ Title           : database/sql: Postgres Scan Race Condition 
 │                             ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
 │                             │                   one of the query methods) during a call to the Scan method of
 │                             │                    the returned Rows can result in unexpected results if other
@@ -686,15 +690,21 @@
 │                             │                    of another query, causing the call to Scan to return either
 │                             │                   unexpected results from the other query or an error. 
 │                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ─ bitnami: 3 
-│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 3 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+│                             │                  │         │           /A:L 
+│                             │                  │         ╰ V3Score : 7 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
 │                             │                            │           /A:L 
 │                             │                            ╰ V3Score : 7 
-│                             ├ References       ╭ [0]: https://go.dev/cl/693735 
-│                             │                  ├ [1]: https://go.dev/issue/74831 
-│                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
-│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3849 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-47907 
+│                             │                  ├ [1]: https://go.dev/cl/693735 
+│                             │                  ├ [2]: https://go.dev/issue/74831 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
+│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3849 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                             ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                             ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
@@ -820,7 +830,8 @@
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.18.3 
 │                       │     │                  ╰ UID : cf2480296004620c 
 │                       │     ├ InstalledVersion: v3.18.3 
-│                       │     ├ Status          : affected 
+│                       │     ├ FixedVersion    : 3.18.5 
+│                       │     ├ Status          : fixed 
 │                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
 │                       │     │                  │         01dd6062bd50a4b6afe 
 │                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
@@ -831,46 +842,41 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : Helm May Panic Due To Incorrect YAML Content 
-│                       │     ├ Description     : A Helm contributor discovered an improper validation of type
-│                       │     │                   error when parsing Chart.yaml and index.yaml files that can
-│                       │     │                   lead to a panic.
-│                       │     │                   
-│                       │     │                   ### Impact
-│                       │     │                   There are two areas of YAML validation that were impacted.
-│                       │     │                   First, when a `Chart.yaml` file had a `null` maintainer or
-│                       │     │                   the `child` or `parent` of a dependencies `import-values`
-│                       │     │                   could be parsed as something other than a string, `helm lint`
-│                       │     │                    would panic. Second, when an `index.yaml` had an empty entry
-│                       │     │                    in the list of chart versions Helm would panic on
-│                       │     │                   interactions with that repository.
-│                       │     │                   ### Patches
-│                       │     │                   This issue has been resolved in Helm v3.18.5.
-│                       │     │                   ### Workarounds
-│                       │     │                   Ensure YAML files are formatted as Helm expects prior to
-│                       │     │                   processing them with Helm.
-│                       │     │                   ### References
-│                       │     │                   Helm's security policy is spelled out in detail in our
-│                       │     │                   [SECURITY](https://github.com/helm/community/blob/master/SECU
-│                       │     │                   RITY.md) document.
-│                       │     │                   ### Credits
-│                       │     │                   Disclosed by Jakub Ciolek at AlphaSense. 
+│                       │     ├ Title           : helm.sh/helm/v3: Helm YAML Parsing Panic Vulnerability 
+│                       │     ├ Description     : Helm is a package manager for Charts for Kubernetes. Prior to
+│                       │     │                    version 3.18.5, when parsing Chart.yaml and index.yaml
+│                       │     │                   files, an improper validation of type error can lead to a
+│                       │     │                   panic. This issue has been resolved in Helm 3.18.5. A
+│                       │     │                   workaround involves ensuring YAML files are formatted as Helm
+│                       │     │                    expects prior to processing them with Helm. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H 
-│                       │     │                         ╰ V3Score : 6.5 
-│                       │     ╰ References       ╭ [0]: https://github.com/helm/helm 
-│                       │                        ├ [1]: https://github.com/helm/helm/commit/ec5f59e2db56533d042
-│                       │                        │      a124f5bae54dd87b558e6 
-│                       │                        ╰ [2]: https://github.com/helm/helm/security/advisories/GHSA-f
-│                       │                               9f8-9pmf-xv68 
+│                       │     ├ CweIDs           ─ [0]: CWE-908 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 6.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 6.5 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-55198 
+│                       │     │                  ├ [1]: https://github.com/helm/helm 
+│                       │     │                  ├ [2]: https://github.com/helm/helm/commit/ec5f59e2db56533d042
+│                       │     │                  │      a124f5bae54dd87b558e6 
+│                       │     │                  ├ [3]: https://github.com/helm/helm/security/advisories/GHSA-f
+│                       │     │                  │      9f8-9pmf-xv68 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-55198 
+│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-55198 
+│                       │     ├ PublishedDate   : 2025-08-14T00:15:26.557Z 
+│                       │     ╰ LastModifiedDate: 2025-08-14T13:11:53.633Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2025-55199 
 │                       │     ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                       │     ├ PkgName         : helm.sh/helm/v3 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/helm.sh/helm/v3@v3.18.3 
 │                       │     │                  ╰ UID : cf2480296004620c 
 │                       │     ├ InstalledVersion: v3.18.3 
-│                       │     ├ Status          : affected 
+│                       │     ├ FixedVersion    : 3.18.5 
+│                       │     ├ Status          : fixed 
 │                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
 │                       │     │                  │         01dd6062bd50a4b6afe 
 │                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
@@ -881,39 +887,34 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Go 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Ago 
-│                       │     ├ Title           : Helm Charts with Specific JSON Schema Values Can Cause Memory
-│                       │     │                    Exhaustion 
-│                       │     ├ Description     : A Helm contributor discovered that it was possible to craft a
-│                       │     │                    JSON Schema file in a manner which could cause Helm to use
-│                       │     │                   all available memory and have an out of memory (OOM)
-│                       │     │                   termination.
-│                       │     │                   
-│                       │     │                   ### Impact
-│                       │     │                   A malicious chart can point `$ref` in _values.schema.json_ to
-│                       │     │                    a device (e.g. `/dev/*`) or other problem file which could
-│                       │     │                   cause Helm to use all available memory and have an out of
-│                       │     │                   memory (OOM) termination.
-│                       │     │                   ### Patches
-│                       │     │                   This issue has been resolved in Helm v3.18.5.
-│                       │     │                   ### Workarounds
-│                       │     │                   Make sure that all Helm charts that are being loaded into
-│                       │     │                   Helm doesn't have any reference of `$ref` pointing to
-│                       │     │                   `/dev/zero`.
-│                       │     │                   ### References
-│                       │     │                   Helm's security policy is spelled out in detail in our
-│                       │     │                   [SECURITY](https://github.com/helm/community/blob/master/SECU
-│                       │     │                   RITY.md) document.
-│                       │     │                   ### Credits
-│                       │     │                   Disclosed by Jakub Ciolek at AlphaSense. 
+│                       │     ├ Title           : helm.sh/helm/v3: Helm Chart JSON Schema Denial of Service 
+│                       │     ├ Description     : Helm is a package manager for Charts for Kubernetes. Prior to
+│                       │     │                    version 3.18.5, it is possible to craft a JSON Schema file
+│                       │     │                   in a manner which could cause Helm to use all available
+│                       │     │                   memory and have an out of memory (OOM) termination. This
+│                       │     │                   issue has been resolved in Helm 3.18.5. A workaround involves
+│                       │     │                    ensuring all Helm charts that are being loaded into Helm do
+│                       │     │                   not have any reference of $ref pointing to /dev/zero. 
 │                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ─ ghsa: 2 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H 
-│                       │     │                         ╰ V3Score : 6.5 
-│                       │     ╰ References       ╭ [0]: https://github.com/helm/helm 
-│                       │                        ├ [1]: https://github.com/helm/helm/commit/b78692c18f0fb38fe5b
-│                       │                        │      a4571a674de067a4c53a5 
-│                       │                        ╰ [2]: https://github.com/helm/helm/security/advisories/GHSA-9
-│                       │                               h84-qmv7-982p 
+│                       │     ├ CweIDs           ─ [0]: CWE-770 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 6.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 6.5 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-55199 
+│                       │     │                  ├ [1]: https://github.com/helm/helm 
+│                       │     │                  ├ [2]: https://github.com/helm/helm/commit/b78692c18f0fb38fe5b
+│                       │     │                  │      a4571a674de067a4c53a5 
+│                       │     │                  ├ [3]: https://github.com/helm/helm/security/advisories/GHSA-9
+│                       │     │                  │      h84-qmv7-982p 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-55199 
+│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-55199 
+│                       │     ├ PublishedDate   : 2025-08-14T00:15:27.96Z 
+│                       │     ╰ LastModifiedDate: 2025-08-14T13:11:53.633Z 
 │                       ╰ [4] ╭ VulnerabilityID : CVE-2025-47907 
 │                             ├ PkgID           : stdlib@v1.24.4 
 │                             ├ PkgName         : stdlib 
@@ -930,8 +931,7 @@
 │                             ├ DataSource       ╭ ID  : govulndb 
 │                             │                  ├ Name: The Go Vulnerability Database 
 │                             │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                             ├ Title           : Cancelling a query (e.g. by cancelling the context passed to
-│                             │                   one of th ... 
+│                             ├ Title           : database/sql: Postgres Scan Race Condition 
 │                             ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
 │                             │                   one of the query methods) during a call to the Scan method of
 │                             │                    the returned Rows can result in unexpected results if other
@@ -940,15 +940,21 @@
 │                             │                    of another query, causing the call to Scan to return either
 │                             │                   unexpected results from the other query or an error. 
 │                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ─ bitnami: 3 
-│                             ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ redhat : 3 
+│                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+│                             │                  │         │           /A:L 
+│                             │                  │         ╰ V3Score : 7 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
 │                             │                            │           /A:L 
 │                             │                            ╰ V3Score : 7 
-│                             ├ References       ╭ [0]: https://go.dev/cl/693735 
-│                             │                  ├ [1]: https://go.dev/issue/74831 
-│                             │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
-│                             │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
-│                             │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3849 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-47907 
+│                             │                  ├ [1]: https://go.dev/cl/693735 
+│                             │                  ├ [2]: https://go.dev/issue/74831 
+│                             │                  ├ [3]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
+│                             │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3849 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                             ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                             ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
@@ -970,8 +976,7 @@
                               ├ DataSource       ╭ ID  : govulndb 
                               │                  ├ Name: The Go Vulnerability Database 
                               │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Title           : Cancelling a query (e.g. by cancelling the context passed to
-                              │                   one of th ... 
+                              ├ Title           : database/sql: Postgres Scan Race Condition 
                               ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
                               │                   one of the query methods) during a call to the Scan method of
                               │                    the returned Rows can result in unexpected results if other
@@ -980,15 +985,21 @@
                               │                    of another query, causing the call to Scan to return either
                               │                   unexpected results from the other query or an error. 
                               ├ Severity        : HIGH 
-                              ├ VendorSeverity   ─ bitnami: 3 
-                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+                              ├ VendorSeverity   ╭ bitnami: 3 
+                              │                  ╰ redhat : 3 
+                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+                              │                  │         │           /A:L 
+                              │                  │         ╰ V3Score : 7 
+                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
                               │                            │           /A:L 
                               │                            ╰ V3Score : 7 
-                              ├ References       ╭ [0]: https://go.dev/cl/693735 
-                              │                  ├ [1]: https://go.dev/issue/74831 
-                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
-                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
-                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-3849 
+                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-47907 
+                              │                  ├ [1]: https://go.dev/cl/693735 
+                              │                  ├ [2]: https://go.dev/issue/74831 
+                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
+                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-3849 
+                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
                               ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
                               ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
 ````
