@@ -301,10 +301,11 @@
         V3Score: 8.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/28/6
-    - https://access.redhat.com/errata/RHSA-2025:9114
+    - https://access.redhat.com/errata/RHSA-2025:9318
     - https://access.redhat.com/security/cve/CVE-2025-48734
+    - https://bugzilla.redhat.com/1767483
     - https://bugzilla.redhat.com/2368956
-    - https://errata.almalinux.org/9/ALSA-2025-9114.html
+    - https://errata.almalinux.org/8/ALSA-2025-9318.html
     - https://github.com/advisories/GHSA-wxr5-93ph-8wr9
     - https://github.com/apache/commons-beanutils
     - https://github.com/apache/commons-beanutils/commit/28ad955a1613ed5885870cc7da52093c1ce739dc
@@ -943,7 +944,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-55198
     - https://www.cve.org/CVERecord?id=CVE-2025-55198
     PublishedDate: '2025-08-14T00:15:26.557Z'
-    LastModifiedDate: '2025-08-14T13:11:53.633Z'
+    LastModifiedDate: '2025-08-21T21:28:21.383Z'
   - VulnerabilityID: CVE-2025-55199
     PkgID: helm.sh/helm/v3@v3.18.3
     PkgName: helm.sh/helm/v3
@@ -989,7 +990,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-55199
     - https://www.cve.org/CVERecord?id=CVE-2025-55199
     PublishedDate: '2025-08-14T00:15:27.96Z'
-    LastModifiedDate: '2025-08-14T13:11:53.633Z'
+    LastModifiedDate: '2025-08-21T21:25:20.793Z'
   - VulnerabilityID: CVE-2025-47907
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
