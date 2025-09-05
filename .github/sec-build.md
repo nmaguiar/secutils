@@ -484,6 +484,7 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-674 
 │                       │     ├ VendorSeverity   ╭ amazon: 1 
+│                       │     │                  ├ azure : 2 
 │                       │     │                  ├ ghsa  : 2 
 │                       │     │                  ╰ redhat: 1 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
@@ -842,7 +843,8 @@
 │                             │                    of another query, causing the call to Scan to return either
 │                             │                   unexpected results from the other query or an error. 
 │                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ╭ azure  : 3 
+│                             ├ VendorSeverity   ╭ amazon : 3 
+│                             │                  ├ azure  : 3 
 │                             │                  ├ bitnami: 3 
 │                             │                  ╰ redhat : 3 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
@@ -1147,7 +1149,8 @@
 │                             │                    of another query, causing the call to Scan to return either
 │                             │                   unexpected results from the other query or an error. 
 │                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ╭ azure  : 3 
+│                             ├ VendorSeverity   ╭ amazon : 3 
+│                             │                  ├ azure  : 3 
 │                             │                  ├ bitnami: 3 
 │                             │                  ╰ redhat : 3 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
@@ -1465,13 +1468,17 @@
 │                       │     ├ VendorSeverity   ╭ bitnami    : 3 
 │                       │     │                  ├ cbl-mariner: 3 
 │                       │     │                  ├ ghsa       : 3 
+│                       │     │                  ├ nvd        : 3 
 │                       │     │                  ╰ redhat     : 3 
-│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H
+│                       │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H
 │                       │     │                  │         │           /A:H 
-│                       │     │                  │         ╰ V3Score : 8.5 
+│                       │     │                  │         ╰ V3Score : 8.6 
 │                       │     │                  ├ ghsa    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H
 │                       │     │                  │         │           /A:H 
 │                       │     │                  │         ╰ V3Score : 8.5 
+│                       │     │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H
+│                       │     │                  │         │           /A:H 
+│                       │     │                  │         ╰ V3Score : 8.6 
 │                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:H
 │                       │     │                            │           /A:H 
 │                       │     │                            ╰ V3Score : 8.5 
@@ -1485,7 +1492,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-53547 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-53547 
 │                       │     ├ PublishedDate   : 2025-07-08T22:15:27.897Z 
-│                       │     ╰ LastModifiedDate: 2025-07-10T13:18:53.83Z 
+│                       │     ╰ LastModifiedDate: 2025-09-03T16:26:24.77Z 
 │                       ├ [5] ╭ VulnerabilityID : CVE-2025-55198 
 │                       │     ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                       │     ├ PkgName         : helm.sh/helm/v3 
@@ -1610,7 +1617,8 @@
 │                             │                    of another query, causing the call to Scan to return either
 │                             │                   unexpected results from the other query or an error. 
 │                             ├ Severity        : HIGH 
-│                             ├ VendorSeverity   ╭ azure  : 3 
+│                             ├ VendorSeverity   ╭ amazon : 3 
+│                             │                  ├ azure  : 3 
 │                             │                  ├ bitnami: 3 
 │                             │                  ╰ redhat : 3 
 │                             ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
@@ -1656,7 +1664,8 @@
                               │                    of another query, causing the call to Scan to return either
                               │                   unexpected results from the other query or an error. 
                               ├ Severity        : HIGH 
-                              ├ VendorSeverity   ╭ azure  : 3 
+                              ├ VendorSeverity   ╭ amazon : 3 
+                              │                  ├ azure  : 3 
                               │                  ├ bitnami: 3 
                               │                  ╰ redhat : 3 
                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
