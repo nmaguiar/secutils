@@ -15,6 +15,7 @@
 │                       │     │                  │         01dd6062bd50a4b6afe 
 │                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
 │                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : nvd 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -40,8 +41,12 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 5.2 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
@@ -54,7 +59,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-07-31T18:42:37.87Z 
+│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker-bash-completion@28.3.2-r0 
 │                       │     ├ PkgName         : docker-bash-completion 
@@ -68,6 +73,7 @@
 │                       │     │                  │         01dd6062bd50a4b6afe 
 │                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
 │                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : nvd 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -93,8 +99,12 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 5.2 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
@@ -107,7 +117,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-07-31T18:42:37.87Z 
+│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker-cli@28.3.2-r0 
 │                       │     ├ PkgName         : docker-cli 
@@ -121,6 +131,7 @@
 │                       │     │                  │         01dd6062bd50a4b6afe 
 │                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
 │                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : nvd 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -146,8 +157,12 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 5.2 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
@@ -160,7 +175,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-07-31T18:42:37.87Z 
+│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker-engine@28.3.2-r0 
 │                       │     ├ PkgName         : docker-engine 
@@ -174,6 +189,7 @@
 │                       │     │                  │         01dd6062bd50a4b6afe 
 │                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
 │                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : nvd 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -199,8 +215,12 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 5.2 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
@@ -213,7 +233,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-07-31T18:42:37.87Z 
+│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
 │                       ╰ [4] ╭ VulnerabilityID : CVE-2025-58050 
 │                             ├ PkgID           : pcre2@10.43-r1 
 │                             ├ PkgName         : pcre2 
@@ -246,7 +266,8 @@
 │                             ├ Severity        : MEDIUM 
 │                             ├ CweIDs           ╭ [0]: CWE-122 
 │                             │                  ╰ [1]: CWE-125 
-│                             ├ VendorSeverity   ─ redhat: 2 
+│                             ├ VendorSeverity   ╭ redhat: 2 
+│                             │                  ╰ ubuntu: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
 │                             │                           │           A:L 
 │                             │                           ╰ V3Score : 6.5 
@@ -431,10 +452,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
@@ -599,8 +620,12 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 5.2 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
@@ -613,7 +638,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-07-31T18:42:37.87Z 
+│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
 │                       ├ [1] ╭ VulnerabilityID : GHSA-2464-8j7c-4cjm 
 │                       │     ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.3.0 
 │                       │     ├ PkgName         : github.com/go-viper/mapstructure/v2 
@@ -906,8 +931,12 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 5.2 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
@@ -920,7 +949,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-07-31T18:42:37.87Z 
+│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
 │                       ├ [1] ╭ VulnerabilityID : GHSA-2464-8j7c-4cjm 
 │                       │     ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.3.0 
 │                       │     ├ PkgName         : github.com/go-viper/mapstructure/v2 
@@ -1213,8 +1242,12 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
 │                       │     │                           │           A:N 
 │                       │     │                           ╰ V3Score : 5.2 
 │                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
@@ -1227,7 +1260,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-07-31T18:42:37.87Z 
+│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
 │                       ├ [1] ╭ VulnerabilityID : GHSA-2464-8j7c-4cjm 
 │                       │     ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.3.0 
 │                       │     ├ PkgName         : github.com/go-viper/mapstructure/v2 
