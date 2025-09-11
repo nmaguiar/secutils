@@ -2,7 +2,49 @@
 ╭ [0] ╭ Target         : nmaguiar/secutils:build (alpine 3.23.0_alpha20250612) 
 │     ├ Class          : os-pkgs 
 │     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-54388 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-9086 
+│                       │     ├ PkgID           : curl@8.15.0-r0 
+│                       │     ├ PkgName         : curl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.
+│                       │     │                  │       0_alpha20250612 
+│                       │     │                  ╰ UID : 5371f8b941130cc 
+│                       │     ├ InstalledVersion: 8.15.0-r0 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [Out of bounds read for cookie path] 
+│                       │     ├ Description     : Out-of-bounds read when dealing with cookies 
+│                       │     ├ Severity        : LOW 
+│                       │     ├ VendorSeverity   ─ ubuntu: 1 
+│                       │     ╰ References       ╭ [0]: https://curl.se/docs/CVE-2025-9086.html 
+│                       │                        ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-10148 
+│                       │     ├ PkgID           : curl@8.15.0-r0 
+│                       │     ├ PkgName         : curl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.
+│                       │     │                  │       0_alpha20250612 
+│                       │     │                  ╰ UID : 5371f8b941130cc 
+│                       │     ├ InstalledVersion: 8.15.0-r0 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [predictable WebSocket mask] 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker@28.3.2-r0 
 │                       │     ├ PkgName         : docker 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.2
@@ -43,7 +85,10 @@
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
@@ -60,7 +105,7 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker-bash-completion@28.3.2-r0 
 │                       │     ├ PkgName         : docker-bash-completion 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=x
@@ -101,7 +146,10 @@
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
@@ -118,7 +166,7 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker-cli@28.3.2-r0 
 │                       │     ├ PkgName         : docker-cli 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distro
@@ -159,7 +207,10 @@
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
@@ -176,7 +227,7 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker-engine@28.3.2-r0 
 │                       │     ├ PkgName         : docker-engine 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&dis
@@ -217,7 +268,10 @@
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
@@ -234,7 +288,49 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ╰ [4] ╭ VulnerabilityID : CVE-2025-58050 
+│                       ├ [6] ╭ VulnerabilityID : CVE-2025-9086 
+│                       │     ├ PkgID           : libcurl@8.15.0-r0 
+│                       │     ├ PkgName         : libcurl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.
+│                       │     │                  │       23.0_alpha20250612 
+│                       │     │                  ╰ UID : 18280e719f28fc16 
+│                       │     ├ InstalledVersion: 8.15.0-r0 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [Out of bounds read for cookie path] 
+│                       │     ├ Description     : Out-of-bounds read when dealing with cookies 
+│                       │     ├ Severity        : LOW 
+│                       │     ├ VendorSeverity   ─ ubuntu: 1 
+│                       │     ╰ References       ╭ [0]: https://curl.se/docs/CVE-2025-9086.html 
+│                       │                        ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       ├ [7] ╭ VulnerabilityID : CVE-2025-10148 
+│                       │     ├ PkgID           : libcurl@8.15.0-r0 
+│                       │     ├ PkgName         : libcurl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.
+│                       │     │                  │       23.0_alpha20250612 
+│                       │     │                  ╰ UID : 18280e719f28fc16 
+│                       │     ├ InstalledVersion: 8.15.0-r0 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [predictable WebSocket mask] 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ╰ [8] ╭ VulnerabilityID : CVE-2025-58050 
 │                             ├ PkgID           : pcre2@10.43-r1 
 │                             ├ PkgName         : pcre2 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.23.
@@ -628,7 +724,10 @@
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
@@ -939,7 +1038,10 @@
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
@@ -1250,7 +1352,10 @@
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
 │                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 4.6 
+│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
