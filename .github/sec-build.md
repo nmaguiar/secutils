@@ -48,7 +48,7 @@
 │                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │     ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
-│                       │     ╰ LastModifiedDate: 2025-09-12T18:15:33.233Z 
+│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2025-9086 
 │                       │     ├ PkgID           : curl@8.15.0-r0 
 │                       │     ├ PkgName         : curl 
@@ -109,7 +109,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │     ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
-│                       │     ╰ LastModifiedDate: 2025-09-12T18:15:35.167Z 
+│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │     ├ PkgID           : docker@28.3.2-r0 
 │                       │     ├ PkgName         : docker 
@@ -400,7 +400,7 @@
 │                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │     ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
-│                       │     ╰ LastModifiedDate: 2025-09-12T18:15:33.233Z 
+│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
 │                       ├ [7] ╭ VulnerabilityID : CVE-2025-9086 
 │                       │     ├ PkgID           : libcurl@8.15.0-r0 
 │                       │     ├ PkgName         : libcurl 
@@ -461,7 +461,7 @@
 │                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │     ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
-│                       │     ╰ LastModifiedDate: 2025-09-12T18:15:35.167Z 
+│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
 │                       ╰ [8] ╭ VulnerabilityID : CVE-2025-58050 
 │                             ├ PkgID           : pcre2@10.43-r1 
 │                             ├ PkgName         : pcre2 
