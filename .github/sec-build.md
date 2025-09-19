@@ -1080,7 +1080,48 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58058 
 │                       │     ├ PublishedDate   : 2025-08-28T22:15:32.577Z 
 │                       │     ╰ LastModifiedDate: 2025-08-29T16:24:29.73Z 
-│                       ╰ [4] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-47906 
+│                       │     ├ PkgID           : stdlib@v1.24.4 
+│                       │     ├ PkgName         : stdlib 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │     │                  ╰ UID : f1435be1373e471b 
+│                       │     ├ InstalledVersion: v1.24.4 
+│                       │     ├ FixedVersion    : 1.23.12, 1.24.6 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-47906 
+│                       │     ├ DataSource       ╭ ID  : govulndb 
+│                       │     │                  ├ Name: The Go Vulnerability Database 
+│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │     ├ Title           : If the PATH environment variable contains paths which are
+│                       │     │                   executables  ... 
+│                       │     ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+│                       │     │                   the following vulnerabilities:
+│                       │     │                   CVE-2025-47907:
+│                       │     │                   	Cancelling a query (e.g. by cancelling the context passed to
+│                       │     │                    one of the query methods) during a call to the Scan method
+│                       │     │                   of the returned Rows can result in unexpected results if
+│                       │     │                   other queries are being made in parallel. This can result in
+│                       │     │                   a race condition that may overwrite the expected results with
+│                       │     │                    those of another query, causing the call to Scan to return
+│                       │     │                   either unexpected results from the other query or an error.
+│                       │     │                   
+│                       │     │                   CVE-2025-47906:
+│                       │     │                   	os/exec: LookPath may return unexpected paths. If the PATH
+│                       │     │                   environment variable contains paths which are executables
+│                       │     │                   (rather than just directories), passing certain strings to
+│                       │     │                   LookPath ("", ".", and ".."), can result in the binaries
+│                       │     │                   listed in the PATH being unexpectedly returned. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ amazon: 3 
+│                       │     ╰ References       ╭ [0]: https://go.dev/cl/691775 
+│                       │                        ├ [1]: https://go.dev/issue/74466 
+│                       │                        ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+│                       │                        ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-47907 
 │                             ├ PkgID           : stdlib@v1.24.4 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -1394,7 +1435,48 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58058 
 │                       │     ├ PublishedDate   : 2025-08-28T22:15:32.577Z 
 │                       │     ╰ LastModifiedDate: 2025-08-29T16:24:29.73Z 
-│                       ╰ [4] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-47906 
+│                       │     ├ PkgID           : stdlib@v1.24.4 
+│                       │     ├ PkgName         : stdlib 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │     │                  ╰ UID : ebfdcee22f3690eb 
+│                       │     ├ InstalledVersion: v1.24.4 
+│                       │     ├ FixedVersion    : 1.23.12, 1.24.6 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-47906 
+│                       │     ├ DataSource       ╭ ID  : govulndb 
+│                       │     │                  ├ Name: The Go Vulnerability Database 
+│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │     ├ Title           : If the PATH environment variable contains paths which are
+│                       │     │                   executables  ... 
+│                       │     ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+│                       │     │                   the following vulnerabilities:
+│                       │     │                   CVE-2025-47907:
+│                       │     │                   	Cancelling a query (e.g. by cancelling the context passed to
+│                       │     │                    one of the query methods) during a call to the Scan method
+│                       │     │                   of the returned Rows can result in unexpected results if
+│                       │     │                   other queries are being made in parallel. This can result in
+│                       │     │                   a race condition that may overwrite the expected results with
+│                       │     │                    those of another query, causing the call to Scan to return
+│                       │     │                   either unexpected results from the other query or an error.
+│                       │     │                   
+│                       │     │                   CVE-2025-47906:
+│                       │     │                   	os/exec: LookPath may return unexpected paths. If the PATH
+│                       │     │                   environment variable contains paths which are executables
+│                       │     │                   (rather than just directories), passing certain strings to
+│                       │     │                   LookPath ("", ".", and ".."), can result in the binaries
+│                       │     │                   listed in the PATH being unexpectedly returned. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ amazon: 3 
+│                       │     ╰ References       ╭ [0]: https://go.dev/cl/691775 
+│                       │                        ├ [1]: https://go.dev/issue/74466 
+│                       │                        ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+│                       │                        ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-47907 
 │                             ├ PkgID           : stdlib@v1.24.4 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -1870,7 +1952,48 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-55199 
 │                       │     ├ PublishedDate   : 2025-08-14T00:15:27.96Z 
 │                       │     ╰ LastModifiedDate: 2025-08-21T21:25:20.793Z 
-│                       ╰ [7] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [7] ╭ VulnerabilityID : CVE-2025-47906 
+│                       │     ├ PkgID           : stdlib@v1.24.4 
+│                       │     ├ PkgName         : stdlib 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │     │                  ╰ UID : 2bd9acee40f6eed 
+│                       │     ├ InstalledVersion: v1.24.4 
+│                       │     ├ FixedVersion    : 1.23.12, 1.24.6 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-47906 
+│                       │     ├ DataSource       ╭ ID  : govulndb 
+│                       │     │                  ├ Name: The Go Vulnerability Database 
+│                       │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │     ├ Title           : If the PATH environment variable contains paths which are
+│                       │     │                   executables  ... 
+│                       │     ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+│                       │     │                   the following vulnerabilities:
+│                       │     │                   CVE-2025-47907:
+│                       │     │                   	Cancelling a query (e.g. by cancelling the context passed to
+│                       │     │                    one of the query methods) during a call to the Scan method
+│                       │     │                   of the returned Rows can result in unexpected results if
+│                       │     │                   other queries are being made in parallel. This can result in
+│                       │     │                   a race condition that may overwrite the expected results with
+│                       │     │                    those of another query, causing the call to Scan to return
+│                       │     │                   either unexpected results from the other query or an error.
+│                       │     │                   
+│                       │     │                   CVE-2025-47906:
+│                       │     │                   	os/exec: LookPath may return unexpected paths. If the PATH
+│                       │     │                   environment variable contains paths which are executables
+│                       │     │                   (rather than just directories), passing certain strings to
+│                       │     │                   LookPath ("", ".", and ".."), can result in the binaries
+│                       │     │                   listed in the PATH being unexpectedly returned. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ amazon: 3 
+│                       │     ╰ References       ╭ [0]: https://go.dev/cl/691775 
+│                       │                        ├ [1]: https://go.dev/issue/74466 
+│                       │                        ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+│                       │                        ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+│                       ╰ [8] ╭ VulnerabilityID : CVE-2025-47907 
 │                             ├ PkgID           : stdlib@v1.24.4 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -1918,7 +2041,48 @@
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
-      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-47907 
+      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-47906 
+                        │     ├ PkgID           : stdlib@v1.24.5 
+                        │     ├ PkgName         : stdlib 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │     │                  ╰ UID : 7927e62558d558ff 
+                        │     ├ InstalledVersion: v1.24.5 
+                        │     ├ FixedVersion    : 1.23.12, 1.24.6 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+                        │     │                  │         01dd6062bd50a4b6afe 
+                        │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+                        │     │                            7d38461b41e40aab9e7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-47906 
+                        │     ├ DataSource       ╭ ID  : govulndb 
+                        │     │                  ├ Name: The Go Vulnerability Database 
+                        │     │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │     ├ Title           : If the PATH environment variable contains paths which are
+                        │     │                   executables  ... 
+                        │     ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+                        │     │                   the following vulnerabilities:
+                        │     │                   CVE-2025-47907:
+                        │     │                   	Cancelling a query (e.g. by cancelling the context passed to
+                        │     │                    one of the query methods) during a call to the Scan method
+                        │     │                   of the returned Rows can result in unexpected results if
+                        │     │                   other queries are being made in parallel. This can result in
+                        │     │                   a race condition that may overwrite the expected results with
+                        │     │                    those of another query, causing the call to Scan to return
+                        │     │                   either unexpected results from the other query or an error.
+                        │     │                   
+                        │     │                   CVE-2025-47906:
+                        │     │                   	os/exec: LookPath may return unexpected paths. If the PATH
+                        │     │                   environment variable contains paths which are executables
+                        │     │                   (rather than just directories), passing certain strings to
+                        │     │                   LookPath ("", ".", and ".."), can result in the binaries
+                        │     │                   listed in the PATH being unexpectedly returned. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ VendorSeverity   ─ amazon: 3 
+                        │     ╰ References       ╭ [0]: https://go.dev/cl/691775 
+                        │                        ├ [1]: https://go.dev/issue/74466 
+                        │                        ├ [2]: https://groups.google.com/g/golang-announce/c/x5MKroML2yM 
+                        │                        ╰ [3]: https://pkg.go.dev/vuln/GO-2025-3956 
+                        ╰ [1] ╭ VulnerabilityID : CVE-2025-47907 
                               ├ PkgID           : stdlib@v1.24.5 
                               ├ PkgName         : stdlib 
                               ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
