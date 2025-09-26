@@ -554,7 +554,8 @@
 │                             │                  ├ [3]: https://github.com/PCRE2Project/pcre2/security/advisori
 │                             │                  │      es/GHSA-c2gv-xgf5-5cc2 
 │                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58050 
-│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
+│                             │                  ├ [5]: https://ubuntu.com/security/notices/USN-7777-1 
+│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
 │                             ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
 │                             ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
 ├ [1] ╭ Target         : Java 
@@ -849,9 +850,69 @@
 │                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
 │                             ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
 │                             ╰ LastModifiedDate: 2025-07-16T14:48:52.213Z 
-├ [2] ╭ Target: Python 
-│     ├ Class : lang-pkgs 
-│     ╰ Type  : python-pkg 
+├ [2] ╭ Target         : Python 
+│     ├ Class          : lang-pkgs 
+│     ├ Type           : python-pkg 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-8869 
+│                             ├ PkgName         : pip 
+│                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/pip-25.0.1.
+│                             │                   dist-info/METADATA 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:pypi/pip@25.0.1 
+│                             │                  ╰ UID : 3fd173ad9aa7d30f 
+│                             ├ InstalledVersion: 25.0.1 
+│                             ├ FixedVersion    : 25.2 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                             │                  │         01dd6062bd50a4b6afe 
+│                             │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                             │                            7d38461b41e40aab9e7 
+│                             ├ SeveritySource  : ghsa 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-8869 
+│                             ├ DataSource       ╭ ID  : ghsa 
+│                             │                  ├ Name: GitHub Security Advisory pip 
+│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                             │                          osystem%3Apip 
+│                             ├ Title           : pip: pip missing checks on symbolic link extraction 
+│                             ├ Description     : When extracting a tar archive pip may not check symbolic
+│                             │                   links point into the extraction directory if the tarfile
+│                             │                   module doesn't implement PEP 706.
+│                             │                   Note that upgrading pip to a "fixed" version for this
+│                             │                   vulnerability doesn't fix all known vulnerabilities that are
+│                             │                   remediated by using a Python version that implements PEP
+│                             │                   706.
+│                             │                   
+│                             │                   Note that this is a vulnerability in pip's fallback
+│                             │                   implementation of tar extraction for Python versions that
+│                             │                   don't implement PEP 706
+│                             │                   and therefore are not secure to all vulnerabilities in the
+│                             │                   Python 'tarfile' module. If you're using a Python version
+│                             │                   that implements PEP 706
+│                             │                   then pip doesn't use the "vulnerable" fallback code.
+│                             │                   Mitigations include upgrading to a version of pip that
+│                             │                   includes the fix, upgrading to a Python version that
+│                             │                   implements PEP 706 (Python >=3.9.17, >=3.10.12, >=3.11.4, or
+│                             │                   >=3.12),
+│                             │                   applying the linked patch, or inspecting source distributions
+│                             │                    (sdists) before installation as is already a best-practice. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ VendorSeverity   ╭ ghsa  : 2 
+│                             │                  ╰ redhat: 2 
+│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/
+│                             │                           │           A:N 
+│                             │                           ╰ V3Score : 5.3 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-8869 
+│                             │                  ├ [1]: https://github.com/pypa/pip 
+│                             │                  ├ [2]: https://github.com/pypa/pip/commit/f2b92314da012b9fffa3
+│                             │                  │      6b3f3e67748a37ef464a 
+│                             │                  ├ [3]: https://github.com/pypa/pip/pull/13550 
+│                             │                  ├ [4]: https://mail.python.org/archives/list/security-announce
+│                             │                  │      @python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN 
+│                             │                  ├ [5]: https://mail.python.org/archives/list/security-announce
+│                             │                  │      @python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN/ 
+│                             │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-8869 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-8869 
+│                             ├ PublishedDate   : 2025-09-24T15:15:41.293Z 
+│                             ╰ LastModifiedDate: 2025-09-24T18:11:24.52Z 
 ├ [3] ╭ Target         : usr/bin/grype 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
