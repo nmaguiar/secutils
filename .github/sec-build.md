@@ -728,24 +728,23 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9318 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
-│                       │     │                  ├ [3] : https://bugzilla.redhat.com/1767483 
-│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2025-9318.html 
-│                       │     │                  ├ [6] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
-│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils 
-│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/28a
+│                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
+│                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
+│                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
+│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
 │                       │     │                  │       d955a1613ed5885870cc7da52093c1ce739dc 
-│                       │     │                  ├ [9] : https://github.com/apache/commons-beanutils/commit/bd2
+│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/bd2
 │                       │     │                  │       0740da25b69552ddef8523beec0837297eaf9 
-│                       │     │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-48734.html 
-│                       │     │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
-│                       │     │                  ├ [12]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
+│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-48734.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
+│                       │     │                  ├ [11]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
 │                       │     │                  │       fohb0of1g9 
-│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
-│                       │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
-│                       │     │                  ╰ [15]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
 │                       │     ╰ LastModifiedDate: 2025-06-09T18:56:26.37Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2025-48924 
