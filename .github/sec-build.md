@@ -12781,563 +12781,1217 @@
 │     │                         ├ Digest        : sha1:df54c89caa45d131c46e3495831d154ee246f609 
 │     │                         ╰ InstalledFiles ╭ [0]: usr/lib/libzstd.so.1 
 │     │                                          ╰ [1]: usr/lib/libzstd.so.1.5.7 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-10148 
-│                       │     ├ PkgID           : curl@8.15.0-r0 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.
-│                       │     │                  │       0_alpha20250612 
-│                       │     │                  ╰ UID : 5371f8b941130cc 
-│                       │     ├ InstalledVersion: 8.15.0-r0 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : curl: predictable WebSocket mask 
-│                       │     ├ Description     : curl's websocket code did not update the 32 bit mask pattern
-│                       │     │                   for each new
-│                       │     │                    outgoing frame as the specification says. Instead it used a
-│                       │     │                   fixed mask that
-│                       │     │                   persisted and was used throughout the entire connection.
-│                       │     │                   
-│                       │     │                   A predictable mask pattern allows for a malicious server to
-│                       │     │                   induce traffic
-│                       │     │                   between the two communicating parties that could be
-│                       │     │                   interpreted by an involved
-│                       │     │                   proxy (configured or transparent) as genuine, real, HTTP
-│                       │     │                   traffic with content
-│                       │     │                   and thereby poison its cache. That cached poisoned content
-│                       │     │                   could then be
-│                       │     │                   served to all users of that proxy. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ redhat: 1 
-│                       │     │                  ╰ ubuntu: 1 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 4.8 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-10148 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-10148.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-10148.json 
-│                       │     │                  ├ [3]: https://hackerone.com/reports/3330839 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
-│                       │     ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
-│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-9086 
-│                       │     ├ PkgID           : curl@8.15.0-r0 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.
-│                       │     │                  │       0_alpha20250612 
-│                       │     │                  ╰ UID : 5371f8b941130cc 
-│                       │     ├ InstalledVersion: 8.15.0-r0 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : curl: libcurl: Curl out of bounds read for cookie path 
-│                       │     ├ Description     : 1. A cookie is set using the `secure` keyword for
-│                       │     │                   `https://target`
-│                       │     │                   2. curl is redirected to or otherwise made to speak with
-│                       │     │                   `http://target` (same
-│                       │     │                      hostname, but using clear text HTTP) using the same cookie
-│                       │     │                    set
-│                       │     │                   3. The same cookie name is set - but with just a slash as
-│                       │     │                   path (`path='/'`).
-│                       │     │                      Since this site is not secure, the cookie *should* just be
-│                       │     │                    ignored.
-│                       │     │                   4. A bug in the path comparison logic makes curl read outside
-│                       │     │                    a heap buffer
-│                       │     │                      boundary
-│                       │     │                   
-│                       │     │                   The bug either causes a crash or it potentially makes the
-│                       │     │                   comparison come to
-│                       │     │                   the wrong conclusion and lets the clear-text site override
-│                       │     │                   the contents of the
-│                       │     │                   secure cookie, contrary to expectations and depending on the
-│                       │     │                   memory contents
-│                       │     │                   immediately following the single-byte allocation that holds
-│                       │     │                   the path.
-│                       │     │                   The presumed and correct behavior would be to plainly ignore
-│                       │     │                   the second set of
-│                       │     │                   the cookie since it was already set as secure on a secure
-│                       │     │                   host so overriding
-│                       │     │                   it on an insecure host should not be okay. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ redhat: 2 
-│                       │     │                  ╰ ubuntu: 1 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:L 
-│                       │     │                           ╰ V3Score : 5.3 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9086 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-9086.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-9086.json 
-│                       │     │                  ├ [3]: https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0
-│                       │     │                  │      040afb6 
-│                       │     │                  ├ [4]: https://hackerone.com/reports/3294999 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
-│                       │     ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
-│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-54388 
-│                       │     ├ PkgID           : docker@28.3.2-r0 
-│                       │     ├ PkgName         : docker 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.2
-│                       │     │                  │       3.0_alpha20250612 
-│                       │     │                  ╰ UID : a3a094e5b97da25e 
-│                       │     ├ InstalledVersion: 28.3.2-r0 
-│                       │     ├ FixedVersion    : 28.3.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ SeveritySource  : nvd 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
-│                       │     │                    ports accessible 
-│                       │     ├ Description     : Moby is an open source container framework developed by
-│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
-│                       │     │                   Container Runtime, and various other downstream
-│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
-│                       │     │                   the firewalld service is reloaded it removes all iptables
-│                       │     │                   rules including those created by Docker. While Docker should
-│                       │     │                   automatically recreate these rules, versions before 28.3.3
-│                       │     │                   fail to recreate the specific rules that block external
-│                       │     │                   access to containers. This means that after a firewalld
-│                       │     │                   reload, containers with ports published to localhost (like
-│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
-│                       │     │                   have network routing to the Docker bridge, even though they
-│                       │     │                   should only be accessible from the host itself. The
-│                       │     │                   vulnerability only affects explicitly published ports -
-│                       │     │                   unpublished ports remain protected. This issue is fixed in
-│                       │     │                   version 28.3.3. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ├ nvd   : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 5.2 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
-│                       │     │                  ├ [1]: https://github.com/moby/moby 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
-│                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
-│                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
-│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-54388 
-│                       │     ├ PkgID           : docker-bash-completion@28.3.2-r0 
-│                       │     ├ PkgName         : docker-bash-completion 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=x
-│                       │     │                  │       86_64&distro=3.23.0_alpha20250612 
-│                       │     │                  ╰ UID : 65d5c5763fc4e499 
-│                       │     ├ InstalledVersion: 28.3.2-r0 
-│                       │     ├ FixedVersion    : 28.3.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ SeveritySource  : nvd 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
-│                       │     │                    ports accessible 
-│                       │     ├ Description     : Moby is an open source container framework developed by
-│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
-│                       │     │                   Container Runtime, and various other downstream
-│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
-│                       │     │                   the firewalld service is reloaded it removes all iptables
-│                       │     │                   rules including those created by Docker. While Docker should
-│                       │     │                   automatically recreate these rules, versions before 28.3.3
-│                       │     │                   fail to recreate the specific rules that block external
-│                       │     │                   access to containers. This means that after a firewalld
-│                       │     │                   reload, containers with ports published to localhost (like
-│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
-│                       │     │                   have network routing to the Docker bridge, even though they
-│                       │     │                   should only be accessible from the host itself. The
-│                       │     │                   vulnerability only affects explicitly published ports -
-│                       │     │                   unpublished ports remain protected. This issue is fixed in
-│                       │     │                   version 28.3.3. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ├ nvd   : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 5.2 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
-│                       │     │                  ├ [1]: https://github.com/moby/moby 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
-│                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
-│                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
-│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-54388 
-│                       │     ├ PkgID           : docker-cli@28.3.2-r0 
-│                       │     ├ PkgName         : docker-cli 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distro
-│                       │     │                  │       =3.23.0_alpha20250612 
-│                       │     │                  ╰ UID : 8656405a0a652f40 
-│                       │     ├ InstalledVersion: 28.3.2-r0 
-│                       │     ├ FixedVersion    : 28.3.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ SeveritySource  : nvd 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
-│                       │     │                    ports accessible 
-│                       │     ├ Description     : Moby is an open source container framework developed by
-│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
-│                       │     │                   Container Runtime, and various other downstream
-│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
-│                       │     │                   the firewalld service is reloaded it removes all iptables
-│                       │     │                   rules including those created by Docker. While Docker should
-│                       │     │                   automatically recreate these rules, versions before 28.3.3
-│                       │     │                   fail to recreate the specific rules that block external
-│                       │     │                   access to containers. This means that after a firewalld
-│                       │     │                   reload, containers with ports published to localhost (like
-│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
-│                       │     │                   have network routing to the Docker bridge, even though they
-│                       │     │                   should only be accessible from the host itself. The
-│                       │     │                   vulnerability only affects explicitly published ports -
-│                       │     │                   unpublished ports remain protected. This issue is fixed in
-│                       │     │                   version 28.3.3. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ├ nvd   : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 5.2 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
-│                       │     │                  ├ [1]: https://github.com/moby/moby 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
-│                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
-│                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
-│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [5] ╭ VulnerabilityID : CVE-2025-54388 
-│                       │     ├ PkgID           : docker-engine@28.3.2-r0 
-│                       │     ├ PkgName         : docker-engine 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&dis
-│                       │     │                  │       tro=3.23.0_alpha20250612 
-│                       │     │                  ╰ UID : 7402f05110c51fa5 
-│                       │     ├ InstalledVersion: 28.3.2-r0 
-│                       │     ├ FixedVersion    : 28.3.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ SeveritySource  : nvd 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes container
-│                       │     │                    ports accessible 
-│                       │     ├ Description     : Moby is an open source container framework developed by
-│                       │     │                   Docker Inc. that is distributed as Docker Engine, Mirantis
-│                       │     │                   Container Runtime, and various other downstream
-│                       │     │                   projects/products. In versions 28.2.0 through 28.3.2, when
-│                       │     │                   the firewalld service is reloaded it removes all iptables
-│                       │     │                   rules including those created by Docker. While Docker should
-│                       │     │                   automatically recreate these rules, versions before 28.3.3
-│                       │     │                   fail to recreate the specific rules that block external
-│                       │     │                   access to containers. This means that after a firewalld
-│                       │     │                   reload, containers with ports published to localhost (like
-│                       │     │                   127.0.0.1:8080) become accessible from remote machines that
-│                       │     │                   have network routing to the Docker bridge, even though they
-│                       │     │                   should only be accessible from the host itself. The
-│                       │     │                   vulnerability only affects explicitly published ports -
-│                       │     │                   unpublished ports remain protected. This issue is fixed in
-│                       │     │                   version 28.3.3. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-909 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ├ nvd   : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 4.6 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 5.2 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
-│                       │     │                  ├ [1]: https://github.com/moby/moby 
-│                       │     │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a893
-│                       │     │                  │      820b97c4eadc7c87fabb0 
-│                       │     │                  ├ [3]: https://github.com/moby/moby/pull/50506 
-│                       │     │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-x
-│                       │     │                  │      4rx-4gw3-53p4 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
-│                       │     ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
-│                       │     ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [6] ╭ VulnerabilityID : CVE-2025-10148 
-│                       │     ├ PkgID           : libcurl@8.15.0-r0 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.
-│                       │     │                  │       23.0_alpha20250612 
-│                       │     │                  ╰ UID : 18280e719f28fc16 
-│                       │     ├ InstalledVersion: 8.15.0-r0 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : curl: predictable WebSocket mask 
-│                       │     ├ Description     : curl's websocket code did not update the 32 bit mask pattern
-│                       │     │                   for each new
-│                       │     │                    outgoing frame as the specification says. Instead it used a
-│                       │     │                   fixed mask that
-│                       │     │                   persisted and was used throughout the entire connection.
-│                       │     │                   
-│                       │     │                   A predictable mask pattern allows for a malicious server to
-│                       │     │                   induce traffic
-│                       │     │                   between the two communicating parties that could be
-│                       │     │                   interpreted by an involved
-│                       │     │                   proxy (configured or transparent) as genuine, real, HTTP
-│                       │     │                   traffic with content
-│                       │     │                   and thereby poison its cache. That cached poisoned content
-│                       │     │                   could then be
-│                       │     │                   served to all users of that proxy. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ redhat: 1 
-│                       │     │                  ╰ ubuntu: 1 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 4.8 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-10148 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-10148.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-10148.json 
-│                       │     │                  ├ [3]: https://hackerone.com/reports/3330839 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
-│                       │     ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
-│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [7] ╭ VulnerabilityID : CVE-2025-9086 
-│                       │     ├ PkgID           : libcurl@8.15.0-r0 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.
-│                       │     │                  │       23.0_alpha20250612 
-│                       │     │                  ╰ UID : 18280e719f28fc16 
-│                       │     ├ InstalledVersion: 8.15.0-r0 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : curl: libcurl: Curl out of bounds read for cookie path 
-│                       │     ├ Description     : 1. A cookie is set using the `secure` keyword for
-│                       │     │                   `https://target`
-│                       │     │                   2. curl is redirected to or otherwise made to speak with
-│                       │     │                   `http://target` (same
-│                       │     │                      hostname, but using clear text HTTP) using the same cookie
-│                       │     │                    set
-│                       │     │                   3. The same cookie name is set - but with just a slash as
-│                       │     │                   path (`path='/'`).
-│                       │     │                      Since this site is not secure, the cookie *should* just be
-│                       │     │                    ignored.
-│                       │     │                   4. A bug in the path comparison logic makes curl read outside
-│                       │     │                    a heap buffer
-│                       │     │                      boundary
-│                       │     │                   
-│                       │     │                   The bug either causes a crash or it potentially makes the
-│                       │     │                   comparison come to
-│                       │     │                   the wrong conclusion and lets the clear-text site override
-│                       │     │                   the contents of the
-│                       │     │                   secure cookie, contrary to expectations and depending on the
-│                       │     │                   memory contents
-│                       │     │                   immediately following the single-byte allocation that holds
-│                       │     │                   the path.
-│                       │     │                   The presumed and correct behavior would be to plainly ignore
-│                       │     │                   the second set of
-│                       │     │                   the cookie since it was already set as secure on a secure
-│                       │     │                   host so overriding
-│                       │     │                   it on an insecure host should not be okay. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ VendorSeverity   ╭ redhat: 2 
-│                       │     │                  ╰ ubuntu: 1 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:L 
-│                       │     │                           ╰ V3Score : 5.3 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9086 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-9086.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-9086.json 
-│                       │     │                  ├ [3]: https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0
-│                       │     │                  │      040afb6 
-│                       │     │                  ├ [4]: https://hackerone.com/reports/3294999 
-│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
-│                       │     ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
-│                       │     ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [8] ╭ VulnerabilityID : CVE-2025-59375 
-│                       │     ├ PkgID           : libexpat@2.7.1-r0 
-│                       │     ├ PkgName         : libexpat 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=3.
-│                       │     │                  │       23.0_alpha20250612 
-│                       │     │                  ╰ UID : c7aeaeb8f871e169 
-│                       │     ├ InstalledVersion: 2.7.1-r0 
-│                       │     ├ FixedVersion    : 2.7.2-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                       │     │                  │         01dd6062bd50a4b6afe 
-│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                       │     │                            7d38461b41e40aab9e7 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-59375 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : expat: libexpat in Expat allows attackers to trigger large
-│                       │     │                   dynamic memory allocations via a small document that is
-│                       │     │                   submitted for parsing 
-│                       │     ├ Description     : libexpat in Expat before 2.7.2 allows attackers to trigger
-│                       │     │                   large dynamic memory allocations via a small document that is
-│                       │     │                    submitted for parsing. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ amazon: 3 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-59375 
-│                       │     │                  ├ [1]: https://github.com/libexpat/libexpat/blob/676a4c531ec76
-│                       │     │                  │      8732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74 
-│                       │     │                  ├ [2]: https://github.com/libexpat/libexpat/blob/R_2_7_2/expat
-│                       │     │                  │      /Changes 
-│                       │     │                  ├ [3]: https://github.com/libexpat/libexpat/issues/1018 
-│                       │     │                  ├ [4]: https://github.com/libexpat/libexpat/pull/1034 
-│                       │     │                  ├ [5]: https://issues.oss-fuzz.com/issues/439133977 
-│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-59375 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
-│                       │     ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
-│                       │     ╰ LastModifiedDate: 2025-09-17T14:15:40.913Z 
-│                       ╰ [9] ╭ VulnerabilityID : CVE-2025-58050 
-│                             ├ PkgID           : pcre2@10.43-r1 
-│                             ├ PkgName         : pcre2 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.23.
-│                             │                  │       0_alpha20250612 
-│                             │                  ╰ UID : 135571a2ca7a2cf2 
-│                             ├ InstalledVersion: 10.43-r1 
-│                             ├ FixedVersion    : 10.46-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
-│                             │                  │         01dd6062bd50a4b6afe 
-│                             │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
-│                             │                            7d38461b41e40aab9e7 
-│                             ├ SeveritySource  : nvd 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58050 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Title           : pcre2: PCRE2: heap-buffer-overflow read in match_ref due to
-│                             │                   missing boundary restoration in SCS 
-│                             ├ Description     : The PCRE2 library is a set of C functions that implement
-│                             │                   regular expression pattern matching. In version 10.45, a
-│                             │                   heap-buffer-overflow read vulnerability exists in the PCRE2
-│                             │                   regular expression matching engine, specifically within the
-│                             │                   handling of the (*scs:...) (Scan SubString) verb when
-│                             │                   combined with (*ACCEPT) in src/pcre2_match.c. This
-│                             │                   vulnerability may potentially lead to information disclosure
-│                             │                   if the out-of-bounds data read during the memcmp affects the
-│                             │                   final match result in a way observable by the attacker. This
-│                             │                   issue has been resolved in version 10.46. 
-│                             ├ Severity        : CRITICAL 
-│                             ├ CweIDs           ╭ [0]: CWE-122 
-│                             │                  ├ [1]: CWE-125 
-│                             │                  ╰ [2]: CWE-787 
-│                             ├ VendorSeverity   ╭ nvd   : 4 
-│                             │                  ├ redhat: 2 
-│                             │                  ╰ ubuntu: 2 
-│                             ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/
-│                             │                  │        │           A:H 
-│                             │                  │        ╰ V3Score : 9.1 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:L 
-│                             │                           ╰ V3Score : 6.5 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58050 
-│                             │                  ├ [1]: https://github.com/PCRE2Project/pcre2/commit/a141712e59
-│                             │                  │      67d448c7ce13090ab530c8e3d82254 
-│                             │                  ├ [2]: https://github.com/PCRE2Project/pcre2/releases/tag/pcre
-│                             │                  │      2-10.46 
-│                             │                  ├ [3]: https://github.com/PCRE2Project/pcre2/security/advisori
-│                             │                  │      es/GHSA-c2gv-xgf5-5cc2 
-│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58050 
-│                             │                  ├ [5]: https://ubuntu.com/security/notices/USN-7777-1 
-│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
-│                             ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
-│                             ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
+│     ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2025-10148 
+│                       │      ├ PkgID           : curl@8.15.0-r0 
+│                       │      ├ PkgName         : curl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23
+│                       │      │                  │       .0_alpha20250612 
+│                       │      │                  ╰ UID : 5371f8b941130cc 
+│                       │      ├ InstalledVersion: 8.15.0-r0 
+│                       │      ├ FixedVersion    : 8.16.0-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : curl: predictable WebSocket mask 
+│                       │      ├ Description     : curl's websocket code did not update the 32 bit mask pattern
+│                       │      │                    for each new
+│                       │      │                    outgoing frame as the specification says. Instead it used a
+│                       │      │                    fixed mask that
+│                       │      │                   persisted and was used throughout the entire connection.
+│                       │      │                   
+│                       │      │                   A predictable mask pattern allows for a malicious server to
+│                       │      │                   induce traffic
+│                       │      │                   between the two communicating parties that could be
+│                       │      │                   interpreted by an involved
+│                       │      │                   proxy (configured or transparent) as genuine, real, HTTP
+│                       │      │                   traffic with content
+│                       │      │                   and thereby poison its cache. That cached poisoned content
+│                       │      │                   could then be
+│                       │      │                   served to all users of that proxy. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 4.8 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-10148 
+│                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-10148.html 
+│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-10148.json 
+│                       │      │                  ├ [3]: https://hackerone.com/reports/3330839 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
+│                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
+│                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
+│                       ├ [1]  ╭ VulnerabilityID : CVE-2025-9086 
+│                       │      ├ PkgID           : curl@8.15.0-r0 
+│                       │      ├ PkgName         : curl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23
+│                       │      │                  │       .0_alpha20250612 
+│                       │      │                  ╰ UID : 5371f8b941130cc 
+│                       │      ├ InstalledVersion: 8.15.0-r0 
+│                       │      ├ FixedVersion    : 8.16.0-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : curl: libcurl: Curl out of bounds read for cookie path 
+│                       │      ├ Description     : 1. A cookie is set using the `secure` keyword for
+│                       │      │                   `https://target`
+│                       │      │                   2. curl is redirected to or otherwise made to speak with
+│                       │      │                   `http://target` (same
+│                       │      │                      hostname, but using clear text HTTP) using the same
+│                       │      │                   cookie set
+│                       │      │                   3. The same cookie name is set - but with just a slash as
+│                       │      │                   path (`path='/'`).
+│                       │      │                      Since this site is not secure, the cookie *should* just
+│                       │      │                   be ignored.
+│                       │      │                   4. A bug in the path comparison logic makes curl read
+│                       │      │                   outside a heap buffer
+│                       │      │                      boundary
+│                       │      │                   
+│                       │      │                   The bug either causes a crash or it potentially makes the
+│                       │      │                   comparison come to
+│                       │      │                   the wrong conclusion and lets the clear-text site override
+│                       │      │                   the contents of the
+│                       │      │                   secure cookie, contrary to expectations and depending on the
+│                       │      │                    memory contents
+│                       │      │                   immediately following the single-byte allocation that holds
+│                       │      │                   the path.
+│                       │      │                   The presumed and correct behavior would be to plainly ignore
+│                       │      │                    the second set of
+│                       │      │                   the cookie since it was already set as secure on a secure
+│                       │      │                   host so overriding
+│                       │      │                   it on an insecure host should not be okay. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9086 
+│                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-9086.html 
+│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-9086.json 
+│                       │      │                  ├ [3]: https://github.com/curl/curl/commit/c6ae07c6a541e0e96d
+│                       │      │                  │      0040afb6 
+│                       │      │                  ├ [4]: https://hackerone.com/reports/3294999 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
+│                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
+│                       ├ [2]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       │      ├ PkgID           : docker@28.3.2-r0 
+│                       │      ├ PkgName         : docker 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : a3a094e5b97da25e 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 28.3.3-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
+│                       │      │                   container ports accessible 
+│                       │      ├ Description     : Moby is an open source container framework developed by
+│                       │      │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │      │                   Container Runtime, and various other downstream
+│                       │      │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │      │                   the firewalld service is reloaded it removes all iptables
+│                       │      │                   rules including those created by Docker. While Docker should
+│                       │      │                    automatically recreate these rules, versions before 28.3.3
+│                       │      │                   fail to recreate the specific rules that block external
+│                       │      │                   access to containers. This means that after a firewalld
+│                       │      │                   reload, containers with ports published to localhost (like
+│                       │      │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │      │                   have network routing to the Docker bridge, even though they
+│                       │      │                   should only be accessible from the host itself. The
+│                       │      │                   vulnerability only affects explicitly published ports -
+│                       │      │                   unpublished ports remain protected. This issue is fixed in
+│                       │      │                   version 28.3.3. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-909 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ├ nvd   : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.2 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │      │                  ├ [1]: https://github.com/moby/moby 
+│                       │      │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a89
+│                       │      │                  │      3820b97c4eadc7c87fabb0 
+│                       │      │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │      │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-
+│                       │      │                  │      x4rx-4gw3-53p4 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
+│                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
+│                       ├ [3]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       │      ├ PkgID           : docker-bash-completion@28.3.2-r0 
+│                       │      ├ PkgName         : docker-bash-completion 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=
+│                       │      │                  │       x86_64&distro=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 65d5c5763fc4e499 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 28.3.3-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
+│                       │      │                   container ports accessible 
+│                       │      ├ Description     : Moby is an open source container framework developed by
+│                       │      │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │      │                   Container Runtime, and various other downstream
+│                       │      │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │      │                   the firewalld service is reloaded it removes all iptables
+│                       │      │                   rules including those created by Docker. While Docker should
+│                       │      │                    automatically recreate these rules, versions before 28.3.3
+│                       │      │                   fail to recreate the specific rules that block external
+│                       │      │                   access to containers. This means that after a firewalld
+│                       │      │                   reload, containers with ports published to localhost (like
+│                       │      │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │      │                   have network routing to the Docker bridge, even though they
+│                       │      │                   should only be accessible from the host itself. The
+│                       │      │                   vulnerability only affects explicitly published ports -
+│                       │      │                   unpublished ports remain protected. This issue is fixed in
+│                       │      │                   version 28.3.3. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-909 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ├ nvd   : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.2 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │      │                  ├ [1]: https://github.com/moby/moby 
+│                       │      │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a89
+│                       │      │                  │      3820b97c4eadc7c87fabb0 
+│                       │      │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │      │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-
+│                       │      │                  │      x4rx-4gw3-53p4 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
+│                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
+│                       ├ [4]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       │      ├ PkgID           : docker-cli@28.3.2-r0 
+│                       │      ├ PkgName         : docker-cli 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distr
+│                       │      │                  │       o=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 8656405a0a652f40 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 28.3.3-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
+│                       │      │                   container ports accessible 
+│                       │      ├ Description     : Moby is an open source container framework developed by
+│                       │      │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │      │                   Container Runtime, and various other downstream
+│                       │      │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │      │                   the firewalld service is reloaded it removes all iptables
+│                       │      │                   rules including those created by Docker. While Docker should
+│                       │      │                    automatically recreate these rules, versions before 28.3.3
+│                       │      │                   fail to recreate the specific rules that block external
+│                       │      │                   access to containers. This means that after a firewalld
+│                       │      │                   reload, containers with ports published to localhost (like
+│                       │      │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │      │                   have network routing to the Docker bridge, even though they
+│                       │      │                   should only be accessible from the host itself. The
+│                       │      │                   vulnerability only affects explicitly published ports -
+│                       │      │                   unpublished ports remain protected. This issue is fixed in
+│                       │      │                   version 28.3.3. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-909 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ├ nvd   : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.2 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │      │                  ├ [1]: https://github.com/moby/moby 
+│                       │      │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a89
+│                       │      │                  │      3820b97c4eadc7c87fabb0 
+│                       │      │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │      │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-
+│                       │      │                  │      x4rx-4gw3-53p4 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
+│                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
+│                       ├ [5]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       │      ├ PkgID           : docker-engine@28.3.2-r0 
+│                       │      ├ PkgName         : docker-engine 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&di
+│                       │      │                  │       stro=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 7402f05110c51fa5 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 28.3.3-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-54388 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
+│                       │      │                   container ports accessible 
+│                       │      ├ Description     : Moby is an open source container framework developed by
+│                       │      │                   Docker Inc. that is distributed as Docker Engine, Mirantis
+│                       │      │                   Container Runtime, and various other downstream
+│                       │      │                   projects/products. In versions 28.2.0 through 28.3.2, when
+│                       │      │                   the firewalld service is reloaded it removes all iptables
+│                       │      │                   rules including those created by Docker. While Docker should
+│                       │      │                    automatically recreate these rules, versions before 28.3.3
+│                       │      │                   fail to recreate the specific rules that block external
+│                       │      │                   access to containers. This means that after a firewalld
+│                       │      │                   reload, containers with ports published to localhost (like
+│                       │      │                   127.0.0.1:8080) become accessible from remote machines that
+│                       │      │                   have network routing to the Docker bridge, even though they
+│                       │      │                   should only be accessible from the host itself. The
+│                       │      │                   vulnerability only affects explicitly published ports -
+│                       │      │                   unpublished ports remain protected. This issue is fixed in
+│                       │      │                   version 28.3.3. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-909 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ├ nvd   : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.6 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.2 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-54388 
+│                       │      │                  ├ [1]: https://github.com/moby/moby 
+│                       │      │                  ├ [2]: https://github.com/moby/moby/commit/bea959c7b793b32a89
+│                       │      │                  │      3820b97c4eadc7c87fabb0 
+│                       │      │                  ├ [3]: https://github.com/moby/moby/pull/50506 
+│                       │      │                  ├ [4]: https://github.com/moby/moby/security/advisories/GHSA-
+│                       │      │                  │      x4rx-4gw3-53p4 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-54388 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
+│                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
+│                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
+│                       ├ [6]  ╭ VulnerabilityID : CVE-2025-9230 
+│                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
+│                       │      ├ PkgName         : libcrypto3 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
+│                       │      │                  │       =3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 70f9dc4557a33c9d 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9230 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap 
+│                       │      ├ Description     : Issue summary: An application trying to decrypt CMS messages
+│                       │      │                    encrypted using
+│                       │      │                   password based encryption can trigger an out-of-bounds read
+│                       │      │                   and write.
+│                       │      │                   
+│                       │      │                   Impact summary: This out-of-bounds read may trigger a crash
+│                       │      │                   which leads to
+│                       │      │                   Denial of Service for an application. The out-of-bounds
+│                       │      │                   write can cause
+│                       │      │                   a memory corruption which can have various consequences
+│                       │      │                   including
+│                       │      │                   a Denial of Service or Execution of attacker-supplied code.
+│                       │      │                   Although the consequences of a successful exploit of this
+│                       │      │                   vulnerability
+│                       │      │                   could be severe, the probability that the attacker would be
+│                       │      │                   able to
+│                       │      │                   perform it is low. Besides, password based (PWRI) encryption
+│                       │      │                    support in CMS
+│                       │      │                   messages is very rarely used. For that reason the issue was
+│                       │      │                   assessed as
+│                       │      │                   Moderate severity according to our Security Policy.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as the CMS implementation is outside the OpenSSL FIPS
+│                       │      │                    module
+│                       │      │                   boundary. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-125 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.6 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-9230 
+│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/5965ea5dd69
+│                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
+│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/9e91358f365
+│                       │      │                  │       dee6c446dcdcdb01c04d2743fd280 
+│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a79c4ce559c
+│                       │      │                  │       6a3a8fd4109e9f33c1185d5bf2def 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b5282d67755
+│                       │      │                  │       1afda7d20e9c00e09561b547b2dfd 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bae259a211a
+│                       │      │                  │       da6315dc50900686daaaaaa55f482 
+│                       │      │                  ├ [6] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
+│                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
+│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.023Z 
+│                       ├ [7]  ╭ VulnerabilityID : CVE-2025-9231 
+│                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
+│                       │      ├ PkgName         : libcrypto3 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
+│                       │      │                  │       =3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 70f9dc4557a33c9d 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9231 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Timing side-channel in SM2 algorithm on 64 bit ARM 
+│                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
+│                       │      │                    allow remote
+│                       │      │                   recovery of the private key exists in the SM2 algorithm
+│                       │      │                   implementation on 64 bit
+│                       │      │                   ARM platforms.
+│                       │      │                   
+│                       │      │                   Impact summary: A timing side-channel in SM2 signature
+│                       │      │                   computations on 64 bit
+│                       │      │                   ARM platforms could allow recovering the private key by an
+│                       │      │                   attacker..
+│                       │      │                   While remote key recovery over a network was not attempted
+│                       │      │                   by the reporter,
+│                       │      │                   timing measurements revealed a timing signal which may allow
+│                       │      │                    such an attack.
+│                       │      │                   OpenSSL does not directly support certificates with SM2 keys
+│                       │      │                    in TLS, and so
+│                       │      │                   this CVE is not relevant in most TLS contexts.  However,
+│                       │      │                   given that it is
+│                       │      │                   possible to add support for such certificates via a custom
+│                       │      │                   provider, coupled
+│                       │      │                   with the fact that in such a custom provider context the
+│                       │      │                   private key may be
+│                       │      │                   recoverable via remote timing measurements, we consider this
+│                       │      │                    to be a Moderate
+│                       │      │                   severity issue.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as SM2 is not an approved algorithm. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-385 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9231 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/567f64386e43
+│                       │      │                  │      683888212226824b6a179885a0fe 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/cba616c26ac8
+│                       │      │                  │      e7b37de5e77762e505ba5ca51698 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/eed5adc9f969
+│                       │      │                  │      d77c94f213767acbb41ff923b6f4 
+│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/fc47a2ec0789
+│                       │      │                  │      12b3e914fab5734535e76c4820c2 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
+│                       │      │                  ├ [6]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.22Z 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-9232 
+│                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
+│                       │      ├ PkgName         : libcrypto3 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
+│                       │      │                  │       =3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 70f9dc4557a33c9d 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9232 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Out-of-bounds read in HTTP client no_proxy handling 
+│                       │      ├ Description     : Issue summary: An application using the OpenSSL HTTP client
+│                       │      │                   API functions may
+│                       │      │                   trigger an out-of-bounds read if the 'no_proxy' environment
+│                       │      │                   variable is set and
+│                       │      │                   the host portion of the authority component of the HTTP URL
+│                       │      │                   is an IPv6 address.
+│                       │      │                   
+│                       │      │                   Impact summary: An out-of-bounds read can trigger a crash
+│                       │      │                   which leads to
+│                       │      │                   Denial of Service for an application.
+│                       │      │                   The OpenSSL HTTP client API functions can be used directly
+│                       │      │                   by applications
+│                       │      │                   but they are also used by the OCSP client functions and CMP
+│                       │      │                   (Certificate
+│                       │      │                   Management Protocol) client implementation in OpenSSL.
+│                       │      │                   However the URLs used
+│                       │      │                   by these implementations are unlikely to be controlled by an
+│                       │      │                    attacker.
+│                       │      │                   In this vulnerable code the out of bounds read can only
+│                       │      │                   trigger a crash.
+│                       │      │                   Furthermore the vulnerability requires an
+│                       │      │                   attacker-controlled URL to be
+│                       │      │                   passed from an application to the OpenSSL function and the
+│                       │      │                   user has to have
+│                       │      │                   a 'no_proxy' environment variable set. For the
+│                       │      │                   aforementioned reasons the
+│                       │      │                   issue was assessed as Low severity.
+│                       │      │                   The vulnerable code was introduced in the following patch
+│                       │      │                   releases:
+│                       │      │                   3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as the HTTP client implementation is outside the
+│                       │      │                   OpenSSL FIPS module
+│                       │      │                   boundary. 
+│                       │      ├ Severity        : LOW 
+│                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 3.1 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9232 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/2b4ec20e4795
+│                       │      │                  │      9170422922eaff25346d362dcb35 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/654dc11d2346
+│                       │      │                  │      8a74fc8ea4672b702dd3feb7be4b 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7cf21a30513c
+│                       │      │                  │      9e43c4bc3836c237cf086e194af3 
+│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/89e790ac4311
+│                       │      │                  │      25a4849992858490bed6b225eadf 
+│                       │      │                  ├ [5]: https://github.com/openssl/openssl/commit/bbf38c034cda
+│                       │      │                  │      bd0a13330abcc4855c866f53d2e0 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
+│                       │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.397Z 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-10148 
+│                       │      ├ PkgID           : libcurl@8.15.0-r0 
+│                       │      ├ PkgName         : libcurl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
+│                       │      │                  │       .23.0_alpha20250612 
+│                       │      │                  ╰ UID : 18280e719f28fc16 
+│                       │      ├ InstalledVersion: 8.15.0-r0 
+│                       │      ├ FixedVersion    : 8.16.0-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : curl: predictable WebSocket mask 
+│                       │      ├ Description     : curl's websocket code did not update the 32 bit mask pattern
+│                       │      │                    for each new
+│                       │      │                    outgoing frame as the specification says. Instead it used a
+│                       │      │                    fixed mask that
+│                       │      │                   persisted and was used throughout the entire connection.
+│                       │      │                   
+│                       │      │                   A predictable mask pattern allows for a malicious server to
+│                       │      │                   induce traffic
+│                       │      │                   between the two communicating parties that could be
+│                       │      │                   interpreted by an involved
+│                       │      │                   proxy (configured or transparent) as genuine, real, HTTP
+│                       │      │                   traffic with content
+│                       │      │                   and thereby poison its cache. That cached poisoned content
+│                       │      │                   could then be
+│                       │      │                   served to all users of that proxy. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 4.8 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-10148 
+│                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-10148.html 
+│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-10148.json 
+│                       │      │                  ├ [3]: https://hackerone.com/reports/3330839 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
+│                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
+│                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2025-9086 
+│                       │      ├ PkgID           : libcurl@8.15.0-r0 
+│                       │      ├ PkgName         : libcurl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
+│                       │      │                  │       .23.0_alpha20250612 
+│                       │      │                  ╰ UID : 18280e719f28fc16 
+│                       │      ├ InstalledVersion: 8.15.0-r0 
+│                       │      ├ FixedVersion    : 8.16.0-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : curl: libcurl: Curl out of bounds read for cookie path 
+│                       │      ├ Description     : 1. A cookie is set using the `secure` keyword for
+│                       │      │                   `https://target`
+│                       │      │                   2. curl is redirected to or otherwise made to speak with
+│                       │      │                   `http://target` (same
+│                       │      │                      hostname, but using clear text HTTP) using the same
+│                       │      │                   cookie set
+│                       │      │                   3. The same cookie name is set - but with just a slash as
+│                       │      │                   path (`path='/'`).
+│                       │      │                      Since this site is not secure, the cookie *should* just
+│                       │      │                   be ignored.
+│                       │      │                   4. A bug in the path comparison logic makes curl read
+│                       │      │                   outside a heap buffer
+│                       │      │                      boundary
+│                       │      │                   
+│                       │      │                   The bug either causes a crash or it potentially makes the
+│                       │      │                   comparison come to
+│                       │      │                   the wrong conclusion and lets the clear-text site override
+│                       │      │                   the contents of the
+│                       │      │                   secure cookie, contrary to expectations and depending on the
+│                       │      │                    memory contents
+│                       │      │                   immediately following the single-byte allocation that holds
+│                       │      │                   the path.
+│                       │      │                   The presumed and correct behavior would be to plainly ignore
+│                       │      │                    the second set of
+│                       │      │                   the cookie since it was already set as secure on a secure
+│                       │      │                   host so overriding
+│                       │      │                   it on an insecure host should not be okay. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9086 
+│                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-9086.html 
+│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-9086.json 
+│                       │      │                  ├ [3]: https://github.com/curl/curl/commit/c6ae07c6a541e0e96d
+│                       │      │                  │      0040afb6 
+│                       │      │                  ├ [4]: https://hackerone.com/reports/3294999 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
+│                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2025-59375 
+│                       │      ├ PkgID           : libexpat@2.7.1-r0 
+│                       │      ├ PkgName         : libexpat 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=3
+│                       │      │                  │       .23.0_alpha20250612 
+│                       │      │                  ╰ UID : c7aeaeb8f871e169 
+│                       │      ├ InstalledVersion: 2.7.1-r0 
+│                       │      ├ FixedVersion    : 2.7.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-59375 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : expat: libexpat in Expat allows attackers to trigger large
+│                       │      │                   dynamic memory allocations via a small document that is
+│                       │      │                   submitted for parsing 
+│                       │      ├ Description     : libexpat in Expat before 2.7.2 allows attackers to trigger
+│                       │      │                   large dynamic memory allocations via a small document that
+│                       │      │                   is submitted for parsing. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-59375 
+│                       │      │                  ├ [1]: https://github.com/libexpat/libexpat/blob/676a4c531ec7
+│                       │      │                  │      68732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74 
+│                       │      │                  ├ [2]: https://github.com/libexpat/libexpat/blob/R_2_7_2/expa
+│                       │      │                  │      t/Changes 
+│                       │      │                  ├ [3]: https://github.com/libexpat/libexpat/issues/1018 
+│                       │      │                  ├ [4]: https://github.com/libexpat/libexpat/pull/1034 
+│                       │      │                  ├ [5]: https://issues.oss-fuzz.com/issues/439133977 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-59375 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
+│                       │      ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
+│                       │      ╰ LastModifiedDate: 2025-09-17T14:15:40.913Z 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2025-9230 
+│                       │      ├ PkgID           : libssl3@3.5.1-r0 
+│                       │      ├ PkgName         : libssl3 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : 90a73aa213efb704 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9230 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap 
+│                       │      ├ Description     : Issue summary: An application trying to decrypt CMS messages
+│                       │      │                    encrypted using
+│                       │      │                   password based encryption can trigger an out-of-bounds read
+│                       │      │                   and write.
+│                       │      │                   
+│                       │      │                   Impact summary: This out-of-bounds read may trigger a crash
+│                       │      │                   which leads to
+│                       │      │                   Denial of Service for an application. The out-of-bounds
+│                       │      │                   write can cause
+│                       │      │                   a memory corruption which can have various consequences
+│                       │      │                   including
+│                       │      │                   a Denial of Service or Execution of attacker-supplied code.
+│                       │      │                   Although the consequences of a successful exploit of this
+│                       │      │                   vulnerability
+│                       │      │                   could be severe, the probability that the attacker would be
+│                       │      │                   able to
+│                       │      │                   perform it is low. Besides, password based (PWRI) encryption
+│                       │      │                    support in CMS
+│                       │      │                   messages is very rarely used. For that reason the issue was
+│                       │      │                   assessed as
+│                       │      │                   Moderate severity according to our Security Policy.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as the CMS implementation is outside the OpenSSL FIPS
+│                       │      │                    module
+│                       │      │                   boundary. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-125 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.6 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-9230 
+│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/5965ea5dd69
+│                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
+│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/9e91358f365
+│                       │      │                  │       dee6c446dcdcdb01c04d2743fd280 
+│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a79c4ce559c
+│                       │      │                  │       6a3a8fd4109e9f33c1185d5bf2def 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b5282d67755
+│                       │      │                  │       1afda7d20e9c00e09561b547b2dfd 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bae259a211a
+│                       │      │                  │       da6315dc50900686daaaaaa55f482 
+│                       │      │                  ├ [6] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
+│                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
+│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.023Z 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2025-9231 
+│                       │      ├ PkgID           : libssl3@3.5.1-r0 
+│                       │      ├ PkgName         : libssl3 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : 90a73aa213efb704 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9231 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Timing side-channel in SM2 algorithm on 64 bit ARM 
+│                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
+│                       │      │                    allow remote
+│                       │      │                   recovery of the private key exists in the SM2 algorithm
+│                       │      │                   implementation on 64 bit
+│                       │      │                   ARM platforms.
+│                       │      │                   
+│                       │      │                   Impact summary: A timing side-channel in SM2 signature
+│                       │      │                   computations on 64 bit
+│                       │      │                   ARM platforms could allow recovering the private key by an
+│                       │      │                   attacker..
+│                       │      │                   While remote key recovery over a network was not attempted
+│                       │      │                   by the reporter,
+│                       │      │                   timing measurements revealed a timing signal which may allow
+│                       │      │                    such an attack.
+│                       │      │                   OpenSSL does not directly support certificates with SM2 keys
+│                       │      │                    in TLS, and so
+│                       │      │                   this CVE is not relevant in most TLS contexts.  However,
+│                       │      │                   given that it is
+│                       │      │                   possible to add support for such certificates via a custom
+│                       │      │                   provider, coupled
+│                       │      │                   with the fact that in such a custom provider context the
+│                       │      │                   private key may be
+│                       │      │                   recoverable via remote timing measurements, we consider this
+│                       │      │                    to be a Moderate
+│                       │      │                   severity issue.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as SM2 is not an approved algorithm. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-385 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9231 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/567f64386e43
+│                       │      │                  │      683888212226824b6a179885a0fe 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/cba616c26ac8
+│                       │      │                  │      e7b37de5e77762e505ba5ca51698 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/eed5adc9f969
+│                       │      │                  │      d77c94f213767acbb41ff923b6f4 
+│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/fc47a2ec0789
+│                       │      │                  │      12b3e914fab5734535e76c4820c2 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
+│                       │      │                  ├ [6]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.22Z 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-9232 
+│                       │      ├ PkgID           : libssl3@3.5.1-r0 
+│                       │      ├ PkgName         : libssl3 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : 90a73aa213efb704 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9232 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Out-of-bounds read in HTTP client no_proxy handling 
+│                       │      ├ Description     : Issue summary: An application using the OpenSSL HTTP client
+│                       │      │                   API functions may
+│                       │      │                   trigger an out-of-bounds read if the 'no_proxy' environment
+│                       │      │                   variable is set and
+│                       │      │                   the host portion of the authority component of the HTTP URL
+│                       │      │                   is an IPv6 address.
+│                       │      │                   
+│                       │      │                   Impact summary: An out-of-bounds read can trigger a crash
+│                       │      │                   which leads to
+│                       │      │                   Denial of Service for an application.
+│                       │      │                   The OpenSSL HTTP client API functions can be used directly
+│                       │      │                   by applications
+│                       │      │                   but they are also used by the OCSP client functions and CMP
+│                       │      │                   (Certificate
+│                       │      │                   Management Protocol) client implementation in OpenSSL.
+│                       │      │                   However the URLs used
+│                       │      │                   by these implementations are unlikely to be controlled by an
+│                       │      │                    attacker.
+│                       │      │                   In this vulnerable code the out of bounds read can only
+│                       │      │                   trigger a crash.
+│                       │      │                   Furthermore the vulnerability requires an
+│                       │      │                   attacker-controlled URL to be
+│                       │      │                   passed from an application to the OpenSSL function and the
+│                       │      │                   user has to have
+│                       │      │                   a 'no_proxy' environment variable set. For the
+│                       │      │                   aforementioned reasons the
+│                       │      │                   issue was assessed as Low severity.
+│                       │      │                   The vulnerable code was introduced in the following patch
+│                       │      │                   releases:
+│                       │      │                   3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as the HTTP client implementation is outside the
+│                       │      │                   OpenSSL FIPS module
+│                       │      │                   boundary. 
+│                       │      ├ Severity        : LOW 
+│                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 3.1 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9232 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/2b4ec20e4795
+│                       │      │                  │      9170422922eaff25346d362dcb35 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/654dc11d2346
+│                       │      │                  │      8a74fc8ea4672b702dd3feb7be4b 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7cf21a30513c
+│                       │      │                  │      9e43c4bc3836c237cf086e194af3 
+│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/89e790ac4311
+│                       │      │                  │      25a4849992858490bed6b225eadf 
+│                       │      │                  ├ [5]: https://github.com/openssl/openssl/commit/bbf38c034cda
+│                       │      │                  │      bd0a13330abcc4855c866f53d2e0 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
+│                       │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.397Z 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-9230 
+│                       │      ├ PkgID           : openssl@3.5.1-r0 
+│                       │      ├ PkgName         : openssl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : b626674900b45116 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9230 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap 
+│                       │      ├ Description     : Issue summary: An application trying to decrypt CMS messages
+│                       │      │                    encrypted using
+│                       │      │                   password based encryption can trigger an out-of-bounds read
+│                       │      │                   and write.
+│                       │      │                   
+│                       │      │                   Impact summary: This out-of-bounds read may trigger a crash
+│                       │      │                   which leads to
+│                       │      │                   Denial of Service for an application. The out-of-bounds
+│                       │      │                   write can cause
+│                       │      │                   a memory corruption which can have various consequences
+│                       │      │                   including
+│                       │      │                   a Denial of Service or Execution of attacker-supplied code.
+│                       │      │                   Although the consequences of a successful exploit of this
+│                       │      │                   vulnerability
+│                       │      │                   could be severe, the probability that the attacker would be
+│                       │      │                   able to
+│                       │      │                   perform it is low. Besides, password based (PWRI) encryption
+│                       │      │                    support in CMS
+│                       │      │                   messages is very rarely used. For that reason the issue was
+│                       │      │                   assessed as
+│                       │      │                   Moderate severity according to our Security Policy.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as the CMS implementation is outside the OpenSSL FIPS
+│                       │      │                    module
+│                       │      │                   boundary. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-125 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.6 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-9230 
+│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/5965ea5dd69
+│                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
+│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/9e91358f365
+│                       │      │                  │       dee6c446dcdcdb01c04d2743fd280 
+│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a79c4ce559c
+│                       │      │                  │       6a3a8fd4109e9f33c1185d5bf2def 
+│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b5282d67755
+│                       │      │                  │       1afda7d20e9c00e09561b547b2dfd 
+│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bae259a211a
+│                       │      │                  │       da6315dc50900686daaaaaa55f482 
+│                       │      │                  ├ [6] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
+│                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+│                       │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
+│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.023Z 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-9231 
+│                       │      ├ PkgID           : openssl@3.5.1-r0 
+│                       │      ├ PkgName         : openssl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : b626674900b45116 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9231 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Timing side-channel in SM2 algorithm on 64 bit ARM 
+│                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
+│                       │      │                    allow remote
+│                       │      │                   recovery of the private key exists in the SM2 algorithm
+│                       │      │                   implementation on 64 bit
+│                       │      │                   ARM platforms.
+│                       │      │                   
+│                       │      │                   Impact summary: A timing side-channel in SM2 signature
+│                       │      │                   computations on 64 bit
+│                       │      │                   ARM platforms could allow recovering the private key by an
+│                       │      │                   attacker..
+│                       │      │                   While remote key recovery over a network was not attempted
+│                       │      │                   by the reporter,
+│                       │      │                   timing measurements revealed a timing signal which may allow
+│                       │      │                    such an attack.
+│                       │      │                   OpenSSL does not directly support certificates with SM2 keys
+│                       │      │                    in TLS, and so
+│                       │      │                   this CVE is not relevant in most TLS contexts.  However,
+│                       │      │                   given that it is
+│                       │      │                   possible to add support for such certificates via a custom
+│                       │      │                   provider, coupled
+│                       │      │                   with the fact that in such a custom provider context the
+│                       │      │                   private key may be
+│                       │      │                   recoverable via remote timing measurements, we consider this
+│                       │      │                    to be a Moderate
+│                       │      │                   severity issue.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as SM2 is not an approved algorithm. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-385 
+│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9231 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/567f64386e43
+│                       │      │                  │      683888212226824b6a179885a0fe 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/cba616c26ac8
+│                       │      │                  │      e7b37de5e77762e505ba5ca51698 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/eed5adc9f969
+│                       │      │                  │      d77c94f213767acbb41ff923b6f4 
+│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/fc47a2ec0789
+│                       │      │                  │      12b3e914fab5734535e76c4820c2 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
+│                       │      │                  ├ [6]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.22Z 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-9232 
+│                       │      ├ PkgID           : openssl@3.5.1-r0 
+│                       │      ├ PkgName         : openssl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : b626674900b45116 
+│                       │      ├ InstalledVersion: 3.5.1-r0 
+│                       │      ├ FixedVersion    : 3.5.4-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9232 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : openssl: Out-of-bounds read in HTTP client no_proxy handling 
+│                       │      ├ Description     : Issue summary: An application using the OpenSSL HTTP client
+│                       │      │                   API functions may
+│                       │      │                   trigger an out-of-bounds read if the 'no_proxy' environment
+│                       │      │                   variable is set and
+│                       │      │                   the host portion of the authority component of the HTTP URL
+│                       │      │                   is an IPv6 address.
+│                       │      │                   
+│                       │      │                   Impact summary: An out-of-bounds read can trigger a crash
+│                       │      │                   which leads to
+│                       │      │                   Denial of Service for an application.
+│                       │      │                   The OpenSSL HTTP client API functions can be used directly
+│                       │      │                   by applications
+│                       │      │                   but they are also used by the OCSP client functions and CMP
+│                       │      │                   (Certificate
+│                       │      │                   Management Protocol) client implementation in OpenSSL.
+│                       │      │                   However the URLs used
+│                       │      │                   by these implementations are unlikely to be controlled by an
+│                       │      │                    attacker.
+│                       │      │                   In this vulnerable code the out of bounds read can only
+│                       │      │                   trigger a crash.
+│                       │      │                   Furthermore the vulnerability requires an
+│                       │      │                   attacker-controlled URL to be
+│                       │      │                   passed from an application to the OpenSSL function and the
+│                       │      │                   user has to have
+│                       │      │                   a 'no_proxy' environment variable set. For the
+│                       │      │                   aforementioned reasons the
+│                       │      │                   issue was assessed as Low severity.
+│                       │      │                   The vulnerable code was introduced in the following patch
+│                       │      │                   releases:
+│                       │      │                   3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.
+│                       │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+│                       │      │                   affected by this
+│                       │      │                   issue, as the HTTP client implementation is outside the
+│                       │      │                   OpenSSL FIPS module
+│                       │      │                   boundary. 
+│                       │      ├ Severity        : LOW 
+│                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      │                  ╰ ubuntu: 1 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 3.1 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9232 
+│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/2b4ec20e4795
+│                       │      │                  │      9170422922eaff25346d362dcb35 
+│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/654dc11d2346
+│                       │      │                  │      8a74fc8ea4672b702dd3feb7be4b 
+│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7cf21a30513c
+│                       │      │                  │      9e43c4bc3836c237cf086e194af3 
+│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/89e790ac4311
+│                       │      │                  │      25a4849992858490bed6b225eadf 
+│                       │      │                  ├ [5]: https://github.com/openssl/openssl/commit/bbf38c034cda
+│                       │      │                  │      bd0a13330abcc4855c866f53d2e0 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
+│                       │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
+│                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
+│                       │      ╰ LastModifiedDate: 2025-09-30T20:15:41.397Z 
+│                       ╰ [18] ╭ VulnerabilityID : CVE-2025-58050 
+│                              ├ PkgID           : pcre2@10.43-r1 
+│                              ├ PkgName         : pcre2 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.23
+│                              │                  │       .0_alpha20250612 
+│                              │                  ╰ UID : 135571a2ca7a2cf2 
+│                              ├ InstalledVersion: 10.43-r1 
+│                              ├ FixedVersion    : 10.46-r0 
+│                              ├ Status          : fixed 
+│                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                              │                  │         501dd6062bd50a4b6afe 
+│                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                              │                            c7d38461b41e40aab9e7 
+│                              ├ SeveritySource  : nvd 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58050 
+│                              ├ DataSource       ╭ ID  : alpine 
+│                              │                  ├ Name: Alpine Secdb 
+│                              │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                              ├ Title           : pcre2: PCRE2: heap-buffer-overflow read in match_ref due to
+│                              │                   missing boundary restoration in SCS 
+│                              ├ Description     : The PCRE2 library is a set of C functions that implement
+│                              │                   regular expression pattern matching. In version 10.45, a
+│                              │                   heap-buffer-overflow read vulnerability exists in the PCRE2
+│                              │                   regular expression matching engine, specifically within the
+│                              │                   handling of the (*scs:...) (Scan SubString) verb when
+│                              │                   combined with (*ACCEPT) in src/pcre2_match.c. This
+│                              │                   vulnerability may potentially lead to information disclosure
+│                              │                    if the out-of-bounds data read during the memcmp affects
+│                              │                   the final match result in a way observable by the attacker.
+│                              │                   This issue has been resolved in version 10.46. 
+│                              ├ Severity        : CRITICAL 
+│                              ├ CweIDs           ╭ [0]: CWE-122 
+│                              │                  ├ [1]: CWE-125 
+│                              │                  ╰ [2]: CWE-787 
+│                              ├ VendorSeverity   ╭ nvd   : 4 
+│                              │                  ├ redhat: 2 
+│                              │                  ╰ ubuntu: 2 
+│                              ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
+│                              │                  │        │           /A:H 
+│                              │                  │        ╰ V3Score : 9.1 
+│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                              │                           │           /A:L 
+│                              │                           ╰ V3Score : 6.5 
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58050 
+│                              │                  ├ [1]: https://github.com/PCRE2Project/pcre2/commit/a141712e5
+│                              │                  │      967d448c7ce13090ab530c8e3d82254 
+│                              │                  ├ [2]: https://github.com/PCRE2Project/pcre2/releases/tag/pcr
+│                              │                  │      e2-10.46 
+│                              │                  ├ [3]: https://github.com/PCRE2Project/pcre2/security/advisor
+│                              │                  │      ies/GHSA-c2gv-xgf5-5cc2 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58050 
+│                              │                  ├ [5]: https://ubuntu.com/security/notices/USN-7777-1 
+│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
+│                              ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
+│                              ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
