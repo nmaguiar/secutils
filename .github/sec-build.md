@@ -12781,7 +12781,73 @@
 │     │                         ├ Digest        : sha1:df54c89caa45d131c46e3495831d154ee246f609 
 │     │                         ╰ InstalledFiles ╭ [0]: usr/lib/libzstd.so.1 
 │     │                                          ╰ [1]: usr/lib/libzstd.so.1.5.7 
-│     ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2025-10148 
+│     ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2024-58251 
+│                       │      ├ PkgID           : busybox@1.37.0-r19 
+│                       │      ├ PkgName         : busybox 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=
+│                       │      │                  │       3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 29a2e190464d6e76 
+│                       │      ├ InstalledVersion: 1.37.0-r19 
+│                       │      ├ FixedVersion    : 1.37.0-r24 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+│                       │      │                    of networ ... 
+│                       │      ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+│                       │      │                    of network application with an argv[0] containing an ANSI
+│                       │      │                   terminal escape sequence, leading to a denial of service
+│                       │      │                   (terminal locked up) when netstat is used by a victim. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-150 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+│                       │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+│                       │      │                  ├ [2]: https://www.busybox.net 
+│                       │      │                  ├ [3]: https://www.busybox.net/downloads/ 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+│                       │      ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+│                       │      ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+│                       ├ [1]  ╭ VulnerabilityID : CVE-2024-58251 
+│                       │      ├ PkgID           : busybox-binsh@1.37.0-r19 
+│                       │      ├ PkgName         : busybox-binsh 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&d
+│                       │      │                  │       istro=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 37760ff04f445329 
+│                       │      ├ InstalledVersion: 1.37.0-r19 
+│                       │      ├ FixedVersion    : 1.37.0-r24 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+│                       │      │                    of networ ... 
+│                       │      ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+│                       │      │                    of network application with an argv[0] containing an ANSI
+│                       │      │                   terminal escape sequence, leading to a denial of service
+│                       │      │                   (terminal locked up) when netstat is used by a victim. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-150 
+│                       │      ├ VendorSeverity   ─ ubuntu: 2 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+│                       │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+│                       │      │                  ├ [2]: https://www.busybox.net 
+│                       │      │                  ├ [3]: https://www.busybox.net/downloads/ 
+│                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+│                       │      ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+│                       │      ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+│                       ├ [2]  ╭ VulnerabilityID : CVE-2025-10148 
 │                       │      ├ PkgID           : curl@8.15.0-r0 
 │                       │      ├ PkgName         : curl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23
@@ -12828,7 +12894,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
 │                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [1]  ╭ VulnerabilityID : CVE-2025-9086 
+│                       ├ [3]  ╭ VulnerabilityID : CVE-2025-9086 
 │                       │      ├ PkgID           : curl@8.15.0-r0 
 │                       │      ├ PkgName         : curl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23
@@ -12889,7 +12955,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [2]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [4]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker@28.3.2-r0 
 │                       │      ├ PkgName         : docker 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.
@@ -12950,7 +13016,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [3]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [5]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-bash-completion@28.3.2-r0 
 │                       │      ├ PkgName         : docker-bash-completion 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=
@@ -13011,7 +13077,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [4]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [6]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-cli@28.3.2-r0 
 │                       │      ├ PkgName         : docker-cli 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distr
@@ -13072,7 +13138,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [5]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [7]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-engine@28.3.2-r0 
 │                       │      ├ PkgName         : docker-engine 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&di
@@ -13133,7 +13199,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [6]  ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
 │                       │      ├ PkgName         : libcrypto3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
@@ -13206,7 +13272,7 @@
 │                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [7]  ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
 │                       │      ├ PkgName         : libcrypto3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
@@ -13274,7 +13340,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
 │                       │      ├ PkgName         : libcrypto3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
@@ -13351,7 +13417,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-10148 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2025-10148 
 │                       │      ├ PkgID           : libcurl@8.15.0-r0 
 │                       │      ├ PkgName         : libcurl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
@@ -13398,7 +13464,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
 │                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2025-9086 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2025-9086 
 │                       │      ├ PkgID           : libcurl@8.15.0-r0 
 │                       │      ├ PkgName         : libcurl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
@@ -13459,7 +13525,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │      ╰ LastModifiedDate: 2025-09-15T15:21:42.937Z 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2025-59375 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2025-59375 
 │                       │      ├ PkgID           : libexpat@2.7.1-r0 
 │                       │      ├ PkgName         : libexpat 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=3
@@ -13501,7 +13567,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
 │                       │      ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
 │                       │      ╰ LastModifiedDate: 2025-09-17T14:15:40.913Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -13574,7 +13640,7 @@
 │                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -13642,7 +13708,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -13719,7 +13785,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -13792,7 +13858,7 @@
 │                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -13860,7 +13926,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -13937,61 +14003,94 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-│                       ╰ [18] ╭ VulnerabilityID : CVE-2025-58050 
-│                              ├ PkgID           : pcre2@10.43-r1 
-│                              ├ PkgName         : pcre2 
-│                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.23
-│                              │                  │       .0_alpha20250612 
-│                              │                  ╰ UID : 135571a2ca7a2cf2 
-│                              ├ InstalledVersion: 10.43-r1 
-│                              ├ FixedVersion    : 10.46-r0 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-58050 
+│                       │      ├ PkgID           : pcre2@10.43-r1 
+│                       │      ├ PkgName         : pcre2 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.23
+│                       │      │                  │       .0_alpha20250612 
+│                       │      │                  ╰ UID : 135571a2ca7a2cf2 
+│                       │      ├ InstalledVersion: 10.43-r1 
+│                       │      ├ FixedVersion    : 10.46-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58050 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : pcre2: PCRE2: heap-buffer-overflow read in match_ref due to
+│                       │      │                   missing boundary restoration in SCS 
+│                       │      ├ Description     : The PCRE2 library is a set of C functions that implement
+│                       │      │                   regular expression pattern matching. In version 10.45, a
+│                       │      │                   heap-buffer-overflow read vulnerability exists in the PCRE2
+│                       │      │                   regular expression matching engine, specifically within the
+│                       │      │                   handling of the (*scs:...) (Scan SubString) verb when
+│                       │      │                   combined with (*ACCEPT) in src/pcre2_match.c. This
+│                       │      │                   vulnerability may potentially lead to information disclosure
+│                       │      │                    if the out-of-bounds data read during the memcmp affects
+│                       │      │                   the final match result in a way observable by the attacker.
+│                       │      │                   This issue has been resolved in version 10.46. 
+│                       │      ├ Severity        : CRITICAL 
+│                       │      ├ CweIDs           ╭ [0]: CWE-122 
+│                       │      │                  ├ [1]: CWE-125 
+│                       │      │                  ╰ [2]: CWE-787 
+│                       │      ├ VendorSeverity   ╭ nvd   : 4 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 9.1 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 6.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58050 
+│                       │      │                  ├ [1]: https://github.com/PCRE2Project/pcre2/commit/a141712e5
+│                       │      │                  │      967d448c7ce13090ab530c8e3d82254 
+│                       │      │                  ├ [2]: https://github.com/PCRE2Project/pcre2/releases/tag/pcr
+│                       │      │                  │      e2-10.46 
+│                       │      │                  ├ [3]: https://github.com/PCRE2Project/pcre2/security/advisor
+│                       │      │                  │      ies/GHSA-c2gv-xgf5-5cc2 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58050 
+│                       │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7777-1 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
+│                       │      ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
+│                       │      ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
+│                       ╰ [21] ╭ VulnerabilityID : CVE-2024-58251 
+│                              ├ PkgID           : ssl_client@1.37.0-r19 
+│                              ├ PkgName         : ssl_client 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dist
+│                              │                  │       ro=3.23.0_alpha20250612 
+│                              │                  ╰ UID : b802b1f46274b81c 
+│                              ├ InstalledVersion: 1.37.0-r19 
+│                              ├ FixedVersion    : 1.37.0-r24 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
 │                              │                  │         501dd6062bd50a4b6afe 
 │                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                              │                            c7d38461b41e40aab9e7 
-│                              ├ SeveritySource  : nvd 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58050 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
 │                              ├ DataSource       ╭ ID  : alpine 
 │                              │                  ├ Name: Alpine Secdb 
 │                              │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                              ├ Title           : pcre2: PCRE2: heap-buffer-overflow read in match_ref due to
-│                              │                   missing boundary restoration in SCS 
-│                              ├ Description     : The PCRE2 library is a set of C functions that implement
-│                              │                   regular expression pattern matching. In version 10.45, a
-│                              │                   heap-buffer-overflow read vulnerability exists in the PCRE2
-│                              │                   regular expression matching engine, specifically within the
-│                              │                   handling of the (*scs:...) (Scan SubString) verb when
-│                              │                   combined with (*ACCEPT) in src/pcre2_match.c. This
-│                              │                   vulnerability may potentially lead to information disclosure
-│                              │                    if the out-of-bounds data read during the memcmp affects
-│                              │                   the final match result in a way observable by the attacker.
-│                              │                   This issue has been resolved in version 10.46. 
-│                              ├ Severity        : CRITICAL 
-│                              ├ CweIDs           ╭ [0]: CWE-122 
-│                              │                  ├ [1]: CWE-125 
-│                              │                  ╰ [2]: CWE-787 
-│                              ├ VendorSeverity   ╭ nvd   : 4 
-│                              │                  ├ redhat: 2 
-│                              │                  ╰ ubuntu: 2 
-│                              ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
-│                              │                  │        │           /A:H 
-│                              │                  │        ╰ V3Score : 9.1 
-│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
-│                              │                           │           /A:L 
-│                              │                           ╰ V3Score : 6.5 
-│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58050 
-│                              │                  ├ [1]: https://github.com/PCRE2Project/pcre2/commit/a141712e5
-│                              │                  │      967d448c7ce13090ab530c8e3d82254 
-│                              │                  ├ [2]: https://github.com/PCRE2Project/pcre2/releases/tag/pcr
-│                              │                  │      e2-10.46 
-│                              │                  ├ [3]: https://github.com/PCRE2Project/pcre2/security/advisor
-│                              │                  │      ies/GHSA-c2gv-xgf5-5cc2 
-│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58050 
-│                              │                  ├ [5]: https://ubuntu.com/security/notices/USN-7777-1 
-│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
-│                              ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
-│                              ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
+│                              ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+│                              │                    of networ ... 
+│                              ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+│                              │                    of network application with an argv[0] containing an ANSI
+│                              │                   terminal escape sequence, leading to a denial of service
+│                              │                   (terminal locked up) when netstat is used by a victim. 
+│                              ├ Severity        : MEDIUM 
+│                              ├ CweIDs           ─ [0]: CWE-150 
+│                              ├ VendorSeverity   ─ ubuntu: 2 
+│                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+│                              │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+│                              │                  ├ [2]: https://www.busybox.net 
+│                              │                  ├ [3]: https://www.busybox.net/downloads/ 
+│                              │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+│                              ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+│                              ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -15586,10 +15685,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
