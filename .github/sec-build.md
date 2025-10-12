@@ -13551,6 +13551,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ photon: 3 
 │                       │      │                  ╰ redhat: 3 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
@@ -19703,7 +19704,49 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-8959 
 │                       │     ├ PublishedDate   : 2025-08-15T21:15:37.347Z 
 │                       │     ╰ LastModifiedDate: 2025-08-18T20:16:28.75Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-58058 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-11579 
+│                       │     ├ PkgID           : github.com/nwaples/rardecode/v2@v2.1.0 
+│                       │     ├ PkgName         : github.com/nwaples/rardecode/v2 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/nwaples/rardecode/v2@v2.1.0 
+│                       │     │                  ╰ UID : a3997dca64da2b2e 
+│                       │     ├ InstalledVersion: v2.1.0 
+│                       │     ├ FixedVersion    : 2.2.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-11579 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : github.com/nwaples/rardecode: RarDecode Out Of Memory Crash 
+│                       │     ├ Description     : github.com/nwaples/rardecode versions <=2.1.1 fail to
+│                       │     │                   restrict the dictionary size when reading large RAR
+│                       │     │                   dictionary sizes, which allows an attacker to provide a
+│                       │     │                   specially crafted RAR file and cause Denial of Service via an
+│                       │     │                    Out Of Memory Crash. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-789 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:L 
+│                       │     │                  │        ╰ V3Score : 5.3 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 5.3 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-11579 
+│                       │     │                  ├ [1]: https://github.com/nwaples/rardecode 
+│                       │     │                  ├ [2]: https://github.com/nwaples/rardecode/commit/52fb4e825c9
+│                       │     │                  │      36636f251f7e7deded39ab11df9a9 
+│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
+│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
+│                       │     ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
+│                       │     ╰ LastModifiedDate: 2025-10-10T12:15:37.743Z 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-58058 
 │                       │     ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │     ├ PkgName         : github.com/ulikunitz/xz 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/ulikunitz/xz@v0.5.12 
@@ -19754,7 +19797,7 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58058 
 │                       │     ├ PublishedDate   : 2025-08-28T22:15:32.577Z 
 │                       │     ╰ LastModifiedDate: 2025-08-29T16:24:29.73Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │     ├ PkgID           : stdlib@v1.24.4 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -19799,7 +19842,7 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │     ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │     ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ╰ [6] ╭ VulnerabilityID : CVE-2025-47906 
 │                             ├ PkgID           : stdlib@v1.24.4 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -22549,7 +22592,49 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-8959 
 │                       │     ├ PublishedDate   : 2025-08-15T21:15:37.347Z 
 │                       │     ╰ LastModifiedDate: 2025-08-18T20:16:28.75Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-58058 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-11579 
+│                       │     ├ PkgID           : github.com/nwaples/rardecode/v2@v2.1.0 
+│                       │     ├ PkgName         : github.com/nwaples/rardecode/v2 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/nwaples/rardecode/v2@v2.1.0 
+│                       │     │                  ╰ UID : a31e2643bf040982 
+│                       │     ├ InstalledVersion: v2.1.0 
+│                       │     ├ FixedVersion    : 2.2.0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-11579 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Go 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Ago 
+│                       │     ├ Title           : github.com/nwaples/rardecode: RarDecode Out Of Memory Crash 
+│                       │     ├ Description     : github.com/nwaples/rardecode versions <=2.1.1 fail to
+│                       │     │                   restrict the dictionary size when reading large RAR
+│                       │     │                   dictionary sizes, which allows an attacker to provide a
+│                       │     │                   specially crafted RAR file and cause Denial of Service via an
+│                       │     │                    Out Of Memory Crash. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-789 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:L 
+│                       │     │                  │        ╰ V3Score : 5.3 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 5.3 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-11579 
+│                       │     │                  ├ [1]: https://github.com/nwaples/rardecode 
+│                       │     │                  ├ [2]: https://github.com/nwaples/rardecode/commit/52fb4e825c9
+│                       │     │                  │      36636f251f7e7deded39ab11df9a9 
+│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
+│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
+│                       │     ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
+│                       │     ╰ LastModifiedDate: 2025-10-10T12:15:37.743Z 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-58058 
 │                       │     ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │     ├ PkgName         : github.com/ulikunitz/xz 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/ulikunitz/xz@v0.5.12 
@@ -22600,7 +22685,7 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58058 
 │                       │     ├ PublishedDate   : 2025-08-28T22:15:32.577Z 
 │                       │     ╰ LastModifiedDate: 2025-08-29T16:24:29.73Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │     ├ PkgID           : stdlib@v1.24.4 
 │                       │     ├ PkgName         : stdlib 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -22645,7 +22730,7 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │     ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │     ╰ LastModifiedDate: 2025-08-07T21:26:37.453Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ╰ [6] ╭ VulnerabilityID : CVE-2025-47906 
 │                             ├ PkgID           : stdlib@v1.24.4 
 │                             ├ PkgName         : stdlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
