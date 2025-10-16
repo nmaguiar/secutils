@@ -10586,6 +10586,7 @@
     - CWE-125
     - CWE-787
     VendorSeverity:
+      amazon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -10649,6 +10650,7 @@
     CweIDs:
     - CWE-385
     VendorSeverity:
+      amazon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -10913,6 +10915,7 @@
     - CWE-125
     - CWE-787
     VendorSeverity:
+      amazon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -10976,6 +10979,7 @@
     CweIDs:
     - CWE-385
     VendorSeverity:
+      amazon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -11101,6 +11105,7 @@
     - CWE-125
     - CWE-787
     VendorSeverity:
+      amazon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -11164,6 +11169,7 @@
     CweIDs:
     - CWE-385
     VendorSeverity:
+      amazon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -13826,6 +13832,7 @@
       applying the linked patch, or inspecting source distributions (sdists) before installation as is already a best-practice.
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       redhat: 2
     CVSS:
@@ -16676,7 +16683,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-11579
     - https://www.cve.org/CVERecord?id=CVE-2025-11579
     PublishedDate: '2025-10-10T12:15:37.743Z'
-    LastModifiedDate: '2025-10-10T12:15:37.743Z'
+    LastModifiedDate: '2025-10-14T19:37:28.107Z'
   - VulnerabilityID: CVE-2025-58058
     PkgID: github.com/ulikunitz/xz@v0.5.12
     PkgName: github.com/ulikunitz/xz
@@ -19357,7 +19364,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-11579
     - https://www.cve.org/CVERecord?id=CVE-2025-11579
     PublishedDate: '2025-10-10T12:15:37.743Z'
-    LastModifiedDate: '2025-10-10T12:15:37.743Z'
+    LastModifiedDate: '2025-10-14T19:37:28.107Z'
   - VulnerabilityID: CVE-2025-58058
     PkgID: github.com/ulikunitz/xz@v0.5.12
     PkgName: github.com/ulikunitz/xz
