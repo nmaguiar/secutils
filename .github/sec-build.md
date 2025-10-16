@@ -13246,7 +13246,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-125 
 │                       │      │                  ╰ [1]: CWE-787 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
 │                       │      │                           │           /A:L 
@@ -13320,7 +13321,8 @@
 │                       │      │                   issue, as SM2 is not an approved algorithm. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-385 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -13615,7 +13617,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-125 
 │                       │      │                  ╰ [1]: CWE-787 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
 │                       │      │                           │           /A:L 
@@ -13689,7 +13692,8 @@
 │                       │      │                   issue, as SM2 is not an approved algorithm. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-385 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -13833,7 +13837,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-125 
 │                       │      │                  ╰ [1]: CWE-787 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
 │                       │      │                           │           /A:L 
@@ -13907,7 +13912,8 @@
 │                       │      │                   issue, as SM2 is not an approved algorithm. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-385 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -16664,7 +16670,8 @@
 │                             │                   applying the linked patch, or inspecting source distributions
 │                             │                    (sdists) before installation as is already a best-practice. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ VendorSeverity   ╭ ghsa  : 2 
+│                             ├ VendorSeverity   ╭ amazon: 2 
+│                             │                  ├ ghsa  : 2 
 │                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/
 │                             │                           │           A:N 
@@ -19745,7 +19752,7 @@
 │                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
 │                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │     ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
-│                       │     ╰ LastModifiedDate: 2025-10-10T12:15:37.743Z 
+│                       │     ╰ LastModifiedDate: 2025-10-14T19:37:28.107Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-58058 
 │                       │     ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │     ├ PkgName         : github.com/ulikunitz/xz 
@@ -22634,7 +22641,7 @@
 │                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
 │                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │     ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
-│                       │     ╰ LastModifiedDate: 2025-10-10T12:15:37.743Z 
+│                       │     ╰ LastModifiedDate: 2025-10-14T19:37:28.107Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-58058 
 │                       │     ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │     ├ PkgName         : github.com/ulikunitz/xz 
