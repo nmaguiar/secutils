@@ -10587,6 +10587,7 @@
     - CWE-787
     VendorSeverity:
       amazon: 2
+      azure: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -10916,6 +10917,7 @@
     - CWE-787
     VendorSeverity:
       amazon: 2
+      azure: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -11106,6 +11108,7 @@
     - CWE-787
     VendorSeverity:
       amazon: 2
+      azure: 3
       redhat: 2
       ubuntu: 2
     CVSS:
