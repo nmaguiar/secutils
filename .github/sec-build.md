@@ -13399,7 +13399,8 @@
 │                       │      │                   boundary. 
 │                       │      ├ Severity        : LOW 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 1 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
@@ -13773,7 +13774,8 @@
 │                       │      │                   boundary. 
 │                       │      ├ Severity        : LOW 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 1 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
@@ -13994,7 +13996,8 @@
 │                       │      │                   boundary. 
 │                       │      ├ Severity        : LOW 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      ├ VendorSeverity   ╭ azure : 2 
+│                       │      │                  ├ redhat: 1 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
@@ -15587,7 +15590,59 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-12798 
 │                       │     ├ PublishedDate   : 2024-12-19T16:15:07.557Z 
 │                       │     ╰ LastModifiedDate: 2025-01-03T14:15:24.37Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2024-12801 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-11226 
+│                       │     ├ PkgName         : ch.qos.logback:logback-core 
+│                       │     ├ PkgPath         : opt/dependency-check/lib/logback-core-1.2.13.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.13 
+│                       │     │                  ╰ UID : 75945d17fdbc7707 
+│                       │     ├ InstalledVersion: 1.2.13 
+│                       │     ├ FixedVersion    : 1.5.19 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-11226 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Title           : ch.qos.logback/logback-core: Conditional abitrary code
+│                       │     │                   execution in logback-core 
+│                       │     ├ Description     : ACE vulnerability in conditional configuration file
+│                       │     │                   processing  by QOS.CH logback-core up to and including
+│                       │     │                   version 1.5.18 in Java applications, allows an attacker to
+│                       │     │                   execute arbitrary code by compromising an existing logback
+│                       │     │                   configuration file or by injecting an environment variable
+│                       │     │                   before program execution.
+│                       │     │                   
+│                       │     │                   A successful attack requires the presence of Janino library
+│                       │     │                   and Spring Framework to be present on the user's class path.
+│                       │     │                   In addition, the attacker must  have write access to a 
+│                       │     │                   configuration file. Alternatively, the attacker could inject
+│                       │     │                   a malicious 
+│                       │     │                   environment variable pointing to a malicious configuration
+│                       │     │                   file. In both 
+│                       │     │                   cases, the attack requires existing privilege. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-20 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:L/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 6.4 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-11226 
+│                       │     │                  ├ [1]: https://github.com/qos-ch/logback 
+│                       │     │                  ├ [2]: https://github.com/qos-ch/logback/commit/61f6a2544f36b3
+│                       │     │                  │      016e0efd434ee21f19269f1df7 
+│                       │     │                  ├ [3]: https://github.com/qos-ch/logback/releases/tag/v_1.5.19 
+│                       │     │                  ├ [4]: https://logback.qos.ch/news.html#1.5.19 
+│                       │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-11226 
+│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-11226 
+│                       │     ├ PublishedDate   : 2025-10-01T08:15:31.25Z 
+│                       │     ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2024-12801 
 │                       │     ├ PkgName         : ch.qos.logback:logback-core 
 │                       │     ├ PkgPath         : opt/dependency-check/lib/logback-core-1.2.13.jar 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.13 
@@ -15632,7 +15687,7 @@
 │                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-12801 
 │                       │     ├ PublishedDate   : 2024-12-19T17:15:08.93Z 
 │                       │     ╰ LastModifiedDate: 2025-01-03T14:15:24.5Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-48734 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-48734 
 │                       │     ├ PkgName         : commons-beanutils:commons-beanutils 
 │                       │     ├ PkgPath         : opt/dependency-check/lib/commons-beanutils-1.9.4.jar 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/commons-beanutils/commons-beanutils@1.9.4 
@@ -15698,10 +15753,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
@@ -15717,7 +15772,7 @@
 │                       │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
 │                       │     ╰ LastModifiedDate: 2025-06-09T18:56:26.37Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-48924 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-48924 
 │                       │     ├ PkgName         : org.apache.commons:commons-lang3 
 │                       │     ├ PkgPath         : opt/dependency-check/lib/commons-lang3-3.17.0.jar 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/org.apache.commons/commons-lang3@3.17.0 
@@ -15771,7 +15826,7 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
 │                       │     ├ PublishedDate   : 2025-07-11T15:15:24.347Z 
 │                       │     ╰ LastModifiedDate: 2025-07-28T13:45:38.647Z 
-│                       ╰ [4] ╭ VulnerabilityID : CVE-2025-27820 
+│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-27820 
 │                             ├ PkgName         : org.apache.httpcomponents.client5:httpclient5 
 │                             ├ PkgPath         : opt/dependency-check/lib/httpclient5-5.4.2.jar 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:maven/org.apache.httpcomponents.client5/httpclient
