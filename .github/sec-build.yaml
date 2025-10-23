@@ -10718,6 +10718,7 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      azure: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -11050,6 +11051,7 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      azure: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -11241,6 +11243,7 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
+      azure: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -12787,6 +12790,46 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-12798
     PublishedDate: '2024-12-19T16:15:07.557Z'
     LastModifiedDate: '2025-01-03T14:15:24.37Z'
+  - VulnerabilityID: CVE-2025-11226
+    PkgName: ch.qos.logback:logback-core
+    PkgPath: opt/dependency-check/lib/logback-core-1.2.13.jar
+    PkgIdentifier:
+      PURL: pkg:maven/ch.qos.logback/logback-core@1.2.13
+      UID: 75945d17fdbc7707
+    InstalledVersion: 1.2.13
+    FixedVersion: 1.5.19
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-11226
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Title: 'ch.qos.logback/logback-core: Conditional abitrary code execution in logback-core'
+    Description: "ACE vulnerability in conditional configuration file processing  by QOS.CH logback-core up to and including version 1.5.18 in Java applications, allows an attacker to execute arbitrary code by compromising an existing logback configuration file or by injecting an environment variable before program execution.\n\n\n\nA successful attack requires the presence of Janino library and Spring Framework to be present on the user's class path. In addition, the attacker must\_ have write access to a \nconfiguration file. Alternatively, the attacker could inject a malicious \nenvironment variable pointing to a malicious configuration file. In both \ncases, the attack requires existing privilege."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-20
+    VendorSeverity:
+      ghsa: 2
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:L/A:L
+        V3Score: 6.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-11226
+    - https://github.com/qos-ch/logback
+    - https://github.com/qos-ch/logback/commit/61f6a2544f36b3016e0efd434ee21f19269f1df7
+    - https://github.com/qos-ch/logback/releases/tag/v_1.5.19
+    - https://logback.qos.ch/news.html#1.5.19
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-11226
+    - https://www.cve.org/CVERecord?id=CVE-2025-11226
+    PublishedDate: '2025-10-01T08:15:31.25Z'
+    LastModifiedDate: '2025-10-02T19:12:17.16Z'
   - VulnerabilityID: CVE-2024-12801
     PkgName: ch.qos.logback:logback-core
     PkgPath: opt/dependency-check/lib/logback-core-1.2.13.jar
@@ -12886,10 +12929,10 @@
         V3Score: 8.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/28/6
-    - https://access.redhat.com/errata/RHSA-2025:9166
+    - https://access.redhat.com/errata/RHSA-2025:9114
     - https://access.redhat.com/security/cve/CVE-2025-48734
     - https://bugzilla.redhat.com/2368956
-    - https://errata.almalinux.org/10/ALSA-2025-9166.html
+    - https://errata.almalinux.org/9/ALSA-2025-9114.html
     - https://github.com/advisories/GHSA-wxr5-93ph-8wr9
     - https://github.com/apache/commons-beanutils
     - https://github.com/apache/commons-beanutils/commit/28ad955a1613ed5885870cc7da52093c1ce739dc
