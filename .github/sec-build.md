@@ -12996,7 +12996,8 @@
 │                       │      ├ CweIDs           ─ [0]: CWE-909 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ├ nvd   : 2 
-│                       │      │                  ╰ redhat: 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
 │                       │      │                  │        │           /A:N 
 │                       │      │                  │        ╰ V3Score : 4.6 
@@ -13057,7 +13058,8 @@
 │                       │      ├ CweIDs           ─ [0]: CWE-909 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ├ nvd   : 2 
-│                       │      │                  ╰ redhat: 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
 │                       │      │                  │        │           /A:N 
 │                       │      │                  │        ╰ V3Score : 4.6 
@@ -13118,7 +13120,8 @@
 │                       │      ├ CweIDs           ─ [0]: CWE-909 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ├ nvd   : 2 
-│                       │      │                  ╰ redhat: 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
 │                       │      │                  │        │           /A:N 
 │                       │      │                  │        ╰ V3Score : 4.6 
@@ -13179,7 +13182,8 @@
 │                       │      ├ CweIDs           ─ [0]: CWE-909 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ├ nvd   : 2 
-│                       │      │                  ╰ redhat: 2 
+│                       │      │                  ├ redhat: 2 
+│                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L
 │                       │      │                  │        │           /A:N 
 │                       │      │                  │        ╰ V3Score : 4.6 
@@ -19604,7 +19608,8 @@
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
-│                       │     │                  ╰ redhat: 2 
+│                       │     │                  ├ redhat: 2 
+│                       │     │                  ╰ ubuntu: 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
@@ -22493,7 +22498,8 @@
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
-│                       │     │                  ╰ redhat: 2 
+│                       │     │                  ├ redhat: 2 
+│                       │     │                  ╰ ubuntu: 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
@@ -26898,7 +26904,8 @@
 │                       │     ├ CweIDs           ─ [0]: CWE-909 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │     │                  ├ nvd   : 2 
-│                       │     │                  ╰ redhat: 2 
+│                       │     │                  ├ redhat: 2 
+│                       │     │                  ╰ ubuntu: 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/
 │                       │     │                  │        │           A:N 
 │                       │     │                  │        ╰ V3Score : 4.6 
