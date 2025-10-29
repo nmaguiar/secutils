@@ -10289,6 +10289,7 @@
       served to all users of that proxy.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       redhat: 1
       ubuntu: 1
@@ -10774,6 +10775,7 @@
       served to all users of that proxy.
     Severity: MEDIUM
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       redhat: 1
       ubuntu: 1
@@ -10867,6 +10869,7 @@
     - CWE-770
     VendorSeverity:
       amazon: 3
+      azure: 2
       cbl-mariner: 2
       photon: 3
       redhat: 3
@@ -13893,6 +13896,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 2
+      azure: 2
       ghsa: 2
       redhat: 2
     CVSS:
@@ -16769,6 +16773,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
@@ -19451,6 +19456,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
@@ -23522,6 +23528,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       ghsa: 2
       redhat: 2
