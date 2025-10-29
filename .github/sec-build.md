@@ -12881,7 +12881,8 @@
 │                       │      │                   could then be
 │                       │      │                   served to all users of that proxy. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
@@ -13462,7 +13463,8 @@
 │                       │      │                   could then be
 │                       │      │                   served to all users of that proxy. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │      ├ VendorSeverity   ╭ azure      : 2 
+│                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ╰ ubuntu     : 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
@@ -13563,6 +13565,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ╰ redhat     : 3 
@@ -16743,6 +16746,7 @@
 │                             │                    (sdists) before installation as is already a best-practice. 
 │                             ├ Severity        : MEDIUM 
 │                             ├ VendorSeverity   ╭ amazon: 2 
+│                             │                  ├ azure : 2 
 │                             │                  ├ ghsa  : 2 
 │                             │                  ╰ redhat: 2 
 │                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/
@@ -19859,7 +19863,8 @@
 │                       │     │                   been patched in version 0.5.14. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
 │                       │     │                  ╰ redhat     : 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
@@ -22749,7 +22754,8 @@
 │                       │     │                   been patched in version 0.5.14. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
 │                       │     │                  ╰ redhat     : 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
@@ -27113,7 +27119,8 @@
 │                       │     │                   been patched in version 0.5.14. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │     ├ VendorSeverity   ╭ azure      : 2 
+│                       │     │                  ├ cbl-mariner: 2 
 │                       │     │                  ├ ghsa       : 2 
 │                       │     │                  ╰ redhat     : 2 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
