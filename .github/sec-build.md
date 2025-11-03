@@ -15613,7 +15613,7 @@
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/ch.qos.logback/logback-core@1.2.13 
 │                       │     │                  ╰ UID : 75945d17fdbc7707 
 │                       │     ├ InstalledVersion: 1.2.13 
-│                       │     ├ FixedVersion    : 1.5.19 
+│                       │     ├ FixedVersion    : 1.5.19, 1.3.16 
 │                       │     ├ Status          : fixed 
 │                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
 │                       │     │                  │         01dd6062bd50a4b6afe 
@@ -15653,11 +15653,12 @@
 │                       │     │                  ├ [1]: https://github.com/qos-ch/logback 
 │                       │     │                  ├ [2]: https://github.com/qos-ch/logback/commit/61f6a2544f36b3
 │                       │     │                  │      016e0efd434ee21f19269f1df7 
-│                       │     │                  ├ [3]: https://github.com/qos-ch/logback/releases/tag/v_1.5.19 
-│                       │     │                  ├ [4]: https://logback.qos.ch/news.html#1.3.16 
-│                       │     │                  ├ [5]: https://logback.qos.ch/news.html#1.5.19 
-│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-11226 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11226 
+│                       │     │                  ├ [3]: https://github.com/qos-ch/logback/issues/974 
+│                       │     │                  ├ [4]: https://github.com/qos-ch/logback/releases/tag/v_1.5.19 
+│                       │     │                  ├ [5]: https://logback.qos.ch/news.html#1.3.16 
+│                       │     │                  ├ [6]: https://logback.qos.ch/news.html#1.5.19 
+│                       │     │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-11226 
+│                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-11226 
 │                       │     ├ PublishedDate   : 2025-10-01T08:15:31.25Z 
 │                       │     ╰ LastModifiedDate: 2025-10-31T15:15:41.197Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2024-12801 
@@ -20004,36 +20005,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
-│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58185 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f1435be1373e471b 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : Parsing a maliciously crafted DER payload could allocate
-│                       │      │                   large amounts ... 
-│                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
-│                       │      │                   large amounts of memory, causing memory exhaustion. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/709856 
-│                       │      │                  ├ [1]: https://go.dev/issue/75671 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4011 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-58186 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -20065,7 +20037,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4012 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:40.07Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -20096,7 +20068,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -20127,37 +20099,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4013 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:40.203Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2025-61723 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f1435be1373e471b 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearl ... 
-│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearly with respect to the size of the input. This
-│                       │      │                   affects programs which parse untrusted PEM inputs. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/709858 
-│                       │      │                  ├ [1]: https://go.dev/issue/75676 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4009 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -20188,7 +20130,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4015 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:41.31Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -20230,7 +20172,45 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2025-58185 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f1435be1373e471b 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
+│                       │      │                   exhaustion in encoding/asn1 
+│                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
+│                       │      │                   large amounts of memory, causing memory exhaustion. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58185 
+│                       │      │                  ├ [1]: https://github.com/golang/go/commit/8709a41d5ef7321f48
+│                       │      │                  │      6a1857f189c3fee20e8edd 
+│                       │      │                  ├ [2]: https://go.dev/cl/709856 
+│                       │      │                  ├ [3]: https://go.dev/issue/75671 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58185 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4011 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
+│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -20267,6 +20247,45 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T21:15:34.127Z 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61723 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f1435be1373e471b 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+│                       │      │                    inputs in encoding/pem 
+│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
+│                       │      │                   non-linearly with respect to the size of the input. This
+│                       │      │                   affects programs which parse untrusted PEM inputs. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61723 
+│                       │      │                  ├ [1]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+│                       │      │                  │      4106ad8ec15d6236f4501b 
+│                       │      │                  ├ [2]: https://go.dev/cl/709858 
+│                       │      │                  ├ [3]: https://go.dev/issue/75676 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
 │                       ╰ [16] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -23226,36 +23245,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
-│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58185 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : ebfdcee22f3690eb 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : Parsing a maliciously crafted DER payload could allocate
-│                       │      │                   large amounts ... 
-│                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
-│                       │      │                   large amounts of memory, causing memory exhaustion. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/709856 
-│                       │      │                  ├ [1]: https://go.dev/issue/75671 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4011 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-58186 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -23287,7 +23277,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4012 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:40.07Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -23318,7 +23308,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -23349,37 +23339,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4013 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:40.203Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2025-61723 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : ebfdcee22f3690eb 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearl ... 
-│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearly with respect to the size of the input. This
-│                       │      │                   affects programs which parse untrusted PEM inputs. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/709858 
-│                       │      │                  ├ [1]: https://go.dev/issue/75676 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4009 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -23410,7 +23370,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4015 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:41.31Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -23452,7 +23412,45 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2025-58185 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : ebfdcee22f3690eb 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
+│                       │      │                   exhaustion in encoding/asn1 
+│                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
+│                       │      │                   large amounts of memory, causing memory exhaustion. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58185 
+│                       │      │                  ├ [1]: https://github.com/golang/go/commit/8709a41d5ef7321f48
+│                       │      │                  │      6a1857f189c3fee20e8edd 
+│                       │      │                  ├ [2]: https://go.dev/cl/709856 
+│                       │      │                  ├ [3]: https://go.dev/issue/75671 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58185 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4011 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
+│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -23489,6 +23487,45 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T21:15:34.127Z 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61723 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : ebfdcee22f3690eb 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+│                       │      │                    inputs in encoding/pem 
+│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
+│                       │      │                   non-linearly with respect to the size of the input. This
+│                       │      │                   affects programs which parse untrusted PEM inputs. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61723 
+│                       │      │                  ├ [1]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+│                       │      │                  │      4106ad8ec15d6236f4501b 
+│                       │      │                  ├ [2]: https://go.dev/cl/709858 
+│                       │      │                  ├ [3]: https://go.dev/issue/75676 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
 │                       ╰ [16] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -28086,36 +28123,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2025-58185 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 2bd9acee40f6eed 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : Parsing a maliciously crafted DER payload could allocate
-│                       │      │                   large amounts ... 
-│                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
-│                       │      │                   large amounts of memory, causing memory exhaustion. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/709856 
-│                       │      │                  ├ [1]: https://go.dev/issue/75671 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4011 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2025-58186 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -28147,7 +28155,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4012 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:40.07Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -28178,7 +28186,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -28209,37 +28217,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4013 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:40.203Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-61723 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 2bd9acee40f6eed 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearl ... 
-│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearly with respect to the size of the input. This
-│                       │      │                   affects programs which parse untrusted PEM inputs. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ amazon: 3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/709858 
-│                       │      │                  ├ [1]: https://go.dev/issue/75676 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4009 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -28270,7 +28248,7 @@
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4015 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T15:15:41.31Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -28312,7 +28290,45 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-58185 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 2bd9acee40f6eed 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
+│                       │      │                   exhaustion in encoding/asn1 
+│                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
+│                       │      │                   large amounts of memory, causing memory exhaustion. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58185 
+│                       │      │                  ├ [1]: https://github.com/golang/go/commit/8709a41d5ef7321f48
+│                       │      │                  │      6a1857f189c3fee20e8edd 
+│                       │      │                  ├ [2]: https://go.dev/cl/709856 
+│                       │      │                  ├ [3]: https://go.dev/issue/75671 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58185 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4011 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
+│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -28349,6 +28365,45 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2025-10-30T21:15:34.127Z 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-61723 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 2bd9acee40f6eed 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+│                       │      │                    inputs in encoding/pem 
+│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
+│                       │      │                   non-linearly with respect to the size of the input. This
+│                       │      │                   affects programs which parse untrusted PEM inputs. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61723 
+│                       │      │                  ├ [1]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+│                       │      │                  │      4106ad8ec15d6236f4501b 
+│                       │      │                  ├ [2]: https://go.dev/cl/709858 
+│                       │      │                  ├ [3]: https://go.dev/issue/75676 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
 │                       ╰ [18] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -28533,36 +28588,7 @@
                         │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
                         │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
-                        ├ [3]  ╭ VulnerabilityID : CVE-2025-58185 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : 7927e62558d558ff 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Title           : Parsing a maliciously crafted DER payload could allocate
-                        │      │                   large amounts ... 
-                        │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
-                        │      │                   large amounts of memory, causing memory exhaustion. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ─ amazon: 3 
-                        │      ├ References       ╭ [0]: https://go.dev/cl/709856 
-                        │      │                  ├ [1]: https://go.dev/issue/75671 
-                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-                        │      │                  │      _bI 
-                        │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4011 
-                        │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-                        │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
-                        ├ [4]  ╭ VulnerabilityID : CVE-2025-58186 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2025-58186 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -28594,7 +28620,7 @@
                         │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4012 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
                         │      ╰ LastModifiedDate: 2025-10-30T15:15:40.07Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2025-58187 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2025-58187 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -28625,7 +28651,7 @@
                         │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
                         │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2025-58188 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2025-58188 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -28656,37 +28682,7 @@
                         │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4013 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
                         │      ╰ LastModifiedDate: 2025-10-30T15:15:40.203Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2025-61723 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : 7927e62558d558ff 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Title           : The processing time for parsing some invalid inputs scales
-                        │      │                   non-linearl ... 
-                        │      ├ Description     : The processing time for parsing some invalid inputs scales
-                        │      │                   non-linearly with respect to the size of the input. This
-                        │      │                   affects programs which parse untrusted PEM inputs. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ─ amazon: 3 
-                        │      ├ References       ╭ [0]: https://go.dev/cl/709858 
-                        │      │                  ├ [1]: https://go.dev/issue/75676 
-                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-                        │      │                  │      _bI 
-                        │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4009 
-                        │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-                        │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2025-61724 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2025-61724 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -28717,7 +28713,7 @@
                         │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4015 
                         │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
                         │      ╰ LastModifiedDate: 2025-10-30T15:15:41.31Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2025-47906 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2025-47906 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -28759,7 +28755,45 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
                         │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
                         │      ╰ LastModifiedDate: 2025-09-19T16:00:27.847Z 
-                        ├ [10] ╭ VulnerabilityID : CVE-2025-58189 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2025-58185 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : 7927e62558d558ff 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58185 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
+                        │      │                   exhaustion in encoding/asn1 
+                        │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
+                        │      │                   large amounts of memory, causing memory exhaustion. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58185 
+                        │      │                  ├ [1]: https://github.com/golang/go/commit/8709a41d5ef7321f48
+                        │      │                  │      6a1857f189c3fee20e8edd 
+                        │      │                  ├ [2]: https://go.dev/cl/709856 
+                        │      │                  ├ [3]: https://go.dev/issue/75671 
+                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+                        │      │                  │      _bI 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58185 
+                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4011 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
+                        │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
+                        │      ╰ LastModifiedDate: 2025-10-30T15:15:39.937Z 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2025-58189 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -28796,6 +28830,45 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
                         │      ╰ LastModifiedDate: 2025-10-30T21:15:34.127Z 
+                        ├ [10] ╭ VulnerabilityID : CVE-2025-61723 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : 7927e62558d558ff 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+                        │      │                    inputs in encoding/pem 
+                        │      ├ Description     : The processing time for parsing some invalid inputs scales
+                        │      │                   non-linearly with respect to the size of the input. This
+                        │      │                   affects programs which parse untrusted PEM inputs. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61723 
+                        │      │                  ├ [1]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+                        │      │                  │      4106ad8ec15d6236f4501b 
+                        │      │                  ├ [2]: https://go.dev/cl/709858 
+                        │      │                  ├ [3]: https://go.dev/issue/75676 
+                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+                        │      │                  │      _bI 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+                        │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+                        │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
                         ╰ [11] ╭ VulnerabilityID : CVE-2025-61725 
                                ├ PkgID           : stdlib@v1.24.5 
                                ├ PkgName         : stdlib 
