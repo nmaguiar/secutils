@@ -13571,6 +13571,7 @@
 │                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ╰ redhat     : 3 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -13584,8 +13585,10 @@
 │                       │      │                  ├ [3]: https://github.com/libexpat/libexpat/issues/1018 
 │                       │      │                  ├ [4]: https://github.com/libexpat/libexpat/pull/1034 
 │                       │      │                  ├ [5]: https://issues.oss-fuzz.com/issues/439133977 
-│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-59375 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
+│                       │      │                  ├ [6]: https://linux.oracle.com/cve/CVE-2025-59375.html 
+│                       │      │                  ├ [7]: https://linux.oracle.com/errata/ELSA-2025-19403.html 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-59375 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
 │                       │      ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
 │                       │      ╰ LastModifiedDate: 2025-10-17T19:26:36.673Z 
 │                       ├ [14] ╭ VulnerabilityID : CVE-2025-9230 
@@ -20285,7 +20288,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T15:15:36.157Z 
 │                       ╰ [16] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -23525,7 +23528,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T15:15:36.157Z 
 │                       ╰ [16] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -28403,7 +28406,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T15:15:36.157Z 
 │                       ╰ [18] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -28868,7 +28871,7 @@
                         │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4009 
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-                        │      ╰ LastModifiedDate: 2025-10-30T21:15:37.053Z 
+                        │      ╰ LastModifiedDate: 2025-11-03T15:15:36.157Z 
                         ╰ [11] ╭ VulnerabilityID : CVE-2025-61725 
                                ├ PkgID           : stdlib@v1.24.5 
                                ├ PkgName         : stdlib 
