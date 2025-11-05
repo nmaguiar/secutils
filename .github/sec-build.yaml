@@ -10612,12 +10612,13 @@
     - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
+    - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
     - https://ubuntu.com/security/notices/USN-7786-1
     - https://www.cve.org/CVERecord?id=CVE-2025-9230
     PublishedDate: '2025-09-30T14:15:41.05Z'
-    LastModifiedDate: '2025-10-02T19:12:17.16Z'
+    LastModifiedDate: '2025-11-03T18:17:02.893Z'
   - VulnerabilityID: CVE-2025-9231
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -10954,12 +10955,13 @@
     - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
+    - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
     - https://ubuntu.com/security/notices/USN-7786-1
     - https://www.cve.org/CVERecord?id=CVE-2025-9230
     PublishedDate: '2025-09-30T14:15:41.05Z'
-    LastModifiedDate: '2025-10-02T19:12:17.16Z'
+    LastModifiedDate: '2025-11-03T18:17:02.893Z'
   - VulnerabilityID: CVE-2025-9231
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -11148,12 +11150,13 @@
     - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
+    - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
     - https://ubuntu.com/security/notices/USN-7786-1
     - https://www.cve.org/CVERecord?id=CVE-2025-9230
     PublishedDate: '2025-09-30T14:15:41.05Z'
-    LastModifiedDate: '2025-10-02T19:12:17.16Z'
+    LastModifiedDate: '2025-11-03T18:17:02.893Z'
   - VulnerabilityID: CVE-2025-9231
     PkgID: openssl@3.5.1-r0
     PkgName: openssl
@@ -12951,10 +12954,10 @@
         V3Score: 8.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/28/6
-    - https://access.redhat.com/errata/RHSA-2025:9114
+    - https://access.redhat.com/errata/RHSA-2025:9166
     - https://access.redhat.com/security/cve/CVE-2025-48734
     - https://bugzilla.redhat.com/2368956
-    - https://errata.almalinux.org/9/ALSA-2025-9114.html
+    - https://errata.almalinux.org/10/ALSA-2025-9166.html
     - https://github.com/advisories/GHSA-wxr5-93ph-8wr9
     - https://github.com/apache/commons-beanutils
     - https://github.com/apache/commons-beanutils/commit/28ad955a1613ed5885870cc7da52093c1ce739dc
@@ -12962,11 +12965,12 @@
     - https://linux.oracle.com/cve/CVE-2025-48734.html
     - https://linux.oracle.com/errata/ELSA-2025-9318.html
     - https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqtfohb0of1g9
+    - https://lists.debian.org/debian-lts-announce/2025/06/msg00027.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-48734
     - https://www.cve.org/CVERecord?id=CVE-2025-48734
     - https://www.openwall.com/lists/oss-security/2025/05/28/6
     PublishedDate: '2025-05-28T14:15:34.07Z'
-    LastModifiedDate: '2025-06-09T18:56:26.37Z'
+    LastModifiedDate: '2025-11-03T20:19:07.317Z'
   - VulnerabilityID: CVE-2025-48924
     PkgName: org.apache.commons:commons-lang3
     PkgPath: opt/dependency-check/lib/commons-lang3-3.17.0.jar
@@ -13008,10 +13012,13 @@
     - https://github.com/apache/commons-lang
     - https://github.com/apache/commons-lang/commit/b424803abdb2bec818e4fbcb251ce031c22aca53
     - https://lists.apache.org/thread/bgv0lpswokgol11tloxnjfzdl7yrc1g1
+    - https://lists.debian.org/debian-lts-announce/2025/08/msg00000.html
+    - https://lists.debian.org/debian-lts-announce/2025/08/msg00026.html
+    - https://lists.debian.org/debian-lts-announce/2025/09/msg00032.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-48924
     - https://www.cve.org/CVERecord?id=CVE-2025-48924
     PublishedDate: '2025-07-11T15:15:24.347Z'
-    LastModifiedDate: '2025-07-28T13:45:38.647Z'
+    LastModifiedDate: '2025-11-03T20:19:07.473Z'
   - VulnerabilityID: CVE-2025-27820
     PkgName: org.apache.httpcomponents.client5:httpclient5
     PkgPath: opt/dependency-check/lib/httpclient5-5.4.2.jar
@@ -13917,13 +13924,14 @@
     - https://github.com/pypa/pip
     - https://github.com/pypa/pip/commit/f2b92314da012b9fffa36b3f3e67748a37ef464a
     - https://github.com/pypa/pip/pull/13550
+    - https://lists.debian.org/debian-lts-announce/2025/10/msg00028.html
     - https://mail.python.org/archives/list/security-announce@python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN
     - https://mail.python.org/archives/list/security-announce@python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN/
     - https://nvd.nist.gov/vuln/detail/CVE-2025-8869
     - https://pip.pypa.io/en/stable/news/#v25-2
     - https://www.cve.org/CVERecord?id=CVE-2025-8869
     PublishedDate: '2025-09-24T15:15:41.293Z'
-    LastModifiedDate: '2025-09-24T18:11:24.52Z'
+    LastModifiedDate: '2025-11-03T18:17:02.783Z'
 - Target: usr/bin/grype
   Class: lang-pkgs
   Type: gobinary
@@ -16902,7 +16910,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4014
     PublishedDate: '2025-10-29T23:16:19.357Z'
-    LastModifiedDate: '2025-10-30T15:15:39.793Z'
+    LastModifiedDate: '2025-11-03T20:19:15.39Z'
   - VulnerabilityID: CVE-2025-58186
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -16960,7 +16968,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-10-30T21:15:33.983Z'
+    LastModifiedDate: '2025-11-03T20:19:15.52Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -17210,7 +17218,7 @@
     - https://pkg.go.dev/vuln/GO-2025-4006
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
-    LastModifiedDate: '2025-10-30T21:15:37.19Z'
+    LastModifiedDate: '2025-11-03T20:19:17.47Z'
 - Target: usr/bin/syft
   Class: lang-pkgs
   Type: gobinary
@@ -19909,7 +19917,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4014
     PublishedDate: '2025-10-29T23:16:19.357Z'
-    LastModifiedDate: '2025-10-30T15:15:39.793Z'
+    LastModifiedDate: '2025-11-03T20:19:15.39Z'
   - VulnerabilityID: CVE-2025-58186
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -19967,7 +19975,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-10-30T21:15:33.983Z'
+    LastModifiedDate: '2025-11-03T20:19:15.52Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -20217,7 +20225,7 @@
     - https://pkg.go.dev/vuln/GO-2025-4006
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
-    LastModifiedDate: '2025-10-30T21:15:37.19Z'
+    LastModifiedDate: '2025-11-03T20:19:17.47Z'
 - Target: usr/bin/trivy
   Class: lang-pkgs
   Type: gobinary
@@ -24450,7 +24458,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4014
     PublishedDate: '2025-10-29T23:16:19.357Z'
-    LastModifiedDate: '2025-10-30T15:15:39.793Z'
+    LastModifiedDate: '2025-11-03T20:19:15.39Z'
   - VulnerabilityID: CVE-2025-58186
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -24508,7 +24516,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-10-30T21:15:33.983Z'
+    LastModifiedDate: '2025-11-03T20:19:15.52Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -24758,7 +24766,7 @@
     - https://pkg.go.dev/vuln/GO-2025-4006
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
-    LastModifiedDate: '2025-10-30T21:15:37.19Z'
+    LastModifiedDate: '2025-11-03T20:19:17.47Z'
 - Target: usr/bin/trivy_cve_query
   Class: lang-pkgs
   Type: gobinary
@@ -24892,7 +24900,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4014
     PublishedDate: '2025-10-29T23:16:19.357Z'
-    LastModifiedDate: '2025-10-30T15:15:39.793Z'
+    LastModifiedDate: '2025-11-03T20:19:15.39Z'
   - VulnerabilityID: CVE-2025-58186
     PkgID: stdlib@v1.24.5
     PkgName: stdlib
@@ -24950,7 +24958,7 @@
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-10-30T21:15:33.983Z'
+    LastModifiedDate: '2025-11-03T20:19:15.52Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.5
     PkgName: stdlib
@@ -25200,4 +25208,4 @@
     - https://pkg.go.dev/vuln/GO-2025-4006
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
-    LastModifiedDate: '2025-10-30T21:15:37.19Z'
+    LastModifiedDate: '2025-11-03T20:19:17.47Z'
