@@ -13277,12 +13277,14 @@
 │                       │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
 │                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
 │                       │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
-│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
-│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+│                       │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+│                       │      │                  │       msg00001.html 
+│                       │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+│                       │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-│                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
 │                       │      ├ PkgName         : libcrypto3 
@@ -13661,12 +13663,14 @@
 │                       │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
 │                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
 │                       │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
-│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
-│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+│                       │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+│                       │      │                  │       msg00001.html 
+│                       │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+│                       │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-│                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
@@ -13885,12 +13889,14 @@
 │                       │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
 │                       │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
 │                       │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-│                       │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-│                       │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
-│                       │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
-│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+│                       │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+│                       │      │                  │       msg00001.html 
+│                       │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+│                       │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
+│                       │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-│                       │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
 │                       ├ [18] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
@@ -15775,10 +15781,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
@@ -15789,11 +15795,13 @@
 │                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
 │                       │     │                  ├ [11]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
 │                       │     │                  │       fohb0of1g9 
-│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
-│                       │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
-│                       │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     │                  ├ [12]: https://lists.debian.org/debian-lts-announce/2025/06/m
+│                       │     │                  │       sg00027.html 
+│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [15]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
-│                       │     ╰ LastModifiedDate: 2025-06-09T18:56:26.37Z 
+│                       │     ╰ LastModifiedDate: 2025-11-03T20:19:07.317Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-48924 
 │                       │     ├ PkgName         : org.apache.commons:commons-lang3 
 │                       │     ├ PkgPath         : opt/dependency-check/lib/commons-lang3-3.17.0.jar 
@@ -15844,10 +15852,16 @@
 │                       │     │                  │      db2bec818e4fbcb251ce031c22aca53 
 │                       │     │                  ├ [3]: https://lists.apache.org/thread/bgv0lpswokgol11tloxnjfz
 │                       │     │                  │      dl7yrc1g1 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-48924 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
+│                       │     │                  ├ [4]: https://lists.debian.org/debian-lts-announce/2025/08/ms
+│                       │     │                  │      g00000.html 
+│                       │     │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/08/ms
+│                       │     │                  │      g00026.html 
+│                       │     │                  ├ [6]: https://lists.debian.org/debian-lts-announce/2025/09/ms
+│                       │     │                  │      g00032.html 
+│                       │     │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-48924 
+│                       │     │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
 │                       │     ├ PublishedDate   : 2025-07-11T15:15:24.347Z 
-│                       │     ╰ LastModifiedDate: 2025-07-28T13:45:38.647Z 
+│                       │     ╰ LastModifiedDate: 2025-11-03T20:19:07.473Z 
 │                       ╰ [5] ╭ VulnerabilityID : CVE-2025-27820 
 │                             ├ PkgName         : org.apache.httpcomponents.client5:httpclient5 
 │                             ├ PkgPath         : opt/dependency-check/lib/httpclient5-5.4.2.jar 
@@ -16766,15 +16780,17 @@
 │                             │                  ├ [2]: https://github.com/pypa/pip/commit/f2b92314da012b9fffa3
 │                             │                  │      6b3f3e67748a37ef464a 
 │                             │                  ├ [3]: https://github.com/pypa/pip/pull/13550 
-│                             │                  ├ [4]: https://mail.python.org/archives/list/security-announce
-│                             │                  │      @python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN 
+│                             │                  ├ [4]: https://lists.debian.org/debian-lts-announce/2025/10/ms
+│                             │                  │      g00028.html 
 │                             │                  ├ [5]: https://mail.python.org/archives/list/security-announce
+│                             │                  │      @python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN 
+│                             │                  ├ [6]: https://mail.python.org/archives/list/security-announce
 │                             │                  │      @python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN/ 
-│                             │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-8869 
-│                             │                  ├ [7]: https://pip.pypa.io/en/stable/news/#v25-2 
-│                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-8869 
+│                             │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-8869 
+│                             │                  ├ [8]: https://pip.pypa.io/en/stable/news/#v25-2 
+│                             │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-8869 
 │                             ├ PublishedDate   : 2025-09-24T15:15:41.293Z 
-│                             ╰ LastModifiedDate: 2025-09-24T18:11:24.52Z 
+│                             ╰ LastModifiedDate: 2025-11-03T18:17:02.783Z 
 ├ [3] ╭ Target         : usr/bin/grype 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -20007,7 +20023,7 @@
 │                       │      │                  │      _bI 
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T20:19:15.39Z 
 │                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -20070,7 +20086,7 @@
 │                       │      │                  │      _bI 
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T20:19:15.52Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -20326,7 +20342,7 @@
 │                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4006 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                              ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-│                              ╰ LastModifiedDate: 2025-10-30T21:15:37.19Z 
+│                              ╰ LastModifiedDate: 2025-11-03T20:19:17.47Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -23247,7 +23263,7 @@
 │                       │      │                  │      _bI 
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T20:19:15.39Z 
 │                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -23310,7 +23326,7 @@
 │                       │      │                  │      _bI 
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T20:19:15.52Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -23566,7 +23582,7 @@
 │                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4006 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                              ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-│                              ╰ LastModifiedDate: 2025-10-30T21:15:37.19Z 
+│                              ╰ LastModifiedDate: 2025-11-03T20:19:17.47Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -28125,7 +28141,7 @@
 │                       │      │                  │      _bI 
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T20:19:15.39Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -28188,7 +28204,7 @@
 │                       │      │                  │      _bI 
 │                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-│                       │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
+│                       │      ╰ LastModifiedDate: 2025-11-03T20:19:15.52Z 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -28444,7 +28460,7 @@
 │                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4006 
 │                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                              ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-│                              ╰ LastModifiedDate: 2025-10-30T21:15:37.19Z 
+│                              ╰ LastModifiedDate: 2025-11-03T20:19:17.47Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -28590,7 +28606,7 @@
                         │      │                  │      _bI 
                         │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4014 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
-                        │      ╰ LastModifiedDate: 2025-10-30T15:15:39.793Z 
+                        │      ╰ LastModifiedDate: 2025-11-03T20:19:15.39Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2025-58186 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -28653,7 +28669,7 @@
                         │      │                  │      _bI 
                         │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4007 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-                        │      ╰ LastModifiedDate: 2025-10-30T21:15:33.983Z 
+                        │      ╰ LastModifiedDate: 2025-11-03T20:19:15.52Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2025-58188 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -28909,5 +28925,5 @@
                                │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4006 
                                │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
                                ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-                               ╰ LastModifiedDate: 2025-10-30T21:15:37.19Z 
+                               ╰ LastModifiedDate: 2025-11-03T20:19:17.47Z 
 ````
