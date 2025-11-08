@@ -10381,7 +10381,20 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Title: curl's code for managing SSH connections when SFTP was done using the  ...
+    Description: |-
+      curl's code for managing SSH connections when SFTP was done using the wolfSSH
+      powered backend was flawed and missed host verification mechanisms.
+
+      This prevents curl from detecting MITM attackers and more.
     Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/11/05/2
+    - https://curl.se/docs/CVE-2025-10966.html
+    - https://curl.se/docs/CVE-2025-10966.json
+    - https://hackerone.com/reports/3355218
+    PublishedDate: '2025-11-07T08:15:39.617Z'
+    LastModifiedDate: '2025-11-07T08:15:39.617Z'
   - VulnerabilityID: CVE-2025-54388
     PkgID: docker@28.3.2-r0
     PkgName: docker
@@ -10894,7 +10907,20 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Title: curl's code for managing SSH connections when SFTP was done using the  ...
+    Description: |-
+      curl's code for managing SSH connections when SFTP was done using the wolfSSH
+      powered backend was flawed and missed host verification mechanisms.
+
+      This prevents curl from detecting MITM attackers and more.
     Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/11/05/2
+    - https://curl.se/docs/CVE-2025-10966.html
+    - https://curl.se/docs/CVE-2025-10966.json
+    - https://hackerone.com/reports/3355218
+    PublishedDate: '2025-11-07T08:15:39.617Z'
+    LastModifiedDate: '2025-11-07T08:15:39.617Z'
   - VulnerabilityID: CVE-2025-59375
     PkgID: libexpat@2.7.1-r0
     PkgName: libexpat
@@ -11664,8 +11690,11 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Title: 'runc: container escape via ''masked path'' abuse due to mount race conditions'
-    Description: A flaw was found in runc. This flaw exploits an issue with how masked paths are implementedin runc. When masking files, runc will bind-mount the container's /dev/null inode on top of the file. However, if an attacker can replace /dev/null with a symlink to some other procfs file, runc will instead bind-mount the symlink target read-write.
+    Description: 'runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7 and below, 1.3.0-rc.1 through 1.3.1, 1.4.0-rc.1 and 1.4.0-rc.2 files, runc would not perform sufficient verification that the source of the bind-mount (i.e., the container''s /dev/null) was actually a real /dev/null inode when using the container''s /dev/null to mask. This exposes two methods of attack:  an arbitrary mount gadget, leading to host information disclosure, host denial of service, container escape, or a bypassing of maskedPaths. This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.'
     Severity: HIGH
+    CweIDs:
+    - CWE-61
+    - CWE-363
     VendorSeverity:
       amazon: 3
       ghsa: 3
@@ -11686,6 +11715,8 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-31133
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-31133
+    PublishedDate: '2025-11-06T19:15:41.343Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
   - VulnerabilityID: CVE-2025-52565
     PkgID: runc@1.3.0-r2
     PkgName: runc
@@ -11704,10 +11735,11 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Title: 'runc: container escape with malicious config due to /dev/console mount and related races'
-    Description: |-
-      A flaw was found in runc. CVE-2025-52565 is very similar in concept and application toCVE-2025-31133, except that it exploits a flaw in /dev/console
-      bind-mounts. When creating the /dev/console bind-mount (to /dev/pts/$n), if an attacker replaces /dev/pts/$n with a symlink then runc will bind-mount the symlink target over /dev/console.
+    Description: runc is a CLI tool for spawning and running containers according to the OCI specification. Versions 1.0.0-rc3 through 1.2.7, 1.3.0-rc.1 through 1.3.2, and 1.4.0-rc.1 through 1.4.0-rc.2, due to insufficient checks when bind-mounting `/dev/pts/$n` to `/dev/console` inside the container, an attacker can trick runc into bind-mounting paths which would normally be made read-only or be masked onto a path that the attacker can write to. This attack is very similar in concept and application to CVE-2025-31133, except that it attacks a similar vulnerability in a different target (namely, the bind-mount of `/dev/pts/$n` to `/dev/console` as configured for all containers that allocate a console). This happens after `pivot_root(2)`, so this cannot be used to write to host files directly -- however, as with CVE-2025-31133, this can load to denial of service of the host or a container breakout by providing the attacker with a writable copy of `/proc/sysrq-trigger` or `/proc/sys/kernel/core_pattern` (respectively). This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.
     Severity: HIGH
+    CweIDs:
+    - CWE-61
+    - CWE-363
     VendorSeverity:
       amazon: 3
       ghsa: 3
@@ -11732,6 +11764,8 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52565
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-52565
+    PublishedDate: '2025-11-06T20:15:49.24Z'
+    LastModifiedDate: '2025-11-06T20:15:49.24Z'
   - VulnerabilityID: CVE-2025-52881
     PkgID: runc@1.3.0-r2
     PkgName: runc
@@ -11750,8 +11784,11 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
-    Description: A flaw was found in runc. This attack is a more sophisticated variant of CVE-2019-16884, which was a flaw that allowed an attacker to trick runc into writing the LSM process labels for a container process into a dummy tmpfs file and thus not apply the correct LSM labels to the container process. The mitigation applied for CVE-2019-16884 was fairly limited and effectively only caused runc to verify that when we write LSM labels that those labels are actual procfs files.
+    Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
+    CweIDs:
+    - CWE-61
+    - CWE-363
     VendorSeverity:
       amazon: 3
       ghsa: 3
@@ -11762,8 +11799,11 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
+    - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
+    - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://github.com/opencontainers/runc
+    - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
     - https://github.com/opencontainers/runc/commit/435cc81be6b79cdec73b4002c0dae549b2f6ae6d
     - https://github.com/opencontainers/runc/commit/44a0fcf685db051c80b8c269812bb177f5802c58
@@ -11780,15 +11820,20 @@
     - https://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://github.com/opencontainers/runc/commit/ff6fe1324663538167eca8b3d3eec61e1bd4fa51
     - https://github.com/opencontainers/runc/commit/ff94f9991bd32076c871ef0ad8bc1b763458e480
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-9493-h29p-rfm2
     - https://github.com/opencontainers/runc/security/advisories/GHSA-cgrx-mc8f-2prm
     - https://github.com/opencontainers/runc/security/advisories/GHSA-fh74-hm69-rqjw
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-qw9x-cqr3-wc7r
     - https://github.com/opencontainers/selinux/pull/237
+    - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-52881
     - https://youtu.be/tGseJW_uBB8
     - https://youtu.be/y1PaBzxwRWQ
+    PublishedDate: '2025-11-06T21:15:42.817Z'
+    LastModifiedDate: '2025-11-06T21:15:42.817Z'
   - VulnerabilityID: CVE-2024-58251
     PkgID: ssl_client@1.37.0-r19
     PkgName: ssl_client
@@ -17076,66 +17121,11 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: containerd affected by a local privilege escalation via wide permissions on CRI directory
-    Description: |-
-      ### Impact
-
-      An overly broad default permission vulnerability was found in containerd.
-
-      - `/var/lib/containerd` was created with the permission bits 0o711, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the metadata store and the content store
-      - `/run/containerd/io.containerd.grpc.v1.cri` was created with 0o755, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the contents of Kubernetes local volumes. The contents of volumes might include setuid binaries, which could allow a local user on the host to elevate privileges on the host.
-      - `/run/containerd/io.containerd.sandbox.controller.v1.shim` was created with 0o711, while it should be created with 0o700
-
-      The directory paths may differ depending on the daemon configuration.
-      When the `temp` directory path is specified in the daemon configuration, that directory was also created with 0o711, while it should be created with 0o700.
-
-      ### Patches
-
-      This bug has been fixed in the following containerd versions:
-
-      * 2.2.0
-      * 2.1.5
-      * 2.0.7
-      * 1.7.29
-
-      Users should update to these versions to resolve the issue.
-      These updates automatically change the permissions of the existing directories.
-
-      > [!NOTE]
-      >
-      > `/run/containerd` and `/run/containerd/io.containerd.runtime.v2.task` are still created with 0o711.
-      > This is an expected behavior for supporting userns-remapped containers.
-
-      ### Workarounds
-
-      The system administrator on the host can manually chmod the directories to not 
-      have group or world accessible permisisons:
-
-      ```
-      chmod 700 /var/lib/containerd
-      chmod 700 /run/containerd/io.containerd.grpc.v1.cri
-      chmod 700 /run/containerd/io.containerd.sandbox.controller.v1.shim
-      ```
-
-      An alternative mitigation would be to run containerd in [rootless mode](https://github.com/containerd/containerd/blob/main/docs/rootless.md).
-
-      ### Credits
-
-      The containerd project would like to thank David Leadbeater for responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+    Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
+    Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
+    CweIDs:
+    - CWE-279
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -17144,8 +17134,44 @@
         V3Score: 7.3
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/blob/main/docs/rootless.md
     - https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5
     - https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25621
+    PublishedDate: '2025-11-06T19:15:40.09Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
+  - VulnerabilityID: CVE-2025-64329
+    PkgID: github.com/containerd/containerd@v1.7.27
+    PkgName: github.com/containerd/containerd
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd@v1.7.27
+      UID: 445732b90f7ffc13
+    InstalledVersion: v1.7.27
+    FixedVersion: 1.7.29
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-64329
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
+    Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-401
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df
+    - https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
+    PublishedDate: '2025-11-07T05:16:08.017Z'
+    LastModifiedDate: '2025-11-07T05:16:08.017Z'
   - VulnerabilityID: CVE-2025-54388
     PkgID: github.com/docker/docker@v28.3.2+incompatible
     PkgName: github.com/docker/docker
@@ -17321,7 +17347,8 @@
       PURL: pkg:golang/github.com/opencontainers/selinux@v1.11.0
       UID: cc18b68a2ab34c32
     InstalledVersion: v1.11.0
-    Status: affected
+    FixedVersion: 1.13.0
+    Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
@@ -17332,8 +17359,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
-    Description: A flaw was found in runc. This attack is a more sophisticated variant of CVE-2019-16884, which was a flaw that allowed an attacker to trick runc into writing the LSM process labels for a container process into a dummy tmpfs file and thus not apply the correct LSM labels to the container process. The mitigation applied for CVE-2019-16884 was fairly limited and effectively only caused runc to verify that when we write LSM labels that those labels are actual procfs files.
+    Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
+    CweIDs:
+    - CWE-61
+    - CWE-363
     VendorSeverity:
       amazon: 3
       ghsa: 3
@@ -17344,8 +17374,11 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
+    - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
+    - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://github.com/opencontainers/runc
+    - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
     - https://github.com/opencontainers/runc/commit/435cc81be6b79cdec73b4002c0dae549b2f6ae6d
     - https://github.com/opencontainers/runc/commit/44a0fcf685db051c80b8c269812bb177f5802c58
@@ -17362,15 +17395,20 @@
     - https://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://github.com/opencontainers/runc/commit/ff6fe1324663538167eca8b3d3eec61e1bd4fa51
     - https://github.com/opencontainers/runc/commit/ff94f9991bd32076c871ef0ad8bc1b763458e480
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-9493-h29p-rfm2
     - https://github.com/opencontainers/runc/security/advisories/GHSA-cgrx-mc8f-2prm
     - https://github.com/opencontainers/runc/security/advisories/GHSA-fh74-hm69-rqjw
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-qw9x-cqr3-wc7r
     - https://github.com/opencontainers/selinux/pull/237
+    - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-52881
     - https://youtu.be/tGseJW_uBB8
     - https://youtu.be/y1PaBzxwRWQ
+    PublishedDate: '2025-11-06T21:15:42.817Z'
+    LastModifiedDate: '2025-11-06T21:15:42.817Z'
   - VulnerabilityID: CVE-2025-58058
     PkgID: github.com/ulikunitz/xz@v0.5.12
     PkgName: github.com/ulikunitz/xz
@@ -17512,23 +17550,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -17639,6 +17683,78 @@
     - https://pkg.go.dev/vuln/GO-2025-4013
     PublishedDate: '2025-10-29T23:16:19.74Z'
     LastModifiedDate: '2025-11-04T22:16:33.74Z'
+  - VulnerabilityID: CVE-2025-58189
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f1435be1373e471b
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: When Conn.Handshake fails during ALPN negotiation the error contains a ...
+    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/707776
+    - https://go.dev/issue/75652
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
+    - https://pkg.go.dev/vuln/GO-2025-4008
+    PublishedDate: '2025-10-29T23:16:19.833Z'
+    LastModifiedDate: '2025-11-04T22:16:33.877Z'
+  - VulnerabilityID: CVE-2025-61723
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f1435be1373e471b
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: The processing time for parsing some invalid inputs scales non-linearl ...
+    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/709858
+    - https://go.dev/issue/75676
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
+    - https://pkg.go.dev/vuln/GO-2025-4009
+    PublishedDate: '2025-10-29T23:16:19.927Z'
+    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61724
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -17761,91 +17877,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
-  - VulnerabilityID: CVE-2025-58189
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f1435be1373e471b
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
-    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-58189
-    - https://go.dev/cl/707776
-    - https://go.dev/issue/75652
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
-    - https://pkg.go.dev/vuln/GO-2025-4008
-    - https://www.cve.org/CVERecord?id=CVE-2025-58189
-    PublishedDate: '2025-10-29T23:16:19.833Z'
-    LastModifiedDate: '2025-11-04T22:16:33.877Z'
-  - VulnerabilityID: CVE-2025-61723
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f1435be1373e471b
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
-    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-61723
-    - https://github.com/golang/go/commit/5ce8cd16f3859ec5ac4106ad8ec15d6236f4501b
-    - https://go.dev/cl/709858
-    - https://go.dev/issue/75676
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
-    - https://pkg.go.dev/vuln/GO-2025-4009
-    - https://www.cve.org/CVERecord?id=CVE-2025-61723
-    PublishedDate: '2025-10-29T23:16:19.927Z'
-    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61725
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -20293,66 +20324,11 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: containerd affected by a local privilege escalation via wide permissions on CRI directory
-    Description: |-
-      ### Impact
-
-      An overly broad default permission vulnerability was found in containerd.
-
-      - `/var/lib/containerd` was created with the permission bits 0o711, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the metadata store and the content store
-      - `/run/containerd/io.containerd.grpc.v1.cri` was created with 0o755, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the contents of Kubernetes local volumes. The contents of volumes might include setuid binaries, which could allow a local user on the host to elevate privileges on the host.
-      - `/run/containerd/io.containerd.sandbox.controller.v1.shim` was created with 0o711, while it should be created with 0o700
-
-      The directory paths may differ depending on the daemon configuration.
-      When the `temp` directory path is specified in the daemon configuration, that directory was also created with 0o711, while it should be created with 0o700.
-
-      ### Patches
-
-      This bug has been fixed in the following containerd versions:
-
-      * 2.2.0
-      * 2.1.5
-      * 2.0.7
-      * 1.7.29
-
-      Users should update to these versions to resolve the issue.
-      These updates automatically change the permissions of the existing directories.
-
-      > [!NOTE]
-      >
-      > `/run/containerd` and `/run/containerd/io.containerd.runtime.v2.task` are still created with 0o711.
-      > This is an expected behavior for supporting userns-remapped containers.
-
-      ### Workarounds
-
-      The system administrator on the host can manually chmod the directories to not 
-      have group or world accessible permisisons:
-
-      ```
-      chmod 700 /var/lib/containerd
-      chmod 700 /run/containerd/io.containerd.grpc.v1.cri
-      chmod 700 /run/containerd/io.containerd.sandbox.controller.v1.shim
-      ```
-
-      An alternative mitigation would be to run containerd in [rootless mode](https://github.com/containerd/containerd/blob/main/docs/rootless.md).
-
-      ### Credits
-
-      The containerd project would like to thank David Leadbeater for responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+    Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
+    Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
+    CweIDs:
+    - CWE-279
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -20361,8 +20337,44 @@
         V3Score: 7.3
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/blob/main/docs/rootless.md
     - https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5
     - https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25621
+    PublishedDate: '2025-11-06T19:15:40.09Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
+  - VulnerabilityID: CVE-2025-64329
+    PkgID: github.com/containerd/containerd@v1.7.27
+    PkgName: github.com/containerd/containerd
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd@v1.7.27
+      UID: 231fa7e65d008eeb
+    InstalledVersion: v1.7.27
+    FixedVersion: 1.7.29
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-64329
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
+    Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-401
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df
+    - https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
+    PublishedDate: '2025-11-07T05:16:08.017Z'
+    LastModifiedDate: '2025-11-07T05:16:08.017Z'
   - VulnerabilityID: CVE-2025-54388
     PkgID: github.com/docker/docker@v28.2.2+incompatible
     PkgName: github.com/docker/docker
@@ -20538,7 +20550,8 @@
       PURL: pkg:golang/github.com/opencontainers/selinux@v1.11.0
       UID: 943b3715e5b1c76
     InstalledVersion: v1.11.0
-    Status: affected
+    FixedVersion: 1.13.0
+    Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
@@ -20549,8 +20562,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
-    Description: A flaw was found in runc. This attack is a more sophisticated variant of CVE-2019-16884, which was a flaw that allowed an attacker to trick runc into writing the LSM process labels for a container process into a dummy tmpfs file and thus not apply the correct LSM labels to the container process. The mitigation applied for CVE-2019-16884 was fairly limited and effectively only caused runc to verify that when we write LSM labels that those labels are actual procfs files.
+    Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
+    CweIDs:
+    - CWE-61
+    - CWE-363
     VendorSeverity:
       amazon: 3
       ghsa: 3
@@ -20561,8 +20577,11 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
+    - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
+    - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://github.com/opencontainers/runc
+    - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
     - https://github.com/opencontainers/runc/commit/435cc81be6b79cdec73b4002c0dae549b2f6ae6d
     - https://github.com/opencontainers/runc/commit/44a0fcf685db051c80b8c269812bb177f5802c58
@@ -20579,15 +20598,20 @@
     - https://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://github.com/opencontainers/runc/commit/ff6fe1324663538167eca8b3d3eec61e1bd4fa51
     - https://github.com/opencontainers/runc/commit/ff94f9991bd32076c871ef0ad8bc1b763458e480
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-9493-h29p-rfm2
     - https://github.com/opencontainers/runc/security/advisories/GHSA-cgrx-mc8f-2prm
     - https://github.com/opencontainers/runc/security/advisories/GHSA-fh74-hm69-rqjw
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-qw9x-cqr3-wc7r
     - https://github.com/opencontainers/selinux/pull/237
+    - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-52881
     - https://youtu.be/tGseJW_uBB8
     - https://youtu.be/y1PaBzxwRWQ
+    PublishedDate: '2025-11-06T21:15:42.817Z'
+    LastModifiedDate: '2025-11-06T21:15:42.817Z'
   - VulnerabilityID: CVE-2025-58058
     PkgID: github.com/ulikunitz/xz@v0.5.12
     PkgName: github.com/ulikunitz/xz
@@ -20729,23 +20753,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -20856,6 +20886,78 @@
     - https://pkg.go.dev/vuln/GO-2025-4013
     PublishedDate: '2025-10-29T23:16:19.74Z'
     LastModifiedDate: '2025-11-04T22:16:33.74Z'
+  - VulnerabilityID: CVE-2025-58189
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: ebfdcee22f3690eb
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: When Conn.Handshake fails during ALPN negotiation the error contains a ...
+    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/707776
+    - https://go.dev/issue/75652
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
+    - https://pkg.go.dev/vuln/GO-2025-4008
+    PublishedDate: '2025-10-29T23:16:19.833Z'
+    LastModifiedDate: '2025-11-04T22:16:33.877Z'
+  - VulnerabilityID: CVE-2025-61723
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: ebfdcee22f3690eb
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: The processing time for parsing some invalid inputs scales non-linearl ...
+    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/709858
+    - https://go.dev/issue/75676
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
+    - https://pkg.go.dev/vuln/GO-2025-4009
+    PublishedDate: '2025-10-29T23:16:19.927Z'
+    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61724
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -20978,91 +21080,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
-  - VulnerabilityID: CVE-2025-58189
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: ebfdcee22f3690eb
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
-    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-58189
-    - https://go.dev/cl/707776
-    - https://go.dev/issue/75652
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
-    - https://pkg.go.dev/vuln/GO-2025-4008
-    - https://www.cve.org/CVERecord?id=CVE-2025-58189
-    PublishedDate: '2025-10-29T23:16:19.833Z'
-    LastModifiedDate: '2025-11-04T22:16:33.877Z'
-  - VulnerabilityID: CVE-2025-61723
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: ebfdcee22f3690eb
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
-    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-61723
-    - https://github.com/golang/go/commit/5ce8cd16f3859ec5ac4106ad8ec15d6236f4501b
-    - https://go.dev/cl/709858
-    - https://go.dev/issue/75676
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
-    - https://pkg.go.dev/vuln/GO-2025-4009
-    - https://www.cve.org/CVERecord?id=CVE-2025-61723
-    PublishedDate: '2025-10-29T23:16:19.927Z'
-    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61725
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -24940,66 +24957,11 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: containerd affected by a local privilege escalation via wide permissions on CRI directory
-    Description: |-
-      ### Impact
-
-      An overly broad default permission vulnerability was found in containerd.
-
-      - `/var/lib/containerd` was created with the permission bits 0o711, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the metadata store and the content store
-      - `/run/containerd/io.containerd.grpc.v1.cri` was created with 0o755, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the contents of Kubernetes local volumes. The contents of volumes might include setuid binaries, which could allow a local user on the host to elevate privileges on the host.
-      - `/run/containerd/io.containerd.sandbox.controller.v1.shim` was created with 0o711, while it should be created with 0o700
-
-      The directory paths may differ depending on the daemon configuration.
-      When the `temp` directory path is specified in the daemon configuration, that directory was also created with 0o711, while it should be created with 0o700.
-
-      ### Patches
-
-      This bug has been fixed in the following containerd versions:
-
-      * 2.2.0
-      * 2.1.5
-      * 2.0.7
-      * 1.7.29
-
-      Users should update to these versions to resolve the issue.
-      These updates automatically change the permissions of the existing directories.
-
-      > [!NOTE]
-      >
-      > `/run/containerd` and `/run/containerd/io.containerd.runtime.v2.task` are still created with 0o711.
-      > This is an expected behavior for supporting userns-remapped containers.
-
-      ### Workarounds
-
-      The system administrator on the host can manually chmod the directories to not 
-      have group or world accessible permisisons:
-
-      ```
-      chmod 700 /var/lib/containerd
-      chmod 700 /run/containerd/io.containerd.grpc.v1.cri
-      chmod 700 /run/containerd/io.containerd.sandbox.controller.v1.shim
-      ```
-
-      An alternative mitigation would be to run containerd in [rootless mode](https://github.com/containerd/containerd/blob/main/docs/rootless.md).
-
-      ### Credits
-
-      The containerd project would like to thank David Leadbeater for responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+    Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
+    Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
+    CweIDs:
+    - CWE-279
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -25008,8 +24970,44 @@
         V3Score: 7.3
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/blob/main/docs/rootless.md
     - https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5
     - https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25621
+    PublishedDate: '2025-11-06T19:15:40.09Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
+  - VulnerabilityID: CVE-2025-64329
+    PkgID: github.com/containerd/containerd@v1.7.27
+    PkgName: github.com/containerd/containerd
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd@v1.7.27
+      UID: 8adea8fca7870d59
+    InstalledVersion: v1.7.27
+    FixedVersion: 1.7.29
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-64329
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
+    Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-401
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df
+    - https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
+    PublishedDate: '2025-11-07T05:16:08.017Z'
+    LastModifiedDate: '2025-11-07T05:16:08.017Z'
   - VulnerabilityID: CVE-2024-25621
     PkgID: github.com/containerd/containerd/v2@v2.1.3
     PkgName: github.com/containerd/containerd/v2
@@ -25028,66 +25026,11 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
-    Title: containerd affected by a local privilege escalation via wide permissions on CRI directory
-    Description: |-
-      ### Impact
-
-      An overly broad default permission vulnerability was found in containerd.
-
-      - `/var/lib/containerd` was created with the permission bits 0o711, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the metadata store and the content store
-      - `/run/containerd/io.containerd.grpc.v1.cri` was created with 0o755, while it should be created with 0o700
-        - Allowed local users on the host to potentially access the contents of Kubernetes local volumes. The contents of volumes might include setuid binaries, which could allow a local user on the host to elevate privileges on the host.
-      - `/run/containerd/io.containerd.sandbox.controller.v1.shim` was created with 0o711, while it should be created with 0o700
-
-      The directory paths may differ depending on the daemon configuration.
-      When the `temp` directory path is specified in the daemon configuration, that directory was also created with 0o711, while it should be created with 0o700.
-
-      ### Patches
-
-      This bug has been fixed in the following containerd versions:
-
-      * 2.2.0
-      * 2.1.5
-      * 2.0.7
-      * 1.7.29
-
-      Users should update to these versions to resolve the issue.
-      These updates automatically change the permissions of the existing directories.
-
-      > [!NOTE]
-      >
-      > `/run/containerd` and `/run/containerd/io.containerd.runtime.v2.task` are still created with 0o711.
-      > This is an expected behavior for supporting userns-remapped containers.
-
-      ### Workarounds
-
-      The system administrator on the host can manually chmod the directories to not 
-      have group or world accessible permisisons:
-
-      ```
-      chmod 700 /var/lib/containerd
-      chmod 700 /run/containerd/io.containerd.grpc.v1.cri
-      chmod 700 /run/containerd/io.containerd.sandbox.controller.v1.shim
-      ```
-
-      An alternative mitigation would be to run containerd in [rootless mode](https://github.com/containerd/containerd/blob/main/docs/rootless.md).
-
-      ### Credits
-
-      The containerd project would like to thank David Leadbeater for responsibly disclosing this issue in accordance with the [containerd security policy](https://github.com/containerd/project/blob/main/SECURITY.md).
-
-      ### For more information
-
-      If you have any questions or comments about this advisory:
-
-      * Open an issue in [containerd](https://github.com/containerd/containerd/issues/new/choose)
-      * Email us at [security@containerd.io](mailto:security@containerd.io)
-
-      To report a security issue in containerd:
-
-      * [Report a new vulnerability](https://github.com/containerd/containerd/security/advisories/new)
+    Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
+    Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
+    CweIDs:
+    - CWE-279
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -25096,8 +25039,44 @@
         V3Score: 7.3
     References:
     - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/blob/main/docs/rootless.md
     - https://github.com/containerd/containerd/commit/7c59e8e9e970d38061a77b586b23655c352bfec5
     - https://github.com/containerd/containerd/security/advisories/GHSA-pwhc-rpq9-4c8w
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-25621
+    PublishedDate: '2025-11-06T19:15:40.09Z'
+    LastModifiedDate: '2025-11-06T19:45:09.883Z'
+  - VulnerabilityID: CVE-2025-64329
+    PkgID: github.com/containerd/containerd/v2@v2.1.3
+    PkgName: github.com/containerd/containerd/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/containerd/containerd/v2@v2.1.3
+      UID: bee2c1971946206b
+    InstalledVersion: v2.1.3
+    FixedVersion: 2.0.7, 2.1.5, 2.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-64329
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
+    Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-401
+    VendorSeverity:
+      ghsa: 2
+    References:
+    - https://github.com/containerd/containerd
+    - https://github.com/containerd/containerd/commit/083b53cd6f19b5de7717b0ce92c11bdf95e612df
+    - https://github.com/containerd/containerd/security/advisories/GHSA-m6hq-p25p-ffr2
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64329
+    PublishedDate: '2025-11-07T05:16:08.017Z'
+    LastModifiedDate: '2025-11-07T05:16:08.017Z'
   - VulnerabilityID: CVE-2025-54388
     PkgID: github.com/docker/docker@v28.2.2+incompatible
     PkgName: github.com/docker/docker
@@ -25231,7 +25210,8 @@
       PURL: pkg:golang/github.com/opencontainers/selinux@v1.12.0
       UID: 24cc0595a15368b9
     InstalledVersion: v1.12.0
-    Status: affected
+    FixedVersion: 1.13.0
+    Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
@@ -25242,8 +25222,11 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
-    Description: A flaw was found in runc. This attack is a more sophisticated variant of CVE-2019-16884, which was a flaw that allowed an attacker to trick runc into writing the LSM process labels for a container process into a dummy tmpfs file and thus not apply the correct LSM labels to the container process. The mitigation applied for CVE-2019-16884 was fairly limited and effectively only caused runc to verify that when we write LSM labels that those labels are actual procfs files.
+    Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
+    CweIDs:
+    - CWE-61
+    - CWE-363
     VendorSeverity:
       amazon: 3
       ghsa: 3
@@ -25254,8 +25237,11 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
+    - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
+    - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://github.com/opencontainers/runc
+    - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
     - https://github.com/opencontainers/runc/commit/435cc81be6b79cdec73b4002c0dae549b2f6ae6d
     - https://github.com/opencontainers/runc/commit/44a0fcf685db051c80b8c269812bb177f5802c58
@@ -25272,15 +25258,20 @@
     - https://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
     - https://github.com/opencontainers/runc/commit/ff6fe1324663538167eca8b3d3eec61e1bd4fa51
     - https://github.com/opencontainers/runc/commit/ff94f9991bd32076c871ef0ad8bc1b763458e480
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-9493-h29p-rfm2
     - https://github.com/opencontainers/runc/security/advisories/GHSA-cgrx-mc8f-2prm
     - https://github.com/opencontainers/runc/security/advisories/GHSA-fh74-hm69-rqjw
+    - https://github.com/opencontainers/runc/security/advisories/GHSA-qw9x-cqr3-wc7r
     - https://github.com/opencontainers/selinux/pull/237
+    - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-52881
     - https://youtu.be/tGseJW_uBB8
     - https://youtu.be/y1PaBzxwRWQ
+    PublishedDate: '2025-11-06T21:15:42.817Z'
+    LastModifiedDate: '2025-11-06T21:15:42.817Z'
   - VulnerabilityID: CVE-2025-58058
     PkgID: github.com/ulikunitz/xz@v0.5.12
     PkgName: github.com/ulikunitz/xz
@@ -25567,23 +25558,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -25694,6 +25691,78 @@
     - https://pkg.go.dev/vuln/GO-2025-4013
     PublishedDate: '2025-10-29T23:16:19.74Z'
     LastModifiedDate: '2025-11-04T22:16:33.74Z'
+  - VulnerabilityID: CVE-2025-58189
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 2bd9acee40f6eed
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: When Conn.Handshake fails during ALPN negotiation the error contains a ...
+    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/707776
+    - https://go.dev/issue/75652
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
+    - https://pkg.go.dev/vuln/GO-2025-4008
+    PublishedDate: '2025-10-29T23:16:19.833Z'
+    LastModifiedDate: '2025-11-04T22:16:33.877Z'
+  - VulnerabilityID: CVE-2025-61723
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 2bd9acee40f6eed
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: The processing time for parsing some invalid inputs scales non-linearl ...
+    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/709858
+    - https://go.dev/issue/75676
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
+    - https://pkg.go.dev/vuln/GO-2025-4009
+    PublishedDate: '2025-10-29T23:16:19.927Z'
+    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61724
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -25816,91 +25885,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
-  - VulnerabilityID: CVE-2025-58189
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 2bd9acee40f6eed
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
-    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-58189
-    - https://go.dev/cl/707776
-    - https://go.dev/issue/75652
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
-    - https://pkg.go.dev/vuln/GO-2025-4008
-    - https://www.cve.org/CVERecord?id=CVE-2025-58189
-    PublishedDate: '2025-10-29T23:16:19.833Z'
-    LastModifiedDate: '2025-11-04T22:16:33.877Z'
-  - VulnerabilityID: CVE-2025-61723
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 2bd9acee40f6eed
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
-    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-61723
-    - https://github.com/golang/go/commit/5ce8cd16f3859ec5ac4106ad8ec15d6236f4501b
-    - https://go.dev/cl/709858
-    - https://go.dev/issue/75676
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
-    - https://pkg.go.dev/vuln/GO-2025-4009
-    - https://www.cve.org/CVERecord?id=CVE-2025-61723
-    PublishedDate: '2025-10-29T23:16:19.927Z'
-    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61725
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -26073,23 +26057,29 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Title: tar.Reader does not set a maximum size on the number of sparse region  ...
+    Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
       bitnami: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
         V3Score: 4.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58183
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
+    - https://www.cve.org/CVERecord?id=CVE-2025-58183
     PublishedDate: '2025-10-29T23:16:19.357Z'
     LastModifiedDate: '2025-11-04T22:16:33.2Z'
   - VulnerabilityID: CVE-2025-58186
@@ -26200,6 +26190,78 @@
     - https://pkg.go.dev/vuln/GO-2025-4013
     PublishedDate: '2025-10-29T23:16:19.74Z'
     LastModifiedDate: '2025-11-04T22:16:33.74Z'
+  - VulnerabilityID: CVE-2025-58189
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: 7927e62558d558ff
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: When Conn.Handshake fails during ALPN negotiation the error contains a ...
+    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/707776
+    - https://go.dev/issue/75652
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
+    - https://pkg.go.dev/vuln/GO-2025-4008
+    PublishedDate: '2025-10-29T23:16:19.833Z'
+    LastModifiedDate: '2025-11-04T22:16:33.877Z'
+  - VulnerabilityID: CVE-2025-61723
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: 7927e62558d558ff
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: The processing time for parsing some invalid inputs scales non-linearl ...
+    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://go.dev/cl/709858
+    - https://go.dev/issue/75676
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
+    - https://pkg.go.dev/vuln/GO-2025-4009
+    PublishedDate: '2025-10-29T23:16:19.927Z'
+    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61724
     PkgID: stdlib@v1.24.5
     PkgName: stdlib
@@ -26322,91 +26384,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
-  - VulnerabilityID: CVE-2025-58189
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: 7927e62558d558ff
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58189
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
-    Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-58189
-    - https://go.dev/cl/707776
-    - https://go.dev/issue/75652
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58189
-    - https://pkg.go.dev/vuln/GO-2025-4008
-    - https://www.cve.org/CVERecord?id=CVE-2025-58189
-    PublishedDate: '2025-10-29T23:16:19.833Z'
-    LastModifiedDate: '2025-11-04T22:16:33.877Z'
-  - VulnerabilityID: CVE-2025-61723
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: 7927e62558d558ff
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61723
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
-    Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
-    Severity: MEDIUM
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-      redhat: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/security/cve/CVE-2025-61723
-    - https://github.com/golang/go/commit/5ce8cd16f3859ec5ac4106ad8ec15d6236f4501b
-    - https://go.dev/cl/709858
-    - https://go.dev/issue/75676
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61723
-    - https://pkg.go.dev/vuln/GO-2025-4009
-    - https://www.cve.org/CVERecord?id=CVE-2025-61723
-    PublishedDate: '2025-10-29T23:16:19.927Z'
-    LastModifiedDate: '2025-11-04T22:16:36.42Z'
   - VulnerabilityID: CVE-2025-61725
     PkgID: stdlib@v1.24.5
     PkgName: stdlib
