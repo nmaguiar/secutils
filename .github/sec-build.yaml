@@ -10349,7 +10349,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-10966
     - https://www.cve.org/CVERecord?id=CVE-2025-10966
     PublishedDate: '2025-11-07T08:15:39.617Z'
-    LastModifiedDate: '2025-11-07T08:15:39.617Z'
+    LastModifiedDate: '2025-11-10T21:15:35.357Z'
   - VulnerabilityID: CVE-2025-9086
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -10387,6 +10387,7 @@
       it on an insecure host should not be okay.
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 1
       photon: 3
       redhat: 2
       ubuntu: 1
@@ -10885,7 +10886,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-10966
     - https://www.cve.org/CVERecord?id=CVE-2025-10966
     PublishedDate: '2025-11-07T08:15:39.617Z'
-    LastModifiedDate: '2025-11-07T08:15:39.617Z'
+    LastModifiedDate: '2025-11-10T21:15:35.357Z'
   - VulnerabilityID: CVE-2025-9086
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -10923,6 +10924,7 @@
       it on an insecure host should not be okay.
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 1
       photon: 3
       redhat: 2
       ubuntu: 1
@@ -10964,6 +10966,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 2
       cbl-mariner: 2
@@ -10976,7 +10979,10 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/16/2
+    - https://access.redhat.com/errata/RHSA-2025:19403
     - https://access.redhat.com/security/cve/CVE-2025-59375
+    - https://bugzilla.redhat.com/2395108
+    - https://errata.almalinux.org/10/ALSA-2025-19403.html
     - https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74
     - https://github.com/libexpat/libexpat/blob/R_2_7_2/expat/Changes
     - https://github.com/libexpat/libexpat/issues/1018
@@ -11716,6 +11722,7 @@
     - CWE-61
     - CWE-363
     VendorSeverity:
+      alma: 3
       amazon: 3
       ghsa: 3
       oracle-oval: 3
@@ -11726,7 +11733,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
+    - https://access.redhat.com/errata/RHSA-2025:19927
     - https://access.redhat.com/security/cve/CVE-2025-31133
+    - https://bugzilla.redhat.com/2404705
+    - https://bugzilla.redhat.com/2404708
+    - https://bugzilla.redhat.com/2404715
+    - https://errata.almalinux.org/9/ALSA-2025-19927.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/commit/1a30a8f3d921acbbb6a4bb7e99da2c05f8d48522
     - https://github.com/opencontainers/runc/commit/5d7b2424072449872d1cd0c937f2ca25f418eb66
@@ -11764,6 +11776,7 @@
     - CWE-61
     - CWE-363
     VendorSeverity:
+      alma: 3
       amazon: 3
       ghsa: 3
       oracle-oval: 3
@@ -11774,7 +11787,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
+    - https://access.redhat.com/errata/RHSA-2025:19927
     - https://access.redhat.com/security/cve/CVE-2025-52565
+    - https://bugzilla.redhat.com/2404705
+    - https://bugzilla.redhat.com/2404708
+    - https://bugzilla.redhat.com/2404715
+    - https://errata.almalinux.org/9/ALSA-2025-19927.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/commit/01de9d65dc72f67b256ef03f9bfb795a2bf143b4
     - https://github.com/opencontainers/runc/commit/398955bccb7f20565c224a3064d331c19e422398
@@ -11816,6 +11834,7 @@
     - CWE-61
     - CWE-363
     VendorSeverity:
+      alma: 3
       amazon: 3
       ghsa: 3
       oracle-oval: 3
@@ -11828,7 +11847,12 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
+    - https://access.redhat.com/errata/RHSA-2025:19927
     - https://access.redhat.com/security/cve/CVE-2025-52881
+    - https://bugzilla.redhat.com/2404705
+    - https://bugzilla.redhat.com/2404708
+    - https://bugzilla.redhat.com/2404715
+    - https://errata.almalinux.org/9/ALSA-2025-19927.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -17859,6 +17883,7 @@
     - CWE-61
     - CWE-363
     VendorSeverity:
+      alma: 3
       amazon: 3
       ghsa: 3
       oracle-oval: 3
@@ -17871,7 +17896,12 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
+    - https://access.redhat.com/errata/RHSA-2025:19927
     - https://access.redhat.com/security/cve/CVE-2025-52881
+    - https://bugzilla.redhat.com/2404705
+    - https://bugzilla.redhat.com/2404708
+    - https://bugzilla.redhat.com/2404715
+    - https://errata.almalinux.org/9/ALSA-2025-19927.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -21078,6 +21108,7 @@
     - CWE-61
     - CWE-363
     VendorSeverity:
+      alma: 3
       amazon: 3
       ghsa: 3
       oracle-oval: 3
@@ -21090,7 +21121,12 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
+    - https://access.redhat.com/errata/RHSA-2025:19927
     - https://access.redhat.com/security/cve/CVE-2025-52881
+    - https://bugzilla.redhat.com/2404705
+    - https://bugzilla.redhat.com/2404708
+    - https://bugzilla.redhat.com/2404715
+    - https://errata.almalinux.org/9/ALSA-2025-19927.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -25754,6 +25790,7 @@
     - CWE-61
     - CWE-363
     VendorSeverity:
+      alma: 3
       amazon: 3
       ghsa: 3
       oracle-oval: 3
@@ -25766,7 +25803,12 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
+    - https://access.redhat.com/errata/RHSA-2025:19927
     - https://access.redhat.com/security/cve/CVE-2025-52881
+    - https://bugzilla.redhat.com/2404705
+    - https://bugzilla.redhat.com/2404708
+    - https://bugzilla.redhat.com/2404715
+    - https://errata.almalinux.org/9/ALSA-2025-19927.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
