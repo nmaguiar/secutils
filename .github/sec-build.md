@@ -13972,7 +13972,7 @@
 │                       │      │                           ╰ V3Score : 5.9 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53057 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/8/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53057.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14038,7 +14038,7 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53066 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/8/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53066.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14101,7 +14101,7 @@
 │                       │      │                           ╰ V3Score : 3.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61748 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/8/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-61748.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
@@ -14163,7 +14163,7 @@
 │                       │      │                           ╰ V3Score : 5.9 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53057 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/8/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53057.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14229,7 +14229,7 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53066 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/8/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53066.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14292,7 +14292,7 @@
 │                       │      │                           ╰ V3Score : 3.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61748 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/8/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-61748.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
@@ -16535,25 +16535,26 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9318 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
-│                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
-│                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
-│                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
-│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
+│                       │     │                  ├ [3] : https://bugzilla.redhat.com/1767483 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2368956 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2025-9318.html 
+│                       │     │                  ├ [6] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
+│                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils 
+│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/28a
 │                       │     │                  │       d955a1613ed5885870cc7da52093c1ce739dc 
-│                       │     │                  ├ [8] : https://github.com/apache/commons-beanutils/commit/bd2
+│                       │     │                  ├ [9] : https://github.com/apache/commons-beanutils/commit/bd2
 │                       │     │                  │       0740da25b69552ddef8523beec0837297eaf9 
-│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-48734.html 
-│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
-│                       │     │                  ├ [11]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
+│                       │     │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-48734.html 
+│                       │     │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-9318.html 
+│                       │     │                  ├ [12]: https://lists.apache.org/thread/s0hb3jkfj5f3ryx6c57zqt
 │                       │     │                  │       fohb0of1g9 
-│                       │     │                  ├ [12]: https://lists.debian.org/debian-lts-announce/2025/06/m
+│                       │     │                  ├ [13]: https://lists.debian.org/debian-lts-announce/2025/06/m
 │                       │     │                  │       sg00027.html 
-│                       │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
-│                       │     │                  ├ [14]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
-│                       │     │                  ╰ [15]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
+│                       │     │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-48734 
+│                       │     │                  ├ [15]: https://www.cve.org/CVERecord?id=CVE-2025-48734 
+│                       │     │                  ╰ [16]: https://www.openwall.com/lists/oss-security/2025/05/28/6 
 │                       │     ├ PublishedDate   : 2025-05-28T14:15:34.07Z 
 │                       │     ╰ LastModifiedDate: 2025-11-03T20:19:07.317Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-48924 
@@ -20695,7 +20696,8 @@
 │                       │      │                    containerd in rootless mode. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      │                  ╰ ghsa       : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -20739,7 +20741,8 @@
 │                       │      │                   resources. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
-│                       │      ├ VendorSeverity   ─ ghsa: 2 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │      │                  ╰ ghsa       : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
@@ -21409,6 +21412,7 @@
 │                       │      │                   binaries listed in the PATH being unexpectedly returned. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ╰ redhat     : 2 
@@ -24219,7 +24223,8 @@
 │                       │      │                    containerd in rootless mode. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      │                  ╰ ghsa       : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -24263,7 +24268,8 @@
 │                       │      │                   resources. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
-│                       │      ├ VendorSeverity   ─ ghsa: 2 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │      │                  ╰ ghsa       : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
@@ -24933,6 +24939,7 @@
 │                       │      │                   binaries listed in the PATH being unexpectedly returned. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ╰ redhat     : 2 
@@ -29259,7 +29266,8 @@
 │                       │      │                    containerd in rootless mode. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      │                  ╰ ghsa       : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -29303,7 +29311,8 @@
 │                       │      │                   resources. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
-│                       │      ├ VendorSeverity   ─ ghsa: 2 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │      │                  ╰ ghsa       : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
@@ -29347,7 +29356,8 @@
 │                       │      │                    containerd in rootless mode. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
+│                       │      │                  ╰ ghsa       : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -29391,7 +29401,8 @@
 │                       │      │                   resources. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
-│                       │      ├ VendorSeverity   ─ ghsa: 2 
+│                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │      │                  ╰ ghsa       : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
@@ -30182,6 +30193,7 @@
 │                       │      │                   binaries listed in the PATH being unexpectedly returned. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ╰ redhat     : 2 
@@ -30723,6 +30735,7 @@
                         │      │                   binaries listed in the PATH being unexpectedly returned. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ VendorSeverity   ╭ amazon     : 3 
+                        │      │                  ├ azure      : 3 
                         │      │                  ├ bitnami    : 2 
                         │      │                  ├ cbl-mariner: 2 
                         │      │                  ╰ redhat     : 2 
