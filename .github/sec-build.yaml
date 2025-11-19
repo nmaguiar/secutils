@@ -11228,7 +11228,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53057
-    - https://errata.almalinux.org/9/ALSA-2025-18824.html
+    - https://errata.almalinux.org/8/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53057.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11274,7 +11274,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53066
-    - https://errata.almalinux.org/9/ALSA-2025-18824.html
+    - https://errata.almalinux.org/8/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53066.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11319,7 +11319,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-61748
-    - https://errata.almalinux.org/9/ALSA-2025-18824.html
+    - https://errata.almalinux.org/8/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-61748.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61748
@@ -11363,7 +11363,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53057
-    - https://errata.almalinux.org/9/ALSA-2025-18824.html
+    - https://errata.almalinux.org/8/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53057.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11409,7 +11409,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53066
-    - https://errata.almalinux.org/9/ALSA-2025-18824.html
+    - https://errata.almalinux.org/8/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53066.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11454,7 +11454,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-61748
-    - https://errata.almalinux.org/9/ALSA-2025-18824.html
+    - https://errata.almalinux.org/8/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-61748.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61748
@@ -13524,10 +13524,11 @@
         V3Score: 8.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/28/6
-    - https://access.redhat.com/errata/RHSA-2025:9114
+    - https://access.redhat.com/errata/RHSA-2025:9318
     - https://access.redhat.com/security/cve/CVE-2025-48734
+    - https://bugzilla.redhat.com/1767483
     - https://bugzilla.redhat.com/2368956
-    - https://errata.almalinux.org/9/ALSA-2025-9114.html
+    - https://errata.almalinux.org/8/ALSA-2025-9318.html
     - https://github.com/advisories/GHSA-wxr5-93ph-8wr9
     - https://github.com/apache/commons-beanutils
     - https://github.com/apache/commons-beanutils/commit/28ad955a1613ed5885870cc7da52093c1ce739dc
@@ -17489,6 +17490,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -17526,6 +17528,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      cbl-mariner: 2
       ghsa: 2
     References:
     - https://github.com/containerd/containerd
@@ -18043,6 +18046,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 3
+      azure: 3
       bitnami: 2
       cbl-mariner: 2
       redhat: 2
@@ -20729,6 +20733,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -20766,6 +20771,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      cbl-mariner: 2
       ghsa: 2
     References:
     - https://github.com/containerd/containerd
@@ -21283,6 +21289,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 3
+      azure: 3
       bitnami: 2
       cbl-mariner: 2
       redhat: 2
@@ -25399,6 +25406,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -25436,6 +25444,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      cbl-mariner: 2
       ghsa: 2
     References:
     - https://github.com/containerd/containerd
@@ -25468,6 +25477,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      cbl-mariner: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -25505,6 +25515,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      cbl-mariner: 2
       ghsa: 2
     References:
     - https://github.com/containerd/containerd
@@ -26125,6 +26136,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 3
+      azure: 3
       bitnami: 2
       cbl-mariner: 2
       redhat: 2
@@ -26649,6 +26661,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 3
+      azure: 3
       bitnami: 2
       cbl-mariner: 2
       redhat: 2
