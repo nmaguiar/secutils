@@ -12891,14 +12891,15 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/09/10/2 
 │                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/09/10/3 
-│                       │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-10148 
-│                       │      │                  ├ [3]: https://curl.se/docs/CVE-2025-10148.html 
-│                       │      │                  ├ [4]: https://curl.se/docs/CVE-2025-10148.json 
-│                       │      │                  ├ [5]: https://hackerone.com/reports/3330839 
-│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
+│                       │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/09/10/4 
+│                       │      │                  ├ [3]: https://access.redhat.com/security/cve/CVE-2025-10148 
+│                       │      │                  ├ [4]: https://curl.se/docs/CVE-2025-10148.html 
+│                       │      │                  ├ [5]: https://curl.se/docs/CVE-2025-10148.json 
+│                       │      │                  ├ [6]: https://hackerone.com/reports/3330839 
+│                       │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:05.137Z 
+│                       │      ╰ LastModifiedDate: 2025-11-18T20:15:45.423Z 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2025-10966 
 │                       │      ├ PkgID           : curl@8.15.0-r0 
 │                       │      ├ PkgName         : curl 
@@ -13524,14 +13525,15 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/09/10/2 
 │                       │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/09/10/3 
-│                       │      │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2025-10148 
-│                       │      │                  ├ [3]: https://curl.se/docs/CVE-2025-10148.html 
-│                       │      │                  ├ [4]: https://curl.se/docs/CVE-2025-10148.json 
-│                       │      │                  ├ [5]: https://hackerone.com/reports/3330839 
-│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
+│                       │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/09/10/4 
+│                       │      │                  ├ [3]: https://access.redhat.com/security/cve/CVE-2025-10148 
+│                       │      │                  ├ [4]: https://curl.se/docs/CVE-2025-10148.html 
+│                       │      │                  ├ [5]: https://curl.se/docs/CVE-2025-10148.json 
+│                       │      │                  ├ [6]: https://hackerone.com/reports/3330839 
+│                       │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2025-10148 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
-│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:05.137Z 
+│                       │      ╰ LastModifiedDate: 2025-11-18T20:15:45.423Z 
 │                       ├ [13] ╭ VulnerabilityID : CVE-2025-10966 
 │                       │      ├ PkgID           : libcurl@8.15.0-r0 
 │                       │      ├ PkgName         : libcurl 
@@ -14646,7 +14648,7 @@
 │                       │      │                  ├ [11]: https://github.com/opencontainers/runc/security/advis
 │                       │      │                  │       ories/GHSA-9493-h29p-rfm2 
 │                       │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-31133.html 
-│                       │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2025-19927.html 
+│                       │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2025-21232.html 
 │                       │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2025-31133 
 │                       │      │                  ├ [15]: https://ubuntu.com/security/notices/USN-7851-1 
 │                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-31133 
@@ -14730,7 +14732,7 @@
 │                       │      │                  ├ [15]: https://github.com/opencontainers/runc/security/advis
 │                       │      │                  │       ories/GHSA-qw9x-cqr3-wc7r 
 │                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2025-52565.html 
-│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-19927.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2025-21232.html 
 │                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2025-52565 
 │                       │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-7851-1 
 │                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-52565 
@@ -14844,7 +14846,7 @@
 │                       │      │                  ├ [31]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-19927.html 
+│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-21232.html 
 │                       │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [35]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
@@ -17530,9 +17532,11 @@
 │                       │     │                  │      0251107 
 │                       │     │                  ├ [3]: https://github.com/pdfminer/pdfminer.six/security/advis
 │                       │     │                  │      ories/GHSA-wf5f-4jwr-ppcp 
-│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64512 
+│                       │     │                  ├ [4]: https://lists.debian.org/debian-lts-announce/2025/11/ms
+│                       │     │                  │      g00017.html 
+│                       │     │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-64512 
 │                       │     ├ PublishedDate   : 2025-11-10T22:15:40.067Z 
-│                       │     ╰ LastModifiedDate: 2025-11-12T21:15:54.273Z 
+│                       │     ╰ LastModifiedDate: 2025-11-19T01:15:56.897Z 
 │                       ├ [1] ╭ VulnerabilityID : GHSA-f83h-ghpp-7wcc 
 │                       │     ├ PkgName         : pdfminer.six 
 │                       │     ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/pdfminer_si
@@ -21120,7 +21124,7 @@
 │                       │      │                  ├ [31]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-19927.html 
+│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-21232.html 
 │                       │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [35]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
@@ -24647,7 +24651,7 @@
 │                       │      │                  ├ [31]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-19927.html 
+│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-21232.html 
 │                       │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [35]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
@@ -29737,7 +29741,7 @@
 │                       │      │                  ├ [31]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [32]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-19927.html 
+│                       │      │                  ├ [33]: https://linux.oracle.com/errata/ELSA-2025-21232.html 
 │                       │      │                  ├ [34]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [35]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
