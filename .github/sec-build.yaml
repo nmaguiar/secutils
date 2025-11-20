@@ -10301,6 +10301,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/10/2
     - http://www.openwall.com/lists/oss-security/2025/09/10/3
+    - http://www.openwall.com/lists/oss-security/2025/09/10/4
     - https://access.redhat.com/security/cve/CVE-2025-10148
     - https://curl.se/docs/CVE-2025-10148.html
     - https://curl.se/docs/CVE-2025-10148.json
@@ -10308,7 +10309,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-10148
     - https://www.cve.org/CVERecord?id=CVE-2025-10148
     PublishedDate: '2025-09-12T06:15:40.02Z'
-    LastModifiedDate: '2025-11-04T22:16:05.137Z'
+    LastModifiedDate: '2025-11-18T20:15:45.423Z'
   - VulnerabilityID: CVE-2025-10966
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -10838,6 +10839,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/10/2
     - http://www.openwall.com/lists/oss-security/2025/09/10/3
+    - http://www.openwall.com/lists/oss-security/2025/09/10/4
     - https://access.redhat.com/security/cve/CVE-2025-10148
     - https://curl.se/docs/CVE-2025-10148.html
     - https://curl.se/docs/CVE-2025-10148.json
@@ -10845,7 +10847,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-10148
     - https://www.cve.org/CVERecord?id=CVE-2025-10148
     PublishedDate: '2025-09-12T06:15:40.02Z'
-    LastModifiedDate: '2025-11-04T22:16:05.137Z'
+    LastModifiedDate: '2025-11-18T20:15:45.423Z'
   - VulnerabilityID: CVE-2025-10966
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -11756,7 +11758,7 @@
     - https://github.com/opencontainers/runc/commit/db19bbed5348847da433faa9d69e9f90192bfa64
     - https://github.com/opencontainers/runc/security/advisories/GHSA-9493-h29p-rfm2
     - https://linux.oracle.com/cve/CVE-2025-31133.html
-    - https://linux.oracle.com/errata/ELSA-2025-19927.html
+    - https://linux.oracle.com/errata/ELSA-2025-21232.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-31133
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-31133
@@ -11816,7 +11818,7 @@
     - https://github.com/opencontainers/runc/commit/ff94f9991bd32076c871ef0ad8bc1b763458e480
     - https://github.com/opencontainers/runc/security/advisories/GHSA-qw9x-cqr3-wc7r
     - https://linux.oracle.com/cve/CVE-2025-52565.html
-    - https://linux.oracle.com/errata/ELSA-2025-19927.html
+    - https://linux.oracle.com/errata/ELSA-2025-21232.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52565
     - https://ubuntu.com/security/notices/USN-7851-1
     - https://www.cve.org/CVERecord?id=CVE-2025-52565
@@ -11893,7 +11895,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-19927.html
+    - https://linux.oracle.com/errata/ELSA-2025-21232.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
@@ -14487,9 +14489,10 @@
     - https://github.com/pdfminer/pdfminer.six/commit/b808ee05dd7f0c8ea8ec34bdf394d40e63501086
     - https://github.com/pdfminer/pdfminer.six/releases/tag/20251107
     - https://github.com/pdfminer/pdfminer.six/security/advisories/GHSA-wf5f-4jwr-ppcp
+    - https://lists.debian.org/debian-lts-announce/2025/11/msg00017.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-64512
     PublishedDate: '2025-11-10T22:15:40.067Z'
-    LastModifiedDate: '2025-11-12T21:15:54.273Z'
+    LastModifiedDate: '2025-11-19T01:15:56.897Z'
   - VulnerabilityID: GHSA-f83h-ghpp-7wcc
     PkgName: pdfminer.six
     PkgPath: opt/scancode-toolkit/lib/python3.12/site-packages/pdfminer_six-20250506.dist-info/METADATA
@@ -17777,7 +17780,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-19927.html
+    - https://linux.oracle.com/errata/ELSA-2025-21232.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
@@ -21020,7 +21023,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-19927.html
+    - https://linux.oracle.com/errata/ELSA-2025-21232.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
@@ -25722,7 +25725,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-19927.html
+    - https://linux.oracle.com/errata/ELSA-2025-21232.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
