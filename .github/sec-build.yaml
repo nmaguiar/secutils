@@ -11230,7 +11230,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53057
-    - https://errata.almalinux.org/8/ALSA-2025-18824.html
+    - https://errata.almalinux.org/10/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53057.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11276,7 +11276,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53066
-    - https://errata.almalinux.org/8/ALSA-2025-18824.html
+    - https://errata.almalinux.org/10/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53066.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11321,7 +11321,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-61748
-    - https://errata.almalinux.org/8/ALSA-2025-18824.html
+    - https://errata.almalinux.org/10/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-61748.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61748
@@ -11365,7 +11365,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53057
-    - https://errata.almalinux.org/8/ALSA-2025-18824.html
+    - https://errata.almalinux.org/10/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53057.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11411,7 +11411,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53066
-    - https://errata.almalinux.org/8/ALSA-2025-18824.html
+    - https://errata.almalinux.org/10/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53066.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
@@ -11456,7 +11456,7 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-61748
-    - https://errata.almalinux.org/8/ALSA-2025-18824.html
+    - https://errata.almalinux.org/10/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-61748.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61748
@@ -11745,12 +11745,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
-    - https://access.redhat.com/errata/RHSA-2025:19927
+    - https://access.redhat.com/errata/RHSA-2025:20957
     - https://access.redhat.com/security/cve/CVE-2025-31133
     - https://bugzilla.redhat.com/2404705
     - https://bugzilla.redhat.com/2404708
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-19927.html
+    - https://errata.almalinux.org/9/ALSA-2025-20957.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/commit/1a30a8f3d921acbbb6a4bb7e99da2c05f8d48522
     - https://github.com/opencontainers/runc/commit/5d7b2424072449872d1cd0c937f2ca25f418eb66
@@ -11801,12 +11801,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
         V3Score: 8.2
     References:
-    - https://access.redhat.com/errata/RHSA-2025:19927
+    - https://access.redhat.com/errata/RHSA-2025:20957
     - https://access.redhat.com/security/cve/CVE-2025-52565
     - https://bugzilla.redhat.com/2404705
     - https://bugzilla.redhat.com/2404708
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-19927.html
+    - https://errata.almalinux.org/9/ALSA-2025-20957.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/commit/01de9d65dc72f67b256ef03f9bfb795a2bf143b4
     - https://github.com/opencontainers/runc/commit/398955bccb7f20565c224a3064d331c19e422398
@@ -11864,12 +11864,10 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:19927
+    - https://access.redhat.com/errata/RHSA-2025:21702
     - https://access.redhat.com/security/cve/CVE-2025-52881
-    - https://bugzilla.redhat.com/2404705
-    - https://bugzilla.redhat.com/2404708
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-19927.html
+    - https://errata.almalinux.org/9/ALSA-2025-21702.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -13526,11 +13524,10 @@
         V3Score: 8.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/28/6
-    - https://access.redhat.com/errata/RHSA-2025:9318
+    - https://access.redhat.com/errata/RHSA-2025:9166
     - https://access.redhat.com/security/cve/CVE-2025-48734
-    - https://bugzilla.redhat.com/1767483
     - https://bugzilla.redhat.com/2368956
-    - https://errata.almalinux.org/8/ALSA-2025-9318.html
+    - https://errata.almalinux.org/10/ALSA-2025-9166.html
     - https://github.com/advisories/GHSA-wxr5-93ph-8wr9
     - https://github.com/apache/commons-beanutils
     - https://github.com/apache/commons-beanutils/commit/28ad955a1613ed5885870cc7da52093c1ce739dc
@@ -17749,12 +17746,10 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:19927
+    - https://access.redhat.com/errata/RHSA-2025:21702
     - https://access.redhat.com/security/cve/CVE-2025-52881
-    - https://bugzilla.redhat.com/2404705
-    - https://bugzilla.redhat.com/2404708
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-19927.html
+    - https://errata.almalinux.org/9/ALSA-2025-21702.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -17833,6 +17828,80 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58058
     PublishedDate: '2025-08-28T22:15:32.577Z'
     LastModifiedDate: '2025-08-29T16:24:29.73Z'
+  - VulnerabilityID: CVE-2025-47914
+    PkgID: golang.org/x/crypto@v0.40.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.40.0
+      UID: 3bbb9e38b6e185b3
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47914
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH Agent servers do not validate the size of messages when processing ...
+    Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721960
+    - https://go.dev/issue/76364
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
+    - https://pkg.go.dev/vuln/GO-2025-4135
+    PublishedDate: '2025-11-19T21:15:50.517Z'
+    LastModifiedDate: '2025-11-19T21:15:50.517Z'
+  - VulnerabilityID: CVE-2025-58181
+    PkgID: golang.org/x/crypto@v0.40.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.40.0
+      UID: 3bbb9e38b6e185b3
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58181
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
+    Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721961
+    - https://go.dev/issue/76363
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
+    - https://pkg.go.dev/vuln/GO-2025-4134
+    PublishedDate: '2025-11-19T21:15:50.85Z'
+    LastModifiedDate: '2025-11-19T21:15:50.85Z'
   - VulnerabilityID: CVE-2025-47907
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -20992,12 +21061,10 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:19927
+    - https://access.redhat.com/errata/RHSA-2025:21702
     - https://access.redhat.com/security/cve/CVE-2025-52881
-    - https://bugzilla.redhat.com/2404705
-    - https://bugzilla.redhat.com/2404708
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-19927.html
+    - https://errata.almalinux.org/9/ALSA-2025-21702.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -21076,6 +21143,80 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58058
     PublishedDate: '2025-08-28T22:15:32.577Z'
     LastModifiedDate: '2025-08-29T16:24:29.73Z'
+  - VulnerabilityID: CVE-2025-47914
+    PkgID: golang.org/x/crypto@v0.39.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.39.0
+      UID: 8287419f99c1bfbe
+    InstalledVersion: v0.39.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47914
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH Agent servers do not validate the size of messages when processing ...
+    Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721960
+    - https://go.dev/issue/76364
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
+    - https://pkg.go.dev/vuln/GO-2025-4135
+    PublishedDate: '2025-11-19T21:15:50.517Z'
+    LastModifiedDate: '2025-11-19T21:15:50.517Z'
+  - VulnerabilityID: CVE-2025-58181
+    PkgID: golang.org/x/crypto@v0.39.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.39.0
+      UID: 8287419f99c1bfbe
+    InstalledVersion: v0.39.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58181
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
+    Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721961
+    - https://go.dev/issue/76363
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
+    - https://pkg.go.dev/vuln/GO-2025-4134
+    PublishedDate: '2025-11-19T21:15:50.85Z'
+    LastModifiedDate: '2025-11-19T21:15:50.85Z'
   - VulnerabilityID: CVE-2025-47907
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -25694,12 +25835,10 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:19927
+    - https://access.redhat.com/errata/RHSA-2025:21702
     - https://access.redhat.com/security/cve/CVE-2025-52881
-    - https://bugzilla.redhat.com/2404705
-    - https://bugzilla.redhat.com/2404708
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-19927.html
+    - https://errata.almalinux.org/9/ALSA-2025-21702.html
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -25778,6 +25917,80 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58058
     PublishedDate: '2025-08-28T22:15:32.577Z'
     LastModifiedDate: '2025-08-29T16:24:29.73Z'
+  - VulnerabilityID: CVE-2025-47914
+    PkgID: golang.org/x/crypto@v0.39.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.39.0
+      UID: 2254b0a9f4b2a4d4
+    InstalledVersion: v0.39.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47914
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH Agent servers do not validate the size of messages when processing ...
+    Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721960
+    - https://go.dev/issue/76364
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
+    - https://pkg.go.dev/vuln/GO-2025-4135
+    PublishedDate: '2025-11-19T21:15:50.517Z'
+    LastModifiedDate: '2025-11-19T21:15:50.517Z'
+  - VulnerabilityID: CVE-2025-58181
+    PkgID: golang.org/x/crypto@v0.39.0
+    PkgName: golang.org/x/crypto
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/crypto@v0.39.0
+      UID: 2254b0a9f4b2a4d4
+    InstalledVersion: v0.39.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58181
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
+    Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/721961
+    - https://go.dev/issue/76363
+    - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
+    - https://pkg.go.dev/vuln/GO-2025-4134
+    PublishedDate: '2025-11-19T21:15:50.85Z'
+    LastModifiedDate: '2025-11-19T21:15:50.85Z'
   - VulnerabilityID: CVE-2025-53547
     PkgID: helm.sh/helm/v3@v3.18.3
     PkgName: helm.sh/helm/v3
