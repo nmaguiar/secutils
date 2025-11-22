@@ -10227,6 +10227,48 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-58251
     PublishedDate: '2025-04-23T18:16:03.057Z'
     LastModifiedDate: '2025-04-29T13:52:47.47Z'
+  - VulnerabilityID: CVE-2025-46394
+    PkgID: busybox@1.37.0-r19
+    PkgName: busybox
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 29a2e190464d6e76
+    InstalledVersion: 1.37.0-r19
+    FixedVersion: 1.37.0-r27
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-46394
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hid ...
+    Description: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.
+    Severity: LOW
+    CweIDs:
+    - CWE-451
+    VendorSeverity:
+      nvd: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/04/23/5
+    - http://www.openwall.com/lists/oss-security/2025/04/24/3
+    - https://bugs.busybox.net/show_bug.cgi?id=16018
+    - https://lists.busybox.net/pipermail/busybox/2024-July/090806.html
+    - https://lists.busybox.net/pipermail/busybox/2024-July/090814.html
+    - https://www.busybox.net
+    - https://www.busybox.net/downloads/
+    - https://www.cve.org/CVERecord?id=CVE-2025-46394
+    - https://www.openwall.com/lists/oss-security/2025/04/23/1
+    PublishedDate: '2025-04-23T16:15:48.713Z'
+    LastModifiedDate: '2025-09-24T14:38:22.127Z'
   - VulnerabilityID: CVE-2024-58251
     PkgID: busybox-binsh@1.37.0-r19
     PkgName: busybox-binsh
@@ -10259,6 +10301,48 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-58251
     PublishedDate: '2025-04-23T18:16:03.057Z'
     LastModifiedDate: '2025-04-29T13:52:47.47Z'
+  - VulnerabilityID: CVE-2025-46394
+    PkgID: busybox-binsh@1.37.0-r19
+    PkgName: busybox-binsh
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 37760ff04f445329
+    InstalledVersion: 1.37.0-r19
+    FixedVersion: 1.37.0-r27
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-46394
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hid ...
+    Description: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.
+    Severity: LOW
+    CweIDs:
+    - CWE-451
+    VendorSeverity:
+      nvd: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/04/23/5
+    - http://www.openwall.com/lists/oss-security/2025/04/24/3
+    - https://bugs.busybox.net/show_bug.cgi?id=16018
+    - https://lists.busybox.net/pipermail/busybox/2024-July/090806.html
+    - https://lists.busybox.net/pipermail/busybox/2024-July/090814.html
+    - https://www.busybox.net
+    - https://www.busybox.net/downloads/
+    - https://www.cve.org/CVERecord?id=CVE-2025-46394
+    - https://www.openwall.com/lists/oss-security/2025/04/23/1
+    PublishedDate: '2025-04-23T16:15:48.713Z'
+    LastModifiedDate: '2025-09-24T14:38:22.127Z'
   - VulnerabilityID: CVE-2025-10148
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -10991,7 +11075,7 @@
     - https://github.com/libexpat/libexpat/pull/1034
     - https://issues.oss-fuzz.com/issues/439133977
     - https://linux.oracle.com/cve/CVE-2025-59375.html
-    - https://linux.oracle.com/errata/ELSA-2025-19403.html
+    - https://linux.oracle.com/errata/ELSA-2025-21776.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-59375
     - https://www.cve.org/CVERecord?id=CVE-2025-59375
     PublishedDate: '2025-09-15T03:15:40.92Z'
@@ -11934,6 +12018,48 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-58251
     PublishedDate: '2025-04-23T18:16:03.057Z'
     LastModifiedDate: '2025-04-29T13:52:47.47Z'
+  - VulnerabilityID: CVE-2025-46394
+    PkgID: ssl_client@1.37.0-r19
+    PkgName: ssl_client
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: b802b1f46274b81c
+    InstalledVersion: 1.37.0-r19
+    FixedVersion: 1.37.0-r27
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-46394
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hid ...
+    Description: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.
+    Severity: LOW
+    CweIDs:
+    - CWE-451
+    VendorSeverity:
+      nvd: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/04/23/5
+    - http://www.openwall.com/lists/oss-security/2025/04/24/3
+    - https://bugs.busybox.net/show_bug.cgi?id=16018
+    - https://lists.busybox.net/pipermail/busybox/2024-July/090806.html
+    - https://lists.busybox.net/pipermail/busybox/2024-July/090814.html
+    - https://www.busybox.net
+    - https://www.busybox.net/downloads/
+    - https://www.cve.org/CVERecord?id=CVE-2025-46394
+    - https://www.openwall.com/lists/oss-security/2025/04/23/1
+    PublishedDate: '2025-04-23T16:15:48.713Z'
+    LastModifiedDate: '2025-09-24T14:38:22.127Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
@@ -17860,6 +17986,7 @@
     References:
     - https://go.dev/cl/721960
     - https://go.dev/issue/76364
+    - https://go.googlesource.com/crypto
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
     - https://pkg.go.dev/vuln/GO-2025-4135
@@ -17967,6 +18094,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -17979,7 +18107,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -18042,7 +18173,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -18059,7 +18190,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -21175,6 +21306,7 @@
     References:
     - https://go.dev/cl/721960
     - https://go.dev/issue/76364
+    - https://go.googlesource.com/crypto
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
     - https://pkg.go.dev/vuln/GO-2025-4135
@@ -21282,6 +21414,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -21294,7 +21427,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -21357,7 +21493,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -21374,7 +21510,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -25949,6 +26085,7 @@
     References:
     - https://go.dev/cl/721960
     - https://go.dev/issue/76364
+    - https://go.googlesource.com/crypto
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47914
     - https://pkg.go.dev/vuln/GO-2025-4135
@@ -26201,6 +26338,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -26213,7 +26351,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -26276,7 +26417,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -26293,7 +26434,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -26726,6 +26867,7 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
+      alma: 2
       amazon: 3
       bitnami: 2
       redhat: 2
@@ -26738,7 +26880,10 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/errata/RHSA-2025:21815
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2407258
+    - https://errata.almalinux.org/9/ALSA-2025-21815.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -26801,7 +26946,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Title: Due to the design of the name constraint checking algorithm, the proce ...
-    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scals non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
+    Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
     VendorSeverity:
       amazon: 3
@@ -26818,7 +26963,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58187
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
-    LastModifiedDate: '2025-11-04T22:16:33.593Z'
+    LastModifiedDate: '2025-11-20T23:15:52.007Z'
   - VulnerabilityID: CVE-2025-58188
     PkgID: stdlib@v1.24.5
     PkgName: stdlib
