@@ -21345,7 +21345,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47914 
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4135 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.517Z 
-│                       │      ╰ LastModifiedDate: 2025-11-19T21:15:50.517Z 
+│                       │      ╰ LastModifiedDate: 2025-11-21T15:13:59.083Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2025-58181 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.40.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -21381,7 +21381,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4134 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
-│                       │      ╰ LastModifiedDate: 2025-11-19T21:15:50.85Z 
+│                       │      ╰ LastModifiedDate: 2025-11-21T15:13:59.083Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -24948,7 +24948,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47914 
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4135 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.517Z 
-│                       │      ╰ LastModifiedDate: 2025-11-19T21:15:50.517Z 
+│                       │      ╰ LastModifiedDate: 2025-11-21T15:13:59.083Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2025-58181 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.39.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -24984,7 +24984,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4134 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
-│                       │      ╰ LastModifiedDate: 2025-11-19T21:15:50.85Z 
+│                       │      ╰ LastModifiedDate: 2025-11-21T15:13:59.083Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30114,7 +30114,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-47914 
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4135 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.517Z 
-│                       │      ╰ LastModifiedDate: 2025-11-19T21:15:50.517Z 
+│                       │      ╰ LastModifiedDate: 2025-11-21T15:13:59.083Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2025-58181 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.39.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -30150,7 +30150,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4134 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
-│                       │      ╰ LastModifiedDate: 2025-11-19T21:15:50.85Z 
+│                       │      ╰ LastModifiedDate: 2025-11-21T15:13:59.083Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2025-53547 
 │                       │      ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                       │      ├ PkgName         : helm.sh/helm/v3 
