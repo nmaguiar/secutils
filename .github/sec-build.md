@@ -13758,10 +13758,10 @@
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
 │                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/16/2 
-│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:19403 
+│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:21776 
 │                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-59375 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2395108 
-│                       │      │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-19403.html 
+│                       │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2025-21776.html 
 │                       │      │                  ├ [5] : https://github.com/libexpat/libexpat/blob/676a4c531ec
 │                       │      │                  │       768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74 
 │                       │      │                  ├ [6] : https://github.com/libexpat/libexpat/blob/R_2_7_2/exp
@@ -14058,7 +14058,7 @@
 │                       │      │                           ╰ V3Score : 5.9 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53057 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53057.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14124,7 +14124,7 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53066 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53066.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14187,7 +14187,7 @@
 │                       │      │                           ╰ V3Score : 3.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61748 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-61748.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
@@ -14249,7 +14249,7 @@
 │                       │      │                           ╰ V3Score : 5.9 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53057 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53057.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14315,7 +14315,7 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53066 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53066.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14378,7 +14378,7 @@
 │                       │      │                           ╰ V3Score : 3.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61748 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-61748.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
@@ -16661,10 +16661,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
