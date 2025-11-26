@@ -13753,29 +13753,194 @@
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
-│                       │      │                  ╰ redhat     : 3 
+│                       │      │                  ├ redhat     : 3 
+│                       │      │                  ╰ rocky      : 3 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
 │                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/16/2 
-│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:21776 
+│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:19403 
 │                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-59375 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2395108 
-│                       │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2025-21776.html 
-│                       │      │                  ├ [5] : https://github.com/libexpat/libexpat/blob/676a4c531ec
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2395108 
+│                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       25-59375 
+│                       │      │                  ├ [6] : https://errata.almalinux.org/10/ALSA-2025-19403.html 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21776 
+│                       │      │                  ├ [8] : https://github.com/libexpat/libexpat/blob/676a4c531ec
 │                       │      │                  │       768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74 
-│                       │      │                  ├ [6] : https://github.com/libexpat/libexpat/blob/R_2_7_2/exp
+│                       │      │                  ├ [9] : https://github.com/libexpat/libexpat/blob/R_2_7_2/exp
 │                       │      │                  │       at/Changes 
-│                       │      │                  ├ [7] : https://github.com/libexpat/libexpat/issues/1018 
-│                       │      │                  ├ [8] : https://github.com/libexpat/libexpat/pull/1034 
-│                       │      │                  ├ [9] : https://issues.oss-fuzz.com/issues/439133977 
-│                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-59375.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-21776.html 
-│                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-59375 
-│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
+│                       │      │                  ├ [10]: https://github.com/libexpat/libexpat/issues/1018 
+│                       │      │                  ├ [11]: https://github.com/libexpat/libexpat/pull/1034 
+│                       │      │                  ├ [12]: https://issues.oss-fuzz.com/issues/439133977 
+│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2025-59375.html 
+│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2025-21776.html 
+│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-59375 
+│                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
 │                       │      ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:34.927Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-64505 
+│                       │      ├ PkgID           : libpng@1.6.49-r0 
+│                       │      ├ PkgName         : libpng 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : e45bcd9d9b50b855 
+│                       │      ├ InstalledVersion: 1.6.49-r0 
+│                       │      ├ FixedVersion    : 1.6.51-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-64505 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, creat ... 
+│                       │      ├ Description     : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
+│                       │      │                    raster image files. Prior to version 1.6.51, a heap buffer
+│                       │      │                   over-read vulnerability exists in libpng's png_do_quantize
+│                       │      │                   function when processing PNG files with malformed palette
+│                       │      │                   indices. The vulnerability occurs when palette_lookup array
+│                       │      │                   bounds are not validated against externally-supplied image
+│                       │      │                   data, allowing an attacker to craft a PNG file with
+│                       │      │                   out-of-range palette indices that trigger out-of-bounds
+│                       │      │                   memory access. This issue has been patched in version 1.6.51
+│                       │      │                   . 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/6a528eb5fd0d
+│                       │      │                  │      d7f6de1c39d30de0e41473431c37 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/pull/748 
+│                       │      │                  ╰ [2]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                         /GHSA-4952-h5wq-4m42 
+│                       │      ├ PublishedDate   : 2025-11-25T00:15:47.133Z 
+│                       │      ╰ LastModifiedDate: 2025-11-25T00:15:47.133Z 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-64506 
+│                       │      ├ PkgID           : libpng@1.6.49-r0 
+│                       │      ├ PkgName         : libpng 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : e45bcd9d9b50b855 
+│                       │      ├ InstalledVersion: 1.6.49-r0 
+│                       │      ├ FixedVersion    : 1.6.51-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-64506 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, creat ... 
+│                       │      ├ Description     : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
+│                       │      │                    raster image files. From version 1.6.0 to before 1.6.51, a
+│                       │      │                   heap buffer over-read vulnerability exists in libpng's
+│                       │      │                   png_write_image_8bit function when processing 8-bit images
+│                       │      │                   through the simplified write API with convert_to_8bit
+│                       │      │                   enabled. The vulnerability affects 8-bit grayscale+alpha,
+│                       │      │                   RGB/RGBA, and images with incomplete row data. A conditional
+│                       │      │                    guard incorrectly allows 8-bit input to enter code
+│                       │      │                   expecting 16-bit input, causing reads up to 2 bytes beyond
+│                       │      │                   allocated buffer boundaries. This issue has been patched in
+│                       │      │                   version 1.6.51. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/2bd84c019c30
+│                       │      │                  │      0b78e811743fbcddb67c9d9bf821 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/pull/749 
+│                       │      │                  ╰ [2]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                         /GHSA-qpr4-xm66-hww6 
+│                       │      ├ PublishedDate   : 2025-11-25T00:15:47.3Z 
+│                       │      ╰ LastModifiedDate: 2025-11-25T00:15:47.3Z 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-64720 
+│                       │      ├ PkgID           : libpng@1.6.49-r0 
+│                       │      ├ PkgName         : libpng 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : e45bcd9d9b50b855 
+│                       │      ├ InstalledVersion: 1.6.49-r0 
+│                       │      ├ FixedVersion    : 1.6.51-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-64720 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, creat ... 
+│                       │      ├ Description     : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
+│                       │      │                    raster image files. From version 1.6.0 to before 1.6.51, an
+│                       │      │                    out-of-bounds read vulnerability exists in
+│                       │      │                   png_image_read_composite when processing palette images with
+│                       │      │                    PNG_FLAG_OPTIMIZE_ALPHA enabled. The palette compositing
+│                       │      │                   code in png_init_read_transformations incorrectly applies
+│                       │      │                   background compositing during premultiplication, violating
+│                       │      │                   the invariant component ≤ alpha × 257 required by the
+│                       │      │                   simplified PNG API. This issue has been patched in version
+│                       │      │                   1.6.51. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/08da33b4c88c
+│                       │      │                  │      fcd36e5a706558a8d7e0e4773643 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/issues/686 
+│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/pull/751 
+│                       │      │                  ╰ [3]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                         /GHSA-hfc7-ph9c-wcww 
+│                       │      ├ PublishedDate   : 2025-11-25T00:15:47.46Z 
+│                       │      ╰ LastModifiedDate: 2025-11-25T00:15:47.46Z 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-65018 
+│                       │      ├ PkgID           : libpng@1.6.49-r0 
+│                       │      ├ PkgName         : libpng 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : e45bcd9d9b50b855 
+│                       │      ├ InstalledVersion: 1.6.49-r0 
+│                       │      ├ FixedVersion    : 1.6.51-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-65018 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, creat ... 
+│                       │      ├ Description     : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
+│                       │      │                    raster image files. From version 1.6.0 to before 1.6.51,
+│                       │      │                   there is a heap buffer overflow vulnerability in the libpng
+│                       │      │                   simplified API function png_image_finish_read when
+│                       │      │                   processing 16-bit interlaced PNGs with 8-bit output format.
+│                       │      │                   Attacker-crafted interlaced PNG files cause heap writes
+│                       │      │                   beyond allocated buffer bounds. This issue has been patched
+│                       │      │                   in version 1.6.51. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ CweIDs           ╭ [0]: CWE-122 
+│                       │      │                  ╰ [1]: CWE-787 
+│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/16b5e3823918
+│                       │      │                  │      840aae65c0a6da57c78a5a496a4d 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/commit/218612ddd6b1
+│                       │      │                  │      7944e21eda56caf8b4bf7779d1ea 
+│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/issues/755 
+│                       │      │                  ├ [3]: https://github.com/pnggroup/libpng/pull/757 
+│                       │      │                  ╰ [4]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                         /GHSA-7wv6-48j4-hj3g 
+│                       │      ├ PublishedDate   : 2025-11-25T00:15:47.61Z 
+│                       │      ╰ LastModifiedDate: 2025-11-25T00:15:47.61Z 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -13854,7 +14019,7 @@
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -13924,7 +14089,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -14004,7 +14169,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-53057 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2025-53057 
 │                       │      ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_64
@@ -14058,7 +14223,7 @@
 │                       │      │                           ╰ V3Score : 5.9 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53057 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53057.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14070,7 +14235,7 @@
 │                       │      │                  ╰ [9]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:45.24Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:56.973Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2025-53066 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-53066 
 │                       │      ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_64
@@ -14124,7 +14289,7 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53066 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53066.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14136,7 +14301,7 @@
 │                       │      │                  ╰ [9]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:47.177Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:57.227Z 
-│                       ├ [23] ╭ VulnerabilityID : CVE-2025-61748 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2025-61748 
 │                       │      ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_64
@@ -14187,7 +14352,7 @@
 │                       │      │                           ╰ V3Score : 3.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61748 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-61748.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
@@ -14195,7 +14360,7 @@
 │                       │      │                  ╰ [7]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:51.057Z 
 │                       │      ╰ LastModifiedDate: 2025-10-28T19:11:56.063Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2025-53057 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2025-53057 
 │                       │      ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre-headless 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?ar
@@ -14249,7 +14414,7 @@
 │                       │      │                           ╰ V3Score : 5.9 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53057 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53057.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14261,7 +14426,7 @@
 │                       │      │                  ╰ [9]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:45.24Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:56.973Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2025-53066 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2025-53066 
 │                       │      ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre-headless 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?ar
@@ -14315,7 +14480,7 @@
 │                       │      │                           ╰ V3Score : 4.8 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53066 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-53066.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://lists.debian.org/debian-lts-announce/2025/10/m
@@ -14327,7 +14492,7 @@
 │                       │      │                  ╰ [9]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:47.177Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:57.227Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2025-61748 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2025-61748 
 │                       │      ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre-headless 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?ar
@@ -14378,7 +14543,7 @@
 │                       │      │                           ╰ V3Score : 3.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2025:18824 
 │                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61748 
-│                       │      │                  ├ [2]: https://errata.almalinux.org/9/ALSA-2025-18824.html 
+│                       │      │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2025-18824.html 
 │                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2025-61748.html 
 │                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
@@ -14386,7 +14551,7 @@
 │                       │      │                  ╰ [7]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:51.057Z 
 │                       │      ╰ LastModifiedDate: 2025-10-28T19:11:56.063Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -14465,7 +14630,7 @@
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -14535,7 +14700,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -14615,7 +14780,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2025-58050 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2025-58050 
 │                       │      ├ PkgID           : pcre2@10.43-r1 
 │                       │      ├ PkgName         : pcre2 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.23
@@ -14670,7 +14835,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
 │                       │      ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
 │                       │      ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2025-31133 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2025-31133 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23.
@@ -14738,7 +14903,7 @@
 │                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-31133 
 │                       │      ├ PublishedDate   : 2025-11-06T19:15:41.343Z 
 │                       │      ╰ LastModifiedDate: 2025-11-06T19:45:09.883Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2025-52565 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2025-52565 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23.
@@ -14822,7 +14987,7 @@
 │                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-52565 
 │                       │      ├ PublishedDate   : 2025-11-06T20:15:49.24Z 
 │                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2025-52881 
+│                       ├ [37] ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23.
@@ -14938,7 +15103,7 @@
 │                       │      │                  ╰ [37]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
 │                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2024-58251 
+│                       ├ [38] ╭ VulnerabilityID : CVE-2024-58251 
 │                       │      ├ PkgID           : ssl_client@1.37.0-r19 
 │                       │      ├ PkgName         : ssl_client 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dist
@@ -14971,7 +15136,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
 │                       │      ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
 │                       │      ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
-│                       ╰ [35] ╭ VulnerabilityID : CVE-2025-46394 
+│                       ╰ [39] ╭ VulnerabilityID : CVE-2025-46394 
 │                              ├ PkgID           : ssl_client@1.37.0-r19 
 │                              ├ PkgName         : ssl_client 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dist
@@ -16661,10 +16826,10 @@
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 8.8 
 │                       │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/05/28/6 
-│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9114 
+│                       │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:9166 
 │                       │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-48734 
 │                       │     │                  ├ [3] : https://bugzilla.redhat.com/2368956 
-│                       │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-9114.html 
+│                       │     │                  ├ [4] : https://errata.almalinux.org/10/ALSA-2025-9166.html 
 │                       │     │                  ├ [5] : https://github.com/advisories/GHSA-wxr5-93ph-8wr9 
 │                       │     │                  ├ [6] : https://github.com/apache/commons-beanutils 
 │                       │     │                  ├ [7] : https://github.com/apache/commons-beanutils/commit/28a
@@ -20824,7 +20989,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
-│                       │      │                  ╰ ghsa       : 3 
+│                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ╰ photon     : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -20869,7 +21035,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
-│                       │      │                  ╰ ghsa       : 2 
+│                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ╰ photon     : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
@@ -24427,7 +24594,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
-│                       │      │                  ╰ ghsa       : 3 
+│                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ╰ photon     : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -24472,7 +24640,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
-│                       │      │                  ╰ ghsa       : 2 
+│                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ╰ photon     : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
@@ -29546,7 +29715,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
-│                       │      │                  ╰ ghsa       : 3 
+│                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ╰ photon     : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -29591,7 +29761,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
-│                       │      │                  ╰ ghsa       : 2 
+│                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ╰ photon     : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
@@ -29636,7 +29807,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-279 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 3 
-│                       │      │                  ╰ ghsa       : 3 
+│                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ╰ photon     : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.3 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
@@ -29681,7 +29853,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-401 
 │                       │      ├ VendorSeverity   ╭ cbl-mariner: 2 
-│                       │      │                  ╰ ghsa       : 2 
+│                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ╰ photon     : 2 
 │                       │      ├ References       ╭ [0]: https://github.com/containerd/containerd 
 │                       │      │                  ├ [1]: https://github.com/containerd/containerd/commit/083b53
 │                       │      │                  │      cd6f19b5de7717b0ce92c11bdf95e612df 
