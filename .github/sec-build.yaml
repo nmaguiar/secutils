@@ -10724,8 +10724,11 @@
     - CWE-125
     - CWE-787
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 3
+      cbl-mariner: 3
+      oracle-oval: 2
       photon: 3
       redhat: 2
       ubuntu: 2
@@ -10735,7 +10738,10 @@
         V3Score: 5.6
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/30/5
+    - https://access.redhat.com/errata/RHSA-2025:21248
     - https://access.redhat.com/security/cve/CVE-2025-9230
+    - https://bugzilla.redhat.com/2396054
+    - https://errata.almalinux.org/10/ALSA-2025-21248.html
     - https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45
     - https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280
     - https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def
@@ -10743,6 +10749,8 @@
     - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
+    - https://linux.oracle.com/cve/CVE-2025-9230.html
+    - https://linux.oracle.com/errata/ELSA-2025-28011.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
@@ -11066,20 +11074,20 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/16/2
-    - https://access.redhat.com/errata/RHSA-2025:19403
+    - https://access.redhat.com/errata/RHSA-2025:21776
     - https://access.redhat.com/security/cve/CVE-2025-59375
     - https://bugzilla.redhat.com/2395108
     - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
-    - https://errata.almalinux.org/10/ALSA-2025-19403.html
-    - https://errata.rockylinux.org/RLSA-2025:21776
+    - https://errata.almalinux.org/8/ALSA-2025-21776.html
+    - https://errata.rockylinux.org/RLSA-2025:19403
     - https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74
     - https://github.com/libexpat/libexpat/blob/R_2_7_2/expat/Changes
     - https://github.com/libexpat/libexpat/issues/1018
     - https://github.com/libexpat/libexpat/pull/1034
     - https://issues.oss-fuzz.com/issues/439133977
     - https://linux.oracle.com/cve/CVE-2025-59375.html
-    - https://linux.oracle.com/errata/ELSA-2025-21776.html
+    - https://linux.oracle.com/errata/ELSA-2025-21974.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-59375
     - https://www.cve.org/CVERecord?id=CVE-2025-59375
     PublishedDate: '2025-09-15T03:15:40.92Z'
@@ -11111,7 +11119,7 @@
     - https://github.com/pnggroup/libpng/pull/748
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-4952-h5wq-4m42
     PublishedDate: '2025-11-25T00:15:47.133Z'
-    LastModifiedDate: '2025-11-25T00:15:47.133Z'
+    LastModifiedDate: '2025-11-25T22:16:16.69Z'
   - VulnerabilityID: CVE-2025-64506
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -11139,7 +11147,7 @@
     - https://github.com/pnggroup/libpng/pull/749
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-qpr4-xm66-hww6
     PublishedDate: '2025-11-25T00:15:47.3Z'
-    LastModifiedDate: '2025-11-25T00:15:47.3Z'
+    LastModifiedDate: '2025-11-25T22:16:16.69Z'
   - VulnerabilityID: CVE-2025-64720
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -11168,7 +11176,7 @@
     - https://github.com/pnggroup/libpng/pull/751
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-hfc7-ph9c-wcww
     PublishedDate: '2025-11-25T00:15:47.46Z'
-    LastModifiedDate: '2025-11-25T00:15:47.46Z'
+    LastModifiedDate: '2025-11-25T22:16:16.69Z'
   - VulnerabilityID: CVE-2025-65018
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -11199,7 +11207,7 @@
     - https://github.com/pnggroup/libpng/pull/757
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-7wv6-48j4-hj3g
     PublishedDate: '2025-11-25T00:15:47.61Z'
-    LastModifiedDate: '2025-11-25T00:15:47.61Z'
+    LastModifiedDate: '2025-11-25T22:16:16.69Z'
   - VulnerabilityID: CVE-2025-9230
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -11241,8 +11249,11 @@
     - CWE-125
     - CWE-787
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 3
+      cbl-mariner: 3
+      oracle-oval: 2
       photon: 3
       redhat: 2
       ubuntu: 2
@@ -11252,7 +11263,10 @@
         V3Score: 5.6
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/30/5
+    - https://access.redhat.com/errata/RHSA-2025:21248
     - https://access.redhat.com/security/cve/CVE-2025-9230
+    - https://bugzilla.redhat.com/2396054
+    - https://errata.almalinux.org/10/ALSA-2025-21248.html
     - https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45
     - https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280
     - https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def
@@ -11260,6 +11274,8 @@
     - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
+    - https://linux.oracle.com/cve/CVE-2025-9230.html
+    - https://linux.oracle.com/errata/ELSA-2025-28011.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
@@ -11434,12 +11450,17 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53057
-    - https://errata.almalinux.org/10/ALSA-2025-18824.html
+    - https://errata.almalinux.org/9/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53057.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-53057
     - https://openjdk.org/groups/vulnerability/advisories/2025-10-21
+    - https://ubuntu.com/security/notices/USN-7881-1
+    - https://ubuntu.com/security/notices/USN-7882-1
+    - https://ubuntu.com/security/notices/USN-7883-1
+    - https://ubuntu.com/security/notices/USN-7884-1
+    - https://ubuntu.com/security/notices/USN-7885-1
     - https://www.cve.org/CVERecord?id=CVE-2025-53057
     - https://www.oracle.com/security-alerts/cpuoct2025.html
     PublishedDate: '2025-10-21T20:20:45.24Z'
@@ -11480,12 +11501,17 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53066
-    - https://errata.almalinux.org/10/ALSA-2025-18824.html
+    - https://errata.almalinux.org/9/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53066.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-53066
     - https://openjdk.org/groups/vulnerability/advisories/2025-10-21
+    - https://ubuntu.com/security/notices/USN-7881-1
+    - https://ubuntu.com/security/notices/USN-7882-1
+    - https://ubuntu.com/security/notices/USN-7883-1
+    - https://ubuntu.com/security/notices/USN-7884-1
+    - https://ubuntu.com/security/notices/USN-7885-1
     - https://www.cve.org/CVERecord?id=CVE-2025-53066
     - https://www.oracle.com/security-alerts/cpuoct2025.html
     PublishedDate: '2025-10-21T20:20:47.177Z'
@@ -11518,6 +11544,7 @@
       oracle-oval: 2
       photon: 1
       redhat: 2
+      ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
@@ -11525,10 +11552,13 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-61748
-    - https://errata.almalinux.org/10/ALSA-2025-18824.html
+    - https://errata.almalinux.org/9/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-61748.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61748
+    - https://openjdk.org/groups/vulnerability/advisories/2025-10-21
+    - https://ubuntu.com/security/notices/USN-7884-1
+    - https://ubuntu.com/security/notices/USN-7885-1
     - https://www.cve.org/CVERecord?id=CVE-2025-61748
     - https://www.oracle.com/security-alerts/cpuoct2025.html
     PublishedDate: '2025-10-21T20:20:51.057Z'
@@ -11569,12 +11599,17 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53057
-    - https://errata.almalinux.org/10/ALSA-2025-18824.html
+    - https://errata.almalinux.org/9/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53057.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-53057
     - https://openjdk.org/groups/vulnerability/advisories/2025-10-21
+    - https://ubuntu.com/security/notices/USN-7881-1
+    - https://ubuntu.com/security/notices/USN-7882-1
+    - https://ubuntu.com/security/notices/USN-7883-1
+    - https://ubuntu.com/security/notices/USN-7884-1
+    - https://ubuntu.com/security/notices/USN-7885-1
     - https://www.cve.org/CVERecord?id=CVE-2025-53057
     - https://www.oracle.com/security-alerts/cpuoct2025.html
     PublishedDate: '2025-10-21T20:20:45.24Z'
@@ -11615,12 +11650,17 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-53066
-    - https://errata.almalinux.org/10/ALSA-2025-18824.html
+    - https://errata.almalinux.org/9/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-53066.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00026.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-53066
     - https://openjdk.org/groups/vulnerability/advisories/2025-10-21
+    - https://ubuntu.com/security/notices/USN-7881-1
+    - https://ubuntu.com/security/notices/USN-7882-1
+    - https://ubuntu.com/security/notices/USN-7883-1
+    - https://ubuntu.com/security/notices/USN-7884-1
+    - https://ubuntu.com/security/notices/USN-7885-1
     - https://www.cve.org/CVERecord?id=CVE-2025-53066
     - https://www.oracle.com/security-alerts/cpuoct2025.html
     PublishedDate: '2025-10-21T20:20:47.177Z'
@@ -11653,6 +11693,7 @@
       oracle-oval: 2
       photon: 1
       redhat: 2
+      ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
@@ -11660,10 +11701,13 @@
     References:
     - https://access.redhat.com/errata/RHSA-2025:18824
     - https://access.redhat.com/security/cve/CVE-2025-61748
-    - https://errata.almalinux.org/10/ALSA-2025-18824.html
+    - https://errata.almalinux.org/9/ALSA-2025-18824.html
     - https://linux.oracle.com/cve/CVE-2025-61748.html
     - https://linux.oracle.com/errata/ELSA-2025-18824.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61748
+    - https://openjdk.org/groups/vulnerability/advisories/2025-10-21
+    - https://ubuntu.com/security/notices/USN-7884-1
+    - https://ubuntu.com/security/notices/USN-7885-1
     - https://www.cve.org/CVERecord?id=CVE-2025-61748
     - https://www.oracle.com/security-alerts/cpuoct2025.html
     PublishedDate: '2025-10-21T20:20:51.057Z'
@@ -11709,8 +11753,11 @@
     - CWE-125
     - CWE-787
     VendorSeverity:
+      alma: 2
       amazon: 2
       azure: 3
+      cbl-mariner: 3
+      oracle-oval: 2
       photon: 3
       redhat: 2
       ubuntu: 2
@@ -11720,7 +11767,10 @@
         V3Score: 5.6
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/30/5
+    - https://access.redhat.com/errata/RHSA-2025:21248
     - https://access.redhat.com/security/cve/CVE-2025-9230
+    - https://bugzilla.redhat.com/2396054
+    - https://errata.almalinux.org/10/ALSA-2025-21248.html
     - https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45
     - https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280
     - https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def
@@ -11728,6 +11778,8 @@
     - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
+    - https://linux.oracle.com/cve/CVE-2025-9230.html
+    - https://linux.oracle.com/errata/ELSA-2025-28011.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
@@ -12060,6 +12112,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 3
     CVSS:
       redhat:
@@ -12068,10 +12121,14 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:21702
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-21702.html
+    - https://bugzilla.redhat.com/2407258
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2404715
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52881
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
+    - https://errata.rockylinux.org/RLSA-2025:21220
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -12097,7 +12154,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-21232.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
@@ -13770,10 +13827,10 @@
         V3Score: 8.8
     References:
     - http://www.openwall.com/lists/oss-security/2025/05/28/6
-    - https://access.redhat.com/errata/RHSA-2025:9166
+    - https://access.redhat.com/errata/RHSA-2025:9114
     - https://access.redhat.com/security/cve/CVE-2025-48734
     - https://bugzilla.redhat.com/2368956
-    - https://errata.almalinux.org/10/ALSA-2025-9166.html
+    - https://errata.almalinux.org/9/ALSA-2025-9114.html
     - https://github.com/advisories/GHSA-wxr5-93ph-8wr9
     - https://github.com/apache/commons-beanutils
     - https://github.com/apache/commons-beanutils/commit/28ad955a1613ed5885870cc7da52093c1ce739dc
@@ -17712,6 +17769,39 @@
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
   Vulnerabilities:
+  - VulnerabilityID: CVE-2025-65965
+    PkgID: github.com/anchore/grype@v0.96.0
+    PkgName: github.com/anchore/grype
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/anchore/grype@v0.96.0
+      UID: 2afeddd4cfa743ab
+    InstalledVersion: v0.96.0
+    FixedVersion: 0.104.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-65965
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Title: Grype has a credential disclosure vulnerability in its JSON output
+    Description: Grype is a vulnerability scanner for container images and filesystems. A credential disclosure vulnerability was found in Grype, affecting versions 0.68.0 through 0.104.0. If registry credentials are defined and the output of grype is written using the --file or --output json=<file> option, the registry credentials will be included unsanitized in the output file. This issue has been patched in version 0.104.1. Users running affected versions of grype can work around this vulnerability by redirecting stdout to a file instead of using the --file or --output options.
+    Severity: HIGH
+    CweIDs:
+    - CWE-212
+    VendorSeverity:
+      ghsa: 3
+    References:
+    - https://github.com/anchore/grype
+    - https://github.com/anchore/grype/commit/39f7fa17af2739cafe9b27176d4a68f7c05f21c1
+    - https://github.com/anchore/grype/commit/c99f79de49a58dc16d7fd8f35160b169b87db9de
+    - https://github.com/anchore/grype/pull/3068
+    - https://github.com/anchore/grype/security/advisories/GHSA-6gxw-85q2-q646
+    PublishedDate: '2025-11-25T20:16:00.453Z'
+    LastModifiedDate: '2025-11-25T22:16:16.69Z'
   - VulnerabilityID: CVE-2024-25621
     PkgID: github.com/containerd/containerd@v1.7.27
     PkgName: github.com/containerd/containerd
@@ -17986,6 +18076,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 3
     CVSS:
       redhat:
@@ -17994,10 +18085,14 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:21702
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-21702.html
+    - https://bugzilla.redhat.com/2407258
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2404715
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52881
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
+    - https://errata.rockylinux.org/RLSA-2025:21220
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -18023,7 +18118,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-21232.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
@@ -18172,6 +18267,7 @@
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       bitnami: 3
@@ -18186,7 +18282,11 @@
         V3Score: 7
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:20909
     - https://access.redhat.com/security/cve/CVE-2025-47907
+    - https://bugzilla.redhat.com/2387083
+    - https://bugzilla.redhat.com/2393152
+    - https://errata.almalinux.org/9/ALSA-2025-20909.html
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -18216,9 +18316,10 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 3
       bitnami: 2
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -18229,13 +18330,16 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/errata/RHSA-2025:21815
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2404715
     - https://bugzilla.redhat.com/2407258
-    - https://errata.almalinux.org/9/ALSA-2025-21815.html
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://linux.oracle.com/cve/CVE-2025-58183.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -18370,10 +18474,12 @@
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 3
       azure: 3
       bitnami: 2
       cbl-mariner: 2
+      oracle-oval: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -18384,10 +18490,15 @@
         V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:22005
     - https://access.redhat.com/security/cve/CVE-2025-47906
+    - https://bugzilla.redhat.com/2396546
+    - https://errata.almalinux.org/9/ALSA-2025-22005.html
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47906.html
+    - https://linux.oracle.com/errata/ELSA-2025-22005.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47906
     - https://pkg.go.dev/vuln/GO-2025-3956
     - https://www.cve.org/CVERecord?id=CVE-2025-47906
@@ -21308,6 +21419,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 3
     CVSS:
       redhat:
@@ -21316,10 +21428,14 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:21702
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-21702.html
+    - https://bugzilla.redhat.com/2407258
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2404715
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52881
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
+    - https://errata.rockylinux.org/RLSA-2025:21220
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -21345,7 +21461,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-21232.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
@@ -21494,6 +21610,7 @@
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       bitnami: 3
@@ -21508,7 +21625,11 @@
         V3Score: 7
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:20909
     - https://access.redhat.com/security/cve/CVE-2025-47907
+    - https://bugzilla.redhat.com/2387083
+    - https://bugzilla.redhat.com/2393152
+    - https://errata.almalinux.org/9/ALSA-2025-20909.html
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -21538,9 +21659,10 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 3
       bitnami: 2
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -21551,13 +21673,16 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/errata/RHSA-2025:21815
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2404715
     - https://bugzilla.redhat.com/2407258
-    - https://errata.almalinux.org/9/ALSA-2025-21815.html
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://linux.oracle.com/cve/CVE-2025-58183.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -21692,10 +21817,12 @@
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 3
       azure: 3
       bitnami: 2
       cbl-mariner: 2
+      oracle-oval: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -21706,10 +21833,15 @@
         V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:22005
     - https://access.redhat.com/security/cve/CVE-2025-47906
+    - https://bugzilla.redhat.com/2396546
+    - https://errata.almalinux.org/9/ALSA-2025-22005.html
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47906.html
+    - https://linux.oracle.com/errata/ELSA-2025-22005.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47906
     - https://pkg.go.dev/vuln/GO-2025-3956
     - https://www.cve.org/CVERecord?id=CVE-2025-47906
@@ -26091,6 +26223,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 3
     CVSS:
       redhat:
@@ -26099,10 +26232,14 @@
     References:
     - http://github.com/opencontainers/runc/commit/a41366e74080fa9f26a2cd3544e2801449697322
     - http://github.com/opencontainers/runc/commit/fdcc9d3cad2f85954a241ccb910a61aaa1ef47f3
-    - https://access.redhat.com/errata/RHSA-2025:21702
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-52881
     - https://bugzilla.redhat.com/2404715
-    - https://errata.almalinux.org/9/ALSA-2025-21702.html
+    - https://bugzilla.redhat.com/2407258
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2404715
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-52881
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
+    - https://errata.rockylinux.org/RLSA-2025:21220
     - https://github.com/opencontainers/runc
     - https://github.com/opencontainers/runc/blob/v1.4.0-rc.2/RELEASES.md
     - https://github.com/opencontainers/runc/commit/3f925525b44d247e390e529e772a0dc0c0bc3557
@@ -26128,7 +26265,7 @@
     - https://github.com/opencontainers/selinux/pull/237
     - https://github.com/opencontainers/selinux/releases/tag/v1.13.0
     - https://linux.oracle.com/cve/CVE-2025-52881.html
-    - https://linux.oracle.com/errata/ELSA-2025-21232.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-52881
     - https://pkg.go.dev/github.com/cyphar/filepath-securejoin/pathrs-lite/procfs
     - https://ubuntu.com/security/notices/USN-7851-1
@@ -26422,6 +26559,7 @@
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       bitnami: 3
@@ -26436,7 +26574,11 @@
         V3Score: 7
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:20909
     - https://access.redhat.com/security/cve/CVE-2025-47907
+    - https://bugzilla.redhat.com/2387083
+    - https://bugzilla.redhat.com/2393152
+    - https://errata.almalinux.org/9/ALSA-2025-20909.html
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -26466,9 +26608,10 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 3
       bitnami: 2
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -26479,13 +26622,16 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/errata/RHSA-2025:21815
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2404715
     - https://bugzilla.redhat.com/2407258
-    - https://errata.almalinux.org/9/ALSA-2025-21815.html
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://linux.oracle.com/cve/CVE-2025-58183.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -26620,10 +26766,12 @@
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 3
       azure: 3
       bitnami: 2
       cbl-mariner: 2
+      oracle-oval: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -26634,10 +26782,15 @@
         V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:22005
     - https://access.redhat.com/security/cve/CVE-2025-47906
+    - https://bugzilla.redhat.com/2396546
+    - https://errata.almalinux.org/9/ALSA-2025-22005.html
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47906.html
+    - https://linux.oracle.com/errata/ELSA-2025-22005.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47906
     - https://pkg.go.dev/vuln/GO-2025-3956
     - https://www.cve.org/CVERecord?id=CVE-2025-47906
@@ -26951,6 +27104,7 @@
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 3
       bitnami: 3
@@ -26965,7 +27119,11 @@
         V3Score: 7
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:20909
     - https://access.redhat.com/security/cve/CVE-2025-47907
+    - https://bugzilla.redhat.com/2387083
+    - https://bugzilla.redhat.com/2393152
+    - https://errata.almalinux.org/9/ALSA-2025-20909.html
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
@@ -26995,9 +27153,10 @@
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
     VendorSeverity:
-      alma: 2
+      alma: 3
       amazon: 3
       bitnami: 2
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -27008,13 +27167,16 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://access.redhat.com/errata/RHSA-2025:21815
+    - https://access.redhat.com/errata/RHSA-2025:22011
     - https://access.redhat.com/security/cve/CVE-2025-58183
+    - https://bugzilla.redhat.com/2404715
     - https://bugzilla.redhat.com/2407258
-    - https://errata.almalinux.org/9/ALSA-2025-21815.html
+    - https://errata.almalinux.org/9/ALSA-2025-22011.html
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://linux.oracle.com/cve/CVE-2025-58183.html
+    - https://linux.oracle.com/errata/ELSA-2025-22011.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -27149,10 +27311,12 @@
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 3
       azure: 3
       bitnami: 2
       cbl-mariner: 2
+      oracle-oval: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -27163,10 +27327,15 @@
         V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2025/08/06/1
+    - https://access.redhat.com/errata/RHSA-2025:22005
     - https://access.redhat.com/security/cve/CVE-2025-47906
+    - https://bugzilla.redhat.com/2396546
+    - https://errata.almalinux.org/9/ALSA-2025-22005.html
     - https://go.dev/cl/691775
     - https://go.dev/issue/74466
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47906.html
+    - https://linux.oracle.com/errata/ELSA-2025-22005.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47906
     - https://pkg.go.dev/vuln/GO-2025-3956
     - https://www.cve.org/CVERecord?id=CVE-2025-47906
