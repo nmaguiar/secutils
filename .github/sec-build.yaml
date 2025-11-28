@@ -10886,6 +10886,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9232
     - https://openssl-library.org/news/secadv/20250930.txt
     - https://ubuntu.com/security/notices/USN-7786-1
+    - https://ubuntu.com/security/notices/USN-7894-1
     - https://www.cve.org/CVERecord?id=CVE-2025-9232
     PublishedDate: '2025-09-30T14:15:41.313Z'
     LastModifiedDate: '2025-11-04T22:16:45.63Z'
@@ -11080,14 +11081,14 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
     - https://errata.almalinux.org/8/ALSA-2025-21776.html
-    - https://errata.rockylinux.org/RLSA-2025:19403
+    - https://errata.rockylinux.org/RLSA-2025:21776
     - https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74
     - https://github.com/libexpat/libexpat/blob/R_2_7_2/expat/Changes
     - https://github.com/libexpat/libexpat/issues/1018
     - https://github.com/libexpat/libexpat/pull/1034
     - https://issues.oss-fuzz.com/issues/439133977
     - https://linux.oracle.com/cve/CVE-2025-59375.html
-    - https://linux.oracle.com/errata/ELSA-2025-21974.html
+    - https://linux.oracle.com/errata/ELSA-2025-22175.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-59375
     - https://www.cve.org/CVERecord?id=CVE-2025-59375
     PublishedDate: '2025-09-15T03:15:40.92Z'
@@ -11119,7 +11120,7 @@
     - https://github.com/pnggroup/libpng/pull/748
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-4952-h5wq-4m42
     PublishedDate: '2025-11-25T00:15:47.133Z'
-    LastModifiedDate: '2025-11-25T22:16:16.69Z'
+    LastModifiedDate: '2025-11-26T18:28:32.22Z'
   - VulnerabilityID: CVE-2025-64506
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -11147,7 +11148,7 @@
     - https://github.com/pnggroup/libpng/pull/749
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-qpr4-xm66-hww6
     PublishedDate: '2025-11-25T00:15:47.3Z'
-    LastModifiedDate: '2025-11-25T22:16:16.69Z'
+    LastModifiedDate: '2025-11-26T18:34:38.24Z'
   - VulnerabilityID: CVE-2025-64720
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -11176,7 +11177,7 @@
     - https://github.com/pnggroup/libpng/pull/751
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-hfc7-ph9c-wcww
     PublishedDate: '2025-11-25T00:15:47.46Z'
-    LastModifiedDate: '2025-11-25T22:16:16.69Z'
+    LastModifiedDate: '2025-11-26T18:35:18.253Z'
   - VulnerabilityID: CVE-2025-65018
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -11207,7 +11208,7 @@
     - https://github.com/pnggroup/libpng/pull/757
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-7wv6-48j4-hj3g
     PublishedDate: '2025-11-25T00:15:47.61Z'
-    LastModifiedDate: '2025-11-25T22:16:16.69Z'
+    LastModifiedDate: '2025-11-26T18:34:53.65Z'
   - VulnerabilityID: CVE-2025-9230
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -11411,6 +11412,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9232
     - https://openssl-library.org/news/secadv/20250930.txt
     - https://ubuntu.com/security/notices/USN-7786-1
+    - https://ubuntu.com/security/notices/USN-7894-1
     - https://www.cve.org/CVERecord?id=CVE-2025-9232
     PublishedDate: '2025-09-30T14:15:41.313Z'
     LastModifiedDate: '2025-11-04T22:16:45.63Z'
@@ -11915,6 +11917,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9232
     - https://openssl-library.org/news/secadv/20250930.txt
     - https://ubuntu.com/security/notices/USN-7786-1
+    - https://ubuntu.com/security/notices/USN-7894-1
     - https://www.cve.org/CVERecord?id=CVE-2025-9232
     PublishedDate: '2025-09-30T14:15:41.313Z'
     LastModifiedDate: '2025-11-04T22:16:45.63Z'
@@ -17800,6 +17803,7 @@
     - https://github.com/anchore/grype/commit/c99f79de49a58dc16d7fd8f35160b169b87db9de
     - https://github.com/anchore/grype/pull/3068
     - https://github.com/anchore/grype/security/advisories/GHSA-6gxw-85q2-q646
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-65965
     PublishedDate: '2025-11-25T20:16:00.453Z'
     LastModifiedDate: '2025-11-25T22:16:16.69Z'
   - VulnerabilityID: CVE-2024-25621
@@ -17826,6 +17830,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      azure: 3
       cbl-mariner: 3
       ghsa: 3
       photon: 3
@@ -17865,6 +17870,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       ghsa: 2
       photon: 2
@@ -18272,6 +18278,7 @@
       azure: 3
       bitnami: 3
       cbl-mariner: 3
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -18290,6 +18297,8 @@
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47907.html
+    - https://linux.oracle.com/errata/ELSA-2025-20909.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47907
     - https://pkg.go.dev/vuln/GO-2025-3849
     - https://www.cve.org/CVERecord?id=CVE-2025-47907
@@ -18417,42 +18426,6 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
-  - VulnerabilityID: CVE-2025-58188
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f1435be1373e471b
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: Validating certificate chains which contain DSA public keys can cause  ...
-    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://go.dev/cl/709853
-    - https://go.dev/issue/75675
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
-    - https://pkg.go.dev/vuln/GO-2025-4013
-    PublishedDate: '2025-10-29T23:16:19.74Z'
-    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-47906
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -18589,6 +18562,49 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
+  - VulnerabilityID: CVE-2025-58188
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f1435be1373e471b
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
+    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58188
+    - https://github.com/golang/go/commit/6e4007e8cffbb870e6b606307ab7308236ecefb9
+    - https://go.dev/cl/709853
+    - https://go.dev/issue/75675
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
+    - https://pkg.go.dev/vuln/GO-2025-4013
+    - https://www.cve.org/CVERecord?id=CVE-2025-58188
+    PublishedDate: '2025-10-29T23:16:19.74Z'
+    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-58189
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -21169,6 +21185,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      azure: 3
       cbl-mariner: 3
       ghsa: 3
       photon: 3
@@ -21208,6 +21225,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       ghsa: 2
       photon: 2
@@ -21615,6 +21633,7 @@
       azure: 3
       bitnami: 3
       cbl-mariner: 3
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -21633,6 +21652,8 @@
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47907.html
+    - https://linux.oracle.com/errata/ELSA-2025-20909.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47907
     - https://pkg.go.dev/vuln/GO-2025-3849
     - https://www.cve.org/CVERecord?id=CVE-2025-47907
@@ -21760,42 +21781,6 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
-  - VulnerabilityID: CVE-2025-58188
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: ebfdcee22f3690eb
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: Validating certificate chains which contain DSA public keys can cause  ...
-    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://go.dev/cl/709853
-    - https://go.dev/issue/75675
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
-    - https://pkg.go.dev/vuln/GO-2025-4013
-    PublishedDate: '2025-10-29T23:16:19.74Z'
-    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-47906
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -21932,6 +21917,49 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
+  - VulnerabilityID: CVE-2025-58188
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: ebfdcee22f3690eb
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
+    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58188
+    - https://github.com/golang/go/commit/6e4007e8cffbb870e6b606307ab7308236ecefb9
+    - https://go.dev/cl/709853
+    - https://go.dev/issue/75675
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
+    - https://pkg.go.dev/vuln/GO-2025-4013
+    - https://www.cve.org/CVERecord?id=CVE-2025-58188
+    PublishedDate: '2025-10-29T23:16:19.74Z'
+    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-58189
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -25942,6 +25970,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      azure: 3
       cbl-mariner: 3
       ghsa: 3
       photon: 3
@@ -25981,6 +26010,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       ghsa: 2
       photon: 2
@@ -26015,6 +26045,7 @@
     CweIDs:
     - CWE-279
     VendorSeverity:
+      azure: 3
       cbl-mariner: 3
       ghsa: 3
       photon: 3
@@ -26054,6 +26085,7 @@
     CweIDs:
     - CWE-401
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       ghsa: 2
       photon: 2
@@ -26564,6 +26596,7 @@
       azure: 3
       bitnami: 3
       cbl-mariner: 3
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -26582,6 +26615,8 @@
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47907.html
+    - https://linux.oracle.com/errata/ELSA-2025-20909.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47907
     - https://pkg.go.dev/vuln/GO-2025-3849
     - https://www.cve.org/CVERecord?id=CVE-2025-47907
@@ -26709,42 +26744,6 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
-  - VulnerabilityID: CVE-2025-58188
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 2bd9acee40f6eed
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: Validating certificate chains which contain DSA public keys can cause  ...
-    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://go.dev/cl/709853
-    - https://go.dev/issue/75675
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
-    - https://pkg.go.dev/vuln/GO-2025-4013
-    PublishedDate: '2025-10-29T23:16:19.74Z'
-    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-47906
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -26881,6 +26880,49 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
+  - VulnerabilityID: CVE-2025-58188
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 2bd9acee40f6eed
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
+    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58188
+    - https://github.com/golang/go/commit/6e4007e8cffbb870e6b606307ab7308236ecefb9
+    - https://go.dev/cl/709853
+    - https://go.dev/issue/75675
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
+    - https://pkg.go.dev/vuln/GO-2025-4013
+    - https://www.cve.org/CVERecord?id=CVE-2025-58188
+    PublishedDate: '2025-10-29T23:16:19.74Z'
+    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-58189
     PkgID: stdlib@v1.24.4
     PkgName: stdlib
@@ -27109,6 +27151,7 @@
       azure: 3
       bitnami: 3
       cbl-mariner: 3
+      oracle-oval: 3
       redhat: 2
     CVSS:
       bitnami:
@@ -27127,6 +27170,8 @@
     - https://go.dev/cl/693735
     - https://go.dev/issue/74831
     - https://groups.google.com/g/golang-announce/c/x5MKroML2yM
+    - https://linux.oracle.com/cve/CVE-2025-47907.html
+    - https://linux.oracle.com/errata/ELSA-2025-20909.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-47907
     - https://pkg.go.dev/vuln/GO-2025-3849
     - https://www.cve.org/CVERecord?id=CVE-2025-47907
@@ -27254,42 +27299,6 @@
     - https://pkg.go.dev/vuln/GO-2025-4007
     PublishedDate: '2025-10-29T23:16:19.643Z'
     LastModifiedDate: '2025-11-20T23:15:52.007Z'
-  - VulnerabilityID: CVE-2025-58188
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: 7927e62558d558ff
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.24.8, 1.25.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Title: Validating certificate chains which contain DSA public keys can cause  ...
-    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      bitnami: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-    References:
-    - http://www.openwall.com/lists/oss-security/2025/10/08/1
-    - https://go.dev/cl/709853
-    - https://go.dev/issue/75675
-    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
-    - https://pkg.go.dev/vuln/GO-2025-4013
-    PublishedDate: '2025-10-29T23:16:19.74Z'
-    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-47906
     PkgID: stdlib@v1.24.5
     PkgName: stdlib
@@ -27426,6 +27435,49 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-58185
     PublishedDate: '2025-10-29T23:16:19.45Z'
     LastModifiedDate: '2025-11-04T22:16:33.327Z'
+  - VulnerabilityID: CVE-2025-58188
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: 7927e62558d558ff
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.24.8, 1.25.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58188
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
+    Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 3
+      bitnami: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/10/08/1
+    - https://access.redhat.com/security/cve/CVE-2025-58188
+    - https://github.com/golang/go/commit/6e4007e8cffbb870e6b606307ab7308236ecefb9
+    - https://go.dev/cl/709853
+    - https://go.dev/issue/75675
+    - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58188
+    - https://pkg.go.dev/vuln/GO-2025-4013
+    - https://www.cve.org/CVERecord?id=CVE-2025-58188
+    PublishedDate: '2025-10-29T23:16:19.74Z'
+    LastModifiedDate: '2025-11-04T22:16:33.74Z'
   - VulnerabilityID: CVE-2025-58189
     PkgID: stdlib@v1.24.5
     PkgName: stdlib
