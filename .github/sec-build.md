@@ -13819,8 +13819,9 @@
 │                       │      │                   out-of-range palette indices that trigger out-of-bounds
 │                       │      │                   memory access. This issue has been patched in version 1.6.51
 │                       │      │                   . 
-│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ VendorSeverity   ─ photon: 3 
 │                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/6a528eb5fd0d
 │                       │      │                  │      d7f6de1c39d30de0e41473431c37 
 │                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/pull/748 
@@ -13828,47 +13829,7 @@
 │                       │      │                         /GHSA-4952-h5wq-4m42 
 │                       │      ├ PublishedDate   : 2025-11-25T00:15:47.133Z 
 │                       │      ╰ LastModifiedDate: 2025-11-26T18:28:32.22Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-64506 
-│                       │      ├ PkgID           : libpng@1.6.49-r0 
-│                       │      ├ PkgName         : libpng 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
-│                       │      │                  │       23.0_alpha20250612 
-│                       │      │                  ╰ UID : e45bcd9d9b50b855 
-│                       │      ├ InstalledVersion: 1.6.49-r0 
-│                       │      ├ FixedVersion    : 1.6.51-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-64506 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
-│                       │      │                   read, creat ... 
-│                       │      ├ Description     : LIBPNG is a reference library for use in applications that
-│                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
-│                       │      │                    raster image files. From version 1.6.0 to before 1.6.51, a
-│                       │      │                   heap buffer over-read vulnerability exists in libpng's
-│                       │      │                   png_write_image_8bit function when processing 8-bit images
-│                       │      │                   through the simplified write API with convert_to_8bit
-│                       │      │                   enabled. The vulnerability affects 8-bit grayscale+alpha,
-│                       │      │                   RGB/RGBA, and images with incomplete row data. A conditional
-│                       │      │                    guard incorrectly allows 8-bit input to enter code
-│                       │      │                   expecting 16-bit input, causing reads up to 2 bytes beyond
-│                       │      │                   allocated buffer boundaries. This issue has been patched in
-│                       │      │                   version 1.6.51. 
-│                       │      ├ Severity        : UNKNOWN 
-│                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/2bd84c019c30
-│                       │      │                  │      0b78e811743fbcddb67c9d9bf821 
-│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/pull/749 
-│                       │      │                  ╰ [2]: https://github.com/pnggroup/libpng/security/advisories
-│                       │      │                         /GHSA-qpr4-xm66-hww6 
-│                       │      ├ PublishedDate   : 2025-11-25T00:15:47.3Z 
-│                       │      ╰ LastModifiedDate: 2025-11-26T18:34:38.24Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-64720 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-64720 
 │                       │      ├ PkgID           : libpng@1.6.49-r0 
 │                       │      ├ PkgName         : libpng 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
@@ -13885,8 +13846,7 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
-│                       │      │                   read, creat ... 
+│                       │      ├ Title           : libpng: LIBPNG buffer overflow 
 │                       │      ├ Description     : LIBPNG is a reference library for use in applications that
 │                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
 │                       │      │                    raster image files. From version 1.6.0 to before 1.6.51, an
@@ -13898,17 +13858,25 @@
 │                       │      │                   the invariant component ≤ alpha × 257 required by the
 │                       │      │                   simplified PNG API. This issue has been patched in version
 │                       │      │                   1.6.51. 
-│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/08da33b4c88c
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.1 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64720 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/commit/08da33b4c88c
 │                       │      │                  │      fcd36e5a706558a8d7e0e4773643 
-│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/issues/686 
-│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/pull/751 
-│                       │      │                  ╰ [3]: https://github.com/pnggroup/libpng/security/advisories
-│                       │      │                         /GHSA-hfc7-ph9c-wcww 
+│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/issues/686 
+│                       │      │                  ├ [3]: https://github.com/pnggroup/libpng/pull/751 
+│                       │      │                  ├ [4]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                  │      /GHSA-hfc7-ph9c-wcww 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-64720 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-64720 
 │                       │      ├ PublishedDate   : 2025-11-25T00:15:47.46Z 
 │                       │      ╰ LastModifiedDate: 2025-11-26T18:35:18.253Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-65018 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-65018 
 │                       │      ├ PkgID           : libpng@1.6.49-r0 
 │                       │      ├ PkgName         : libpng 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
@@ -13925,8 +13893,7 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
-│                       │      │                   read, creat ... 
+│                       │      ├ Title           : libpng: LIBPNG heap buffer overflow 
 │                       │      ├ Description     : LIBPNG is a reference library for use in applications that
 │                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
 │                       │      │                    raster image files. From version 1.6.0 to before 1.6.51,
@@ -13936,19 +13903,74 @@
 │                       │      │                   Attacker-crafted interlaced PNG files cause heap writes
 │                       │      │                   beyond allocated buffer bounds. This issue has been patched
 │                       │      │                   in version 1.6.51. 
-│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ╭ [0]: CWE-122 
 │                       │      │                  ╰ [1]: CWE-787 
-│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/16b5e3823918
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.1 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-65018 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/commit/16b5e3823918
 │                       │      │                  │      840aae65c0a6da57c78a5a496a4d 
-│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/commit/218612ddd6b1
+│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/commit/218612ddd6b1
 │                       │      │                  │      7944e21eda56caf8b4bf7779d1ea 
-│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/issues/755 
-│                       │      │                  ├ [3]: https://github.com/pnggroup/libpng/pull/757 
-│                       │      │                  ╰ [4]: https://github.com/pnggroup/libpng/security/advisories
-│                       │      │                         /GHSA-7wv6-48j4-hj3g 
+│                       │      │                  ├ [3]: https://github.com/pnggroup/libpng/issues/755 
+│                       │      │                  ├ [4]: https://github.com/pnggroup/libpng/pull/757 
+│                       │      │                  ├ [5]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                  │      /GHSA-7wv6-48j4-hj3g 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-65018 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-65018 
 │                       │      ├ PublishedDate   : 2025-11-25T00:15:47.61Z 
 │                       │      ╰ LastModifiedDate: 2025-11-26T18:34:53.65Z 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-64506 
+│                       │      ├ PkgID           : libpng@1.6.49-r0 
+│                       │      ├ PkgName         : libpng 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : e45bcd9d9b50b855 
+│                       │      ├ InstalledVersion: 1.6.49-r0 
+│                       │      ├ FixedVersion    : 1.6.51-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-64506 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Title           : libpng: LIBPNG heap buffer over-read 
+│                       │      ├ Description     : LIBPNG is a reference library for use in applications that
+│                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
+│                       │      │                    raster image files. From version 1.6.0 to before 1.6.51, a
+│                       │      │                   heap buffer over-read vulnerability exists in libpng's
+│                       │      │                   png_write_image_8bit function when processing 8-bit images
+│                       │      │                   through the simplified write API with convert_to_8bit
+│                       │      │                   enabled. The vulnerability affects 8-bit grayscale+alpha,
+│                       │      │                   RGB/RGBA, and images with incomplete row data. A conditional
+│                       │      │                    guard incorrectly allows 8-bit input to enter code
+│                       │      │                   expecting 16-bit input, causing reads up to 2 bytes beyond
+│                       │      │                   allocated buffer boundaries. This issue has been patched in
+│                       │      │                   version 1.6.51. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-125 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 6.1 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64506 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/commit/2bd84c019c30
+│                       │      │                  │      0b78e811743fbcddb67c9d9bf821 
+│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/pull/749 
+│                       │      │                  ├ [3]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                  │      /GHSA-qpr4-xm66-hww6 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64506 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64506 
+│                       │      ├ PublishedDate   : 2025-11-25T00:15:47.3Z 
+│                       │      ╰ LastModifiedDate: 2025-11-26T18:34:38.24Z 
 │                       ├ [22] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
@@ -21390,13 +21412,14 @@
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Title           : github.com/nwaples/rardecode: RarDecode Out Of Memory Crash 
-│                       │      ├ Description     : github.com/nwaples/rardecode versions <=2.1.1 fail to
-│                       │      │                   restrict the dictionary size when reading large RAR
-│                       │      │                   dictionary sizes, which allows an attacker to provide a
-│                       │      │                   specially crafted RAR file and cause Denial of Service via
-│                       │      │                   an Out Of Memory Crash. 
+│                       │      ├ Description     : Mattermost versions 10.11.x <= 10.11.4, 10.5.x <= 10.5.12
+│                       │      │                   fail to validate the user permission when accessing the
+│                       │      │                   files and subscribing to the block in Boards, which allows
+│                       │      │                   an authenticated user to access other board files and was
+│                       │      │                   able to subscribe to the block from other boards that the
+│                       │      │                   user does not have access to 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-789 
+│                       │      ├ CweIDs           ─ [0]: CWE-306 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -21409,11 +21432,12 @@
 │                       │      │                  ├ [1]: https://github.com/nwaples/rardecode 
 │                       │      │                  ├ [2]: https://github.com/nwaples/rardecode/commit/52fb4e825c
 │                       │      │                  │      936636f251f7e7deded39ab11df9a9 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
-│                       │      │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-4020 
-│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
+│                       │      │                  ├ [3]: https://mattermost.com/security-updates 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4020 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
-│                       │      ╰ LastModifiedDate: 2025-10-14T19:37:28.107Z 
+│                       │      ╰ LastModifiedDate: 2025-11-27T12:15:47.06Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ PkgID           : github.com/opencontainers/selinux@v1.11.0 
 │                       │      ├ PkgName         : github.com/opencontainers/selinux 
@@ -25030,13 +25054,14 @@
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Title           : github.com/nwaples/rardecode: RarDecode Out Of Memory Crash 
-│                       │      ├ Description     : github.com/nwaples/rardecode versions <=2.1.1 fail to
-│                       │      │                   restrict the dictionary size when reading large RAR
-│                       │      │                   dictionary sizes, which allows an attacker to provide a
-│                       │      │                   specially crafted RAR file and cause Denial of Service via
-│                       │      │                   an Out Of Memory Crash. 
+│                       │      ├ Description     : Mattermost versions 10.11.x <= 10.11.4, 10.5.x <= 10.5.12
+│                       │      │                   fail to validate the user permission when accessing the
+│                       │      │                   files and subscribing to the block in Boards, which allows
+│                       │      │                   an authenticated user to access other board files and was
+│                       │      │                   able to subscribe to the block from other boards that the
+│                       │      │                   user does not have access to 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-789 
+│                       │      ├ CweIDs           ─ [0]: CWE-306 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -25049,11 +25074,12 @@
 │                       │      │                  ├ [1]: https://github.com/nwaples/rardecode 
 │                       │      │                  ├ [2]: https://github.com/nwaples/rardecode/commit/52fb4e825c
 │                       │      │                  │      936636f251f7e7deded39ab11df9a9 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
-│                       │      │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-4020 
-│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
+│                       │      │                  ├ [3]: https://mattermost.com/security-updates 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4020 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
-│                       │      ╰ LastModifiedDate: 2025-10-14T19:37:28.107Z 
+│                       │      ╰ LastModifiedDate: 2025-11-27T12:15:47.06Z 
 │                       ├ [6]  ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ PkgID           : github.com/opencontainers/selinux@v1.11.0 
 │                       │      ├ PkgName         : github.com/opencontainers/selinux 
