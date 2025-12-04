@@ -10212,6 +10212,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:371090da6ad45dc0f52cb09a5e03447558b7b6fb71c2703c3aaa6d543f133242
     Title: In netstat in BusyBox through 1.37.0, local users can launch of networ ...
     Description: In netstat in BusyBox through 1.37.0, local users can launch of network application with an argv[0] containing an ANSI terminal escape sequence, leading to a denial of service (terminal locked up) when netstat is used by a victim.
     Severity: MEDIUM
@@ -10245,6 +10246,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:72f7ddc8dd70b0e1ad7430b1bd8a09a059de78c6b88dc3c0a1aec3331a616aca
     Title: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hid ...
     Description: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.
     Severity: LOW
@@ -10286,6 +10288,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:24fc1b2cd7e274cd6a69ab9ec49ad3f9012902205ab5aa01e69c2829b15a31e6
     Title: In netstat in BusyBox through 1.37.0, local users can launch of networ ...
     Description: In netstat in BusyBox through 1.37.0, local users can launch of network application with an argv[0] containing an ANSI terminal escape sequence, leading to a denial of service (terminal locked up) when netstat is used by a victim.
     Severity: MEDIUM
@@ -10319,6 +10322,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:874732dc3675fbddc7fefd870c4828870f46046b694dc4d6c5d61ce65942f8fd
     Title: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hid ...
     Description: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.
     Severity: LOW
@@ -10360,6 +10364,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:2df8480839831c9b29a8fba81efce8d1935a82b4bef7ca56b2f3cde6f1992434
     Title: 'curl: predictable WebSocket mask'
     Description: |-
       curl's websocket code did not update the 32 bit mask pattern for each new
@@ -10411,6 +10416,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e53e7cc0f94b8ded0d8d64ea173cb11bdcbe25b879644c6aa343579e638601d4
     Title: 'curl: Curl missing SFTP host verification with wolfSSH backend'
     Description: |-
       curl's code for managing SSH connections when SFTP was done using the wolfSSH
@@ -10452,6 +10458,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:25ea0374d29f1eb195f451b75237194d9070a4b88e7f3c121431ab72e3f724c2
     Title: 'curl: libcurl: Curl out of bounds read for cookie path'
     Description: |-
       1. A cookie is set using the `secure` keyword for `https://target`
@@ -10509,6 +10516,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:dfedce62cd5c199a3a773684dda4e1a08b7e0e8ca0bf6263302fd9023bc2b3ca
     Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
     Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
@@ -10539,6 +10547,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-54388
     PublishedDate: '2025-07-30T14:15:28.693Z'
     LastModifiedDate: '2025-09-08T16:34:31.63Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: docker@28.3.2-r0
+    PkgName: docker
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: a3a094e5b97da25e
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e6ee1538c128b5abc6c257010eb9f640d5e9067a86694813e1439751a9df8b3f
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: docker@28.3.2-r0
+    PkgName: docker
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: a3a094e5b97da25e
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:87628d0779edc0f55d7f3546e2e05f71e30ce32d7be60cb57d00b8bd80bf7bdc
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
   - VulnerabilityID: CVE-2025-54388
     PkgID: docker-bash-completion@28.3.2-r0
     PkgName: docker-bash-completion
@@ -10557,6 +10619,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:bbdcf310ba6fae45b49b8e5fd88b473a9341f175229c8cd5092b440d50ad23cc
     Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
     Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
@@ -10587,6 +10650,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-54388
     PublishedDate: '2025-07-30T14:15:28.693Z'
     LastModifiedDate: '2025-09-08T16:34:31.63Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: docker-bash-completion@28.3.2-r0
+    PkgName: docker-bash-completion
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 65d5c5763fc4e499
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:9137c9011a7a286ed48d5565e73f7c487b66adffe0498575d75c0b7e5622f5a7
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: docker-bash-completion@28.3.2-r0
+    PkgName: docker-bash-completion
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 65d5c5763fc4e499
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:4febee4c82bf387cf9959a903253bd30869416e71c30b307fc47f77d884aaede
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
   - VulnerabilityID: CVE-2025-54388
     PkgID: docker-cli@28.3.2-r0
     PkgName: docker-cli
@@ -10605,6 +10722,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:10a80745b16c2dae1d82ae448b5cdc1e301c5a02d614ec9ad5fab2527b287c0c
     Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
     Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
@@ -10635,6 +10753,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-54388
     PublishedDate: '2025-07-30T14:15:28.693Z'
     LastModifiedDate: '2025-09-08T16:34:31.63Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: docker-cli@28.3.2-r0
+    PkgName: docker-cli
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 8656405a0a652f40
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:4d3d9f5b2d2d433327cecd1dd17c52936046500c762f7b45b9cb605ff5bfb934
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: docker-cli@28.3.2-r0
+    PkgName: docker-cli
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 8656405a0a652f40
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:80122861bd4249abe5e4299d9d8e5242759cf769aca8a6f4631f0a06db5f0ac8
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
   - VulnerabilityID: CVE-2025-54388
     PkgID: docker-engine@28.3.2-r0
     PkgName: docker-engine
@@ -10653,6 +10825,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:dd2b78a700d8a63205c399ed539ca6c507428a92f2f1fb4de10da26f673e38e7
     Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
     Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
@@ -10683,6 +10856,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-54388
     PublishedDate: '2025-07-30T14:15:28.693Z'
     LastModifiedDate: '2025-09-08T16:34:31.63Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: docker-engine@28.3.2-r0
+    PkgName: docker-engine
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 7402f05110c51fa5
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:17f5a7133f135f31d57fd55af22f67d99bea97fb1c1c609cb57f211035b4901d
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: docker-engine@28.3.2-r0
+    PkgName: docker-engine
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 7402f05110c51fa5
+    InstalledVersion: 28.3.2-r0
+    FixedVersion: 29.1.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:303089216de42ef6c22651455c8e917f4155ee6612e0ee13c29114a046ec072b
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
   - VulnerabilityID: CVE-2025-9230
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -10700,6 +10927,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:1cc6583a77263736538228ef981cb0a093e0b5836c5b826c24bcddfcbb33dd6b
     Title: 'openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap'
     Description: |-
       Issue summary: An application trying to decrypt CMS messages encrypted using
@@ -10779,6 +11007,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:707fe7ecf121378cd5d22732e23b5f9684f94115bcd053d45f07023db5a9cae5
     Title: 'openssl: Timing side-channel in SM2 algorithm on 64 bit ARM'
     Description: |-
       Issue summary: A timing side-channel which could potentially allow remote
@@ -10841,6 +11070,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:6bdf810a20fd297eed7b2c8da126e72b09a466ff0191d1bcf7f6426c5f484633
     Title: 'openssl: Out-of-bounds read in HTTP client no_proxy handling'
     Description: |-
       Issue summary: An application using the OpenSSL HTTP client API functions may
@@ -10911,6 +11141,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:aaafd855fe50e997818600417a689541b6a7cc37096330581e0f9141a8c4bcb1
     Title: 'curl: predictable WebSocket mask'
     Description: |-
       curl's websocket code did not update the 32 bit mask pattern for each new
@@ -10962,6 +11193,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d1c9c65ded83a6a884dc920dcac1868e011bd0f83f801e2941bbef02404b4d33
     Title: 'curl: Curl missing SFTP host verification with wolfSSH backend'
     Description: |-
       curl's code for managing SSH connections when SFTP was done using the wolfSSH
@@ -11003,6 +11235,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:ce27f5075ff50c9446acad8ecf1060bc0567f392396c2388a1d8379714fad545
     Title: 'curl: libcurl: Curl out of bounds read for cookie path'
     Description: |-
       1. A cookie is set using the `secure` keyword for `https://target`
@@ -11059,6 +11292,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:47d6577b4489dbdc89b23e3e126a677b79c44e9c4266fdd7153fd2876c623a68
     Title: 'expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing'
     Description: libexpat in Expat before 2.7.2 allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing.
     Severity: MEDIUM
@@ -11114,6 +11348,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:5845772484f394361fd0d3bcb2b0287fe6cf57e7805207bbfbdcddb500ab49bb
     Title: 'libpng: LIBPNG buffer overflow'
     Description: LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From version 1.6.0 to before 1.6.51, an out-of-bounds read vulnerability exists in png_image_read_composite when processing palette images with PNG_FLAG_OPTIMIZE_ALPHA enabled. The palette compositing code in png_init_read_transformations incorrectly applies background compositing during premultiplication, violating the invariant component ≤ alpha × 257 required by the simplified PNG API. This issue has been patched in version 1.6.51.
     Severity: HIGH
@@ -11153,6 +11388,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:87699f2aad64681a1d4bde3eebb7c4ed81ea2f87379b8f5ee36693d99897d5df
     Title: 'libpng: LIBPNG heap buffer overflow'
     Description: LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From version 1.6.0 to before 1.6.51, there is a heap buffer overflow vulnerability in the libpng simplified API function png_image_finish_read when processing 16-bit interlaced PNGs with 8-bit output format. Attacker-crafted interlaced PNG files cause heap writes beyond allocated buffer bounds. This issue has been patched in version 1.6.51.
     Severity: HIGH
@@ -11194,17 +11430,26 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Title: LIBPNG is a reference library for use in applications that read, creat ...
+    Fingerprint: sha256:c2c81e00dfde3a61c5d265a673e5e85c6d46d75571bd88233fcd28314eca8de8
+    Title: 'libpng: LIBPNG heap buffer overflow via malformed palette index'
     Description: LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. Prior to version 1.6.51, a heap buffer over-read vulnerability exists in libpng's png_do_quantize function when processing PNG files with malformed palette indices. The vulnerability occurs when palette_lookup array bounds are not validated against externally-supplied image data, allowing an attacker to craft a PNG file with out-of-range palette indices that trigger out-of-bounds memory access. This issue has been patched in version 1.6.51.
     Severity: MEDIUM
     CweIDs:
     - CWE-125
     VendorSeverity:
       photon: 2
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:L
+        V3Score: 4.4
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-64505
     - https://github.com/pnggroup/libpng/commit/6a528eb5fd0dd7f6de1c39d30de0e41473431c37
     - https://github.com/pnggroup/libpng/pull/748
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-4952-h5wq-4m42
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-64505
+    - https://www.cve.org/CVERecord?id=CVE-2025-64505
     PublishedDate: '2025-11-25T00:15:47.133Z'
     LastModifiedDate: '2025-11-26T18:28:32.22Z'
   - VulnerabilityID: CVE-2025-64506
@@ -11224,6 +11469,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:19b3cfc40c13da6a17d49374bd2a8751218c52e86428b63fee0a0201e42f5687
     Title: 'libpng: LIBPNG heap buffer over-read'
     Description: LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From version 1.6.0 to before 1.6.51, a heap buffer over-read vulnerability exists in libpng's png_write_image_8bit function when processing 8-bit images through the simplified write API with convert_to_8bit enabled. The vulnerability affects 8-bit grayscale+alpha, RGB/RGBA, and images with incomplete row data. A conditional guard incorrectly allows 8-bit input to enter code expecting 16-bit input, causing reads up to 2 bytes beyond allocated buffer boundaries. This issue has been patched in version 1.6.51.
     Severity: MEDIUM
@@ -11262,6 +11508,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:4f2a99864c5f2acff759cd06bdb84d9f16a53f97f7dfca17c7b01b07d9dc0be6
     Title: 'openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap'
     Description: |-
       Issue summary: An application trying to decrypt CMS messages encrypted using
@@ -11341,6 +11588,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d12b6f8476f012125fc2447ee28d12bad2be81e8f3e7aa17810a508de9ecb2b2
     Title: 'openssl: Timing side-channel in SM2 algorithm on 64 bit ARM'
     Description: |-
       Issue summary: A timing side-channel which could potentially allow remote
@@ -11403,6 +11651,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:a73d2b93f3a6c404819946b04a5612742693e39ba36f401bdf5d3d3f4d0a315e
     Title: 'openssl: Out-of-bounds read in HTTP client no_proxy handling'
     Description: |-
       Issue summary: An application using the OpenSSL HTTP client API functions may
@@ -11473,6 +11722,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:849543c6b3365598f77eda6f8f518a66e976d4dfd70552d8beb6cebc12c77fc2
     Title: 'openjdk: Enhance certificate handling (Oracle CPU 2025-10)'
     Description: 'Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Security).  Supported versions that are affected are Oracle Java SE: 8u461, 8u461-perf, 11.0.28, 17.0.16, 21.0.8, 25; Oracle GraalVM for JDK: 17.0.16 and  21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 5.9 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N).'
     Severity: MEDIUM
@@ -11535,6 +11785,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:78d9faafbcf8766b2ba42e97d8062ac0b28a8efc8acbb8931dec8879eb491d22
     Title: 'openjdk: Enhance Path Factories (Oracle CPU 2025-10)'
     Description: 'Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JAXP).  Supported versions that are affected are Oracle Java SE: 8u461, 8u461-perf, 11.0.28, 17.0.16, 21.0.8, 25; Oracle GraalVM for JDK: 17.0.16 and  21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 7.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N).'
     Severity: MEDIUM
@@ -11597,6 +11848,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e8fe3918516ad71fe30e48198ff0be5c64250cc9a366d8037f8530fca29868d7
     Title: 'openjdk: Enhance String handling (Oracle CPU 2025-10)'
     Description: 'Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Libraries).  Supported versions that are affected are Oracle Java SE: 21.0.8 and  25; Oracle GraalVM for JDK: 21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 3.7 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N).'
     Severity: LOW
@@ -11654,6 +11906,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:79043c93326a269ef51fa29b688aa84d3513f0d6e8de114401a2f399c39e081d
     Title: 'openjdk: Enhance certificate handling (Oracle CPU 2025-10)'
     Description: 'Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Security).  Supported versions that are affected are Oracle Java SE: 8u461, 8u461-perf, 11.0.28, 17.0.16, 21.0.8, 25; Oracle GraalVM for JDK: 17.0.16 and  21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 5.9 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N).'
     Severity: MEDIUM
@@ -11716,6 +11969,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:7ededaaa29864d70eea41e23dc87cd3d6a8b2f1cdcc16ce99349833a69e2a330
     Title: 'openjdk: Enhance Path Factories (Oracle CPU 2025-10)'
     Description: 'Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JAXP).  Supported versions that are affected are Oracle Java SE: 8u461, 8u461-perf, 11.0.28, 17.0.16, 21.0.8, 25; Oracle GraalVM for JDK: 17.0.16 and  21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 7.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N).'
     Severity: MEDIUM
@@ -11778,6 +12032,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:b12e4988061841df33b0324832f43fb38c43d4933b6d934554f5f5bbd7ed7340
     Title: 'openjdk: Enhance String handling (Oracle CPU 2025-10)'
     Description: 'Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Libraries).  Supported versions that are affected are Oracle Java SE: 21.0.8 and  25; Oracle GraalVM for JDK: 21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 3.7 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N).'
     Severity: LOW
@@ -11835,6 +12090,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:b32fd5a0042e0dab530ec0f49bf2e02de28ed3f2db7d8493c87cd7104521c0ff
     Title: 'openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap'
     Description: |-
       Issue summary: An application trying to decrypt CMS messages encrypted using
@@ -11914,6 +12170,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3812d530bca60a0b580c49de4dd550826b1f15689fdd34882187fa940c923df8
     Title: 'openssl: Timing side-channel in SM2 algorithm on 64 bit ARM'
     Description: |-
       Issue summary: A timing side-channel which could potentially allow remote
@@ -11976,6 +12233,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:2dec266e016642185e0abf2174f5e604689077f5adf2122fb7934e8c446f193d
     Title: 'openssl: Out-of-bounds read in HTTP client no_proxy handling'
     Description: |-
       Issue summary: An application using the OpenSSL HTTP client API functions may
@@ -12047,6 +12305,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:46ef5d65562f36012f80ef73b4e7a85f77635369171cd6d203bf08b60ead70c7
     Title: 'pcre2: PCRE2: heap-buffer-overflow read in match_ref due to missing boundary restoration in SCS'
     Description: The PCRE2 library is a set of C functions that implement regular expression pattern matching. In version 10.45, a heap-buffer-overflow read vulnerability exists in the PCRE2 regular expression matching engine, specifically within the handling of the (*scs:...) (Scan SubString) verb when combined with (*ACCEPT) in src/pcre2_match.c. This vulnerability may potentially lead to information disclosure if the out-of-bounds data read during the memcmp affects the final match result in a way observable by the attacker. This issue has been resolved in version 10.46.
     Severity: CRITICAL
@@ -12092,6 +12351,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:ead1c9bdea81b4a4967ef404190e66e5d74dac074b9eaa72af30d62f72db1b5a
     Title: 'runc: container escape via ''masked path'' abuse due to mount race conditions'
     Description: 'runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7 and below, 1.3.0-rc.1 through 1.3.1, 1.4.0-rc.1 and 1.4.0-rc.2 files, runc would not perform sufficient verification that the source of the bind-mount (i.e., the container''s /dev/null) was actually a real /dev/null inode when using the container''s /dev/null to mask. This exposes two methods of attack:  an arbitrary mount gadget, leading to host information disclosure, host denial of service, container escape, or a bypassing of maskedPaths. This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.'
     Severity: HIGH
@@ -12156,6 +12416,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:1cd00342fa98a5568333544d6a189b578169c519db7973c6cf660fcb62d51e9f
     Title: 'runc: container escape with malicious config due to /dev/console mount and related races'
     Description: runc is a CLI tool for spawning and running containers according to the OCI specification. Versions 1.0.0-rc3 through 1.2.7, 1.3.0-rc.1 through 1.3.2, and 1.4.0-rc.1 through 1.4.0-rc.2, due to insufficient checks when bind-mounting `/dev/pts/$n` to `/dev/console` inside the container, an attacker can trick runc into bind-mounting paths which would normally be made read-only or be masked onto a path that the attacker can write to. This attack is very similar in concept and application to CVE-2025-31133, except that it attacks a similar vulnerability in a different target (namely, the bind-mount of `/dev/pts/$n` to `/dev/console` as configured for all containers that allocate a console). This happens after `pivot_root(2)`, so this cannot be used to write to host files directly -- however, as with CVE-2025-31133, this can load to denial of service of the host or a container breakout by providing the attacker with a writable copy of `/proc/sysrq-trigger` or `/proc/sys/kernel/core_pattern` (respectively). This issue is fixed in versions 1.2.8, 1.3.3 and 1.4.0-rc.3.
     Severity: HIGH
@@ -12224,6 +12485,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:400711221ed0adf03c89214aff30a4286f4b741a47f4c61c474704efbdd7343b
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
     Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
@@ -12309,6 +12571,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:584ba0be8235d28ef7c90b4223191cffc301ec4b0c28e3206d6580070cfa6b9f
     Title: In netstat in BusyBox through 1.37.0, local users can launch of networ ...
     Description: In netstat in BusyBox through 1.37.0, local users can launch of network application with an argv[0] containing an ANSI terminal escape sequence, leading to a denial of service (terminal locked up) when netstat is used by a victim.
     Severity: MEDIUM
@@ -12342,6 +12605,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:ebf40b6fe7209d4849027d17cc680ee249138e80a108529cd0b7c9c1f8e97cd3
     Title: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hid ...
     Description: In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.
     Severity: LOW
@@ -13793,6 +14057,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:141588c43fa4be69cf53bf03621218e8497cbf1dd8d999dd9624157ff4dd11c5
     Title: 'logback-core: arbitrary code execution via JaninoEventEvaluator'
     Description: "ACE vulnerability in JaninoEventEvaluator  by QOS.CH logback-core\n      upto including version 0.1 to 1.3.14 and\_1.4.0 to 1.5.12 in Java applications allows\n      attacker to execute arbitrary code by compromising an existing\n      logback configuration file or by injecting an environment variable\n      before program execution.\n\n\n\n\n\nMalicious logback configuration files can allow the attacker to execute \narbitrary code using the JaninoEventEvaluator extension.\n\n\n\nA successful attack requires the user to have write access to a \nconfiguration file. Alternatively, the attacker could inject a malicious \nenvironment variable pointing to a malicious configuration file. In both \ncases, the attack requires existing privilege."
     Severity: MEDIUM
@@ -13833,6 +14098,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:26a18f2fbbef31b97a05eb1d4204fb3b821dff81093a3e97d7183cbdedcc23cd
     Title: 'ch.qos.logback/logback-core: Conditional abitrary code execution in logback-core'
     Description: "ACE vulnerability in conditional configuration file processing  by QOS.CH logback-core up to and including version 1.5.18 in Java applications, allows an attacker to execute arbitrary code by compromising an existing logback configuration file or by injecting an environment variable before program execution.\n\n\n\nA successful attack requires the presence of Janino library and Spring Framework to be present on the user's class path. In addition, the attacker must\_ have write access to a \nconfiguration file. Alternatively, the attacker could inject a malicious \nenvironment variable pointing to a malicious configuration file. In both \ncases, the attack requires existing privilege."
     Severity: MEDIUM
@@ -13875,6 +14141,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:3b29c3c9a9894c6beebe27efd812461a8f7d1556b245ad74aebceb528ba461db
     Title: 'logback-core: SaxEventRecorder vulnerable to Server-Side Request Forgery (SSRF) attacks'
     Description: "Server-Side Request Forgery (SSRF) in SaxEventRecorder by QOS.CH logback version 0.1 to 1.3.14 and 1.4.0 to 1.5.12\_ on the Java platform, allows an attacker to \nforge requests by compromising logback configuration files in XML.\n\n\n\nThe attacks involves the modification of DOCTYPE declaration in\_ XML configuration files."
     Severity: LOW
@@ -13915,6 +14182,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:6a3e26a74674f1159a655d931436b173236c44882cc4a0b8a1cbf1e542651999
     Title: 'commons-beanutils: Apache Commons BeanUtils: PropertyUtilsBean does not suppresses an enum''s declaredClass property by default'
     Description: |-
       Improper Access Control vulnerability in Apache Commons.
@@ -13991,6 +14259,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:b87df7ae91f5bc9024ca0e20f91e4d6bc947e7fe750b03300f5bad1ffb25cbd4
     Title: 'commons-lang/commons-lang: org.apache.commons/commons-lang3: Uncontrolled Recursion vulnerability in Apache Commons Lang'
     Description: "Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with\_commons-lang:commons-lang\_2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before\_3.18.0.\n\nThe methods ClassUtils.getClass(...) can throw\_StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could\_cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue."
     Severity: MEDIUM
@@ -14041,6 +14310,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:732c9cae3e720c40d62828eb42e35a79089103457c9cd441e91df6f36a92d1e7
     Title: 'org.apache.httpcomponents.client5/httpclient5: Apache HttpComponents: PSL (Public Suffix List) validation bypass'
     Description: A bug in PSL validation logic in Apache HttpClient 5.4.x disables domain checks, affecting cookie management and host name verification. Discovered by the Apache HttpClient team. Fixed in the 5.4.3 release
     Severity: HIGH
@@ -14902,6 +15172,7 @@
       ID: ghsa
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
+    Fingerprint: sha256:370d746ef3a1d0b4cb216e20550f55942c60e2ef009d5e515f2f9a7681fbec17
     Title: Pdfminer.six is a community maintained fork of the original PDFMiner,  ...
     Description: Pdfminer.six is a community maintained fork of the original PDFMiner, a tool for extracting information from PDF documents. Prior to version 20251107, pdfminer.six will execute arbitrary code from a malicious pickle file if provided with a malicious PDF file. The `CMapDB._load_data()` function in pdfminer.six uses `pickle.loads()` to deserialize pickle files. These pickle files are supposed to be part of the pdfminer.six distribution stored in the `cmap/` directory, but a malicious PDF can specify an alternative directory and filename as long as the filename ends in `.pickle.gz`. A malicious, zipped pickle file can then contain code which will automatically execute when the PDF is processed. Version 20251107 fixes the issue.
     Severity: HIGH
@@ -14939,6 +15210,7 @@
       ID: ghsa
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
+    Fingerprint: sha256:256650f36399178be995d8143f9ef9bb8810fdf66991c44b09e08758a1f4e111
     Title: Insecure Deserialization (pickle) in pdfminer.six CMap Loader — Local Privesc
     Description: |-
       ### 🚀 Overview
@@ -15197,6 +15469,7 @@
       ID: ghsa
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
+    Fingerprint: sha256:8de00eb26af72d730d007532d9b37ba88c7e0ef1223cdd99144fed1d2fab3980
     Title: 'pip: pip missing checks on symbolic link extraction'
     Description: |-
       When extracting a tar archive pip may not check symbolic links point into the extraction directory if the tarfile module doesn't implement PEP 706.
@@ -17916,6 +18189,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:e5a5aee97a9305fe104baa92b93e9e43b158effadb11d6964b911dca5b0d06bf
     Title: Grype has a credential disclosure vulnerability in its JSON output
     Description: Grype is a vulnerability scanner for container images and filesystems. A credential disclosure vulnerability was found in Grype, affecting versions 0.68.0 through 0.104.0. If registry credentials are defined and the output of grype is written using the --file or --output json=<file> option, the registry credentials will be included unsanitized in the output file. This issue has been patched in version 0.104.1. Users running affected versions of grype can work around this vulnerability by redirecting stdout to a file instead of using the --file or --output options.
     Severity: HIGH
@@ -17950,6 +18224,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:44cf9251498817af7b1c3b312d6cce6a648e3f6451ff98262c8b4eb7e3364145
     Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
     Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
@@ -17990,6 +18265,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:028c7d76eb71174dfb096356ed1c65bc51e381d3ba8163d1d31fb51391db2224
     Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
     Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
     Severity: MEDIUM
@@ -18025,6 +18301,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:cd34b7427c3dd10f427d8777c8a0720b7e004e92ebfcf5f663d50f7dbd0e8fab
     Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
     Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
@@ -18073,6 +18350,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:dba1e10f2602eeec864029b6633df6b14d61f232a0bc65474e811a9577b56f04
     Title: go-viper's mapstructure May Leak Sensitive Information in Logs When Processing Malformed Data
     Description: "### Summary\n\nUse of this library in a security-critical context may result in leaking sensitive information, if used to process sensitive fields.\n\n### Details\n\nOpenBao (and presumably HashiCorp Vault) have surfaced error messages from `mapstructure` as follows:\n\nhttps://github.com/openbao/openbao/blob/98c3a59c040efca724353ca46ca79bd5cdbab920/sdk/framework/field_data.go#L43-L50\n\n```go\n\t\t\t_, _, err := d.getPrimitive(field, schema)\n\t\t\tif err != nil {\n\t\t\t\treturn fmt.Errorf(\"error converting input for field %q: %w\", field, err)\n\t\t\t}\n```\n\nwhere this calls `mapstructure.WeakDecode(...)`: https://github.com/openbao/openbao/blob/98c3a59c040efca724353ca46ca79bd5cdbab920/sdk/framework/field_data.go#L181-L193\n\n```go\n\nfunc (d *FieldData) getPrimitive(k string, schema *FieldSchema) (interface{}, bool, error) {\n\traw, ok := d.Raw[k]\n\tif !ok {\n\t\treturn nil, false, nil\n\t}\n\n\tswitch t := schema.Type; t {\n\tcase TypeBool:\n\t\tvar result bool\n\t\tif err := mapstructure.WeakDecode(raw, &result); err != nil {\n\t\t\treturn nil, false, err\n\t\t}\n\t\treturn result, true, nil\n```\n\nNotably, `WeakDecode(...)` eventually calls one of the decode helpers, which surfaces the original value via `strconv` helpers:\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/mapstructure.go#L720-L727\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/mapstructure.go#L791-L798\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/decode_hooks.go#L180\n\n& more. These are different code paths than are fixed in the previous iteration at https://github.com/go-viper/mapstructure/security/advisories/GHSA-fv92-fjc5-jj9h.\n\n### PoC\n\nTo reproduce with OpenBao:\n\n```\n$ podman run --pull=always -p 8300:8300 openbao/openbao:latest server -dev -dev-root-token-id=root -dev-listen-address=0.0.0.0:8300\n```\n\nand in a new tab:\n\n```\n$ BAO_TOKEN=root BAO_ADDR=http://localhost:8300 bao auth enable userpass\nSuccess! Enabled userpass auth method at: userpass/\n$ curl -X PUT -H \"X-Vault-Request: true\" -H \"X-Vault-Token: root\" -d '{\"ttl\":\"asdf\"}' \"http://localhost:8200/v1/auth/userpass/users/asdf\"\n\n--> server logs:\n\n2025-06-25T21:32:25.101-0500 [ERROR] core: failed to run existence check: error=\"error converting input for field \\\"ttl\\\": time: invalid duration \\\"asdf\\\"\"\n```\n\n### Impact\n\nThis is an information disclosure bug with little mitigation. See https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expose-sensitive-information-in-error-logs-when-processing-malformed-data-with-the-kv-v2-plugin/74717 for a previous version. That version was fixed, but this is in the second part of that error message (starting at `'' expected a map, got 'string'` -- when the field type is `string` and a `map` is provided, we see the above information leak -- the previous example had a `map` type field with a `string` value provided).\n\nThis was rated 4.5 Medium by HashiCorp in the past iteration."
     Severity: MEDIUM
@@ -18107,6 +18385,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:7513651de775902c91cefdc3bdcb7e610aa79bee244a8998e74acb436a8500c9
     Title: 'github.com/hashicorp/go-getter: HashiCorp go-getter Arbitrary File Read'
     Description: HashiCorp's go-getter library subdirectory download feature is vulnerable to symlink attacks leading to unauthorized read access beyond the designated directory boundaries. This vulnerability, identified as CVE-2025-8959, is fixed in go-getter 1.7.9.
     Severity: HIGH
@@ -18151,11 +18430,12 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:398ac630e758e5cadfe22a29e2928dce1951f83abd7baa61d3e4f6ab270769d7
     Title: 'github.com/nwaples/rardecode: RarDecode Out Of Memory Crash'
-    Description: Mattermost versions 10.11.x <= 10.11.4, 10.5.x <= 10.5.12 fail to validate the user permission when accessing the files and subscribing to the block in Boards, which allows an authenticated user to access other board files and was able to subscribe to the block from other boards that the user does not have access to
+    Description: "github.com/nwaples/rardecode versions <=2.1.1 fail to restrict the dictionary size when reading\_large RAR\_dictionary sizes, which allows an attacker to provide a specially crafted RAR file and cause Denial of Service via an Out Of Memory Crash."
     Severity: MEDIUM
     CweIDs:
-    - CWE-306
+    - CWE-789
     VendorSeverity:
       ghsa: 2
       redhat: 2
@@ -18170,12 +18450,11 @@
     - https://access.redhat.com/security/cve/CVE-2025-11579
     - https://github.com/nwaples/rardecode
     - https://github.com/nwaples/rardecode/commit/52fb4e825c936636f251f7e7deded39ab11df9a9
-    - https://mattermost.com/security-updates
     - https://nvd.nist.gov/vuln/detail/CVE-2025-11579
     - https://pkg.go.dev/vuln/GO-2025-4020
     - https://www.cve.org/CVERecord?id=CVE-2025-11579
     PublishedDate: '2025-10-10T12:15:37.743Z'
-    LastModifiedDate: '2025-11-27T12:15:47.06Z'
+    LastModifiedDate: '2025-12-02T10:16:00.587Z'
   - VulnerabilityID: CVE-2025-52881
     PkgID: github.com/opencontainers/selinux@v1.11.0
     PkgName: github.com/opencontainers/selinux
@@ -18194,6 +18473,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:8b094963fcf1fb460744521478282170fbeb6b251b94508ebcc507ef8e057bfa
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
     Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
@@ -18280,6 +18560,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:dcabb284dbe5bf5aac016266fc8c27943386e658e04460f6ca771cf0dea6e538
     Title: 'github.com/ulikunitz/xz: github.com/ulikunitz/xz leaks memory'
     Description: xz is a pure golang package for reading and writing xz-compressed files. Prior to version 0.5.14, it is possible to put data in front of an LZMA-encoded byte stream without detecting the situation while reading the header. This can lead to increased memory consumption because the current implementation allocates the full decoding buffer directly after reading the header. The LZMA header doesn't include a magic number or has a checksum to detect such an issue according to the specification. Note that the code recognizes the issue later while reading the stream, but at this time the memory allocation has already been done. This issue has been patched in version 0.5.14.
     Severity: MEDIUM
@@ -18324,6 +18605,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:1e8adeb8081ef261a0a2a8f1da291c358e6b7255fc364281e1ae725ee4bc1f17
     Title: SSH Agent servers do not validate the size of messages when processing ...
     Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
     Severity: MEDIUM
@@ -18362,6 +18644,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:1a80d1def37bff45883d5e3d45e50763cc84b4d0909766946a3814097fb2f125
     Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
     Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
     Severity: MEDIUM
@@ -18398,6 +18681,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:fa1565143ee131530ed5952f95fb18fd483fdf80d0ec39fbf9ac7b9bfd86dec6
     Title: 'database/sql: Postgres Scan Race Condition'
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
@@ -18450,6 +18734,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:a9b9a289e8963db765de3c846965554af83ebbba667215216846f6f5ae86c589
     Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
@@ -18506,6 +18791,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d40c02bd8ef04eb4edec0f0b3ee8b7d4450b3039a24bf01fe925d72cf1cbd6cc
     Title: Despite HTTP headers having a default limit of 1MB, the number of cook ...
     Description: Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as "a=;", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.
     Severity: HIGH
@@ -18542,6 +18828,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:c2e954cba5715342f615eac0856de01eef086c6143ddd277c5a5fc205e19aeb9
     Title: Due to the design of the name constraint checking algorithm, the proce ...
     Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
@@ -18578,6 +18865,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:7c36d9db64538ca2a72b50328b19cfd64f8935a9823cfe35b29550d4c27c2677
     Title: 'os/exec: Unexpected paths returned from LookPath in os/exec'
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
@@ -18633,6 +18921,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:e590e2370a52b72c38d4934aabcac39eb9f2e3f20198535decf62c4574223de6
     Title: 'net/url: Insufficient validation of bracketed IPv6 hostnames in net/url'
     Description: 'The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: "http://[::1]/". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.'
     Severity: MEDIUM
@@ -18675,6 +18964,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:248786f00fd6fbba666b94f27226b5811ac15f20dc261e778e7f23b6e0f1d1d0
     Title: 'encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1'
     Description: Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.
     Severity: MEDIUM
@@ -18718,6 +19008,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:02417b9c726b6ed5f5e243a03cea62c7ae2a7b5f376eb6ed3cad7f5ac87e09cf
     Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
     Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
     Severity: MEDIUM
@@ -18761,6 +19052,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:8ce1d99d023dabbe6037fb431a21e3db5ac9f8cfdd89daf05c9cc1066ffece03
     Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
     Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
     Severity: MEDIUM
@@ -18803,6 +19095,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:cba71f8d36aaf8fe345e82576136f4e3d173be65fe18e889e4e2be2b9496c66b
     Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
     Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
     Severity: MEDIUM
@@ -18846,6 +19139,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:6d2c7561da25a3e8fb3413c66a7bf2763e8c0465a9fa067415066e73d1638a35
     Title: 'net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto'
     Description: The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -18888,6 +19182,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:869097118d84a24bfa78957ef015c6911ce2cf1397f8270dcfe82f6e347fd039
     Title: 'net/mail: Excessive CPU consumption in ParseAddress in net/mail'
     Description: The ParseAddress function constructeds domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -18913,6 +19208,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
     LastModifiedDate: '2025-11-04T22:16:36.693Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f1435be1373e471b
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:35a05f0606f9b7825b6c9641f3f4a953dd940168cc23f153dbbd1e4487290718
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f1435be1373e471b
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:434f11b0ce90d64ede83c0582307b8957a54e06bb783d72b96ea498cd3ad6174
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
 - Target: usr/bin/syft
   Class: lang-pkgs
   Type: gobinary
@@ -21318,6 +21667,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:0ef9093bf9ea50a27a4252b7faffdd1d01f37dea8fdc17f72e0d3f64d8aade7b
     Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
     Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
@@ -21358,6 +21708,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:3ad7977819c99d22ae49179434ec225065b7f03f05c2ec6a6bc04e1ac158645e
     Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
     Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
     Severity: MEDIUM
@@ -21393,6 +21744,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:62006aaea9aa8575fa86d8e6786be79b5f9014da921daa2accd19f550d465542
     Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
     Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
@@ -21441,6 +21793,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:90fd5a1f56958fad435e2cb35a05fe18310aeba0bcbaa053d28e09f355600c63
     Title: go-viper's mapstructure May Leak Sensitive Information in Logs When Processing Malformed Data
     Description: "### Summary\n\nUse of this library in a security-critical context may result in leaking sensitive information, if used to process sensitive fields.\n\n### Details\n\nOpenBao (and presumably HashiCorp Vault) have surfaced error messages from `mapstructure` as follows:\n\nhttps://github.com/openbao/openbao/blob/98c3a59c040efca724353ca46ca79bd5cdbab920/sdk/framework/field_data.go#L43-L50\n\n```go\n\t\t\t_, _, err := d.getPrimitive(field, schema)\n\t\t\tif err != nil {\n\t\t\t\treturn fmt.Errorf(\"error converting input for field %q: %w\", field, err)\n\t\t\t}\n```\n\nwhere this calls `mapstructure.WeakDecode(...)`: https://github.com/openbao/openbao/blob/98c3a59c040efca724353ca46ca79bd5cdbab920/sdk/framework/field_data.go#L181-L193\n\n```go\n\nfunc (d *FieldData) getPrimitive(k string, schema *FieldSchema) (interface{}, bool, error) {\n\traw, ok := d.Raw[k]\n\tif !ok {\n\t\treturn nil, false, nil\n\t}\n\n\tswitch t := schema.Type; t {\n\tcase TypeBool:\n\t\tvar result bool\n\t\tif err := mapstructure.WeakDecode(raw, &result); err != nil {\n\t\t\treturn nil, false, err\n\t\t}\n\t\treturn result, true, nil\n```\n\nNotably, `WeakDecode(...)` eventually calls one of the decode helpers, which surfaces the original value via `strconv` helpers:\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/mapstructure.go#L720-L727\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/mapstructure.go#L791-L798\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/decode_hooks.go#L180\n\n& more. These are different code paths than are fixed in the previous iteration at https://github.com/go-viper/mapstructure/security/advisories/GHSA-fv92-fjc5-jj9h.\n\n### PoC\n\nTo reproduce with OpenBao:\n\n```\n$ podman run --pull=always -p 8300:8300 openbao/openbao:latest server -dev -dev-root-token-id=root -dev-listen-address=0.0.0.0:8300\n```\n\nand in a new tab:\n\n```\n$ BAO_TOKEN=root BAO_ADDR=http://localhost:8300 bao auth enable userpass\nSuccess! Enabled userpass auth method at: userpass/\n$ curl -X PUT -H \"X-Vault-Request: true\" -H \"X-Vault-Token: root\" -d '{\"ttl\":\"asdf\"}' \"http://localhost:8200/v1/auth/userpass/users/asdf\"\n\n--> server logs:\n\n2025-06-25T21:32:25.101-0500 [ERROR] core: failed to run existence check: error=\"error converting input for field \\\"ttl\\\": time: invalid duration \\\"asdf\\\"\"\n```\n\n### Impact\n\nThis is an information disclosure bug with little mitigation. See https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expose-sensitive-information-in-error-logs-when-processing-malformed-data-with-the-kv-v2-plugin/74717 for a previous version. That version was fixed, but this is in the second part of that error message (starting at `'' expected a map, got 'string'` -- when the field type is `string` and a `map` is provided, we see the above information leak -- the previous example had a `map` type field with a `string` value provided).\n\nThis was rated 4.5 Medium by HashiCorp in the past iteration."
     Severity: MEDIUM
@@ -21475,6 +21828,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:0b87af2d73fd7ad1be7ecb0a3ce1068b685c9c5b9bf85c7901ad55054fd987c8
     Title: 'github.com/hashicorp/go-getter: HashiCorp go-getter Arbitrary File Read'
     Description: HashiCorp's go-getter library subdirectory download feature is vulnerable to symlink attacks leading to unauthorized read access beyond the designated directory boundaries. This vulnerability, identified as CVE-2025-8959, is fixed in go-getter 1.7.9.
     Severity: HIGH
@@ -21519,11 +21873,12 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:b731b7567b428f48fa06b7fda36bbea1790afe6b3683c01362cb326ba34bff2a
     Title: 'github.com/nwaples/rardecode: RarDecode Out Of Memory Crash'
-    Description: Mattermost versions 10.11.x <= 10.11.4, 10.5.x <= 10.5.12 fail to validate the user permission when accessing the files and subscribing to the block in Boards, which allows an authenticated user to access other board files and was able to subscribe to the block from other boards that the user does not have access to
+    Description: "github.com/nwaples/rardecode versions <=2.1.1 fail to restrict the dictionary size when reading\_large RAR\_dictionary sizes, which allows an attacker to provide a specially crafted RAR file and cause Denial of Service via an Out Of Memory Crash."
     Severity: MEDIUM
     CweIDs:
-    - CWE-306
+    - CWE-789
     VendorSeverity:
       ghsa: 2
       redhat: 2
@@ -21538,12 +21893,11 @@
     - https://access.redhat.com/security/cve/CVE-2025-11579
     - https://github.com/nwaples/rardecode
     - https://github.com/nwaples/rardecode/commit/52fb4e825c936636f251f7e7deded39ab11df9a9
-    - https://mattermost.com/security-updates
     - https://nvd.nist.gov/vuln/detail/CVE-2025-11579
     - https://pkg.go.dev/vuln/GO-2025-4020
     - https://www.cve.org/CVERecord?id=CVE-2025-11579
     PublishedDate: '2025-10-10T12:15:37.743Z'
-    LastModifiedDate: '2025-11-27T12:15:47.06Z'
+    LastModifiedDate: '2025-12-02T10:16:00.587Z'
   - VulnerabilityID: CVE-2025-52881
     PkgID: github.com/opencontainers/selinux@v1.11.0
     PkgName: github.com/opencontainers/selinux
@@ -21562,6 +21916,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:adcc4a661a92209e40cd06b40cc3c8330d26f129484ea490c01e07d3f4b1f8f4
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
     Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
@@ -21648,6 +22003,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:1b405e3756fcd937ee837d23730c01057645ad4d1d41e6b30b7f2a5748d701f8
     Title: 'github.com/ulikunitz/xz: github.com/ulikunitz/xz leaks memory'
     Description: xz is a pure golang package for reading and writing xz-compressed files. Prior to version 0.5.14, it is possible to put data in front of an LZMA-encoded byte stream without detecting the situation while reading the header. This can lead to increased memory consumption because the current implementation allocates the full decoding buffer directly after reading the header. The LZMA header doesn't include a magic number or has a checksum to detect such an issue according to the specification. Note that the code recognizes the issue later while reading the stream, but at this time the memory allocation has already been done. This issue has been patched in version 0.5.14.
     Severity: MEDIUM
@@ -21692,6 +22048,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:08234becaf103aec0b799204789ddf1cb868531935bc104f465c47048a466bcb
     Title: SSH Agent servers do not validate the size of messages when processing ...
     Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
     Severity: MEDIUM
@@ -21730,6 +22087,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:09f5337e98745b6640419ee4dca423f16f75483c95fb63f7111b02d5dce89775
     Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
     Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
     Severity: MEDIUM
@@ -21766,6 +22124,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:30d8019ca285806b92e4d18995256e56f3984630bae5aebfadecc99a64b1a481
     Title: 'database/sql: Postgres Scan Race Condition'
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
@@ -21818,6 +22177,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:ef0db7797479ec922d2903f8de9900099b39a6630c2bc37b05e3495abc75f622
     Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
@@ -21874,6 +22234,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:55859bdd0e430351690d0f58e0ea179b2d4a0b681acd3146105e4ddfae1b91c2
     Title: Despite HTTP headers having a default limit of 1MB, the number of cook ...
     Description: Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as "a=;", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.
     Severity: HIGH
@@ -21910,6 +22271,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:56cfe3e924e18fe761578d5872a3b8959e7a68586bab9f1fc8ff332cb2128dba
     Title: Due to the design of the name constraint checking algorithm, the proce ...
     Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
@@ -21946,6 +22308,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0d013d3ff3d3a93bdcba061cdfe64f69c50644d840856426b24a7f1020156751
     Title: 'os/exec: Unexpected paths returned from LookPath in os/exec'
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
@@ -22001,6 +22364,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:22faf83cc7a32b78b27229410330229dda55a63d90581244bc32289ae263c89b
     Title: 'net/url: Insufficient validation of bracketed IPv6 hostnames in net/url'
     Description: 'The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: "http://[::1]/". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.'
     Severity: MEDIUM
@@ -22043,6 +22407,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:cee6b45209c64d55aae94bb1f5543ca5fca5bfe34890c58b8636562df39eb12b
     Title: 'encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1'
     Description: Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.
     Severity: MEDIUM
@@ -22086,6 +22451,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:8b2b1a98c88b0c71b1a75361151a8a828a342e8c1a04a2f4e818a8992fde417a
     Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
     Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
     Severity: MEDIUM
@@ -22129,6 +22495,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:ee5781b6d92889f71fc34ad56c0381dc09b383430fca4f3e4883aea3e87a1381
     Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
     Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
     Severity: MEDIUM
@@ -22171,6 +22538,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2c2d57010996901886b99cb0fd8c7d6488fdab22c1111e59f0264c7b7ddae2be
     Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
     Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
     Severity: MEDIUM
@@ -22214,6 +22582,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:b27b1236dac7f99d6f5a2ed4ac62ddef04603e1e9787ab42441337eac599f3f9
     Title: 'net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto'
     Description: The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -22256,6 +22625,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:6b72ec504f53171eb27a7b24c2a87974d3e4dd61271bc55115d3f84e66b7a845
     Title: 'net/mail: Excessive CPU consumption in ParseAddress in net/mail'
     Description: The ParseAddress function constructeds domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -22281,6 +22651,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
     LastModifiedDate: '2025-11-04T22:16:36.693Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: ebfdcee22f3690eb
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:bee8b7b1dcd3769dfcbd6e16038badecd684744bcadcba44ffdea07044e975cc
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: ebfdcee22f3690eb
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:031acd7eec3c82c8e36a3303b5dae85d0a6e28dd6dc6b0578f847583b8595579
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
 - Target: usr/bin/trivy
   Class: lang-pkgs
   Type: gobinary
@@ -26116,6 +26540,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:b395f5b88a6faec0afeb4f07f3c160b6319377b2832296c2d48479e433f664ff
     Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
     Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
@@ -26156,6 +26581,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:07560e55fead6ae33eda31599dd4af0c0cdb24f146b698b59d20d68de4d17b9e
     Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
     Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
     Severity: MEDIUM
@@ -26191,6 +26617,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:71c91fd28bdea4fe0dd2b716096391b11f1d476a196b27ae106b855a330d810c
     Title: containerd is an open-source container runtime. Versions 0.1.0 through ...
     Description: containerd is an open-source container runtime. Versions 0.1.0 through 1.7.28, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4 and 2.2.0-beta.0 through 2.2.0-rc.1 have an overly broad default permission vulnerability. Directory paths `/var/lib/containerd`, `/run/containerd/io.containerd.grpc.v1.cri` and `/run/containerd/io.containerd.sandbox.controller.v1.shim` were all created with incorrect permissions. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. Workarounds include updating system administrator permissions so the host can manually chmod the directories to not have group or world accessible permissions, or to run containerd in rootless mode.
     Severity: HIGH
@@ -26231,6 +26658,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:443947533d96aaa01d6bd1a43e5562681cb9f416d816dc9e6f7c7571018a88e0
     Title: containerd is an open-source container runtime. Versions 1.7.28 and be ...
     Description: containerd is an open-source container runtime. Versions 1.7.28 and below, 2.0.0-beta.0 through 2.0.6, 2.1.0-beta.0 through 2.1.4, and 2.2.0-beta.0 through 2.2.0-rc.1 contain a bug in the CRI Attach implementation where a user can exhaust memory on the host due to goroutine leaks. This issue is fixed in versions 1.7.29, 2.0.7, 2.1.5 and 2.2.0. To workaround this vulnerability, users can set up an admission controller to control accesses to pods/attach resources.
     Severity: MEDIUM
@@ -26266,6 +26694,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:7cea5c2012acb20f645c7d96eb580ff4ca583d2ffdbf9dc8b0c1cef86c1af786
     Title: 'github.com/moby/moby: Moby''s Firewalld reload makes container ports accessible'
     Description: Moby is an open source container framework developed by Docker Inc. that is distributed as Docker Engine, Mirantis Container Runtime, and various other downstream projects/products. In versions 28.2.0 through 28.3.2, when the firewalld service is reloaded it removes all iptables rules including those created by Docker. While Docker should automatically recreate these rules, versions before 28.3.3 fail to recreate the specific rules that block external access to containers. This means that after a firewalld reload, containers with ports published to localhost (like 127.0.0.1:8080) become accessible from remote machines that have network routing to the Docker bridge, even though they should only be accessible from the host itself. The vulnerability only affects explicitly published ports - unpublished ports remain protected. This issue is fixed in version 28.3.3.
     Severity: MEDIUM
@@ -26314,6 +26743,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:994f10dac8e8140f44322baead13fa11ba32849e11609f7c5941c014f4a5a4cf
     Title: go-viper's mapstructure May Leak Sensitive Information in Logs When Processing Malformed Data
     Description: "### Summary\n\nUse of this library in a security-critical context may result in leaking sensitive information, if used to process sensitive fields.\n\n### Details\n\nOpenBao (and presumably HashiCorp Vault) have surfaced error messages from `mapstructure` as follows:\n\nhttps://github.com/openbao/openbao/blob/98c3a59c040efca724353ca46ca79bd5cdbab920/sdk/framework/field_data.go#L43-L50\n\n```go\n\t\t\t_, _, err := d.getPrimitive(field, schema)\n\t\t\tif err != nil {\n\t\t\t\treturn fmt.Errorf(\"error converting input for field %q: %w\", field, err)\n\t\t\t}\n```\n\nwhere this calls `mapstructure.WeakDecode(...)`: https://github.com/openbao/openbao/blob/98c3a59c040efca724353ca46ca79bd5cdbab920/sdk/framework/field_data.go#L181-L193\n\n```go\n\nfunc (d *FieldData) getPrimitive(k string, schema *FieldSchema) (interface{}, bool, error) {\n\traw, ok := d.Raw[k]\n\tif !ok {\n\t\treturn nil, false, nil\n\t}\n\n\tswitch t := schema.Type; t {\n\tcase TypeBool:\n\t\tvar result bool\n\t\tif err := mapstructure.WeakDecode(raw, &result); err != nil {\n\t\t\treturn nil, false, err\n\t\t}\n\t\treturn result, true, nil\n```\n\nNotably, `WeakDecode(...)` eventually calls one of the decode helpers, which surfaces the original value via `strconv` helpers:\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/mapstructure.go#L720-L727\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/mapstructure.go#L791-L798\n\nhttps://github.com/go-viper/mapstructure/blob/8c61ec1924fcfa522f9fc6b4618c672db61d1a38/decode_hooks.go#L180\n\n& more. These are different code paths than are fixed in the previous iteration at https://github.com/go-viper/mapstructure/security/advisories/GHSA-fv92-fjc5-jj9h.\n\n### PoC\n\nTo reproduce with OpenBao:\n\n```\n$ podman run --pull=always -p 8300:8300 openbao/openbao:latest server -dev -dev-root-token-id=root -dev-listen-address=0.0.0.0:8300\n```\n\nand in a new tab:\n\n```\n$ BAO_TOKEN=root BAO_ADDR=http://localhost:8300 bao auth enable userpass\nSuccess! Enabled userpass auth method at: userpass/\n$ curl -X PUT -H \"X-Vault-Request: true\" -H \"X-Vault-Token: root\" -d '{\"ttl\":\"asdf\"}' \"http://localhost:8200/v1/auth/userpass/users/asdf\"\n\n--> server logs:\n\n2025-06-25T21:32:25.101-0500 [ERROR] core: failed to run existence check: error=\"error converting input for field \\\"ttl\\\": time: invalid duration \\\"asdf\\\"\"\n```\n\n### Impact\n\nThis is an information disclosure bug with little mitigation. See https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expose-sensitive-information-in-error-logs-when-processing-malformed-data-with-the-kv-v2-plugin/74717 for a previous version. That version was fixed, but this is in the second part of that error message (starting at `'' expected a map, got 'string'` -- when the field type is `string` and a `map` is provided, we see the above information leak -- the previous example had a `map` type field with a `string` value provided).\n\nThis was rated 4.5 Medium by HashiCorp in the past iteration."
     Severity: MEDIUM
@@ -26348,6 +26778,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:ee8d79cac2c356c4f9722d4655d032c9eb6d05624fadb66ffa7fbfa18399cde7
     Title: 'github.com/hashicorp/go-getter: HashiCorp go-getter Arbitrary File Read'
     Description: HashiCorp's go-getter library subdirectory download feature is vulnerable to symlink attacks leading to unauthorized read access beyond the designated directory boundaries. This vulnerability, identified as CVE-2025-8959, is fixed in go-getter 1.7.9.
     Severity: HIGH
@@ -26392,6 +26823,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:4a1091ee46f9373516e8c21642ef55c594c806bbde6bb5144638ffb479720bec
     Title: 'runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects'
     Description: runc is a CLI tool for spawning and running containers according to the OCI specification. In versions 1.2.7, 1.3.2 and 1.4.0-rc.2, an attacker can trick runc into misdirecting writes to /proc to other procfs files through the use of a racing container with shared mounts (we have also verified this attack is possible to exploit using a standard Dockerfile with docker buildx build as that also permits triggering parallel execution of containers with custom shared mounts configured). This redirect could be through symbolic links in a tmpfs or theoretically other methods such as regular bind-mounts. While similar, the mitigation applied for the related CVE, CVE-2019-19921, was fairly limited and effectively only caused runc to verify that when LSM labels are written they are actually procfs files. This issue is fixed in versions 1.2.8, 1.3.3, and 1.4.0-rc.3.
     Severity: HIGH
@@ -26478,6 +26910,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:82438f7edd6a357333c77c381087fb6c0e180576eba76dacd7020fbef27f81b3
     Title: 'github.com/ulikunitz/xz: github.com/ulikunitz/xz leaks memory'
     Description: xz is a pure golang package for reading and writing xz-compressed files. Prior to version 0.5.14, it is possible to put data in front of an LZMA-encoded byte stream without detecting the situation while reading the header. This can lead to increased memory consumption because the current implementation allocates the full decoding buffer directly after reading the header. The LZMA header doesn't include a magic number or has a checksum to detect such an issue according to the specification. Note that the code recognizes the issue later while reading the stream, but at this time the memory allocation has already been done. This issue has been patched in version 0.5.14.
     Severity: MEDIUM
@@ -26522,6 +26955,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:5121da4661ca1ef81684d335a5661b1838447d01481663ca16401b5ee35c9b7a
     Title: SSH Agent servers do not validate the size of messages when processing ...
     Description: SSH Agent servers do not validate the size of messages when processing new identity requests, which may cause the program to panic if the message is malformed due to an out of bounds read.
     Severity: MEDIUM
@@ -26560,6 +26994,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:a4ec1ff2394db4a9351c3cf88612dcbde0c37d2622141c0c599bfc56f52637bf
     Title: SSH servers parsing GSSAPI authentication requests do not validate the ...
     Description: SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption.
     Severity: MEDIUM
@@ -26597,6 +27032,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:7da7a5dc38aa54b0654f17aa241e6ce81d42b3ae44ef715236e4fdc8d17b98be
     Title: 'helm.sh/helm/v3: Helm Chart Code Execution'
     Description: Helm is a package manager for Charts for Kubernetes. Prior to 3.18.4, a specially crafted Chart.yaml file along with a specially linked Chart.lock file can lead to local code execution when dependencies are updated. Fields in a Chart.yaml file, that are carried over to a Chart.lock file when dependencies are updated and this file is written, can be crafted in a way that can cause execution if that same content were in a file that is executed (e.g., a bash.rc file or shell script). If the Chart.lock file is symlinked to one of these files updating dependencies will write the lock file content to the symlinked file. This can lead to unwanted execution. Helm warns of the symlinked file but did not stop execution due to symlinking. This issue has been resolved in Helm v3.18.4.
     Severity: HIGH
@@ -26649,6 +27085,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:dc298b55d8814a85f3572500add49966d0242d1f06396ce45e73eba5dce73173
     Title: 'helm.sh/helm/v3: Helm YAML Parsing Panic Vulnerability'
     Description: Helm is a package manager for Charts for Kubernetes. Prior to version 3.18.5, when parsing Chart.yaml and index.yaml files, an improper validation of type error can lead to a panic. This issue has been resolved in Helm 3.18.5. A workaround involves ensuring YAML files are formatted as Helm expects prior to processing them with Helm.
     Severity: MEDIUM
@@ -26696,6 +27133,7 @@
       ID: ghsa
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:e44a364458e9c7afc8b71fa14ce017a7708261506565deac3507a2f92459b599
     Title: 'helm.sh/helm/v3: Helm Chart JSON Schema Denial of Service'
     Description: Helm is a package manager for Charts for Kubernetes. Prior to version 3.18.5, it is possible to craft a JSON Schema file in a manner which could cause Helm to use all available memory and have an out of memory (OOM) termination. This issue has been resolved in Helm 3.18.5. A workaround involves ensuring all Helm charts that are being loaded into Helm do not have any reference of $ref pointing to /dev/zero.
     Severity: MEDIUM
@@ -26741,6 +27179,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:98a6c12143aafc9c9a6041b2830970b0e9bd4c8ea997ae20cc715ff2c57b701b
     Title: 'database/sql: Postgres Scan Race Condition'
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
@@ -26793,6 +27232,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1b23b9f5fc55cbb3649f3aff18e859f3551c74fb08352a2e8932351645a6d0bf
     Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
@@ -26849,6 +27289,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:df26dc77712f29f73effc513101d9b79a359d297b59b886754a6397f3a6df60f
     Title: Despite HTTP headers having a default limit of 1MB, the number of cook ...
     Description: Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as "a=;", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.
     Severity: HIGH
@@ -26885,6 +27326,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d1bb6841f372342b30d5799c1aa60a22e8be1f3a4d7b681329027fea52902c69
     Title: Due to the design of the name constraint checking algorithm, the proce ...
     Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
@@ -26921,6 +27363,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:17e67f7d06c3adfe6d6fc0787bce57acd838ae39e4c1e6280c66606d23550acd
     Title: 'os/exec: Unexpected paths returned from LookPath in os/exec'
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
@@ -26976,6 +27419,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:c7f5aa17733d4ca1dafe48832a268332a44da4f24b2078957cff55d9d32d938f
     Title: 'net/url: Insufficient validation of bracketed IPv6 hostnames in net/url'
     Description: 'The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: "http://[::1]/". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.'
     Severity: MEDIUM
@@ -27018,6 +27462,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:e7446a400005c3d93ef1318f98fcecca613f07a1c25b48db9b26a9e6d0898c18
     Title: 'encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1'
     Description: Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.
     Severity: MEDIUM
@@ -27061,6 +27506,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:9322180aff1c4b64d098cba4241a0d449d022900347a838c7db14690c482b0b9
     Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
     Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
     Severity: MEDIUM
@@ -27104,6 +27550,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:45993b135b8601a7d92ca616d7a096e8b7f55a0a0db3d8aaf18ab129e8e103f6
     Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
     Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
     Severity: MEDIUM
@@ -27146,6 +27593,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:9470a15a75b7357a1d2e845dec6adac3311bde855c52f3c9c51922c2fffab61f
     Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
     Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
     Severity: MEDIUM
@@ -27189,6 +27637,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:4399dace146f454d1701736680ef31472f83cd639a64439b7b3bb0e3522ad905
     Title: 'net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto'
     Description: The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -27231,6 +27680,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:22fd01b3272bccea6168d2df46f2ff3168c8da7f9c35fc7377c3c40ac6f0efb6
     Title: 'net/mail: Excessive CPU consumption in ParseAddress in net/mail'
     Description: The ParseAddress function constructeds domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -27256,6 +27706,60 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
     LastModifiedDate: '2025-11-04T22:16:36.693Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 2bd9acee40f6eed
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:99cd7aa1ac4581e26607a7c8af480993caeb986a17d995eab6fafa09d2d63150
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 2bd9acee40f6eed
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:375bde5fc3ec9b24119cd0e075e29c2ea728d4daae4ac77d7338de2a38ecd971
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
 - Target: usr/bin/trivy_cve_query
   Class: lang-pkgs
   Type: gobinary
@@ -27306,6 +27810,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2c6a5365b29fd3679b5936a78b4f52556b840cac52527907c256aad7855999af
     Title: 'database/sql: Postgres Scan Race Condition'
     Description: Cancelling a query (e.g. by cancelling the context passed to one of the query methods) during a call to the Scan method of the returned Rows can result in unexpected results if other queries are being made in parallel. This can result in a race condition that may overwrite the expected results with those of another query, causing the call to Scan to return either unexpected results from the other query or an error.
     Severity: HIGH
@@ -27358,6 +27863,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:436eedda4d2797671b02b637e33c791e7d0b0633f600fe0ee253693105759f39
     Title: 'golang: archive/tar: Unbounded allocation when parsing GNU sparse map'
     Description: tar.Reader does not set a maximum size on the number of sparse region data blocks in GNU tar pax 1.0 sparse files. A maliciously-crafted archive containing a large number of sparse regions can cause a Reader to read an unbounded amount of data from the archive into memory. When reading from a compressed source, a small compressed input can result in large allocations.
     Severity: HIGH
@@ -27414,6 +27920,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:52294ef11e341de9406e56a00f9667960bb29fcdd102b93ce880e3b305d7a99f
     Title: Despite HTTP headers having a default limit of 1MB, the number of cook ...
     Description: Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as "a=;", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.
     Severity: HIGH
@@ -27450,6 +27957,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:65172c597a23adfa6af39bcaa6480d2aa8575aa26d0d2164ef399af9904b8844
     Title: Due to the design of the name constraint checking algorithm, the proce ...
     Description: Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate. This affects programs which validate arbitrary certificate chains.
     Severity: HIGH
@@ -27486,6 +27994,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:36adf337c80f11a44bab1626ebf856e38616f6a4ebeabba35d8e56faeb4b9182
     Title: 'os/exec: Unexpected paths returned from LookPath in os/exec'
     Description: If the PATH environment variable contains paths which are executables (rather than just directories), passing certain strings to LookPath ("", ".", and ".."), can result in the binaries listed in the PATH being unexpectedly returned.
     Severity: MEDIUM
@@ -27541,6 +28050,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:10888bdedac1cbe98a6496ccc0c9f157a90779dd5e45191145578d774a4aab11
     Title: 'net/url: Insufficient validation of bracketed IPv6 hostnames in net/url'
     Description: 'The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: "http://[::1]/". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.'
     Severity: MEDIUM
@@ -27583,6 +28093,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:507d8a98f506824514b1a52f122e4dd0aa8033235b455b08430b44a2118a8acb
     Title: 'encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1'
     Description: Parsing a maliciously crafted DER payload could allocate large amounts of memory, causing memory exhaustion.
     Severity: MEDIUM
@@ -27626,6 +28137,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:9a88bd609705830ad1cb0cb9d422c327db9caf3484434469119d2f238e86ee87
     Title: 'crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509'
     Description: Validating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method. This affects programs which validate arbitrary certificate chains.
     Severity: MEDIUM
@@ -27669,6 +28181,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:3b944b59e791d25edaf8ba20a7462837a075eebd91d07d14d6796a3a8e2b2a08
     Title: 'crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information'
     Description: When Conn.Handshake fails during ALPN negotiation the error contains attacker controlled information (the ALPN protocols sent by the client) which is not escaped.
     Severity: MEDIUM
@@ -27711,6 +28224,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:4663fbc3db27544dd734e88d9f8562634cd9512cfbb8f1db4f8eee4957134607
     Title: 'encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem'
     Description: The processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input. This affects programs which parse untrusted PEM inputs.
     Severity: MEDIUM
@@ -27754,6 +28268,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:832dcbfb37fb6354298e50bc07ed9ce30cff29856a0362a347e46791913d9ea1
     Title: 'net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto'
     Description: The Reader.ReadResponse function constructs a response string through repeated string concatenation of lines. When the number of lines in a response is large, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -27796,6 +28311,7 @@
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:cc6fc7f0919d7a33336a7bf5a2dceeb588908ca1c411b6c90d2c7035e29c3310
     Title: 'net/mail: Excessive CPU consumption in ParseAddress in net/mail'
     Description: The ParseAddress function constructeds domain-literal address components through repeated string concatenation. When parsing large domain-literal components, this can cause excessive CPU consumption.
     Severity: MEDIUM
@@ -27821,3 +28337,57 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61725
     PublishedDate: '2025-10-29T23:16:20.113Z'
     LastModifiedDate: '2025-11-04T22:16:36.693Z'
+  - VulnerabilityID: CVE-2025-61727
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: 7927e62558d558ff
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61727
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:015455c3c71b8d66e3ce4779b9dcec847398d6dc01cdb7bfe527d044aa6f93ec
+    Title: Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509
+    Description: An excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/723900
+    - https://go.dev/issue/76442
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4175
+  - VulnerabilityID: CVE-2025-61729
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: 7927e62558d558ff
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.24.11, 1.25.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61729
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:201bdabcab5993e3a03fdda8ef240d60270509b4a33cec051a3bab75bbf4e4b1
+    Title: Within HostnameError.Error(), when constructing an error string, there ...
+    Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/725920
+    - https://go.dev/issue/76445
+    - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
+    - https://pkg.go.dev/vuln/GO-2025-4155
+    PublishedDate: '2025-12-02T19:15:51.447Z'
+    LastModifiedDate: '2025-12-02T22:16:08.527Z'
