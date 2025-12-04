@@ -12798,6 +12798,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:371090da6ad45dc0f52cb09a5e03447558b7b6fb71c2703c3aaa6
+│                       │      │                   d543f133242 
 │                       │      ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
 │                       │      │                    of networ ... 
 │                       │      ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
@@ -12832,6 +12834,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:72f7ddc8dd70b0e1ad7430b1bd8a09a059de78c6b88dc3c0a1aec
+│                       │      │                   3331a616aca 
 │                       │      ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
 │                       │      │                   filenames hid ... 
 │                       │      ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
@@ -12873,6 +12877,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:24fc1b2cd7e274cd6a69ab9ec49ad3f9012902205ab5aa01e69c2
+│                       │      │                   829b15a31e6 
 │                       │      ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
 │                       │      │                    of networ ... 
 │                       │      ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
@@ -12907,6 +12913,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:874732dc3675fbddc7fefd870c4828870f46046b694dc4d6c5d61
+│                       │      │                   ce65942f8fd 
 │                       │      ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
 │                       │      │                   filenames hid ... 
 │                       │      ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
@@ -12948,6 +12956,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:2df8480839831c9b29a8fba81efce8d1935a82b4bef7ca56b2f3c
+│                       │      │                   de6f1992434 
 │                       │      ├ Title           : curl: predictable WebSocket mask 
 │                       │      ├ Description     : curl's websocket code did not update the 32 bit mask pattern
 │                       │      │                    for each new
@@ -13001,6 +13011,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:e53e7cc0f94b8ded0d8d64ea173cb11bdcbe25b879644c6aa3435
+│                       │      │                   79e638601d4 
 │                       │      ├ Title           : curl: Curl missing SFTP host verification with wolfSSH backend 
 │                       │      ├ Description     : curl's code for managing SSH connections when SFTP was done
 │                       │      │                   using the wolfSSH
@@ -13041,6 +13053,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:25ea0374d29f1eb195f451b75237194d9070a4b88e7f3c121431a
+│                       │      │                   b72e3f724c2 
 │                       │      ├ Title           : curl: libcurl: Curl out of bounds read for cookie path 
 │                       │      ├ Description     : 1. A cookie is set using the `secure` keyword for
 │                       │      │                   `https://target`
@@ -13106,6 +13120,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:dfedce62cd5c199a3a773684dda4e1a08b7e0e8ca0bf6263302fd
+│                       │      │                   9023bc2b3ca 
 │                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
 │                       │      │                   container ports accessible 
 │                       │      ├ Description     : Moby is an open source container framework developed by
@@ -13150,7 +13166,74 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2025-61727 
+│                       │      ├ PkgID           : docker@28.3.2-r0 
+│                       │      ├ PkgName         : docker 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : a3a094e5b97da25e 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:e6ee1538c128b5abc6c257010eb9f640d5e9067a86694813e1439
+│                       │      │                   751a9df8b3f 
+│                       │      ├ Title           : Improper application of excluded DNS name constraints when
+│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restrict the usage of wildcard SANs in the leaf
+│                       │      │                   certificate. For example a constraint that excludes the
+│                       │      │                   subdomain test.example.com does not prevent a leaf
+│                       │      │                   certificate from claiming the SAN *.example.com. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │                         ├ [1]: https://go.dev/issue/76442 
+│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │                         │      dm4 
+│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-61729 
+│                       │      ├ PkgID           : docker@28.3.2-r0 
+│                       │      ├ PkgName         : docker 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.
+│                       │      │                  │       23.0_alpha20250612 
+│                       │      │                  ╰ UID : a3a094e5b97da25e 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:87628d0779edc0f55d7f3546e2e05f71e30ce32d7be60cb57d00b
+│                       │      │                   8bd80bf7bdc 
+│                       │      ├ Title           : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there ... 
+│                       │      ├ Description     : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there is no limit to the number of hosts that will
+│                       │      │                   be printed out. Furthermore, the error string is constructed
+│                       │      │                    by repeated string concatenation, leading to quadratic
+│                       │      │                   runtime. Therefore, a certificate provided by a malicious
+│                       │      │                   actor can result in excessive resource consumption. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/725920 
+│                       │      │                  ├ [1]: https://go.dev/issue/76445 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+│                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+│                       │      ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-bash-completion@28.3.2-r0 
 │                       │      ├ PkgName         : docker-bash-completion 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=
@@ -13168,6 +13251,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:bbdcf310ba6fae45b49b8e5fd88b473a9341f175229c8cd5092b4
+│                       │      │                   40d50ad23cc 
 │                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
 │                       │      │                   container ports accessible 
 │                       │      ├ Description     : Moby is an open source container framework developed by
@@ -13212,7 +13297,74 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2025-61727 
+│                       │      ├ PkgID           : docker-bash-completion@28.3.2-r0 
+│                       │      ├ PkgName         : docker-bash-completion 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=
+│                       │      │                  │       x86_64&distro=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 65d5c5763fc4e499 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:9137c9011a7a286ed48d5565e73f7c487b66adffe0498575d75c0
+│                       │      │                   b7e5622f5a7 
+│                       │      ├ Title           : Improper application of excluded DNS name constraints when
+│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restrict the usage of wildcard SANs in the leaf
+│                       │      │                   certificate. For example a constraint that excludes the
+│                       │      │                   subdomain test.example.com does not prevent a leaf
+│                       │      │                   certificate from claiming the SAN *.example.com. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │                         ├ [1]: https://go.dev/issue/76442 
+│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │                         │      dm4 
+│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2025-61729 
+│                       │      ├ PkgID           : docker-bash-completion@28.3.2-r0 
+│                       │      ├ PkgName         : docker-bash-completion 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=
+│                       │      │                  │       x86_64&distro=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 65d5c5763fc4e499 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:4febee4c82bf387cf9959a903253bd30869416e71c30b307fc47f
+│                       │      │                   77d884aaede 
+│                       │      ├ Title           : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there ... 
+│                       │      ├ Description     : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there is no limit to the number of hosts that will
+│                       │      │                   be printed out. Furthermore, the error string is constructed
+│                       │      │                    by repeated string concatenation, leading to quadratic
+│                       │      │                   runtime. Therefore, a certificate provided by a malicious
+│                       │      │                   actor can result in excessive resource consumption. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/725920 
+│                       │      │                  ├ [1]: https://go.dev/issue/76445 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+│                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+│                       │      ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-cli@28.3.2-r0 
 │                       │      ├ PkgName         : docker-cli 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distr
@@ -13230,6 +13382,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:10a80745b16c2dae1d82ae448b5cdc1e301c5a02d614ec9ad5fab
+│                       │      │                   2527b287c0c 
 │                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
 │                       │      │                   container ports accessible 
 │                       │      ├ Description     : Moby is an open source container framework developed by
@@ -13274,7 +13428,74 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2025-54388 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-61727 
+│                       │      ├ PkgID           : docker-cli@28.3.2-r0 
+│                       │      ├ PkgName         : docker-cli 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distr
+│                       │      │                  │       o=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 8656405a0a652f40 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:4d3d9f5b2d2d433327cecd1dd17c52936046500c762f7b45b9cb6
+│                       │      │                   05ff5bfb934 
+│                       │      ├ Title           : Improper application of excluded DNS name constraints when
+│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restrict the usage of wildcard SANs in the leaf
+│                       │      │                   certificate. For example a constraint that excludes the
+│                       │      │                   subdomain test.example.com does not prevent a leaf
+│                       │      │                   certificate from claiming the SAN *.example.com. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │                         ├ [1]: https://go.dev/issue/76442 
+│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │                         │      dm4 
+│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61729 
+│                       │      ├ PkgID           : docker-cli@28.3.2-r0 
+│                       │      ├ PkgName         : docker-cli 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distr
+│                       │      │                  │       o=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 8656405a0a652f40 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:80122861bd4249abe5e4299d9d8e5242759cf769aca8a6f4631f0
+│                       │      │                   a06db5f0ac8 
+│                       │      ├ Title           : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there ... 
+│                       │      ├ Description     : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there is no limit to the number of hosts that will
+│                       │      │                   be printed out. Furthermore, the error string is constructed
+│                       │      │                    by repeated string concatenation, leading to quadratic
+│                       │      │                   runtime. Therefore, a certificate provided by a malicious
+│                       │      │                   actor can result in excessive resource consumption. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/725920 
+│                       │      │                  ├ [1]: https://go.dev/issue/76445 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+│                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+│                       │      ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-engine@28.3.2-r0 
 │                       │      ├ PkgName         : docker-engine 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&di
@@ -13292,6 +13513,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:dd2b78a700d8a63205c399ed539ca6c507428a92f2f1fb4de10da
+│                       │      │                   26f673e38e7 
 │                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
 │                       │      │                   container ports accessible 
 │                       │      ├ Description     : Moby is an open source container framework developed by
@@ -13336,7 +13559,74 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-54388 
 │                       │      ├ PublishedDate   : 2025-07-30T14:15:28.693Z 
 │                       │      ╰ LastModifiedDate: 2025-09-08T16:34:31.63Z 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-61727 
+│                       │      ├ PkgID           : docker-engine@28.3.2-r0 
+│                       │      ├ PkgName         : docker-engine 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&di
+│                       │      │                  │       stro=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 7402f05110c51fa5 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:17f5a7133f135f31d57fd55af22f67d99bea97fb1c1c609cb57f2
+│                       │      │                   11035b4901d 
+│                       │      ├ Title           : Improper application of excluded DNS name constraints when
+│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restrict the usage of wildcard SANs in the leaf
+│                       │      │                   certificate. For example a constraint that excludes the
+│                       │      │                   subdomain test.example.com does not prevent a leaf
+│                       │      │                   certificate from claiming the SAN *.example.com. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │                         ├ [1]: https://go.dev/issue/76442 
+│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │                         │      dm4 
+│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-61729 
+│                       │      ├ PkgID           : docker-engine@28.3.2-r0 
+│                       │      ├ PkgName         : docker-engine 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&di
+│                       │      │                  │       stro=3.23.0_alpha20250612 
+│                       │      │                  ╰ UID : 7402f05110c51fa5 
+│                       │      ├ InstalledVersion: 28.3.2-r0 
+│                       │      ├ FixedVersion    : 29.1.2-r0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
+│                       │      ├ DataSource       ╭ ID  : alpine 
+│                       │      │                  ├ Name: Alpine Secdb 
+│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:303089216de42ef6c22651455c8e917f4155ee6612e0ee13c2911
+│                       │      │                   4a046ec072b 
+│                       │      ├ Title           : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there ... 
+│                       │      ├ Description     : Within HostnameError.Error(), when constructing an error
+│                       │      │                   string, there is no limit to the number of hosts that will
+│                       │      │                   be printed out. Furthermore, the error string is constructed
+│                       │      │                    by repeated string concatenation, leading to quadratic
+│                       │      │                   runtime. Therefore, a certificate provided by a malicious
+│                       │      │                   actor can result in excessive resource consumption. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/725920 
+│                       │      │                  ├ [1]: https://go.dev/issue/76445 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+│                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+│                       │      ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
 │                       │      ├ PkgName         : libcrypto3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
@@ -13353,6 +13643,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:1cc6583a77263736538228ef981cb0a093e0b5836c5b826c24bcd
+│                       │      │                   dfcbb33dd6b 
 │                       │      ├ Title           : openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap 
 │                       │      ├ Description     : Issue summary: An application trying to decrypt CMS messages
 │                       │      │                    encrypted using
@@ -13428,7 +13720,7 @@
 │                       │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
 │                       │      ├ PkgName         : libcrypto3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
@@ -13445,6 +13737,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:707fe7ecf121378cd5d22732e23b5f9684f94115bcd053d45f070
+│                       │      │                   23db5a9cae5 
 │                       │      ├ Title           : openssl: Timing side-channel in SM2 algorithm on 64 bit ARM 
 │                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
 │                       │      │                    allow remote
@@ -13498,7 +13792,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : libcrypto3@3.5.1-r0 
 │                       │      ├ PkgName         : libcrypto3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro
@@ -13515,6 +13809,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:6bdf810a20fd297eed7b2c8da126e72b09a466ff0191d1bcf7f64
+│                       │      │                   26c5f484633 
 │                       │      ├ Title           : openssl: Out-of-bounds read in HTTP client no_proxy handling 
 │                       │      ├ Description     : Issue summary: An application using the OpenSSL HTTP client
 │                       │      │                   API functions may
@@ -13579,7 +13875,7 @@
 │                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-10148 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-10148 
 │                       │      ├ PkgID           : libcurl@8.15.0-r0 
 │                       │      ├ PkgName         : libcurl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
@@ -13596,6 +13892,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:aaafd855fe50e997818600417a689541b6a7cc37096330581e0f9
+│                       │      │                   141a8c4bcb1 
 │                       │      ├ Title           : curl: predictable WebSocket mask 
 │                       │      ├ Description     : curl's websocket code did not update the 32 bit mask pattern
 │                       │      │                    for each new
@@ -13632,7 +13930,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-18T20:15:45.423Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-10966 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2025-10966 
 │                       │      ├ PkgID           : libcurl@8.15.0-r0 
 │                       │      ├ PkgName         : libcurl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
@@ -13649,6 +13947,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:d1c9c65ded83a6a884dc920dcac1868e011bd0f83f801e2941bbe
+│                       │      │                   f02404b4d33 
 │                       │      ├ Title           : curl: Curl missing SFTP host verification with wolfSSH backend 
 │                       │      ├ Description     : curl's code for managing SSH connections when SFTP was done
 │                       │      │                   using the wolfSSH
@@ -13672,7 +13972,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10966 
 │                       │      ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
 │                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-9086 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2025-9086 
 │                       │      ├ PkgID           : libcurl@8.15.0-r0 
 │                       │      ├ PkgName         : libcurl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3
@@ -13689,6 +13989,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:ce27f5075ff50c9446acad8ecf1060bc0567f392396c2388a1d83
+│                       │      │                   79714fad545 
 │                       │      ├ Title           : curl: libcurl: Curl out of bounds read for cookie path 
 │                       │      ├ Description     : 1. A cookie is set using the `secure` keyword for
 │                       │      │                   `https://target`
@@ -13736,7 +14038,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.19Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-59375 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2025-59375 
 │                       │      ├ PkgID           : libexpat@2.7.1-r0 
 │                       │      ├ PkgName         : libexpat 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=3
@@ -13753,6 +14055,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:47d6577b4489dbdc89b23e3e126a677b79c44e9c4266fdd7153fd
+│                       │      │                   2876c623a68 
 │                       │      ├ Title           : expat: libexpat in Expat allows attackers to trigger large
 │                       │      │                   dynamic memory allocations via a small document that is
 │                       │      │                   submitted for parsing 
@@ -13794,7 +14098,7 @@
 │                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
 │                       │      ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:34.927Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-64720 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-64720 
 │                       │      ├ PkgID           : libpng@1.6.49-r0 
 │                       │      ├ PkgName         : libpng 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
@@ -13811,6 +14115,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:5845772484f394361fd0d3bcb2b0287fe6cf57e7805207bbfbdcd
+│                       │      │                   db500ab49bb 
 │                       │      ├ Title           : libpng: LIBPNG buffer overflow 
 │                       │      ├ Description     : LIBPNG is a reference library for use in applications that
 │                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
@@ -13841,7 +14147,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-64720 
 │                       │      ├ PublishedDate   : 2025-11-25T00:15:47.46Z 
 │                       │      ╰ LastModifiedDate: 2025-11-26T18:35:18.253Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-65018 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2025-65018 
 │                       │      ├ PkgID           : libpng@1.6.49-r0 
 │                       │      ├ PkgName         : libpng 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
@@ -13858,6 +14164,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:87699f2aad64681a1d4bde3eebb7c4ed81ea2f87379b8f5ee3669
+│                       │      │                   3d99897d5df 
 │                       │      ├ Title           : libpng: LIBPNG heap buffer overflow 
 │                       │      ├ Description     : LIBPNG is a reference library for use in applications that
 │                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
@@ -13889,7 +14197,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-65018 
 │                       │      ├ PublishedDate   : 2025-11-25T00:15:47.61Z 
 │                       │      ╰ LastModifiedDate: 2025-11-26T18:34:53.65Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-64505 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2025-64505 
 │                       │      ├ PkgID           : libpng@1.6.49-r0 
 │                       │      ├ PkgName         : libpng 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
@@ -13906,8 +14214,10 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Title           : LIBPNG is a reference library for use in applications that
-│                       │      │                   read, creat ... 
+│                       │      ├ Fingerprint     : sha256:c2c81e00dfde3a61c5d265a673e5e85c6d46d75571bd88233fcd2
+│                       │      │                   8314eca8de8 
+│                       │      ├ Title           : libpng: LIBPNG heap buffer overflow via malformed palette
+│                       │      │                   index 
 │                       │      ├ Description     : LIBPNG is a reference library for use in applications that
 │                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
 │                       │      │                    raster image files. Prior to version 1.6.51, a heap buffer
@@ -13921,15 +14231,22 @@
 │                       │      │                   . 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ VendorSeverity   ─ photon: 2 
-│                       │      ├ References       ╭ [0]: https://github.com/pnggroup/libpng/commit/6a528eb5fd0d
+│                       │      ├ VendorSeverity   ╭ photon: 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 4.4 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64505 
+│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/commit/6a528eb5fd0d
 │                       │      │                  │      d7f6de1c39d30de0e41473431c37 
-│                       │      │                  ├ [1]: https://github.com/pnggroup/libpng/pull/748 
-│                       │      │                  ╰ [2]: https://github.com/pnggroup/libpng/security/advisories
-│                       │      │                         /GHSA-4952-h5wq-4m42 
+│                       │      │                  ├ [2]: https://github.com/pnggroup/libpng/pull/748 
+│                       │      │                  ├ [3]: https://github.com/pnggroup/libpng/security/advisories
+│                       │      │                  │      /GHSA-4952-h5wq-4m42 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64505 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64505 
 │                       │      ├ PublishedDate   : 2025-11-25T00:15:47.133Z 
 │                       │      ╰ LastModifiedDate: 2025-11-26T18:28:32.22Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-64506 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2025-64506 
 │                       │      ├ PkgID           : libpng@1.6.49-r0 
 │                       │      ├ PkgName         : libpng 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.
@@ -13946,6 +14263,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:19b3cfc40c13da6a17d49374bd2a8751218c52e86428b63fee0a0
+│                       │      │                   201e42f5687 
 │                       │      ├ Title           : libpng: LIBPNG heap buffer over-read 
 │                       │      ├ Description     : LIBPNG is a reference library for use in applications that
 │                       │      │                   read, create, and manipulate PNG (Portable Network Graphics)
@@ -13976,7 +14295,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64506 
 │                       │      ├ PublishedDate   : 2025-11-25T00:15:47.3Z 
 │                       │      ╰ LastModifiedDate: 2025-11-26T18:34:38.24Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -13993,6 +14312,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:4f2a99864c5f2acff759cd06bdb84d9f16a53f97f7dfca17c7b01
+│                       │      │                   b07d9dc0be6 
 │                       │      ├ Title           : openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap 
 │                       │      ├ Description     : Issue summary: An application trying to decrypt CMS messages
 │                       │      │                    encrypted using
@@ -14068,7 +14389,7 @@
 │                       │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
-│                       ├ [23] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -14085,6 +14406,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:d12b6f8476f012125fc2447ee28d12bad2be81e8f3e7aa17810a5
+│                       │      │                   08de9ecb2b2 
 │                       │      ├ Title           : openssl: Timing side-channel in SM2 algorithm on 64 bit ARM 
 │                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
 │                       │      │                    allow remote
@@ -14138,7 +14461,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : libssl3@3.5.1-r0 
 │                       │      ├ PkgName         : libssl3 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.
@@ -14155,6 +14478,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:a73d2b93f3a6c404819946b04a5612742693e39ba36f401bdf5d3
+│                       │      │                   d3f4d0a315e 
 │                       │      ├ Title           : openssl: Out-of-bounds read in HTTP client no_proxy handling 
 │                       │      ├ Description     : Issue summary: An application using the OpenSSL HTTP client
 │                       │      │                   API functions may
@@ -14219,7 +14544,7 @@
 │                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2025-53057 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2025-53057 
 │                       │      ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_64
@@ -14236,6 +14561,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:849543c6b3365598f77eda6f8f518a66e976d4dfd70552d8beb6c
+│                       │      │                   ebc12c77fc2 
 │                       │      ├ Title           : openjdk: Enhance certificate handling (Oracle CPU 2025-10) 
 │                       │      ├ Description     : Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK,
 │                       │      │                    Oracle GraalVM Enterprise Edition product of Oracle Java SE
@@ -14304,7 +14631,7 @@
 │                       │      │                  ╰ [24]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:45.24Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:56.973Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2025-53066 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2025-53066 
 │                       │      ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_64
@@ -14321,6 +14648,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:78d9faafbcf8766b2ba42e97d8062ac0b28a8efc8acbb8931dec8
+│                       │      │                   879eb491d22 
 │                       │      ├ Title           : openjdk: Enhance Path Factories (Oracle CPU 2025-10) 
 │                       │      ├ Description     : Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK,
 │                       │      │                    Oracle GraalVM Enterprise Edition product of Oracle Java SE
@@ -14389,7 +14718,7 @@
 │                       │      │                  ╰ [24]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:47.177Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:57.227Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2025-61748 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2025-61748 
 │                       │      ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_64
@@ -14406,6 +14735,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:e8fe3918516ad71fe30e48198ff0be5c64250cc9a366d8037f853
+│                       │      │                   0fca29868d7 
 │                       │      ├ Title           : openjdk: Enhance String handling (Oracle CPU 2025-10) 
 │                       │      ├ Description     : Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK,
 │                       │      │                    Oracle GraalVM Enterprise Edition product of Oracle Java SE
@@ -14466,7 +14797,7 @@
 │                       │      │                  ╰ [19]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:51.057Z 
 │                       │      ╰ LastModifiedDate: 2025-10-28T19:11:56.063Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2025-53057 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2025-53057 
 │                       │      ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre-headless 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?ar
@@ -14483,6 +14814,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:79043c93326a269ef51fa29b688aa84d3513f0d6e8de114401a2f
+│                       │      │                   399c39e081d 
 │                       │      ├ Title           : openjdk: Enhance certificate handling (Oracle CPU 2025-10) 
 │                       │      ├ Description     : Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK,
 │                       │      │                    Oracle GraalVM Enterprise Edition product of Oracle Java SE
@@ -14551,7 +14884,7 @@
 │                       │      │                  ╰ [24]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:45.24Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:56.973Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2025-53066 
+│                       ├ [37] ╭ VulnerabilityID : CVE-2025-53066 
 │                       │      ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre-headless 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?ar
@@ -14568,6 +14901,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:7ededaaa29864d70eea41e23dc87cd3d6a8b2f1cdcc16ce993498
+│                       │      │                   33a69e2a330 
 │                       │      ├ Title           : openjdk: Enhance Path Factories (Oracle CPU 2025-10) 
 │                       │      ├ Description     : Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK,
 │                       │      │                    Oracle GraalVM Enterprise Edition product of Oracle Java SE
@@ -14636,7 +14971,7 @@
 │                       │      │                  ╰ [24]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:47.177Z 
 │                       │      ╰ LastModifiedDate: 2025-11-03T18:16:57.227Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2025-61748 
+│                       ├ [38] ╭ VulnerabilityID : CVE-2025-61748 
 │                       │      ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │      ├ PkgName         : openjdk21-jre-headless 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?ar
@@ -14653,6 +14988,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:b12e4988061841df33b0324832f43fb38c43d4933b6d934554f5f
+│                       │      │                   5bbd7ed7340 
 │                       │      ├ Title           : openjdk: Enhance String handling (Oracle CPU 2025-10) 
 │                       │      ├ Description     : Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK,
 │                       │      │                    Oracle GraalVM Enterprise Edition product of Oracle Java SE
@@ -14713,7 +15050,7 @@
 │                       │      │                  ╰ [19]: https://www.oracle.com/security-alerts/cpuoct2025.html 
 │                       │      ├ PublishedDate   : 2025-10-21T20:20:51.057Z 
 │                       │      ╰ LastModifiedDate: 2025-10-28T19:11:56.063Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [39] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -14730,6 +15067,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:b32fd5a0042e0dab530ec0f49bf2e02de28ed3f2db7d8493c87cd
+│                       │      │                   7104521c0ff 
 │                       │      ├ Title           : openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap 
 │                       │      ├ Description     : Issue summary: An application trying to decrypt CMS messages
 │                       │      │                    encrypted using
@@ -14805,7 +15144,7 @@
 │                       │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [40] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -14822,6 +15161,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:3812d530bca60a0b580c49de4dd550826b1f15689fdd34882187f
+│                       │      │                   a940c923df8 
 │                       │      ├ Title           : openssl: Timing side-channel in SM2 algorithm on 64 bit ARM 
 │                       │      ├ Description     : Issue summary: A timing side-channel which could potentially
 │                       │      │                    allow remote
@@ -14875,7 +15216,7 @@
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [41] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │      ├ PkgID           : openssl@3.5.1-r0 
 │                       │      ├ PkgName         : openssl 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.
@@ -14892,6 +15233,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:2dec266e016642185e0abf2174f5e604689077f5adf2122fb7934
+│                       │      │                   e8c446f193d 
 │                       │      ├ Title           : openssl: Out-of-bounds read in HTTP client no_proxy handling 
 │                       │      ├ Description     : Issue summary: An application using the OpenSSL HTTP client
 │                       │      │                   API functions may
@@ -14956,7 +15299,7 @@
 │                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2025-58050 
+│                       ├ [42] ╭ VulnerabilityID : CVE-2025-58050 
 │                       │      ├ PkgID           : pcre2@10.43-r1 
 │                       │      ├ PkgName         : pcre2 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.23
@@ -14974,6 +15317,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:46ef5d65562f36012f80ef73b4e7a85f77635369171cd6d203bf0
+│                       │      │                   8b60ead70c7 
 │                       │      ├ Title           : pcre2: PCRE2: heap-buffer-overflow read in match_ref due to
 │                       │      │                   missing boundary restoration in SCS 
 │                       │      ├ Description     : The PCRE2 library is a set of C functions that implement
@@ -15011,7 +15356,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
 │                       │      ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
 │                       │      ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
-│                       ├ [35] ╭ VulnerabilityID : CVE-2025-31133 
+│                       ├ [43] ╭ VulnerabilityID : CVE-2025-31133 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23.
@@ -15028,6 +15373,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:ead1c9bdea81b4a4967ef404190e66e5d74dac074b9eaa72af30d
+│                       │      │                   62f72db1b5a 
 │                       │      ├ Title           : runc: container escape via 'masked path' abuse due to mount
 │                       │      │                   race conditions 
 │                       │      ├ Description     : runc is a CLI tool for spawning and running containers
@@ -15090,7 +15437,7 @@
 │                       │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2025-31133 
 │                       │      ├ PublishedDate   : 2025-11-06T19:15:41.343Z 
 │                       │      ╰ LastModifiedDate: 2025-11-06T19:45:09.883Z 
-│                       ├ [36] ╭ VulnerabilityID : CVE-2025-52565 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2025-52565 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23.
@@ -15107,6 +15454,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:1cd00342fa98a5568333544d6a189b578169c519db7973c6cf660
+│                       │      │                   fcb62d51e9f 
 │                       │      ├ Title           : runc: container escape with malicious config due to
 │                       │      │                   /dev/console mount and related races 
 │                       │      ├ Description     : runc is a CLI tool for spawning and running containers
@@ -15185,7 +15534,7 @@
 │                       │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2025-52565 
 │                       │      ├ PublishedDate   : 2025-11-06T20:15:49.24Z 
 │                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
-│                       ├ [37] ╭ VulnerabilityID : CVE-2025-52881 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23.
@@ -15202,6 +15551,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:400711221ed0adf03c89214aff30a4286f4b741a47f4c61c47470
+│                       │      │                   4efbdd7343b 
 │                       │      ├ Title           : runc: opencontainers/selinux: container escape and denial of
 │                       │      │                    service due to arbitrary write gadgets and procfs write
 │                       │      │                   redirects 
@@ -15310,7 +15661,7 @@
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
 │                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
-│                       ├ [38] ╭ VulnerabilityID : CVE-2024-58251 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2024-58251 
 │                       │      ├ PkgID           : ssl_client@1.37.0-r19 
 │                       │      ├ PkgName         : ssl_client 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dist
@@ -15327,6 +15678,8 @@
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │      ├ Fingerprint     : sha256:584ba0be8235d28ef7c90b4223191cffc301ec4b0c28e3206d658
+│                       │      │                   0070cfa6b9f 
 │                       │      ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
 │                       │      │                    of networ ... 
 │                       │      ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
@@ -15343,7 +15696,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
 │                       │      ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
 │                       │      ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
-│                       ╰ [39] ╭ VulnerabilityID : CVE-2025-46394 
+│                       ╰ [47] ╭ VulnerabilityID : CVE-2025-46394 
 │                              ├ PkgID           : ssl_client@1.37.0-r19 
 │                              ├ PkgName         : ssl_client 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dist
@@ -15361,6 +15714,8 @@
 │                              ├ DataSource       ╭ ID  : alpine 
 │                              │                  ├ Name: Alpine Secdb 
 │                              │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                              ├ Fingerprint     : sha256:ebf40b6fe7209d4849027d17cc680ee249138e80a108529cd0b7c
+│                              │                   9c1f8e97cd3 
 │                              ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
 │                              │                   filenames hid ... 
 │                              ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
@@ -16830,6 +17185,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Maven 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:141588c43fa4be69cf53bf03621218e8497cbf1dd8d999dd962415
+│                       │     │                   7ff4dd11c5 
 │                       │     ├ Title           : logback-core: arbitrary code execution via JaninoEventEvaluator 
 │                       │     ├ Description     : ACE vulnerability in JaninoEventEvaluator  by QOS.CH
 │                       │     │                   logback-core
@@ -16886,6 +17243,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Maven 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:26a18f2fbbef31b97a05eb1d4204fb3b821dff81093a3e97d7183c
+│                       │     │                   bdedcc23cd 
 │                       │     ├ Title           : ch.qos.logback/logback-core: Conditional abitrary code
 │                       │     │                   execution in logback-core 
 │                       │     ├ Description     : ACE vulnerability in conditional configuration file
@@ -16940,6 +17299,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Maven 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:3b29c3c9a9894c6beebe27efd812461a8f7d1556b245ad74aebceb
+│                       │     │                   528ba461db 
 │                       │     ├ Title           : logback-core: SaxEventRecorder vulnerable to Server-Side
 │                       │     │                   Request Forgery (SSRF) attacks 
 │                       │     ├ Description     : Server-Side Request Forgery (SSRF) in SaxEventRecorder by
@@ -16985,6 +17346,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Maven 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:6a3e26a74674f1159a655d931436b173236c44882cc4a0b8a1cbf1
+│                       │     │                   e542651999 
 │                       │     ├ Title           : commons-beanutils: Apache Commons BeanUtils:
 │                       │     │                   PropertyUtilsBean does not suppresses an enum's declaredClass
 │                       │     │                    property by default 
@@ -17072,6 +17435,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory Maven 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:b87df7ae91f5bc9024ca0e20f91e4d6bc947e7fe750b03300f5bad
+│                       │     │                   1ffb25cbd4 
 │                       │     ├ Title           : commons-lang/commons-lang: org.apache.commons/commons-lang3:
 │                       │     │                   Uncontrolled Recursion vulnerability in Apache Commons Lang 
 │                       │     ├ Description     : Uncontrolled Recursion vulnerability in Apache Commons Lang.
@@ -17136,6 +17501,8 @@
 │                             │                  ├ Name: GitHub Security Advisory Maven 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Amaven 
+│                             ├ Fingerprint     : sha256:732c9cae3e720c40d62828eb42e35a79089103457c9cd441e91df6
+│                             │                   f36a92d1e7 
 │                             ├ Title           : org.apache.httpcomponents.client5/httpclient5: Apache
 │                             │                   HttpComponents: PSL (Public Suffix List) validation bypass 
 │                             ├ Description     : A bug in PSL validation logic in Apache HttpClient 5.4.x
@@ -18000,6 +18367,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory pip 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Apip 
+│                       │     ├ Fingerprint     : sha256:370d746ef3a1d0b4cb216e20550f55942c60e2ef009d5e515f2f9a
+│                       │     │                   7681fbec17 
 │                       │     ├ Title           : Pdfminer.six is a community maintained fork of the original
 │                       │     │                   PDFMiner,  ... 
 │                       │     ├ Description     : Pdfminer.six is a community maintained fork of the original
@@ -18050,6 +18419,8 @@
 │                       │     │                  ├ Name: GitHub Security Advisory pip 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Apip 
+│                       │     ├ Fingerprint     : sha256:256650f36399178be995d8143f9ef9bb8810fdf66991c44b09e087
+│                       │     │                   58a1f4e111 
 │                       │     ├ Title           : Insecure Deserialization (pickle) in pdfminer.six CMap Loader
 │                       │     │                    — Local Privesc 
 │                       │     ├ Description     : ### 🚀 Overview
@@ -18308,6 +18679,8 @@
 │                             │                  ├ Name: GitHub Security Advisory pip 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Apip 
+│                             ├ Fingerprint     : sha256:8de00eb26af72d730d007532d9b37ba88c7e0ef1223cdd99144fed
+│                             │                   1d2fab3980 
 │                             ├ Title           : pip: pip missing checks on symbolic link extraction 
 │                             ├ Description     : When extracting a tar archive pip may not check symbolic
 │                             │                   links point into the extraction directory if the tarfile
@@ -21178,6 +21551,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:e5a5aee97a9305fe104baa92b93e9e43b158effadb11d6964b911
+│                       │      │                   dca5b0d06bf 
 │                       │      ├ Title           : Grype has a credential disclosure vulnerability in its JSON
 │                       │      │                   output 
 │                       │      ├ Description     : Grype is a vulnerability scanner for container images and
@@ -21222,6 +21597,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:44cf9251498817af7b1c3b312d6cce6a648e3f6451ff98262c8b4
+│                       │      │                   eb7e3364145 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   0.1.0 through ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -21273,6 +21650,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:028c7d76eb71174dfb096356ed1c65bc51e381d3ba8163d1d31fb
+│                       │      │                   51391db2224 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   1.7.28 and be ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -21317,6 +21696,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:cd34b7427c3dd10f427d8777c8a0720b7e004e92ebfcf5f663d50
+│                       │      │                   f7dbd0e8fab 
 │                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
 │                       │      │                   container ports accessible 
 │                       │      ├ Description     : Moby is an open source container framework developed by
@@ -21379,6 +21760,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:dba1e10f2602eeec864029b6633df6b14d61f232a0bc65474e811
+│                       │      │                   a9577b56f04 
 │                       │      ├ Title           : go-viper's mapstructure May Leak Sensitive Information in
 │                       │      │                   Logs When Processing Malformed Data 
 │                       │      ├ Description     : ### Summary
@@ -21485,6 +21868,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:7513651de775902c91cefdc3bdcb7e610aa79bee244a8998e74ac
+│                       │      │                   b436a8500c9 
 │                       │      ├ Title           : github.com/hashicorp/go-getter: HashiCorp go-getter
 │                       │      │                   Arbitrary File Read 
 │                       │      ├ Description     : HashiCorp's go-getter library subdirectory download feature
@@ -21533,15 +21918,16 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:398ac630e758e5cadfe22a29e2928dce1951f83abd7baa61d3e4f
+│                       │      │                   6ab270769d7 
 │                       │      ├ Title           : github.com/nwaples/rardecode: RarDecode Out Of Memory Crash 
-│                       │      ├ Description     : Mattermost versions 10.11.x <= 10.11.4, 10.5.x <= 10.5.12
-│                       │      │                   fail to validate the user permission when accessing the
-│                       │      │                   files and subscribing to the block in Boards, which allows
-│                       │      │                   an authenticated user to access other board files and was
-│                       │      │                   able to subscribe to the block from other boards that the
-│                       │      │                   user does not have access to 
+│                       │      ├ Description     : github.com/nwaples/rardecode versions <=2.1.1 fail to
+│                       │      │                   restrict the dictionary size when reading large RAR
+│                       │      │                   dictionary sizes, which allows an attacker to provide a
+│                       │      │                   specially crafted RAR file and cause Denial of Service via
+│                       │      │                   an Out Of Memory Crash. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-306 
+│                       │      ├ CweIDs           ─ [0]: CWE-789 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -21554,12 +21940,11 @@
 │                       │      │                  ├ [1]: https://github.com/nwaples/rardecode 
 │                       │      │                  ├ [2]: https://github.com/nwaples/rardecode/commit/52fb4e825c
 │                       │      │                  │      936636f251f7e7deded39ab11df9a9 
-│                       │      │                  ├ [3]: https://mattermost.com/security-updates 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
-│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4020 
-│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
+│                       │      │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-4020 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
-│                       │      ╰ LastModifiedDate: 2025-11-27T12:15:47.06Z 
+│                       │      ╰ LastModifiedDate: 2025-12-02T10:16:00.587Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ PkgID           : github.com/opencontainers/selinux@v1.11.0 
 │                       │      ├ PkgName         : github.com/opencontainers/selinux 
@@ -21578,6 +21963,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:8b094963fcf1fb460744521478282170fbeb6b251b94508ebcc50
+│                       │      │                   7ef8e057bfa 
 │                       │      ├ Title           : runc: opencontainers/selinux: container escape and denial of
 │                       │      │                    service due to arbitrary write gadgets and procfs write
 │                       │      │                   redirects 
@@ -21704,6 +22091,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:dcabb284dbe5bf5aac016266fc8c27943386e658e04460f6ca771
+│                       │      │                   cf0dea6e538 
 │                       │      ├ Title           : github.com/ulikunitz/xz: github.com/ulikunitz/xz leaks memory 
 │                       │      ├ Description     : xz is a pure golang package for reading and writing
 │                       │      │                   xz-compressed files. Prior to version 0.5.14, it is possible
@@ -21757,6 +22146,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:1e8adeb8081ef261a0a2a8f1da291c358e6b7255fc364281e1ae7
+│                       │      │                   25ee4bc1f17 
 │                       │      ├ Title           : SSH Agent servers do not validate the size of messages when
 │                       │      │                   processing ... 
 │                       │      ├ Description     : SSH Agent servers do not validate the size of messages when
@@ -21795,6 +22186,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:1a80d1def37bff45883d5e3d45e50763cc84b4d0909766946a381
+│                       │      │                   4097fb2f125 
 │                       │      ├ Title           : SSH servers parsing GSSAPI authentication requests do not
 │                       │      │                   validate the ... 
 │                       │      ├ Description     : SSH servers parsing GSSAPI authentication requests do not
@@ -21829,6 +22222,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:fa1565143ee131530ed5952f95fb18fd483fdf80d0ec39fbf9ac7
+│                       │      │                   b9bfd86dec6 
 │                       │      ├ Title           : database/sql: Postgres Scan Race Condition 
 │                       │      ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
 │                       │      │                    one of the query methods) during a call to the Scan method
@@ -21885,6 +22280,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:a9b9a289e8963db765de3c846965554af83ebbba667215216846f
+│                       │      │                   6f5ae86c589 
 │                       │      ├ Title           : golang: archive/tar: Unbounded allocation when parsing GNU
 │                       │      │                   sparse map 
 │                       │      ├ Description     : tar.Reader does not set a maximum size on the number of
@@ -21947,6 +22344,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:d40c02bd8ef04eb4edec0f0b3ee8b7d4450b3039a24bf01fe925d
+│                       │      │                   72cf1cbd6cc 
 │                       │      ├ Title           : Despite HTTP headers having a default limit of 1MB, the
 │                       │      │                   number of cook ... 
 │                       │      ├ Description     : Despite HTTP headers having a default limit of 1MB, the
@@ -21985,6 +22384,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:c2e954cba5715342f615eac0856de01eef086c6143ddd277c5a5f
+│                       │      │                   c205e19aeb9 
 │                       │      ├ Title           : Due to the design of the name constraint checking algorithm,
 │                       │      │                    the proce ... 
 │                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
@@ -22022,6 +22423,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:7c36d9db64538ca2a72b50328b19cfd64f8935a9823cfe35b2955
+│                       │      │                   0d4c27c2677 
 │                       │      ├ Title           : os/exec: Unexpected paths returned from LookPath in os/exec 
 │                       │      ├ Description     : If the PATH environment variable contains paths which are
 │                       │      │                   executables (rather than just directories), passing certain
@@ -22078,6 +22481,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:e590e2370a52b72c38d4934aabcac39eb9f2e3f20198535decf62
+│                       │      │                   c4574223de6 
 │                       │      ├ Title           : net/url: Insufficient validation of bracketed IPv6 hostnames
 │                       │      │                    in net/url 
 │                       │      ├ Description     : The Parse function permits values other than IPv6 addresses
@@ -22124,6 +22529,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:248786f00fd6fbba666b94f27226b5811ac15f20dc261e778e7f2
+│                       │      │                   3b6e0f1d1d0 
 │                       │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
 │                       │      │                   exhaustion in encoding/asn1 
 │                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
@@ -22167,6 +22574,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:02417b9c726b6ed5f5e243a03cea62c7ae2a7b5f376eb6ed3cad7
+│                       │      │                   f5ac87e09cf 
 │                       │      ├ Title           : crypto/x509: golang: Panic when validating certificates with
 │                       │      │                    DSA public keys in crypto/x509 
 │                       │      ├ Description     : Validating certificate chains which contain DSA public keys
@@ -22212,6 +22621,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:8ce1d99d023dabbe6037fb431a21e3db5ac9f8cfdd89daf05c9cc
+│                       │      │                   1066ffece03 
 │                       │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
 │                       │      │                   attacker controlled information 
 │                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
@@ -22254,6 +22665,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:cba71f8d36aaf8fe345e82576136f4e3d173be65fe18e889e4e2b
+│                       │      │                   e2b9496c66b 
 │                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
 │                       │      │                    inputs in encoding/pem 
 │                       │      ├ Description     : The processing time for parsing some invalid inputs scales
@@ -22298,6 +22711,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:6d2c7561da25a3e8fb3413c66a7bf2763e8c0465a9fa067415066
+│                       │      │                   e73d1638a35 
 │                       │      ├ Title           : net/textproto: Excessive CPU consumption in
 │                       │      │                   Reader.ReadResponse in net/textproto 
 │                       │      ├ Description     : The Reader.ReadResponse function constructs a response
@@ -22325,49 +22740,116 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-│                       ╰ [22] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-61725 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f1435be1373e471b 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:869097118d84a24bfa78957ef015c6911ce2cf1397f8270dcfe82
+│                       │      │                   f6e347fd039 
+│                       │      ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
+│                       │      │                   net/mail 
+│                       │      ├ Description     : The ParseAddress function constructeds domain-literal
+│                       │      │                   address components through repeated string concatenation.
+│                       │      │                   When parsing large domain-literal components, this can cause
+│                       │      │                    excessive CPU consumption. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
+│                       │      │                  ├ [2]: https://go.dev/cl/709860 
+│                       │      │                  ├ [3]: https://go.dev/issue/75680 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2025-61727 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f1435be1373e471b 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.11, 1.25.5 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:35a05f0606f9b7825b6c9641f3f4a953dd940168cc23f153dbbd1
+│                       │      │                   e4487290718 
+│                       │      ├ Title           : Improper application of excluded DNS name constraints when
+│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restrict the usage of wildcard SANs in the leaf
+│                       │      │                   certificate. For example a constraint that excludes the
+│                       │      │                   subdomain test.example.com does not prevent a leaf
+│                       │      │                   certificate from claiming the SAN *.example.com. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │                         ├ [1]: https://go.dev/issue/76442 
+│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │                         │      dm4 
+│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       ╰ [24] ╭ VulnerabilityID : CVE-2025-61729 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
 │                              │                  ╰ UID : f1435be1373e471b 
 │                              ├ InstalledVersion: v1.24.4 
-│                              ├ FixedVersion    : 1.24.8, 1.25.2 
+│                              ├ FixedVersion    : 1.24.11, 1.25.5 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
 │                              │                  │         501dd6062bd50a4b6afe 
 │                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                              │                            c7d38461b41e40aab9e7 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
 │                              ├ DataSource       ╭ ID  : govulndb 
 │                              │                  ├ Name: The Go Vulnerability Database 
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
-│                              │                   net/mail 
-│                              ├ Description     : The ParseAddress function constructeds domain-literal
-│                              │                   address components through repeated string concatenation.
-│                              │                   When parsing large domain-literal components, this can cause
-│                              │                    excessive CPU consumption. 
-│                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ╭ amazon : 3 
-│                              │                  ├ bitnami: 3 
-│                              │                  ╰ redhat : 2 
-│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                              │                  │         │           N/A:H 
-│                              │                  │         ╰ V3Score : 7.5 
-│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                              │                            │           N/A:L 
-│                              │                            ╰ V3Score : 5.3 
-│                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                              │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
-│                              │                  ├ [2]: https://go.dev/cl/709860 
-│                              │                  ├ [3]: https://go.dev/issue/75680 
-│                              │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                              │                  │      _bI 
-│                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
-│                              │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
-│                              │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
-│                              ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-│                              ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+│                              ├ Fingerprint     : sha256:434f11b0ce90d64ede83c0582307b8957a54e06bb783d72b96ea4
+│                              │                   98cd3ad6174 
+│                              ├ Title           : Within HostnameError.Error(), when constructing an error
+│                              │                   string, there ... 
+│                              ├ Description     : Within HostnameError.Error(), when constructing an error
+│                              │                   string, there is no limit to the number of hosts that will
+│                              │                   be printed out. Furthermore, the error string is constructed
+│                              │                    by repeated string concatenation, leading to quadratic
+│                              │                   runtime. Therefore, a certificate provided by a malicious
+│                              │                   actor can result in excessive resource consumption. 
+│                              ├ Severity        : UNKNOWN 
+│                              ├ References       ╭ [0]: https://go.dev/cl/725920 
+│                              │                  ├ [1]: https://go.dev/issue/76445 
+│                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              │                  │      dm4 
+│                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+│                              ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+│                              ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -24880,6 +25362,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:0ef9093bf9ea50a27a4252b7faffdd1d01f37dea8fdc17f72e0d3
+│                       │      │                   f64d8aade7b 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   0.1.0 through ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -24931,6 +25415,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:3ad7977819c99d22ae49179434ec225065b7f03f05c2ec6a6bc04
+│                       │      │                   e1ac158645e 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   1.7.28 and be ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -24975,6 +25461,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:62006aaea9aa8575fa86d8e6786be79b5f9014da921daa2accd19
+│                       │      │                   f550d465542 
 │                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
 │                       │      │                   container ports accessible 
 │                       │      ├ Description     : Moby is an open source container framework developed by
@@ -25037,6 +25525,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:90fd5a1f56958fad435e2cb35a05fe18310aeba0bcbaa053d28e0
+│                       │      │                   9f355600c63 
 │                       │      ├ Title           : go-viper's mapstructure May Leak Sensitive Information in
 │                       │      │                   Logs When Processing Malformed Data 
 │                       │      ├ Description     : ### Summary
@@ -25143,6 +25633,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:0b87af2d73fd7ad1be7ecb0a3ce1068b685c9c5b9bf85c7901ad5
+│                       │      │                   5054fd987c8 
 │                       │      ├ Title           : github.com/hashicorp/go-getter: HashiCorp go-getter
 │                       │      │                   Arbitrary File Read 
 │                       │      ├ Description     : HashiCorp's go-getter library subdirectory download feature
@@ -25191,15 +25683,16 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:b731b7567b428f48fa06b7fda36bbea1790afe6b3683c01362cb3
+│                       │      │                   26ba34bff2a 
 │                       │      ├ Title           : github.com/nwaples/rardecode: RarDecode Out Of Memory Crash 
-│                       │      ├ Description     : Mattermost versions 10.11.x <= 10.11.4, 10.5.x <= 10.5.12
-│                       │      │                   fail to validate the user permission when accessing the
-│                       │      │                   files and subscribing to the block in Boards, which allows
-│                       │      │                   an authenticated user to access other board files and was
-│                       │      │                   able to subscribe to the block from other boards that the
-│                       │      │                   user does not have access to 
+│                       │      ├ Description     : github.com/nwaples/rardecode versions <=2.1.1 fail to
+│                       │      │                   restrict the dictionary size when reading large RAR
+│                       │      │                   dictionary sizes, which allows an attacker to provide a
+│                       │      │                   specially crafted RAR file and cause Denial of Service via
+│                       │      │                   an Out Of Memory Crash. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-306 
+│                       │      ├ CweIDs           ─ [0]: CWE-789 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -25212,12 +25705,11 @@
 │                       │      │                  ├ [1]: https://github.com/nwaples/rardecode 
 │                       │      │                  ├ [2]: https://github.com/nwaples/rardecode/commit/52fb4e825c
 │                       │      │                  │      936636f251f7e7deded39ab11df9a9 
-│                       │      │                  ├ [3]: https://mattermost.com/security-updates 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
-│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4020 
-│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-11579 
+│                       │      │                  ├ [4]: https://pkg.go.dev/vuln/GO-2025-4020 
+│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
-│                       │      ╰ LastModifiedDate: 2025-11-27T12:15:47.06Z 
+│                       │      ╰ LastModifiedDate: 2025-12-02T10:16:00.587Z 
 │                       ├ [6]  ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ PkgID           : github.com/opencontainers/selinux@v1.11.0 
 │                       │      ├ PkgName         : github.com/opencontainers/selinux 
@@ -25236,6 +25728,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:adcc4a661a92209e40cd06b40cc3c8330d26f129484ea490c01e0
+│                       │      │                   7d3f4b1f8f4 
 │                       │      ├ Title           : runc: opencontainers/selinux: container escape and denial of
 │                       │      │                    service due to arbitrary write gadgets and procfs write
 │                       │      │                   redirects 
@@ -25362,6 +25856,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:1b405e3756fcd937ee837d23730c01057645ad4d1d41e6b30b7f2
+│                       │      │                   a5748d701f8 
 │                       │      ├ Title           : github.com/ulikunitz/xz: github.com/ulikunitz/xz leaks memory 
 │                       │      ├ Description     : xz is a pure golang package for reading and writing
 │                       │      │                   xz-compressed files. Prior to version 0.5.14, it is possible
@@ -25415,6 +25911,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:08234becaf103aec0b799204789ddf1cb868531935bc104f465c4
+│                       │      │                   7048a466bcb 
 │                       │      ├ Title           : SSH Agent servers do not validate the size of messages when
 │                       │      │                   processing ... 
 │                       │      ├ Description     : SSH Agent servers do not validate the size of messages when
@@ -25453,6 +25951,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:09f5337e98745b6640419ee4dca423f16f75483c95fb63f7111b0
+│                       │      │                   2d5dce89775 
 │                       │      ├ Title           : SSH servers parsing GSSAPI authentication requests do not
 │                       │      │                   validate the ... 
 │                       │      ├ Description     : SSH servers parsing GSSAPI authentication requests do not
@@ -25487,6 +25987,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:30d8019ca285806b92e4d18995256e56f3984630bae5aebfadecc
+│                       │      │                   99a64b1a481 
 │                       │      ├ Title           : database/sql: Postgres Scan Race Condition 
 │                       │      ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
 │                       │      │                    one of the query methods) during a call to the Scan method
@@ -25543,6 +26045,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:ef0db7797479ec922d2903f8de9900099b39a6630c2bc37b05e34
+│                       │      │                   95abc75f622 
 │                       │      ├ Title           : golang: archive/tar: Unbounded allocation when parsing GNU
 │                       │      │                   sparse map 
 │                       │      ├ Description     : tar.Reader does not set a maximum size on the number of
@@ -25605,6 +26109,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:55859bdd0e430351690d0f58e0ea179b2d4a0b681acd3146105e4
+│                       │      │                   ddfae1b91c2 
 │                       │      ├ Title           : Despite HTTP headers having a default limit of 1MB, the
 │                       │      │                   number of cook ... 
 │                       │      ├ Description     : Despite HTTP headers having a default limit of 1MB, the
@@ -25643,6 +26149,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:56cfe3e924e18fe761578d5872a3b8959e7a68586bab9f1fc8ff3
+│                       │      │                   32cb2128dba 
 │                       │      ├ Title           : Due to the design of the name constraint checking algorithm,
 │                       │      │                    the proce ... 
 │                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
@@ -25680,6 +26188,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:0d013d3ff3d3a93bdcba061cdfe64f69c50644d840856426b24a7
+│                       │      │                   f1020156751 
 │                       │      ├ Title           : os/exec: Unexpected paths returned from LookPath in os/exec 
 │                       │      ├ Description     : If the PATH environment variable contains paths which are
 │                       │      │                   executables (rather than just directories), passing certain
@@ -25736,6 +26246,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:22faf83cc7a32b78b27229410330229dda55a63d90581244bc322
+│                       │      │                   89ae263c89b 
 │                       │      ├ Title           : net/url: Insufficient validation of bracketed IPv6 hostnames
 │                       │      │                    in net/url 
 │                       │      ├ Description     : The Parse function permits values other than IPv6 addresses
@@ -25782,6 +26294,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:cee6b45209c64d55aae94bb1f5543ca5fca5bfe34890c58b86365
+│                       │      │                   62df39eb12b 
 │                       │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
 │                       │      │                   exhaustion in encoding/asn1 
 │                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
@@ -25825,6 +26339,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:8b2b1a98c88b0c71b1a75361151a8a828a342e8c1a04a2f4e818a
+│                       │      │                   8992fde417a 
 │                       │      ├ Title           : crypto/x509: golang: Panic when validating certificates with
 │                       │      │                    DSA public keys in crypto/x509 
 │                       │      ├ Description     : Validating certificate chains which contain DSA public keys
@@ -25870,6 +26386,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:ee5781b6d92889f71fc34ad56c0381dc09b383430fca4f3e4883a
+│                       │      │                   ea3e87a1381 
 │                       │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
 │                       │      │                   attacker controlled information 
 │                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
@@ -25912,6 +26430,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:2c2d57010996901886b99cb0fd8c7d6488fdab22c1111e59f0264
+│                       │      │                   c7b7ddae2be 
 │                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
 │                       │      │                    inputs in encoding/pem 
 │                       │      ├ Description     : The processing time for parsing some invalid inputs scales
@@ -25956,6 +26476,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:b27b1236dac7f99d6f5a2ed4ac62ddef04603e1e9787ab4244133
+│                       │      │                   7eac599f3f9 
 │                       │      ├ Title           : net/textproto: Excessive CPU consumption in
 │                       │      │                   Reader.ReadResponse in net/textproto 
 │                       │      ├ Description     : The Reader.ReadResponse function constructs a response
@@ -25983,49 +26505,116 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-│                       ╰ [21] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-61725 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : ebfdcee22f3690eb 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:6b72ec504f53171eb27a7b24c2a87974d3e4dd61271bc55115d3f
+│                       │      │                   84e66b7a845 
+│                       │      ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
+│                       │      │                   net/mail 
+│                       │      ├ Description     : The ParseAddress function constructeds domain-literal
+│                       │      │                   address components through repeated string concatenation.
+│                       │      │                   When parsing large domain-literal components, this can cause
+│                       │      │                    excessive CPU consumption. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
+│                       │      │                  ├ [2]: https://go.dev/cl/709860 
+│                       │      │                  ├ [3]: https://go.dev/issue/75680 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-61727 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : ebfdcee22f3690eb 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.11, 1.25.5 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:bee8b7b1dcd3769dfcbd6e16038badecd684744bcadcba44ffdea
+│                       │      │                   07044e975cc 
+│                       │      ├ Title           : Improper application of excluded DNS name constraints when
+│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restrict the usage of wildcard SANs in the leaf
+│                       │      │                   certificate. For example a constraint that excludes the
+│                       │      │                   subdomain test.example.com does not prevent a leaf
+│                       │      │                   certificate from claiming the SAN *.example.com. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │                         ├ [1]: https://go.dev/issue/76442 
+│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │                         │      dm4 
+│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       ╰ [23] ╭ VulnerabilityID : CVE-2025-61729 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
 │                              │                  ╰ UID : ebfdcee22f3690eb 
 │                              ├ InstalledVersion: v1.24.4 
-│                              ├ FixedVersion    : 1.24.8, 1.25.2 
+│                              ├ FixedVersion    : 1.24.11, 1.25.5 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
 │                              │                  │         501dd6062bd50a4b6afe 
 │                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                              │                            c7d38461b41e40aab9e7 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
 │                              ├ DataSource       ╭ ID  : govulndb 
 │                              │                  ├ Name: The Go Vulnerability Database 
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
-│                              │                   net/mail 
-│                              ├ Description     : The ParseAddress function constructeds domain-literal
-│                              │                   address components through repeated string concatenation.
-│                              │                   When parsing large domain-literal components, this can cause
-│                              │                    excessive CPU consumption. 
-│                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ╭ amazon : 3 
-│                              │                  ├ bitnami: 3 
-│                              │                  ╰ redhat : 2 
-│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                              │                  │         │           N/A:H 
-│                              │                  │         ╰ V3Score : 7.5 
-│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                              │                            │           N/A:L 
-│                              │                            ╰ V3Score : 5.3 
-│                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                              │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
-│                              │                  ├ [2]: https://go.dev/cl/709860 
-│                              │                  ├ [3]: https://go.dev/issue/75680 
-│                              │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                              │                  │      _bI 
-│                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
-│                              │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
-│                              │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
-│                              ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-│                              ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+│                              ├ Fingerprint     : sha256:031acd7eec3c82c8e36a3303b5dae85d0a6e28dd6dc6b0578f847
+│                              │                   583b8595579 
+│                              ├ Title           : Within HostnameError.Error(), when constructing an error
+│                              │                   string, there ... 
+│                              ├ Description     : Within HostnameError.Error(), when constructing an error
+│                              │                   string, there is no limit to the number of hosts that will
+│                              │                   be printed out. Furthermore, the error string is constructed
+│                              │                    by repeated string concatenation, leading to quadratic
+│                              │                   runtime. Therefore, a certificate provided by a malicious
+│                              │                   actor can result in excessive resource consumption. 
+│                              ├ Severity        : UNKNOWN 
+│                              ├ References       ╭ [0]: https://go.dev/cl/725920 
+│                              │                  ├ [1]: https://go.dev/issue/76445 
+│                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              │                  │      dm4 
+│                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+│                              ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+│                              ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -30054,6 +30643,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:b395f5b88a6faec0afeb4f07f3c160b6319377b2832296c2d4847
+│                       │      │                   9e433f664ff 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   0.1.0 through ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -30105,6 +30696,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:07560e55fead6ae33eda31599dd4af0c0cdb24f146b698b59d20d
+│                       │      │                   68de4d17b9e 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   1.7.28 and be ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -30148,6 +30741,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:71c91fd28bdea4fe0dd2b716096391b11f1d476a196b27ae106b8
+│                       │      │                   55a330d810c 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   0.1.0 through ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -30199,6 +30794,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:443947533d96aaa01d6bd1a43e5562681cb9f416d816dc9e6f7c7
+│                       │      │                   571018a88e0 
 │                       │      ├ Title           : containerd is an open-source container runtime. Versions
 │                       │      │                   1.7.28 and be ... 
 │                       │      ├ Description     : containerd is an open-source container runtime. Versions
@@ -30243,6 +30840,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:7cea5c2012acb20f645c7d96eb580ff4ca583d2ffdbf9dc8b0c1c
+│                       │      │                   ef86c1af786 
 │                       │      ├ Title           : github.com/moby/moby: Moby's Firewalld reload makes
 │                       │      │                   container ports accessible 
 │                       │      ├ Description     : Moby is an open source container framework developed by
@@ -30305,6 +30904,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:994f10dac8e8140f44322baead13fa11ba32849e11609f7c5941c
+│                       │      │                   014f4a5a4cf 
 │                       │      ├ Title           : go-viper's mapstructure May Leak Sensitive Information in
 │                       │      │                   Logs When Processing Malformed Data 
 │                       │      ├ Description     : ### Summary
@@ -30411,6 +31012,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:ee8d79cac2c356c4f9722d4655d032c9eb6d05624fadb66ffa7fb
+│                       │      │                   fa18399cde7 
 │                       │      ├ Title           : github.com/hashicorp/go-getter: HashiCorp go-getter
 │                       │      │                   Arbitrary File Read 
 │                       │      ├ Description     : HashiCorp's go-getter library subdirectory download feature
@@ -30459,6 +31062,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:4a1091ee46f9373516e8c21642ef55c594c806bbde6bb5144638f
+│                       │      │                   fb479720bec 
 │                       │      ├ Title           : runc: opencontainers/selinux: container escape and denial of
 │                       │      │                    service due to arbitrary write gadgets and procfs write
 │                       │      │                   redirects 
@@ -30585,6 +31190,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:82438f7edd6a357333c77c381087fb6c0e180576eba76dacd7020
+│                       │      │                   fbef27f81b3 
 │                       │      ├ Title           : github.com/ulikunitz/xz: github.com/ulikunitz/xz leaks memory 
 │                       │      ├ Description     : xz is a pure golang package for reading and writing
 │                       │      │                   xz-compressed files. Prior to version 0.5.14, it is possible
@@ -30638,6 +31245,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:5121da4661ca1ef81684d335a5661b1838447d01481663ca16401
+│                       │      │                   b5ee35c9b7a 
 │                       │      ├ Title           : SSH Agent servers do not validate the size of messages when
 │                       │      │                   processing ... 
 │                       │      ├ Description     : SSH Agent servers do not validate the size of messages when
@@ -30676,6 +31285,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:a4ec1ff2394db4a9351c3cf88612dcbde0c37d2622141c0c599bf
+│                       │      │                   c56f52637bf 
 │                       │      ├ Title           : SSH servers parsing GSSAPI authentication requests do not
 │                       │      │                   validate the ... 
 │                       │      ├ Description     : SSH servers parsing GSSAPI authentication requests do not
@@ -30712,6 +31323,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:7da7a5dc38aa54b0654f17aa241e6ce81d42b3ae44ef715236e4f
+│                       │      │                   dc8d17b98be 
 │                       │      ├ Title           : helm.sh/helm/v3: Helm Chart Code Execution 
 │                       │      ├ Description     : Helm is a package manager for Charts for Kubernetes. Prior
 │                       │      │                   to 3.18.4, a specially crafted Chart.yaml file along with a
@@ -30775,6 +31388,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:dc298b55d8814a85f3572500add49966d0242d1f06396ce45e73e
+│                       │      │                   ba5dce73173 
 │                       │      ├ Title           : helm.sh/helm/v3: Helm YAML Parsing Panic Vulnerability 
 │                       │      ├ Description     : Helm is a package manager for Charts for Kubernetes. Prior
 │                       │      │                   to version 3.18.5, when parsing Chart.yaml and index.yaml
@@ -30825,6 +31440,8 @@
 │                       │      │                  ├ Name: GitHub Security Advisory Go 
 │                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
 │                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:e44a364458e9c7afc8b71fa14ce017a7708261506565deac3507a
+│                       │      │                   2f92459b599 
 │                       │      ├ Title           : helm.sh/helm/v3: Helm Chart JSON Schema Denial of Service 
 │                       │      ├ Description     : Helm is a package manager for Charts for Kubernetes. Prior
 │                       │      │                   to version 3.18.5, it is possible to craft a JSON Schema
@@ -30874,6 +31491,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:98a6c12143aafc9c9a6041b2830970b0e9bd4c8ea997ae20cc715
+│                       │      │                   ff2c57b701b 
 │                       │      ├ Title           : database/sql: Postgres Scan Race Condition 
 │                       │      ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
 │                       │      │                    one of the query methods) during a call to the Scan method
@@ -30930,6 +31549,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:1b23b9f5fc55cbb3649f3aff18e859f3551c74fb08352a2e89323
+│                       │      │                   51645a6d0bf 
 │                       │      ├ Title           : golang: archive/tar: Unbounded allocation when parsing GNU
 │                       │      │                   sparse map 
 │                       │      ├ Description     : tar.Reader does not set a maximum size on the number of
@@ -30992,6 +31613,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:df26dc77712f29f73effc513101d9b79a359d297b59b886754a63
+│                       │      │                   97f3a6df60f 
 │                       │      ├ Title           : Despite HTTP headers having a default limit of 1MB, the
 │                       │      │                   number of cook ... 
 │                       │      ├ Description     : Despite HTTP headers having a default limit of 1MB, the
@@ -31030,6 +31653,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:d1bb6841f372342b30d5799c1aa60a22e8be1f3a4d7b681329027
+│                       │      │                   fea52902c69 
 │                       │      ├ Title           : Due to the design of the name constraint checking algorithm,
 │                       │      │                    the proce ... 
 │                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
@@ -31067,6 +31692,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:17e67f7d06c3adfe6d6fc0787bce57acd838ae39e4c1e6280c666
+│                       │      │                   06d23550acd 
 │                       │      ├ Title           : os/exec: Unexpected paths returned from LookPath in os/exec 
 │                       │      ├ Description     : If the PATH environment variable contains paths which are
 │                       │      │                   executables (rather than just directories), passing certain
@@ -31123,6 +31750,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:c7f5aa17733d4ca1dafe48832a268332a44da4f24b2078957cff5
+│                       │      │                   5d9d32d938f 
 │                       │      ├ Title           : net/url: Insufficient validation of bracketed IPv6 hostnames
 │                       │      │                    in net/url 
 │                       │      ├ Description     : The Parse function permits values other than IPv6 addresses
@@ -31169,6 +31798,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:e7446a400005c3d93ef1318f98fcecca613f07a1c25b48db9b26a
+│                       │      │                   9e6d0898c18 
 │                       │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
 │                       │      │                   exhaustion in encoding/asn1 
 │                       │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
@@ -31212,6 +31843,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:9322180aff1c4b64d098cba4241a0d449d022900347a838c7db14
+│                       │      │                   690c482b0b9 
 │                       │      ├ Title           : crypto/x509: golang: Panic when validating certificates with
 │                       │      │                    DSA public keys in crypto/x509 
 │                       │      ├ Description     : Validating certificate chains which contain DSA public keys
@@ -31257,6 +31890,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:45993b135b8601a7d92ca616d7a096e8b7f55a0a0db3d8aaf18ab
+│                       │      │                   129e8e103f6 
 │                       │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
 │                       │      │                   attacker controlled information 
 │                       │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
@@ -31299,6 +31934,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:9470a15a75b7357a1d2e845dec6adac3311bde855c52f3c9c5192
+│                       │      │                   2c2fffab61f 
 │                       │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
 │                       │      │                    inputs in encoding/pem 
 │                       │      ├ Description     : The processing time for parsing some invalid inputs scales
@@ -31343,6 +31980,8 @@
 │                       │      ├ DataSource       ╭ ID  : govulndb 
 │                       │      │                  ├ Name: The Go Vulnerability Database 
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:4399dace146f454d1701736680ef31472f83cd639a64439b7b3bb
+│                       │      │                   0e3522ad905 
 │                       │      ├ Title           : net/textproto: Excessive CPU consumption in
 │                       │      │                   Reader.ReadResponse in net/textproto 
 │                       │      ├ Description     : The Reader.ReadResponse function constructs a response
@@ -31370,49 +32009,116 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-│                       ╰ [25] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2025-61725 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 2bd9acee40f6eed 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.8, 1.25.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:22fd01b3272bccea6168d2df46f2ff3168c8da7f9c35fc7377c3c
+│                       │      │                   40ac6f0efb6 
+│                       │      ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
+│                       │      │                   net/mail 
+│                       │      ├ Description     : The ParseAddress function constructeds domain-literal
+│                       │      │                   address components through repeated string concatenation.
+│                       │      │                   When parsing large domain-literal components, this can cause
+│                       │      │                    excessive CPU consumption. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
+│                       │      │                  ├ [2]: https://go.dev/cl/709860 
+│                       │      │                  ├ [3]: https://go.dev/issue/75680 
+│                       │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
+│                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
+│                       │      ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-61727 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 2bd9acee40f6eed 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.11, 1.25.5 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:99cd7aa1ac4581e26607a7c8af480993caeb986a17d995eab6faf
+│                       │      │                   a09d2d63150 
+│                       │      ├ Title           : Improper application of excluded DNS name constraints when
+│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restrict the usage of wildcard SANs in the leaf
+│                       │      │                   certificate. For example a constraint that excludes the
+│                       │      │                   subdomain test.example.com does not prevent a leaf
+│                       │      │                   certificate from claiming the SAN *.example.com. 
+│                       │      ├ Severity        : UNKNOWN 
+│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │                         ├ [1]: https://go.dev/issue/76442 
+│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │                         │      dm4 
+│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       ╰ [27] ╭ VulnerabilityID : CVE-2025-61729 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
 │                              │                  ╰ UID : 2bd9acee40f6eed 
 │                              ├ InstalledVersion: v1.24.4 
-│                              ├ FixedVersion    : 1.24.8, 1.25.2 
+│                              ├ FixedVersion    : 1.24.11, 1.25.5 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
 │                              │                  │         501dd6062bd50a4b6afe 
 │                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                              │                            c7d38461b41e40aab9e7 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
 │                              ├ DataSource       ╭ ID  : govulndb 
 │                              │                  ├ Name: The Go Vulnerability Database 
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
-│                              │                   net/mail 
-│                              ├ Description     : The ParseAddress function constructeds domain-literal
-│                              │                   address components through repeated string concatenation.
-│                              │                   When parsing large domain-literal components, this can cause
-│                              │                    excessive CPU consumption. 
-│                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ╭ amazon : 3 
-│                              │                  ├ bitnami: 3 
-│                              │                  ╰ redhat : 2 
-│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                              │                  │         │           N/A:H 
-│                              │                  │         ╰ V3Score : 7.5 
-│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                              │                            │           N/A:L 
-│                              │                            ╰ V3Score : 5.3 
-│                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                              │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
-│                              │                  ├ [2]: https://go.dev/cl/709860 
-│                              │                  ├ [3]: https://go.dev/issue/75680 
-│                              │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                              │                  │      _bI 
-│                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
-│                              │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
-│                              │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
-│                              ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-│                              ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+│                              ├ Fingerprint     : sha256:375bde5fc3ec9b24119cd0e075e29c2ea728d4daae4ac77d7338d
+│                              │                   e2a38ecd971 
+│                              ├ Title           : Within HostnameError.Error(), when constructing an error
+│                              │                   string, there ... 
+│                              ├ Description     : Within HostnameError.Error(), when constructing an error
+│                              │                   string, there is no limit to the number of hosts that will
+│                              │                   be printed out. Furthermore, the error string is constructed
+│                              │                    by repeated string concatenation, leading to quadratic
+│                              │                   runtime. Therefore, a certificate provided by a malicious
+│                              │                   actor can result in excessive resource consumption. 
+│                              ├ Severity        : UNKNOWN 
+│                              ├ References       ╭ [0]: https://go.dev/cl/725920 
+│                              │                  ├ [1]: https://go.dev/issue/76445 
+│                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              │                  │      dm4 
+│                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+│                              ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+│                              ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -31460,6 +32166,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:2c6a5365b29fd3679b5936a78b4f52556b840cac52527907c256a
+                        │      │                   ad7855999af 
                         │      ├ Title           : database/sql: Postgres Scan Race Condition 
                         │      ├ Description     : Cancelling a query (e.g. by cancelling the context passed to
                         │      │                    one of the query methods) during a call to the Scan method
@@ -31516,6 +32224,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:436eedda4d2797671b02b637e33c791e7d0b0633f600fe0ee2536
+                        │      │                   93105759f39 
                         │      ├ Title           : golang: archive/tar: Unbounded allocation when parsing GNU
                         │      │                   sparse map 
                         │      ├ Description     : tar.Reader does not set a maximum size on the number of
@@ -31578,6 +32288,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:52294ef11e341de9406e56a00f9667960bb29fcdd102b93ce880e
+                        │      │                   3b305d7a99f 
                         │      ├ Title           : Despite HTTP headers having a default limit of 1MB, the
                         │      │                   number of cook ... 
                         │      ├ Description     : Despite HTTP headers having a default limit of 1MB, the
@@ -31616,6 +32328,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:65172c597a23adfa6af39bcaa6480d2aa8575aa26d0d2164ef399
+                        │      │                   af9904b8844 
                         │      ├ Title           : Due to the design of the name constraint checking algorithm,
                         │      │                    the proce ... 
                         │      ├ Description     : Due to the design of the name constraint checking algorithm,
@@ -31653,6 +32367,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:36adf337c80f11a44bab1626ebf856e38616f6a4ebeabba35d8e5
+                        │      │                   6faeb4b9182 
                         │      ├ Title           : os/exec: Unexpected paths returned from LookPath in os/exec 
                         │      ├ Description     : If the PATH environment variable contains paths which are
                         │      │                   executables (rather than just directories), passing certain
@@ -31709,6 +32425,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:10888bdedac1cbe98a6496ccc0c9f157a90779dd5e45191145578
+                        │      │                   d774a4aab11 
                         │      ├ Title           : net/url: Insufficient validation of bracketed IPv6 hostnames
                         │      │                    in net/url 
                         │      ├ Description     : The Parse function permits values other than IPv6 addresses
@@ -31755,6 +32473,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:507d8a98f506824514b1a52f122e4dd0aa8033235b455b08430b4
+                        │      │                   4a2118a8acb 
                         │      ├ Title           : encoding/asn1: Parsing DER payload can cause memory
                         │      │                   exhaustion in encoding/asn1 
                         │      ├ Description     : Parsing a maliciously crafted DER payload could allocate
@@ -31798,6 +32518,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:9a88bd609705830ad1cb0cb9d422c327db9caf3484434469119d2
+                        │      │                   f238e86ee87 
                         │      ├ Title           : crypto/x509: golang: Panic when validating certificates with
                         │      │                    DSA public keys in crypto/x509 
                         │      ├ Description     : Validating certificate chains which contain DSA public keys
@@ -31843,6 +32565,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:3b944b59e791d25edaf8ba20a7462837a075eebd91d07d14d6796
+                        │      │                   a3a8e2b2a08 
                         │      ├ Title           : crypto/tls: go crypto/tls ALPN negotiation error contains
                         │      │                   attacker controlled information 
                         │      ├ Description     : When Conn.Handshake fails during ALPN negotiation the error
@@ -31885,6 +32609,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:4663fbc3db27544dd734e88d9f8562634cd9512cfbb8f1db4f8ee
+                        │      │                   e4957134607 
                         │      ├ Title           : encoding/pem: Quadratic complexity when parsing some invalid
                         │      │                    inputs in encoding/pem 
                         │      ├ Description     : The processing time for parsing some invalid inputs scales
@@ -31929,6 +32655,8 @@
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:832dcbfb37fb6354298e50bc07ed9ce30cff29856a0362a347e46
+                        │      │                   791913d9ea1 
                         │      ├ Title           : net/textproto: Excessive CPU consumption in
                         │      │                   Reader.ReadResponse in net/textproto 
                         │      ├ Description     : The Reader.ReadResponse function constructs a response
@@ -31956,47 +32684,114 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
                         │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:36.567Z 
-                        ╰ [11] ╭ VulnerabilityID : CVE-2025-61725 
+                        ├ [11] ╭ VulnerabilityID : CVE-2025-61725 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : 7927e62558d558ff 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.8, 1.25.2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:cc6fc7f0919d7a33336a7bf5a2dceeb588908ca1c411b6c90d2c7
+                        │      │                   035e29c3310 
+                        │      ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
+                        │      │                   net/mail 
+                        │      ├ Description     : The ParseAddress function constructeds domain-literal
+                        │      │                   address components through repeated string concatenation.
+                        │      │                   When parsing large domain-literal components, this can cause
+                        │      │                    excessive CPU consumption. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      │                  ├ bitnami: 3 
+                        │      │                  ╰ redhat : 2 
+                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+                        │      │                  │         │           N/A:H 
+                        │      │                  │         ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+                        │      │                            │           N/A:L 
+                        │      │                            ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
+                        │      │                  ├ [2]: https://go.dev/cl/709860 
+                        │      │                  ├ [3]: https://go.dev/issue/75680 
+                        │      │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+                        │      │                  │      _bI 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
+                        │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
+                        │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+                        ├ [12] ╭ VulnerabilityID : CVE-2025-61727 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : 7927e62558d558ff 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.11, 1.25.5 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:015455c3c71b8d66e3ce4779b9dcec847398d6dc01cdb7bfe527d
+                        │      │                   044aa6f93ec 
+                        │      ├ Title           : Improper application of excluded DNS name constraints when
+                        │      │                   verifying wildcard names in crypto/x509 
+                        │      ├ Description     : An excluded subdomain constraint in a certificate chain does
+                        │      │                    not restrict the usage of wildcard SANs in the leaf
+                        │      │                   certificate. For example a constraint that excludes the
+                        │      │                   subdomain test.example.com does not prevent a leaf
+                        │      │                   certificate from claiming the SAN *.example.com. 
+                        │      ├ Severity        : UNKNOWN 
+                        │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
+                        │                         ├ [1]: https://go.dev/issue/76442 
+                        │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+                        │                         │      dm4 
+                        │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+                        ╰ [13] ╭ VulnerabilityID : CVE-2025-61729 
                                ├ PkgID           : stdlib@v1.24.5 
                                ├ PkgName         : stdlib 
                                ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
                                │                  ╰ UID : 7927e62558d558ff 
                                ├ InstalledVersion: v1.24.5 
-                               ├ FixedVersion    : 1.24.8, 1.25.2 
+                               ├ FixedVersion    : 1.24.11, 1.25.5 
                                ├ Status          : fixed 
                                ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
                                │                  │         501dd6062bd50a4b6afe 
                                │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
                                │                            c7d38461b41e40aab9e7 
-                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61725 
+                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61729 
                                ├ DataSource       ╭ ID  : govulndb 
                                │                  ├ Name: The Go Vulnerability Database 
                                │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                               ├ Title           : net/mail: Excessive CPU consumption in ParseAddress in
-                               │                   net/mail 
-                               ├ Description     : The ParseAddress function constructeds domain-literal
-                               │                   address components through repeated string concatenation.
-                               │                   When parsing large domain-literal components, this can cause
-                               │                    excessive CPU consumption. 
-                               ├ Severity        : MEDIUM 
-                               ├ VendorSeverity   ╭ amazon : 3 
-                               │                  ├ bitnami: 3 
-                               │                  ╰ redhat : 2 
-                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-                               │                  │         │           N/A:H 
-                               │                  │         ╰ V3Score : 7.5 
-                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-                               │                            │           N/A:L 
-                               │                            ╰ V3Score : 5.3 
-                               ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-                               │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-61725 
-                               │                  ├ [2]: https://go.dev/cl/709860 
-                               │                  ├ [3]: https://go.dev/issue/75680 
-                               │                  ├ [4]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-                               │                  │      _bI 
-                               │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-61725 
-                               │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-4006 
-                               │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
-                               ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
-                               ╰ LastModifiedDate: 2025-11-04T22:16:36.693Z 
+                               ├ Fingerprint     : sha256:201bdabcab5993e3a03fdda8ef240d60270509b4a33cec051a3ba
+                               │                   b75bbf4e4b1 
+                               ├ Title           : Within HostnameError.Error(), when constructing an error
+                               │                   string, there ... 
+                               ├ Description     : Within HostnameError.Error(), when constructing an error
+                               │                   string, there is no limit to the number of hosts that will
+                               │                   be printed out. Furthermore, the error string is constructed
+                               │                    by repeated string concatenation, leading to quadratic
+                               │                   runtime. Therefore, a certificate provided by a malicious
+                               │                   actor can result in excessive resource consumption. 
+                               ├ Severity        : UNKNOWN 
+                               ├ References       ╭ [0]: https://go.dev/cl/725920 
+                               │                  ├ [1]: https://go.dev/issue/76445 
+                               │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+                               │                  │      dm4 
+                               │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4155 
+                               ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
+                               ╰ LastModifiedDate: 2025-12-02T22:16:08.527Z 
 ````
