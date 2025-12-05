@@ -13185,19 +13185,21 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:e6ee1538c128b5abc6c257010eb9f640d5e9067a86694813e1439
 │                       │      │                   751a9df8b3f 
-│                       │      ├ Title           : Improper application of excluded DNS name constraints when
-│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restr ... 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : UNKNOWN 
-│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │                         ├ [1]: https://go.dev/issue/76442 
-│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │                         │      dm4 
-│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │      │                  ├ [1]: https://go.dev/issue/76442 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ PkgID           : docker@28.3.2-r0 
 │                       │      ├ PkgName         : docker 
@@ -13316,19 +13318,21 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:9137c9011a7a286ed48d5565e73f7c487b66adffe0498575d75c0
 │                       │      │                   b7e5622f5a7 
-│                       │      ├ Title           : Improper application of excluded DNS name constraints when
-│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restr ... 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : UNKNOWN 
-│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │                         ├ [1]: https://go.dev/issue/76442 
-│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │                         │      dm4 
-│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │      │                  ├ [1]: https://go.dev/issue/76442 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ PkgID           : docker-bash-completion@28.3.2-r0 
 │                       │      ├ PkgName         : docker-bash-completion 
@@ -13447,19 +13451,21 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:4d3d9f5b2d2d433327cecd1dd17c52936046500c762f7b45b9cb6
 │                       │      │                   05ff5bfb934 
-│                       │      ├ Title           : Improper application of excluded DNS name constraints when
-│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restr ... 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : UNKNOWN 
-│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │                         ├ [1]: https://go.dev/issue/76442 
-│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │                         │      dm4 
-│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │      │                  ├ [1]: https://go.dev/issue/76442 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ PkgID           : docker-cli@28.3.2-r0 
 │                       │      ├ PkgName         : docker-cli 
@@ -13578,19 +13584,21 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:17f5a7133f135f31d57fd55af22f67d99bea97fb1c1c609cb57f2
 │                       │      │                   11035b4901d 
-│                       │      ├ Title           : Improper application of excluded DNS name constraints when
-│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restr ... 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : UNKNOWN 
-│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │                         ├ [1]: https://go.dev/issue/76442 
-│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │                         │      dm4 
-│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │      │                  ├ [1]: https://go.dev/issue/76442 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
 │                       ├ [18] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ PkgID           : docker-engine@28.3.2-r0 
 │                       │      ├ PkgName         : docker-engine 
@@ -14077,13 +14085,13 @@
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
 │                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/16/2 
-│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:21974 
+│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:22175 
 │                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-59375 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2395108 
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2395108 
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-59375 
-│                       │      │                  ├ [6] : https://errata.almalinux.org/8/ALSA-2025-21974.html 
+│                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-22175.html 
 │                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:22175 
 │                       │      │                  ├ [8] : https://github.com/libexpat/libexpat/blob/676a4c531ec
 │                       │      │                  │       768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74 
@@ -14613,7 +14621,7 @@
 │                       │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:21485 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-53057.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-21485.html 
 │                       │      │                  ├ [12]: https://lists.debian.org/debian-lts-announce/2025/10/
 │                       │      │                  │       msg00026.html 
 │                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-53057 
@@ -14700,7 +14708,7 @@
 │                       │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:21485 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-53066.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-21485.html 
 │                       │      │                  ├ [12]: https://lists.debian.org/debian-lts-announce/2025/10/
 │                       │      │                  │       msg00026.html 
 │                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-53066 
@@ -14785,7 +14793,7 @@
 │                       │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:21485 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61748.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-21485.html 
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
 │                       │      │                  ├ [13]: https://openjdk.org/groups/vulnerability/advisories/2
 │                       │      │                  │       025-10-21 
@@ -14866,7 +14874,7 @@
 │                       │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:21485 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-53057.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-21485.html 
 │                       │      │                  ├ [12]: https://lists.debian.org/debian-lts-announce/2025/10/
 │                       │      │                  │       msg00026.html 
 │                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-53057 
@@ -14953,7 +14961,7 @@
 │                       │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:21485 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-53066.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-21485.html 
 │                       │      │                  ├ [12]: https://lists.debian.org/debian-lts-announce/2025/10/
 │                       │      │                  │       msg00026.html 
 │                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-53066 
@@ -15038,7 +15046,7 @@
 │                       │      │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2025-18824.html 
 │                       │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:21485 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61748.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-18824.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-21485.html 
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61748 
 │                       │      │                  ├ [13]: https://openjdk.org/groups/vulnerability/advisories/2
 │                       │      │                  │       025-10-21 
@@ -15369,6 +15377,7 @@
 │                       │      │                  │         501dd6062bd50a4b6afe 
 │                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
 │                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-31133 
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
@@ -15395,12 +15404,16 @@
 │                       │      │                  ├ amazon     : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ├ rocky      : 3 
 │                       │      │                  ╰ ubuntu     : 3 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.8 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 8.2 
 │                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:20957 
@@ -15436,7 +15449,7 @@
 │                       │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7851-1 
 │                       │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2025-31133 
 │                       │      ├ PublishedDate   : 2025-11-06T19:15:41.343Z 
-│                       │      ╰ LastModifiedDate: 2025-11-06T19:45:09.883Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T18:30:15.43Z 
 │                       ├ [44] ╭ VulnerabilityID : CVE-2025-52565 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
@@ -15450,6 +15463,7 @@
 │                       │      │                  │         501dd6062bd50a4b6afe 
 │                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
 │                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-52565 
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
@@ -15484,12 +15498,16 @@
 │                       │      │                  ├ amazon     : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ├ rocky      : 3 
 │                       │      │                  ╰ ubuntu     : 3 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 8.2 
 │                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:20957 
@@ -15533,7 +15551,7 @@
 │                       │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-7851-1 
 │                       │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2025-52565 
 │                       │      ├ PublishedDate   : 2025-11-06T20:15:49.24Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T18:33:33.357Z 
 │                       ├ [45] ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ PkgID           : runc@1.3.0-r2 
 │                       │      ├ PkgName         : runc 
@@ -15547,6 +15565,7 @@
 │                       │      │                  │         501dd6062bd50a4b6afe 
 │                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : nvd 
 │                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-52881 
 │                       │      ├ DataSource       ╭ ID  : alpine 
 │                       │      │                  ├ Name: Alpine Secdb 
@@ -15580,12 +15599,16 @@
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ├ rocky      : 3 
 │                       │      │                  ╰ ubuntu     : 3 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 8.2 
 │                       │      ├ References       ╭ [0] : http://github.com/opencontainers/runc/commit/a41366e7
@@ -15651,7 +15674,7 @@
 │                       │      │                  ├ [35]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [36]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
 │                       │      │                  ├ [38]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [39]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
@@ -15660,7 +15683,7 @@
 │                       │      │                  ├ [42]: https://youtu.be/tGseJW_uBB8 
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
 │                       ├ [46] ╭ VulnerabilityID : CVE-2024-58251 
 │                       │      ├ PkgID           : ssl_client@1.37.0-r19 
 │                       │      ├ PkgName         : ssl_client 
@@ -21992,12 +22015,16 @@
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ├ rocky      : 3 
 │                       │      │                  ╰ ubuntu     : 3 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 8.2 
 │                       │      ├ References       ╭ [0] : http://github.com/opencontainers/runc/commit/a41366e7
@@ -22063,7 +22090,7 @@
 │                       │      │                  ├ [35]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [36]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
 │                       │      │                  ├ [38]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [39]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
@@ -22072,7 +22099,7 @@
 │                       │      │                  ├ [42]: https://youtu.be/tGseJW_uBB8 
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
 │                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58058 
 │                       │      ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │      ├ PkgName         : github.com/ulikunitz/xz 
@@ -22258,7 +22285,7 @@
 │                       │      │                  ├ [8] : https://groups.google.com/g/golang-announce/c/x5MKroM
 │                       │      │                  │       L2yM 
 │                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-47907.html 
-│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20909.html 
+│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20983.html 
 │                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
 │                       │      │                  ├ [12]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
@@ -22322,7 +22349,7 @@
 │                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                       │      │                  │       Q_bI 
 │                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
 │                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
 │                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -22803,19 +22830,21 @@
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                       │      ├ Fingerprint     : sha256:35a05f0606f9b7825b6c9641f3f4a953dd940168cc23f153dbbd1
 │                       │      │                   e4487290718 
-│                       │      ├ Title           : Improper application of excluded DNS name constraints when
-│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restr ... 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : UNKNOWN 
-│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │                         ├ [1]: https://go.dev/issue/76442 
-│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │                         │      dm4 
-│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │      │                  ├ [1]: https://go.dev/issue/76442 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
 │                       ╰ [24] ╭ VulnerabilityID : CVE-2025-61729 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -25757,12 +25786,16 @@
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ├ rocky      : 3 
 │                       │      │                  ╰ ubuntu     : 3 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 8.2 
 │                       │      ├ References       ╭ [0] : http://github.com/opencontainers/runc/commit/a41366e7
@@ -25828,7 +25861,7 @@
 │                       │      │                  ├ [35]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [36]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
 │                       │      │                  ├ [38]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [39]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
@@ -25837,7 +25870,7 @@
 │                       │      │                  ├ [42]: https://youtu.be/tGseJW_uBB8 
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2025-58058 
 │                       │      ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │      ├ PkgName         : github.com/ulikunitz/xz 
@@ -26023,7 +26056,7 @@
 │                       │      │                  ├ [8] : https://groups.google.com/g/golang-announce/c/x5MKroM
 │                       │      │                  │       L2yM 
 │                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-47907.html 
-│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20909.html 
+│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20983.html 
 │                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
 │                       │      │                  ├ [12]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
@@ -26087,7 +26120,7 @@
 │                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                       │      │                  │       Q_bI 
 │                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
 │                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
 │                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -26568,19 +26601,21 @@
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                       │      ├ Fingerprint     : sha256:bee8b7b1dcd3769dfcbd6e16038badecd684744bcadcba44ffdea
 │                       │      │                   07044e975cc 
-│                       │      ├ Title           : Improper application of excluded DNS name constraints when
-│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restr ... 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : UNKNOWN 
-│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │                         ├ [1]: https://go.dev/issue/76442 
-│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │                         │      dm4 
-│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │      │                  ├ [1]: https://go.dev/issue/76442 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
 │                       ╰ [23] ╭ VulnerabilityID : CVE-2025-61729 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -31091,12 +31126,16 @@
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ ghsa       : 3 
+│                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 3 
 │                       │      │                  ├ rocky      : 3 
 │                       │      │                  ╰ ubuntu     : 3 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 8.2 
 │                       │      ├ References       ╭ [0] : http://github.com/opencontainers/runc/commit/a41366e7
@@ -31162,7 +31201,7 @@
 │                       │      │                  ├ [35]: https://github.com/opencontainers/selinux/releases/ta
 │                       │      │                  │       g/v1.13.0 
 │                       │      │                  ├ [36]: https://linux.oracle.com/cve/CVE-2025-52881.html 
-│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+│                       │      │                  ├ [37]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
 │                       │      │                  ├ [38]: https://nvd.nist.gov/vuln/detail/CVE-2025-52881 
 │                       │      │                  ├ [39]: https://pkg.go.dev/github.com/cyphar/filepath-securej
 │                       │      │                  │       oin/pathrs-lite/procfs 
@@ -31171,7 +31210,7 @@
 │                       │      │                  ├ [42]: https://youtu.be/tGseJW_uBB8 
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
 │                       ├ [8]  ╭ VulnerabilityID : CVE-2025-58058 
 │                       │      ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │      ├ PkgName         : github.com/ulikunitz/xz 
@@ -31527,7 +31566,7 @@
 │                       │      │                  ├ [8] : https://groups.google.com/g/golang-announce/c/x5MKroM
 │                       │      │                  │       L2yM 
 │                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-47907.html 
-│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20909.html 
+│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20983.html 
 │                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
 │                       │      │                  ├ [12]: https://pkg.go.dev/vuln/GO-2025-3849 
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
@@ -31591,7 +31630,7 @@
 │                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                       │      │                  │       Q_bI 
 │                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
 │                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
 │                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -32072,19 +32111,21 @@
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                       │      ├ Fingerprint     : sha256:99cd7aa1ac4581e26607a7c8af480993caeb986a17d995eab6faf
 │                       │      │                   a09d2d63150 
-│                       │      ├ Title           : Improper application of excluded DNS name constraints when
-│                       │      │                   verifying wildcard names in crypto/x509 
+│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+│                       │      │                    not restr ... 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : UNKNOWN 
-│                       │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │                         ├ [1]: https://go.dev/issue/76442 
-│                       │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │                         │      dm4 
-│                       │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+│                       │      │                  ├ [1]: https://go.dev/issue/76442 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      │                  │      dm4 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                       │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
 │                       ╰ [27] ╭ VulnerabilityID : CVE-2025-61729 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -32202,7 +32243,7 @@
                         │      │                  ├ [8] : https://groups.google.com/g/golang-announce/c/x5MKroM
                         │      │                  │       L2yM 
                         │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-47907.html 
-                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20909.html 
+                        │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20983.html 
                         │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-47907 
                         │      │                  ├ [12]: https://pkg.go.dev/vuln/GO-2025-3849 
                         │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
@@ -32266,7 +32307,7 @@
                         │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/4Emdl2i
                         │      │                  │       Q_bI 
                         │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22011.html 
+                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2025-22012.html 
                         │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
                         │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2025-4014 
                         │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -32747,19 +32788,21 @@
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
                         │      ├ Fingerprint     : sha256:015455c3c71b8d66e3ce4779b9dcec847398d6dc01cdb7bfe527d
                         │      │                   044aa6f93ec 
-                        │      ├ Title           : Improper application of excluded DNS name constraints when
-                        │      │                   verifying wildcard names in crypto/x509 
+                        │      ├ Title           : An excluded subdomain constraint in a certificate chain does
+                        │      │                    not restr ... 
                         │      ├ Description     : An excluded subdomain constraint in a certificate chain does
                         │      │                    not restrict the usage of wildcard SANs in the leaf
                         │      │                   certificate. For example a constraint that excludes the
                         │      │                   subdomain test.example.com does not prevent a leaf
                         │      │                   certificate from claiming the SAN *.example.com. 
                         │      ├ Severity        : UNKNOWN 
-                        │      ╰ References       ╭ [0]: https://go.dev/cl/723900 
-                        │                         ├ [1]: https://go.dev/issue/76442 
-                        │                         ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-                        │                         │      dm4 
-                        │                         ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+                        │      ├ References       ╭ [0]: https://go.dev/cl/723900 
+                        │      │                  ├ [1]: https://go.dev/issue/76442 
+                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+                        │      │                  │      dm4 
+                        │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2025-4175 
+                        │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+                        │      ╰ LastModifiedDate: 2025-12-03T22:15:51.51Z 
                         ╰ [13] ╭ VulnerabilityID : CVE-2025-61729 
                                ├ PkgID           : stdlib@v1.24.5 
                                ├ PkgName         : stdlib 
