@@ -13274,24 +13274,30 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:e6ee1538c128b5abc6c257010eb9f640d5e9067a86694813e1439
 │                       │      │                   751a9df8b3f 
-│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
-│                       │      │                    not restr ... 
+│                       │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                       │      │                   restrict wildcard SANs 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           L/A:N 
+│                       │      │                  │         ╰ V3Score : 6.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                            │           L/A:N 
 │                       │      │                            ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │      │                  ├ [1]: https://go.dev/issue/76442 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                       │      │                  ├ [1]: https://go.dev/cl/723900 
+│                       │      │                  ├ [2]: https://go.dev/issue/76442 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                       │      │                  │      dm4 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2025-61729 
@@ -13423,24 +13429,30 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:9137c9011a7a286ed48d5565e73f7c487b66adffe0498575d75c0
 │                       │      │                   b7e5622f5a7 
-│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
-│                       │      │                    not restr ... 
+│                       │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                       │      │                   restrict wildcard SANs 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           L/A:N 
+│                       │      │                  │         ╰ V3Score : 6.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                            │           L/A:N 
 │                       │      │                            ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │      │                  ├ [1]: https://go.dev/issue/76442 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                       │      │                  ├ [1]: https://go.dev/cl/723900 
+│                       │      │                  ├ [2]: https://go.dev/issue/76442 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                       │      │                  │      dm4 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 │                       ├ [14] ╭ VulnerabilityID : CVE-2025-61729 
@@ -13572,24 +13584,30 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:4d3d9f5b2d2d433327cecd1dd17c52936046500c762f7b45b9cb6
 │                       │      │                   05ff5bfb934 
-│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
-│                       │      │                    not restr ... 
+│                       │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                       │      │                   restrict wildcard SANs 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           L/A:N 
+│                       │      │                  │         ╰ V3Score : 6.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                            │           L/A:N 
 │                       │      │                            ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │      │                  ├ [1]: https://go.dev/issue/76442 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                       │      │                  ├ [1]: https://go.dev/cl/723900 
+│                       │      │                  ├ [2]: https://go.dev/issue/76442 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                       │      │                  │      dm4 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 │                       ├ [17] ╭ VulnerabilityID : CVE-2025-61729 
@@ -13721,24 +13739,30 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:17f5a7133f135f31d57fd55af22f67d99bea97fb1c1c609cb57f2
 │                       │      │                   11035b4901d 
-│                       │      ├ Title           : An excluded subdomain constraint in a certificate chain does
-│                       │      │                    not restr ... 
+│                       │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                       │      │                   restrict wildcard SANs 
 │                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                       │      │                    not restrict the usage of wildcard SANs in the leaf
 │                       │      │                   certificate. For example a constraint that excludes the
 │                       │      │                   subdomain test.example.com does not prevent a leaf
 │                       │      │                   certificate from claiming the SAN *.example.com. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           L/A:N 
+│                       │      │                  │         ╰ V3Score : 6.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                            │           L/A:N 
 │                       │      │                            ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/723900 
-│                       │      │                  ├ [1]: https://go.dev/issue/76442 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                       │      │                  ├ [1]: https://go.dev/cl/723900 
+│                       │      │                  ├ [2]: https://go.dev/issue/76442 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                       │      │                  │      dm4 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 │                       ├ [20] ╭ VulnerabilityID : CVE-2025-9230 
@@ -14382,7 +14406,7 @@
 │                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-66293 
 │                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-66293 
 │                       │      ├ PublishedDate   : 2025-12-03T21:15:53.06Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
+│                       │      ╰ LastModifiedDate: 2025-12-16T19:12:50.35Z 
 │                       ├ [30] ╭ VulnerabilityID : CVE-2025-64505 
 │                       │      ├ PkgID           : libpng@1.6.49-r0 
 │                       │      ├ PkgName         : libpng 
@@ -18967,8 +18991,8 @@
 │                       │     │                          osystem%3Apip 
 │                       │     ├ Fingerprint     : sha256:a477454d003a6ab00c357eb697bd8847f27312e4f2a203be0418c4
 │                       │     │                   544b912df6 
-│                       │     ├ Title           : urllib3 is a user-friendly HTTP client library for Python.
-│                       │     │                   Starting in ... 
+│                       │     ├ Title           : urllib3: urllib3: Unbounded decompression chain leads to
+│                       │     │                   resource exhaustion 
 │                       │     ├ Description     : urllib3 is a user-friendly HTTP client library for Python.
 │                       │     │                   Starting in version 1.24 and prior to 2.6.0, the number of
 │                       │     │                   links in the decompression chain was unbounded allowing a
@@ -18980,18 +19004,24 @@
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
 │                       │     ├ VendorSeverity   ╭ ghsa  : 3 
 │                       │     │                  ├ nvd   : 3 
+│                       │     │                  ├ redhat: 3 
 │                       │     │                  ╰ ubuntu: 2 
-│                       │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │     │                        ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://github.com/urllib3/urllib3 
-│                       │     │                  ├ [1]: https://github.com/urllib3/urllib3/commit/24d7b67eac89f
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-66418 
+│                       │     │                  ├ [1]: https://github.com/urllib3/urllib3 
+│                       │     │                  ├ [2]: https://github.com/urllib3/urllib3/commit/24d7b67eac89f
 │                       │     │                  │      94e11003424bcf0d8f7b72222a8 
-│                       │     │                  ├ [2]: https://github.com/urllib3/urllib3/security/advisories/
+│                       │     │                  ├ [3]: https://github.com/urllib3/urllib3/security/advisories/
 │                       │     │                  │      GHSA-gm62-xv2j-4w53 
-│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-66418 
-│                       │     │                  ├ [4]: https://ubuntu.com/security/notices/USN-7927-1 
-│                       │     │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2025-66418 
-│                       │     │                  ╰ [6]: https://www.openwall.com/lists/oss-security/2025/12/05/4 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-66418 
+│                       │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-7927-1 
+│                       │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-66418 
+│                       │     │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/12/05/4 
 │                       │     ├ PublishedDate   : 2025-12-05T16:15:51.053Z 
 │                       │     ╰ LastModifiedDate: 2025-12-10T16:08:32.193Z 
 │                       ╰ [4] ╭ VulnerabilityID : CVE-2025-66471 
@@ -22679,6 +22709,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ redhat     : 2 
@@ -22749,46 +22780,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4012 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-58187 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f1435be1373e471b 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.9, 1.25.3 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:c2e954cba5715342f615eac0856de01eef086c6143ddd277c5a5f
-│                       │      │                   c205e19aeb9 
-│                       │      ├ Title           : Due to the design of the name constraint checking algorithm,
-│                       │      │                    the proce ... 
-│                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
-│                       │      │                    the processing time of some inputs scale non-linearly with
-│                       │      │                   respect to the size of the certificate. This affects
-│                       │      │                   programs which validate arbitrary certificate chains. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                       │      │                            │           N/A:H 
-│                       │      │                            ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/709854 
-│                       │      │                  ├ [2]: https://go.dev/issue/75681 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4007 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-│                       │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-61729 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -22833,7 +22825,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -22891,7 +22883,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -22939,7 +22931,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.497Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -22984,6 +22976,53 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-58187 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f1435be1373e471b 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.9, 1.25.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:c2e954cba5715342f615eac0856de01eef086c6143ddd277c5a5f
+│                       │      │                   c205e19aeb9 
+│                       │      ├ Title           : crypto/x509: Quadratic complexity when checking name
+│                       │      │                   constraints in crypto/x509 
+│                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
+│                       │      │                    the processing time of some inputs scale non-linearly with
+│                       │      │                   respect to the size of the certificate. This affects
+│                       │      │                   programs which validate arbitrary certificate chains. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58187 
+│                       │      │                  ├ [2]: https://github.com/golang/go/commit/3fc4c79fdbb17b9b29
+│                       │      │                  │      ea9f8c29dd780df075d4c4 
+│                       │      │                  ├ [3]: https://go.dev/cl/709854 
+│                       │      │                  ├ [4]: https://go.dev/issue/75681 
+│                       │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4007 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
+│                       │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
 │                       ├ [20] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -23229,24 +23268,30 @@
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                              ├ Fingerprint     : sha256:35a05f0606f9b7825b6c9641f3f4a953dd940168cc23f153dbbd1
 │                              │                   e4487290718 
-│                              ├ Title           : An excluded subdomain constraint in a certificate chain does
-│                              │                    not restr ... 
+│                              ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                              │                   restrict wildcard SANs 
 │                              ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                              │                    not restrict the usage of wildcard SANs in the leaf
 │                              │                   certificate. For example a constraint that excludes the
 │                              │                   subdomain test.example.com does not prevent a leaf
 │                              │                   certificate from claiming the SAN *.example.com. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ─ bitnami: 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              ├ VendorSeverity   ╭ bitnami: 2 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                  │         │           L/A:N 
+│                              │                  │         ╰ V3Score : 6.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                            │           L/A:N 
 │                              │                            ╰ V3Score : 6.5 
-│                              ├ References       ╭ [0]: https://go.dev/cl/723900 
-│                              │                  ├ [1]: https://go.dev/issue/76442 
-│                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                              │                  ├ [1]: https://go.dev/cl/723900 
+│                              │                  ├ [2]: https://go.dev/issue/76442 
+│                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                              │                  │      dm4 
-│                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                              ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                              ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ├ [4] ╭ Target         : usr/bin/syft 
@@ -26518,6 +26563,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ redhat     : 2 
@@ -26588,46 +26634,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4012 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-58187 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : ebfdcee22f3690eb 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.9, 1.25.3 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:56cfe3e924e18fe761578d5872a3b8959e7a68586bab9f1fc8ff3
-│                       │      │                   32cb2128dba 
-│                       │      ├ Title           : Due to the design of the name constraint checking algorithm,
-│                       │      │                    the proce ... 
-│                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
-│                       │      │                    the processing time of some inputs scale non-linearly with
-│                       │      │                   respect to the size of the certificate. This affects
-│                       │      │                   programs which validate arbitrary certificate chains. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                       │      │                            │           N/A:H 
-│                       │      │                            ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/709854 
-│                       │      │                  ├ [2]: https://go.dev/issue/75681 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4007 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-│                       │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-61729 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -26672,7 +26679,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -26730,7 +26737,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -26778,7 +26785,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.497Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -26823,6 +26830,53 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58187 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : ebfdcee22f3690eb 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.9, 1.25.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:56cfe3e924e18fe761578d5872a3b8959e7a68586bab9f1fc8ff3
+│                       │      │                   32cb2128dba 
+│                       │      ├ Title           : crypto/x509: Quadratic complexity when checking name
+│                       │      │                   constraints in crypto/x509 
+│                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
+│                       │      │                    the processing time of some inputs scale non-linearly with
+│                       │      │                   respect to the size of the certificate. This affects
+│                       │      │                   programs which validate arbitrary certificate chains. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58187 
+│                       │      │                  ├ [2]: https://github.com/golang/go/commit/3fc4c79fdbb17b9b29
+│                       │      │                  │      ea9f8c29dd780df075d4c4 
+│                       │      │                  ├ [3]: https://go.dev/cl/709854 
+│                       │      │                  ├ [4]: https://go.dev/issue/75681 
+│                       │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4007 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
+│                       │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
 │                       ├ [19] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27068,24 +27122,30 @@
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                              ├ Fingerprint     : sha256:bee8b7b1dcd3769dfcbd6e16038badecd684744bcadcba44ffdea
 │                              │                   07044e975cc 
-│                              ├ Title           : An excluded subdomain constraint in a certificate chain does
-│                              │                    not restr ... 
+│                              ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                              │                   restrict wildcard SANs 
 │                              ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                              │                    not restrict the usage of wildcard SANs in the leaf
 │                              │                   certificate. For example a constraint that excludes the
 │                              │                   subdomain test.example.com does not prevent a leaf
 │                              │                   certificate from claiming the SAN *.example.com. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ─ bitnami: 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              ├ VendorSeverity   ╭ bitnami: 2 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                  │         │           L/A:N 
+│                              │                  │         ╰ V3Score : 6.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                            │           L/A:N 
 │                              │                            ╰ V3Score : 6.5 
-│                              ├ References       ╭ [0]: https://go.dev/cl/723900 
-│                              │                  ├ [1]: https://go.dev/issue/76442 
-│                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                              │                  ├ [1]: https://go.dev/cl/723900 
+│                              │                  ├ [2]: https://go.dev/issue/76442 
+│                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                              │                  │      dm4 
-│                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                              ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                              ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
@@ -32122,6 +32182,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ redhat     : 2 
@@ -32192,46 +32253,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4012 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58187 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 2bd9acee40f6eed 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.9, 1.25.3 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:d1bb6841f372342b30d5799c1aa60a22e8be1f3a4d7b681329027
-│                       │      │                   fea52902c69 
-│                       │      ├ Title           : Due to the design of the name constraint checking algorithm,
-│                       │      │                    the proce ... 
-│                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
-│                       │      │                    the processing time of some inputs scale non-linearly with
-│                       │      │                   respect to the size of the certificate. This affects
-│                       │      │                   programs which validate arbitrary certificate chains. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ╰ bitnami: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-│                       │      │                            │           N/A:H 
-│                       │      │                            ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-│                       │      │                  ├ [1]: https://go.dev/cl/709854 
-│                       │      │                  ├ [2]: https://go.dev/issue/75681 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-│                       │      │                  │      _bI 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
-│                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4007 
-│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-│                       │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-61729 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -32276,7 +32298,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -32334,7 +32356,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -32382,7 +32404,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:16.497Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
@@ -32427,6 +32449,53 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58187 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 2bd9acee40f6eed 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.9, 1.25.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:d1bb6841f372342b30d5799c1aa60a22e8be1f3a4d7b681329027
+│                       │      │                   fea52902c69 
+│                       │      ├ Title           : crypto/x509: Quadratic complexity when checking name
+│                       │      │                   constraints in crypto/x509 
+│                       │      ├ Description     : Due to the design of the name constraint checking algorithm,
+│                       │      │                    the processing time of some inputs scale non-linearly with
+│                       │      │                   respect to the size of the certificate. This affects
+│                       │      │                   programs which validate arbitrary certificate chains. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 3 
+│                       │      │                  ╰ redhat : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           N/A:H 
+│                       │      │                  │         ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │      │                            │           N/A:L 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58187 
+│                       │      │                  ├ [2]: https://github.com/golang/go/commit/3fc4c79fdbb17b9b29
+│                       │      │                  │      ea9f8c29dd780df075d4c4 
+│                       │      │                  ├ [3]: https://go.dev/cl/709854 
+│                       │      │                  ├ [4]: https://go.dev/issue/75681 
+│                       │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+│                       │      │                  │      _bI 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4007 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
+│                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
+│                       │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
 │                       ├ [23] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -32672,24 +32741,30 @@
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                              ├ Fingerprint     : sha256:99cd7aa1ac4581e26607a7c8af480993caeb986a17d995eab6faf
 │                              │                   a09d2d63150 
-│                              ├ Title           : An excluded subdomain constraint in a certificate chain does
-│                              │                    not restr ... 
+│                              ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                              │                   restrict wildcard SANs 
 │                              ├ Description     : An excluded subdomain constraint in a certificate chain does
 │                              │                    not restrict the usage of wildcard SANs in the leaf
 │                              │                   certificate. For example a constraint that excludes the
 │                              │                   subdomain test.example.com does not prevent a leaf
 │                              │                   certificate from claiming the SAN *.example.com. 
 │                              ├ Severity        : MEDIUM 
-│                              ├ VendorSeverity   ─ bitnami: 2 
-│                              ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              ├ VendorSeverity   ╭ bitnami: 2 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                  │         │           L/A:N 
+│                              │                  │         ╰ V3Score : 6.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                              │                            │           L/A:N 
 │                              │                            ╰ V3Score : 6.5 
-│                              ├ References       ╭ [0]: https://go.dev/cl/723900 
-│                              │                  ├ [1]: https://go.dev/issue/76442 
-│                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                              │                  ├ [1]: https://go.dev/cl/723900 
+│                              │                  ├ [2]: https://go.dev/issue/76442 
+│                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
 │                              │                  │      dm4 
-│                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                              ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                              ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
@@ -32811,6 +32886,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ VendorSeverity   ╭ alma       : 2 
                         │      │                  ├ amazon     : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ bitnami    : 2 
                         │      │                  ├ oracle-oval: 2 
                         │      │                  ├ redhat     : 2 
@@ -32881,46 +32957,7 @@
                         │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4012 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-                        ├ [3]  ╭ VulnerabilityID : CVE-2025-58187 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : 7927e62558d558ff 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.24.9, 1.25.3 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:65172c597a23adfa6af39bcaa6480d2aa8575aa26d0d2164ef399
-                        │      │                   af9904b8844 
-                        │      ├ Title           : Due to the design of the name constraint checking algorithm,
-                        │      │                    the proce ... 
-                        │      ├ Description     : Due to the design of the name constraint checking algorithm,
-                        │      │                    the processing time of some inputs scale non-linearly with
-                        │      │                   respect to the size of the certificate. This affects
-                        │      │                   programs which validate arbitrary certificate chains. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ╭ amazon : 3 
-                        │      │                  ╰ bitnami: 3 
-                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
-                        │      │                            │           N/A:H 
-                        │      │                            ╰ V3Score : 7.5 
-                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
-                        │      │                  ├ [1]: https://go.dev/cl/709854 
-                        │      │                  ├ [2]: https://go.dev/issue/75681 
-                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
-                        │      │                  │      _bI 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
-                        │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2025-4007 
-                        │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
-                        │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
-                        ├ [4]  ╭ VulnerabilityID : CVE-2025-61729 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2025-61729 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -32965,7 +33002,7 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
                         │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
                         │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2025-47906 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2025-47906 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -33023,7 +33060,7 @@
                         │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
                         │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:16.207Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2025-47912 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2025-47912 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -33071,7 +33108,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
                         │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:16.497Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2025-58185 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2025-58185 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
@@ -33116,6 +33153,53 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:33.327Z 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2025-58187 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : 7927e62558d558ff 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.9, 1.25.3 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58187 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:65172c597a23adfa6af39bcaa6480d2aa8575aa26d0d2164ef399
+                        │      │                   af9904b8844 
+                        │      ├ Title           : crypto/x509: Quadratic complexity when checking name
+                        │      │                   constraints in crypto/x509 
+                        │      ├ Description     : Due to the design of the name constraint checking algorithm,
+                        │      │                    the processing time of some inputs scale non-linearly with
+                        │      │                   respect to the size of the certificate. This affects
+                        │      │                   programs which validate arbitrary certificate chains. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      │                  ├ bitnami: 3 
+                        │      │                  ╰ redhat : 2 
+                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+                        │      │                  │         │           N/A:H 
+                        │      │                  │         ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+                        │      │                            │           N/A:L 
+                        │      │                            ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/10/08/1 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-58187 
+                        │      │                  ├ [2]: https://github.com/golang/go/commit/3fc4c79fdbb17b9b29
+                        │      │                  │      ea9f8c29dd780df075d4c4 
+                        │      │                  ├ [3]: https://go.dev/cl/709854 
+                        │      │                  ├ [4]: https://go.dev/issue/75681 
+                        │      │                  ├ [5]: https://groups.google.com/g/golang-announce/c/4Emdl2iQ
+                        │      │                  │      _bI 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-58187 
+                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4007 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
+                        │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
+                        │      ╰ LastModifiedDate: 2025-11-20T23:15:52.007Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2025-58188 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -33361,24 +33445,30 @@
                                │                  ╰ URL : https://pkg.go.dev/vuln/ 
                                ├ Fingerprint     : sha256:015455c3c71b8d66e3ce4779b9dcec847398d6dc01cdb7bfe527d
                                │                   044aa6f93ec 
-                               ├ Title           : An excluded subdomain constraint in a certificate chain does
-                               │                    not restr ... 
+                               ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+                               │                   restrict wildcard SANs 
                                ├ Description     : An excluded subdomain constraint in a certificate chain does
                                │                    not restrict the usage of wildcard SANs in the leaf
                                │                   certificate. For example a constraint that excludes the
                                │                   subdomain test.example.com does not prevent a leaf
                                │                   certificate from claiming the SAN *.example.com. 
                                ├ Severity        : MEDIUM 
-                               ├ VendorSeverity   ─ bitnami: 2 
-                               ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                               ├ VendorSeverity   ╭ bitnami: 2 
+                               │                  ╰ redhat : 2 
+                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                               │                  │         │           L/A:N 
+                               │                  │         ╰ V3Score : 6.5 
+                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
                                │                            │           L/A:N 
                                │                            ╰ V3Score : 6.5 
-                               ├ References       ╭ [0]: https://go.dev/cl/723900 
-                               │                  ├ [1]: https://go.dev/issue/76442 
-                               │                  ├ [2]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+                               │                  ├ [1]: https://go.dev/cl/723900 
+                               │                  ├ [2]: https://go.dev/issue/76442 
+                               │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
                                │                  │      dm4 
-                               │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-                               │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4175 
+                               │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+                               │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+                               │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
                                ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
                                ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
 ````
