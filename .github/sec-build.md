@@ -13131,21 +13131,26 @@
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 2 
+│                       │      │                  ├ rocky      : 2 
 │                       │      │                  ╰ ubuntu     : 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/09/10/1 
-│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-9086 
-│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-9086.html 
-│                       │      │                  ├ [3]: https://curl.se/docs/CVE-2025-9086.json 
-│                       │      │                  ├ [4]: https://github.com/curl/curl/commit/c6ae07c6a541e0e96d
-│                       │      │                  │      0040afb6 
-│                       │      │                  ├ [5]: https://hackerone.com/reports/3294999 
-│                       │      │                  ├ [6]: https://linux.oracle.com/cve/CVE-2025-9086.html 
-│                       │      │                  ├ [7]: https://linux.oracle.com/errata/ELSA-2025-23383.html 
-│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
-│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/10/1 
+│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9086 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2394750 
+│                       │      │                  ├ [3] : https://curl.se/docs/CVE-2025-9086.html 
+│                       │      │                  ├ [4] : https://curl.se/docs/CVE-2025-9086.json 
+│                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       25-9086 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:23383 
+│                       │      │                  ├ [7] : https://github.com/curl/curl/commit/c6ae07c6a541e0e96
+│                       │      │                  │       d0040afb6 
+│                       │      │                  ├ [8] : https://hackerone.com/reports/3294999 
+│                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-9086.html 
+│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-23383.html 
+│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.19Z 
 │                       ├ [8]  ╭ VulnerabilityID : CVE-2025-61729 
@@ -13176,6 +13181,7 @@
 │                       │      │                   runtime. Therefore, a certificate provided by a malicious
 │                       │      │                   actor can result in excessive resource consumption. 
 │                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
 │                       │      ├ VendorSeverity   ╭ bitnami: 3 
 │                       │      │                  ╰ redhat : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -13193,7 +13199,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+│                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker@28.3.2-r0 
 │                       │      ├ PkgName         : docker 
@@ -13332,6 +13338,7 @@
 │                       │      │                   runtime. Therefore, a certificate provided by a malicious
 │                       │      │                   actor can result in excessive resource consumption. 
 │                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
 │                       │      ├ VendorSeverity   ╭ bitnami: 3 
 │                       │      │                  ╰ redhat : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -13349,7 +13356,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+│                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-bash-completion@28.3.2-r0 
 │                       │      ├ PkgName         : docker-bash-completion 
@@ -13488,6 +13495,7 @@
 │                       │      │                   runtime. Therefore, a certificate provided by a malicious
 │                       │      │                   actor can result in excessive resource consumption. 
 │                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
 │                       │      ├ VendorSeverity   ╭ bitnami: 3 
 │                       │      │                  ╰ redhat : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -13505,7 +13513,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+│                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-cli@28.3.2-r0 
 │                       │      ├ PkgName         : docker-cli 
@@ -13644,6 +13652,7 @@
 │                       │      │                   runtime. Therefore, a certificate provided by a malicious
 │                       │      │                   actor can result in excessive resource consumption. 
 │                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
 │                       │      ├ VendorSeverity   ╭ bitnami: 3 
 │                       │      │                  ╰ redhat : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -13661,7 +13670,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+│                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
 │                       ├ [18] ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : docker-engine@28.3.2-r0 
 │                       │      ├ PkgName         : docker-engine 
@@ -13841,7 +13850,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-9230 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-21255.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21248 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21255 
 │                       │      │                  ├ [8] : https://github.com/openssl/openssl/commit/5965ea5dd69
 │                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
 │                       │      │                  ├ [9] : https://github.com/openssl/openssl/commit/9e91358f365
@@ -14170,21 +14179,26 @@
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 2 
+│                       │      │                  ├ rocky      : 2 
 │                       │      │                  ╰ ubuntu     : 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/09/10/1 
-│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-9086 
-│                       │      │                  ├ [2]: https://curl.se/docs/CVE-2025-9086.html 
-│                       │      │                  ├ [3]: https://curl.se/docs/CVE-2025-9086.json 
-│                       │      │                  ├ [4]: https://github.com/curl/curl/commit/c6ae07c6a541e0e96d
-│                       │      │                  │      0040afb6 
-│                       │      │                  ├ [5]: https://hackerone.com/reports/3294999 
-│                       │      │                  ├ [6]: https://linux.oracle.com/cve/CVE-2025-9086.html 
-│                       │      │                  ├ [7]: https://linux.oracle.com/errata/ELSA-2025-23383.html 
-│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
-│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/10/1 
+│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9086 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2394750 
+│                       │      │                  ├ [3] : https://curl.se/docs/CVE-2025-9086.html 
+│                       │      │                  ├ [4] : https://curl.se/docs/CVE-2025-9086.json 
+│                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       25-9086 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:23383 
+│                       │      │                  ├ [7] : https://github.com/curl/curl/commit/c6ae07c6a541e0e96
+│                       │      │                  │       d0040afb6 
+│                       │      │                  ├ [8] : https://hackerone.com/reports/3294999 
+│                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-9086.html 
+│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-23383.html 
+│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │      ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:45.19Z 
 │                       ├ [26] ╭ VulnerabilityID : CVE-2025-59375 
@@ -14233,7 +14247,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-59375 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-22175.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21776 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:22175 
 │                       │      │                  ├ [8] : https://github.com/libexpat/libexpat/blob/676a4c531ec
 │                       │      │                  │       768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74 
 │                       │      │                  ├ [9] : https://github.com/libexpat/libexpat/blob/R_2_7_2/exp
@@ -14600,7 +14614,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-9230 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-21255.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21248 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21255 
 │                       │      │                  ├ [8] : https://github.com/openssl/openssl/commit/5965ea5dd69
 │                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
 │                       │      │                  ├ [9] : https://github.com/openssl/openssl/commit/9e91358f365
@@ -15355,7 +15369,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-9230 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-21255.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21248 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21255 
 │                       │      │                  ├ [8] : https://github.com/openssl/openssl/commit/5965ea5dd69
 │                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
 │                       │      │                  ├ [9] : https://github.com/openssl/openssl/commit/9e91358f365
@@ -15856,7 +15870,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -17735,58 +17749,123 @@
 │                       │     │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-48924 
 │                       │     ├ PublishedDate   : 2025-07-11T15:15:24.347Z 
 │                       │     ╰ LastModifiedDate: 2025-11-04T22:16:17.823Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-27820 
-│                             ├ PkgName         : org.apache.httpcomponents.client5:httpclient5 
-│                             ├ PkgPath         : opt/dependency-check/lib/httpclient5-5.4.2.jar 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:maven/org.apache.httpcomponents.client5/httpclient
-│                             │                  │       5@5.4.2 
-│                             │                  ╰ UID : 6ea72d58fcde5316 
-│                             ├ InstalledVersion: 5.4.2 
-│                             ├ FixedVersion    : 5.4.3 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2025-27820 
+│                       │     ├ PkgName         : org.apache.httpcomponents.client5:httpclient5 
+│                       │     ├ PkgPath         : opt/dependency-check/lib/httpclient5-5.4.2.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/org.apache.httpcomponents.client5/httpclient
+│                       │     │                  │       5@5.4.2 
+│                       │     │                  ╰ UID : 6ea72d58fcde5316 
+│                       │     ├ InstalledVersion: 5.4.2 
+│                       │     ├ FixedVersion    : 5.4.3 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
+│                       │     │                  │         01dd6062bd50a4b6afe 
+│                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
+│                       │     │                            7d38461b41e40aab9e7 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-27820 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:732c9cae3e720c40d62828eb42e35a79089103457c9cd441e91df6
+│                       │     │                   f36a92d1e7 
+│                       │     ├ Title           : org.apache.httpcomponents.client5/httpclient5: Apache
+│                       │     │                   HttpComponents: PSL (Public Suffix List) validation bypass 
+│                       │     ├ Description     : A bug in PSL validation logic in Apache HttpClient 5.4.x
+│                       │     │                   disables domain checks, affecting cookie management and host
+│                       │     │                   name verification. Discovered by the Apache HttpClient team.
+│                       │     │                   Fixed in the 5.4.3 release 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-295 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 6.5 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-27820 
+│                       │     │                  ├ [1] : https://github.com/advisories/GHSA-73m2-qfq3-56cx 
+│                       │     │                  ├ [2] : https://github.com/apache/httpcomponents-client 
+│                       │     │                  ├ [3] : https://github.com/apache/httpcomponents-client/pull/574 
+│                       │     │                  ├ [4] : https://github.com/apache/httpcomponents-client/pull/621 
+│                       │     │                  ├ [5] : https://hc.apache.org/httpcomponents-client-5.4.x/inde
+│                       │     │                  │       x.html 
+│                       │     │                  ├ [6] : https://lists.apache.org/thread/55xhs40ncqv97qvoocok44
+│                       │     │                  │       995xp5kqn8 
+│                       │     │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-27820 
+│                       │     │                  ├ [8] : https://security.netapp.com/advisory/ntap-20250516-0003 
+│                       │     │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250516-0003/ 
+│                       │     │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
+│                       │     ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
+│                       │     ╰ LastModifiedDate: 2025-07-16T14:48:52.213Z 
+│                       ╰ [6] ╭ VulnerabilityID : CVE-2025-68161 
+│                             ├ PkgName         : org.apache.logging.log4j:log4j-core 
+│                             ├ PkgPath         : openaf/plugin-XLS/log4j-core-2.25.0.jar 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:maven/org.apache.logging.log4j/log4j-core@2.25.0 
+│                             │                  ╰ UID : ebc3042b961ae47a 
+│                             ├ InstalledVersion: 2.25.0 
+│                             ├ FixedVersion    : 2.25.3 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac32674436435
 │                             │                  │         01dd6062bd50a4b6afe 
 │                             │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
 │                             │                            7d38461b41e40aab9e7 
 │                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-27820 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68161 
 │                             ├ DataSource       ╭ ID  : ghsa 
 │                             │                  ├ Name: GitHub Security Advisory Maven 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Amaven 
-│                             ├ Fingerprint     : sha256:732c9cae3e720c40d62828eb42e35a79089103457c9cd441e91df6
-│                             │                   f36a92d1e7 
-│                             ├ Title           : org.apache.httpcomponents.client5/httpclient5: Apache
-│                             │                   HttpComponents: PSL (Public Suffix List) validation bypass 
-│                             ├ Description     : A bug in PSL validation logic in Apache HttpClient 5.4.x
-│                             │                   disables domain checks, affecting cookie management and host
-│                             │                   name verification. Discovered by the Apache HttpClient team.
-│                             │                   Fixed in the 5.4.3 release 
-│                             ├ Severity        : HIGH 
-│                             ├ CweIDs           ─ [0]: CWE-295 
-│                             ├ VendorSeverity   ╭ ghsa  : 3 
-│                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/
-│                             │                  │        │           A:N 
-│                             │                  │        ╰ V3Score : 7.5 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 6.5 
-│                             ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-27820 
-│                             │                  ├ [1] : https://github.com/advisories/GHSA-73m2-qfq3-56cx 
-│                             │                  ├ [2] : https://github.com/apache/httpcomponents-client 
-│                             │                  ├ [3] : https://github.com/apache/httpcomponents-client/pull/574 
-│                             │                  ├ [4] : https://github.com/apache/httpcomponents-client/pull/621 
-│                             │                  ├ [5] : https://hc.apache.org/httpcomponents-client-5.4.x/inde
-│                             │                  │       x.html 
-│                             │                  ├ [6] : https://lists.apache.org/thread/55xhs40ncqv97qvoocok44
-│                             │                  │       995xp5kqn8 
-│                             │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-27820 
-│                             │                  ├ [8] : https://security.netapp.com/advisory/ntap-20250516-0003 
-│                             │                  ├ [9] : https://security.netapp.com/advisory/ntap-20250516-0003/ 
-│                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-27820 
-│                             ├ PublishedDate   : 2025-04-24T12:15:16.723Z 
-│                             ╰ LastModifiedDate: 2025-07-16T14:48:52.213Z 
+│                             ├ Fingerprint     : sha256:af3d358c16d0e94fd109885f1b0fc8d9ec801e3d7d2cf14d4c6392
+│                             │                   0f2de63655 
+│                             ├ Title           : The Socket Appender in Apache Log4j Core versions 2.0-beta9
+│                             │                   through 2. ... 
+│                             ├ Description     : The Socket Appender in Apache Log4j Core versions 2.0-beta9
+│                             │                   through 2.25.2 does not perform TLS hostname verification of
+│                             │                   the peer certificate, even when the  verifyHostName
+│                             │                   https://logging.apache.org/log4j/2.x/manual/appenders/network
+│                             │                   .html#SslConfiguration-attr-verifyHostName  configuration
+│                             │                   attribute or the  log4j2.sslVerifyHostName
+│                             │                   https://logging.apache.org/log4j/2.x/manual/systemproperties.
+│                             │                   html#log4j2.sslVerifyHostName  system property is set to
+│                             │                   true.
+│                             │                   
+│                             │                   This issue may allow a man-in-the-middle attacker to
+│                             │                   intercept or redirect log traffic under the following
+│                             │                   conditions:
+│                             │                     *  The attacker is able to intercept or redirect network
+│                             │                   traffic between the client and the log receiver.
+│                             │                     *  The attacker can present a server certificate issued by
+│                             │                   a certification authority trusted by the Socket Appender’s
+│                             │                   configured trust store (or by the default Java trust store if
+│                             │                    no custom trust store is configured).
+│                             │                   Users are advised to upgrade to Apache Log4j Core version
+│                             │                   2.25.3, which addresses this issue.
+│                             │                   As an alternative mitigation, the Socket Appender may be
+│                             │                   configured to use a private or restricted trust root to limit
+│                             │                    the set of trusted certificates. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-297 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/12/18/1 
+│                             │                  ├ [1]: https://github.com/apache/logging-log4j2 
+│                             │                  ├ [2]: https://github.com/apache/logging-log4j2/commit/3b93748
+│                             │                  │      497e1adbbd027fda8a5e7268ec5d0d578 
+│                             │                  ├ [3]: https://github.com/apache/logging-log4j2/pull/4002 
+│                             │                  ├ [4]: https://lists.apache.org/thread/xr33kyxq3sl67lwb61ggvm1
+│                             │                  │      fzc8k7dvx 
+│                             │                  ├ [5]: https://logging.apache.org/cyclonedx/vdr.xml 
+│                             │                  ├ [6]: https://logging.apache.org/log4j/2.x/manual/appenders/n
+│                             │                  │      etwork.html#SslConfiguration-attr-verifyHostName 
+│                             │                  ├ [7]: https://logging.apache.org/log4j/2.x/manual/systemprope
+│                             │                  │      rties.html#log4j2.sslVerifyHostName 
+│                             │                  ├ [8]: https://logging.apache.org/security.html#CVE-2025-68161 
+│                             │                  ╰ [9]: https://nvd.nist.gov/vuln/detail/CVE-2025-68161 
+│                             ├ PublishedDate   : 2025-12-18T21:15:57.96Z 
+│                             ╰ LastModifiedDate: 2025-12-19T18:00:18.33Z 
 ├ [2] ╭ Target         : Python 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : python-pkg 
@@ -22443,7 +22522,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -22623,22 +22702,28 @@
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Fingerprint     : sha256:1a80d1def37bff45883d5e3d45e50763cc84b4d0909766946a381
 │                       │      │                   4097fb2f125 
-│                       │      ├ Title           : SSH servers parsing GSSAPI authentication requests do not
-│                       │      │                   validate the ... 
+│                       │      ├ Title           : golang.org/x/crypto/ssh: in golang.org/x/crypto/ssh 
 │                       │      ├ Description     : SSH servers parsing GSSAPI authentication requests do not
 │                       │      │                   validate the number of mechanisms specified in the request,
 │                       │      │                   allowing an attacker to cause unbounded memory consumption. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ─ ghsa: 2 
-│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L 
-│                       │      │                         ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/721961 
-│                       │      │                  ├ [1]: https://go.dev/issue/76363 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:L 
+│                       │      │                  │        ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58181 
+│                       │      │                  ├ [1]: https://go.dev/cl/721961 
+│                       │      │                  ├ [2]: https://go.dev/issue/76363 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
 │                       │      │                  │      cZA 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4134 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4134 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:29:24.9Z 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2025-47907 
@@ -22749,13 +22834,13 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23087.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23088 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23087 
 │                       │      │                  ├ [8] : https://go.dev/cl/709861 
 │                       │      │                  ├ [9] : https://go.dev/issue/75677 
 │                       │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                       │      │                  │       Q_bI 
 │                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23295.html 
+│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23326.html 
 │                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
 │                       │      │                  ├ [14]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -22788,6 +22873,7 @@
 │                       │      │                   runtime. Therefore, a certificate provided by a malicious
 │                       │      │                   actor can result in excessive resource consumption. 
 │                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
 │                       │      ├ VendorSeverity   ╭ bitnami: 3 
 │                       │      │                  ╰ redhat : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -22805,7 +22891,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+│                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26315,7 +26401,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -26495,22 +26581,28 @@
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Fingerprint     : sha256:09f5337e98745b6640419ee4dca423f16f75483c95fb63f7111b0
 │                       │      │                   2d5dce89775 
-│                       │      ├ Title           : SSH servers parsing GSSAPI authentication requests do not
-│                       │      │                   validate the ... 
+│                       │      ├ Title           : golang.org/x/crypto/ssh: in golang.org/x/crypto/ssh 
 │                       │      ├ Description     : SSH servers parsing GSSAPI authentication requests do not
 │                       │      │                   validate the number of mechanisms specified in the request,
 │                       │      │                   allowing an attacker to cause unbounded memory consumption. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ─ ghsa: 2 
-│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L 
-│                       │      │                         ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/721961 
-│                       │      │                  ├ [1]: https://go.dev/issue/76363 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:L 
+│                       │      │                  │        ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58181 
+│                       │      │                  ├ [1]: https://go.dev/cl/721961 
+│                       │      │                  ├ [2]: https://go.dev/issue/76363 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
 │                       │      │                  │      cZA 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4134 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4134 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:29:24.9Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2025-47907 
@@ -26621,13 +26713,13 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23087.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23088 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23087 
 │                       │      │                  ├ [8] : https://go.dev/cl/709861 
 │                       │      │                  ├ [9] : https://go.dev/issue/75677 
 │                       │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                       │      │                  │       Q_bI 
 │                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23295.html 
+│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23326.html 
 │                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
 │                       │      │                  ├ [14]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -26660,6 +26752,7 @@
 │                       │      │                   runtime. Therefore, a certificate provided by a malicious
 │                       │      │                   actor can result in excessive resource consumption. 
 │                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
 │                       │      ├ VendorSeverity   ╭ bitnami: 3 
 │                       │      │                  ╰ redhat : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -26677,7 +26770,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+│                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
 │                       ├ [14] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -31727,7 +31820,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -31965,22 +32058,28 @@
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Fingerprint     : sha256:a4ec1ff2394db4a9351c3cf88612dcbde0c37d2622141c0c599bf
 │                       │      │                   c56f52637bf 
-│                       │      ├ Title           : SSH servers parsing GSSAPI authentication requests do not
-│                       │      │                   validate the ... 
+│                       │      ├ Title           : golang.org/x/crypto/ssh: in golang.org/x/crypto/ssh 
 │                       │      ├ Description     : SSH servers parsing GSSAPI authentication requests do not
 │                       │      │                   validate the number of mechanisms specified in the request,
 │                       │      │                   allowing an attacker to cause unbounded memory consumption. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ─ ghsa: 2 
-│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L 
-│                       │      │                         ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/721961 
-│                       │      │                  ├ [1]: https://go.dev/issue/76363 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:L 
+│                       │      │                  │        ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58181 
+│                       │      │                  ├ [1]: https://go.dev/cl/721961 
+│                       │      │                  ├ [2]: https://go.dev/issue/76363 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/w-oX3UxN
 │                       │      │                  │      cZA 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2025-4134 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58181 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4134 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:29:24.9Z 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2025-53547 
@@ -32261,13 +32360,13 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23087.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23088 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23087 
 │                       │      │                  ├ [8] : https://go.dev/cl/709861 
 │                       │      │                  ├ [9] : https://go.dev/issue/75677 
 │                       │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
 │                       │      │                  │       Q_bI 
 │                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23295.html 
+│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23326.html 
 │                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
 │                       │      │                  ├ [14]: https://pkg.go.dev/vuln/GO-2025-4014 
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -32300,6 +32399,7 @@
 │                       │      │                   runtime. Therefore, a certificate provided by a malicious
 │                       │      │                   actor can result in excessive resource consumption. 
 │                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
 │                       │      ├ VendorSeverity   ╭ bitnami: 3 
 │                       │      │                  ╰ redhat : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -32317,7 +32417,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-│                       │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+│                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
 │                       ├ [18] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -32973,13 +33073,13 @@
                         │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       25-58183 
                         │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23087.html 
-                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23088 
+                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23087 
                         │      │                  ├ [8] : https://go.dev/cl/709861 
                         │      │                  ├ [9] : https://go.dev/issue/75677 
                         │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
                         │      │                  │       Q_bI 
                         │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2025-58183.html 
-                        │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23295.html 
+                        │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-23326.html 
                         │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2025-58183 
                         │      │                  ├ [14]: https://pkg.go.dev/vuln/GO-2025-4014 
                         │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
@@ -33012,6 +33112,7 @@
                         │      │                   runtime. Therefore, a certificate provided by a malicious
                         │      │                   actor can result in excessive resource consumption. 
                         │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-295 
                         │      ├ VendorSeverity   ╭ bitnami: 3 
                         │      │                  ╰ redhat : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -33029,7 +33130,7 @@
                         │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4155 
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
                         │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
-                        │      ╰ LastModifiedDate: 2025-12-04T17:15:25.86Z 
+                        │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2025-47906 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
