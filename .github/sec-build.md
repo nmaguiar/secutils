@@ -14411,8 +14411,9 @@
 │                       │      │                   management. Upgrade to libpng 1.6.52 or later. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ VendorSeverity   ╭ azure : 3 
-│                       │      │                  ╰ redhat: 3 
+│                       │      ├ VendorSeverity   ╭ azure      : 3 
+│                       │      │                  ├ cbl-mariner: 3 
+│                       │      │                  ╰ redhat     : 3 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 7.1 
@@ -19091,7 +19092,8 @@
 │                       │     │                   vulnerability is fixed in 2.6.0. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │     ├ VendorSeverity   ╭ azure : 3 
+│                       │     │                  ├ ghsa  : 3 
 │                       │     │                  ├ nvd   : 3 
 │                       │     │                  ├ redhat: 3 
 │                       │     │                  ╰ ubuntu: 2 
@@ -19155,7 +19157,8 @@
 │                             │                   memory allocation for the decompressed data. 
 │                             ├ Severity        : HIGH 
 │                             ├ CweIDs           ─ [0]: CWE-409 
-│                             ├ VendorSeverity   ╭ ghsa  : 3 
+│                             ├ VendorSeverity   ╭ azure : 3 
+│                             │                  ├ ghsa  : 3 
 │                             │                  ├ nvd   : 3 
 │                             │                  ╰ ubuntu: 2 
 │                             ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
