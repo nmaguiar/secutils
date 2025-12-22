@@ -11634,6 +11634,7 @@
     - CWE-125
     VendorSeverity:
       azure: 3
+      cbl-mariner: 3
       redhat: 3
     CVSS:
       redhat:
@@ -15849,6 +15850,7 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      azure: 3
       ghsa: 3
       nvd: 3
       redhat: 3
@@ -15896,6 +15898,7 @@
     CweIDs:
     - CWE-409
     VendorSeverity:
+      azure: 3
       ghsa: 3
       nvd: 3
       ubuntu: 2
