@@ -10518,6 +10518,7 @@
       it on an insecure host should not be okay.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 1
       oracle-oval: 2
       photon: 3
@@ -10530,11 +10531,14 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/10/1
+    - https://access.redhat.com/errata/RHSA-2025:23383
     - https://access.redhat.com/security/cve/CVE-2025-9086
+    - https://bugzilla.redhat.com/2394750
     - https://bugzilla.redhat.com/show_bug.cgi?id=2394750
     - https://curl.se/docs/CVE-2025-9086.html
     - https://curl.se/docs/CVE-2025-9086.json
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086
+    - https://errata.almalinux.org/8/ALSA-2025-23383.html
     - https://errata.rockylinux.org/RLSA-2025:23383
     - https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6
     - https://hackerone.com/reports/3294999
@@ -11430,6 +11434,7 @@
       it on an insecure host should not be okay.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 1
       oracle-oval: 2
       photon: 3
@@ -11442,11 +11447,14 @@
         V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2025/09/10/1
+    - https://access.redhat.com/errata/RHSA-2025:23383
     - https://access.redhat.com/security/cve/CVE-2025-9086
+    - https://bugzilla.redhat.com/2394750
     - https://bugzilla.redhat.com/show_bug.cgi?id=2394750
     - https://curl.se/docs/CVE-2025-9086.html
     - https://curl.se/docs/CVE-2025-9086.json
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9086
+    - https://errata.almalinux.org/8/ALSA-2025-23383.html
     - https://errata.rockylinux.org/RLSA-2025:23383
     - https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6
     - https://hackerone.com/reports/3294999
@@ -19252,7 +19260,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -22812,7 +22820,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -28000,7 +28008,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
@@ -28675,7 +28683,7 @@
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
     - https://linux.oracle.com/cve/CVE-2025-58183.html
-    - https://linux.oracle.com/errata/ELSA-2025-23326.html
+    - https://linux.oracle.com/errata/ELSA-2025-23374.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58183
     - https://pkg.go.dev/vuln/GO-2025-4014
     - https://www.cve.org/CVERecord?id=CVE-2025-58183
