@@ -13854,7 +13854,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-9230 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-21255.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21248 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21255 
 │                       │      │                  ├ [8] : https://github.com/openssl/openssl/commit/5965ea5dd69
 │                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
 │                       │      │                  ├ [9] : https://github.com/openssl/openssl/commit/9e91358f365
@@ -14255,7 +14255,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-59375 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-22175.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:19403 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:22175 
 │                       │      │                  ├ [8] : https://github.com/libexpat/libexpat/blob/676a4c531ec
 │                       │      │                  │       768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74 
 │                       │      │                  ├ [9] : https://github.com/libexpat/libexpat/blob/R_2_7_2/exp
@@ -14623,7 +14623,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-9230 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-21255.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21248 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21255 
 │                       │      │                  ├ [8] : https://github.com/openssl/openssl/commit/5965ea5dd69
 │                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
 │                       │      │                  ├ [9] : https://github.com/openssl/openssl/commit/9e91358f365
@@ -15378,7 +15378,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-9230 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-21255.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21248 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:21255 
 │                       │      │                  ├ [8] : https://github.com/openssl/openssl/commit/5965ea5dd69
 │                       │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
 │                       │      │                  ├ [9] : https://github.com/openssl/openssl/commit/9e91358f365
@@ -15879,7 +15879,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -18727,9 +18727,12 @@
 │                       │     │                   PDF is processed. Version 20251107 fixes the issue. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-502 
-│                       │     ├ VendorSeverity   ─ ghsa: 3 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H 
-│                       │     │                         ╰ V3Score : 8.6 
+│                       │     ├ VendorSeverity   ╭ ghsa: 3 
+│                       │     │                  ╰ nvd : 3 
+│                       │     ├ CVSS             ╭ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H 
+│                       │     │                  │      ╰ V3Score : 8.6 
+│                       │     │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H 
+│                       │     │                         ╰ V3Score : 7.8 
 │                       │     ├ References       ╭ [0]: https://github.com/pdfminer/pdfminer.six 
 │                       │     │                  ├ [1]: https://github.com/pdfminer/pdfminer.six/commit/b808ee0
 │                       │     │                  │      5dd7f0c8ea8ec34bdf394d40e63501086 
@@ -18741,7 +18744,7 @@
 │                       │     │                  │      g00017.html 
 │                       │     │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-64512 
 │                       │     ├ PublishedDate   : 2025-11-10T22:15:40.067Z 
-│                       │     ╰ LastModifiedDate: 2025-11-19T01:15:56.897Z 
+│                       │     ╰ LastModifiedDate: 2025-12-31T17:58:38.777Z 
 │                       ├ [1] ╭ VulnerabilityID : GHSA-f83h-ghpp-7wcc 
 │                       │     ├ PkgName         : pdfminer.six 
 │                       │     ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/pdfminer_si
@@ -22136,9 +22139,13 @@
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ photon     : 2 
 │                       │      │                  ╰ redhat     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 5.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64329 
@@ -22150,7 +22157,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64329 
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64329 
 │                       │      ├ PublishedDate   : 2025-11-07T05:16:08.017Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-31T18:34:48.06Z 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : github.com/docker/docker@v28.3.2+incompatible 
 │                       │      ├ PkgName         : github.com/docker/docker 
@@ -22537,7 +22544,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -22849,7 +22856,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23326.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23295 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23326 
 │                       │      │                  ├ [8] : https://go.dev/cl/709861 
 │                       │      │                  ├ [9] : https://go.dev/issue/75677 
 │                       │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
@@ -26019,9 +26026,13 @@
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ photon     : 2 
 │                       │      │                  ╰ redhat     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 5.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64329 
@@ -26033,7 +26044,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64329 
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64329 
 │                       │      ├ PublishedDate   : 2025-11-07T05:16:08.017Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-31T18:34:48.06Z 
 │                       ├ [2]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : github.com/docker/docker@v28.2.2+incompatible 
 │                       │      ├ PkgName         : github.com/docker/docker 
@@ -26420,7 +26431,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -26732,7 +26743,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23326.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23295 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23326 
 │                       │      │                  ├ [8] : https://go.dev/cl/709861 
 │                       │      │                  ├ [9] : https://go.dev/issue/75677 
 │                       │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
@@ -31418,9 +31429,13 @@
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ photon     : 2 
 │                       │      │                  ╰ redhat     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 5.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64329 
@@ -31432,7 +31447,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64329 
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64329 
 │                       │      ├ PublishedDate   : 2025-11-07T05:16:08.017Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-31T18:34:48.06Z 
 │                       ├ [2]  ╭ VulnerabilityID : CVE-2024-25621 
 │                       │      ├ PkgID           : github.com/containerd/containerd/v2@v2.1.3 
 │                       │      ├ PkgName         : github.com/containerd/containerd/v2 
@@ -31535,9 +31550,13 @@
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ ghsa       : 2 
+│                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ photon     : 2 
 │                       │      │                  ╰ redhat     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
+│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 5.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N
 │                       │      │                           │           /A:H 
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-64329 
@@ -31549,7 +31568,7 @@
 │                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-64329 
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-64329 
 │                       │      ├ PublishedDate   : 2025-11-07T05:16:08.017Z 
-│                       │      ╰ LastModifiedDate: 2025-11-12T16:20:22.257Z 
+│                       │      ╰ LastModifiedDate: 2025-12-31T18:34:48.06Z 
 │                       ├ [4]  ╭ VulnerabilityID : CVE-2025-54388 
 │                       │      ├ PkgID           : github.com/docker/docker@v28.2.2+incompatible 
 │                       │      ├ PkgName         : github.com/docker/docker 
@@ -31847,7 +31866,7 @@
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [10]: https://errata.almalinux.org/9/ALSA-2025-22011.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22012 
+│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2025:22011 
 │                       │      │                  ├ [12]: https://github.com/opencontainers/runc 
 │                       │      │                  ├ [13]: https://github.com/opencontainers/runc/blob/v1.4.0-rc
 │                       │      │                  │       .2/RELEASES.md 
@@ -32387,7 +32406,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-58183 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23326.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23295 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23326 
 │                       │      │                  ├ [8] : https://go.dev/cl/709861 
 │                       │      │                  ├ [9] : https://go.dev/issue/75677 
 │                       │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
@@ -33100,7 +33119,7 @@
                         │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       25-58183 
                         │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2025-23326.html 
-                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23295 
+                        │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2025:23326 
                         │      │                  ├ [8] : https://go.dev/cl/709861 
                         │      │                  ├ [9] : https://go.dev/issue/75677 
                         │      │                  ├ [10]: https://groups.google.com/g/golang-announce/c/4Emdl2i
