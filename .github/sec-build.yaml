@@ -10483,6 +10483,48 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-10966
     PublishedDate: '2025-11-07T08:15:39.617Z'
     LastModifiedDate: '2025-11-12T16:20:22.257Z'
+  - VulnerabilityID: CVE-2025-14017
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 5371f8b941130cc
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14017
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:01d16da089985bf3b3f905ec3cf6fd476d6bd40f08eaa9f049c04965f86f3b5d
+    Title: 'curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers'
+    Description: |-
+      When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,
+      changing TLS options in one thread would inadvertently change them globally
+      and therefore possibly also affect other concurrently setup transfers.
+
+      Disabling certificate verification for a specific transfer could
+      unintentionally disable the feature for other threads as well.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/3
+    - https://access.redhat.com/security/cve/CVE-2025-14017
+    - https://curl.se/docs/CVE-2025-14017.html
+    - https://curl.se/docs/CVE-2025-14017.json
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-14017
+    - https://www.cve.org/CVERecord?id=CVE-2025-14017
+    PublishedDate: '2026-01-08T10:15:45.667Z'
+    LastModifiedDate: '2026-01-08T18:08:18.457Z'
   - VulnerabilityID: CVE-2025-9086
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -10522,7 +10564,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 1
       oracle-oval: 2
       photon: 3
       redhat: 2
@@ -10570,7 +10612,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:f7dfef134b16d4b56b46bd5ff594467d8497282377c6f6c00ff1424877482978
-    Title: '[bearer token leak on cross-protocol redirect]'
+    Title: When an OAuth2 bearer token is used for an HTTP(S) transfer, and that  ...
     Description: |-
       When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
       performs a cross-protocol redirect to a second URL that uses an IMAP, LDAP,
@@ -10586,7 +10628,7 @@
     - https://hackerone.com/reports/3459417
     - https://www.cve.org/CVERecord?id=CVE-2025-14524
     PublishedDate: '2026-01-08T10:15:46.607Z'
-    LastModifiedDate: '2026-01-08T11:15:43.017Z'
+    LastModifiedDate: '2026-01-09T20:15:51.243Z'
   - VulnerabilityID: CVE-2025-14819
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -10605,7 +10647,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:63371ac4952860c521aa91f8f84de0b65dfb1c9737261658136751ee0efaaa8d
-    Title: '[OpenSSL partial chain store policy bypass]'
+    Title: When doing TLS related transfers with reused easy or multi handles and ...
     Description: |-
       When doing TLS related transfers with reused easy or multi handles and
       altering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally
@@ -10613,6 +10655,8 @@
       reversed. Contrary to the user's wishes and expectations. This could make
       libcurl find and accept a trust chain that it otherwise would not.
     Severity: LOW
+    CweIDs:
+    - CWE-295
     VendorSeverity:
       ubuntu: 1
     References:
@@ -10621,40 +10665,7 @@
     - https://curl.se/docs/CVE-2025-14819.json
     - https://www.cve.org/CVERecord?id=CVE-2025-14819
     PublishedDate: '2026-01-08T10:15:46.73Z'
-    LastModifiedDate: '2026-01-08T11:15:43.14Z'
-  - VulnerabilityID: CVE-2025-14017
-    PkgID: curl@8.15.0-r0
-    PkgName: curl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 5371f8b941130cc
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.18.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14017
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:01d16da089985bf3b3f905ec3cf6fd476d6bd40f08eaa9f049c04965f86f3b5d
-    Title: '[broken TLS options for threaded LDAPS]'
-    Description: |-
-      When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,
-      changing TLS options in one thread would inadvertently change them globally
-      and therefore possibly also affect other concurrently setup transfers.
-
-      Disabling certificate verification for a specific transfer could
-      unintentionally disable the feature for other threads as well.
-    Severity: UNKNOWN
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/01/07/3
-    - https://curl.se/docs/CVE-2025-14017.html
-    - https://curl.se/docs/CVE-2025-14017.json
-    PublishedDate: '2026-01-08T10:15:45.667Z'
-    LastModifiedDate: '2026-01-08T11:15:41.997Z'
+    LastModifiedDate: '2026-01-08T18:08:18.457Z'
   - VulnerabilityID: CVE-2025-61729
     PkgID: docker@28.3.2-r0
     PkgName: docker
@@ -11275,7 +11286,7 @@
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
     - https://linux.oracle.com/cve/CVE-2025-9230.html
-    - https://linux.oracle.com/errata/ELSA-2025-28041.html
+    - https://linux.oracle.com/errata/ELSA-2026-0337.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
@@ -11513,6 +11524,48 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-10966
     PublishedDate: '2025-11-07T08:15:39.617Z'
     LastModifiedDate: '2025-11-12T16:20:22.257Z'
+  - VulnerabilityID: CVE-2025-14017
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 18280e719f28fc16
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14017
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:1f5898ef317c1252cc804a01d3a68e738d13e2c27ea760205010a2608c2dd15d
+    Title: 'curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers'
+    Description: |-
+      When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,
+      changing TLS options in one thread would inadvertently change them globally
+      and therefore possibly also affect other concurrently setup transfers.
+
+      Disabling certificate verification for a specific transfer could
+      unintentionally disable the feature for other threads as well.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/3
+    - https://access.redhat.com/security/cve/CVE-2025-14017
+    - https://curl.se/docs/CVE-2025-14017.html
+    - https://curl.se/docs/CVE-2025-14017.json
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-14017
+    - https://www.cve.org/CVERecord?id=CVE-2025-14017
+    PublishedDate: '2026-01-08T10:15:45.667Z'
+    LastModifiedDate: '2026-01-08T18:08:18.457Z'
   - VulnerabilityID: CVE-2025-9086
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -11552,7 +11605,7 @@
     Severity: MEDIUM
     VendorSeverity:
       alma: 2
-      amazon: 2
+      amazon: 1
       oracle-oval: 2
       photon: 3
       redhat: 2
@@ -11600,7 +11653,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:6dfbde6f9cb992d934775d69c13fce2481f4902b30689fa6804150265322ec2d
-    Title: '[bearer token leak on cross-protocol redirect]'
+    Title: When an OAuth2 bearer token is used for an HTTP(S) transfer, and that  ...
     Description: |-
       When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
       performs a cross-protocol redirect to a second URL that uses an IMAP, LDAP,
@@ -11616,7 +11669,7 @@
     - https://hackerone.com/reports/3459417
     - https://www.cve.org/CVERecord?id=CVE-2025-14524
     PublishedDate: '2026-01-08T10:15:46.607Z'
-    LastModifiedDate: '2026-01-08T11:15:43.017Z'
+    LastModifiedDate: '2026-01-09T20:15:51.243Z'
   - VulnerabilityID: CVE-2025-14819
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -11635,7 +11688,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:0e207a23550e3ffbb9116fca23928cf2a2eb3fe37b2e26776a1fe09bcc1c5fb9
-    Title: '[OpenSSL partial chain store policy bypass]'
+    Title: When doing TLS related transfers with reused easy or multi handles and ...
     Description: |-
       When doing TLS related transfers with reused easy or multi handles and
       altering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally
@@ -11643,6 +11696,8 @@
       reversed. Contrary to the user's wishes and expectations. This could make
       libcurl find and accept a trust chain that it otherwise would not.
     Severity: LOW
+    CweIDs:
+    - CWE-295
     VendorSeverity:
       ubuntu: 1
     References:
@@ -11651,40 +11706,7 @@
     - https://curl.se/docs/CVE-2025-14819.json
     - https://www.cve.org/CVERecord?id=CVE-2025-14819
     PublishedDate: '2026-01-08T10:15:46.73Z'
-    LastModifiedDate: '2026-01-08T11:15:43.14Z'
-  - VulnerabilityID: CVE-2025-14017
-    PkgID: libcurl@8.15.0-r0
-    PkgName: libcurl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 18280e719f28fc16
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.18.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14017
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:1f5898ef317c1252cc804a01d3a68e738d13e2c27ea760205010a2608c2dd15d
-    Title: '[broken TLS options for threaded LDAPS]'
-    Description: |-
-      When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,
-      changing TLS options in one thread would inadvertently change them globally
-      and therefore possibly also affect other concurrently setup transfers.
-
-      Disabling certificate verification for a specific transfer could
-      unintentionally disable the feature for other threads as well.
-    Severity: UNKNOWN
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/01/07/3
-    - https://curl.se/docs/CVE-2025-14017.html
-    - https://curl.se/docs/CVE-2025-14017.json
-    PublishedDate: '2026-01-08T10:15:45.667Z'
-    LastModifiedDate: '2026-01-08T11:15:41.997Z'
+    LastModifiedDate: '2026-01-08T18:08:18.457Z'
   - VulnerabilityID: CVE-2025-59375
     PkgID: libexpat@2.7.1-r0
     PkgName: libexpat
@@ -11729,7 +11751,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
     - https://errata.almalinux.org/8/ALSA-2025-21974.html
-    - https://errata.rockylinux.org/RLSA-2025:21776
+    - https://errata.rockylinux.org/RLSA-2025:19403
     - https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74
     - https://github.com/libexpat/libexpat/blob/R_2_7_2/expat/Changes
     - https://github.com/libexpat/libexpat/issues/1018
@@ -11766,12 +11788,13 @@
     - CWE-125
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -11783,7 +11806,14 @@
     - https://bugzilla.redhat.com/2416904
     - https://bugzilla.redhat.com/2416907
     - https://bugzilla.redhat.com/2418711
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2416904
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2416907
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418711
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-64720
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-65018
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66293
     - https://errata.almalinux.org/8/ALSA-2026-0241.html
+    - https://errata.rockylinux.org/RLSA-2026:0237
     - https://github.com/pnggroup/libpng/commit/08da33b4c88cfcd36e5a706558a8d7e0e4773643
     - https://github.com/pnggroup/libpng/commit/08da33b4c88cfcd36e5a706558a8d7e0e4773643 (v1.6.51)
     - https://github.com/pnggroup/libpng/issues/686
@@ -11829,6 +11859,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -11840,7 +11871,14 @@
     - https://bugzilla.redhat.com/2416904
     - https://bugzilla.redhat.com/2416907
     - https://bugzilla.redhat.com/2418711
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2416904
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2416907
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418711
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-64720
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-65018
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66293
     - https://errata.almalinux.org/8/ALSA-2026-0241.html
+    - https://errata.rockylinux.org/RLSA-2026:0237
     - https://github.com/pnggroup/libpng/commit/16b5e3823918840aae65c0a6da57c78a5a496a4d
     - https://github.com/pnggroup/libpng/commit/16b5e3823918840aae65c0a6da57c78a5a496a4d (v1.6.51)
     - https://github.com/pnggroup/libpng/commit/218612ddd6b17944e21eda56caf8b4bf7779d1ea
@@ -11886,6 +11924,7 @@
       cbl-mariner: 3
       oracle-oval: 3
       redhat: 3
+      rocky: 3
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H
@@ -11899,7 +11938,14 @@
     - https://bugzilla.redhat.com/2416904
     - https://bugzilla.redhat.com/2416907
     - https://bugzilla.redhat.com/2418711
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2416904
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2416907
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418711
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-64720
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-65018
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66293
     - https://errata.almalinux.org/8/ALSA-2026-0241.html
+    - https://errata.rockylinux.org/RLSA-2026:0237
     - https://github.com/pnggroup/libpng/commit/788a624d7387a758ffd5c7ab010f1870dea753a1
     - https://github.com/pnggroup/libpng/commit/a05a48b756de63e3234ea6b3b938b8f5f862484a
     - https://github.com/pnggroup/libpng/issues/764
@@ -11934,7 +11980,7 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       photon: 2
@@ -12074,7 +12120,7 @@
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
     - https://linux.oracle.com/cve/CVE-2025-9230.html
-    - https://linux.oracle.com/errata/ELSA-2025-28041.html
+    - https://linux.oracle.com/errata/ELSA-2026-0337.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
@@ -12216,6 +12262,42 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-9232
     PublishedDate: '2025-09-30T14:15:41.313Z'
     LastModifiedDate: '2025-11-04T22:16:45.63Z'
+  - VulnerabilityID: CVE-2025-13151
+    PkgID: libtasn1@4.20.0-r0
+    PkgName: libtasn1
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libtasn1@4.20.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: af391dd6170c1368
+    InstalledVersion: 4.20.0-r0
+    FixedVersion: 4.21.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-13151
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:5be1a32a63834a1ed0c85d45fcec6f41006880545c2edf7f8d271696290f6842
+    Title: 'libtasn1: libtasn1: Denial of Service via stack-based buffer overflow in asn1_expend_octet_string'
+    Description: 'Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.'
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/08/5
+    - https://access.redhat.com/security/cve/CVE-2025-13151
+    - https://gitlab.com/gnutls/libtasn1
+    - https://gitlab.com/gnutls/libtasn1/-/merge_requests/121
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-13151
+    - https://www.cve.org/CVERecord?id=CVE-2025-13151
+    PublishedDate: '2026-01-07T22:15:43.2Z'
+    LastModifiedDate: '2026-01-08T19:15:55.983Z'
   - VulnerabilityID: CVE-2025-53057
     PkgID: openjdk21-jre@21.0.8_p9-r0
     PkgName: openjdk21-jre
@@ -12656,7 +12738,7 @@
     - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
     - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
     - https://linux.oracle.com/cve/CVE-2025-9230.html
-    - https://linux.oracle.com/errata/ELSA-2025-28041.html
+    - https://linux.oracle.com/errata/ELSA-2026-0337.html
     - https://lists.debian.org/debian-lts-announce/2025/10/msg00001.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
     - https://openssl-library.org/news/secadv/20250930.txt
@@ -14887,7 +14969,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:af3d358c16d0e94fd109885f1b0fc8d9ec801e3d7d2cf14d4c63920f2de63655
-    Title: The Socket Appender in Apache Log4j Core versions 2.0-beta9 through 2. ...
+    Title: 'Apache Log4j: Apache Log4j Core: Missing TLS hostname verification in Socket appender'
     Description: |-
       The Socket Appender in Apache Log4j Core versions 2.0-beta9 through 2.25.2 does not perform TLS hostname verification of the peer certificate, even when the  verifyHostName https://logging.apache.org/log4j/2.x/manual/appenders/network.html#SslConfiguration-attr-verifyHostName  configuration attribute or the  log4j2.sslVerifyHostName https://logging.apache.org/log4j/2.x/manual/systemproperties.html#log4j2.sslVerifyHostName  system property is set to true.
 
@@ -14905,8 +14987,14 @@
     - CWE-297
     VendorSeverity:
       ghsa: 2
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 5.9
     References:
     - http://www.openwall.com/lists/oss-security/2025/12/18/1
+    - https://access.redhat.com/security/cve/CVE-2025-68161
     - https://github.com/apache/logging-log4j2
     - https://github.com/apache/logging-log4j2/commit/3b93748497e1adbbd027fda8a5e7268ec5d0d578
     - https://github.com/apache/logging-log4j2/pull/4002
@@ -14916,6 +15004,7 @@
     - https://logging.apache.org/log4j/2.x/manual/systemproperties.html#log4j2.sslVerifyHostName
     - https://logging.apache.org/security.html#CVE-2025-68161
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68161
+    - https://www.cve.org/CVERecord?id=CVE-2025-68161
     PublishedDate: '2025-12-18T21:15:57.96Z'
     LastModifiedDate: '2025-12-19T18:00:18.33Z'
 - Target: Python
@@ -15772,9 +15861,10 @@
     - https://github.com/pdfminer/pdfminer.six/releases/tag/20251107
     - https://github.com/pdfminer/pdfminer.six/security/advisories/GHSA-wf5f-4jwr-ppcp
     - https://lists.debian.org/debian-lts-announce/2025/11/msg00017.html
+    - https://lists.debian.org/debian-lts-announce/2026/01/msg00005.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-64512
     PublishedDate: '2025-11-10T22:15:40.067Z'
-    LastModifiedDate: '2025-12-31T17:58:38.777Z'
+    LastModifiedDate: '2026-01-08T22:16:02.24Z'
   - VulnerabilityID: GHSA-f83h-ghpp-7wcc
     PkgName: pdfminer.six
     PkgPath: opt/scancode-toolkit/lib/python3.12/site-packages/pdfminer_six-20250506.dist-info/METADATA
@@ -16155,7 +16245,7 @@
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
     Fingerprint: sha256:0266a5906bf1d4f8495f4ae350ea065faf4bfa31585be614757c5d7fa85c0318
-    Title: urllib3 is a user-friendly HTTP client library for Python. Starting in ...
+    Title: 'urllib3: urllib3 Streaming API improperly handles highly compressed data'
     Description: urllib3 is a user-friendly HTTP client library for Python. Starting in version 1.0 and prior to 2.6.0, the Streaming API improperly handles highly compressed data. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. When streaming a compressed response, urllib3 can perform decoding or decompression based on the HTTP Content-Encoding header (e.g., gzip, deflate, br, or zstd). The library must read compressed data from the network and decompress it until the requested chunk size is met. Any resulting decompressed data that exceeds the requested amount is held in an internal buffer for the next read operation. The decompression logic could cause urllib3 to fully decode a small amount of highly compressed data in a single operation. This can result in excessive resource consumption (high CPU usage and massive memory allocation for the decompressed data.
     Severity: HIGH
     CweIDs:
@@ -16165,12 +16255,14 @@
       azure: 3
       ghsa: 3
       nvd: 3
+      redhat: 3
       ubuntu: 2
     CVSS:
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-66471
     - https://github.com/urllib3/urllib3
     - https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7
     - https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37
@@ -16199,19 +16291,24 @@
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
     Fingerprint: sha256:e837093c332440e3e4b329e46a50b037449910a820c8c925c42b281dfb60516a
-    Title: urllib3 is an HTTP client library for Python. urllib3's streaming API  ...
+    Title: 'urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)'
     Description: urllib3 is an HTTP client library for Python. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. urllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). When using the streaming API, the library decompresses only the necessary bytes, enabling partial content consumption. Starting in version 1.22 and prior to version 2.6.3, for HTTP redirect responses, the library would read the entire response body to drain the connection and decompress the content unnecessarily. This decompression occurred even before any read methods were called, and configured read limits did not restrict the amount of decompressed data. As a result, there was no safeguard against decompression bombs. A malicious server could exploit this to trigger excessive resource consumption on the client. Applications and libraries are affected when they stream content from untrusted sources by setting `preload_content=False` when they do not disable redirects. Users should upgrade to at least urllib3 v2.6.3, in which the library does not decode content of redirect responses when `preload_content=False`. If upgrading is not immediately possible, disable redirects by setting `redirect=False` for requests to untrusted source.
     Severity: HIGH
     CweIDs:
     - CWE-409
     VendorSeverity:
       ghsa: 3
+      redhat: 3
+      ubuntu: 2
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-21441
     - https://github.com/urllib3/urllib3
     - https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b
     - https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-21441
+    - https://www.cve.org/CVERecord?id=CVE-2026-21441
     PublishedDate: '2026-01-07T22:15:44.04Z'
-    LastModifiedDate: '2026-01-07T22:15:44.04Z'
+    LastModifiedDate: '2026-01-08T18:08:18.457Z'
 - Target: usr/bin/grype
   Class: lang-pkgs
   Type: gobinary
@@ -19552,7 +19649,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/8/ALSA-2025-23948.html
-    - https://errata.rockylinux.org/RLSA-2025:23948
+    - https://errata.rockylinux.org/RLSA-2025:23295
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -23124,7 +23221,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/8/ALSA-2025-23948.html
-    - https://errata.rockylinux.org/RLSA-2025:23948
+    - https://errata.rockylinux.org/RLSA-2025:23295
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -28333,7 +28430,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/8/ALSA-2025-23948.html
-    - https://errata.rockylinux.org/RLSA-2025:23948
+    - https://errata.rockylinux.org/RLSA-2025:23295
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
@@ -29011,7 +29108,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2407258
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58183
     - https://errata.almalinux.org/8/ALSA-2025-23948.html
-    - https://errata.rockylinux.org/RLSA-2025:23948
+    - https://errata.rockylinux.org/RLSA-2025:23295
     - https://go.dev/cl/709861
     - https://go.dev/issue/75677
     - https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI
