@@ -13176,7 +13176,7 @@
 │                       │      │                   it on an insecure host should not be okay. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 2 
@@ -14362,7 +14362,7 @@
 │                       │      │                   it on an insecure host should not be okay. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 2 
@@ -14564,7 +14564,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 2 
+│                       │      │                  ├ amazon     : 3 
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ oracle-oval: 3 
@@ -14797,7 +14797,7 @@
 │                       │      │                   . 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ photon     : 2 
