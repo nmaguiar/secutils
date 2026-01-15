@@ -10372,6 +10372,7 @@
     - CWE-416
     VendorSeverity:
       amazon: 2
+      azure: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -10684,7 +10685,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:87628d0779edc0f55d7f3546e2e05f71e30ce32d7be60cb57d00b8bd80bf7bdc
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -10821,7 +10822,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:4febee4c82bf387cf9959a903253bd30869416e71c30b307fc47f77d884aaede
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -10958,7 +10959,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:80122861bd4249abe5e4299d9d8e5242759cf769aca8a6f4631f0a06db5f0ac8
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -11095,7 +11096,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:303089216de42ef6c22651455c8e917f4155ee6612e0ee13c29114a046ec072b
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -13103,7 +13104,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 3
+      azure: 2
       cbl-mariner: 3
       ghsa: 3
       nvd: 3
@@ -16276,6 +16277,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-66471
     - https://ubuntu.com/security/notices/USN-7927-1
     - https://ubuntu.com/security/notices/USN-7927-2
+    - https://ubuntu.com/security/notices/USN-7927-3
     - https://www.cve.org/CVERecord?id=CVE-2025-66471
     - https://www.openwall.com/lists/oss-security/2025/12/05/4
     PublishedDate: '2025-12-05T17:16:04.4Z'
@@ -19362,7 +19364,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 3
+      azure: 2
       cbl-mariner: 3
       ghsa: 3
       nvd: 3
@@ -19562,6 +19564,7 @@
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA?pli=1
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
     - https://pkg.go.dev/vuln/GO-2025-4134
+    - https://ubuntu.com/security/notices/USN-7956-1
     - https://www.cve.org/CVERecord?id=CVE-2025-58181
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-12-11T19:29:24.9Z'
@@ -19692,7 +19695,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:434f11b0ce90d64ede83c0582307b8957a54e06bb783d72b96ea498cd3ad6174
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -22938,7 +22941,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 3
+      azure: 2
       cbl-mariner: 3
       ghsa: 3
       nvd: 3
@@ -23138,6 +23141,7 @@
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA?pli=1
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
     - https://pkg.go.dev/vuln/GO-2025-4134
+    - https://ubuntu.com/security/notices/USN-7956-1
     - https://www.cve.org/CVERecord?id=CVE-2025-58181
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-12-11T19:29:24.9Z'
@@ -23268,7 +23272,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:031acd7eec3c82c8e36a3303b5dae85d0a6e28dd6dc6b0578f847583b8595579
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -27959,7 +27963,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 3
+      azure: 2
       cbl-mariner: 3
       ghsa: 3
       nvd: 3
@@ -28022,6 +28026,54 @@
     - https://youtu.be/y1PaBzxwRWQ
     PublishedDate: '2025-11-06T21:15:42.817Z'
     LastModifiedDate: '2025-12-03T18:37:17.917Z'
+  - VulnerabilityID: CVE-2026-22703
+    PkgID: github.com/sigstore/cosign/v2@v2.2.4
+    PkgName: github.com/sigstore/cosign/v2
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/sigstore/cosign/v2@v2.2.4
+      UID: 966dca64f3ba771a
+    InstalledVersion: v2.2.4
+    FixedVersion: 2.6.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22703
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:5f72a4e2cf48a9a6f709e0b964da03b0d065bae2dda371a42359e3c632a77493
+    Title: 'github.com/sigstore/cosign: Cosign verification accepts any valid Rekor entry under certain conditions'
+    Description: Cosign provides code signing and transparency for containers and binaries. Prior to versions 2.6.2 and 3.0.4, Cosign bundle can be crafted to successfully verify an artifact even if the embedded Rekor entry does not reference the artifact's digest, signature or public key. When verifying a Rekor entry, Cosign verifies the Rekor entry signature, and also compares the artifact's digest, the user's public key from either a Fulcio certificate or provided by the user, and the artifact signature to the Rekor entry contents. Without these comparisons, Cosign would accept any response from Rekor as valid. A malicious actor that has compromised a user's identity or signing key could construct a valid Cosign bundle by including any arbitrary Rekor entry, thus preventing the user from being able to audit the signing event. This issue has been patched in versions 2.6.2 and 3.0.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-345
+    VendorSeverity:
+      bitnami: 2
+      ghsa: 2
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 5.5
+      ghsa:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-22703
+    - https://github.com/sigstore/cosign
+    - https://github.com/sigstore/cosign/commit/6832fba4928c1ad69400235bbc41212de5006176
+    - https://github.com/sigstore/cosign/pull/4623
+    - https://github.com/sigstore/cosign/security/advisories/GHSA-whqx-f9j3-ch6m
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-22703
+    - https://www.cve.org/CVERecord?id=CVE-2026-22703
+    PublishedDate: '2026-01-10T07:16:03.03Z'
+    LastModifiedDate: '2026-01-13T14:03:18.99Z'
   - VulnerabilityID: CVE-2025-66564
     PkgID: github.com/sigstore/timestamp-authority@v1.2.2
     PkgName: github.com/sigstore/timestamp-authority
@@ -28203,6 +28255,7 @@
     - https://groups.google.com/g/golang-announce/c/w-oX3UxNcZA?pli=1
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58181
     - https://pkg.go.dev/vuln/GO-2025-4134
+    - https://ubuntu.com/security/notices/USN-7956-1
     - https://www.cve.org/CVERecord?id=CVE-2025-58181
     PublishedDate: '2025-11-19T21:15:50.85Z'
     LastModifiedDate: '2025-12-11T19:29:24.9Z'
@@ -28481,7 +28534,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:375bde5fc3ec9b24119cd0e075e29c2ea728d4daae4ac77d7338de2a38ecd971
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
@@ -29158,7 +29211,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:201bdabcab5993e3a03fdda8ef240d60270509b4a33cec051a3bab75bbf4e4b1
-    Title: 'crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509'
+    Title: 'crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate'
     Description: Within HostnameError.Error(), when constructing an error string, there is no limit to the number of hosts that will be printed out. Furthermore, the error string is constructed by repeated string concatenation, leading to quadratic runtime. Therefore, a certificate provided by a malicious actor can result in excessive resource consumption.
     Severity: HIGH
     CweIDs:
