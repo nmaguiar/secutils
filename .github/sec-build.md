@@ -13178,7 +13178,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 2 
@@ -14414,7 +14414,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 2 
 │                       │      │                  ├ photon     : 3 
 │                       │      │                  ├ redhat     : 2 
@@ -14617,7 +14617,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 2 
+│                       │      │                  ├ amazon     : 3 
 │                       │      │                  ├ azure      : 3 
 │                       │      │                  ├ cbl-mariner: 3 
 │                       │      │                  ├ oracle-oval: 3 
@@ -14954,7 +14954,7 @@
 │                       │      │                   . 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-125 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 2 
 │                       │      │                  ├ cbl-mariner: 2 
 │                       │      │                  ├ photon     : 2 
@@ -18168,7 +18168,7 @@
 │                       │     │                  ├ [3]: https://logback.qos.ch/news.html#1.5.25 
 │                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-1225 
 │                       │     ├ PublishedDate   : 2026-01-22T10:16:07.693Z 
-│                       │     ╰ LastModifiedDate: 2026-01-22T10:16:07.693Z 
+│                       │     ╰ LastModifiedDate: 2026-01-26T15:04:59.737Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-48734 
 │                       │     ├ PkgName         : commons-beanutils:commons-beanutils 
 │                       │     ├ PkgPath         : opt/dependency-check/lib/commons-beanutils-1.9.4.jar 
@@ -32780,7 +32780,7 @@
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-23831 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-23831 
 │                       │      ├ PublishedDate   : 2026-01-22T22:16:19.523Z 
-│                       │      ╰ LastModifiedDate: 2026-01-22T22:16:19.523Z 
+│                       │      ╰ LastModifiedDate: 2026-01-26T15:04:14.85Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2026-24117 
 │                       │      ├ PkgID           : github.com/sigstore/rekor@v1.3.10 
 │                       │      ├ PkgName         : github.com/sigstore/rekor 
@@ -32827,7 +32827,7 @@
 │                       │      │                  │      GHSA-4c4x-jm2x-pf9j 
 │                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-24117 
 │                       │      ├ PublishedDate   : 2026-01-22T22:16:21.577Z 
-│                       │      ╰ LastModifiedDate: 2026-01-22T22:16:21.577Z 
+│                       │      ╰ LastModifiedDate: 2026-01-26T15:04:14.85Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2026-24137 
 │                       │      ├ PkgID           : github.com/sigstore/sigstore@v1.9.1 
 │                       │      ├ PkgName         : github.com/sigstore/sigstore 
@@ -32884,7 +32884,7 @@
 │                       │      │                  │      es/GHSA-fcv2-xgw5-pqxf 
 │                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-24137 
 │                       │      ├ PublishedDate   : 2026-01-23T00:15:52.553Z 
-│                       │      ╰ LastModifiedDate: 2026-01-23T00:15:52.553Z 
+│                       │      ╰ LastModifiedDate: 2026-01-26T15:04:14.85Z 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2025-66564 
 │                       │      ├ PkgID           : github.com/sigstore/timestamp-authority@v1.2.2 
 │                       │      ├ PkgName         : github.com/sigstore/timestamp-authority 
