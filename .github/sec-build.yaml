@@ -16402,11 +16402,13 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
+      alma: 3
       amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
       nvd: 3
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -16417,10 +16419,17 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:1089
     - https://access.redhat.com/security/cve/CVE-2025-66418
+    - https://bugzilla.redhat.com/2419455
+    - https://bugzilla.redhat.com/2419467
+    - https://bugzilla.redhat.com/2427726
+    - https://errata.almalinux.org/9/ALSA-2026-1089.html
     - https://github.com/urllib3/urllib3
     - https://github.com/urllib3/urllib3/commit/24d7b67eac89f94e11003424bcf0d8f7b72222a8
     - https://github.com/urllib3/urllib3/security/advisories/GHSA-gm62-xv2j-4w53
+    - https://linux.oracle.com/cve/CVE-2025-66418.html
+    - https://linux.oracle.com/errata/ELSA-2026-1241.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-66418
     - https://ubuntu.com/security/notices/USN-7927-1
     - https://www.cve.org/CVERecord?id=CVE-2025-66418
@@ -16452,11 +16461,13 @@
     CweIDs:
     - CWE-409
     VendorSeverity:
+      alma: 3
       amazon: 2
       azure: 3
       cbl-mariner: 3
       ghsa: 3
       nvd: 3
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -16464,10 +16475,17 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:1089
     - https://access.redhat.com/security/cve/CVE-2025-66471
+    - https://bugzilla.redhat.com/2419455
+    - https://bugzilla.redhat.com/2419467
+    - https://bugzilla.redhat.com/2427726
+    - https://errata.almalinux.org/9/ALSA-2026-1089.html
     - https://github.com/urllib3/urllib3
     - https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7
     - https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37
+    - https://linux.oracle.com/cve/CVE-2025-66471.html
+    - https://linux.oracle.com/errata/ELSA-2026-1241.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-66471
     - https://ubuntu.com/security/notices/USN-7927-1
     - https://ubuntu.com/security/notices/USN-7927-2
@@ -16501,10 +16519,12 @@
     CweIDs:
     - CWE-409
     VendorSeverity:
+      alma: 3
       azure: 3
       cbl-mariner: 3
       ghsa: 3
       nvd: 3
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -16515,10 +16535,17 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
+    - https://access.redhat.com/errata/RHSA-2026:1089
     - https://access.redhat.com/security/cve/CVE-2026-21441
+    - https://bugzilla.redhat.com/2419455
+    - https://bugzilla.redhat.com/2419467
+    - https://bugzilla.redhat.com/2427726
+    - https://errata.almalinux.org/9/ALSA-2026-1089.html
     - https://github.com/urllib3/urllib3
     - https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b
     - https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99
+    - https://linux.oracle.com/cve/CVE-2026-21441.html
+    - https://linux.oracle.com/errata/ELSA-2026-1241.html
     - https://lists.debian.org/debian-lts-announce/2026/01/msg00017.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-21441
     - https://ubuntu.com/security/notices/USN-7955-1
