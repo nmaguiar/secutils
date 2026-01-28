@@ -19695,11 +19695,13 @@
 │                       │     │                   vulnerability is fixed in 2.6.0. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ amazon     : 2 
 │                       │     │                  ├ azure      : 3 
 │                       │     │                  ├ cbl-mariner: 3 
 │                       │     │                  ├ ghsa       : 3 
 │                       │     │                  ├ nvd        : 3 
+│                       │     │                  ├ oracle-oval: 3 
 │                       │     │                  ├ redhat     : 3 
 │                       │     │                  ╰ ubuntu     : 2 
 │                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
@@ -19708,16 +19710,23 @@
 │                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                       │     │                           │           A:H 
 │                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-66418 
-│                       │     │                  ├ [1]: https://github.com/urllib3/urllib3 
-│                       │     │                  ├ [2]: https://github.com/urllib3/urllib3/commit/24d7b67eac89f
-│                       │     │                  │      94e11003424bcf0d8f7b72222a8 
-│                       │     │                  ├ [3]: https://github.com/urllib3/urllib3/security/advisories/
-│                       │     │                  │      GHSA-gm62-xv2j-4w53 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-66418 
-│                       │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-7927-1 
-│                       │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2025-66418 
-│                       │     │                  ╰ [7]: https://www.openwall.com/lists/oss-security/2025/12/05/4 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1089 
+│                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-66418 
+│                       │     │                  ├ [2] : https://bugzilla.redhat.com/2419455 
+│                       │     │                  ├ [3] : https://bugzilla.redhat.com/2419467 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2427726 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-1089.html 
+│                       │     │                  ├ [6] : https://github.com/urllib3/urllib3 
+│                       │     │                  ├ [7] : https://github.com/urllib3/urllib3/commit/24d7b67eac89
+│                       │     │                  │       f94e11003424bcf0d8f7b72222a8 
+│                       │     │                  ├ [8] : https://github.com/urllib3/urllib3/security/advisories
+│                       │     │                  │       /GHSA-gm62-xv2j-4w53 
+│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-66418.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2026-1241.html 
+│                       │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-66418 
+│                       │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-7927-1 
+│                       │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-66418 
+│                       │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2025/12/05/4 
 │                       │     ├ PublishedDate   : 2025-12-05T16:15:51.053Z 
 │                       │     ╰ LastModifiedDate: 2025-12-10T16:08:32.193Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-66471 
@@ -19762,27 +19771,36 @@
 │                       │     │                   memory allocation for the decompressed data. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-409 
-│                       │     ├ VendorSeverity   ╭ amazon     : 2 
+│                       │     ├ VendorSeverity   ╭ alma       : 3 
+│                       │     │                  ├ amazon     : 2 
 │                       │     │                  ├ azure      : 3 
 │                       │     │                  ├ cbl-mariner: 3 
 │                       │     │                  ├ ghsa       : 3 
 │                       │     │                  ├ nvd        : 3 
+│                       │     │                  ├ oracle-oval: 3 
 │                       │     │                  ├ redhat     : 3 
 │                       │     │                  ╰ ubuntu     : 2 
 │                       │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
 │                       │     │                        ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-66471 
-│                       │     │                  ├ [1]: https://github.com/urllib3/urllib3 
-│                       │     │                  ├ [2]: https://github.com/urllib3/urllib3/commit/c19571de34c47
-│                       │     │                  │      de3a766541b041637ba5f716ed7 
-│                       │     │                  ├ [3]: https://github.com/urllib3/urllib3/security/advisories/
-│                       │     │                  │      GHSA-2xpw-w6gg-jr37 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-66471 
-│                       │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-7927-1 
-│                       │     │                  ├ [6]: https://ubuntu.com/security/notices/USN-7927-2 
-│                       │     │                  ├ [7]: https://ubuntu.com/security/notices/USN-7927-3 
-│                       │     │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2025-66471 
-│                       │     │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2025/12/05/4 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1089 
+│                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-66471 
+│                       │     │                  ├ [2] : https://bugzilla.redhat.com/2419455 
+│                       │     │                  ├ [3] : https://bugzilla.redhat.com/2419467 
+│                       │     │                  ├ [4] : https://bugzilla.redhat.com/2427726 
+│                       │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-1089.html 
+│                       │     │                  ├ [6] : https://github.com/urllib3/urllib3 
+│                       │     │                  ├ [7] : https://github.com/urllib3/urllib3/commit/c19571de34c4
+│                       │     │                  │       7de3a766541b041637ba5f716ed7 
+│                       │     │                  ├ [8] : https://github.com/urllib3/urllib3/security/advisories
+│                       │     │                  │       /GHSA-2xpw-w6gg-jr37 
+│                       │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-66471.html 
+│                       │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2026-1241.html 
+│                       │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2025-66471 
+│                       │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-7927-1 
+│                       │     │                  ├ [13]: https://ubuntu.com/security/notices/USN-7927-2 
+│                       │     │                  ├ [14]: https://ubuntu.com/security/notices/USN-7927-3 
+│                       │     │                  ├ [15]: https://www.cve.org/CVERecord?id=CVE-2025-66471 
+│                       │     │                  ╰ [16]: https://www.openwall.com/lists/oss-security/2025/12/05/4 
 │                       │     ├ PublishedDate   : 2025-12-05T17:16:04.4Z 
 │                       │     ╰ LastModifiedDate: 2025-12-10T16:10:33.5Z 
 │                       ╰ [5] ╭ VulnerabilityID : CVE-2026-21441 
@@ -19835,28 +19853,37 @@
 │                             │                   requests to untrusted source. 
 │                             ├ Severity        : HIGH 
 │                             ├ CweIDs           ─ [0]: CWE-409 
-│                             ├ VendorSeverity   ╭ azure      : 3 
+│                             ├ VendorSeverity   ╭ alma       : 3 
+│                             │                  ├ azure      : 3 
 │                             │                  ├ cbl-mariner: 3 
 │                             │                  ├ ghsa       : 3 
 │                             │                  ├ nvd        : 3 
+│                             │                  ├ oracle-oval: 3 
 │                             │                  ├ redhat     : 3 
 │                             │                  ╰ ubuntu     : 2 
 │                             ├ CVSS             ╭ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
 │                             │                  │      ╰ V3Score : 7.5 
 │                             │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
 │                             │                         ╰ V3Score : 7.5 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-21441 
-│                             │                  ├ [1]: https://github.com/urllib3/urllib3 
-│                             │                  ├ [2]: https://github.com/urllib3/urllib3/commit/8864ac407bba8
-│                             │                  │      607950025e0979c4c69bc7abc7b 
-│                             │                  ├ [3]: https://github.com/urllib3/urllib3/security/advisories/
-│                             │                  │      GHSA-38jv-5279-wg99 
-│                             │                  ├ [4]: https://lists.debian.org/debian-lts-announce/2026/01/ms
-│                             │                  │      g00017.html 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-21441 
-│                             │                  ├ [6]: https://ubuntu.com/security/notices/USN-7955-1 
-│                             │                  ├ [7]: https://ubuntu.com/security/notices/USN-7955-2 
-│                             │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-21441 
+│                             ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1089 
+│                             │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-21441 
+│                             │                  ├ [2] : https://bugzilla.redhat.com/2419455 
+│                             │                  ├ [3] : https://bugzilla.redhat.com/2419467 
+│                             │                  ├ [4] : https://bugzilla.redhat.com/2427726 
+│                             │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-1089.html 
+│                             │                  ├ [6] : https://github.com/urllib3/urllib3 
+│                             │                  ├ [7] : https://github.com/urllib3/urllib3/commit/8864ac407bba
+│                             │                  │       8607950025e0979c4c69bc7abc7b 
+│                             │                  ├ [8] : https://github.com/urllib3/urllib3/security/advisories
+│                             │                  │       /GHSA-38jv-5279-wg99 
+│                             │                  ├ [9] : https://linux.oracle.com/cve/CVE-2026-21441.html 
+│                             │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2026-1241.html 
+│                             │                  ├ [11]: https://lists.debian.org/debian-lts-announce/2026/01/m
+│                             │                  │       sg00017.html 
+│                             │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-21441 
+│                             │                  ├ [13]: https://ubuntu.com/security/notices/USN-7955-1 
+│                             │                  ├ [14]: https://ubuntu.com/security/notices/USN-7955-2 
+│                             │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-21441 
 │                             ├ PublishedDate   : 2026-01-07T22:15:44.04Z 
 │                             ╰ LastModifiedDate: 2026-01-23T09:15:47.823Z 
 ├ [3] ╭ Target         : usr/bin/grype 
