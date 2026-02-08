@@ -13237,8 +13237,9 @@
 │                       │       │                   unintentionally disable the feature for other threads as
 │                       │       │                   well. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ╭ photon: 2 
-│                       │       │                  ╰ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │       │                  ├ photon     : 2 
+│                       │       │                  ╰ redhat     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.8 
@@ -13300,7 +13301,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
 │                       │       ├ VendorSeverity   ╭ alma       : 2 
-│                       │       │                  ├ amazon     : 2 
+│                       │       │                  ├ amazon     : 1 
 │                       │       │                  ├ oracle-oval: 2 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
@@ -13320,7 +13321,7 @@
 │                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-9086 
 │                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2026-1350.html 
-│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:23383 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:1350 
 │                       │       │                  ├ [10]: https://github.com/curl/curl/commit/c6ae07c6a541e0e9
 │                       │       │                  │       6d0040afb6 
 │                       │       │                  ├ [11]: https://hackerone.com/reports/3294999 
@@ -13461,13 +13462,13 @@
 │                       │       │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-61729 
 │                       │       │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
 │                       │       │                  ├ [7] : https://go.dev/cl/725920 
 │                       │       │                  ├ [8] : https://go.dev/issue/76445 
 │                       │       │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBk
 │                       │       │                  │       Pddm4 
 │                       │       │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
 │                       │       │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                       │       │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
@@ -13633,13 +13634,13 @@
 │                       │       │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-61729 
 │                       │       │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
 │                       │       │                  ├ [7] : https://go.dev/cl/725920 
 │                       │       │                  ├ [8] : https://go.dev/issue/76445 
 │                       │       │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBk
 │                       │       │                  │       Pddm4 
 │                       │       │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
 │                       │       │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                       │       │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
@@ -13805,13 +13806,13 @@
 │                       │       │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-61729 
 │                       │       │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
 │                       │       │                  ├ [7] : https://go.dev/cl/725920 
 │                       │       │                  ├ [8] : https://go.dev/issue/76445 
 │                       │       │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBk
 │                       │       │                  │       Pddm4 
 │                       │       │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
 │                       │       │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                       │       │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
@@ -13977,13 +13978,13 @@
 │                       │       │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-61729 
 │                       │       │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+│                       │       │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
 │                       │       │                  ├ [7] : https://go.dev/cl/725920 
 │                       │       │                  ├ [8] : https://go.dev/issue/76445 
 │                       │       │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBk
 │                       │       │                  │       Pddm4 
 │                       │       │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
 │                       │       │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                       │       │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
@@ -14162,6 +14163,7 @@
 │                       │       ├ Severity        : CRITICAL 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 4 
@@ -14224,7 +14226,7 @@
 │                       │       │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [39]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [40]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [40]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/2c8f0e5fa9
 │                       │       │                  │       b6ee5508a0349e4572ddb74db5a703 
 │                       │       │                  ├ [42]: https://github.com/openssl/openssl/commit/5f26d4202f
@@ -14379,7 +14381,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/41be0f2164
 │                       │       │                  │       04f14457bbf3b9cc488dba60b49296 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/7e9cac9832
@@ -14517,7 +14519,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271
 │                       │       │                  │       f8191b8fd8a5257eb05173982a097b 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb49608
@@ -14663,7 +14665,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/205e3a55e1
 │                       │       │                  │       6e4bd08c12fdbd3416ab829c0f6206 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/8caf359d6e
@@ -14794,7 +14796,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/1f08e54bad
 │                       │       │                  │       32843044fe8a675948d65e3b4ece65 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/7c88376731
@@ -14936,7 +14938,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/310f305eb9
 │                       │       │                  │       2ea8040d6b3cb75a5feeba8e6acf2f 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/a7936fa4bd
@@ -15080,7 +15082,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/3ed1f75249
 │                       │       │                  │       932b155eef993a8e66a99cb98bfef4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/6184a4fb08
@@ -15214,7 +15216,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/384011202a
 │                       │       │                  │       f92605d926fafe4a0bcd6b65d162ad 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/475c466ef2
@@ -15351,7 +15353,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/372fc5c775
 │                       │       │                  │       29695b05b4f5b5187691a57ef5dffc 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/4016975d44
@@ -15493,7 +15495,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/27c7012c91
 │                       │       │                  │       cc986a598d7540f3079dfde2416eb9 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/4e254b48ad
@@ -15803,7 +15805,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/2502e7b7d4
 │                       │       │                  │       c0cf4f972a881641fe09edc67aeec4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/572844beca
@@ -15945,7 +15947,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/2502e7b7d4
 │                       │       │                  │       c0cf4f972a881641fe09edc67aeec4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/572844beca
@@ -16183,8 +16185,9 @@
 │                       │       │                   unintentionally disable the feature for other threads as
 │                       │       │                   well. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ╭ photon: 2 
-│                       │       │                  ╰ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ cbl-mariner: 2 
+│                       │       │                  ├ photon     : 2 
+│                       │       │                  ╰ redhat     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.8 
@@ -16246,7 +16249,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
 │                       │       ├ VendorSeverity   ╭ alma       : 2 
-│                       │       │                  ├ amazon     : 2 
+│                       │       │                  ├ amazon     : 1 
 │                       │       │                  ├ oracle-oval: 2 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
@@ -16266,7 +16269,7 @@
 │                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       025-9086 
 │                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2026-1350.html 
-│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2025:23383 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:1350 
 │                       │       │                  ├ [10]: https://github.com/curl/curl/commit/c6ae07c6a541e0e9
 │                       │       │                  │       6d0040afb6 
 │                       │       │                  ├ [11]: https://hackerone.com/reports/3294999 
@@ -16358,47 +16361,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-14819 
 │                       │       ├ PublishedDate   : 2026-01-08T10:15:46.73Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:51:26.263Z 
-│                       ├ [44]  ╭ VulnerabilityID : CVE-2026-24515 
-│                       │       ├ PkgID           : libexpat@2.7.1-r0 
-│                       │       ├ PkgName         : libexpat 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
-│                       │       │                  │       3.23.0_alpha20250612 
-│                       │       │                  ╰ UID : ba96e0052583823f 
-│                       │       ├ InstalledVersion: 2.7.1-r0 
-│                       │       ├ FixedVersion    : 2.7.4-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ SeveritySource  : nvd 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-24515 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:fb7b868f6c9be745252114e06efd86d499229c26fe6dfe1dd692
-│                       │       │                   a2a8bfe5ebfc 
-│                       │       ├ Title           : libexpat: libexpat null pointer dereference 
-│                       │       ├ Description     : In libexpat before 2.7.4, XML_ExternalEntityParserCreate
-│                       │       │                   does not copy unknown encoding handler user data. 
-│                       │       ├ Severity        : CRITICAL 
-│                       │       ├ CweIDs           ─ [0]: CWE-476 
-│                       │       ├ VendorSeverity   ╭ nvd   : 4 
-│                       │       │                  ├ photon: 4 
-│                       │       │                  ╰ redhat: 1 
-│                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
-│                       │       │                  │        │           H/A:H 
-│                       │       │                  │        ╰ V3Score : 9.8 
-│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
-│                       │       │                           │           N/A:L 
-│                       │       │                           ╰ V3Score : 2.9 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-24515 
-│                       │       │                  ├ [1]: https://github.com/libexpat/libexpat/pull/1131 
-│                       │       │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-24515 
-│                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-24515 
-│                       │       ├ PublishedDate   : 2026-01-23T08:16:01.49Z 
-│                       │       ╰ LastModifiedDate: 2026-01-30T17:54:41.927Z 
-│                       ├ [45]  ╭ VulnerabilityID : CVE-2025-59375 
+│                       ├ [44]  ╭ VulnerabilityID : CVE-2025-59375 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -16459,7 +16422,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-59375 
 │                       │       ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
 │                       │       ╰ LastModifiedDate: 2025-11-04T22:16:34.927Z 
-│                       ├ [46]  ╭ VulnerabilityID : CVE-2026-25210 
+│                       ├ [45]  ╭ VulnerabilityID : CVE-2026-25210 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -16498,6 +16461,47 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-25210 
 │                       │       ├ PublishedDate   : 2026-01-30T07:16:15.57Z 
 │                       │       ╰ LastModifiedDate: 2026-02-04T16:34:21.763Z 
+│                       ├ [46]  ╭ VulnerabilityID : CVE-2026-24515 
+│                       │       ├ PkgID           : libexpat@2.7.1-r0 
+│                       │       ├ PkgName         : libexpat 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
+│                       │       │                  │       3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : ba96e0052583823f 
+│                       │       ├ InstalledVersion: 2.7.1-r0 
+│                       │       ├ FixedVersion    : 2.7.4-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-24515 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:fb7b868f6c9be745252114e06efd86d499229c26fe6dfe1dd692
+│                       │       │                   a2a8bfe5ebfc 
+│                       │       ├ Title           : libexpat: libexpat null pointer dereference 
+│                       │       ├ Description     : In libexpat before 2.7.4, XML_ExternalEntityParserCreate
+│                       │       │                   does not copy unknown encoding handler user data. 
+│                       │       ├ Severity        : LOW 
+│                       │       ├ CweIDs           ─ [0]: CWE-476 
+│                       │       ├ VendorSeverity   ╭ cbl-mariner: 1 
+│                       │       │                  ├ nvd        : 1 
+│                       │       │                  ├ photon     : 4 
+│                       │       │                  ╰ redhat     : 1 
+│                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:
+│                       │       │                  │        │           N/A:L 
+│                       │       │                  │        ╰ V3Score : 2.5 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           N/A:L 
+│                       │       │                           ╰ V3Score : 2.9 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-24515 
+│                       │       │                  ├ [1]: https://github.com/libexpat/libexpat/pull/1131 
+│                       │       │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-24515 
+│                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-24515 
+│                       │       ├ PublishedDate   : 2026-01-23T08:16:01.49Z 
+│                       │       ╰ LastModifiedDate: 2026-02-05T17:27:53.29Z 
 │                       ├ [47]  ╭ VulnerabilityID : CVE-2025-64720 
 │                       │       ├ PkgID           : libpng@1.6.49-r0 
 │                       │       ├ PkgName         : libpng 
@@ -16532,7 +16536,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ cbl-mariner: 3 
 │                       │       │                  ├ oracle-oval: 3 
@@ -16764,9 +16768,11 @@
 │                       │       │                   CVE-2025-65018. This vulnerability is fixed in 1.6.54. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
-│                       │       ├ VendorSeverity   ╭ nvd   : 3 
-│                       │       │                  ├ redhat: 2 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       │                  ├ cbl-mariner: 2 
+│                       │       │                  ├ nvd        : 3 
+│                       │       │                  ├ redhat     : 2 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:
 │                       │       │                  │        │           N/A:H 
 │                       │       │                  │        ╰ V3Score : 7.1 
@@ -16823,9 +16829,11 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ╭ [0]: CWE-125 
 │                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ nvd   : 3 
-│                       │       │                  ├ redhat: 2 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
+│                       │       │                  ├ cbl-mariner: 2 
+│                       │       │                  ├ nvd        : 3 
+│                       │       │                  ├ redhat     : 2 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                  │        │           H/A:H 
 │                       │       │                  │        ╰ V3Score : 7.8 
@@ -16876,7 +16884,7 @@
 │                       │       │                   patched in version 1.6.51. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
-│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       ├ VendorSeverity   ╭ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ photon     : 2 
@@ -17020,6 +17028,7 @@
 │                       │       ├ Severity        : CRITICAL 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 4 
@@ -17082,7 +17091,7 @@
 │                       │       │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [39]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [40]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [40]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/2c8f0e5fa9
 │                       │       │                  │       b6ee5508a0349e4572ddb74db5a703 
 │                       │       │                  ├ [42]: https://github.com/openssl/openssl/commit/5f26d4202f
@@ -17237,7 +17246,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/41be0f2164
 │                       │       │                  │       04f14457bbf3b9cc488dba60b49296 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/7e9cac9832
@@ -17375,7 +17384,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271
 │                       │       │                  │       f8191b8fd8a5257eb05173982a097b 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb49608
@@ -17521,7 +17530,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/205e3a55e1
 │                       │       │                  │       6e4bd08c12fdbd3416ab829c0f6206 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/8caf359d6e
@@ -17652,7 +17661,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/1f08e54bad
 │                       │       │                  │       32843044fe8a675948d65e3b4ece65 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/7c88376731
@@ -17794,7 +17803,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/310f305eb9
 │                       │       │                  │       2ea8040d6b3cb75a5feeba8e6acf2f 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/a7936fa4bd
@@ -17938,7 +17947,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/3ed1f75249
 │                       │       │                  │       932b155eef993a8e66a99cb98bfef4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/6184a4fb08
@@ -18072,7 +18081,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/384011202a
 │                       │       │                  │       f92605d926fafe4a0bcd6b65d162ad 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/475c466ef2
@@ -18209,7 +18218,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/372fc5c775
 │                       │       │                  │       29695b05b4f5b5187691a57ef5dffc 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/4016975d44
@@ -18351,7 +18360,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/27c7012c91
 │                       │       │                  │       cc986a598d7540f3079dfde2416eb9 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/4e254b48ad
@@ -18661,7 +18670,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/2502e7b7d4
 │                       │       │                  │       c0cf4f972a881641fe09edc67aeec4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/572844beca
@@ -18803,7 +18812,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/2502e7b7d4
 │                       │       │                  │       c0cf4f972a881641fe09edc67aeec4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/572844beca
@@ -18933,9 +18942,11 @@
 │                       │       │                   resulting in a buffer overflow in asn1_expend_octet_string. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
-│                       │       │                  ├ redhat: 1 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ amazon     : 3 
+│                       │       │                  ├ cbl-mariner: 1 
+│                       │       │                  ├ photon     : 3 
+│                       │       │                  ├ redhat     : 1 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
@@ -18999,7 +19010,8 @@
 │                       │       │                   impacts).  CVSS Vector:
 │                       │       │                   (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N). 
 │                       │       ├ Severity        : HIGH 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           H/A:N 
@@ -19064,6 +19076,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-400 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ├ rocky      : 3 
@@ -19328,6 +19341,7 @@
 │                       │       │                   (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N). 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ├ rocky      : 3 
@@ -19423,6 +19437,7 @@
 │                       │       │                   (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N). 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ├ rocky      : 3 
@@ -19594,7 +19609,8 @@
 │                       │       │                   impacts).  CVSS Vector:
 │                       │       │                   (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N). 
 │                       │       ├ Severity        : HIGH 
-│                       │       ├ VendorSeverity   ╭ redhat: 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:
 │                       │       │                           │           H/A:N 
@@ -19659,6 +19675,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-400 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ├ rocky      : 3 
@@ -19923,6 +19940,7 @@
 │                       │       │                   (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N). 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ├ rocky      : 3 
@@ -20018,6 +20036,7 @@
 │                       │       │                   (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N). 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ├ rocky      : 3 
@@ -20201,6 +20220,7 @@
 │                       │       ├ Severity        : CRITICAL 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 4 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 4 
@@ -20263,7 +20283,7 @@
 │                       │       │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [39]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [40]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [40]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/2c8f0e5fa9
 │                       │       │                  │       b6ee5508a0349e4572ddb74db5a703 
 │                       │       │                  ├ [42]: https://github.com/openssl/openssl/commit/5f26d4202f
@@ -20418,7 +20438,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/41be0f2164
 │                       │       │                  │       04f14457bbf3b9cc488dba60b49296 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/7e9cac9832
@@ -20556,7 +20576,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271
 │                       │       │                  │       f8191b8fd8a5257eb05173982a097b 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb49608
@@ -20702,7 +20722,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/205e3a55e1
 │                       │       │                  │       6e4bd08c12fdbd3416ab829c0f6206 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/8caf359d6e
@@ -20833,7 +20853,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/1f08e54bad
 │                       │       │                  │       32843044fe8a675948d65e3b4ece65 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/7c88376731
@@ -20975,7 +20995,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/310f305eb9
 │                       │       │                  │       2ea8040d6b3cb75a5feeba8e6acf2f 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/a7936fa4bd
@@ -21119,7 +21139,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/3ed1f75249
 │                       │       │                  │       932b155eef993a8e66a99cb98bfef4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/6184a4fb08
@@ -21253,7 +21273,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/384011202a
 │                       │       │                  │       f92605d926fafe4a0bcd6b65d162ad 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/475c466ef2
@@ -21390,7 +21410,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/372fc5c775
 │                       │       │                  │       29695b05b4f5b5187691a57ef5dffc 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/4016975d44
@@ -21532,7 +21552,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/27c7012c91
 │                       │       │                  │       cc986a598d7540f3079dfde2416eb9 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/4e254b48ad
@@ -21842,7 +21862,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/2502e7b7d4
 │                       │       │                  │       c0cf4f972a881641fe09edc67aeec4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/572844beca
@@ -21984,7 +22004,7 @@
 │                       │       │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-22796 
 │                       │       │                  ├ [38]: https://errata.almalinux.org/9/ALSA-2026-1473.html 
-│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+│                       │       │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1473 
 │                       │       │                  ├ [40]: https://github.com/openssl/openssl/commit/2502e7b7d4
 │                       │       │                  │       c0cf4f972a881641fe09edc67aeec4 
 │                       │       │                  ├ [41]: https://github.com/openssl/openssl/commit/572844beca
@@ -22503,51 +22523,171 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
 │                       │       ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
 │                       │       ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
-│                       ╰ [104] ╭ VulnerabilityID : CVE-2025-46394 
-│                               ├ PkgID           : ssl_client@1.37.0-r19 
-│                               ├ PkgName         : ssl_client 
-│                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dis
-│                               │                  │       tro=3.23.0_alpha20250612 
-│                               │                  ╰ UID : 1348a4b91bc7e7b5 
-│                               ├ InstalledVersion: 1.37.0-r19 
-│                               ├ FixedVersion    : 1.37.0-r27 
+│                       ├ [104] ╭ VulnerabilityID : CVE-2025-46394 
+│                       │       ├ PkgID           : ssl_client@1.37.0-r19 
+│                       │       ├ PkgName         : ssl_client 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dis
+│                       │       │                  │       tro=3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : 1348a4b91bc7e7b5 
+│                       │       ├ InstalledVersion: 1.37.0-r19 
+│                       │       ├ FixedVersion    : 1.37.0-r27 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:ebf40b6fe7209d4849027d17cc680ee249138e80a108529cd0b7
+│                       │       │                   c9c1f8e97cd3 
+│                       │       ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
+│                       │       │                   filenames hid ... 
+│                       │       ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
+│                       │       │                   filenames hidden from a listing through the use of terminal
+│                       │       │                    escape sequences. 
+│                       │       ├ Severity        : LOW 
+│                       │       ├ CweIDs           ─ [0]: CWE-451 
+│                       │       ├ VendorSeverity   ╭ nvd   : 1 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
+│                       │       │                        ╰ V3Score : 3.3 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
+│                       │       │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
+│                       │       │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
+│                       │       │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July
+│                       │       │                  │      /090806.html 
+│                       │       │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July
+│                       │       │                  │      /090814.html 
+│                       │       │                  ├ [5]: https://www.busybox.net 
+│                       │       │                  ├ [6]: https://www.busybox.net/downloads/ 
+│                       │       │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
+│                       │       │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/2
+│                       │       │                         3/1 
+│                       │       ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
+│                       │       ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
+│                       ├ [105] ╭ VulnerabilityID : CVE-2026-25749 
+│                       │       ├ PkgID           : vim@9.1.1557-r1 
+│                       │       ├ PkgName         : vim 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : f37ace8bbf995058 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.1.2132-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-25749 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:3b0d7c4df94cab4a35cf1d2743c74addcc1c8747bde5a6e4b6c6
+│                       │       │                   0b921ed38575 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.1. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.1.2132, a heap buffer overflow vulnerability
+│                       │       │                   exists in Vim's tag file resolution logic when processing
+│                       │       │                   the 'helpfile' option. The vulnerability is located in the
+│                       │       │                   get_tagfname() function in src/tag.c. When processing help
+│                       │       │                   file tags, Vim copies the user-controlled 'helpfile' option
+│                       │       │                    value into a fixed-size heap buffer of MAXPATHL + 1 bytes
+│                       │       │                   (typically 4097 bytes) using an unsafe STRCPY() operation
+│                       │       │                   without any bounds checking. This issue has been patched in
+│                       │       │                    version 9.1.2132. 
+│                       │       ├ Severity        : UNKNOWN 
+│                       │       ├ CweIDs           ─ [0]: CWE-122 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/0714b15940b245108e6
+│                       │       │                  │      e9d7aa2260dd849a26fa9 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.1.2132 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-5
+│                       │       │                         w93-4g67-mm43 
+│                       │       ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
+│                       │       ╰ LastModifiedDate: 2026-02-06T23:15:54.23Z 
+│                       ├ [106] ╭ VulnerabilityID : CVE-2026-25749 
+│                       │       ├ PkgID           : vim-common@9.1.1557-r1 
+│                       │       ├ PkgName         : vim-common 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
+│                       │       │                  │       stro=3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : f513f86f78716ce1 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.1.2132-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-25749 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:aa6ac7709d663be3f346cf059e191427d0c8bc9e8f64105870d9
+│                       │       │                   2e67f7209788 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.1. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.1.2132, a heap buffer overflow vulnerability
+│                       │       │                   exists in Vim's tag file resolution logic when processing
+│                       │       │                   the 'helpfile' option. The vulnerability is located in the
+│                       │       │                   get_tagfname() function in src/tag.c. When processing help
+│                       │       │                   file tags, Vim copies the user-controlled 'helpfile' option
+│                       │       │                    value into a fixed-size heap buffer of MAXPATHL + 1 bytes
+│                       │       │                   (typically 4097 bytes) using an unsafe STRCPY() operation
+│                       │       │                   without any bounds checking. This issue has been patched in
+│                       │       │                    version 9.1.2132. 
+│                       │       ├ Severity        : UNKNOWN 
+│                       │       ├ CweIDs           ─ [0]: CWE-122 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/0714b15940b245108e6
+│                       │       │                  │      e9d7aa2260dd849a26fa9 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.1.2132 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-5
+│                       │       │                         w93-4g67-mm43 
+│                       │       ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
+│                       │       ╰ LastModifiedDate: 2026-02-06T23:15:54.23Z 
+│                       ╰ [107] ╭ VulnerabilityID : CVE-2026-25749 
+│                               ├ PkgID           : xxd@9.1.1557-r1 
+│                               ├ PkgName         : xxd 
+│                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
+│                               │                  │       23.0_alpha20250612 
+│                               │                  ╰ UID : 67ee24b19424f9fd 
+│                               ├ InstalledVersion: 9.1.1557-r1 
+│                               ├ FixedVersion    : 9.1.2132-r0 
 │                               ├ Status          : fixed 
 │                               ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
 │                               │                  │         3501dd6062bd50a4b6afe 
 │                               │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
 │                               │                            7c7d38461b41e40aab9e7 
-│                               ├ SeveritySource  : nvd 
-│                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
+│                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-25749 
 │                               ├ DataSource       ╭ ID  : alpine 
 │                               │                  ├ Name: Alpine Secdb 
 │                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                               ├ Fingerprint     : sha256:ebf40b6fe7209d4849027d17cc680ee249138e80a108529cd0b7
-│                               │                   c9c1f8e97cd3 
-│                               ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
-│                               │                   filenames hid ... 
-│                               ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
-│                               │                   filenames hidden from a listing through the use of terminal
-│                               │                    escape sequences. 
-│                               ├ Severity        : LOW 
-│                               ├ CweIDs           ─ [0]: CWE-451 
-│                               ├ VendorSeverity   ╭ nvd   : 1 
-│                               │                  ╰ ubuntu: 2 
-│                               ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
-│                               │                        ╰ V3Score : 3.3 
-│                               ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
-│                               │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
-│                               │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
-│                               │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July
-│                               │                  │      /090806.html 
-│                               │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July
-│                               │                  │      /090814.html 
-│                               │                  ├ [5]: https://www.busybox.net 
-│                               │                  ├ [6]: https://www.busybox.net/downloads/ 
-│                               │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
-│                               │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/2
-│                               │                         3/1 
-│                               ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
-│                               ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
+│                               ├ Fingerprint     : sha256:e3558b4de33489a4e8873af2709a8e9aadd9c548b6a3bb7fbec3
+│                               │                   11509ff0b6e0 
+│                               ├ Title           : Vim is an open source, command line text editor. Prior to
+│                               │                   version 9.1. ... 
+│                               ├ Description     : Vim is an open source, command line text editor. Prior to
+│                               │                   version 9.1.2132, a heap buffer overflow vulnerability
+│                               │                   exists in Vim's tag file resolution logic when processing
+│                               │                   the 'helpfile' option. The vulnerability is located in the
+│                               │                   get_tagfname() function in src/tag.c. When processing help
+│                               │                   file tags, Vim copies the user-controlled 'helpfile' option
+│                               │                    value into a fixed-size heap buffer of MAXPATHL + 1 bytes
+│                               │                   (typically 4097 bytes) using an unsafe STRCPY() operation
+│                               │                   without any bounds checking. This issue has been patched in
+│                               │                    version 9.1.2132. 
+│                               ├ Severity        : UNKNOWN 
+│                               ├ CweIDs           ─ [0]: CWE-122 
+│                               ├ References       ╭ [0]: https://github.com/vim/vim/commit/0714b15940b245108e6
+│                               │                  │      e9d7aa2260dd849a26fa9 
+│                               │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.1.2132 
+│                               │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-5
+│                               │                         w93-4g67-mm43 
+│                               ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
+│                               ╰ LastModifiedDate: 2026-02-06T23:15:54.23Z 
 ├ [1] ╭ Target         : Java 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
@@ -25877,8 +26017,12 @@
 │                       │     │                  ├ photon     : 3 
 │                       │     │                  ├ redhat     : 3 
 │                       │     │                  ╰ ubuntu     : 2 
-│                       │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │     │                        ╰ V3Score : 7.5 
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
 │                       │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1239 
 │                       │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-66471 
 │                       │     │                  ├ [2] : https://bugzilla.redhat.com/2419455 
@@ -25952,6 +26096,7 @@
 │                             ├ Severity        : HIGH 
 │                             ├ CweIDs           ─ [0]: CWE-409 
 │                             ├ VendorSeverity   ╭ alma       : 3 
+│                             │                  ├ amazon     : 3 
 │                             │                  ├ azure      : 3 
 │                             │                  ├ cbl-mariner: 3 
 │                             │                  ├ ghsa       : 3 
@@ -29768,7 +29913,7 @@
 │                       │      │                   allowing an attacker to cause unbounded memory consumption. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
 │                       │      │                  ├ ghsa  : 2 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
@@ -29946,9 +30091,12 @@
 │                       │      │                   containing many unique query parameters can cause excessive
 │                       │      │                   memory consumption. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ azure  : 2 
-│                       │      │                  ├ bitnami: 3 
-│                       │      │                  ╰ redhat : 3 
+│                       │      ├ CweIDs           ─ [0]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
+│                       │      │                  ├ bitnami    : 3 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ╰ redhat     : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │      │                  │         │           N/A:H 
 │                       │      │                  │         ╰ V3Score : 7.5 
@@ -29964,7 +30112,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T18:47:34.52Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -29991,7 +30139,9 @@
 │                       │      │                   opened. This can lead to a denial of service when consuming
 │                       │      │                   a maliciously constructed ZIP archive. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ azure  : 2 
+│                       │      ├ CweIDs           ─ [0]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ azure  : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -30010,7 +30160,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2026-4342 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T19:16:16.39Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
 │                       ├ [16] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4155 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -30059,19 +30209,102 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-61729 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
 │                       │      │                  ├ [7] : https://go.dev/cl/725920 
 │                       │      │                  ├ [8] : https://go.dev/issue/76445 
 │                       │      │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBkP
 │                       │      │                  │       ddm4 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                       │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-61730 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : c8a49abd00c2b8a3 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.12, 1.25.6 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:000852a4f50e1d5018c3e73d31906df429510c158f60789ce3a46
+│                       │      │                   a8757023e0e 
+│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
+│                       │      │                   in records  ... 
+│                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
+│                       │      │                   in records that span encryption level boundaries (for
+│                       │      │                   instance the Client Hello and Encrypted Extensions
+│                       │      │                   messages), the subsequent messages may be processed before
+│                       │      │                   the encryption level changes. This can cause some minor
+│                       │      │                   information disclosure if a network-local attacker can
+│                       │      │                   inject messages during the handshake. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ╰ bitnami: 2 
+│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                            │           N/A:N 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
+│                       │      │                  ├ [1]: https://go.dev/issue/76443 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                       │      │                  │      eUc 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
+│                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-68121 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4337 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : c8a49abd00c2b8a3 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:4a880f059e9ac9340ab05b4a4d3bdb4f154eca8102dd728c02a54
+│                       │      │                   4c7c8719828 
+│                       │      ├ Title           : During session resumption in crypto/tls, if the underlying
+│                       │      │                   Config has  ... 
+│                       │      ├ Description     : During session resumption in crypto/tls, if the underlying
+│                       │      │                   Config has its ClientCAs or RootCAs fields mutated between
+│                       │      │                   the initial handshake and the resumed handshake, the resumed
+│                       │      │                    handshake may succeed when it should have failed. This may
+│                       │      │                   happen when a user calls Config.Clone and mutates the
+│                       │      │                   returned Config, or uses Config.GetConfigForClient. This can
+│                       │      │                    cause a client to resume a session with a server that it
+│                       │      │                   would not have resumed with during the initial handshake, or
+│                       │      │                    cause a server to resume a session with a client that it
+│                       │      │                   would not have resumed with during the initial handshake. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
+│                       │      ├ VendorSeverity   ─ amazon: 3 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/737700 
+│                       │      │                  ├ [1]: https://go.dev/issue/77217 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
+│                       │      │                  │      QFk 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+│                       │      ├ PublishedDate   : 2026-02-05T18:16:10.857Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T16:16:14.373Z 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30130,7 +30363,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30179,7 +30412,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30225,8 +30458,8 @@
 │                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4011 
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T13:26:08.45Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-58186 
+│                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4012 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30273,7 +30506,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58186 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30322,7 +30555,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30371,7 +30604,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [23] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30417,7 +30650,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30465,7 +30698,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30512,7 +30745,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30558,132 +30791,53 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2025-12-09T18:15:56.347Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2025-61727 
-│                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : c8a49abd00c2b8a3 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.11, 1.25.5 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:35a05f0606f9b7825b6c9641f3f4a953dd940168cc23f153dbbd1
-│                       │      │                   e4487290718 
-│                       │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
-│                       │      │                   restrict wildcard SANs 
-│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
-│                       │      │                    not restrict the usage of wildcard SANs in the leaf
-│                       │      │                   certificate. For example a constraint that excludes the
-│                       │      │                   subdomain test.example.com does not prevent a leaf
-│                       │      │                   certificate from claiming the SAN *.example.com. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-295 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ├ bitnami: 2 
-│                       │      │                  ╰ redhat : 2 
-│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                  │         │           L/A:N 
-│                       │      │                  │         ╰ V3Score : 6.5 
-│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           L/A:N 
-│                       │      │                            ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
-│                       │      │                  ├ [1]: https://go.dev/cl/723900 
-│                       │      │                  ├ [2]: https://go.dev/issue/76442 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │      │                  │      dm4 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
-│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
-│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
-│                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2025-61730 
-│                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : c8a49abd00c2b8a3 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.12, 1.25.6 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:000852a4f50e1d5018c3e73d31906df429510c158f60789ce3a46
-│                       │      │                   a8757023e0e 
-│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records  ... 
-│                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records that span encryption level boundaries (for
-│                       │      │                   instance the Client Hello and Encrypted Extensions
-│                       │      │                   messages), the subsequent messages may be processed before
-│                       │      │                   the encryption level changes. This can cause some minor
-│                       │      │                   information disclosure if a network-local attacker can
-│                       │      │                   inject messages during the handshake. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           N/A:N 
-│                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-│                       │      │                  ├ [1]: https://go.dev/issue/76443 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
-│                       │      │                  │      eUc 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
-│                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ╰ [29] ╭ VulnerabilityID : CVE-2025-68121 
-│                              ├ VendorIDs        ─ [0]: GO-2026-4337 
+│                       ╰ [29] ╭ VulnerabilityID : CVE-2025-61727 
+│                              ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
 │                              │                  ╰ UID : c8a49abd00c2b8a3 
 │                              ├ InstalledVersion: v1.24.4 
-│                              ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+│                              ├ FixedVersion    : 1.24.11, 1.25.5 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
 │                              │                  │         501dd6062bd50a4b6afe 
 │                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                              │                            c7d38461b41e40aab9e7 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
 │                              ├ DataSource       ╭ ID  : govulndb 
 │                              │                  ├ Name: The Go Vulnerability Database 
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Fingerprint     : sha256:4a880f059e9ac9340ab05b4a4d3bdb4f154eca8102dd728c02a54
-│                              │                   4c7c8719828 
-│                              ├ Title           : [crypto/tls: Config.Clone copies automatically generated
-│                              │                   session ticket keys, session resumption does not account for
-│                              │                    the expiration of full certificate chain] 
-│                              ├ Description     : During session resumption in crypto/tls, if the underlying
-│                              │                   Config has its ClientCAs or RootCAs fields mutated between
-│                              │                   the initial handshake and the resumed handshake, the resumed
-│                              │                    handshake may succeed when it should have failed. This may
-│                              │                   happen when a user calls Config.Clone and mutates the
-│                              │                   returned Config, or uses Config.GetConfigForClient. This can
-│                              │                    cause a client to resume a session with a server that it
-│                              │                   would not have resumed with during the initial handshake, or
-│                              │                    cause a server to resume a session with a client that it
-│                              │                   would not have resumed with during the initial handshake. 
-│                              ├ Severity        : UNKNOWN 
-│                              ╰ References       ╭ [0]: https://go.dev/cl/737700 
-│                                                 ├ [1]: https://go.dev/issue/77217 
-│                                                 ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
-│                                                 │      QFk 
-│                                                 ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+│                              ├ Fingerprint     : sha256:35a05f0606f9b7825b6c9641f3f4a953dd940168cc23f153dbbd1
+│                              │                   e4487290718 
+│                              ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                              │                   restrict wildcard SANs 
+│                              ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                              │                    not restrict the usage of wildcard SANs in the leaf
+│                              │                   certificate. For example a constraint that excludes the
+│                              │                   subdomain test.example.com does not prevent a leaf
+│                              │                   certificate from claiming the SAN *.example.com. 
+│                              ├ Severity        : MEDIUM 
+│                              ├ CweIDs           ─ [0]: CWE-295 
+│                              ├ VendorSeverity   ╭ amazon : 3 
+│                              │                  ├ bitnami: 2 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                  │         │           L/A:N 
+│                              │                  │         ╰ V3Score : 6.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           L/A:N 
+│                              │                            ╰ V3Score : 6.5 
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                              │                  ├ [1]: https://go.dev/cl/723900 
+│                              │                  ├ [2]: https://go.dev/issue/76442 
+│                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              │                  │      dm4 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
+│                              ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                              ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
 ├ [4] ╭ Target         : usr/bin/syft 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -34079,7 +34233,7 @@
 │                       │      │                   allowing an attacker to cause unbounded memory consumption. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
 │                       │      │                  ├ ghsa  : 2 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
@@ -34257,9 +34411,12 @@
 │                       │      │                   containing many unique query parameters can cause excessive
 │                       │      │                   memory consumption. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ azure  : 2 
-│                       │      │                  ├ bitnami: 3 
-│                       │      │                  ╰ redhat : 3 
+│                       │      ├ CweIDs           ─ [0]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
+│                       │      │                  ├ bitnami    : 3 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ╰ redhat     : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │      │                  │         │           N/A:H 
 │                       │      │                  │         ╰ V3Score : 7.5 
@@ -34275,7 +34432,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T18:47:34.52Z 
 │                       ├ [14] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -34302,7 +34459,9 @@
 │                       │      │                   opened. This can lead to a denial of service when consuming
 │                       │      │                   a maliciously constructed ZIP archive. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ azure  : 2 
+│                       │      ├ CweIDs           ─ [0]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ azure  : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -34321,7 +34480,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2026-4342 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T19:16:16.39Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4155 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -34370,19 +34529,102 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-61729 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
 │                       │      │                  ├ [7] : https://go.dev/cl/725920 
 │                       │      │                  ├ [8] : https://go.dev/issue/76445 
 │                       │      │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBkP
 │                       │      │                  │       ddm4 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                       │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-61730 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 4bef6a299358baaf 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.12, 1.25.6 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:eb0d91bc0ba311efd9b0e910722a4de32e2f8b93eb8aa9a8dd67e
+│                       │      │                   06fe4e7b78e 
+│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
+│                       │      │                   in records  ... 
+│                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
+│                       │      │                   in records that span encryption level boundaries (for
+│                       │      │                   instance the Client Hello and Encrypted Extensions
+│                       │      │                   messages), the subsequent messages may be processed before
+│                       │      │                   the encryption level changes. This can cause some minor
+│                       │      │                   information disclosure if a network-local attacker can
+│                       │      │                   inject messages during the handshake. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ╰ bitnami: 2 
+│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                            │           N/A:N 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
+│                       │      │                  ├ [1]: https://go.dev/issue/76443 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                       │      │                  │      eUc 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
+│                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-68121 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4337 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 4bef6a299358baaf 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:86a263c9c8262602eb8890b246466575ea49a8e17287e7ff39487
+│                       │      │                   e87d5b08a71 
+│                       │      ├ Title           : During session resumption in crypto/tls, if the underlying
+│                       │      │                   Config has  ... 
+│                       │      ├ Description     : During session resumption in crypto/tls, if the underlying
+│                       │      │                   Config has its ClientCAs or RootCAs fields mutated between
+│                       │      │                   the initial handshake and the resumed handshake, the resumed
+│                       │      │                    handshake may succeed when it should have failed. This may
+│                       │      │                   happen when a user calls Config.Clone and mutates the
+│                       │      │                   returned Config, or uses Config.GetConfigForClient. This can
+│                       │      │                    cause a client to resume a session with a server that it
+│                       │      │                   would not have resumed with during the initial handshake, or
+│                       │      │                    cause a server to resume a session with a client that it
+│                       │      │                   would not have resumed with during the initial handshake. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
+│                       │      ├ VendorSeverity   ─ amazon: 3 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/737700 
+│                       │      │                  ├ [1]: https://go.dev/issue/77217 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
+│                       │      │                  │      QFk 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+│                       │      ├ PublishedDate   : 2026-02-05T18:16:10.857Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T16:16:14.373Z 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34441,7 +34683,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34490,7 +34732,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34536,8 +34778,8 @@
 │                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4011 
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T13:26:08.45Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-58186 
+│                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4012 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34584,7 +34826,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58186 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34633,7 +34875,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34682,7 +34924,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34728,7 +34970,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [23] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34776,7 +35018,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34823,7 +35065,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34869,132 +35111,53 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2025-12-09T18:15:56.347Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2025-61727 
-│                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 4bef6a299358baaf 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.11, 1.25.5 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:bee8b7b1dcd3769dfcbd6e16038badecd684744bcadcba44ffdea
-│                       │      │                   07044e975cc 
-│                       │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
-│                       │      │                   restrict wildcard SANs 
-│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
-│                       │      │                    not restrict the usage of wildcard SANs in the leaf
-│                       │      │                   certificate. For example a constraint that excludes the
-│                       │      │                   subdomain test.example.com does not prevent a leaf
-│                       │      │                   certificate from claiming the SAN *.example.com. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-295 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ├ bitnami: 2 
-│                       │      │                  ╰ redhat : 2 
-│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                  │         │           L/A:N 
-│                       │      │                  │         ╰ V3Score : 6.5 
-│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           L/A:N 
-│                       │      │                            ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
-│                       │      │                  ├ [1]: https://go.dev/cl/723900 
-│                       │      │                  ├ [2]: https://go.dev/issue/76442 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │      │                  │      dm4 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
-│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
-│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
-│                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2025-61730 
-│                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 4bef6a299358baaf 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.12, 1.25.6 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:eb0d91bc0ba311efd9b0e910722a4de32e2f8b93eb8aa9a8dd67e
-│                       │      │                   06fe4e7b78e 
-│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records  ... 
-│                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records that span encryption level boundaries (for
-│                       │      │                   instance the Client Hello and Encrypted Extensions
-│                       │      │                   messages), the subsequent messages may be processed before
-│                       │      │                   the encryption level changes. This can cause some minor
-│                       │      │                   information disclosure if a network-local attacker can
-│                       │      │                   inject messages during the handshake. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           N/A:N 
-│                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-│                       │      │                  ├ [1]: https://go.dev/issue/76443 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
-│                       │      │                  │      eUc 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
-│                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ╰ [28] ╭ VulnerabilityID : CVE-2025-68121 
-│                              ├ VendorIDs        ─ [0]: GO-2026-4337 
+│                       ╰ [28] ╭ VulnerabilityID : CVE-2025-61727 
+│                              ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
 │                              │                  ╰ UID : 4bef6a299358baaf 
 │                              ├ InstalledVersion: v1.24.4 
-│                              ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+│                              ├ FixedVersion    : 1.24.11, 1.25.5 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
 │                              │                  │         501dd6062bd50a4b6afe 
 │                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                              │                            c7d38461b41e40aab9e7 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
 │                              ├ DataSource       ╭ ID  : govulndb 
 │                              │                  ├ Name: The Go Vulnerability Database 
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Fingerprint     : sha256:86a263c9c8262602eb8890b246466575ea49a8e17287e7ff39487
-│                              │                   e87d5b08a71 
-│                              ├ Title           : [crypto/tls: Config.Clone copies automatically generated
-│                              │                   session ticket keys, session resumption does not account for
-│                              │                    the expiration of full certificate chain] 
-│                              ├ Description     : During session resumption in crypto/tls, if the underlying
-│                              │                   Config has its ClientCAs or RootCAs fields mutated between
-│                              │                   the initial handshake and the resumed handshake, the resumed
-│                              │                    handshake may succeed when it should have failed. This may
-│                              │                   happen when a user calls Config.Clone and mutates the
-│                              │                   returned Config, or uses Config.GetConfigForClient. This can
-│                              │                    cause a client to resume a session with a server that it
-│                              │                   would not have resumed with during the initial handshake, or
-│                              │                    cause a server to resume a session with a client that it
-│                              │                   would not have resumed with during the initial handshake. 
-│                              ├ Severity        : UNKNOWN 
-│                              ╰ References       ╭ [0]: https://go.dev/cl/737700 
-│                                                 ├ [1]: https://go.dev/issue/77217 
-│                                                 ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
-│                                                 │      QFk 
-│                                                 ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+│                              ├ Fingerprint     : sha256:bee8b7b1dcd3769dfcbd6e16038badecd684744bcadcba44ffdea
+│                              │                   07044e975cc 
+│                              ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                              │                   restrict wildcard SANs 
+│                              ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                              │                    not restrict the usage of wildcard SANs in the leaf
+│                              │                   certificate. For example a constraint that excludes the
+│                              │                   subdomain test.example.com does not prevent a leaf
+│                              │                   certificate from claiming the SAN *.example.com. 
+│                              ├ Severity        : MEDIUM 
+│                              ├ CweIDs           ─ [0]: CWE-295 
+│                              ├ VendorSeverity   ╭ amazon : 3 
+│                              │                  ├ bitnami: 2 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                  │         │           L/A:N 
+│                              │                  │         ╰ V3Score : 6.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           L/A:N 
+│                              │                            ╰ V3Score : 6.5 
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                              │                  ├ [1]: https://go.dev/cl/723900 
+│                              │                  ├ [2]: https://go.dev/issue/76442 
+│                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              │                  │      dm4 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
+│                              ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                              ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
 ├ [5] ╭ Target         : usr/bin/trivy 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -39984,13 +40147,18 @@
 │                       │      │                   3.0.4. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-345 
-│                       │      ├ VendorSeverity   ╭ bitnami: 2 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ bitnami: 2 
 │                       │      │                  ├ ghsa   : 2 
+│                       │      │                  ├ nvd    : 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │      │                  │         │           H/A:N 
 │                       │      │                  │         ╰ V3Score : 5.5 
 │                       │      │                  ├ ghsa    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
+│                       │      │                  │         │           H/A:N 
+│                       │      │                  │         ╰ V3Score : 5.5 
+│                       │      │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
 │                       │      │                  │         │           H/A:N 
 │                       │      │                  │         ╰ V3Score : 5.5 
 │                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:
@@ -40006,7 +40174,7 @@
 │                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-22703 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-22703 
 │                       │      ├ PublishedDate   : 2026-01-10T07:16:03.03Z 
-│                       │      ╰ LastModifiedDate: 2026-01-13T14:03:18.99Z 
+│                       │      ╰ LastModifiedDate: 2026-02-05T20:59:07.633Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2026-23831 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-273p-m2cw-6833 
 │                       │      ├ PkgID           : github.com/sigstore/rekor@v1.3.10 
@@ -40377,7 +40545,7 @@
 │                       │      │                   allowing an attacker to cause unbounded memory consumption. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
 │                       │      │                  ├ ghsa  : 2 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
@@ -40728,9 +40896,12 @@
 │                       │      │                   containing many unique query parameters can cause excessive
 │                       │      │                   memory consumption. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ azure  : 2 
-│                       │      │                  ├ bitnami: 3 
-│                       │      │                  ╰ redhat : 3 
+│                       │      ├ CweIDs           ─ [0]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ azure      : 2 
+│                       │      │                  ├ bitnami    : 3 
+│                       │      │                  ├ cbl-mariner: 2 
+│                       │      │                  ╰ redhat     : 3 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │      │                  │         │           N/A:H 
 │                       │      │                  │         ╰ V3Score : 7.5 
@@ -40746,7 +40917,7 @@
 │                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T18:47:34.52Z 
 │                       ├ [22] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -40773,7 +40944,9 @@
 │                       │      │                   opened. This can lead to a denial of service when consuming
 │                       │      │                   a maliciously constructed ZIP archive. 
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ╭ azure  : 2 
+│                       │      ├ CweIDs           ─ [0]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ├ azure  : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -40792,7 +40965,7 @@
 │                       │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2026-4342 
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T19:16:16.39Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
 │                       ├ [23] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4155 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -40841,19 +41014,102 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-61729 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
 │                       │      │                  ├ [7] : https://go.dev/cl/725920 
 │                       │      │                  ├ [8] : https://go.dev/issue/76445 
 │                       │      │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBkP
 │                       │      │                  │       ddm4 
 │                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
 │                       │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2025-61730 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f86edb9664e32d65 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.12, 1.25.6 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:8558fa64b1674ddd498a2e24d867201edcd79c7399d1fd1ddc304
+│                       │      │                   cd918158f86 
+│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
+│                       │      │                   in records  ... 
+│                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
+│                       │      │                   in records that span encryption level boundaries (for
+│                       │      │                   instance the Client Hello and Encrypted Extensions
+│                       │      │                   messages), the subsequent messages may be processed before
+│                       │      │                   the encryption level changes. This can cause some minor
+│                       │      │                   information disclosure if a network-local attacker can
+│                       │      │                   inject messages during the handshake. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      │                  ╰ bitnami: 2 
+│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                            │           N/A:N 
+│                       │      │                            ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
+│                       │      │                  ├ [1]: https://go.dev/issue/76443 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                       │      │                  │      eUc 
+│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
+│                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2025-68121 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4337 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f86edb9664e32d65 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:098931ca7e51b658d560e65fe2d7cb717d7bf00500977b5dcb8d5
+│                       │      │                   fdd1ccfe106 
+│                       │      ├ Title           : During session resumption in crypto/tls, if the underlying
+│                       │      │                   Config has  ... 
+│                       │      ├ Description     : During session resumption in crypto/tls, if the underlying
+│                       │      │                   Config has its ClientCAs or RootCAs fields mutated between
+│                       │      │                   the initial handshake and the resumed handshake, the resumed
+│                       │      │                    handshake may succeed when it should have failed. This may
+│                       │      │                   happen when a user calls Config.Clone and mutates the
+│                       │      │                   returned Config, or uses Config.GetConfigForClient. This can
+│                       │      │                    cause a client to resume a session with a server that it
+│                       │      │                   would not have resumed with during the initial handshake, or
+│                       │      │                    cause a server to resume a session with a client that it
+│                       │      │                   would not have resumed with during the initial handshake. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
+│                       │      ├ VendorSeverity   ─ amazon: 3 
+│                       │      ├ References       ╭ [0]: https://go.dev/cl/737700 
+│                       │      │                  ├ [1]: https://go.dev/issue/77217 
+│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
+│                       │      │                  │      QFk 
+│                       │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+│                       │      ├ PublishedDate   : 2026-02-05T18:16:10.857Z 
+│                       │      ╰ LastModifiedDate: 2026-02-06T16:16:14.373Z 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -40912,7 +41168,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -40961,7 +41217,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41007,8 +41263,8 @@
 │                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4011 
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-│                       │      ╰ LastModifiedDate: 2026-01-29T13:26:08.45Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2025-58186 
+│                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4012 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41055,7 +41311,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58186 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41104,7 +41360,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41153,7 +41409,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41199,7 +41455,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41247,7 +41503,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41294,7 +41550,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -41340,132 +41596,53 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2025-12-09T18:15:56.347Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2025-61727 
-│                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f86edb9664e32d65 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.11, 1.25.5 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:99cd7aa1ac4581e26607a7c8af480993caeb986a17d995eab6faf
-│                       │      │                   a09d2d63150 
-│                       │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
-│                       │      │                   restrict wildcard SANs 
-│                       │      ├ Description     : An excluded subdomain constraint in a certificate chain does
-│                       │      │                    not restrict the usage of wildcard SANs in the leaf
-│                       │      │                   certificate. For example a constraint that excludes the
-│                       │      │                   subdomain test.example.com does not prevent a leaf
-│                       │      │                   certificate from claiming the SAN *.example.com. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-295 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
-│                       │      │                  ├ bitnami: 2 
-│                       │      │                  ╰ redhat : 2 
-│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                  │         │           L/A:N 
-│                       │      │                  │         ╰ V3Score : 6.5 
-│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           L/A:N 
-│                       │      │                            ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
-│                       │      │                  ├ [1]: https://go.dev/cl/723900 
-│                       │      │                  ├ [2]: https://go.dev/issue/76442 
-│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-│                       │      │                  │      dm4 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
-│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
-│                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
-│                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [35] ╭ VulnerabilityID : CVE-2025-61730 
-│                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f86edb9664e32d65 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.24.12, 1.25.6 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:8558fa64b1674ddd498a2e24d867201edcd79c7399d1fd1ddc304
-│                       │      │                   cd918158f86 
-│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records  ... 
-│                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records that span encryption level boundaries (for
-│                       │      │                   instance the Client Hello and Encrypted Extensions
-│                       │      │                   messages), the subsequent messages may be processed before
-│                       │      │                   the encryption level changes. This can cause some minor
-│                       │      │                   information disclosure if a network-local attacker can
-│                       │      │                   inject messages during the handshake. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ─ bitnami: 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │      │                            │           N/A:N 
-│                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-│                       │      │                  ├ [1]: https://go.dev/issue/76443 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
-│                       │      │                  │      eUc 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
-│                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-│                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ╰ [36] ╭ VulnerabilityID : CVE-2025-68121 
-│                              ├ VendorIDs        ─ [0]: GO-2026-4337 
+│                       ╰ [36] ╭ VulnerabilityID : CVE-2025-61727 
+│                              ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
 │                              ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
 │                              │                  ╰ UID : f86edb9664e32d65 
 │                              ├ InstalledVersion: v1.24.4 
-│                              ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+│                              ├ FixedVersion    : 1.24.11, 1.25.5 
 │                              ├ Status          : fixed 
 │                              ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
 │                              │                  │         501dd6062bd50a4b6afe 
 │                              │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
 │                              │                            c7d38461b41e40aab9e7 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
 │                              ├ DataSource       ╭ ID  : govulndb 
 │                              │                  ├ Name: The Go Vulnerability Database 
 │                              │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                              ├ Fingerprint     : sha256:098931ca7e51b658d560e65fe2d7cb717d7bf00500977b5dcb8d5
-│                              │                   fdd1ccfe106 
-│                              ├ Title           : [crypto/tls: Config.Clone copies automatically generated
-│                              │                   session ticket keys, session resumption does not account for
-│                              │                    the expiration of full certificate chain] 
-│                              ├ Description     : During session resumption in crypto/tls, if the underlying
-│                              │                   Config has its ClientCAs or RootCAs fields mutated between
-│                              │                   the initial handshake and the resumed handshake, the resumed
-│                              │                    handshake may succeed when it should have failed. This may
-│                              │                   happen when a user calls Config.Clone and mutates the
-│                              │                   returned Config, or uses Config.GetConfigForClient. This can
-│                              │                    cause a client to resume a session with a server that it
-│                              │                   would not have resumed with during the initial handshake, or
-│                              │                    cause a server to resume a session with a client that it
-│                              │                   would not have resumed with during the initial handshake. 
-│                              ├ Severity        : UNKNOWN 
-│                              ╰ References       ╭ [0]: https://go.dev/cl/737700 
-│                                                 ├ [1]: https://go.dev/issue/77217 
-│                                                 ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
-│                                                 │      QFk 
-│                                                 ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+│                              ├ Fingerprint     : sha256:99cd7aa1ac4581e26607a7c8af480993caeb986a17d995eab6faf
+│                              │                   a09d2d63150 
+│                              ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+│                              │                   restrict wildcard SANs 
+│                              ├ Description     : An excluded subdomain constraint in a certificate chain does
+│                              │                    not restrict the usage of wildcard SANs in the leaf
+│                              │                   certificate. For example a constraint that excludes the
+│                              │                   subdomain test.example.com does not prevent a leaf
+│                              │                   certificate from claiming the SAN *.example.com. 
+│                              ├ Severity        : MEDIUM 
+│                              ├ CweIDs           ─ [0]: CWE-295 
+│                              ├ VendorSeverity   ╭ amazon : 3 
+│                              │                  ├ bitnami: 2 
+│                              │                  ╰ redhat : 2 
+│                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                  │         │           L/A:N 
+│                              │                  │         ╰ V3Score : 6.5 
+│                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                              │                            │           L/A:N 
+│                              │                            ╰ V3Score : 6.5 
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+│                              │                  ├ [1]: https://go.dev/cl/723900 
+│                              │                  ├ [2]: https://go.dev/issue/76442 
+│                              │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+│                              │                  │      dm4 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+│                              │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+│                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
+│                              ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+│                              ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
 ╰ [6] ╭ Target         : usr/bin/trivy_cve_query 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -41652,9 +41829,12 @@
                         │      │                   containing many unique query parameters can cause excessive
                         │      │                   memory consumption. 
                         │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ╭ azure  : 2 
-                        │      │                  ├ bitnami: 3 
-                        │      │                  ╰ redhat : 3 
+                        │      ├ CweIDs           ─ [0]: CWE-770 
+                        │      ├ VendorSeverity   ╭ amazon     : 3 
+                        │      │                  ├ azure      : 2 
+                        │      │                  ├ bitnami    : 3 
+                        │      │                  ├ cbl-mariner: 2 
+                        │      │                  ╰ redhat     : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
                         │      │                  │         ╰ V3Score : 7.5 
@@ -41670,7 +41850,7 @@
                         │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4341 
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
                         │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T19:16:16.243Z 
+                        │      ╰ LastModifiedDate: 2026-02-06T18:47:34.52Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2025-61728 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4342 
                         │      ├ PkgID           : stdlib@v1.24.5 
@@ -41697,7 +41877,9 @@
                         │      │                   opened. This can lead to a denial of service when consuming
                         │      │                   a maliciously constructed ZIP archive. 
                         │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ╭ azure  : 2 
+                        │      ├ CweIDs           ─ [0]: CWE-770 
+                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      │                  ├ azure  : 2 
                         │      │                  ├ bitnami: 2 
                         │      │                  ╰ redhat : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -41716,7 +41898,7 @@
                         │      │                  ├ [6]: https://pkg.go.dev/vuln/GO-2026-4342 
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
                         │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T19:16:16.39Z 
+                        │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2025-61729 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4155 
                         │      ├ PkgID           : stdlib@v1.24.5 
@@ -41765,19 +41947,102 @@
                         │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       25-61729 
                         │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0923.html 
-                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0923 
+                        │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:1908 
                         │      │                  ├ [7] : https://go.dev/cl/725920 
                         │      │                  ├ [8] : https://go.dev/issue/76445 
                         │      │                  ├ [9] : https://groups.google.com/g/golang-announce/c/8FJoBkP
                         │      │                  │       ddm4 
                         │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2025-61729.html 
-                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-1715.html 
+                        │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-2124.html 
                         │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-61729 
                         │      │                  ├ [13]: https://pkg.go.dev/vuln/GO-2025-4155 
                         │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
                         │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
                         │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2025-47906 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2025-61730 
+                        │      ├ VendorIDs        ─ [0]: GO-2026-4340 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : c395cea322d363d5 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.12, 1.25.6 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:3bf492d551d1d833bf74f1def85aa3eae09ae0ef6bf05e7928f2c
+                        │      │                   baa0e6a1cb1 
+                        │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
+                        │      │                   in records  ... 
+                        │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
+                        │      │                   in records that span encryption level boundaries (for
+                        │      │                   instance the Client Hello and Encrypted Extensions
+                        │      │                   messages), the subsequent messages may be processed before
+                        │      │                   the encryption level changes. This can cause some minor
+                        │      │                   information disclosure if a network-local attacker can
+                        │      │                   inject messages during the handshake. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      │                  ╰ bitnami: 2 
+                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                        │      │                            │           N/A:N 
+                        │      │                            ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: https://go.dev/cl/724120 
+                        │      │                  ├ [1]: https://go.dev/issue/76443 
+                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+                        │      │                  │      eUc 
+                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+                        │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+                        │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
+                        │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2025-68121 
+                        │      ├ VendorIDs        ─ [0]: GO-2026-4337 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : c395cea322d363d5 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:d99a4858d7091fe96724c7980477a9c0d00683113849b440632af
+                        │      │                   d410336d4f7 
+                        │      ├ Title           : During session resumption in crypto/tls, if the underlying
+                        │      │                   Config has  ... 
+                        │      ├ Description     : During session resumption in crypto/tls, if the underlying
+                        │      │                   Config has its ClientCAs or RootCAs fields mutated between
+                        │      │                   the initial handshake and the resumed handshake, the resumed
+                        │      │                    handshake may succeed when it should have failed. This may
+                        │      │                   happen when a user calls Config.Clone and mutates the
+                        │      │                   returned Config, or uses Config.GetConfigForClient. This can
+                        │      │                    cause a client to resume a session with a server that it
+                        │      │                   would not have resumed with during the initial handshake, or
+                        │      │                    cause a server to resume a session with a client that it
+                        │      │                   would not have resumed with during the initial handshake. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-295 
+                        │      ├ VendorSeverity   ─ amazon: 3 
+                        │      ├ References       ╭ [0]: https://go.dev/cl/737700 
+                        │      │                  ├ [1]: https://go.dev/issue/77217 
+                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
+                        │      │                  │      QFk 
+                        │      │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+                        │      ├ PublishedDate   : 2026-02-05T18:16:10.857Z 
+                        │      ╰ LastModifiedDate: 2026-02-06T16:16:14.373Z 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2025-47906 
                         │      ├ VendorIDs        ─ [0]: GO-2025-3956 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41836,7 +42101,7 @@
                         │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
                         │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
                         │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2025-47912 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2025-47912 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4010 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41885,7 +42150,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
                         │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
                         │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2025-58185 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2025-58185 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4011 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41931,8 +42196,8 @@
                         │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2025-4011 
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T13:26:08.45Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2025-58186 
+                        │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
+                        ├ [10] ╭ VulnerabilityID : CVE-2025-58186 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4012 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41979,7 +42244,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58186 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
                         │      ╰ LastModifiedDate: 2025-11-04T22:16:33.45Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2025-58187 
+                        ├ [11] ╭ VulnerabilityID : CVE-2025-58187 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4007 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -42028,7 +42293,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
                         │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-                        ├ [10] ╭ VulnerabilityID : CVE-2025-58188 
+                        ├ [12] ╭ VulnerabilityID : CVE-2025-58188 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4013 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -42077,7 +42342,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-                        ├ [11] ╭ VulnerabilityID : CVE-2025-58189 
+                        ├ [13] ╭ VulnerabilityID : CVE-2025-58189 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4008 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -42123,7 +42388,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-                        ├ [12] ╭ VulnerabilityID : CVE-2025-61723 
+                        ├ [14] ╭ VulnerabilityID : CVE-2025-61723 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4009 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -42171,7 +42436,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-                        ├ [13] ╭ VulnerabilityID : CVE-2025-61724 
+                        ├ [15] ╭ VulnerabilityID : CVE-2025-61724 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4015 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -42218,7 +42483,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
                         │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-                        ├ [14] ╭ VulnerabilityID : CVE-2025-61725 
+                        ├ [16] ╭ VulnerabilityID : CVE-2025-61725 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4006 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -42264,130 +42529,51 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
                         │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
                         │      ╰ LastModifiedDate: 2025-12-09T18:15:56.347Z 
-                        ├ [15] ╭ VulnerabilityID : CVE-2025-61727 
-                        │      ├ VendorIDs        ─ [0]: GO-2025-4175 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : c395cea322d363d5 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.24.11, 1.25.5 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:015455c3c71b8d66e3ce4779b9dcec847398d6dc01cdb7bfe527d
-                        │      │                   044aa6f93ec 
-                        │      ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
-                        │      │                   restrict wildcard SANs 
-                        │      ├ Description     : An excluded subdomain constraint in a certificate chain does
-                        │      │                    not restrict the usage of wildcard SANs in the leaf
-                        │      │                   certificate. For example a constraint that excludes the
-                        │      │                   subdomain test.example.com does not prevent a leaf
-                        │      │                   certificate from claiming the SAN *.example.com. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-295 
-                        │      ├ VendorSeverity   ╭ amazon : 3 
-                        │      │                  ├ bitnami: 2 
-                        │      │                  ╰ redhat : 2 
-                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-                        │      │                  │         │           L/A:N 
-                        │      │                  │         ╰ V3Score : 6.5 
-                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-                        │      │                            │           L/A:N 
-                        │      │                            ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
-                        │      │                  ├ [1]: https://go.dev/cl/723900 
-                        │      │                  ├ [2]: https://go.dev/issue/76442 
-                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
-                        │      │                  │      dm4 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
-                        │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
-                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
-                        │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
-                        │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-                        ├ [16] ╭ VulnerabilityID : CVE-2025-61730 
-                        │      ├ VendorIDs        ─ [0]: GO-2026-4340 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : c395cea322d363d5 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.24.12, 1.25.6 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61730 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:3bf492d551d1d833bf74f1def85aa3eae09ae0ef6bf05e7928f2c
-                        │      │                   baa0e6a1cb1 
-                        │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-                        │      │                   in records  ... 
-                        │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
-                        │      │                   in records that span encryption level boundaries (for
-                        │      │                   instance the Client Hello and Encrypted Extensions
-                        │      │                   messages), the subsequent messages may be processed before
-                        │      │                   the encryption level changes. This can cause some minor
-                        │      │                   information disclosure if a network-local attacker can
-                        │      │                   inject messages during the handshake. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ VendorSeverity   ─ bitnami: 2 
-                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-                        │      │                            │           N/A:N 
-                        │      │                            ╰ V3Score : 5.3 
-                        │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-                        │      │                  ├ [1]: https://go.dev/issue/76443 
-                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
-                        │      │                  │      eUc 
-                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-                        │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
-                        │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
-                        │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-                        ╰ [17] ╭ VulnerabilityID : CVE-2025-68121 
-                               ├ VendorIDs        ─ [0]: GO-2026-4337 
+                        ╰ [17] ╭ VulnerabilityID : CVE-2025-61727 
+                               ├ VendorIDs        ─ [0]: GO-2025-4175 
                                ├ PkgID           : stdlib@v1.24.5 
                                ├ PkgName         : stdlib 
                                ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
                                │                  ╰ UID : c395cea322d363d5 
                                ├ InstalledVersion: v1.24.5 
-                               ├ FixedVersion    : 1.24.13, 1.25.7, 1.26.0-rc.3 
+                               ├ FixedVersion    : 1.24.11, 1.25.5 
                                ├ Status          : fixed 
                                ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
                                │                  │         501dd6062bd50a4b6afe 
                                │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
                                │                            c7d38461b41e40aab9e7 
-                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-68121 
+                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-61727 
                                ├ DataSource       ╭ ID  : govulndb 
                                │                  ├ Name: The Go Vulnerability Database 
                                │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                               ├ Fingerprint     : sha256:d99a4858d7091fe96724c7980477a9c0d00683113849b440632af
-                               │                   d410336d4f7 
-                               ├ Title           : [crypto/tls: Config.Clone copies automatically generated
-                               │                   session ticket keys, session resumption does not account for
-                               │                    the expiration of full certificate chain] 
-                               ├ Description     : During session resumption in crypto/tls, if the underlying
-                               │                   Config has its ClientCAs or RootCAs fields mutated between
-                               │                   the initial handshake and the resumed handshake, the resumed
-                               │                    handshake may succeed when it should have failed. This may
-                               │                   happen when a user calls Config.Clone and mutates the
-                               │                   returned Config, or uses Config.GetConfigForClient. This can
-                               │                    cause a client to resume a session with a server that it
-                               │                   would not have resumed with during the initial handshake, or
-                               │                    cause a server to resume a session with a client that it
-                               │                   would not have resumed with during the initial handshake. 
-                               ├ Severity        : UNKNOWN 
-                               ╰ References       ╭ [0]: https://go.dev/cl/737700 
-                                                  ├ [1]: https://go.dev/issue/77217 
-                                                  ├ [2]: https://groups.google.com/g/golang-announce/c/K09ubi9F
-                                                  │      QFk 
-                                                  ╰ [3]: https://pkg.go.dev/vuln/GO-2026-4337 
+                               ├ Fingerprint     : sha256:015455c3c71b8d66e3ce4779b9dcec847398d6dc01cdb7bfe527d
+                               │                   044aa6f93ec 
+                               ├ Title           : golang: crypto/x509: excluded subdomain constraint does not
+                               │                   restrict wildcard SANs 
+                               ├ Description     : An excluded subdomain constraint in a certificate chain does
+                               │                    not restrict the usage of wildcard SANs in the leaf
+                               │                   certificate. For example a constraint that excludes the
+                               │                   subdomain test.example.com does not prevent a leaf
+                               │                   certificate from claiming the SAN *.example.com. 
+                               ├ Severity        : MEDIUM 
+                               ├ CweIDs           ─ [0]: CWE-295 
+                               ├ VendorSeverity   ╭ amazon : 3 
+                               │                  ├ bitnami: 2 
+                               │                  ╰ redhat : 2 
+                               ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                               │                  │         │           L/A:N 
+                               │                  │         ╰ V3Score : 6.5 
+                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                               │                            │           L/A:N 
+                               │                            ╰ V3Score : 6.5 
+                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61727 
+                               │                  ├ [1]: https://go.dev/cl/723900 
+                               │                  ├ [2]: https://go.dev/issue/76442 
+                               │                  ├ [3]: https://groups.google.com/g/golang-announce/c/8FJoBkPd
+                               │                  │      dm4 
+                               │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61727 
+                               │                  ├ [5]: https://pkg.go.dev/vuln/GO-2025-4175 
+                               │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
+                               ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
+                               ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
 ````
