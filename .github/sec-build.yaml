@@ -13705,6 +13705,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25646
     DataSource:
       ID: alpine
@@ -13718,9 +13719,13 @@
     - CWE-122
     - CWE-126
     VendorSeverity:
+      nvd: 3
       redhat: 3
       ubuntu: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H
         V3Score: 7
@@ -13734,7 +13739,7 @@
     - https://ubuntu.com/security/notices/USN-8039-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25646
     PublishedDate: '2026-02-10T18:16:37.817Z'
-    LastModifiedDate: '2026-02-11T16:16:06.403Z'
+    LastModifiedDate: '2026-02-13T20:43:44.69Z'
   - VulnerabilityID: CVE-2025-64505
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -15479,6 +15484,7 @@
     Severity: HIGH
     VendorSeverity:
       amazon: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -15527,6 +15533,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       rocky: 3
       ubuntu: 2
@@ -15715,6 +15722,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
+      photon: 2
       redhat: 2
       rocky: 3
       ubuntu: 2
@@ -15777,6 +15785,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
+      photon: 2
       redhat: 2
       rocky: 3
       ubuntu: 2
@@ -15895,6 +15904,7 @@
     Severity: HIGH
     VendorSeverity:
       amazon: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -15943,6 +15953,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       rocky: 3
       ubuntu: 2
@@ -16131,6 +16142,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
+      photon: 2
       redhat: 2
       rocky: 3
       ubuntu: 2
@@ -16193,6 +16205,7 @@
       alma: 3
       amazon: 3
       oracle-oval: 3
+      photon: 2
       redhat: 2
       rocky: 3
       ubuntu: 2
