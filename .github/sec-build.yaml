@@ -10828,6 +10828,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -10986,6 +10987,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -11144,6 +11146,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -11302,6 +11305,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -18505,6 +18509,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28417
     PublishedDate: '2026-02-27T22:16:24.833Z'
     LastModifiedDate: '2026-03-03T17:50:29.827Z'
+  - VulnerabilityID: CVE-2026-28421
+    PkgID: vim@9.1.1557-r1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f37ace8bbf995058
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0078-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28421
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:57043c6e4ad8befa7b970039c5afde3ba4f5084c6867ed3b1f5ce934ac4e2f91
+    Title: 'vim: Vim: Denial of service and information disclosure via crafted swap file'
+    Description: Vim is an open source, command line text editor. Versions prior to 9.2.0077 have a heap-buffer-overflow and a segmentation fault (SEGV) exist in Vim's swap file recovery logic. Both are caused by unvalidated fields read from crafted pointer blocks within a swap file. Version 9.2.0077 fixes the issue.
+    Severity: HIGH
+    CweIDs:
+    - CWE-20
+    - CWE-122
+    VendorSeverity:
+      nvd: 3
+      redhat: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/02/27/10
+    - https://access.redhat.com/security/cve/CVE-2026-28421
+    - https://github.com/vim/vim/commit/65c1a143c331c886dc28
+    - https://github.com/vim/vim/releases/tag/v9.2.0077
+    - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
+    - https://www.cve.org/CVERecord?id=CVE-2026-28421
+    PublishedDate: '2026-02-27T22:16:25.493Z'
+    LastModifiedDate: '2026-03-04T20:47:36.62Z'
   - VulnerabilityID: CVE-2026-28418
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -18562,6 +18611,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28419
     DataSource:
       ID: alpine
@@ -18575,8 +18625,12 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      nvd: 2
       redhat: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 6.6
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
         V3Score: 5.3
@@ -18589,7 +18643,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28419
     - https://www.cve.org/CVERecord?id=CVE-2026-28419
     PublishedDate: '2026-02-27T22:16:25.163Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T21:22:05.74Z'
   - VulnerabilityID: CVE-2026-28420
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -18602,6 +18656,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28420
     DataSource:
       ID: alpine
@@ -18615,8 +18670,12 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      nvd: 2
       redhat: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L
+        V3Score: 4.4
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L
         V3Score: 4.4
@@ -18629,47 +18688,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28420
     - https://www.cve.org/CVERecord?id=CVE-2026-28420
     PublishedDate: '2026-02-27T22:16:25.33Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
-  - VulnerabilityID: CVE-2026-28421
-    PkgID: vim@9.1.1557-r1
-    PkgName: vim
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f37ace8bbf995058
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0078-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28421
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:57043c6e4ad8befa7b970039c5afde3ba4f5084c6867ed3b1f5ce934ac4e2f91
-    Title: 'vim: Vim: Denial of service and information disclosure via crafted swap file'
-    Description: Vim is an open source, command line text editor. Versions prior to 9.2.0077 have a heap-buffer-overflow and a segmentation fault (SEGV) exist in Vim's swap file recovery logic. Both are caused by unvalidated fields read from crafted pointer blocks within a swap file. Version 9.2.0077 fixes the issue.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-20
-    - CWE-122
-    VendorSeverity:
-      redhat: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/02/27/10
-    - https://access.redhat.com/security/cve/CVE-2026-28421
-    - https://github.com/vim/vim/commit/65c1a143c331c886dc28
-    - https://github.com/vim/vim/releases/tag/v9.2.0077
-    - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
-    - https://www.cve.org/CVERecord?id=CVE-2026-28421
-    PublishedDate: '2026-02-27T22:16:25.493Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T20:47:23.017Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -18708,7 +18727,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28422
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T20:44:22.99Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -18793,6 +18812,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28417
     PublishedDate: '2026-02-27T22:16:24.833Z'
     LastModifiedDate: '2026-03-03T17:50:29.827Z'
+  - VulnerabilityID: CVE-2026-28421
+    PkgID: vim-common@9.1.1557-r1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f513f86f78716ce1
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0078-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28421
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:949c8c90074a91ad914bc2f4f263ed2d2d72db1c962675f592fcc890ab875da0
+    Title: 'vim: Vim: Denial of service and information disclosure via crafted swap file'
+    Description: Vim is an open source, command line text editor. Versions prior to 9.2.0077 have a heap-buffer-overflow and a segmentation fault (SEGV) exist in Vim's swap file recovery logic. Both are caused by unvalidated fields read from crafted pointer blocks within a swap file. Version 9.2.0077 fixes the issue.
+    Severity: HIGH
+    CweIDs:
+    - CWE-20
+    - CWE-122
+    VendorSeverity:
+      nvd: 3
+      redhat: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/02/27/10
+    - https://access.redhat.com/security/cve/CVE-2026-28421
+    - https://github.com/vim/vim/commit/65c1a143c331c886dc28
+    - https://github.com/vim/vim/releases/tag/v9.2.0077
+    - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
+    - https://www.cve.org/CVERecord?id=CVE-2026-28421
+    PublishedDate: '2026-02-27T22:16:25.493Z'
+    LastModifiedDate: '2026-03-04T20:47:36.62Z'
   - VulnerabilityID: CVE-2026-28418
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -18850,6 +18914,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28419
     DataSource:
       ID: alpine
@@ -18863,8 +18928,12 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      nvd: 2
       redhat: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 6.6
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
         V3Score: 5.3
@@ -18877,7 +18946,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28419
     - https://www.cve.org/CVERecord?id=CVE-2026-28419
     PublishedDate: '2026-02-27T22:16:25.163Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T21:22:05.74Z'
   - VulnerabilityID: CVE-2026-28420
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -18890,6 +18959,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28420
     DataSource:
       ID: alpine
@@ -18903,8 +18973,12 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      nvd: 2
       redhat: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L
+        V3Score: 4.4
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L
         V3Score: 4.4
@@ -18917,47 +18991,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28420
     - https://www.cve.org/CVERecord?id=CVE-2026-28420
     PublishedDate: '2026-02-27T22:16:25.33Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
-  - VulnerabilityID: CVE-2026-28421
-    PkgID: vim-common@9.1.1557-r1
-    PkgName: vim-common
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f513f86f78716ce1
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0078-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28421
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:949c8c90074a91ad914bc2f4f263ed2d2d72db1c962675f592fcc890ab875da0
-    Title: 'vim: Vim: Denial of service and information disclosure via crafted swap file'
-    Description: Vim is an open source, command line text editor. Versions prior to 9.2.0077 have a heap-buffer-overflow and a segmentation fault (SEGV) exist in Vim's swap file recovery logic. Both are caused by unvalidated fields read from crafted pointer blocks within a swap file. Version 9.2.0077 fixes the issue.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-20
-    - CWE-122
-    VendorSeverity:
-      redhat: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/02/27/10
-    - https://access.redhat.com/security/cve/CVE-2026-28421
-    - https://github.com/vim/vim/commit/65c1a143c331c886dc28
-    - https://github.com/vim/vim/releases/tag/v9.2.0077
-    - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
-    - https://www.cve.org/CVERecord?id=CVE-2026-28421
-    PublishedDate: '2026-02-27T22:16:25.493Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T20:47:23.017Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -18996,7 +19030,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28422
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T20:44:22.99Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -19081,6 +19115,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28417
     PublishedDate: '2026-02-27T22:16:24.833Z'
     LastModifiedDate: '2026-03-03T17:50:29.827Z'
+  - VulnerabilityID: CVE-2026-28421
+    PkgID: xxd@9.1.1557-r1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 67ee24b19424f9fd
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0078-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28421
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d6c11e954f52d406f76d7f7810ea59b9620cd301fe0c159a9b57344b55bce656
+    Title: 'vim: Vim: Denial of service and information disclosure via crafted swap file'
+    Description: Vim is an open source, command line text editor. Versions prior to 9.2.0077 have a heap-buffer-overflow and a segmentation fault (SEGV) exist in Vim's swap file recovery logic. Both are caused by unvalidated fields read from crafted pointer blocks within a swap file. Version 9.2.0077 fixes the issue.
+    Severity: HIGH
+    CweIDs:
+    - CWE-20
+    - CWE-122
+    VendorSeverity:
+      nvd: 3
+      redhat: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/02/27/10
+    - https://access.redhat.com/security/cve/CVE-2026-28421
+    - https://github.com/vim/vim/commit/65c1a143c331c886dc28
+    - https://github.com/vim/vim/releases/tag/v9.2.0077
+    - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
+    - https://www.cve.org/CVERecord?id=CVE-2026-28421
+    PublishedDate: '2026-02-27T22:16:25.493Z'
+    LastModifiedDate: '2026-03-04T20:47:36.62Z'
   - VulnerabilityID: CVE-2026-28418
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -19138,6 +19217,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28419
     DataSource:
       ID: alpine
@@ -19151,8 +19231,12 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      nvd: 2
       redhat: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 6.6
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
         V3Score: 5.3
@@ -19165,7 +19249,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28419
     - https://www.cve.org/CVERecord?id=CVE-2026-28419
     PublishedDate: '2026-02-27T22:16:25.163Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T21:22:05.74Z'
   - VulnerabilityID: CVE-2026-28420
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -19178,6 +19262,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28420
     DataSource:
       ID: alpine
@@ -19191,8 +19276,12 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      nvd: 2
       redhat: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L
+        V3Score: 4.4
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L
         V3Score: 4.4
@@ -19205,47 +19294,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28420
     - https://www.cve.org/CVERecord?id=CVE-2026-28420
     PublishedDate: '2026-02-27T22:16:25.33Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
-  - VulnerabilityID: CVE-2026-28421
-    PkgID: xxd@9.1.1557-r1
-    PkgName: xxd
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 67ee24b19424f9fd
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0078-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28421
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:d6c11e954f52d406f76d7f7810ea59b9620cd301fe0c159a9b57344b55bce656
-    Title: 'vim: Vim: Denial of service and information disclosure via crafted swap file'
-    Description: Vim is an open source, command line text editor. Versions prior to 9.2.0077 have a heap-buffer-overflow and a segmentation fault (SEGV) exist in Vim's swap file recovery logic. Both are caused by unvalidated fields read from crafted pointer blocks within a swap file. Version 9.2.0077 fixes the issue.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-20
-    - CWE-122
-    VendorSeverity:
-      redhat: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
-        V3Score: 5.3
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/02/27/10
-    - https://access.redhat.com/security/cve/CVE-2026-28421
-    - https://github.com/vim/vim/commit/65c1a143c331c886dc28
-    - https://github.com/vim/vim/releases/tag/v9.2.0077
-    - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
-    - https://www.cve.org/CVERecord?id=CVE-2026-28421
-    PublishedDate: '2026-02-27T22:16:25.493Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T20:47:23.017Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -19284,7 +19333,98 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28422
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
-    LastModifiedDate: '2026-03-02T20:30:10.923Z'
+    LastModifiedDate: '2026-03-04T20:44:22.99Z'
+  - VulnerabilityID: CVE-2026-22184
+    PkgID: zlib@1.3.1-r2
+    PkgName: zlib
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: b954f4a027f289c1
+    InstalledVersion: 1.3.1-r2
+    FixedVersion: 1.3.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15fc5bfe4c7675
+    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
+    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
+    Severity: CRITICAL
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 4
+      redhat: 3
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 9.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
+        V3Score: 8.6
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-22184
+    - https://github.com/madler/zlib
+    - https://github.com/madler/zlib/issues/1142
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
+    - https://seclists.org/fulldisclosure/2026/Jan/3
+    - https://www.cve.org/CVERecord?id=CVE-2026-22184
+    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
+    - https://zlib.net/
+    PublishedDate: '2026-01-07T21:16:01.563Z'
+    LastModifiedDate: '2026-01-15T14:16:27.047Z'
+  - VulnerabilityID: CVE-2026-27171
+    PkgID: zlib@1.3.1-r2
+    PkgName: zlib
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: b954f4a027f289c1
+    InstalledVersion: 1.3.1-r2
+    FixedVersion: 1.3.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27171
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:c6fbc9b19443cc0e2cd1877bf113e660b0fe239371d9d0f44d1295b03be5cf22
+    Title: 'zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions'
+    Description: zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-1284
+    VendorSeverity:
+      nvd: 2
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 2.9
+    References:
+    - https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit/
+    - https://7asecurity.com/reports/pentest-report-zlib-RC1.1.pdf
+    - https://access.redhat.com/security/cve/CVE-2026-27171
+    - https://github.com/madler/zlib/issues/904
+    - https://github.com/madler/zlib/releases/tag/v1.3.2
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27171
+    - https://ostif.org/zlib-audit-complete/
+    - https://www.cve.org/CVERecord?id=CVE-2026-27171
+    PublishedDate: '2026-02-18T04:16:01.263Z'
+    LastModifiedDate: '2026-02-20T16:45:28.827Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
@@ -25870,6 +26010,57 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-64329
     PublishedDate: '2025-11-07T05:16:08.017Z'
     LastModifiedDate: '2025-12-31T18:34:48.06Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v28.3.0+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v28.3.0%2Bincompatible
+      UID: 43c13a781a182a6d
+    InstalledVersion: v28.3.0+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:5851886b370ce0064055cf74e55750bd7a1760698f9eb62e2ef7a44eaeeeb251
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2025-54388
     VendorIDs:
     - GHSA-x4rx-4gw3-53p4
@@ -26665,7 +26856,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -26695,7 +26886,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3669.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -26798,6 +26989,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -26859,7 +27051,7 @@
     Severity: HIGH
     VendorSeverity:
       amazon: 3
-      azure: 1
+      azure: 2
       bitnami: 2
       cbl-mariner: 1
       photon: 2
@@ -30195,6 +30387,57 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-64329
     PublishedDate: '2025-11-07T05:16:08.017Z'
     LastModifiedDate: '2025-12-31T18:34:48.06Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v28.3.0+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v28.3.0%2Bincompatible
+      UID: 21e7020e56411579
+    InstalledVersion: v28.3.0+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:a3b69ae324ed7363d897aa5cf2e34b36a38ba66421a59191d95e5cd60d77bc22
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2025-54388
     VendorIDs:
     - GHSA-x4rx-4gw3-53p4
@@ -30950,7 +31193,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -30980,7 +31223,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3669.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -31083,6 +31326,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -31144,7 +31388,7 @@
     Severity: HIGH
     VendorSeverity:
       amazon: 3
-      azure: 1
+      azure: 2
       bitnami: 2
       cbl-mariner: 1
       photon: 2
@@ -36164,6 +36408,57 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-64329
     PublishedDate: '2025-11-07T05:16:08.017Z'
     LastModifiedDate: '2025-12-31T18:34:48.06Z'
+  - VulnerabilityID: CVE-2025-15558
+    VendorIDs:
+    - GHSA-p436-gjf2-799p
+    PkgID: github.com/docker/cli@v28.2.2+incompatible
+    PkgName: github.com/docker/cli
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/docker/cli@v28.2.2%2Bincompatible
+      UID: bb8fddbc2ae7fcd3
+    InstalledVersion: v28.2.2+incompatible
+    FixedVersion: 29.2.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15558
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:7536339c633705e84669e05e5cd4e4c172a71bd0ffeb5ecce677d89501ccb465
+    Title: 'docker/cli: Docker CLI for Windows: Privilege escalation via malicious plugin binaries'
+    Description: "Docker CLI for Windows searches for plugin binaries in C:\\ProgramData\\Docker\\cli-plugins, a directory that does not exist by default. A low-privileged attacker can create this directory and place malicious CLI plugin binaries (docker-compose.exe, docker-buildx.exe, etc.) that are executed when a victim user opens Docker Desktop or invokes Docker CLI plugin features, and allow privilege-escalation if the docker\_CLI is executed as a privileged user.\n\nThis issue affects Docker CLI: through 29.1.5 and Windows binaries acting as a CLI-plugin manager using the  github.com/docker/cli/cli-plugins/manager https://pkg.go.dev/github.com/docker/cli@v29.1.5+incompatible/cli-plugins/manager \_package, such as Docker Compose.\n\nThis issue does not impact non-Windows binaries, and projects not using the plugin-manager code."
+    Severity: HIGH
+    CweIDs:
+    - CWE-427
+    VendorSeverity:
+      ghsa: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+        V3Score: 7.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15558
+    - https://docs.docker.com/desktop/release-notes
+    - https://docs.docker.com/desktop/release-notes/
+    - https://github.com/docker/cli
+    - https://github.com/docker/cli/commit/13759330b1f7e7cb0d67047ea42c5482548ba7fa
+    - https://github.com/docker/cli/pull/6713
+    - https://github.com/docker/cli/security/advisories/GHSA-p436-gjf2-799p
+    - https://github.com/docker/compose/pull/12300
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15558
+    - https://www.cve.org/CVERecord?id=CVE-2025-15558
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304
+    - https://www.zerodayinitiative.com/advisories/ZDI-CAN-28304/
+    PublishedDate: '2026-03-04T17:16:14.763Z'
+    LastModifiedDate: '2026-03-04T18:08:05.73Z'
   - VulnerabilityID: CVE-2025-54388
     VendorIDs:
     - GHSA-x4rx-4gw3-53p4
@@ -37256,7 +37551,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -37286,7 +37581,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3669.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -37389,6 +37684,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -37450,7 +37746,7 @@
     Severity: HIGH
     VendorSeverity:
       amazon: 3
-      azure: 1
+      azure: 2
       bitnami: 2
       cbl-mariner: 1
       photon: 2
@@ -38254,7 +38550,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
-      azure: 2
+      azure: 3
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -38284,7 +38580,7 @@
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3668.html
+    - https://linux.oracle.com/errata/ELSA-2026-3669.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -38387,6 +38683,7 @@
     VendorSeverity:
       alma: 3
       amazon: 3
+      azure: 3
       bitnami: 3
       oracle-oval: 3
       photon: 3
@@ -38448,7 +38745,7 @@
     Severity: HIGH
     VendorSeverity:
       amazon: 3
-      azure: 1
+      azure: 2
       bitnami: 2
       cbl-mariner: 1
       photon: 2
