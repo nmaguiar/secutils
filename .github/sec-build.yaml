@@ -10842,7 +10842,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -10853,13 +10853,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
@@ -11001,7 +11001,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -11012,13 +11012,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
@@ -11160,7 +11160,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -11171,13 +11171,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
@@ -11319,7 +11319,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -11330,13 +11330,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
@@ -13840,6 +13840,7 @@
     - CWE-126
     VendorSeverity:
       alma: 3
+      amazon: 2
       azure: 3
       cbl-mariner: 3
       nvd: 3
@@ -19334,51 +19335,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
-  - VulnerabilityID: CVE-2026-22184
-    PkgID: zlib@1.3.1-r2
-    PkgName: zlib
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: b954f4a027f289c1
-    InstalledVersion: 1.3.1-r2
-    FixedVersion: 1.3.2-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    SeveritySource: nvd
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15fc5bfe4c7675
-    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
-    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
-    Severity: CRITICAL
-    CweIDs:
-    - CWE-787
-    VendorSeverity:
-      nvd: 4
-      redhat: 3
-    CVSS:
-      nvd:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 9.8
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
-        V3Score: 8.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-22184
-    - https://github.com/madler/zlib
-    - https://github.com/madler/zlib/issues/1142
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
-    - https://seclists.org/fulldisclosure/2026/Jan/3
-    - https://www.cve.org/CVERecord?id=CVE-2026-22184
-    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
-    - https://zlib.net/
-    PublishedDate: '2026-01-07T21:16:01.563Z'
-    LastModifiedDate: '2026-01-15T14:16:27.047Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
@@ -21512,6 +21468,58 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-68161
     PublishedDate: '2025-12-18T21:15:57.96Z'
     LastModifiedDate: '2026-01-20T01:15:55.067Z'
+  - VulnerabilityID: CVE-2025-11143
+    VendorIDs:
+    - GHSA-wjpw-4j6x-6rwh
+    PkgName: org.eclipse.jetty:jetty-http
+    PkgPath: openaf/openaf.jar
+    PkgIdentifier:
+      PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.0.23
+      UID: 595bc78644261152
+    InstalledVersion: 12.0.23
+    FixedVersion: 12.0.31, 12.1.5
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-11143
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:90905df46d73638ccf134f81ec94e95cda834ac0a3f0893abf38f191200e2d63
+    Title: 'org.eclipse.jetty/jetty-http: org.eclipse.jetty: Security bypass due to differential URI parsing'
+    Description: "The Jetty URI parser has some key differences to other common parsers when evaluating invalid or unusual URIs.\_Differential parsing of URIs in systems using multiple components may result in security by-pass. For example a component that enforces a black list may interpret the URIs differently from one that generates a response.\_At the very least, differential parsing may divulge implementation details."
+    Severity: LOW
+    CweIDs:
+    - CWE-20
+    VendorSeverity:
+      ghsa: 1
+      nvd: 2
+      redhat: 1
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.7
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 3.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-11143
+    - https://github.com/jetty/jetty.project
+    - https://github.com/jetty/jetty.project/security/advisories/GHSA-wjpw-4j6x-6rwh
+    - https://github.com/user-attachments/files/22222625/Java.Eclipse.Jetty.Report_.Incorrect.Parsing.Priority.of.the.IPv6.Hostname.Delimeter.pdf
+    - https://github.com/user-attachments/files/22222626/Java.Eclipse.Jetty.Report_.The.Parsing.Priority.of.the.Delimiter.pdf
+    - https://github.com/user-attachments/files/22222627/Java.Eclipse.Jetty.Report_.Parsing.Difference.Due.to.Deformed.Scheme.pdf
+    - https://github.com/user-attachments/files/22222630/Java.Eclipse.Jetty.Report_.Improper.IPv4-mapped.IPv6.Parsing.pdf
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-11143
+    - https://www.cve.org/CVERecord?id=CVE-2025-11143
+    PublishedDate: '2026-03-05T10:15:54.68Z'
+    LastModifiedDate: '2026-03-06T20:30:58.117Z'
 - Target: Python
   Class: lang-pkgs
   Type: python-pkg
@@ -26668,7 +26676,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -26688,7 +26696,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-68121
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -26699,13 +26707,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -26855,7 +26863,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       cbl-mariner: 2
@@ -26871,22 +26879,24 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3668
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61726
+    - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
+    - https://bugzilla.redhat.com/2437111
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3668.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3669.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -26919,7 +26929,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -26955,7 +26965,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -27003,7 +27013,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -27014,59 +27024,18 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: c8a49abd00c2b8a3
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:000852a4f50e1d5018c3e73d31906df429510c158f60789ce3a46a8757023e0e
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 2
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -27603,6 +27572,137 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:000852a4f50e1d5018c3e73d31906df429510c158f60789ce3a46a8757023e0e
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
+  - VulnerabilityID: CVE-2026-25679
+    VendorIDs:
+    - GO-2026-4601
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25679
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:7f1b5ad0477043a65c4e5eaf1ca5d30a025992568fac308cdab7e66dd9b10586
+    Title: url.Parse insufficiently validated the host/authority component and ac ...
+    Description: url.Parse insufficiently validated the host/authority component and accepted some invalid URLs.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752180
+    - https://go.dev/issue/77578
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4601
+    PublishedDate: '2026-03-06T22:16:00.72Z'
+    LastModifiedDate: '2026-03-06T22:16:00.72Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1e7f926725cc103d0daa791f2f10b1e639a5c29d2b970861e32a23712750ee13
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-06T22:16:01.07Z'
+  - VulnerabilityID: CVE-2026-27142
+    VendorIDs:
+    - GO-2026-4603
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27142
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:2712aa92e0977ba7cec2b3bf3780dd091ce179bf17477f99d48b0477b8a0cfa3
+    Title: Actions which insert URLs into the content attribute of HTML meta tags ...
+    Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752081
+    - https://go.dev/issue/77954
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4603
+    PublishedDate: '2026-03-06T22:16:01.177Z'
+    LastModifiedDate: '2026-03-06T22:16:01.177Z'
 - Target: usr/bin/syft
   Class: lang-pkgs
   Type: gobinary
@@ -31005,7 +31105,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -31025,7 +31125,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-68121
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -31036,13 +31136,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -31192,7 +31292,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       cbl-mariner: 2
@@ -31208,22 +31308,24 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3668
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61726
+    - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
+    - https://bugzilla.redhat.com/2437111
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3668.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3669.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -31256,7 +31358,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -31292,7 +31394,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -31340,7 +31442,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -31351,59 +31453,18 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 4bef6a299358baaf
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:eb0d91bc0ba311efd9b0e910722a4de32e2f8b93eb8aa9a8dd67e06fe4e7b78e
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 2
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -31940,6 +32001,137 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:eb0d91bc0ba311efd9b0e910722a4de32e2f8b93eb8aa9a8dd67e06fe4e7b78e
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
+  - VulnerabilityID: CVE-2026-25679
+    VendorIDs:
+    - GO-2026-4601
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25679
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:636d46e9db7e97e16c0e0ac01ea6cacc2cc4851c1868900b5cab240510562044
+    Title: url.Parse insufficiently validated the host/authority component and ac ...
+    Description: url.Parse insufficiently validated the host/authority component and accepted some invalid URLs.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752180
+    - https://go.dev/issue/77578
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4601
+    PublishedDate: '2026-03-06T22:16:00.72Z'
+    LastModifiedDate: '2026-03-06T22:16:00.72Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1dfc129ae7821d3011c97ff23b811f1b647be5e6eac41fc3c4ca8191fe944c84
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-06T22:16:01.07Z'
+  - VulnerabilityID: CVE-2026-27142
+    VendorIDs:
+    - GO-2026-4603
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27142
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:16be2cac01bad3efba42ed8dab9a0f958e2deda0b0035676f5cec5814eba4b91
+    Title: Actions which insert URLs into the content attribute of HTML meta tags ...
+    Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752081
+    - https://go.dev/issue/77954
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4603
+    PublishedDate: '2026-03-06T22:16:01.177Z'
+    LastModifiedDate: '2026-03-06T22:16:01.177Z'
 - Target: usr/bin/trivy
   Class: lang-pkgs
   Type: gobinary
@@ -36781,7 +36973,7 @@
     CweIDs:
     - CWE-345
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       ghsa: 2
       nvd: 2
@@ -37363,7 +37555,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -37383,7 +37575,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-68121
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -37394,13 +37586,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -37550,7 +37742,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       cbl-mariner: 2
@@ -37566,22 +37758,24 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3668
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61726
+    - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
+    - https://bugzilla.redhat.com/2437111
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3668.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3669.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -37614,7 +37808,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -37650,7 +37844,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -37698,7 +37892,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -37709,59 +37903,18 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f86edb9664e32d65
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:8558fa64b1674ddd498a2e24d867201edcd79c7399d1fd1ddc304cd918158f86
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 2
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -38298,6 +38451,137 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:8558fa64b1674ddd498a2e24d867201edcd79c7399d1fd1ddc304cd918158f86
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
+  - VulnerabilityID: CVE-2026-25679
+    VendorIDs:
+    - GO-2026-4601
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25679
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:751d068cb564ad5c5b221d7b604cabceaff0c8065eae80b100fde14ea2f660b5
+    Title: url.Parse insufficiently validated the host/authority component and ac ...
+    Description: url.Parse insufficiently validated the host/authority component and accepted some invalid URLs.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752180
+    - https://go.dev/issue/77578
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4601
+    PublishedDate: '2026-03-06T22:16:00.72Z'
+    LastModifiedDate: '2026-03-06T22:16:00.72Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:b985ae6606e3cf8e89a19030f95a4cc48eb7b048d0b0fe5a4e6742db54246b48
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-06T22:16:01.07Z'
+  - VulnerabilityID: CVE-2026-27142
+    VendorIDs:
+    - GO-2026-4603
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27142
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:4d22dd33f3a1a22535e0746939bf3e92eca84da42ba6509a83ffa57f241e187d
+    Title: Actions which insert URLs into the content attribute of HTML meta tags ...
+    Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752081
+    - https://go.dev/issue/77954
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4603
+    PublishedDate: '2026-03-06T22:16:01.177Z'
+    LastModifiedDate: '2026-03-06T22:16:01.177Z'
 - Target: usr/bin/trivy_cve_query
   Class: lang-pkgs
   Type: gobinary
@@ -38362,7 +38646,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 4
       cbl-mariner: 2
@@ -38382,7 +38666,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
         V3Score: 7.4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-68121
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -38393,13 +38677,13 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
     - https://linux.oracle.com/cve/CVE-2025-68121.html
-    - https://linux.oracle.com/errata/ELSA-2026-3343.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68121
     - https://pkg.go.dev/vuln/GO-2026-4337
     - https://www.cve.org/CVERecord?id=CVE-2025-68121
@@ -38549,7 +38833,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       cbl-mariner: 2
@@ -38565,22 +38849,24 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3668
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61726
+    - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
+    - https://bugzilla.redhat.com/2437111
     - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3668.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61726.html
-    - https://linux.oracle.com/errata/ELSA-2026-3669.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61726
     - https://pkg.go.dev/vuln/GO-2026-4341
     - https://www.cve.org/CVERecord?id=CVE-2025-61726
@@ -38613,7 +38899,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       oracle-oval: 3
@@ -38649,7 +38935,7 @@
     - https://go.dev/issue/77102
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://linux.oracle.com/cve/CVE-2025-61728.html
-    - https://linux.oracle.com/errata/ELSA-2026-3337.html
+    - https://linux.oracle.com/errata/ELSA-2026-3753.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61728
     - https://pkg.go.dev/vuln/GO-2026-4342
     - https://www.cve.org/CVERecord?id=CVE-2025-61728
@@ -38697,7 +38983,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:3341
+    - https://access.redhat.com/errata/RHSA-2026:3928
     - https://access.redhat.com/security/cve/CVE-2025-61729
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
@@ -38708,59 +38994,18 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
-    - https://errata.almalinux.org/9/ALSA-2026-3341.html
+    - https://errata.almalinux.org/9/ALSA-2026-3928.html
     - https://errata.rockylinux.org/RLSA-2026:3341
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
     - https://linux.oracle.com/cve/CVE-2025-61729.html
-    - https://linux.oracle.com/errata/ELSA-2026-3428.html
+    - https://linux.oracle.com/errata/ELSA-2026-3928.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61729
     - https://pkg.go.dev/vuln/GO-2025-4155
     - https://www.cve.org/CVERecord?id=CVE-2025-61729
     PublishedDate: '2025-12-02T19:15:51.447Z'
     LastModifiedDate: '2025-12-19T18:25:28.283Z'
-  - VulnerabilityID: CVE-2025-61730
-    VendorIDs:
-    - GO-2026-4340
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: c395cea322d363d5
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.24.12, 1.25.6
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:3bf492d551d1d833bf74f1def85aa3eae09ae0ef6bf05e7928f2cbaa0e6a1cb1
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
-    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
-    Severity: HIGH
-    VendorSeverity:
-      amazon: 3
-      azure: 2
-      bitnami: 2
-      cbl-mariner: 1
-      photon: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 5.3
-    References:
-    - https://go.dev/cl/724120
-    - https://go.dev/issue/76443
-    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
-    - https://pkg.go.dev/vuln/GO-2026-4340
-    PublishedDate: '2026-01-28T20:16:09.94Z'
-    LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -39297,3 +39542,134 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-61727
     PublishedDate: '2025-12-03T20:16:25.607Z'
     LastModifiedDate: '2025-12-18T20:15:10.957Z'
+  - VulnerabilityID: CVE-2025-61730
+    VendorIDs:
+    - GO-2026-4340
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.24.12, 1.25.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-61730
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:3bf492d551d1d833bf74f1def85aa3eae09ae0ef6bf05e7928f2cbaa0e6a1cb1
+    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      cbl-mariner: 1
+      photon: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - https://go.dev/cl/724120
+    - https://go.dev/issue/76443
+    - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
+    - https://pkg.go.dev/vuln/GO-2026-4340
+    PublishedDate: '2026-01-28T20:16:09.94Z'
+    LastModifiedDate: '2026-02-03T20:36:41.3Z'
+  - VulnerabilityID: CVE-2026-25679
+    VendorIDs:
+    - GO-2026-4601
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25679
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d37e266ce5f5b8f4771f2f8a0d67eb88e6cf3e3ed04aa6d6843e2b2af3d9f581
+    Title: url.Parse insufficiently validated the host/authority component and ac ...
+    Description: url.Parse insufficiently validated the host/authority component and accepted some invalid URLs.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752180
+    - https://go.dev/issue/77578
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4601
+    PublishedDate: '2026-03-06T22:16:00.72Z'
+    LastModifiedDate: '2026-03-06T22:16:00.72Z'
+  - VulnerabilityID: CVE-2026-27139
+    VendorIDs:
+    - GO-2026-4602
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27139
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:b8fd2f69d6f4bc0c42f7b96f26a737111482b16c4125c3c59ba6b5bed732d173
+    Title: On Unix platforms, when listing the contents of a directory using File ...
+    Description: On Unix platforms, when listing the contents of a directory using File.ReadDir or File.Readdir the returned FileInfo could reference a file outside of the Root in which the File was opened. The impact of this escape is limited to reading metadata provided by lstat from arbitrary locations on the filesystem without permitting reading or writing files outside the root.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/749480
+    - https://go.dev/issue/77827
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4602
+    PublishedDate: '2026-03-06T22:16:01.07Z'
+    LastModifiedDate: '2026-03-06T22:16:01.07Z'
+  - VulnerabilityID: CVE-2026-27142
+    VendorIDs:
+    - GO-2026-4603
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.8, 1.26.1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27142
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:96718231a76827e241e04cf85d0055d1ee5c38804ecd47ca6385aad6f57d7591
+    Title: Actions which insert URLs into the content attribute of HTML meta tags ...
+    Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/752081
+    - https://go.dev/issue/77954
+    - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
+    - https://pkg.go.dev/vuln/GO-2026-4603
+    PublishedDate: '2026-03-06T22:16:01.177Z'
+    LastModifiedDate: '2026-03-06T22:16:01.177Z'
