@@ -10584,6 +10584,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 2
+      azure: 2
       photon: 2
       redhat: 2
     CVSS:
@@ -10751,6 +10752,7 @@
     - CWE-601
     VendorSeverity:
       amazon: 2
+      azure: 2
       photon: 2
       ubuntu: 1
     References:
@@ -10758,6 +10760,7 @@
     - https://curl.se/docs/CVE-2025-14524.html
     - https://curl.se/docs/CVE-2025-14524.json
     - https://hackerone.com/reports/3459417
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-14524
     - https://ubuntu.com/security/notices/USN-8062-1
     - https://www.cve.org/CVERecord?id=CVE-2025-14524
     PublishedDate: '2026-01-08T10:15:46.607Z'
@@ -10854,7 +10857,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -11013,7 +11016,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -11172,7 +11175,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -11331,7 +11334,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -13119,6 +13122,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 2
+      azure: 2
       photon: 2
       redhat: 2
     CVSS:
@@ -13286,6 +13290,7 @@
     - CWE-601
     VendorSeverity:
       amazon: 2
+      azure: 2
       photon: 2
       ubuntu: 1
     References:
@@ -13293,6 +13298,7 @@
     - https://curl.se/docs/CVE-2025-14524.html
     - https://curl.se/docs/CVE-2025-14524.json
     - https://hackerone.com/reports/3459417
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-14524
     - https://ubuntu.com/security/notices/USN-8062-1
     - https://www.cve.org/CVERecord?id=CVE-2025-14524
     PublishedDate: '2026-01-08T10:15:46.607Z'
@@ -13885,6 +13891,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25646
     - https://ubuntu.com/security/notices/USN-8035-1
     - https://ubuntu.com/security/notices/USN-8039-1
+    - https://ubuntu.com/security/notices/USN-8081-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25646
     PublishedDate: '2026-02-10T18:16:37.817Z'
     LastModifiedDate: '2026-02-13T20:43:44.69Z'
@@ -13930,6 +13937,7 @@
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-4952-h5wq-4m42
     - https://nvd.nist.gov/vuln/detail/CVE-2025-64505
     - https://ubuntu.com/security/notices/USN-7924-1
+    - https://ubuntu.com/security/notices/USN-8081-1
     - https://www.cve.org/CVERecord?id=CVE-2025-64505
     - https://www.openwall.com/lists/oss-security/2025/11/22/1
     PublishedDate: '2025-11-25T00:15:47.133Z'
@@ -18459,6 +18467,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       redhat: 2
       ubuntu: 1
@@ -18501,6 +18510,7 @@
     - CWE-86
     - CWE-78
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 3
       redhat: 2
@@ -18547,6 +18557,7 @@
     - CWE-20
     - CWE-122
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 3
       redhat: 2
@@ -18593,6 +18604,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -18639,6 +18651,7 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -18685,6 +18698,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -18729,6 +18743,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      azure: 1
       cbl-mariner: 1
       redhat: 1
     CVSS:
@@ -18745,6 +18760,24 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
+  - VulnerabilityID: CVE-2026-32249
+    PkgID: vim@9.1.1557-r1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f37ace8bbf995058
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0140-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:add3affda6ddf7abbd4da86a82e2aa46bedea463143cf1c99d68ab87eef1d448
+    Severity: UNKNOWN
   - VulnerabilityID: CVE-2026-25749
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -18769,6 +18802,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       redhat: 2
       ubuntu: 1
@@ -18811,6 +18845,7 @@
     - CWE-86
     - CWE-78
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 3
       redhat: 2
@@ -18857,6 +18892,7 @@
     - CWE-20
     - CWE-122
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 3
       redhat: 2
@@ -18903,6 +18939,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -18949,6 +18986,7 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -18995,6 +19033,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -19039,6 +19078,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      azure: 1
       cbl-mariner: 1
       redhat: 1
     CVSS:
@@ -19055,6 +19095,24 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
+  - VulnerabilityID: CVE-2026-32249
+    PkgID: vim-common@9.1.1557-r1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f513f86f78716ce1
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0140-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:4100d9fdf5e08ae4d603026e5e315e9ee1239169f3ac9c8b6088696edc921601
+    Severity: UNKNOWN
   - VulnerabilityID: CVE-2026-25749
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -19079,6 +19137,7 @@
     CweIDs:
     - CWE-122
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       redhat: 2
       ubuntu: 1
@@ -19121,6 +19180,7 @@
     - CWE-86
     - CWE-78
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 3
       redhat: 2
@@ -19167,6 +19227,7 @@
     - CWE-20
     - CWE-122
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 3
       redhat: 2
@@ -19213,6 +19274,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -19259,6 +19321,7 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -19305,6 +19368,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      azure: 2
       cbl-mariner: 2
       nvd: 2
       redhat: 2
@@ -19349,6 +19413,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      azure: 1
       cbl-mariner: 1
       redhat: 1
     CVSS:
@@ -19365,6 +19430,69 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
+  - VulnerabilityID: CVE-2026-32249
+    PkgID: xxd@9.1.1557-r1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 67ee24b19424f9fd
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0140-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:dbed12ebfa651e851fd7a95ee573167b8e1dca2230cbe12c4e4b644b9851e770
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-22184
+    PkgID: zlib@1.3.1-r2
+    PkgName: zlib
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: b954f4a027f289c1
+    InstalledVersion: 1.3.1-r2
+    FixedVersion: 1.3.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15fc5bfe4c7675
+    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
+    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
+    Severity: CRITICAL
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 4
+      redhat: 3
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 9.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
+        V3Score: 8.6
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-22184
+    - https://github.com/madler/zlib
+    - https://github.com/madler/zlib/issues/1142
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
+    - https://seclists.org/fulldisclosure/2026/Jan/3
+    - https://www.cve.org/CVERecord?id=CVE-2026-22184
+    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
+    - https://zlib.net/
+    PublishedDate: '2026-01-07T21:16:01.563Z'
+    LastModifiedDate: '2026-01-15T14:16:27.047Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
@@ -19390,6 +19518,7 @@
     CweIDs:
     - CWE-1284
     VendorSeverity:
+      azure: 1
       nvd: 2
       redhat: 1
       ubuntu: 1
@@ -22665,6 +22794,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
+      azure: 1
       bitnami: 1
       ghsa: 1
       redhat: 1
@@ -26739,14 +26869,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
@@ -26902,7 +27030,7 @@
     VendorSeverity:
       alma: 3
       amazon: 2
-      azure: 3
+      azure: 2
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -26922,14 +27050,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
@@ -27063,7 +27189,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -27635,7 +27761,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
@@ -31215,14 +31341,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
@@ -31378,7 +31502,7 @@
     VendorSeverity:
       alma: 3
       amazon: 2
-      azure: 3
+      azure: 2
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -31398,14 +31522,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
@@ -31539,7 +31661,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -32111,7 +32233,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
@@ -37206,6 +37328,7 @@
     CweIDs:
     - CWE-918
     VendorSeverity:
+      azure: 2
       ghsa: 2
       redhat: 2
     CVSS:
@@ -37712,14 +37835,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
@@ -37875,7 +37996,7 @@
     VendorSeverity:
       alma: 3
       amazon: 2
-      azure: 3
+      azure: 2
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -37895,14 +38016,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
@@ -38036,7 +38155,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -38608,7 +38727,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
@@ -38842,14 +38961,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/737700
     - https://go.dev/issue/77217
     - https://groups.google.com/g/golang-announce/c/K09ubi9FQFk
@@ -39005,7 +39122,7 @@
     VendorSeverity:
       alma: 3
       amazon: 2
-      azure: 3
+      azure: 2
       bitnami: 3
       cbl-mariner: 2
       oracle-oval: 3
@@ -39025,14 +39142,12 @@
     - https://bugzilla.redhat.com/2418462
     - https://bugzilla.redhat.com/2434432
     - https://bugzilla.redhat.com/2437111
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2418462
     - https://bugzilla.redhat.com/show_bug.cgi?id=2434432
     - https://bugzilla.redhat.com/show_bug.cgi?id=2437111
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61726
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:4177
     - https://go.dev/cl/736712
     - https://go.dev/issue/77101
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
@@ -39166,7 +39281,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-61729
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68121
     - https://errata.almalinux.org/9/ALSA-2026-3928.html
-    - https://errata.rockylinux.org/RLSA-2026:3341
+    - https://errata.rockylinux.org/RLSA-2026:3928
     - https://go.dev/cl/725920
     - https://go.dev/issue/76445
     - https://groups.google.com/g/golang-announce/c/8FJoBkPddm4
@@ -39738,7 +39853,7 @@
     Severity: MEDIUM
     VendorSeverity:
       amazon: 2
-      azure: 2
+      azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
