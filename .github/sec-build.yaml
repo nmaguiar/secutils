@@ -10723,6 +10723,209 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-9086
     PublishedDate: '2025-09-12T06:15:44.1Z'
     LastModifiedDate: '2026-01-20T14:58:01.347Z'
+  - VulnerabilityID: CVE-2026-1965
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: d277059717700bf1
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-1965
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:aaa5af19bb6f1b60c88b36c6fa228913f8eaa4ebd8cec700859115948bb2c413
+    Title: 'curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication'
+    Description: |-
+      libcurl can in some circumstances reuse the wrong connection when asked to do
+      an Negotiate-authenticated HTTP or HTTPS request.
+
+      libcurl features a pool of recent connections so that subsequent requests can
+      reuse an existing connection to avoid overhead.
+
+      When reusing a connection a range of criterion must first be met. Due to a
+      logical error in the code, a request that was issued by an application could
+      wrongfully reuse an existing connection to the same server that was
+      authenticated using different credentials. One underlying reason being that
+      Negotiate sometimes authenticates *connections* and not *requests*, contrary
+      to how HTTP is designed to work.
+
+      An application that allows Negotiate authentication to a server (that responds
+      wanting Negotiate) with `user1:password1` and then does another operation to
+      the same server also using Negotiate but with `user2:password2` (while the
+      previous connection is still alive) - the second request wrongly reused the
+      same connection and since it then sees that the Negotiate negotiation is
+      already made, it just sends the request over that connection thinking it uses
+      the user2 credentials when it is in fact still using the connection
+      authenticated for user1...
+
+      The set of authentication methods to use is set with  `CURLOPT_HTTPAUTH`.
+
+      Applications can disable libcurl's reuse of connections and thus mitigate this
+      problem, by using one of the following libcurl options to alter how
+      connections are or are not reused: `CURLOPT_FRESH_CONNECT`,
+      `CURLOPT_MAXCONNECTS` and `CURLMOPT_MAX_HOST_CONNECTIONS` (if using the
+      curl_multi API).
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-305
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-1965
+    - https://curl.se/docs/CVE-2026-1965.html
+    - https://curl.se/docs/CVE-2026-1965.json
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-1965
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-1965
+    PublishedDate: '2026-03-11T11:15:59.177Z'
+    LastModifiedDate: '2026-03-12T14:11:19.07Z'
+  - VulnerabilityID: CVE-2026-3783
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: d277059717700bf1
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3783
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:db88816e182c14c23cc206207b0907d9356c05cd2c0f67210b502b2cfaef4ee6
+    Title: 'curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect'
+    Description: |-
+      When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
+      performs a redirect to a second URL, curl could leak that token to the second
+      hostname under some circumstances.
+
+      If the hostname that the first request is redirected to has information in the
+      used .netrc file, with either of the `machine` or `default` keywords, curl
+      would pass on the bearer token set for the first host also to the second one.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-522
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N
+        V3Score: 5.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/03/11/2
+    - https://access.redhat.com/security/cve/CVE-2026-3783
+    - https://curl.se/docs/CVE-2026-3783.html
+    - https://curl.se/docs/CVE-2026-3783.json
+    - https://hackerone.com/reports/3583983
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3783
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3783
+    PublishedDate: '2026-03-11T11:16:00.08Z'
+    LastModifiedDate: '2026-03-12T14:10:37.3Z'
+  - VulnerabilityID: CVE-2026-3784
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: d277059717700bf1
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3784
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:30a7b7659e30d43fd844e451d3191ba477cef4721809eeed69ffbf165e525956
+    Title: 'curl: curl: Unauthorized access due to improper HTTP proxy connection reuse'
+    Description: |-
+      curl would wrongly reuse an existing HTTP proxy connection doing CONNECT to a
+      server, even if the new request uses different credentials for the HTTP proxy.
+      The proper behavior is to create or use a separate connection.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-305
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/03/11/3
+    - https://access.redhat.com/security/cve/CVE-2026-3784
+    - https://curl.se/docs/CVE-2026-3784.html
+    - https://curl.se/docs/CVE-2026-3784.json
+    - https://hackerone.com/reports/3584903
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3784
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3784
+    PublishedDate: '2026-03-11T11:16:00.437Z'
+    LastModifiedDate: '2026-03-12T14:09:50.47Z'
+  - VulnerabilityID: CVE-2026-3805
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: d277059717700bf1
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3805
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e088c23319908dc9ae4287540322d4995c65ac02b1f5482218f7b5571ae529e4
+    Title: 'curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling'
+    Description: |-
+      When doing a second SMB request to the same host again, curl would wrongly use
+      a data pointer pointing into already freed memory.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 6.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/03/11/4
+    - https://access.redhat.com/security/cve/CVE-2026-3805
+    - https://curl.se/docs/CVE-2026-3805.html
+    - https://curl.se/docs/CVE-2026-3805.json
+    - https://hackerone.com/reports/3591944
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3805
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3805
+    PublishedDate: '2026-03-11T11:16:00.967Z'
+    LastModifiedDate: '2026-03-12T14:08:56.79Z'
   - VulnerabilityID: CVE-2025-14524
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -13261,6 +13464,209 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-9086
     PublishedDate: '2025-09-12T06:15:44.1Z'
     LastModifiedDate: '2026-01-20T14:58:01.347Z'
+  - VulnerabilityID: CVE-2026-1965
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f84f25314ce6d762
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-1965
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:030d24e0740746be655eb2b1fddfd2e8721dfa57b54334f22bea56dec7beae19
+    Title: 'curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication'
+    Description: |-
+      libcurl can in some circumstances reuse the wrong connection when asked to do
+      an Negotiate-authenticated HTTP or HTTPS request.
+
+      libcurl features a pool of recent connections so that subsequent requests can
+      reuse an existing connection to avoid overhead.
+
+      When reusing a connection a range of criterion must first be met. Due to a
+      logical error in the code, a request that was issued by an application could
+      wrongfully reuse an existing connection to the same server that was
+      authenticated using different credentials. One underlying reason being that
+      Negotiate sometimes authenticates *connections* and not *requests*, contrary
+      to how HTTP is designed to work.
+
+      An application that allows Negotiate authentication to a server (that responds
+      wanting Negotiate) with `user1:password1` and then does another operation to
+      the same server also using Negotiate but with `user2:password2` (while the
+      previous connection is still alive) - the second request wrongly reused the
+      same connection and since it then sees that the Negotiate negotiation is
+      already made, it just sends the request over that connection thinking it uses
+      the user2 credentials when it is in fact still using the connection
+      authenticated for user1...
+
+      The set of authentication methods to use is set with  `CURLOPT_HTTPAUTH`.
+
+      Applications can disable libcurl's reuse of connections and thus mitigate this
+      problem, by using one of the following libcurl options to alter how
+      connections are or are not reused: `CURLOPT_FRESH_CONNECT`,
+      `CURLOPT_MAXCONNECTS` and `CURLMOPT_MAX_HOST_CONNECTIONS` (if using the
+      curl_multi API).
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-305
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-1965
+    - https://curl.se/docs/CVE-2026-1965.html
+    - https://curl.se/docs/CVE-2026-1965.json
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-1965
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-1965
+    PublishedDate: '2026-03-11T11:15:59.177Z'
+    LastModifiedDate: '2026-03-12T14:11:19.07Z'
+  - VulnerabilityID: CVE-2026-3783
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f84f25314ce6d762
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3783
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3bfeba193c5f81649207731d59b1e52cc688cf1ee2bc442e1c5736f255ab8051
+    Title: 'curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect'
+    Description: |-
+      When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
+      performs a redirect to a second URL, curl could leak that token to the second
+      hostname under some circumstances.
+
+      If the hostname that the first request is redirected to has information in the
+      used .netrc file, with either of the `machine` or `default` keywords, curl
+      would pass on the bearer token set for the first host also to the second one.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-522
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N
+        V3Score: 5.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/03/11/2
+    - https://access.redhat.com/security/cve/CVE-2026-3783
+    - https://curl.se/docs/CVE-2026-3783.html
+    - https://curl.se/docs/CVE-2026-3783.json
+    - https://hackerone.com/reports/3583983
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3783
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3783
+    PublishedDate: '2026-03-11T11:16:00.08Z'
+    LastModifiedDate: '2026-03-12T14:10:37.3Z'
+  - VulnerabilityID: CVE-2026-3784
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f84f25314ce6d762
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3784
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:41f6f39df79af07653cdd6d153d4f72c82467d91edec2fd788ca251db790e114
+    Title: 'curl: curl: Unauthorized access due to improper HTTP proxy connection reuse'
+    Description: |-
+      curl would wrongly reuse an existing HTTP proxy connection doing CONNECT to a
+      server, even if the new request uses different credentials for the HTTP proxy.
+      The proper behavior is to create or use a separate connection.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-305
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/03/11/3
+    - https://access.redhat.com/security/cve/CVE-2026-3784
+    - https://curl.se/docs/CVE-2026-3784.html
+    - https://curl.se/docs/CVE-2026-3784.json
+    - https://hackerone.com/reports/3584903
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3784
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3784
+    PublishedDate: '2026-03-11T11:16:00.437Z'
+    LastModifiedDate: '2026-03-12T14:09:50.47Z'
+  - VulnerabilityID: CVE-2026-3805
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f84f25314ce6d762
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.19.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3805
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3909850ea8ebd45a04aee27efb1b4d0a93acc9abb512d229d0fff371571c8247
+    Title: 'curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling'
+    Description: |-
+      When doing a second SMB request to the same host again, curl would wrongly use
+      a data pointer pointing into already freed memory.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 6.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/03/11/4
+    - https://access.redhat.com/security/cve/CVE-2026-3805
+    - https://curl.se/docs/CVE-2026-3805.html
+    - https://curl.se/docs/CVE-2026-3805.json
+    - https://hackerone.com/reports/3591944
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3805
+    - https://ubuntu.com/security/notices/USN-8084-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3805
+    PublishedDate: '2026-03-11T11:16:00.967Z'
+    LastModifiedDate: '2026-03-12T14:08:56.79Z'
   - VulnerabilityID: CVE-2025-14524
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -13751,7 +14157,7 @@
     - https://github.com/pnggroup/libpng/issues/778
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-mmq5-27w3-rxpp
     - https://linux.oracle.com/cve/CVE-2026-22695.html
-    - https://linux.oracle.com/errata/ELSA-2026-3551.html
+    - https://linux.oracle.com/errata/ELSA-2026-4306.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22695
     - https://ubuntu.com/security/notices/USN-7963-1
     - https://ubuntu.com/security/notices/USN-8035-1
@@ -13818,7 +14224,7 @@
     - https://errata.rockylinux.org/RLSA-2026:3405
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-vgjq-8cw5-ggw8
     - https://linux.oracle.com/cve/CVE-2026-22801.html
-    - https://linux.oracle.com/errata/ELSA-2026-3551.html
+    - https://linux.oracle.com/errata/ELSA-2026-4306.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22801
     - https://ubuntu.com/security/notices/USN-7963-1
     - https://ubuntu.com/security/notices/USN-8035-1
@@ -13887,7 +14293,7 @@
     - https://github.com/pnggroup/libpng/commit/01d03b8453eb30ade759cd45c707e5a1c7277d88
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3
     - https://linux.oracle.com/cve/CVE-2026-25646.html
-    - https://linux.oracle.com/errata/ELSA-2026-3551.html
+    - https://linux.oracle.com/errata/ELSA-2026-4306.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25646
     - https://ubuntu.com/security/notices/USN-8035-1
     - https://ubuntu.com/security/notices/USN-8039-1
@@ -15677,6 +16083,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21932
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:55.793Z'
     LastModifiedDate: '2026-01-30T16:08:39.917Z'
   - VulnerabilityID: CVE-2026-21945
@@ -15742,6 +16149,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21945
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:57.39Z'
     LastModifiedDate: '2026-01-30T16:03:26.53Z'
   - VulnerabilityID: CVE-2025-53057
@@ -15931,6 +16339,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21925
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:54.917Z'
     LastModifiedDate: '2026-01-30T16:11:07.073Z'
   - VulnerabilityID: CVE-2026-21933
@@ -16097,6 +16506,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21932
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:55.793Z'
     LastModifiedDate: '2026-01-30T16:08:39.917Z'
   - VulnerabilityID: CVE-2026-21945
@@ -16162,6 +16572,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21945
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:57.39Z'
     LastModifiedDate: '2026-01-30T16:03:26.53Z'
   - VulnerabilityID: CVE-2025-53057
@@ -16351,6 +16762,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21925
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:54.917Z'
     LastModifiedDate: '2026-01-30T16:11:07.073Z'
   - VulnerabilityID: CVE-2026-21933
@@ -18469,6 +18881,7 @@
     VendorSeverity:
       azure: 2
       cbl-mariner: 2
+      oracle-oval: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -18480,6 +18893,8 @@
     - https://github.com/vim/vim/commit/0714b15940b245108e6e9d7aa2260dd849a26fa9
     - https://github.com/vim/vim/releases/tag/v9.1.2132
     - https://github.com/vim/vim/security/advisories/GHSA-5w93-4g67-mm43
+    - https://linux.oracle.com/cve/CVE-2026-25749.html
+    - https://linux.oracle.com/errata/ELSA-2026-4442.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25749
     - https://www.cve.org/CVERecord?id=CVE-2026-25749
     PublishedDate: '2026-02-06T23:15:54.23Z'
@@ -18772,12 +19187,23 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32249
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:add3affda6ddf7abbd4da86a82e2aa46bedea463143cf1c99d68ab87eef1d448
+    Title: Vim is an open source, command line text editor. From 9.1.0011 to befo ...
+    Description: Vim is an open source, command line text editor. From 9.1.0011 to before 9.2.0137, Vim's NFA regex compiler, when encountering a collection containing a combining character as the endpoint of a character range (e.g. [0-0\u05bb]), incorrectly emits the composing bytes of that character as separate NFA states. This corrupts the NFA postfix stack, resulting in NFA_START_COLL having a NULL out1 pointer. When nfa_max_width() subsequently traverses the compiled NFA to estimate match width for the look-behind assertion, it dereferences state->out1->out without a NULL check, causing a segmentation fault. This vulnerability is fixed in 9.2.0137.
     Severity: UNKNOWN
+    CweIDs:
+    - CWE-476
+    References:
+    - https://github.com/vim/vim/commit/36d6e87542cf823d833e451e09a90ee429899cec
+    - https://github.com/vim/vim/releases/tag/v9.2.0137
+    - https://github.com/vim/vim/security/advisories/GHSA-9phh-423r-778r
+    PublishedDate: '2026-03-12T20:16:05.523Z'
+    LastModifiedDate: '2026-03-12T21:07:53.427Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -18804,6 +19230,7 @@
     VendorSeverity:
       azure: 2
       cbl-mariner: 2
+      oracle-oval: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -18815,6 +19242,8 @@
     - https://github.com/vim/vim/commit/0714b15940b245108e6e9d7aa2260dd849a26fa9
     - https://github.com/vim/vim/releases/tag/v9.1.2132
     - https://github.com/vim/vim/security/advisories/GHSA-5w93-4g67-mm43
+    - https://linux.oracle.com/cve/CVE-2026-25749.html
+    - https://linux.oracle.com/errata/ELSA-2026-4442.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25749
     - https://www.cve.org/CVERecord?id=CVE-2026-25749
     PublishedDate: '2026-02-06T23:15:54.23Z'
@@ -19107,12 +19536,23 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32249
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:4100d9fdf5e08ae4d603026e5e315e9ee1239169f3ac9c8b6088696edc921601
+    Title: Vim is an open source, command line text editor. From 9.1.0011 to befo ...
+    Description: Vim is an open source, command line text editor. From 9.1.0011 to before 9.2.0137, Vim's NFA regex compiler, when encountering a collection containing a combining character as the endpoint of a character range (e.g. [0-0\u05bb]), incorrectly emits the composing bytes of that character as separate NFA states. This corrupts the NFA postfix stack, resulting in NFA_START_COLL having a NULL out1 pointer. When nfa_max_width() subsequently traverses the compiled NFA to estimate match width for the look-behind assertion, it dereferences state->out1->out without a NULL check, causing a segmentation fault. This vulnerability is fixed in 9.2.0137.
     Severity: UNKNOWN
+    CweIDs:
+    - CWE-476
+    References:
+    - https://github.com/vim/vim/commit/36d6e87542cf823d833e451e09a90ee429899cec
+    - https://github.com/vim/vim/releases/tag/v9.2.0137
+    - https://github.com/vim/vim/security/advisories/GHSA-9phh-423r-778r
+    PublishedDate: '2026-03-12T20:16:05.523Z'
+    LastModifiedDate: '2026-03-12T21:07:53.427Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -19139,6 +19579,7 @@
     VendorSeverity:
       azure: 2
       cbl-mariner: 2
+      oracle-oval: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -19150,6 +19591,8 @@
     - https://github.com/vim/vim/commit/0714b15940b245108e6e9d7aa2260dd849a26fa9
     - https://github.com/vim/vim/releases/tag/v9.1.2132
     - https://github.com/vim/vim/security/advisories/GHSA-5w93-4g67-mm43
+    - https://linux.oracle.com/cve/CVE-2026-25749.html
+    - https://linux.oracle.com/errata/ELSA-2026-4442.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25749
     - https://www.cve.org/CVERecord?id=CVE-2026-25749
     PublishedDate: '2026-02-06T23:15:54.23Z'
@@ -19442,57 +19885,23 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32249
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:dbed12ebfa651e851fd7a95ee573167b8e1dca2230cbe12c4e4b644b9851e770
+    Title: Vim is an open source, command line text editor. From 9.1.0011 to befo ...
+    Description: Vim is an open source, command line text editor. From 9.1.0011 to before 9.2.0137, Vim's NFA regex compiler, when encountering a collection containing a combining character as the endpoint of a character range (e.g. [0-0\u05bb]), incorrectly emits the composing bytes of that character as separate NFA states. This corrupts the NFA postfix stack, resulting in NFA_START_COLL having a NULL out1 pointer. When nfa_max_width() subsequently traverses the compiled NFA to estimate match width for the look-behind assertion, it dereferences state->out1->out without a NULL check, causing a segmentation fault. This vulnerability is fixed in 9.2.0137.
     Severity: UNKNOWN
-  - VulnerabilityID: CVE-2026-22184
-    PkgID: zlib@1.3.1-r2
-    PkgName: zlib
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: b954f4a027f289c1
-    InstalledVersion: 1.3.1-r2
-    FixedVersion: 1.3.2-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    SeveritySource: nvd
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15fc5bfe4c7675
-    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
-    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
-    Severity: CRITICAL
     CweIDs:
-    - CWE-787
-    VendorSeverity:
-      nvd: 4
-      redhat: 3
-    CVSS:
-      nvd:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 9.8
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
-        V3Score: 8.6
+    - CWE-476
     References:
-    - https://access.redhat.com/security/cve/CVE-2026-22184
-    - https://github.com/madler/zlib
-    - https://github.com/madler/zlib/issues/1142
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
-    - https://seclists.org/fulldisclosure/2026/Jan/3
-    - https://www.cve.org/CVERecord?id=CVE-2026-22184
-    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
-    - https://zlib.net/
-    PublishedDate: '2026-01-07T21:16:01.563Z'
-    LastModifiedDate: '2026-01-15T14:16:27.047Z'
+    - https://github.com/vim/vim/commit/36d6e87542cf823d833e451e09a90ee429899cec
+    - https://github.com/vim/vim/releases/tag/v9.2.0137
+    - https://github.com/vim/vim/security/advisories/GHSA-9phh-423r-778r
+    PublishedDate: '2026-03-12T20:16:05.523Z'
+    LastModifiedDate: '2026-03-12T21:07:53.427Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
@@ -22597,6 +23006,7 @@
       ghsa: 3
       nvd: 2
       redhat: 3
+      ubuntu: 2
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
@@ -22615,6 +23025,7 @@
     - https://github.com/pyca/cryptography/releases/tag/46.0.5
     - https://github.com/pyca/cryptography/security/advisories/GHSA-r6ph-v2qm-q3c2
     - https://nvd.nist.gov/vuln/detail/CVE-2026-26007
+    - https://ubuntu.com/security/notices/USN-8087-1
     - https://www.cve.org/CVERecord?id=CVE-2026-26007
     PublishedDate: '2026-02-10T22:17:00.307Z'
     LastModifiedDate: '2026-02-23T15:40:33.787Z'
@@ -26320,6 +26731,7 @@
       ghsa: 2
       nvd: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
@@ -26336,6 +26748,7 @@
     - https://github.com/go-git/go-git/releases/tag/v5.16.5
     - https://github.com/go-git/go-git/security/advisories/GHSA-37cx-329c-33x3
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25934
+    - https://ubuntu.com/security/notices/USN-8088-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25934
     PublishedDate: '2026-02-09T23:16:05.937Z'
     LastModifiedDate: '2026-02-20T20:21:19.26Z'
@@ -30832,6 +31245,7 @@
       ghsa: 2
       nvd: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
@@ -30848,6 +31262,7 @@
     - https://github.com/go-git/go-git/releases/tag/v5.16.5
     - https://github.com/go-git/go-git/security/advisories/GHSA-37cx-329c-33x3
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25934
+    - https://ubuntu.com/security/notices/USN-8088-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25934
     PublishedDate: '2026-02-09T23:16:05.937Z'
     LastModifiedDate: '2026-02-20T20:21:19.26Z'
@@ -36988,6 +37403,7 @@
       ghsa: 2
       nvd: 2
       redhat: 2
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
@@ -37004,6 +37420,7 @@
     - https://github.com/go-git/go-git/releases/tag/v5.16.5
     - https://github.com/go-git/go-git/security/advisories/GHSA-37cx-329c-33x3
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25934
+    - https://ubuntu.com/security/notices/USN-8088-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25934
     PublishedDate: '2026-02-09T23:16:05.937Z'
     LastModifiedDate: '2026-02-20T20:21:19.26Z'
