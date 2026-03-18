@@ -10776,6 +10776,7 @@
     CweIDs:
     - CWE-305
     VendorSeverity:
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -10788,6 +10789,7 @@
     - https://curl.se/docs/CVE-2026-1965.json
     - https://nvd.nist.gov/vuln/detail/CVE-2026-1965
     - https://ubuntu.com/security/notices/USN-8084-1
+    - https://ubuntu.com/security/notices/USN-8099-1
     - https://www.cve.org/CVERecord?id=CVE-2026-1965
     PublishedDate: '2026-03-11T11:15:59.177Z'
     LastModifiedDate: '2026-03-12T14:11:19.07Z'
@@ -10822,6 +10824,7 @@
     CweIDs:
     - CWE-522
     VendorSeverity:
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -10836,6 +10839,7 @@
     - https://hackerone.com/reports/3583983
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3783
     - https://ubuntu.com/security/notices/USN-8084-1
+    - https://ubuntu.com/security/notices/USN-8099-1
     - https://www.cve.org/CVERecord?id=CVE-2026-3783
     PublishedDate: '2026-03-11T11:16:00.08Z'
     LastModifiedDate: '2026-03-12T14:10:37.3Z'
@@ -10866,6 +10870,7 @@
     CweIDs:
     - CWE-305
     VendorSeverity:
+      photon: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -10880,6 +10885,7 @@
     - https://hackerone.com/reports/3584903
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3784
     - https://ubuntu.com/security/notices/USN-8084-1
+    - https://ubuntu.com/security/notices/USN-8099-1
     - https://www.cve.org/CVERecord?id=CVE-2026-3784
     PublishedDate: '2026-03-11T11:16:00.437Z'
     LastModifiedDate: '2026-03-12T14:09:50.47Z'
@@ -10909,6 +10915,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -13517,6 +13524,7 @@
     CweIDs:
     - CWE-305
     VendorSeverity:
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -13529,6 +13537,7 @@
     - https://curl.se/docs/CVE-2026-1965.json
     - https://nvd.nist.gov/vuln/detail/CVE-2026-1965
     - https://ubuntu.com/security/notices/USN-8084-1
+    - https://ubuntu.com/security/notices/USN-8099-1
     - https://www.cve.org/CVERecord?id=CVE-2026-1965
     PublishedDate: '2026-03-11T11:15:59.177Z'
     LastModifiedDate: '2026-03-12T14:11:19.07Z'
@@ -13563,6 +13572,7 @@
     CweIDs:
     - CWE-522
     VendorSeverity:
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -13577,6 +13587,7 @@
     - https://hackerone.com/reports/3583983
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3783
     - https://ubuntu.com/security/notices/USN-8084-1
+    - https://ubuntu.com/security/notices/USN-8099-1
     - https://www.cve.org/CVERecord?id=CVE-2026-3783
     PublishedDate: '2026-03-11T11:16:00.08Z'
     LastModifiedDate: '2026-03-12T14:10:37.3Z'
@@ -13607,6 +13618,7 @@
     CweIDs:
     - CWE-305
     VendorSeverity:
+      photon: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -13621,6 +13633,7 @@
     - https://hackerone.com/reports/3584903
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3784
     - https://ubuntu.com/security/notices/USN-8084-1
+    - https://ubuntu.com/security/notices/USN-8099-1
     - https://www.cve.org/CVERecord?id=CVE-2026-3784
     PublishedDate: '2026-03-11T11:16:00.437Z'
     LastModifiedDate: '2026-03-12T14:09:50.47Z'
@@ -13650,6 +13663,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -16403,6 +16417,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21933
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:55.917Z'
     LastModifiedDate: '2026-01-30T16:07:09.417Z'
   - VulnerabilityID: CVE-2025-61748
@@ -16826,6 +16841,7 @@
     - https://ubuntu.com/security/notices/USN-8003-1
     - https://www.cve.org/CVERecord?id=CVE-2026-21933
     - https://www.oracle.com/security-alerts/cpujan2026.html
+    - https://www.oracle.com/security-alerts/cpujan2026.html#AppendixJAVA
     PublishedDate: '2026-01-20T22:15:55.917Z'
     LastModifiedDate: '2026-01-30T16:07:09.417Z'
   - VulnerabilityID: CVE-2025-61748
@@ -18883,6 +18899,7 @@
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
+      photon: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -18932,6 +18949,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       nvd:
@@ -18979,6 +18997,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       nvd:
@@ -19026,6 +19045,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19073,6 +19093,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19120,6 +19141,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19202,6 +19224,7 @@
     VendorSeverity:
       azure: 1
       cbl-mariner: 1
+      photon: 1
       redhat: 1
     CVSS:
       redhat:
@@ -19245,6 +19268,7 @@
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
+      photon: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -19294,6 +19318,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       nvd:
@@ -19341,6 +19366,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       nvd:
@@ -19388,6 +19414,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19435,6 +19462,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19482,6 +19510,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19564,6 +19593,7 @@
     VendorSeverity:
       azure: 1
       cbl-mariner: 1
+      photon: 1
       redhat: 1
     CVSS:
       redhat:
@@ -19607,6 +19637,7 @@
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
+      photon: 2
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -19656,6 +19687,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       nvd:
@@ -19703,6 +19735,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       nvd:
@@ -19750,6 +19783,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19797,6 +19831,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19844,6 +19879,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
+      photon: 2
       redhat: 2
     CVSS:
       nvd:
@@ -19926,6 +19962,7 @@
     VendorSeverity:
       azure: 1
       cbl-mariner: 1
+      photon: 1
       redhat: 1
     CVSS:
       redhat:
@@ -28294,12 +28331,12 @@
     Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
         V3Score: 5.4
@@ -32766,12 +32803,12 @@
     Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
         V3Score: 5.4
@@ -39260,12 +39297,12 @@
     Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
         V3Score: 5.4
@@ -40384,12 +40421,12 @@
     Description: Actions which insert URLs into the content attribute of HTML meta tags are not escaped. This can allow XSS if the meta tag also has an http-equiv attribute with the value "refresh". A new GODEBUG setting has been added, htmlmetacontenturlescape, which can be used to disable escaping URLs in actions in the meta content attribute which follow "url=" by setting htmlmetacontenturlescape=0.
     Severity: MEDIUM
     VendorSeverity:
-      bitnami: 3
+      bitnami: 2
       redhat: 2
     CVSS:
       bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
         V3Score: 5.4
