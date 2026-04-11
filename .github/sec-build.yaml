@@ -12426,6 +12426,46 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33748
     PublishedDate: '2026-03-27T15:16:57.127Z'
     LastModifiedDate: '2026-03-30T13:26:29.793Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: libblkid@2.41.1-r0
+    PkgName: libblkid
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libblkid@2.41.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: c7e2b6ef20b0f0d5
+    InstalledVersion: 2.41.1-r0
+    FixedVersion: 2.41.4-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:4d7343fd6dfde6171293fb548de4a3e6484bd72d1205d7661022598545629ce7
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-07T13:20:55.2Z'
   - VulnerabilityID: CVE-2025-15467
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -12777,6 +12817,69 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-69421
     PublishedDate: '2026-01-27T16:16:34.437Z'
     LastModifiedDate: '2026-02-28T04:16:17.457Z'
+  - VulnerabilityID: CVE-2026-28390
+    PkgID: libcrypto3@3.5.1-r0
+    PkgName: libcrypto3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: cbd56b14356751a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28390
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:38329d90322e719b3dfc39ae1d44d9540b86b22b28a510a90b24929b36252fa3
+    Title: 'openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing'
+    Description: |-
+      Issue summary: During processing of a crafted CMS EnvelopedData message
+      with KeyTransportRecipientInfo a NULL pointer dereference can happen.
+
+      Impact summary: Applications that process attacker-controlled CMS data may
+      crash before authentication or cryptographic operations occur resulting in
+      Denial of Service.
+
+      When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
+      RSA-OAEP encryption is processed, the optional parameters field of
+      RSA-OAEP SourceFunc algorithm identifier is examined without checking
+      for its presence. This results in a NULL pointer dereference if the field
+      is missing.
+
+      Applications and services that call CMS_decrypt() on untrusted input
+      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: HIGH
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28390
+    - https://github.com/openssl/openssl/commit/01194a8f1941115cd0383bfa91c736dd3993c8bc
+    - https://github.com/openssl/openssl/commit/2e39b7a6993be445fddb9fbce316fa756e0397b6
+    - https://github.com/openssl/openssl/commit/af2a5fecd3e71a29e7568f9c1453dec5cebbaff4
+    - https://github.com/openssl/openssl/commit/ea7b4ea4f9f853521ba34830cbcadc970d2e0788
+    - https://github.com/openssl/openssl/commit/fd2f1a6cf53b9ceeca723a001aa4b825d7c7ee75
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28390
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28390
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.19Z'
+    LastModifiedDate: '2026-04-10T21:16:23.67Z'
   - VulnerabilityID: CVE-2025-11187
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -14235,6 +14338,7 @@
     - https://github.com/openssl/openssl/commit/ec03fa050b3346997ed9c5fef3d0e16ad7db8177
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28387
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.7Z'
@@ -14296,10 +14400,11 @@
     - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28388
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.863Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
+    LastModifiedDate: '2026-04-10T21:16:23.157Z'
   - VulnerabilityID: CVE-2026-28389
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -14350,65 +14455,11 @@
     - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28389
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:21.03Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
-  - VulnerabilityID: CVE-2026-28390
-    PkgID: libcrypto3@3.5.1-r0
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: cbd56b14356751a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28390
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:38329d90322e719b3dfc39ae1d44d9540b86b22b28a510a90b24929b36252fa3
-    Title: 'Issue summary: During processing of a crafted CMS EnvelopedData messag ...'
-    Description: |-
-      Issue summary: During processing of a crafted CMS EnvelopedData message
-      with KeyTransportRecipientInfo a NULL pointer dereference can happen.
-
-      Impact summary: Applications that process attacker-controlled CMS data may
-      crash before authentication or cryptographic operations occur resulting in
-      Denial of Service.
-
-      When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
-      RSA-OAEP encryption is processed, the optional parameters field of
-      RSA-OAEP SourceFunc algorithm identifier is examined without checking
-      for its presence. This results in a NULL pointer dereference if the field
-      is missing.
-
-      Applications and services that call CMS_decrypt() on untrusted input
-      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/01194a8f1941115cd0383bfa91c736dd3993c8bc
-    - https://github.com/openssl/openssl/commit/2e39b7a6993be445fddb9fbce316fa756e0397b6
-    - https://github.com/openssl/openssl/commit/af2a5fecd3e71a29e7568f9c1453dec5cebbaff4
-    - https://github.com/openssl/openssl/commit/ea7b4ea4f9f853521ba34830cbcadc970d2e0788
-    - https://github.com/openssl/openssl/commit/fd2f1a6cf53b9ceeca723a001aa4b825d7c7ee75
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-28390
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.19Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
+    LastModifiedDate: '2026-04-10T21:16:23.41Z'
   - VulnerabilityID: CVE-2026-31789
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -15283,6 +15334,46 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-24515
     PublishedDate: '2026-01-23T08:16:01.49Z'
     LastModifiedDate: '2026-02-05T17:27:53.29Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: libmount@2.41.1-r0
+    PkgName: libmount
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libmount@2.41.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 1eaac4fb8b9f9df4
+    InstalledVersion: 2.41.1-r0
+    FixedVersion: 2.41.4-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:df215cd62bf2993c50880264c12afa8c6fc477ba94638af09c504d0cde7d6e95
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-07T13:20:55.2Z'
   - VulnerabilityID: CVE-2025-64720
     PkgID: libpng@1.6.49-r0
     PkgName: libpng
@@ -15856,6 +15947,37 @@
     - https://www.openwall.com/lists/oss-security/2025/11/22/1
     PublishedDate: '2025-11-25T00:15:47.3Z'
     LastModifiedDate: '2025-11-26T18:34:38.24Z'
+  - VulnerabilityID: CVE-2026-34757
+    PkgID: libpng@1.6.49-r0
+    PkgName: libpng
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 7634c89e07a8aec5
+    InstalledVersion: 1.6.49-r0
+    FixedVersion: 1.6.57-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-34757
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:fcad1d47dfb06efb8196a9c5a8e9c9a91c9b751c8d83fcdb8a7ec1f7f3042e42
+    Title: LIBPNG is a reference library for use in applications that read, creat ...
+    Description: LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From 1.0.9 to before 1.6.57, passing a pointer obtained from png_get_PLTE, png_get_tRNS, or png_get_hIST back into the corresponding setter on the same png_struct/png_info pair causes the setter to read from freed memory and copy its contents into the replacement buffer. The setter frees the internal buffer before copying from the caller-supplied pointer, which now dangles. The freed region may contain stale data (producing silently corrupted chunk metadata) or data from subsequent heap allocations (leaking unrelated heap contents into the chunk struct). This vulnerability is fixed in 1.6.57.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-416
+    References:
+    - https://github.com/pnggroup/libpng/commit/398cbe3df03f4e11bb031e07f416dfdde3684e8a
+    - https://github.com/pnggroup/libpng/commit/55d20aaa322c9274491cda82c5cd4f99b48c6bcc
+    - https://github.com/pnggroup/libpng/issues/836
+    - https://github.com/pnggroup/libpng/issues/837
+    - https://github.com/pnggroup/libpng/security/advisories/GHSA-6fr7-g8h7-v645
+    PublishedDate: '2026-04-09T15:16:11.003Z'
+    LastModifiedDate: '2026-04-09T15:16:11.003Z'
   - VulnerabilityID: CVE-2025-15467
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -16207,6 +16329,69 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-69421
     PublishedDate: '2026-01-27T16:16:34.437Z'
     LastModifiedDate: '2026-02-28T04:16:17.457Z'
+  - VulnerabilityID: CVE-2026-28390
+    PkgID: libssl3@3.5.1-r0
+    PkgName: libssl3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 5f9bab5010dbc59a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28390
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:fcc91d8a878f007ceaa6f79d0d129b8769c2cd00d9f872c11c36aae9e61cfc08
+    Title: 'openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing'
+    Description: |-
+      Issue summary: During processing of a crafted CMS EnvelopedData message
+      with KeyTransportRecipientInfo a NULL pointer dereference can happen.
+
+      Impact summary: Applications that process attacker-controlled CMS data may
+      crash before authentication or cryptographic operations occur resulting in
+      Denial of Service.
+
+      When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
+      RSA-OAEP encryption is processed, the optional parameters field of
+      RSA-OAEP SourceFunc algorithm identifier is examined without checking
+      for its presence. This results in a NULL pointer dereference if the field
+      is missing.
+
+      Applications and services that call CMS_decrypt() on untrusted input
+      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: HIGH
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28390
+    - https://github.com/openssl/openssl/commit/01194a8f1941115cd0383bfa91c736dd3993c8bc
+    - https://github.com/openssl/openssl/commit/2e39b7a6993be445fddb9fbce316fa756e0397b6
+    - https://github.com/openssl/openssl/commit/af2a5fecd3e71a29e7568f9c1453dec5cebbaff4
+    - https://github.com/openssl/openssl/commit/ea7b4ea4f9f853521ba34830cbcadc970d2e0788
+    - https://github.com/openssl/openssl/commit/fd2f1a6cf53b9ceeca723a001aa4b825d7c7ee75
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28390
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28390
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.19Z'
+    LastModifiedDate: '2026-04-10T21:16:23.67Z'
   - VulnerabilityID: CVE-2025-11187
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -17665,6 +17850,7 @@
     - https://github.com/openssl/openssl/commit/ec03fa050b3346997ed9c5fef3d0e16ad7db8177
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28387
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.7Z'
@@ -17726,10 +17912,11 @@
     - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28388
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.863Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
+    LastModifiedDate: '2026-04-10T21:16:23.157Z'
   - VulnerabilityID: CVE-2026-28389
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -17780,65 +17967,11 @@
     - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28389
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:21.03Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
-  - VulnerabilityID: CVE-2026-28390
-    PkgID: libssl3@3.5.1-r0
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 5f9bab5010dbc59a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28390
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:fcc91d8a878f007ceaa6f79d0d129b8769c2cd00d9f872c11c36aae9e61cfc08
-    Title: 'Issue summary: During processing of a crafted CMS EnvelopedData messag ...'
-    Description: |-
-      Issue summary: During processing of a crafted CMS EnvelopedData message
-      with KeyTransportRecipientInfo a NULL pointer dereference can happen.
-
-      Impact summary: Applications that process attacker-controlled CMS data may
-      crash before authentication or cryptographic operations occur resulting in
-      Denial of Service.
-
-      When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
-      RSA-OAEP encryption is processed, the optional parameters field of
-      RSA-OAEP SourceFunc algorithm identifier is examined without checking
-      for its presence. This results in a NULL pointer dereference if the field
-      is missing.
-
-      Applications and services that call CMS_decrypt() on untrusted input
-      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/01194a8f1941115cd0383bfa91c736dd3993c8bc
-    - https://github.com/openssl/openssl/commit/2e39b7a6993be445fddb9fbce316fa756e0397b6
-    - https://github.com/openssl/openssl/commit/af2a5fecd3e71a29e7568f9c1453dec5cebbaff4
-    - https://github.com/openssl/openssl/commit/ea7b4ea4f9f853521ba34830cbcadc970d2e0788
-    - https://github.com/openssl/openssl/commit/fd2f1a6cf53b9ceeca723a001aa4b825d7c7ee75
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-28390
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.19Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
+    LastModifiedDate: '2026-04-10T21:16:23.41Z'
   - VulnerabilityID: CVE-2026-31789
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -17943,6 +18076,64 @@
     - https://www.kb.cert.org/vuls/id/271649
     PublishedDate: '2026-01-07T22:15:43.2Z'
     LastModifiedDate: '2026-02-02T19:27:23.07Z'
+  - VulnerabilityID: CVE-2026-40200
+    PkgID: musl@1.2.5-r14
+    PkgName: musl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl@1.2.5-r14?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 7a48bee71334eb3a
+    InstalledVersion: 1.2.5-r14
+    FixedVersion: 1.2.6-r2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-40200
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:cf70471696ac28400365d42f36a91cb41c45f0f68b41e0406794806b6c2ae14e
+    Title: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based ...
+    Description: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based memory corruption can occur during qsort of very large arrays, due to incorrectly implemented double-word primitives. The number of elements must exceed about seven million, i.e., the 32nd Leonardo number on 32-bit platforms (or the 64th Leonardo number on 64-bit platforms, which is not practical).
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-670
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/10/13
+    - https://musl.libc.org/releases.html
+    - https://www.openwall.com/lists/oss-security/2026/04/10/13
+    PublishedDate: '2026-04-10T17:17:14.107Z'
+    LastModifiedDate: '2026-04-10T18:16:46.38Z'
+  - VulnerabilityID: CVE-2026-40200
+    PkgID: musl-utils@1.2.5-r14
+    PkgName: musl-utils
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl-utils@1.2.5-r14?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 17c6a768ec66499c
+    InstalledVersion: 1.2.5-r14
+    FixedVersion: 1.2.6-r2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-40200
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d2e01ea69fd44d0d449ad40352532eac9ee0c5b22c743c352dfdffbc99bb8ca9
+    Title: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based ...
+    Description: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based memory corruption can occur during qsort of very large arrays, due to incorrectly implemented double-word primitives. The number of elements must exceed about seven million, i.e., the 32nd Leonardo number on 32-bit platforms (or the 64th Leonardo number on 64-bit platforms, which is not practical).
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-670
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/10/13
+    - https://musl.libc.org/releases.html
+    - https://www.openwall.com/lists/oss-security/2026/04/10/13
+    PublishedDate: '2026-04-10T17:17:14.107Z'
+    LastModifiedDate: '2026-04-10T18:16:46.38Z'
   - VulnerabilityID: CVE-2026-27135
     PkgID: nghttp2-libs@1.66.0-r0
     PkgName: nghttp2-libs
@@ -17969,6 +18160,7 @@
     VendorSeverity:
       azure: 3
       cbl-mariner: 3
+      oracle-oval: 3
       photon: 3
       redhat: 3
     CVSS:
@@ -17980,6 +18172,8 @@
     - https://access.redhat.com/security/cve/CVE-2026-27135
     - https://github.com/nghttp2/nghttp2/commit/5c7df8fa815ac1004d9ecb9d1f7595c4d37f46e1
     - https://github.com/nghttp2/nghttp2/security/advisories/GHSA-6933-cjhr-5qg6
+    - https://linux.oracle.com/cve/CVE-2026-27135.html
+    - https://linux.oracle.com/errata/ELSA-2026-7123.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27135
     - https://www.cve.org/CVERecord?id=CVE-2026-27135
     PublishedDate: '2026-03-18T18:16:26.723Z'
@@ -19183,6 +19377,69 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-69421
     PublishedDate: '2026-01-27T16:16:34.437Z'
     LastModifiedDate: '2026-02-28T04:16:17.457Z'
+  - VulnerabilityID: CVE-2026-28390
+    PkgID: openssl@3.5.1-r0
+    PkgName: openssl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: ccc16a3818a2a031
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28390
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:6400f87c625f6718f1bbd749746dd5d9595f6da654e4f75a6e32ac8db4a85363
+    Title: 'openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing'
+    Description: |-
+      Issue summary: During processing of a crafted CMS EnvelopedData message
+      with KeyTransportRecipientInfo a NULL pointer dereference can happen.
+
+      Impact summary: Applications that process attacker-controlled CMS data may
+      crash before authentication or cryptographic operations occur resulting in
+      Denial of Service.
+
+      When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
+      RSA-OAEP encryption is processed, the optional parameters field of
+      RSA-OAEP SourceFunc algorithm identifier is examined without checking
+      for its presence. This results in a NULL pointer dereference if the field
+      is missing.
+
+      Applications and services that call CMS_decrypt() on untrusted input
+      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: HIGH
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28390
+    - https://github.com/openssl/openssl/commit/01194a8f1941115cd0383bfa91c736dd3993c8bc
+    - https://github.com/openssl/openssl/commit/2e39b7a6993be445fddb9fbce316fa756e0397b6
+    - https://github.com/openssl/openssl/commit/af2a5fecd3e71a29e7568f9c1453dec5cebbaff4
+    - https://github.com/openssl/openssl/commit/ea7b4ea4f9f853521ba34830cbcadc970d2e0788
+    - https://github.com/openssl/openssl/commit/fd2f1a6cf53b9ceeca723a001aa4b825d7c7ee75
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28390
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28390
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.19Z'
+    LastModifiedDate: '2026-04-10T21:16:23.67Z'
   - VulnerabilityID: CVE-2025-11187
     PkgID: openssl@3.5.1-r0
     PkgName: openssl
@@ -20641,6 +20898,7 @@
     - https://github.com/openssl/openssl/commit/ec03fa050b3346997ed9c5fef3d0e16ad7db8177
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28387
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.7Z'
@@ -20702,10 +20960,11 @@
     - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28388
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.863Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
+    LastModifiedDate: '2026-04-10T21:16:23.157Z'
   - VulnerabilityID: CVE-2026-28389
     PkgID: openssl@3.5.1-r0
     PkgName: openssl
@@ -20756,65 +21015,11 @@
     - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28389
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:21.03Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
-  - VulnerabilityID: CVE-2026-28390
-    PkgID: openssl@3.5.1-r0
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: ccc16a3818a2a031
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28390
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:6400f87c625f6718f1bbd749746dd5d9595f6da654e4f75a6e32ac8db4a85363
-    Title: 'Issue summary: During processing of a crafted CMS EnvelopedData messag ...'
-    Description: |-
-      Issue summary: During processing of a crafted CMS EnvelopedData message
-      with KeyTransportRecipientInfo a NULL pointer dereference can happen.
-
-      Impact summary: Applications that process attacker-controlled CMS data may
-      crash before authentication or cryptographic operations occur resulting in
-      Denial of Service.
-
-      When a CMS EnvelopedData message that uses KeyTransportRecipientInfo with
-      RSA-OAEP encryption is processed, the optional parameters field of
-      RSA-OAEP SourceFunc algorithm identifier is examined without checking
-      for its presence. This results in a NULL pointer dereference if the field
-      is missing.
-
-      Applications and services that call CMS_decrypt() on untrusted input
-      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/01194a8f1941115cd0383bfa91c736dd3993c8bc
-    - https://github.com/openssl/openssl/commit/2e39b7a6993be445fddb9fbce316fa756e0397b6
-    - https://github.com/openssl/openssl/commit/af2a5fecd3e71a29e7568f9c1453dec5cebbaff4
-    - https://github.com/openssl/openssl/commit/ea7b4ea4f9f853521ba34830cbcadc970d2e0788
-    - https://github.com/openssl/openssl/commit/fd2f1a6cf53b9ceeca723a001aa4b825d7c7ee75
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-28390
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.19Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
+    LastModifiedDate: '2026-04-10T21:16:23.41Z'
   - VulnerabilityID: CVE-2026-31789
     PkgID: openssl@3.5.1-r0
     PkgName: openssl
@@ -21773,6 +21978,44 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-35177
     PublishedDate: '2026-04-06T18:16:44.003Z'
     LastModifiedDate: '2026-04-07T13:20:11.643Z'
+  - VulnerabilityID: CVE-2026-39881
+    PkgID: vim@9.1.1557-r1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f37ace8bbf995058
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0321-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39881
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:cc46125818742d3b4acc68edc2e4592e016a74f2ccb929a001508c264ae27635
+    Title: 'vim: Vim: Arbitrary code execution via command injection in NetBeans interface'
+    Description: Vim is an open source, command line text editor. Prior to 9.2.0316, a command injection vulnerability in Vim's netbeans interface allows a malicious netbeans server to execute arbitrary Ex commands when Vim connects to it, via unsanitized strings in the defineAnnoType and specialKeys protocol messages. This vulnerability is fixed in 9.2.0316.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-94
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:H/A:N
+        V3Score: 5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39881
+    - https://github.com/vim/vim/commit/7ab76a86048ed492374ac6b19
+    - https://github.com/vim/vim/releases/tag/v9.2.0316
+    - https://github.com/vim/vim/security/advisories/GHSA-mr87-rhgv-7pw6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39881
+    - https://www.cve.org/CVERecord?id=CVE-2026-39881
+    PublishedDate: '2026-04-08T21:17:00.4Z'
+    LastModifiedDate: '2026-04-08T21:26:13.41Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -21817,35 +22060,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
-  - VulnerabilityID: CVE-2026-39881
-    PkgID: vim@9.1.1557-r1
-    PkgName: vim
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f37ace8bbf995058
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0321-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39881
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:cc46125818742d3b4acc68edc2e4592e016a74f2ccb929a001508c264ae27635
-    Title: '[Ex command injection in Vims NetBeans integration]'
-    Description: Vim is an open source, command line text editor. Prior to 9.2.0316, a command injection vulnerability in Vim's netbeans interface allows a malicious netbeans server to execute arbitrary Ex commands when Vim connects to it, via unsanitized strings in the defineAnnoType and specialKeys protocol messages. This vulnerability is fixed in 9.2.0316.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-94
-    References:
-    - https://github.com/vim/vim/commit/7ab76a86048ed492374ac6b19
-    - https://github.com/vim/vim/releases/tag/v9.2.0316
-    - https://github.com/vim/vim/security/advisories/GHSA-mr87-rhgv-7pw6
-    PublishedDate: '2026-04-08T21:17:00.4Z'
-    LastModifiedDate: '2026-04-08T21:26:13.41Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -22373,6 +22587,44 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-35177
     PublishedDate: '2026-04-06T18:16:44.003Z'
     LastModifiedDate: '2026-04-07T13:20:11.643Z'
+  - VulnerabilityID: CVE-2026-39881
+    PkgID: vim-common@9.1.1557-r1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f513f86f78716ce1
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0321-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39881
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:11600b4891f2514e17beea996af9803bd228d7169eb77d0b8149013532248e73
+    Title: 'vim: Vim: Arbitrary code execution via command injection in NetBeans interface'
+    Description: Vim is an open source, command line text editor. Prior to 9.2.0316, a command injection vulnerability in Vim's netbeans interface allows a malicious netbeans server to execute arbitrary Ex commands when Vim connects to it, via unsanitized strings in the defineAnnoType and specialKeys protocol messages. This vulnerability is fixed in 9.2.0316.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-94
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:H/A:N
+        V3Score: 5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39881
+    - https://github.com/vim/vim/commit/7ab76a86048ed492374ac6b19
+    - https://github.com/vim/vim/releases/tag/v9.2.0316
+    - https://github.com/vim/vim/security/advisories/GHSA-mr87-rhgv-7pw6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39881
+    - https://www.cve.org/CVERecord?id=CVE-2026-39881
+    PublishedDate: '2026-04-08T21:17:00.4Z'
+    LastModifiedDate: '2026-04-08T21:26:13.41Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -22417,35 +22669,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
-  - VulnerabilityID: CVE-2026-39881
-    PkgID: vim-common@9.1.1557-r1
-    PkgName: vim-common
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f513f86f78716ce1
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0321-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39881
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:11600b4891f2514e17beea996af9803bd228d7169eb77d0b8149013532248e73
-    Title: '[Ex command injection in Vims NetBeans integration]'
-    Description: Vim is an open source, command line text editor. Prior to 9.2.0316, a command injection vulnerability in Vim's netbeans interface allows a malicious netbeans server to execute arbitrary Ex commands when Vim connects to it, via unsanitized strings in the defineAnnoType and specialKeys protocol messages. This vulnerability is fixed in 9.2.0316.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-94
-    References:
-    - https://github.com/vim/vim/commit/7ab76a86048ed492374ac6b19
-    - https://github.com/vim/vim/releases/tag/v9.2.0316
-    - https://github.com/vim/vim/security/advisories/GHSA-mr87-rhgv-7pw6
-    PublishedDate: '2026-04-08T21:17:00.4Z'
-    LastModifiedDate: '2026-04-08T21:26:13.41Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -22973,6 +23196,44 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-35177
     PublishedDate: '2026-04-06T18:16:44.003Z'
     LastModifiedDate: '2026-04-07T13:20:11.643Z'
+  - VulnerabilityID: CVE-2026-39881
+    PkgID: xxd@9.1.1557-r1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 67ee24b19424f9fd
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0321-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39881
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:fc0cd49e09382c851e9c29dc83e455677c5aeb48b423de44b3e602b37b92d3f4
+    Title: 'vim: Vim: Arbitrary code execution via command injection in NetBeans interface'
+    Description: Vim is an open source, command line text editor. Prior to 9.2.0316, a command injection vulnerability in Vim's netbeans interface allows a malicious netbeans server to execute arbitrary Ex commands when Vim connects to it, via unsanitized strings in the defineAnnoType and specialKeys protocol messages. This vulnerability is fixed in 9.2.0316.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-94
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:H/A:N
+        V3Score: 5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39881
+    - https://github.com/vim/vim/commit/7ab76a86048ed492374ac6b19
+    - https://github.com/vim/vim/releases/tag/v9.2.0316
+    - https://github.com/vim/vim/security/advisories/GHSA-mr87-rhgv-7pw6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39881
+    - https://www.cve.org/CVERecord?id=CVE-2026-39881
+    PublishedDate: '2026-04-08T21:17:00.4Z'
+    LastModifiedDate: '2026-04-08T21:26:13.41Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -23017,35 +23278,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
-  - VulnerabilityID: CVE-2026-39881
-    PkgID: xxd@9.1.1557-r1
-    PkgName: xxd
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 67ee24b19424f9fd
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0321-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39881
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:fc0cd49e09382c851e9c29dc83e455677c5aeb48b423de44b3e602b37b92d3f4
-    Title: '[Ex command injection in Vims NetBeans integration]'
-    Description: Vim is an open source, command line text editor. Prior to 9.2.0316, a command injection vulnerability in Vim's netbeans interface allows a malicious netbeans server to execute arbitrary Ex commands when Vim connects to it, via unsanitized strings in the defineAnnoType and specialKeys protocol messages. This vulnerability is fixed in 9.2.0316.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-94
-    References:
-    - https://github.com/vim/vim/commit/7ab76a86048ed492374ac6b19
-    - https://github.com/vim/vim/releases/tag/v9.2.0316
-    - https://github.com/vim/vim/security/advisories/GHSA-mr87-rhgv-7pw6
-    PublishedDate: '2026-04-08T21:17:00.4Z'
-    LastModifiedDate: '2026-04-08T21:26:13.41Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
@@ -25180,6 +25412,58 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-68161
     PublishedDate: '2025-12-18T21:15:57.96Z'
     LastModifiedDate: '2026-01-20T01:15:55.067Z'
+  - VulnerabilityID: CVE-2026-34480
+    VendorIDs:
+    - GHSA-3pxv-7cmr-fjr4
+    PkgName: org.apache.logging.log4j:log4j-core
+    PkgPath: openaf/plugin-XLS/log4j-core-2.25.0.jar
+    PkgIdentifier:
+      PURL: pkg:maven/org.apache.logging.log4j/log4j-core@2.25.0
+      UID: 97523748b53ce286
+    InstalledVersion: 2.25.0
+    FixedVersion: 2.25.4, 3.0.0-beta3
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-34480
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:17e2ec3756cd8e81fc19119b0938605f085528201d1290de14b2094c26934e8f
+    Title: Apache Log4j Core's XmlLayout fails to sanitize characters
+    Description: |-
+      Apache Log4j Core's  XmlLayout https://logging.apache.org/log4j/2.x/manual/layouts.html#XmlLayout , in versions up to and including 2.25.3, fails to sanitize characters forbidden by the  XML 1.0 specification https://www.w3.org/TR/xml/#charsets  producing invalid XML output whenever a log message or MDC value contains such characters.
+
+      The impact depends on the StAX implementation in use:
+
+        *  JRE built-in StAX: Forbidden characters are silently written to the output, producing malformed XML. Conforming parsers must reject such documents with a fatal error, which may cause downstream log-processing systems to drop the affected records.
+        *  Alternative StAX implementations (e.g.,  Woodstox https://github.com/FasterXML/woodstox , a transitive dependency of the Jackson XML Dataformat module): An exception is thrown during the logging call, and the log event is never delivered to its intended appender, only to Log4j's internal status logger.
+
+
+      Users are advised to upgrade to Apache Log4j Core 2.25.4, which corrects this issue by sanitizing forbidden characters before XML output.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N
+        V40Score: 6.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/10/9
+    - https://github.com/apache/logging-log4j2
+    - https://github.com/apache/logging-log4j2/pull/4077
+    - https://lists.apache.org/thread/5x0hcnng0chhghp6jgjdp3qmbbhfjzhb
+    - https://logging.apache.org/cyclonedx/vdr.xml
+    - https://logging.apache.org/log4j/2.x/manual/layouts.html#XmlLayout
+    - https://logging.apache.org/security.html#CVE-2026-34480
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34480
+    PublishedDate: '2026-04-10T16:16:31.463Z'
+    LastModifiedDate: '2026-04-10T17:17:02.577Z'
   - VulnerabilityID: CVE-2025-11143
     VendorIDs:
     - GHSA-wjpw-4j6x-6rwh
@@ -26249,7 +26533,7 @@
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
     Fingerprint: sha256:17d3ed667aba2c273fa150b74471ef99137a5dc8d5b123496d36102d77e0b068
-    Title: Cryptography vulnerable to buffer overflow if non-contiguous buffers were passed to APIs
+    Title: cryptography is a package designed to expose cryptographic primitives  ...
     Description: cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. From 45.0.0 to before 46.0.7, if a non-contiguous buffer was passed to APIs which accepted Python buffers (e.g. Hash.update()), this could lead to buffer overflows. This vulnerability is fixed in 46.0.7.
     Severity: MEDIUM
     CweIDs:
@@ -26264,6 +26548,7 @@
     - http://www.openwall.com/lists/oss-security/2026/04/08/12
     - https://github.com/pyca/cryptography
     - https://github.com/pyca/cryptography/security/advisories/GHSA-p423-j2cm-9vmq
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39892
     PublishedDate: '2026-04-08T21:17:01.547Z'
     LastModifiedDate: '2026-04-08T22:16:21.907Z'
   - VulnerabilityID: CVE-2026-34073
@@ -26296,7 +26581,6 @@
       ghsa: 1
       nvd: 2
       redhat: 1
-      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
@@ -30417,6 +30701,44 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-8959
     PublishedDate: '2025-08-15T21:15:37.347Z'
     LastModifiedDate: '2025-12-11T19:56:22.32Z'
+  - VulnerabilityID: CVE-2026-4660
+    VendorIDs:
+    - GHSA-92mm-2pjq-r785
+    PkgID: github.com/hashicorp/go-getter@v1.7.8
+    PkgName: github.com/hashicorp/go-getter
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/hashicorp/go-getter@v1.7.8
+      UID: 40f3a884119b9573
+    InstalledVersion: v1.7.8
+    FixedVersion: 1.8.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4660
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:fc3b63a11ee5ebb24e5c3ae8893f1a971e03a4d58ca2202fffe33f362dcec060
+    Title: HashiCorp\u2019s go-getter library up to v1.8.5 may allow arbitrary fi ...
+    Description: HashiCorp’s go-getter library up to v1.8.5 may allow arbitrary file reads on the file system during certain git operations through a maliciously crafted URL. This vulnerability, CVE-2026-4660, is fixed in go-getter v1.8.6. This vulnerability does not affect the go-getter/v2 branch and package.
+    Severity: HIGH
+    CweIDs:
+    - CWE-200
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
+    References:
+    - https://discuss.hashicorp.com/t/hcsec-2026-04-go-getter-may-allow-to-arbitrary-filesystem-reads-through-git-operations/77311
+    - https://github.com/hashicorp/go-getter
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4660
+    PublishedDate: '2026-04-09T14:16:32.993Z'
+    LastModifiedDate: '2026-04-09T14:16:32.993Z'
   - VulnerabilityID: CVE-2025-11579
     VendorIDs:
     - GHSA-rwvp-r38j-9rgg
@@ -30725,16 +31047,21 @@
     - CWE-426
     VendorSeverity:
       ghsa: 3
+      nvd: 3
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
         V40Score: 7.3
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7
     References:
     - http://github.com/open-telemetry/opentelemetry-go/releases/tag/v1.43.0
     - https://github.com/open-telemetry/opentelemetry-go
     - https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hfvc-g4fc-pqhx
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39883
     PublishedDate: '2026-04-08T21:17:00.697Z'
-    LastModifiedDate: '2026-04-08T21:26:13.41Z'
+    LastModifiedDate: '2026-04-10T21:16:27.12Z'
   - VulnerabilityID: CVE-2025-47914
     VendorIDs:
     - GHSA-f6x5-jh6r-wrfv
@@ -30878,7 +31205,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33186
     - https://www.cve.org/CVERecord?id=CVE-2026-33186
     PublishedDate: '2026-03-20T23:16:45.18Z'
-    LastModifiedDate: '2026-03-23T14:32:02.8Z'
+    LastModifiedDate: '2026-04-10T20:49:17.737Z'
   - VulnerabilityID: CVE-2025-68121
     VendorIDs:
     - GO-2026-4337
@@ -31307,7 +31634,7 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7005.html
+    - https://linux.oracle.com/errata/ELSA-2026-7259.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
@@ -31934,6 +32261,123 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27142
     PublishedDate: '2026-03-06T22:16:01.177Z'
     LastModifiedDate: '2026-03-16T16:16:13.77Z'
+  - VulnerabilityID: CVE-2026-32281
+    VendorIDs:
+    - GO-2026-4946
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0d4023456c2cfe570aa9975a18a8d08064ab9d675a972da4799c35881fccebea
+    Title: 'crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation'
+    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32281
+    - https://go.dev/cl/758061
+    - https://go.dev/issue/78281
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32281
+    - https://pkg.go.dev/vuln/GO-2026-4946
+    - https://www.cve.org/CVERecord?id=CVE-2026-32281
+    PublishedDate: '2026-04-08T02:16:03.35Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32288
+    VendorIDs:
+    - GO-2026-4869
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:44767e465d77189f3782eee79dcb3beff46f3f55c610ec22710d045954e89e18
+    Title: 'archive/tar: golang: Go''s archive/tar package: Denial of Service via maliciously-crafted archive'
+    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 4.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32288
+    - https://go.dev/cl/763766
+    - https://go.dev/issue/78301
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32288
+    - https://pkg.go.dev/vuln/GO-2026-4869
+    - https://www.cve.org/CVERecord?id=CVE-2026-32288
+    PublishedDate: '2026-04-08T02:16:03.707Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32289
+    VendorIDs:
+    - GO-2026-4865
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:185d6dcad0b89500c1e5bbeb68e380823db41a65a07796f3b598e1f457b2c307
+    Title: 'html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals'
+    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32289
+    - https://go.dev/cl/763762
+    - https://go.dev/issue/78331
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32289
+    - https://pkg.go.dev/vuln/GO-2026-4865
+    - https://www.cve.org/CVERecord?id=CVE-2026-32289
+    PublishedDate: '2026-04-08T02:16:03.82Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -32010,36 +32454,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4947
     PublishedDate: '2026-04-08T02:16:03.247Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32281
-    VendorIDs:
-    - GO-2026-4946
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: c8a49abd00c2b8a3
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:0d4023456c2cfe570aa9975a18a8d08064ab9d675a972da4799c35881fccebea
-    Title: Validating certificate chains which use policies is unexpectedly ineff ...
-    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/758061
-    - https://go.dev/issue/78281
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4946
-    PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32282
     VendorIDs:
     - GO-2026-4864
@@ -32060,7 +32474,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:af475e630d83f647ca572d135c7709adfbae8aff8f255ec7ab4cf2d4e86b13a4
-    Title: TOCTOU permits root escape on Linux via Root.Chmod in os in internal/syscall/unix
+    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
     Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
     Severity: UNKNOWN
     References:
@@ -32090,7 +32504,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:7649f10f483676c18b35b77cdee19f24f05ad22091f0d2fff1594a290f582060
-    Title: Unauthenticated TLS 1.3 KeyUpdate record can cause persistent connection retention and DoS in crypto/tls
+    Title: If one side of the TLS connection sends multiple key update messages p ...
     Description: If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources. This can lead to a denial of service. This only affects TLS 1.3.
     Severity: UNKNOWN
     References:
@@ -32099,66 +32513,6 @@
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32288
-    VendorIDs:
-    - GO-2026-4869
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: c8a49abd00c2b8a3
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:44767e465d77189f3782eee79dcb3beff46f3f55c610ec22710d045954e89e18
-    Title: Unbounded allocation for old GNU sparse in archive/tar
-    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763766
-    - https://go.dev/issue/78301
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4869
-    PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32289
-    VendorIDs:
-    - GO-2026-4865
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: c8a49abd00c2b8a3
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:185d6dcad0b89500c1e5bbeb68e380823db41a65a07796f3b598e1f457b2c307
-    Title: JsBraceDepth Context Tracking Bugs (XSS) in html/template
-    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763762
-    - https://go.dev/issue/78331
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4865
-    PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
 - Target: usr/bin/syft
   Class: lang-pkgs
@@ -35439,6 +35793,44 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-8959
     PublishedDate: '2025-08-15T21:15:37.347Z'
     LastModifiedDate: '2025-12-11T19:56:22.32Z'
+  - VulnerabilityID: CVE-2026-4660
+    VendorIDs:
+    - GHSA-92mm-2pjq-r785
+    PkgID: github.com/hashicorp/go-getter@v1.7.8
+    PkgName: github.com/hashicorp/go-getter
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/hashicorp/go-getter@v1.7.8
+      UID: 89d83d79ec4ae50b
+    InstalledVersion: v1.7.8
+    FixedVersion: 1.8.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4660
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:e3f52baa1e92a6b45fe5721fa1f4aa8ffef6ae7e80dc2ee231197e6ff476f9da
+    Title: HashiCorp\u2019s go-getter library up to v1.8.5 may allow arbitrary fi ...
+    Description: HashiCorp’s go-getter library up to v1.8.5 may allow arbitrary file reads on the file system during certain git operations through a maliciously crafted URL. This vulnerability, CVE-2026-4660, is fixed in go-getter v1.8.6. This vulnerability does not affect the go-getter/v2 branch and package.
+    Severity: HIGH
+    CweIDs:
+    - CWE-200
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
+    References:
+    - https://discuss.hashicorp.com/t/hcsec-2026-04-go-getter-may-allow-to-arbitrary-filesystem-reads-through-git-operations/77311
+    - https://github.com/hashicorp/go-getter
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4660
+    PublishedDate: '2026-04-09T14:16:32.993Z'
+    LastModifiedDate: '2026-04-09T14:16:32.993Z'
   - VulnerabilityID: CVE-2025-11579
     VendorIDs:
     - GHSA-rwvp-r38j-9rgg
@@ -35822,7 +36214,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33186
     - https://www.cve.org/CVERecord?id=CVE-2026-33186
     PublishedDate: '2026-03-20T23:16:45.18Z'
-    LastModifiedDate: '2026-03-23T14:32:02.8Z'
+    LastModifiedDate: '2026-04-10T20:49:17.737Z'
   - VulnerabilityID: CVE-2025-68121
     VendorIDs:
     - GO-2026-4337
@@ -36251,7 +36643,7 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7005.html
+    - https://linux.oracle.com/errata/ELSA-2026-7259.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
@@ -36878,6 +37270,123 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27142
     PublishedDate: '2026-03-06T22:16:01.177Z'
     LastModifiedDate: '2026-03-16T16:16:13.77Z'
+  - VulnerabilityID: CVE-2026-32281
+    VendorIDs:
+    - GO-2026-4946
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:dee4ed93b1b9f7115576d24d8a3dd1430f560c5e8049590c395e30a933e3f09e
+    Title: 'crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation'
+    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32281
+    - https://go.dev/cl/758061
+    - https://go.dev/issue/78281
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32281
+    - https://pkg.go.dev/vuln/GO-2026-4946
+    - https://www.cve.org/CVERecord?id=CVE-2026-32281
+    PublishedDate: '2026-04-08T02:16:03.35Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32288
+    VendorIDs:
+    - GO-2026-4869
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:72914a6097ba37ee8677164d558bb81cee37a448f0814e3069bc6aaa53ed317f
+    Title: 'archive/tar: golang: Go''s archive/tar package: Denial of Service via maliciously-crafted archive'
+    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 4.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32288
+    - https://go.dev/cl/763766
+    - https://go.dev/issue/78301
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32288
+    - https://pkg.go.dev/vuln/GO-2026-4869
+    - https://www.cve.org/CVERecord?id=CVE-2026-32288
+    PublishedDate: '2026-04-08T02:16:03.707Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32289
+    VendorIDs:
+    - GO-2026-4865
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:9dd97f72f4439d7cc335422dae0fc7ddaad66f1b48af077082a813c9ed472380
+    Title: 'html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals'
+    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32289
+    - https://go.dev/cl/763762
+    - https://go.dev/issue/78331
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32289
+    - https://pkg.go.dev/vuln/GO-2026-4865
+    - https://www.cve.org/CVERecord?id=CVE-2026-32289
+    PublishedDate: '2026-04-08T02:16:03.82Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -36954,36 +37463,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4947
     PublishedDate: '2026-04-08T02:16:03.247Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32281
-    VendorIDs:
-    - GO-2026-4946
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 4bef6a299358baaf
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:dee4ed93b1b9f7115576d24d8a3dd1430f560c5e8049590c395e30a933e3f09e
-    Title: Validating certificate chains which use policies is unexpectedly ineff ...
-    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/758061
-    - https://go.dev/issue/78281
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4946
-    PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32282
     VendorIDs:
     - GO-2026-4864
@@ -37004,7 +37483,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:d6ac6a1290595206ba2fbc5f0363300809161474e35aa4ecdd517b7d7ae7b88c
-    Title: TOCTOU permits root escape on Linux via Root.Chmod in os in internal/syscall/unix
+    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
     Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
     Severity: UNKNOWN
     References:
@@ -37034,7 +37513,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:d9abc125bb344dd3f3943b7d2eb4db772420079a738cd387160617f5f2b1c000
-    Title: Unauthenticated TLS 1.3 KeyUpdate record can cause persistent connection retention and DoS in crypto/tls
+    Title: If one side of the TLS connection sends multiple key update messages p ...
     Description: If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources. This can lead to a denial of service. This only affects TLS 1.3.
     Severity: UNKNOWN
     References:
@@ -37043,66 +37522,6 @@
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32288
-    VendorIDs:
-    - GO-2026-4869
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 4bef6a299358baaf
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:72914a6097ba37ee8677164d558bb81cee37a448f0814e3069bc6aaa53ed317f
-    Title: Unbounded allocation for old GNU sparse in archive/tar
-    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763766
-    - https://go.dev/issue/78301
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4869
-    PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32289
-    VendorIDs:
-    - GO-2026-4865
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 4bef6a299358baaf
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:9dd97f72f4439d7cc335422dae0fc7ddaad66f1b48af077082a813c9ed472380
-    Title: JsBraceDepth Context Tracking Bugs (XSS) in html/template
-    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763762
-    - https://go.dev/issue/78331
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4865
-    PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
 - Target: usr/bin/trivy
   Class: lang-pkgs
@@ -42122,6 +42541,44 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-8959
     PublishedDate: '2025-08-15T21:15:37.347Z'
     LastModifiedDate: '2025-12-11T19:56:22.32Z'
+  - VulnerabilityID: CVE-2026-4660
+    VendorIDs:
+    - GHSA-92mm-2pjq-r785
+    PkgID: github.com/hashicorp/go-getter@v1.7.8
+    PkgName: github.com/hashicorp/go-getter
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/hashicorp/go-getter@v1.7.8
+      UID: 675078c9b64dec21
+    InstalledVersion: v1.7.8
+    FixedVersion: 1.8.6
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4660
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:d321cb16f7b3d0a93b1a02345306a537fbf949937c790e8c7fcaae8027f76530
+    Title: HashiCorp\u2019s go-getter library up to v1.8.5 may allow arbitrary fi ...
+    Description: HashiCorp’s go-getter library up to v1.8.5 may allow arbitrary file reads on the file system during certain git operations through a maliciously crafted URL. This vulnerability, CVE-2026-4660, is fixed in go-getter v1.8.6. This vulnerability does not affect the go-getter/v2 branch and package.
+    Severity: HIGH
+    CweIDs:
+    - CWE-200
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
+    References:
+    - https://discuss.hashicorp.com/t/hcsec-2026-04-go-getter-may-allow-to-arbitrary-filesystem-reads-through-git-operations/77311
+    - https://github.com/hashicorp/go-getter
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4660
+    PublishedDate: '2026-04-09T14:16:32.993Z'
+    LastModifiedDate: '2026-04-09T14:16:32.993Z'
   - VulnerabilityID: CVE-2026-33747
     VendorIDs:
     - GHSA-4c29-8rgm-jvjj
@@ -42671,16 +43128,21 @@
     - CWE-426
     VendorSeverity:
       ghsa: 3
+      nvd: 3
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
         V40Score: 7.3
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7
     References:
     - http://github.com/open-telemetry/opentelemetry-go/releases/tag/v1.43.0
     - https://github.com/open-telemetry/opentelemetry-go
     - https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hfvc-g4fc-pqhx
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39883
     PublishedDate: '2026-04-08T21:17:00.697Z'
-    LastModifiedDate: '2026-04-08T21:26:13.41Z'
+    LastModifiedDate: '2026-04-10T21:16:27.12Z'
   - VulnerabilityID: CVE-2025-47914
     VendorIDs:
     - GHSA-f6x5-jh6r-wrfv
@@ -42824,7 +43286,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33186
     - https://www.cve.org/CVERecord?id=CVE-2026-33186
     PublishedDate: '2026-03-20T23:16:45.18Z'
-    LastModifiedDate: '2026-03-23T14:32:02.8Z'
+    LastModifiedDate: '2026-04-10T20:49:17.737Z'
   - VulnerabilityID: CVE-2025-53547
     VendorIDs:
     - GHSA-557j-xg8c-q2mm
@@ -42979,6 +43441,46 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-55199
     PublishedDate: '2025-08-14T00:15:27.96Z'
     LastModifiedDate: '2025-08-21T21:25:20.793Z'
+  - VulnerabilityID: CVE-2026-35206
+    VendorIDs:
+    - GHSA-hr2v-4r36-88hr
+    PkgID: helm.sh/helm/v3@v3.18.3
+    PkgName: helm.sh/helm/v3
+    PkgIdentifier:
+      PURL: pkg:golang/helm.sh/helm/v3@v3.18.3
+      UID: a1cda603e388e09e
+    InstalledVersion: v3.18.3
+    FixedVersion: 3.20.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35206
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:d7bc4de39493d76c1a80f4eabc0593cf3bd71bff88a01eaf4f12817342a81607
+    Title: Helm Chart extraction output directory collapse via `Chart.yaml` name dot-segment
+    Description: Helm is a package manager for Charts for Kubernetes. In Helm versions <=3.20.1 and <=4.1.3, a specially crafted Chart will cause helm pull --untar  [chart URL | repo/chartname] to write the Chart's contents to the immediate output directory (as defaulted to the current working directory; or as given by the --destination and --untardir flags), rather than the expected output directory suffixed by the chart's name. This vulnerability is fixed in 3.20.2 and 4.1.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N
+        V40Score: 4.8
+    References:
+    - https://github.com/helm/helm
+    - https://github.com/helm/helm/commit/4e7994d4467182f535b6797c94b5b0e994a91436
+    - https://github.com/helm/helm/releases/tag/v4.1.4
+    - https://github.com/helm/helm/security/advisories/GHSA-hr2v-4r36-88hr
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-35206
+    PublishedDate: '2026-04-09T21:16:09.993Z'
+    LastModifiedDate: '2026-04-09T21:16:09.993Z'
   - VulnerabilityID: CVE-2025-68121
     VendorIDs:
     - GO-2026-4337
@@ -43407,7 +43909,7 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7005.html
+    - https://linux.oracle.com/errata/ELSA-2026-7259.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
@@ -44034,6 +44536,123 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27142
     PublishedDate: '2026-03-06T22:16:01.177Z'
     LastModifiedDate: '2026-03-16T16:16:13.77Z'
+  - VulnerabilityID: CVE-2026-32281
+    VendorIDs:
+    - GO-2026-4946
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:8973e67f1c69e32c8bf04cb5ad8b2a7f5df9d7f6ef8020eed05e48711244cde9
+    Title: 'crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation'
+    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32281
+    - https://go.dev/cl/758061
+    - https://go.dev/issue/78281
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32281
+    - https://pkg.go.dev/vuln/GO-2026-4946
+    - https://www.cve.org/CVERecord?id=CVE-2026-32281
+    PublishedDate: '2026-04-08T02:16:03.35Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32288
+    VendorIDs:
+    - GO-2026-4869
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:e4a48bfc753f8f63fa3f7b40ef46af92b74cf349773fbf1c47bbba0f38f0a188
+    Title: 'archive/tar: golang: Go''s archive/tar package: Denial of Service via maliciously-crafted archive'
+    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 4.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32288
+    - https://go.dev/cl/763766
+    - https://go.dev/issue/78301
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32288
+    - https://pkg.go.dev/vuln/GO-2026-4869
+    - https://www.cve.org/CVERecord?id=CVE-2026-32288
+    PublishedDate: '2026-04-08T02:16:03.707Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32289
+    VendorIDs:
+    - GO-2026-4865
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:917b452e36dd4ca85ea17f013d61115de33885cd65b257b7a68d52a0aa85a601
+    Title: 'html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals'
+    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32289
+    - https://go.dev/cl/763762
+    - https://go.dev/issue/78331
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32289
+    - https://pkg.go.dev/vuln/GO-2026-4865
+    - https://www.cve.org/CVERecord?id=CVE-2026-32289
+    PublishedDate: '2026-04-08T02:16:03.82Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -44110,36 +44729,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4947
     PublishedDate: '2026-04-08T02:16:03.247Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32281
-    VendorIDs:
-    - GO-2026-4946
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f86edb9664e32d65
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:8973e67f1c69e32c8bf04cb5ad8b2a7f5df9d7f6ef8020eed05e48711244cde9
-    Title: Validating certificate chains which use policies is unexpectedly ineff ...
-    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/758061
-    - https://go.dev/issue/78281
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4946
-    PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32282
     VendorIDs:
     - GO-2026-4864
@@ -44160,7 +44749,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:90ddc398c10be3a8333e9574073e4807221fce90c069107ab008eaefce83a913
-    Title: TOCTOU permits root escape on Linux via Root.Chmod in os in internal/syscall/unix
+    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
     Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
     Severity: UNKNOWN
     References:
@@ -44190,7 +44779,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:06e3a5468959e02d5d4b2620e1af0999256adec197e42ca367d4fa69f65afd74
-    Title: Unauthenticated TLS 1.3 KeyUpdate record can cause persistent connection retention and DoS in crypto/tls
+    Title: If one side of the TLS connection sends multiple key update messages p ...
     Description: If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources. This can lead to a denial of service. This only affects TLS 1.3.
     Severity: UNKNOWN
     References:
@@ -44199,66 +44788,6 @@
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32288
-    VendorIDs:
-    - GO-2026-4869
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f86edb9664e32d65
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:e4a48bfc753f8f63fa3f7b40ef46af92b74cf349773fbf1c47bbba0f38f0a188
-    Title: Unbounded allocation for old GNU sparse in archive/tar
-    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763766
-    - https://go.dev/issue/78301
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4869
-    PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32289
-    VendorIDs:
-    - GO-2026-4865
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f86edb9664e32d65
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:917b452e36dd4ca85ea17f013d61115de33885cd65b257b7a68d52a0aa85a601
-    Title: JsBraceDepth Context Tracking Bugs (XSS) in html/template
-    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763762
-    - https://go.dev/issue/78331
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4865
-    PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
 - Target: usr/bin/trivy_cve_query
   Class: lang-pkgs
@@ -44724,7 +45253,7 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7005.html
+    - https://linux.oracle.com/errata/ELSA-2026-7259.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
@@ -45351,6 +45880,123 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27142
     PublishedDate: '2026-03-06T22:16:01.177Z'
     LastModifiedDate: '2026-03-16T16:16:13.77Z'
+  - VulnerabilityID: CVE-2026-32281
+    VendorIDs:
+    - GO-2026-4946
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:99ea8782568412d9a40f8ed52b2c0ee16a433a516c75d6d0f3d44646eb505e30
+    Title: 'crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation'
+    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32281
+    - https://go.dev/cl/758061
+    - https://go.dev/issue/78281
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32281
+    - https://pkg.go.dev/vuln/GO-2026-4946
+    - https://www.cve.org/CVERecord?id=CVE-2026-32281
+    PublishedDate: '2026-04-08T02:16:03.35Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32288
+    VendorIDs:
+    - GO-2026-4869
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:ef83ddaf9b27ebcf9b24438df1aa24780fc28c4d25e046ebc9692838a1b798eb
+    Title: 'archive/tar: golang: Go''s archive/tar package: Denial of Service via maliciously-crafted archive'
+    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 4.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32288
+    - https://go.dev/cl/763766
+    - https://go.dev/issue/78301
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32288
+    - https://pkg.go.dev/vuln/GO-2026-4869
+    - https://www.cve.org/CVERecord?id=CVE-2026-32288
+    PublishedDate: '2026-04-08T02:16:03.707Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32289
+    VendorIDs:
+    - GO-2026-4865
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:f263e5b53d6b8848e7699eb0e6e481e6fa6c8c83491f7ce3a52409fe5285832b
+    Title: 'html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals'
+    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
+    Severity: MEDIUM
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32289
+    - https://go.dev/cl/763762
+    - https://go.dev/issue/78331
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32289
+    - https://pkg.go.dev/vuln/GO-2026-4865
+    - https://www.cve.org/CVERecord?id=CVE-2026-32289
+    PublishedDate: '2026-04-08T02:16:03.82Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -45427,36 +46073,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4947
     PublishedDate: '2026-04-08T02:16:03.247Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32281
-    VendorIDs:
-    - GO-2026-4946
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: c395cea322d363d5
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32281
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:99ea8782568412d9a40f8ed52b2c0ee16a433a516c75d6d0f3d44646eb505e30
-    Title: Validating certificate chains which use policies is unexpectedly ineff ...
-    Description: Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/758061
-    - https://go.dev/issue/78281
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4946
-    PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32282
     VendorIDs:
     - GO-2026-4864
@@ -45477,7 +46093,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:0964d4bf61da4d5b9e1038559f233fadb9af06279fca8be5a253bc8f989e4ec3
-    Title: TOCTOU permits root escape on Linux via Root.Chmod in os in internal/syscall/unix
+    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
     Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
     Severity: UNKNOWN
     References:
@@ -45507,7 +46123,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:36106258199657081fea2114c7611e580f4664e8ccc8ab7059ce07662cb9a26e
-    Title: Unauthenticated TLS 1.3 KeyUpdate record can cause persistent connection retention and DoS in crypto/tls
+    Title: If one side of the TLS connection sends multiple key update messages p ...
     Description: If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources. This can lead to a denial of service. This only affects TLS 1.3.
     Severity: UNKNOWN
     References:
@@ -45516,64 +46132,4 @@
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32288
-    VendorIDs:
-    - GO-2026-4869
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: c395cea322d363d5
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32288
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:ef83ddaf9b27ebcf9b24438df1aa24780fc28c4d25e046ebc9692838a1b798eb
-    Title: Unbounded allocation for old GNU sparse in archive/tar
-    Description: tar.Reader can allocate an unbounded amount of memory when reading a maliciously-crafted archive containing a large number of sparse regions encoded in the "old GNU sparse map" format.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763766
-    - https://go.dev/issue/78301
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4869
-    PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32289
-    VendorIDs:
-    - GO-2026-4865
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: c395cea322d363d5
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32289
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:f263e5b53d6b8848e7699eb0e6e481e6fa6c8c83491f7ce3a52409fe5285832b
-    Title: JsBraceDepth Context Tracking Bugs (XSS) in html/template
-    Description: Context was not properly tracked across template branches for JS template literals, leading to possibly incorrect escaping of content when branches were used. Additionally template actions within JS template literals did not properly track the brace depth, leading to incorrect escaping being applied. These issues could cause actions within JS template literals to be incorrectly or improperly escaped, leading to XSS vulnerabilities.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763762
-    - https://go.dev/issue/78331
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4865
-    PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-08T21:26:35.91Z'
