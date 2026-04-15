@@ -10789,7 +10789,7 @@
     - CWE-125
     VendorSeverity:
       alma: 2
-      amazon: 1
+      amazon: 2
       oracle-oval: 2
       photon: 3
       redhat: 2
@@ -11165,8 +11165,10 @@
     CweIDs:
     - CWE-193
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       nvd: 3
+      photon: 3
       redhat: 3
     CVSS:
       ghsa:
@@ -11216,6 +11218,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       ghsa:
@@ -11266,6 +11269,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -11514,8 +11518,10 @@
     CweIDs:
     - CWE-193
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       nvd: 3
+      photon: 3
       redhat: 3
     CVSS:
       ghsa:
@@ -11565,6 +11571,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       ghsa:
@@ -11615,6 +11622,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -11863,8 +11871,10 @@
     CweIDs:
     - CWE-193
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       nvd: 3
+      photon: 3
       redhat: 3
     CVSS:
       ghsa:
@@ -11914,6 +11924,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       ghsa:
@@ -11964,6 +11975,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -12212,8 +12224,10 @@
     CweIDs:
     - CWE-193
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       nvd: 3
+      photon: 3
       redhat: 3
     CVSS:
       ghsa:
@@ -12263,6 +12277,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       ghsa:
@@ -12313,6 +12328,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -12859,6 +12875,8 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      amazon: 3
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -14049,6 +14067,207 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-22796
     PublishedDate: '2026-01-27T16:16:35.543Z'
     LastModifiedDate: '2026-02-02T18:40:27.467Z'
+  - VulnerabilityID: CVE-2026-28388
+    PkgID: libcrypto3@3.5.1-r0
+    PkgName: libcrypto3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: cbd56b14356751a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28388
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:7edd3eaa77137b94084a22cd78653952430baaf915804dbc1549c5b080372236
+    Title: 'openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing'
+    Description: |-
+      Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
+      is processed a NULL pointer dereference might happen if the required CRL
+      Number extension is missing.
+
+      Impact summary: A NULL pointer dereference can trigger a crash which
+      leads to a Denial of Service for an application.
+
+      When CRL processing and delta CRL processing is enabled during X.509
+      certificate verification, the delta CRL processing does not check
+      whether the CRL Number extension is NULL before dereferencing it.
+      When a malformed delta CRL file is being processed, this parameter
+      can be NULL, causing a NULL pointer dereference.
+
+      Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
+      the verification context, the certificate being verified to contain a
+      freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
+      an attacker to provide a malformed CRL to an application that processes it.
+
+      The vulnerability is limited to Denial of Service and cannot be escalated to
+      achieve code execution or memory disclosure. For that reason the issue was
+      assessed as Low severity according to our Security Policy.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
+      as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28388
+    - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
+    - https://github.com/openssl/openssl/commit/5a0b4930779cd2408880979db765db919da55139
+    - https://github.com/openssl/openssl/commit/602542f2c0c2d5edb47128f93eac10b62aeeefb3
+    - https://github.com/openssl/openssl/commit/a9d187dd1000130100fa7ab915f8513532cb3bb8
+    - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28388
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28388
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:20.863Z'
+    LastModifiedDate: '2026-04-10T21:16:23.157Z'
+  - VulnerabilityID: CVE-2026-28389
+    PkgID: libcrypto3@3.5.1-r0
+    PkgName: libcrypto3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: cbd56b14356751a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28389
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:697f0a08b09a08a689b4be741c9060629c236169f6c805901c4a7071fa112ce8
+    Title: 'openssl: OpenSSL: Denial of Service vulnerability in CMS processing'
+    Description: |-
+      Issue summary: During processing of a crafted CMS EnvelopedData message
+      with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
+
+      Impact summary: Applications that process attacker-controlled CMS data may
+      crash before authentication or cryptographic operations occur resulting in
+      Denial of Service.
+
+      When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
+      processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
+      is examined without checking for its presence. This results in a NULL
+      pointer dereference if the field is missing.
+
+      Applications and services that call CMS_decrypt() on untrusted input
+      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28389
+    - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
+    - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
+    - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
+    - https://github.com/openssl/openssl/commit/c6725634e089eb2b634b10ede33944be7248172a
+    - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28389
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28389
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.03Z'
+    LastModifiedDate: '2026-04-10T21:16:23.41Z'
+  - VulnerabilityID: CVE-2026-31789
+    PkgID: libcrypto3@3.5.1-r0
+    PkgName: libcrypto3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: cbd56b14356751a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-31789
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:64ba4eb48eda972d1305c01233751004c48737b3bab0ff4aa1d784102190a132
+    Title: 'openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing'
+    Description: |-
+      Issue summary: Converting an excessively large OCTET STRING value to
+      a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
+
+      Impact summary: A heap buffer overflow may lead to a crash or possibly
+      an attacker controlled code execution or other undefined behavior.
+
+      If an attacker can supply a crafted X.509 certificate with an excessively
+      large OCTET STRING value in extensions such as the Subject Key Identifier
+      (SKID) or Authority Key Identifier (AKID) which are being converted to hex,
+      the size of the buffer needed for the result is calculated as multiplication
+      of the input length by 3. On 32 bit platforms, this multiplication may overflow
+      resulting in the allocation of a smaller buffer and a heap buffer overflow.
+
+      Applications and services that print or log contents of untrusted X.509
+      certificates are vulnerable to this issue. As the certificates would have
+      to have sizes of over 1 Gigabyte, printing or logging such certificates
+      is a fairly unlikely operation and only 32 bit platforms are affected,
+      this issue was assigned Low severity.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 5.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-31789
+    - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
+    - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
+    - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
+    - https://github.com/openssl/openssl/commit/a24216018e1ede8ff01a4ff5afff7dfbd443e2f9
+    - https://github.com/openssl/openssl/commit/a91e537d16d74050dbde50bb0dfb1fe9930f0521
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-31789
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-31789
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.617Z'
+    LastModifiedDate: '2026-04-08T21:27:00.663Z'
   - VulnerabilityID: CVE-2026-31790
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -14098,6 +14317,8 @@
     CweIDs:
     - CWE-754
     VendorSeverity:
+      amazon: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -14301,7 +14522,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:97c5149bb6aa202f0746acd16eab40f7c4176dbea361a2de821f6871cd9750db
-    Title: 'Issue summary: An uncommon configuration of clients performing DANE TL ...'
+    Title: 'openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication'
     Description: |-
       Issue summary: An uncommon configuration of clients performing DANE TLSA-based
       server authentication, when paired with uncommon server DANE TLSA records, may
@@ -14329,194 +14550,28 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.7
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-28387
     - https://github.com/openssl/openssl/commit/07e727d304746edb49a98ee8f6ab00256e1f012b
     - https://github.com/openssl/openssl/commit/258a8f63b26995ba357f4326da00e19e29c6acbe
     - https://github.com/openssl/openssl/commit/444958deaf450aea819171f97ae69eaedede42c3
     - https://github.com/openssl/openssl/commit/7a4e08cee62a728d32e60b0de89e6764339df0a7
     - https://github.com/openssl/openssl/commit/ec03fa050b3346997ed9c5fef3d0e16ad7db8177
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28387
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
     - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28387
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.7Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
-  - VulnerabilityID: CVE-2026-28388
-    PkgID: libcrypto3@3.5.1-r0
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: cbd56b14356751a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28388
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:7edd3eaa77137b94084a22cd78653952430baaf915804dbc1549c5b080372236
-    Title: 'Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...'
-    Description: |-
-      Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
-      is processed a NULL pointer dereference might happen if the required CRL
-      Number extension is missing.
-
-      Impact summary: A NULL pointer dereference can trigger a crash which
-      leads to a Denial of Service for an application.
-
-      When CRL processing and delta CRL processing is enabled during X.509
-      certificate verification, the delta CRL processing does not check
-      whether the CRL Number extension is NULL before dereferencing it.
-      When a malformed delta CRL file is being processed, this parameter
-      can be NULL, causing a NULL pointer dereference.
-
-      Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
-      the verification context, the certificate being verified to contain a
-      freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
-      an attacker to provide a malformed CRL to an application that processes it.
-
-      The vulnerability is limited to Denial of Service and cannot be escalated to
-      achieve code execution or memory disclosure. For that reason the issue was
-      assessed as Low severity according to our Security Policy.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
-      as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
-    - https://github.com/openssl/openssl/commit/5a0b4930779cd2408880979db765db919da55139
-    - https://github.com/openssl/openssl/commit/602542f2c0c2d5edb47128f93eac10b62aeeefb3
-    - https://github.com/openssl/openssl/commit/a9d187dd1000130100fa7ab915f8513532cb3bb8
-    - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://ubuntu.com/security/notices/USN-8155-2
-    - https://www.cve.org/CVERecord?id=CVE-2026-28388
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:20.863Z'
-    LastModifiedDate: '2026-04-10T21:16:23.157Z'
-  - VulnerabilityID: CVE-2026-28389
-    PkgID: libcrypto3@3.5.1-r0
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: cbd56b14356751a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28389
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:697f0a08b09a08a689b4be741c9060629c236169f6c805901c4a7071fa112ce8
-    Title: 'Issue summary: During processing of a crafted CMS EnvelopedData messag ...'
-    Description: |-
-      Issue summary: During processing of a crafted CMS EnvelopedData message
-      with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
-
-      Impact summary: Applications that process attacker-controlled CMS data may
-      crash before authentication or cryptographic operations occur resulting in
-      Denial of Service.
-
-      When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
-      processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
-      is examined without checking for its presence. This results in a NULL
-      pointer dereference if the field is missing.
-
-      Applications and services that call CMS_decrypt() on untrusted input
-      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
-    - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
-    - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
-    - https://github.com/openssl/openssl/commit/c6725634e089eb2b634b10ede33944be7248172a
-    - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://ubuntu.com/security/notices/USN-8155-2
-    - https://www.cve.org/CVERecord?id=CVE-2026-28389
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.03Z'
-    LastModifiedDate: '2026-04-10T21:16:23.41Z'
-  - VulnerabilityID: CVE-2026-31789
-    PkgID: libcrypto3@3.5.1-r0
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: cbd56b14356751a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-31789
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:64ba4eb48eda972d1305c01233751004c48737b3bab0ff4aa1d784102190a132
-    Title: 'Issue summary: Converting an excessively large OCTET STRING value to a ...'
-    Description: |-
-      Issue summary: Converting an excessively large OCTET STRING value to
-      a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
-
-      Impact summary: A heap buffer overflow may lead to a crash or possibly
-      an attacker controlled code execution or other undefined behavior.
-
-      If an attacker can supply a crafted X.509 certificate with an excessively
-      large OCTET STRING value in extensions such as the Subject Key Identifier
-      (SKID) or Authority Key Identifier (AKID) which are being converted to hex,
-      the size of the buffer needed for the result is calculated as multiplication
-      of the input length by 3. On 32 bit platforms, this multiplication may overflow
-      resulting in the allocation of a smaller buffer and a heap buffer overflow.
-
-      Applications and services that print or log contents of untrusted X.509
-      certificates are vulnerable to this issue. As the certificates would have
-      to have sizes of over 1 Gigabyte, printing or logging such certificates
-      is a fairly unlikely operation and only 32 bit platforms are affected,
-      this issue was assigned Low severity.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-787
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
-    - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
-    - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
-    - https://github.com/openssl/openssl/commit/a24216018e1ede8ff01a4ff5afff7dfbd443e2f9
-    - https://github.com/openssl/openssl/commit/a91e537d16d74050dbde50bb0dfb1fe9930f0521
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-31789
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.617Z'
     LastModifiedDate: '2026-04-08T21:27:00.663Z'
   - VulnerabilityID: CVE-2025-10148
     PkgID: libcurl@8.15.0-r0
@@ -14804,7 +14859,7 @@
     - CWE-125
     VendorSeverity:
       alma: 2
-      amazon: 1
+      amazon: 2
       oracle-oval: 2
       photon: 3
       redhat: 2
@@ -15399,7 +15454,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
@@ -15794,7 +15849,9 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 2
     CVSS:
@@ -15809,6 +15866,8 @@
     - https://github.com/pnggroup/libpng/commit/c1b0318b393c90679e6fa5bc1d329fd5d5012ec1
     - https://github.com/pnggroup/libpng/pull/824
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-m4pc-p4q3-4c7j
+    - https://linux.oracle.com/cve/CVE-2026-33416.html
+    - https://linux.oracle.com/errata/ELSA-2026-7672.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33416
     - https://www.cve.org/CVERecord?id=CVE-2026-33416
     PublishedDate: '2026-03-26T17:16:38.443Z'
@@ -15838,7 +15897,9 @@
     - CWE-125
     - CWE-787
     VendorSeverity:
+      amazon: 3
       azure: 3
+      oracle-oval: 3
       photon: 3
       redhat: 2
     CVSS:
@@ -15850,6 +15911,8 @@
     - https://github.com/pnggroup/libpng/commit/7734cda20cf1236aef60f3bbd2267c97bbb40869
     - https://github.com/pnggroup/libpng/commit/aba9f18eba870d14fb52c5ba5d73451349e339c3
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-wjr5-c57x-95m2
+    - https://linux.oracle.com/cve/CVE-2026-33636.html
+    - https://linux.oracle.com/errata/ELSA-2026-7672.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33636
     - https://www.cve.org/CVERecord?id=CVE-2026-33636
     PublishedDate: '2026-03-26T17:16:41.477Z'
@@ -15878,7 +15941,7 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       photon: 2
@@ -15965,19 +16028,28 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:fcad1d47dfb06efb8196a9c5a8e9c9a91c9b751c8d83fcdb8a7ec1f7f3042e42
-    Title: LIBPNG is a reference library for use in applications that read, creat ...
+    Title: 'libpng: libpng: Information disclosure and data corruption via use-after-free vulnerability'
     Description: LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From 1.0.9 to before 1.6.57, passing a pointer obtained from png_get_PLTE, png_get_tRNS, or png_get_hIST back into the corresponding setter on the same png_struct/png_info pair causes the setter to read from freed memory and copy its contents into the replacement buffer. The setter frees the internal buffer before copying from the caller-supplied pointer, which now dangles. The freed region may contain stale data (producing silently corrupted chunk metadata) or data from subsequent heap allocations (leaking unrelated heap contents into the chunk struct). This vulnerability is fixed in 1.6.57.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-416
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.4
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-34757
     - https://github.com/pnggroup/libpng/commit/398cbe3df03f4e11bb031e07f416dfdde3684e8a
     - https://github.com/pnggroup/libpng/commit/55d20aaa322c9274491cda82c5cd4f99b48c6bcc
     - https://github.com/pnggroup/libpng/issues/836
     - https://github.com/pnggroup/libpng/issues/837
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-6fr7-g8h7-v645
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34757
+    - https://www.cve.org/CVERecord?id=CVE-2026-34757
     PublishedDate: '2026-04-09T15:16:11.003Z'
-    LastModifiedDate: '2026-04-09T15:16:11.003Z'
+    LastModifiedDate: '2026-04-13T15:02:47.353Z'
   - VulnerabilityID: CVE-2025-15467
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -16371,6 +16443,8 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      amazon: 3
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -17561,6 +17635,207 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-22796
     PublishedDate: '2026-01-27T16:16:35.543Z'
     LastModifiedDate: '2026-02-02T18:40:27.467Z'
+  - VulnerabilityID: CVE-2026-28388
+    PkgID: libssl3@3.5.1-r0
+    PkgName: libssl3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 5f9bab5010dbc59a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28388
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:1993bf060007301a3edbd90c3d39d5208254be25ef2fd500f94ded6777764ae2
+    Title: 'openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing'
+    Description: |-
+      Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
+      is processed a NULL pointer dereference might happen if the required CRL
+      Number extension is missing.
+
+      Impact summary: A NULL pointer dereference can trigger a crash which
+      leads to a Denial of Service for an application.
+
+      When CRL processing and delta CRL processing is enabled during X.509
+      certificate verification, the delta CRL processing does not check
+      whether the CRL Number extension is NULL before dereferencing it.
+      When a malformed delta CRL file is being processed, this parameter
+      can be NULL, causing a NULL pointer dereference.
+
+      Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
+      the verification context, the certificate being verified to contain a
+      freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
+      an attacker to provide a malformed CRL to an application that processes it.
+
+      The vulnerability is limited to Denial of Service and cannot be escalated to
+      achieve code execution or memory disclosure. For that reason the issue was
+      assessed as Low severity according to our Security Policy.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
+      as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28388
+    - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
+    - https://github.com/openssl/openssl/commit/5a0b4930779cd2408880979db765db919da55139
+    - https://github.com/openssl/openssl/commit/602542f2c0c2d5edb47128f93eac10b62aeeefb3
+    - https://github.com/openssl/openssl/commit/a9d187dd1000130100fa7ab915f8513532cb3bb8
+    - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28388
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28388
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:20.863Z'
+    LastModifiedDate: '2026-04-10T21:16:23.157Z'
+  - VulnerabilityID: CVE-2026-28389
+    PkgID: libssl3@3.5.1-r0
+    PkgName: libssl3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 5f9bab5010dbc59a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28389
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:69941c2a0dd53fd7746dfc3e3f827b1396b5d1bd927b16f64ae23e8945984f99
+    Title: 'openssl: OpenSSL: Denial of Service vulnerability in CMS processing'
+    Description: |-
+      Issue summary: During processing of a crafted CMS EnvelopedData message
+      with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
+
+      Impact summary: Applications that process attacker-controlled CMS data may
+      crash before authentication or cryptographic operations occur resulting in
+      Denial of Service.
+
+      When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
+      processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
+      is examined without checking for its presence. This results in a NULL
+      pointer dereference if the field is missing.
+
+      Applications and services that call CMS_decrypt() on untrusted input
+      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28389
+    - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
+    - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
+    - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
+    - https://github.com/openssl/openssl/commit/c6725634e089eb2b634b10ede33944be7248172a
+    - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28389
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28389
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.03Z'
+    LastModifiedDate: '2026-04-10T21:16:23.41Z'
+  - VulnerabilityID: CVE-2026-31789
+    PkgID: libssl3@3.5.1-r0
+    PkgName: libssl3
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 5f9bab5010dbc59a
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-31789
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e8ce43f1e1774dbae677b762fba8e2a61139e5b3fd7c3a277fbabb0b9cabdfa5
+    Title: 'openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing'
+    Description: |-
+      Issue summary: Converting an excessively large OCTET STRING value to
+      a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
+
+      Impact summary: A heap buffer overflow may lead to a crash or possibly
+      an attacker controlled code execution or other undefined behavior.
+
+      If an attacker can supply a crafted X.509 certificate with an excessively
+      large OCTET STRING value in extensions such as the Subject Key Identifier
+      (SKID) or Authority Key Identifier (AKID) which are being converted to hex,
+      the size of the buffer needed for the result is calculated as multiplication
+      of the input length by 3. On 32 bit platforms, this multiplication may overflow
+      resulting in the allocation of a smaller buffer and a heap buffer overflow.
+
+      Applications and services that print or log contents of untrusted X.509
+      certificates are vulnerable to this issue. As the certificates would have
+      to have sizes of over 1 Gigabyte, printing or logging such certificates
+      is a fairly unlikely operation and only 32 bit platforms are affected,
+      this issue was assigned Low severity.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 5.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-31789
+    - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
+    - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
+    - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
+    - https://github.com/openssl/openssl/commit/a24216018e1ede8ff01a4ff5afff7dfbd443e2f9
+    - https://github.com/openssl/openssl/commit/a91e537d16d74050dbde50bb0dfb1fe9930f0521
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-31789
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-31789
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.617Z'
+    LastModifiedDate: '2026-04-08T21:27:00.663Z'
   - VulnerabilityID: CVE-2026-31790
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -17610,6 +17885,8 @@
     CweIDs:
     - CWE-754
     VendorSeverity:
+      amazon: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -17813,7 +18090,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:ba5bf3d317511c6f9c807067c2d5cb63918ce6af213b5b80f8c3ec93ba82be60
-    Title: 'Issue summary: An uncommon configuration of clients performing DANE TL ...'
+    Title: 'openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication'
     Description: |-
       Issue summary: An uncommon configuration of clients performing DANE TLSA-based
       server authentication, when paired with uncommon server DANE TLSA records, may
@@ -17841,194 +18118,28 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.7
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-28387
     - https://github.com/openssl/openssl/commit/07e727d304746edb49a98ee8f6ab00256e1f012b
     - https://github.com/openssl/openssl/commit/258a8f63b26995ba357f4326da00e19e29c6acbe
     - https://github.com/openssl/openssl/commit/444958deaf450aea819171f97ae69eaedede42c3
     - https://github.com/openssl/openssl/commit/7a4e08cee62a728d32e60b0de89e6764339df0a7
     - https://github.com/openssl/openssl/commit/ec03fa050b3346997ed9c5fef3d0e16ad7db8177
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28387
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
     - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28387
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.7Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
-  - VulnerabilityID: CVE-2026-28388
-    PkgID: libssl3@3.5.1-r0
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 5f9bab5010dbc59a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28388
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:1993bf060007301a3edbd90c3d39d5208254be25ef2fd500f94ded6777764ae2
-    Title: 'Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...'
-    Description: |-
-      Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
-      is processed a NULL pointer dereference might happen if the required CRL
-      Number extension is missing.
-
-      Impact summary: A NULL pointer dereference can trigger a crash which
-      leads to a Denial of Service for an application.
-
-      When CRL processing and delta CRL processing is enabled during X.509
-      certificate verification, the delta CRL processing does not check
-      whether the CRL Number extension is NULL before dereferencing it.
-      When a malformed delta CRL file is being processed, this parameter
-      can be NULL, causing a NULL pointer dereference.
-
-      Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
-      the verification context, the certificate being verified to contain a
-      freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
-      an attacker to provide a malformed CRL to an application that processes it.
-
-      The vulnerability is limited to Denial of Service and cannot be escalated to
-      achieve code execution or memory disclosure. For that reason the issue was
-      assessed as Low severity according to our Security Policy.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
-      as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
-    - https://github.com/openssl/openssl/commit/5a0b4930779cd2408880979db765db919da55139
-    - https://github.com/openssl/openssl/commit/602542f2c0c2d5edb47128f93eac10b62aeeefb3
-    - https://github.com/openssl/openssl/commit/a9d187dd1000130100fa7ab915f8513532cb3bb8
-    - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://ubuntu.com/security/notices/USN-8155-2
-    - https://www.cve.org/CVERecord?id=CVE-2026-28388
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:20.863Z'
-    LastModifiedDate: '2026-04-10T21:16:23.157Z'
-  - VulnerabilityID: CVE-2026-28389
-    PkgID: libssl3@3.5.1-r0
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 5f9bab5010dbc59a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28389
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:69941c2a0dd53fd7746dfc3e3f827b1396b5d1bd927b16f64ae23e8945984f99
-    Title: 'Issue summary: During processing of a crafted CMS EnvelopedData messag ...'
-    Description: |-
-      Issue summary: During processing of a crafted CMS EnvelopedData message
-      with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
-
-      Impact summary: Applications that process attacker-controlled CMS data may
-      crash before authentication or cryptographic operations occur resulting in
-      Denial of Service.
-
-      When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
-      processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
-      is examined without checking for its presence. This results in a NULL
-      pointer dereference if the field is missing.
-
-      Applications and services that call CMS_decrypt() on untrusted input
-      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
-    - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
-    - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
-    - https://github.com/openssl/openssl/commit/c6725634e089eb2b634b10ede33944be7248172a
-    - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://ubuntu.com/security/notices/USN-8155-2
-    - https://www.cve.org/CVERecord?id=CVE-2026-28389
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.03Z'
-    LastModifiedDate: '2026-04-10T21:16:23.41Z'
-  - VulnerabilityID: CVE-2026-31789
-    PkgID: libssl3@3.5.1-r0
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 5f9bab5010dbc59a
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-31789
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:e8ce43f1e1774dbae677b762fba8e2a61139e5b3fd7c3a277fbabb0b9cabdfa5
-    Title: 'Issue summary: Converting an excessively large OCTET STRING value to a ...'
-    Description: |-
-      Issue summary: Converting an excessively large OCTET STRING value to
-      a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
-
-      Impact summary: A heap buffer overflow may lead to a crash or possibly
-      an attacker controlled code execution or other undefined behavior.
-
-      If an attacker can supply a crafted X.509 certificate with an excessively
-      large OCTET STRING value in extensions such as the Subject Key Identifier
-      (SKID) or Authority Key Identifier (AKID) which are being converted to hex,
-      the size of the buffer needed for the result is calculated as multiplication
-      of the input length by 3. On 32 bit platforms, this multiplication may overflow
-      resulting in the allocation of a smaller buffer and a heap buffer overflow.
-
-      Applications and services that print or log contents of untrusted X.509
-      certificates are vulnerable to this issue. As the certificates would have
-      to have sizes of over 1 Gigabyte, printing or logging such certificates
-      is a fairly unlikely operation and only 32 bit platforms are affected,
-      this issue was assigned Low severity.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-787
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
-    - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
-    - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
-    - https://github.com/openssl/openssl/commit/a24216018e1ede8ff01a4ff5afff7dfbd443e2f9
-    - https://github.com/openssl/openssl/commit/a91e537d16d74050dbde50bb0dfb1fe9930f0521
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-31789
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.617Z'
     LastModifiedDate: '2026-04-08T21:27:00.663Z'
   - VulnerabilityID: CVE-2025-13151
     PkgID: libtasn1@4.20.0-r0
@@ -18094,17 +18205,68 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:cf70471696ac28400365d42f36a91cb41c45f0f68b41e0406794806b6c2ae14e
-    Title: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based ...
+    Title: 'musl: musl libc: Arbitrary code execution and denial of service via stack-based memory corruption in qsort'
     Description: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based memory corruption can occur during qsort of very large arrays, due to incorrectly implemented double-word primitives. The number of elements must exceed about seven million, i.e., the 32nd Leonardo number on 32-bit platforms (or the 64th Leonardo number on 64-bit platforms, which is not practical).
-    Severity: UNKNOWN
+    Severity: HIGH
     CweIDs:
     - CWE-670
+    VendorSeverity:
+      redhat: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 7.8
     References:
     - http://www.openwall.com/lists/oss-security/2026/04/10/13
+    - https://access.redhat.com/security/cve/CVE-2026-40200
     - https://musl.libc.org/releases.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-40200
+    - https://www.cve.org/CVERecord?id=CVE-2026-40200
     - https://www.openwall.com/lists/oss-security/2026/04/10/13
     PublishedDate: '2026-04-10T17:17:14.107Z'
-    LastModifiedDate: '2026-04-10T18:16:46.38Z'
+    LastModifiedDate: '2026-04-13T15:02:06.187Z'
+  - VulnerabilityID: CVE-2026-6042
+    PkgID: musl@1.2.5-r14
+    PkgName: musl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl@1.2.5-r14?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 7a48bee71334eb3a
+    InstalledVersion: 1.2.5-r14
+    FixedVersion: 1.2.6-r1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6042
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:be7c6eb29dcf14df828a35d3ca0cff34da83db5aa8012276e1cbade59d17ddfc
+    Title: 'musl libc: GB18030 4-byte Decoder: musl libc: Denial of Service via inefficient algorithmic complexity in iconv'
+    Description: A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/iconv.c of the component GB18030 4-byte Decoder. Performing a manipulation results in inefficient algorithmic complexity. The attack must be initiated from a local position. To fix this issue, it is recommended to deploy a patch.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-404
+    - CWE-407
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/09/19
+    - https://access.redhat.com/security/cve/CVE-2026-6042
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6042
+    - https://vuldb.com/submit/796352
+    - https://vuldb.com/vuln/356620
+    - https://vuldb.com/vuln/356620/cti
+    - https://www.cve.org/CVERecord?id=CVE-2026-6042
+    - https://www.openwall.com/lists/oss-security/2026/04/02/10
+    - https://www.openwall.com/lists/oss-security/2026/04/03/2
+    PublishedDate: '2026-04-10T09:16:25.45Z'
+    LastModifiedDate: '2026-04-13T15:02:06.187Z'
   - VulnerabilityID: CVE-2026-40200
     PkgID: musl-utils@1.2.5-r14
     PkgName: musl-utils
@@ -18123,17 +18285,68 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:d2e01ea69fd44d0d449ad40352532eac9ee0c5b22c743c352dfdffbc99bb8ca9
-    Title: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based ...
+    Title: 'musl: musl libc: Arbitrary code execution and denial of service via stack-based memory corruption in qsort'
     Description: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based memory corruption can occur during qsort of very large arrays, due to incorrectly implemented double-word primitives. The number of elements must exceed about seven million, i.e., the 32nd Leonardo number on 32-bit platforms (or the 64th Leonardo number on 64-bit platforms, which is not practical).
-    Severity: UNKNOWN
+    Severity: HIGH
     CweIDs:
     - CWE-670
+    VendorSeverity:
+      redhat: 3
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 7.8
     References:
     - http://www.openwall.com/lists/oss-security/2026/04/10/13
+    - https://access.redhat.com/security/cve/CVE-2026-40200
     - https://musl.libc.org/releases.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-40200
+    - https://www.cve.org/CVERecord?id=CVE-2026-40200
     - https://www.openwall.com/lists/oss-security/2026/04/10/13
     PublishedDate: '2026-04-10T17:17:14.107Z'
-    LastModifiedDate: '2026-04-10T18:16:46.38Z'
+    LastModifiedDate: '2026-04-13T15:02:06.187Z'
+  - VulnerabilityID: CVE-2026-6042
+    PkgID: musl-utils@1.2.5-r14
+    PkgName: musl-utils
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl-utils@1.2.5-r14?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 17c6a768ec66499c
+    InstalledVersion: 1.2.5-r14
+    FixedVersion: 1.2.6-r1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6042
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e4d10761019f34fa8ff0d521624dde94acae6d3a2c80859bfe8afa7157b4e398
+    Title: 'musl libc: GB18030 4-byte Decoder: musl libc: Denial of Service via inefficient algorithmic complexity in iconv'
+    Description: A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/iconv.c of the component GB18030 4-byte Decoder. Performing a manipulation results in inefficient algorithmic complexity. The attack must be initiated from a local position. To fix this issue, it is recommended to deploy a patch.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-404
+    - CWE-407
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/09/19
+    - https://access.redhat.com/security/cve/CVE-2026-6042
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6042
+    - https://vuldb.com/submit/796352
+    - https://vuldb.com/vuln/356620
+    - https://vuldb.com/vuln/356620/cti
+    - https://www.cve.org/CVERecord?id=CVE-2026-6042
+    - https://www.openwall.com/lists/oss-security/2026/04/02/10
+    - https://www.openwall.com/lists/oss-security/2026/04/03/2
+    PublishedDate: '2026-04-10T09:16:25.45Z'
+    LastModifiedDate: '2026-04-13T15:02:06.187Z'
   - VulnerabilityID: CVE-2026-27135
     PkgID: nghttp2-libs@1.66.0-r0
     PkgName: nghttp2-libs
@@ -18158,6 +18371,7 @@
     CweIDs:
     - CWE-617
     VendorSeverity:
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
@@ -18173,7 +18387,7 @@
     - https://github.com/nghttp2/nghttp2/commit/5c7df8fa815ac1004d9ecb9d1f7595c4d37f46e1
     - https://github.com/nghttp2/nghttp2/security/advisories/GHSA-6933-cjhr-5qg6
     - https://linux.oracle.com/cve/CVE-2026-27135.html
-    - https://linux.oracle.com/errata/ELSA-2026-7123.html
+    - https://linux.oracle.com/errata/ELSA-2026-7675.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27135
     - https://www.cve.org/CVERecord?id=CVE-2026-27135
     PublishedDate: '2026-03-18T18:16:26.723Z'
@@ -19419,6 +19633,8 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      amazon: 3
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -20609,6 +20825,207 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-22796
     PublishedDate: '2026-01-27T16:16:35.543Z'
     LastModifiedDate: '2026-02-02T18:40:27.467Z'
+  - VulnerabilityID: CVE-2026-28388
+    PkgID: openssl@3.5.1-r0
+    PkgName: openssl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: ccc16a3818a2a031
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28388
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d0fb91b2960fd7be1be2b402edfdea88ced5150842638eceab1df8a996c1712d
+    Title: 'openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing'
+    Description: |-
+      Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
+      is processed a NULL pointer dereference might happen if the required CRL
+      Number extension is missing.
+
+      Impact summary: A NULL pointer dereference can trigger a crash which
+      leads to a Denial of Service for an application.
+
+      When CRL processing and delta CRL processing is enabled during X.509
+      certificate verification, the delta CRL processing does not check
+      whether the CRL Number extension is NULL before dereferencing it.
+      When a malformed delta CRL file is being processed, this parameter
+      can be NULL, causing a NULL pointer dereference.
+
+      Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
+      the verification context, the certificate being verified to contain a
+      freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
+      an attacker to provide a malformed CRL to an application that processes it.
+
+      The vulnerability is limited to Denial of Service and cannot be escalated to
+      achieve code execution or memory disclosure. For that reason the issue was
+      assessed as Low severity according to our Security Policy.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
+      as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28388
+    - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
+    - https://github.com/openssl/openssl/commit/5a0b4930779cd2408880979db765db919da55139
+    - https://github.com/openssl/openssl/commit/602542f2c0c2d5edb47128f93eac10b62aeeefb3
+    - https://github.com/openssl/openssl/commit/a9d187dd1000130100fa7ab915f8513532cb3bb8
+    - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28388
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28388
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:20.863Z'
+    LastModifiedDate: '2026-04-10T21:16:23.157Z'
+  - VulnerabilityID: CVE-2026-28389
+    PkgID: openssl@3.5.1-r0
+    PkgName: openssl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: ccc16a3818a2a031
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28389
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:1fe03d15ddb459570a745fc96da444f82d1cdbe4e7832d207149db6a44ac0058
+    Title: 'openssl: OpenSSL: Denial of Service vulnerability in CMS processing'
+    Description: |-
+      Issue summary: During processing of a crafted CMS EnvelopedData message
+      with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
+
+      Impact summary: Applications that process attacker-controlled CMS data may
+      crash before authentication or cryptographic operations occur resulting in
+      Denial of Service.
+
+      When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
+      processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
+      is examined without checking for its presence. This results in a NULL
+      pointer dereference if the field is missing.
+
+      Applications and services that call CMS_decrypt() on untrusted input
+      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-28389
+    - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
+    - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
+    - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
+    - https://github.com/openssl/openssl/commit/c6725634e089eb2b634b10ede33944be7248172a
+    - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28389
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://ubuntu.com/security/notices/USN-8155-2
+    - https://www.cve.org/CVERecord?id=CVE-2026-28389
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.03Z'
+    LastModifiedDate: '2026-04-10T21:16:23.41Z'
+  - VulnerabilityID: CVE-2026-31789
+    PkgID: openssl@3.5.1-r0
+    PkgName: openssl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: ccc16a3818a2a031
+    InstalledVersion: 3.5.1-r0
+    FixedVersion: 3.5.6-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-31789
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:f1c9098ce6f219dde8f2faed8b6f59005370525b0a8332f162136d256adc8af3
+    Title: 'openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing'
+    Description: |-
+      Issue summary: Converting an excessively large OCTET STRING value to
+      a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
+
+      Impact summary: A heap buffer overflow may lead to a crash or possibly
+      an attacker controlled code execution or other undefined behavior.
+
+      If an attacker can supply a crafted X.509 certificate with an excessively
+      large OCTET STRING value in extensions such as the Subject Key Identifier
+      (SKID) or Authority Key Identifier (AKID) which are being converted to hex,
+      the size of the buffer needed for the result is calculated as multiplication
+      of the input length by 3. On 32 bit platforms, this multiplication may overflow
+      resulting in the allocation of a smaller buffer and a heap buffer overflow.
+
+      Applications and services that print or log contents of untrusted X.509
+      certificates are vulnerable to this issue. As the certificates would have
+      to have sizes of over 1 Gigabyte, printing or logging such certificates
+      is a fairly unlikely operation and only 32 bit platforms are affected,
+      this issue was assigned Low severity.
+
+      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
+      issue, as the affected code is outside the OpenSSL FIPS module boundary.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:H
+        V3Score: 5.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-31789
+    - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
+    - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
+    - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
+    - https://github.com/openssl/openssl/commit/a24216018e1ede8ff01a4ff5afff7dfbd443e2f9
+    - https://github.com/openssl/openssl/commit/a91e537d16d74050dbde50bb0dfb1fe9930f0521
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-31789
+    - https://openssl-library.org/news/secadv/20260407.txt
+    - https://ubuntu.com/security/notices/USN-8155-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-31789
+    - https://www.openwall.com/lists/oss-security/2026/04/07/11
+    PublishedDate: '2026-04-07T22:16:21.617Z'
+    LastModifiedDate: '2026-04-08T21:27:00.663Z'
   - VulnerabilityID: CVE-2026-31790
     PkgID: openssl@3.5.1-r0
     PkgName: openssl
@@ -20658,6 +21075,8 @@
     CweIDs:
     - CWE-754
     VendorSeverity:
+      amazon: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -20861,7 +21280,7 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:0e820e854fd38dbc00bcce9d0876a818612461de7b8fc2f93fc0ef775eb4f1a6
-    Title: 'Issue summary: An uncommon configuration of clients performing DANE TL ...'
+    Title: 'openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication'
     Description: |-
       Issue summary: An uncommon configuration of clients performing DANE TLSA-based
       server authentication, when paired with uncommon server DANE TLSA records, may
@@ -20889,194 +21308,28 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      amazon: 3
+      photon: 3
+      redhat: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.7
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-28387
     - https://github.com/openssl/openssl/commit/07e727d304746edb49a98ee8f6ab00256e1f012b
     - https://github.com/openssl/openssl/commit/258a8f63b26995ba357f4326da00e19e29c6acbe
     - https://github.com/openssl/openssl/commit/444958deaf450aea819171f97ae69eaedede42c3
     - https://github.com/openssl/openssl/commit/7a4e08cee62a728d32e60b0de89e6764339df0a7
     - https://github.com/openssl/openssl/commit/ec03fa050b3346997ed9c5fef3d0e16ad7db8177
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-28387
     - https://openssl-library.org/news/secadv/20260407.txt
     - https://ubuntu.com/security/notices/USN-8155-1
     - https://ubuntu.com/security/notices/USN-8155-2
     - https://www.cve.org/CVERecord?id=CVE-2026-28387
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:20.7Z'
-    LastModifiedDate: '2026-04-08T21:27:00.663Z'
-  - VulnerabilityID: CVE-2026-28388
-    PkgID: openssl@3.5.1-r0
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: ccc16a3818a2a031
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28388
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:d0fb91b2960fd7be1be2b402edfdea88ced5150842638eceab1df8a996c1712d
-    Title: 'Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...'
-    Description: |-
-      Issue summary: When a delta CRL that contains a Delta CRL Indicator extension
-      is processed a NULL pointer dereference might happen if the required CRL
-      Number extension is missing.
-
-      Impact summary: A NULL pointer dereference can trigger a crash which
-      leads to a Denial of Service for an application.
-
-      When CRL processing and delta CRL processing is enabled during X.509
-      certificate verification, the delta CRL processing does not check
-      whether the CRL Number extension is NULL before dereferencing it.
-      When a malformed delta CRL file is being processed, this parameter
-      can be NULL, causing a NULL pointer dereference.
-
-      Exploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in
-      the verification context, the certificate being verified to contain a
-      freshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and
-      an attacker to provide a malformed CRL to an application that processes it.
-
-      The vulnerability is limited to Denial of Service and cannot be escalated to
-      achieve code execution or memory disclosure. For that reason the issue was
-      assessed as Low severity according to our Security Policy.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,
-      as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
-    - https://github.com/openssl/openssl/commit/5a0b4930779cd2408880979db765db919da55139
-    - https://github.com/openssl/openssl/commit/602542f2c0c2d5edb47128f93eac10b62aeeefb3
-    - https://github.com/openssl/openssl/commit/a9d187dd1000130100fa7ab915f8513532cb3bb8
-    - https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://ubuntu.com/security/notices/USN-8155-2
-    - https://www.cve.org/CVERecord?id=CVE-2026-28388
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:20.863Z'
-    LastModifiedDate: '2026-04-10T21:16:23.157Z'
-  - VulnerabilityID: CVE-2026-28389
-    PkgID: openssl@3.5.1-r0
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: ccc16a3818a2a031
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-28389
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:1fe03d15ddb459570a745fc96da444f82d1cdbe4e7832d207149db6a44ac0058
-    Title: 'Issue summary: During processing of a crafted CMS EnvelopedData messag ...'
-    Description: |-
-      Issue summary: During processing of a crafted CMS EnvelopedData message
-      with KeyAgreeRecipientInfo a NULL pointer dereference can happen.
-
-      Impact summary: Applications that process attacker-controlled CMS data may
-      crash before authentication or cryptographic operations occur resulting in
-      Denial of Service.
-
-      When a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is
-      processed, the optional parameters field of KeyEncryptionAlgorithmIdentifier
-      is examined without checking for its presence. This results in a NULL
-      pointer dereference if the field is missing.
-
-      Applications and services that call CMS_decrypt() on untrusted input
-      (e.g., S/MIME processing or CMS-based protocols) are vulnerable.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-476
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
-    - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
-    - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
-    - https://github.com/openssl/openssl/commit/c6725634e089eb2b634b10ede33944be7248172a
-    - https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://ubuntu.com/security/notices/USN-8155-2
-    - https://www.cve.org/CVERecord?id=CVE-2026-28389
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.03Z'
-    LastModifiedDate: '2026-04-10T21:16:23.41Z'
-  - VulnerabilityID: CVE-2026-31789
-    PkgID: openssl@3.5.1-r0
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: ccc16a3818a2a031
-    InstalledVersion: 3.5.1-r0
-    FixedVersion: 3.5.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-31789
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:f1c9098ce6f219dde8f2faed8b6f59005370525b0a8332f162136d256adc8af3
-    Title: 'Issue summary: Converting an excessively large OCTET STRING value to a ...'
-    Description: |-
-      Issue summary: Converting an excessively large OCTET STRING value to
-      a hexadecimal string leads to a heap buffer overflow on 32 bit platforms.
-
-      Impact summary: A heap buffer overflow may lead to a crash or possibly
-      an attacker controlled code execution or other undefined behavior.
-
-      If an attacker can supply a crafted X.509 certificate with an excessively
-      large OCTET STRING value in extensions such as the Subject Key Identifier
-      (SKID) or Authority Key Identifier (AKID) which are being converted to hex,
-      the size of the buffer needed for the result is calculated as multiplication
-      of the input length by 3. On 32 bit platforms, this multiplication may overflow
-      resulting in the allocation of a smaller buffer and a heap buffer overflow.
-
-      Applications and services that print or log contents of untrusted X.509
-      certificates are vulnerable to this issue. As the certificates would have
-      to have sizes of over 1 Gigabyte, printing or logging such certificates
-      is a fairly unlikely operation and only 32 bit platforms are affected,
-      this issue was assigned Low severity.
-
-      The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this
-      issue, as the affected code is outside the OpenSSL FIPS module boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-787
-    VendorSeverity:
-      ubuntu: 1
-    References:
-    - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
-    - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
-    - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
-    - https://github.com/openssl/openssl/commit/a24216018e1ede8ff01a4ff5afff7dfbd443e2f9
-    - https://github.com/openssl/openssl/commit/a91e537d16d74050dbde50bb0dfb1fe9930f0521
-    - https://openssl-library.org/news/secadv/20260407.txt
-    - https://ubuntu.com/security/notices/USN-8155-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-31789
-    - https://www.openwall.com/lists/oss-security/2026/04/07/11
-    PublishedDate: '2026-04-07T22:16:21.617Z'
     LastModifiedDate: '2026-04-08T21:27:00.663Z'
   - VulnerabilityID: CVE-2025-58050
     PkgID: pcre2@10.43-r1
@@ -21476,6 +21729,7 @@
     - CWE-122
     VendorSeverity:
       alma: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -21531,6 +21785,7 @@
     - CWE-86
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 3
@@ -21552,7 +21807,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0073
     - https://github.com/vim/vim/security/advisories/GHSA-m3xh-9434-g336
     - https://linux.oracle.com/cve/CVE-2026-28417.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28417
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-28417
@@ -21584,6 +21839,7 @@
     - CWE-20
     - CWE-122
     VendorSeverity:
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       nvd: 3
@@ -21605,7 +21861,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0077
     - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
     - https://linux.oracle.com/cve/CVE-2026-28421.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-28421
@@ -21636,9 +21892,11 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       nvd: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -21655,8 +21913,9 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0202
     - https://github.com/vim/vim/security/advisories/GHSA-w5jw-f54h-x46c
     - https://linux.oracle.com/cve/CVE-2026-33412.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33412
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-33412
     PublishedDate: '2026-03-24T20:16:29.74Z'
     LastModifiedDate: '2026-03-25T21:59:14.98Z'
@@ -21685,6 +21944,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       nvd: 3
       redhat: 3
     CVSS:
@@ -21731,6 +21991,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -21744,6 +22005,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0276
     - https://github.com/vim/vim/security/advisories/GHSA-8h6p-m6gr-mpw9
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34982
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34982
     PublishedDate: '2026-04-06T16:16:38.777Z'
     LastModifiedDate: '2026-04-07T13:20:11.643Z'
@@ -21773,6 +22035,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -21823,6 +22086,7 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -21873,6 +22137,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -21922,6 +22187,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      amazon: 3
       azure: 2
       nvd: 2
       redhat: 1
@@ -21939,6 +22205,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0137
     - https://github.com/vim/vim/security/advisories/GHSA-9phh-423r-778r
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32249
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-32249
     PublishedDate: '2026-03-12T20:16:05.523Z'
     LastModifiedDate: '2026-03-18T11:50:06Z'
@@ -22040,6 +22307,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      amazon: 2
       azure: 1
       cbl-mariner: 1
       photon: 1
@@ -22085,6 +22353,7 @@
     - CWE-122
     VendorSeverity:
       alma: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -22140,6 +22409,7 @@
     - CWE-86
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 3
@@ -22161,7 +22431,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0073
     - https://github.com/vim/vim/security/advisories/GHSA-m3xh-9434-g336
     - https://linux.oracle.com/cve/CVE-2026-28417.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28417
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-28417
@@ -22193,6 +22463,7 @@
     - CWE-20
     - CWE-122
     VendorSeverity:
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       nvd: 3
@@ -22214,7 +22485,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0077
     - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
     - https://linux.oracle.com/cve/CVE-2026-28421.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-28421
@@ -22245,9 +22516,11 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       nvd: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -22264,8 +22537,9 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0202
     - https://github.com/vim/vim/security/advisories/GHSA-w5jw-f54h-x46c
     - https://linux.oracle.com/cve/CVE-2026-33412.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33412
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-33412
     PublishedDate: '2026-03-24T20:16:29.74Z'
     LastModifiedDate: '2026-03-25T21:59:14.98Z'
@@ -22294,6 +22568,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       nvd: 3
       redhat: 3
     CVSS:
@@ -22340,6 +22615,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -22353,6 +22629,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0276
     - https://github.com/vim/vim/security/advisories/GHSA-8h6p-m6gr-mpw9
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34982
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34982
     PublishedDate: '2026-04-06T16:16:38.777Z'
     LastModifiedDate: '2026-04-07T13:20:11.643Z'
@@ -22382,6 +22659,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -22432,6 +22710,7 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -22482,6 +22761,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -22531,6 +22811,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      amazon: 3
       azure: 2
       nvd: 2
       redhat: 1
@@ -22548,6 +22829,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0137
     - https://github.com/vim/vim/security/advisories/GHSA-9phh-423r-778r
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32249
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-32249
     PublishedDate: '2026-03-12T20:16:05.523Z'
     LastModifiedDate: '2026-03-18T11:50:06Z'
@@ -22649,6 +22931,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      amazon: 2
       azure: 1
       cbl-mariner: 1
       photon: 1
@@ -22694,6 +22977,7 @@
     - CWE-122
     VendorSeverity:
       alma: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       oracle-oval: 2
@@ -22749,6 +23033,7 @@
     - CWE-86
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 3
@@ -22770,7 +23055,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0073
     - https://github.com/vim/vim/security/advisories/GHSA-m3xh-9434-g336
     - https://linux.oracle.com/cve/CVE-2026-28417.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28417
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-28417
@@ -22802,6 +23087,7 @@
     - CWE-20
     - CWE-122
     VendorSeverity:
+      amazon: 2
       azure: 2
       cbl-mariner: 2
       nvd: 3
@@ -22823,7 +23109,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0077
     - https://github.com/vim/vim/security/advisories/GHSA-r2gw-2x48-jj5p
     - https://linux.oracle.com/cve/CVE-2026-28421.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-28421
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-28421
@@ -22854,9 +23140,11 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       nvd: 3
       oracle-oval: 3
+      photon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -22873,8 +23161,9 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0202
     - https://github.com/vim/vim/security/advisories/GHSA-w5jw-f54h-x46c
     - https://linux.oracle.com/cve/CVE-2026-33412.html
-    - https://linux.oracle.com/errata/ELSA-2026-6915.html
+    - https://linux.oracle.com/errata/ELSA-2026-7711.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33412
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-33412
     PublishedDate: '2026-03-24T20:16:29.74Z'
     LastModifiedDate: '2026-03-25T21:59:14.98Z'
@@ -22903,6 +23192,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       nvd: 3
       redhat: 3
     CVSS:
@@ -22949,6 +23239,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -22962,6 +23253,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0276
     - https://github.com/vim/vim/security/advisories/GHSA-8h6p-m6gr-mpw9
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34982
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34982
     PublishedDate: '2026-04-06T16:16:38.777Z'
     LastModifiedDate: '2026-04-07T13:20:11.643Z'
@@ -22991,6 +23283,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -23041,6 +23334,7 @@
     - CWE-124
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -23091,6 +23385,7 @@
     - CWE-122
     - CWE-125
     VendorSeverity:
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       nvd: 2
@@ -23140,6 +23435,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      amazon: 3
       azure: 2
       nvd: 2
       redhat: 1
@@ -23157,6 +23453,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0137
     - https://github.com/vim/vim/security/advisories/GHSA-9phh-423r-778r
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32249
+    - https://ubuntu.com/security/notices/USN-8171-1
     - https://www.cve.org/CVERecord?id=CVE-2026-32249
     PublishedDate: '2026-03-12T20:16:05.523Z'
     LastModifiedDate: '2026-03-18T11:50:06Z'
@@ -23258,6 +23555,7 @@
     CweIDs:
     - CWE-121
     VendorSeverity:
+      amazon: 2
       azure: 1
       cbl-mariner: 1
       photon: 1
@@ -23278,6 +23576,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-28422
     PublishedDate: '2026-02-27T22:16:25.667Z'
     LastModifiedDate: '2026-03-04T20:44:22.99Z'
+  - VulnerabilityID: CVE-2026-22184
+    PkgID: zlib@1.3.1-r2
+    PkgName: zlib
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: b954f4a027f289c1
+    InstalledVersion: 1.3.1-r2
+    FixedVersion: 1.3.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15fc5bfe4c7675
+    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
+    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
+    Severity: HIGH
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 3
+      redhat: 3
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
+        V3Score: 8.6
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-22184
+    - https://github.com/madler/zlib
+    - https://github.com/madler/zlib/issues/1142
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
+    - https://seclists.org/fulldisclosure/2026/Jan/3
+    - https://www.cve.org/CVERecord?id=CVE-2026-22184
+    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
+    - https://zlib.net/
+    PublishedDate: '2026-01-07T21:16:01.563Z'
+    LastModifiedDate: '2026-03-18T16:26:31.14Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
@@ -25412,6 +25755,127 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-68161
     PublishedDate: '2025-12-18T21:15:57.96Z'
     LastModifiedDate: '2026-01-20T01:15:55.067Z'
+  - VulnerabilityID: CVE-2026-34477
+    VendorIDs:
+    - GHSA-6hg6-v5c8-fphq
+    PkgName: org.apache.logging.log4j:log4j-core
+    PkgPath: openaf/plugin-XLS/log4j-core-2.25.0.jar
+    PkgIdentifier:
+      PURL: pkg:maven/org.apache.logging.log4j/log4j-core@2.25.0
+      UID: 97523748b53ce286
+    InstalledVersion: 2.25.0
+    FixedVersion: 2.25.4
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-34477
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:5bd098c4750d2d02b15494733a94c3f187d0628ee9953badbf933104639b11b6
+    Title: 'org.apache.logging.log4j/log4j-core: Apache Log4j Core: Man-in-the-middle attack due to incomplete hostname verification'
+    Description: |-
+      The fix for  CVE-2025-68161 https://logging.apache.org/security.html#CVE-2025-68161  was incomplete: it addressed hostname verification only when enabled via the  log4j2.sslVerifyHostName https://logging.apache.org/log4j/2.x/manual/systemproperties.html#log4j2.sslVerifyHostName  system property, but not when configured through the  verifyHostName https://logging.apache.org/log4j/2.x/manual/appenders/network.html#SslConfiguration-attr-verifyHostName  attribute of the <Ssl> element.
+
+      Although the verifyHostName configuration attribute was introduced in Log4j Core 2.12.0, it was silently ignored in all versions through 2.25.3, leaving TLS connections vulnerable to interception regardless of the configured value.
+
+      A network-based attacker may be able to perform a man-in-the-middle attack when all of the following conditions are met:
+
+        *  An SMTP, Socket, or Syslog appender is in use.
+        *  TLS is configured via a nested <Ssl> element.
+        *  The attacker can present a certificate issued by a CA trusted by the appender's configured trust store, or by the default Java trust store if none is configured.
+      This issue does not affect users of the HTTP appender, which uses a separate  verifyHostname https://logging.apache.org/log4j/2.x/manual/appenders/network.html#HttpAppender-attr-verifyHostName  attribute that was not subject to this bug and verifies host names by default.
+
+      Users are advised to upgrade to Apache Log4j Core 2.25.4, which corrects this issue.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-297
+    VendorSeverity:
+      ghsa: 2
+      redhat: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:L/SA:N
+        V40Score: 6.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-34477
+    - https://github.com/apache/logging-log4j2
+    - https://github.com/apache/logging-log4j2/pull/4075
+    - https://lists.apache.org/thread/lkx8cl46t2bvkcwfcb2pd43ygc097lq4
+    - https://logging.apache.org/cyclonedx/vdr.xml
+    - https://logging.apache.org/log4j/2.x/manual/appenders/network.html#SslConfiguration-attr-verifyHostName
+    - https://logging.apache.org/security.html#CVE-2026-34477
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34477
+    - https://www.cve.org/CVERecord?id=CVE-2026-34477
+    PublishedDate: '2026-04-10T16:16:30.843Z'
+    LastModifiedDate: '2026-04-13T15:02:06.187Z'
+  - VulnerabilityID: CVE-2026-34478
+    VendorIDs:
+    - GHSA-445c-vh5m-36rj
+    PkgName: org.apache.logging.log4j:log4j-core
+    PkgPath: openaf/plugin-XLS/log4j-core-2.25.0.jar
+    PkgIdentifier:
+      PURL: pkg:maven/org.apache.logging.log4j/log4j-core@2.25.0
+      UID: 97523748b53ce286
+    InstalledVersion: 2.25.0
+    FixedVersion: 2.25.4
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-34478
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:5a4a25f32d04ae8c4f6d369fb89a077758f5174d9511c9057b72b98f74750586
+    Title: 'org.apache.logging.log4j/log4j-core: Apache Log4j Core: Log injection via CRLF sequences due to configuration attribute renames'
+    Description: |-
+      Apache Log4j Core's  Rfc5424Layout https://logging.apache.org/log4j/2.x/manual/layouts.html#RFC5424Layout , in versions 2.21.0 through 2.25.3, is vulnerable to log injection via CRLF sequences due to undocumented renames of security-relevant configuration attributes.
+
+      Two distinct issues affect users of stream-based syslog services who configure Rfc5424Layout directly:
+
+        *  The newLineEscape attribute was silently renamed, causing newline escaping to stop working for users of TCP framing (RFC 6587), exposing them to CRLF injection in log output.
+        *  The useTlsMessageFormat attribute was silently renamed, causing users of TLS framing (RFC 5425) to be silently downgraded to unframed TCP (RFC 6587), without newline escaping.
+
+
+      Users of the SyslogAppender are not affected, as its configuration attributes were not modified.
+
+      Users are advised to upgrade to Apache Log4j Core 2.25.4, which corrects this issue.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-117
+    - CWE-684
+    VendorSeverity:
+      ghsa: 2
+      redhat: 2
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N
+        V40Score: 6.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N
+        V3Score: 5.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/10/7
+    - https://access.redhat.com/security/cve/CVE-2026-34478
+    - https://github.com/apache/logging-log4j2
+    - https://github.com/apache/logging-log4j2/pull/4074
+    - https://lists.apache.org/thread/3k1clr2l6vkdnl4cbhjrnt1nyjvb5gwt
+    - https://logging.apache.org/cyclonedx/vdr.xml
+    - https://logging.apache.org/log4j/2.x/manual/layouts.html#RFC5424Layout
+    - https://logging.apache.org/security.html#CVE-2026-34478
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-34478
+    - https://www.cve.org/CVERecord?id=CVE-2026-34478
+    PublishedDate: '2026-04-10T16:16:31.07Z'
+    LastModifiedDate: '2026-04-13T15:02:06.187Z'
   - VulnerabilityID: CVE-2026-34480
     VendorIDs:
     - GHSA-3pxv-7cmr-fjr4
@@ -25421,7 +25885,7 @@
       PURL: pkg:maven/org.apache.logging.log4j/log4j-core@2.25.0
       UID: 97523748b53ce286
     InstalledVersion: 2.25.0
-    FixedVersion: 2.25.4, 3.0.0-beta3
+    FixedVersion: 2.25.4
     Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
@@ -25433,7 +25897,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:17e2ec3756cd8e81fc19119b0938605f085528201d1290de14b2094c26934e8f
-    Title: Apache Log4j Core's XmlLayout fails to sanitize characters
+    Title: 'org.apache.logging.log4j/log4j-core: Apache Log4j Core: Invalid XML output causes denial of service in logging'
     Description: |-
       Apache Log4j Core's  XmlLayout https://logging.apache.org/log4j/2.x/manual/layouts.html#XmlLayout , in versions up to and including 2.25.3, fails to sanitize characters forbidden by the  XML 1.0 specification https://www.w3.org/TR/xml/#charsets  producing invalid XML output whenever a log message or MDC value contains such characters.
 
@@ -25449,12 +25913,17 @@
     - CWE-116
     VendorSeverity:
       ghsa: 2
+      redhat: 2
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N
         V40Score: 6.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/04/10/9
+    - https://access.redhat.com/security/cve/CVE-2026-34480
     - https://github.com/apache/logging-log4j2
     - https://github.com/apache/logging-log4j2/pull/4077
     - https://lists.apache.org/thread/5x0hcnng0chhghp6jgjdp3qmbbhfjzhb
@@ -25462,8 +25931,49 @@
     - https://logging.apache.org/log4j/2.x/manual/layouts.html#XmlLayout
     - https://logging.apache.org/security.html#CVE-2026-34480
     - https://nvd.nist.gov/vuln/detail/CVE-2026-34480
+    - https://www.cve.org/CVERecord?id=CVE-2026-34480
     PublishedDate: '2026-04-10T16:16:31.463Z'
-    LastModifiedDate: '2026-04-10T17:17:02.577Z'
+    LastModifiedDate: '2026-04-13T15:02:06.187Z'
+  - VulnerabilityID: CVE-2026-2332
+    VendorIDs:
+    - GHSA-355h-qmc2-wpwf
+    PkgName: org.eclipse.jetty:jetty-http
+    PkgPath: openaf/openaf.jar
+    PkgIdentifier:
+      PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.0.23
+      UID: 595bc78644261152
+    InstalledVersion: 12.0.23
+    FixedVersion: 12.1.7, 12.0.33, 11.0.28, 10.0.28, 9.4.60
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-2332
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:0337be880249d8ea8a6b522ed0e022b1b40c9d4ea9f7b3e669fe6a712a68a35a
+    Title: In Eclipse Jetty, the HTTP/1.1 parser is vulnerable to request smuggli ...
+    Description: "In Eclipse Jetty, the HTTP/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https://w4ke.info/2025/06/18/funky-chunks.html\n\n  *  https://w4ke.info/2025/10/29/funky-chunks-2.html\n\n\nJetty terminates chunk extension parsing at\_\\r\\n\_inside quoted strings instead of treating this as an error.\n\n\nPOST / HTTP/1.1\nHost: localhost\nTransfer-Encoding: chunked\n\n1;ext=\"val\nX\n0\n\nGET /smuggled HTTP/1.1\n...\n\n\n\n\n\nNote how the chunk extension does not close the double quotes, and it is able to inject a smuggled request."
+    Severity: HIGH
+    CweIDs:
+    - CWE-444
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 7.4
+    References:
+    - https://github.com/jetty/jetty.project
+    - https://github.com/jetty/jetty.project/security/advisories/GHSA-355h-qmc2-wpwf
+    - https://gitlab.eclipse.org/security/cve-assignment/-/issues/89
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-2332
+    - https://w4ke.info/2025/06/18/funky-chunks.html
+    PublishedDate: '2026-04-14T12:16:21.333Z'
+    LastModifiedDate: '2026-04-14T12:16:21.333Z'
   - VulnerabilityID: CVE-2025-11143
     VendorIDs:
     - GHSA-wjpw-4j6x-6rwh
@@ -26533,22 +27043,29 @@
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
     Fingerprint: sha256:17d3ed667aba2c273fa150b74471ef99137a5dc8d5b123496d36102d77e0b068
-    Title: cryptography is a package designed to expose cryptographic primitives  ...
+    Title: 'cryptography: Cryptography: Buffer overflow via non-contiguous buffer in API'
     Description: cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. From 45.0.0 to before 46.0.7, if a non-contiguous buffer was passed to APIs which accepted Python buffers (e.g. Hash.update()), this could lead to buffer overflows. This vulnerability is fixed in 46.0.7.
     Severity: MEDIUM
     CweIDs:
     - CWE-119
     VendorSeverity:
       ghsa: 2
+      redhat: 2
     CVSS:
       ghsa:
         V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N
         V40Score: 6.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/04/08/12
+    - https://access.redhat.com/security/cve/CVE-2026-39892
     - https://github.com/pyca/cryptography
+    - https://github.com/pyca/cryptography/commit/622d672e429a7cff836a23c5903683dbec1901f5
     - https://github.com/pyca/cryptography/security/advisories/GHSA-p423-j2cm-9vmq
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39892
+    - https://www.cve.org/CVERecord?id=CVE-2026-39892
     PublishedDate: '2026-04-08T21:17:01.547Z'
     LastModifiedDate: '2026-04-08T22:16:21.907Z'
   - VulnerabilityID: CVE-2026-34073
@@ -26572,7 +27089,7 @@
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
     Fingerprint: sha256:8a95ed2b1b7f195d3332e58a9b2fb5882c344eb08b893190e3d73d96380bcb71
-    Title: 'cryptography: python: Cryptography: Security bypass due to improper DNS name constraint validation'
+    Title: 'python-cryptography: Cryptography: Security bypass due to improper DNS name constraint validation'
     Description: cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Prior to version 46.0.6, DNS name constraints were only validated against SANs within child certificates, and not the "peer name" presented during each validation. Consequently, cryptography would allow a peer named bar.example.com to validate against a wildcard leaf certificate for *.example.com, even if the leaf's parent certificate (or upwards) contained an excluded subtree constraint for bar.example.com. This issue has been patched in version 46.0.6.
     Severity: LOW
     CweIDs:
@@ -26875,7 +27392,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -26949,7 +27466,7 @@
     - CWE-409
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -30335,6 +30852,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       ghsa:
@@ -30387,6 +30905,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -30438,8 +30957,10 @@
     CweIDs:
     - CWE-193
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       nvd: 3
+      photon: 3
       redhat: 3
     CVSS:
       ghsa:
@@ -30722,23 +31243,29 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:fc3b63a11ee5ebb24e5c3ae8893f1a971e03a4d58ca2202fffe33f362dcec060
-    Title: HashiCorp\u2019s go-getter library up to v1.8.5 may allow arbitrary fi ...
+    Title: 'go-getter: go-getter: Arbitrary file reads via maliciously crafted URL'
     Description: HashiCorp’s go-getter library up to v1.8.5 may allow arbitrary file reads on the file system during certain git operations through a maliciously crafted URL. This vulnerability, CVE-2026-4660, is fixed in go-getter v1.8.6. This vulnerability does not affect the go-getter/v2 branch and package.
     Severity: HIGH
     CweIDs:
     - CWE-200
     VendorSeverity:
       ghsa: 3
+      redhat: 3
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-4660
     - https://discuss.hashicorp.com/t/hcsec-2026-04-go-getter-may-allow-to-arbitrary-filesystem-reads-through-git-operations/77311
     - https://github.com/hashicorp/go-getter
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4660
+    - https://www.cve.org/CVERecord?id=CVE-2026-4660
     PublishedDate: '2026-04-09T14:16:32.993Z'
-    LastModifiedDate: '2026-04-09T14:16:32.993Z'
+    LastModifiedDate: '2026-04-13T15:02:47.353Z'
   - VulnerabilityID: CVE-2025-11579
     VendorIDs:
     - GHSA-rwvp-r38j-9rgg
@@ -31189,6 +31716,7 @@
     CweIDs:
     - CWE-285
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 3
     CVSS:
@@ -31634,12 +32162,90 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7259.html
+    - https://linux.oracle.com/errata/ELSA-2026-7992.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
     PublishedDate: '2026-03-06T22:16:00.72Z'
     LastModifiedDate: '2026-03-10T18:18:37.74Z'
+  - VulnerabilityID: CVE-2026-32280
+    VendorIDs:
+    - GO-2026-4947
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:88ea41d5dc8fb75ceb03686c1b7c0f88445c8bf7b971b747913c732e2ebc324e
+    Title: During chain building, the amount of work that is done is not correctl ...
+    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
+    Severity: HIGH
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/758320
+    - https://go.dev/issue/78282
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
+    - https://pkg.go.dev/vuln/GO-2026-4947
+    PublishedDate: '2026-04-08T02:16:03.247Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32282
+    VendorIDs:
+    - GO-2026-4864
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:af475e630d83f647ca572d135c7709adfbae8aff8f255ec7ab4cf2d4e86b13a4
+    Title: 'golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root'
+    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
+    Severity: HIGH
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32282
+    - https://go.dev/cl/763761
+    - https://go.dev/issue/78293
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
+    - https://pkg.go.dev/vuln/GO-2026-4864
+    - https://www.cve.org/CVERecord?id=CVE-2026-32282
+    PublishedDate: '2026-04-08T02:16:03.467Z'
+    LastModifiedDate: '2026-04-13T19:16:39.807Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -32299,7 +32905,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4946
     - https://www.cve.org/CVERecord?id=CVE-2026-32281
     PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:39.607Z'
   - VulnerabilityID: CVE-2026-32288
     VendorIDs:
     - GO-2026-4869
@@ -32338,7 +32944,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4869
     - https://www.cve.org/CVERecord?id=CVE-2026-32288
     PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.21Z'
   - VulnerabilityID: CVE-2026-32289
     VendorIDs:
     - GO-2026-4865
@@ -32377,7 +32983,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4865
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.41Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -32422,68 +33028,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27139
     PublishedDate: '2026-03-06T22:16:01.07Z'
     LastModifiedDate: '2026-03-09T15:15:57.15Z'
-  - VulnerabilityID: CVE-2026-32280
-    VendorIDs:
-    - GO-2026-4947
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: c8a49abd00c2b8a3
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:88ea41d5dc8fb75ceb03686c1b7c0f88445c8bf7b971b747913c732e2ebc324e
-    Title: During chain building, the amount of work that is done is not correctl ...
-    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-770
-    References:
-    - https://go.dev/cl/758320
-    - https://go.dev/issue/78282
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4947
-    PublishedDate: '2026-04-08T02:16:03.247Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32282
-    VendorIDs:
-    - GO-2026-4864
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: c8a49abd00c2b8a3
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:af475e630d83f647ca572d135c7709adfbae8aff8f255ec7ab4cf2d4e86b13a4
-    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
-    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763761
-    - https://go.dev/issue/78293
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4864
-    PublishedDate: '2026-04-08T02:16:03.467Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32283
     VendorIDs:
     - GO-2026-4870
@@ -32511,9 +33055,10 @@
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40Z'
 - Target: usr/bin/syft
   Class: lang-pkgs
   Type: gobinary
@@ -35427,6 +35972,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       ghsa:
@@ -35479,6 +36025,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -35530,8 +36077,10 @@
     CweIDs:
     - CWE-193
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       nvd: 3
+      photon: 3
       redhat: 3
     CVSS:
       ghsa:
@@ -35814,23 +36363,29 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:e3f52baa1e92a6b45fe5721fa1f4aa8ffef6ae7e80dc2ee231197e6ff476f9da
-    Title: HashiCorp\u2019s go-getter library up to v1.8.5 may allow arbitrary fi ...
+    Title: 'go-getter: go-getter: Arbitrary file reads via maliciously crafted URL'
     Description: HashiCorp’s go-getter library up to v1.8.5 may allow arbitrary file reads on the file system during certain git operations through a maliciously crafted URL. This vulnerability, CVE-2026-4660, is fixed in go-getter v1.8.6. This vulnerability does not affect the go-getter/v2 branch and package.
     Severity: HIGH
     CweIDs:
     - CWE-200
     VendorSeverity:
       ghsa: 3
+      redhat: 3
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-4660
     - https://discuss.hashicorp.com/t/hcsec-2026-04-go-getter-may-allow-to-arbitrary-filesystem-reads-through-git-operations/77311
     - https://github.com/hashicorp/go-getter
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4660
+    - https://www.cve.org/CVERecord?id=CVE-2026-4660
     PublishedDate: '2026-04-09T14:16:32.993Z'
-    LastModifiedDate: '2026-04-09T14:16:32.993Z'
+    LastModifiedDate: '2026-04-13T15:02:47.353Z'
   - VulnerabilityID: CVE-2025-11579
     VendorIDs:
     - GHSA-rwvp-r38j-9rgg
@@ -36198,6 +36753,7 @@
     CweIDs:
     - CWE-285
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 3
     CVSS:
@@ -36643,12 +37199,90 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7259.html
+    - https://linux.oracle.com/errata/ELSA-2026-7992.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
     PublishedDate: '2026-03-06T22:16:00.72Z'
     LastModifiedDate: '2026-03-10T18:18:37.74Z'
+  - VulnerabilityID: CVE-2026-32280
+    VendorIDs:
+    - GO-2026-4947
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:89ee1c0d08f10a9f4e8b1e1ff23a967e3020b00e4ef820894e0c740f51ba0919
+    Title: During chain building, the amount of work that is done is not correctl ...
+    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
+    Severity: HIGH
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/758320
+    - https://go.dev/issue/78282
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
+    - https://pkg.go.dev/vuln/GO-2026-4947
+    PublishedDate: '2026-04-08T02:16:03.247Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32282
+    VendorIDs:
+    - GO-2026-4864
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d6ac6a1290595206ba2fbc5f0363300809161474e35aa4ecdd517b7d7ae7b88c
+    Title: 'golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root'
+    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
+    Severity: HIGH
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32282
+    - https://go.dev/cl/763761
+    - https://go.dev/issue/78293
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
+    - https://pkg.go.dev/vuln/GO-2026-4864
+    - https://www.cve.org/CVERecord?id=CVE-2026-32282
+    PublishedDate: '2026-04-08T02:16:03.467Z'
+    LastModifiedDate: '2026-04-13T19:16:39.807Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -37308,7 +37942,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4946
     - https://www.cve.org/CVERecord?id=CVE-2026-32281
     PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:39.607Z'
   - VulnerabilityID: CVE-2026-32288
     VendorIDs:
     - GO-2026-4869
@@ -37347,7 +37981,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4869
     - https://www.cve.org/CVERecord?id=CVE-2026-32288
     PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.21Z'
   - VulnerabilityID: CVE-2026-32289
     VendorIDs:
     - GO-2026-4865
@@ -37386,7 +38020,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4865
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.41Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -37431,68 +38065,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27139
     PublishedDate: '2026-03-06T22:16:01.07Z'
     LastModifiedDate: '2026-03-09T15:15:57.15Z'
-  - VulnerabilityID: CVE-2026-32280
-    VendorIDs:
-    - GO-2026-4947
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 4bef6a299358baaf
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:89ee1c0d08f10a9f4e8b1e1ff23a967e3020b00e4ef820894e0c740f51ba0919
-    Title: During chain building, the amount of work that is done is not correctl ...
-    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-770
-    References:
-    - https://go.dev/cl/758320
-    - https://go.dev/issue/78282
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4947
-    PublishedDate: '2026-04-08T02:16:03.247Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32282
-    VendorIDs:
-    - GO-2026-4864
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 4bef6a299358baaf
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:d6ac6a1290595206ba2fbc5f0363300809161474e35aa4ecdd517b7d7ae7b88c
-    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
-    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763761
-    - https://go.dev/issue/78293
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4864
-    PublishedDate: '2026-04-08T02:16:03.467Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32283
     VendorIDs:
     - GO-2026-4870
@@ -37520,9 +38092,10 @@
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40Z'
 - Target: usr/bin/trivy
   Class: lang-pkgs
   Type: gobinary
@@ -42130,6 +42703,7 @@
     VendorSeverity:
       ghsa: 3
       nvd: 3
+      photon: 3
       redhat: 2
     CVSS:
       ghsa:
@@ -42182,6 +42756,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 2
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -42233,8 +42808,10 @@
     CweIDs:
     - CWE-193
     VendorSeverity:
+      amazon: 2
       ghsa: 2
       nvd: 3
+      photon: 3
       redhat: 3
     CVSS:
       ghsa:
@@ -42562,23 +43139,29 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:d321cb16f7b3d0a93b1a02345306a537fbf949937c790e8c7fcaae8027f76530
-    Title: HashiCorp\u2019s go-getter library up to v1.8.5 may allow arbitrary fi ...
+    Title: 'go-getter: go-getter: Arbitrary file reads via maliciously crafted URL'
     Description: HashiCorp’s go-getter library up to v1.8.5 may allow arbitrary file reads on the file system during certain git operations through a maliciously crafted URL. This vulnerability, CVE-2026-4660, is fixed in go-getter v1.8.6. This vulnerability does not affect the go-getter/v2 branch and package.
     Severity: HIGH
     CweIDs:
     - CWE-200
     VendorSeverity:
       ghsa: 3
+      redhat: 3
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-4660
     - https://discuss.hashicorp.com/t/hcsec-2026-04-go-getter-may-allow-to-arbitrary-filesystem-reads-through-git-operations/77311
     - https://github.com/hashicorp/go-getter
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4660
+    - https://www.cve.org/CVERecord?id=CVE-2026-4660
     PublishedDate: '2026-04-09T14:16:32.993Z'
-    LastModifiedDate: '2026-04-09T14:16:32.993Z'
+    LastModifiedDate: '2026-04-13T15:02:47.353Z'
   - VulnerabilityID: CVE-2026-33747
     VendorIDs:
     - GHSA-4c29-8rgm-jvjj
@@ -43270,6 +43853,7 @@
     CweIDs:
     - CWE-285
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 3
     CVSS:
@@ -43462,25 +44046,35 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:d7bc4de39493d76c1a80f4eabc0593cf3bd71bff88a01eaf4f12817342a81607
-    Title: Helm Chart extraction output directory collapse via `Chart.yaml` name dot-segment
+    Title: 'github.com/helm/helm: Helm: Files written to unexpected directory via specially crafted Chart'
     Description: Helm is a package manager for Charts for Kubernetes. In Helm versions <=3.20.1 and <=4.1.3, a specially crafted Chart will cause helm pull --untar  [chart URL | repo/chartname] to write the Chart's contents to the immediate output directory (as defaulted to the current working directory; or as given by the --destination and --untardir flags), rather than the expected output directory suffixed by the chart's name. This vulnerability is fixed in 3.20.2 and 4.1.4.
     Severity: MEDIUM
     CweIDs:
     - CWE-22
     VendorSeverity:
+      bitnami: 2
       ghsa: 2
+      redhat: 2
     CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N
+        V40Score: 4.8
       ghsa:
         V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N
         V40Score: 4.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L
+        V3Score: 4.4
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-35206
     - https://github.com/helm/helm
     - https://github.com/helm/helm/commit/4e7994d4467182f535b6797c94b5b0e994a91436
     - https://github.com/helm/helm/releases/tag/v4.1.4
     - https://github.com/helm/helm/security/advisories/GHSA-hr2v-4r36-88hr
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35206
+    - https://www.cve.org/CVERecord?id=CVE-2026-35206
     PublishedDate: '2026-04-09T21:16:09.993Z'
-    LastModifiedDate: '2026-04-09T21:16:09.993Z'
+    LastModifiedDate: '2026-04-13T15:02:27.76Z'
   - VulnerabilityID: CVE-2025-68121
     VendorIDs:
     - GO-2026-4337
@@ -43909,12 +44503,90 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7259.html
+    - https://linux.oracle.com/errata/ELSA-2026-7992.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
     PublishedDate: '2026-03-06T22:16:00.72Z'
     LastModifiedDate: '2026-03-10T18:18:37.74Z'
+  - VulnerabilityID: CVE-2026-32280
+    VendorIDs:
+    - GO-2026-4947
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:dbe87d532255aa96fa7a1f65c843f927f306007eafc8ab2349c5239af5ce9b7c
+    Title: During chain building, the amount of work that is done is not correctl ...
+    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
+    Severity: HIGH
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/758320
+    - https://go.dev/issue/78282
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
+    - https://pkg.go.dev/vuln/GO-2026-4947
+    PublishedDate: '2026-04-08T02:16:03.247Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32282
+    VendorIDs:
+    - GO-2026-4864
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:90ddc398c10be3a8333e9574073e4807221fce90c069107ab008eaefce83a913
+    Title: 'golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root'
+    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
+    Severity: HIGH
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32282
+    - https://go.dev/cl/763761
+    - https://go.dev/issue/78293
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
+    - https://pkg.go.dev/vuln/GO-2026-4864
+    - https://www.cve.org/CVERecord?id=CVE-2026-32282
+    PublishedDate: '2026-04-08T02:16:03.467Z'
+    LastModifiedDate: '2026-04-13T19:16:39.807Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -44574,7 +45246,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4946
     - https://www.cve.org/CVERecord?id=CVE-2026-32281
     PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:39.607Z'
   - VulnerabilityID: CVE-2026-32288
     VendorIDs:
     - GO-2026-4869
@@ -44613,7 +45285,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4869
     - https://www.cve.org/CVERecord?id=CVE-2026-32288
     PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.21Z'
   - VulnerabilityID: CVE-2026-32289
     VendorIDs:
     - GO-2026-4865
@@ -44652,7 +45324,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4865
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.41Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -44697,68 +45369,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27139
     PublishedDate: '2026-03-06T22:16:01.07Z'
     LastModifiedDate: '2026-03-09T15:15:57.15Z'
-  - VulnerabilityID: CVE-2026-32280
-    VendorIDs:
-    - GO-2026-4947
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f86edb9664e32d65
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:dbe87d532255aa96fa7a1f65c843f927f306007eafc8ab2349c5239af5ce9b7c
-    Title: During chain building, the amount of work that is done is not correctl ...
-    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-770
-    References:
-    - https://go.dev/cl/758320
-    - https://go.dev/issue/78282
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4947
-    PublishedDate: '2026-04-08T02:16:03.247Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32282
-    VendorIDs:
-    - GO-2026-4864
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f86edb9664e32d65
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:90ddc398c10be3a8333e9574073e4807221fce90c069107ab008eaefce83a913
-    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
-    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763761
-    - https://go.dev/issue/78293
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4864
-    PublishedDate: '2026-04-08T02:16:03.467Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32283
     VendorIDs:
     - GO-2026-4870
@@ -44786,9 +45396,10 @@
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40Z'
 - Target: usr/bin/trivy_cve_query
   Class: lang-pkgs
   Type: gobinary
@@ -45253,12 +45864,90 @@
     - https://go.dev/issue/77578
     - https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk
     - https://linux.oracle.com/cve/CVE-2026-25679.html
-    - https://linux.oracle.com/errata/ELSA-2026-7259.html
+    - https://linux.oracle.com/errata/ELSA-2026-7992.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25679
     - https://pkg.go.dev/vuln/GO-2026-4601
     - https://www.cve.org/CVERecord?id=CVE-2026-25679
     PublishedDate: '2026-03-06T22:16:00.72Z'
     LastModifiedDate: '2026-03-10T18:18:37.74Z'
+  - VulnerabilityID: CVE-2026-32280
+    VendorIDs:
+    - GO-2026-4947
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:7dbf2dd6e13722416dbfaa364ecc557a8656e88e7bb25367c313021922969c76
+    Title: During chain building, the amount of work that is done is not correctl ...
+    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
+    Severity: HIGH
+    CweIDs:
+    - CWE-770
+    VendorSeverity:
+      bitnami: 3
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://go.dev/cl/758320
+    - https://go.dev/issue/78282
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
+    - https://pkg.go.dev/vuln/GO-2026-4947
+    PublishedDate: '2026-04-08T02:16:03.247Z'
+    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+  - VulnerabilityID: CVE-2026-32282
+    VendorIDs:
+    - GO-2026-4864
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.9, 1.26.2
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:0964d4bf61da4d5b9e1038559f233fadb9af06279fca8be5a253bc8f989e4ec3
+    Title: 'golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root'
+    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
+    Severity: HIGH
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H
+        V3Score: 7.8
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-32282
+    - https://go.dev/cl/763761
+    - https://go.dev/issue/78293
+    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
+    - https://pkg.go.dev/vuln/GO-2026-4864
+    - https://www.cve.org/CVERecord?id=CVE-2026-32282
+    PublishedDate: '2026-04-08T02:16:03.467Z'
+    LastModifiedDate: '2026-04-13T19:16:39.807Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -45918,7 +46607,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4946
     - https://www.cve.org/CVERecord?id=CVE-2026-32281
     PublishedDate: '2026-04-08T02:16:03.35Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:39.607Z'
   - VulnerabilityID: CVE-2026-32288
     VendorIDs:
     - GO-2026-4869
@@ -45957,7 +46646,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4869
     - https://www.cve.org/CVERecord?id=CVE-2026-32288
     PublishedDate: '2026-04-08T02:16:03.707Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.21Z'
   - VulnerabilityID: CVE-2026-32289
     VendorIDs:
     - GO-2026-4865
@@ -45996,7 +46685,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4865
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40.41Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -46041,68 +46730,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-27139
     PublishedDate: '2026-03-06T22:16:01.07Z'
     LastModifiedDate: '2026-03-09T15:15:57.15Z'
-  - VulnerabilityID: CVE-2026-32280
-    VendorIDs:
-    - GO-2026-4947
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: c395cea322d363d5
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32280
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:7dbf2dd6e13722416dbfaa364ecc557a8656e88e7bb25367c313021922969c76
-    Title: During chain building, the amount of work that is done is not correctl ...
-    Description: During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-770
-    References:
-    - https://go.dev/cl/758320
-    - https://go.dev/issue/78282
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4947
-    PublishedDate: '2026-04-08T02:16:03.247Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
-  - VulnerabilityID: CVE-2026-32282
-    VendorIDs:
-    - GO-2026-4864
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: c395cea322d363d5
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.25.9, 1.26.2
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-32282
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:0964d4bf61da4d5b9e1038559f233fadb9af06279fca8be5a253bc8f989e4ec3
-    Title: On Linux, if the target of Root.Chmod is replaced with a symlink while ...
-    Description: On Linux, if the target of Root.Chmod is replaced with a symlink while the chmod operation is in progress, Chmod can operate on the target of the symlink, even when the target lies outside the root. The Linux fchmodat syscall silently ignores the AT_SYMLINK_NOFOLLOW flag, which Root.Chmod uses to avoid symlink traversal. Root.Chmod checks its target before acting and returns an error if the target is a symlink lying outside the root, so the impact is limited to cases where the target is replaced with a symlink between the check and operation.
-    Severity: UNKNOWN
-    References:
-    - https://go.dev/cl/763761
-    - https://go.dev/issue/78293
-    - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
-    - https://pkg.go.dev/vuln/GO-2026-4864
-    PublishedDate: '2026-04-08T02:16:03.467Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
   - VulnerabilityID: CVE-2026-32283
     VendorIDs:
     - GO-2026-4870
@@ -46130,6 +46757,7 @@
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     PublishedDate: '2026-04-08T02:16:03.58Z'
-    LastModifiedDate: '2026-04-08T21:26:35.91Z'
+    LastModifiedDate: '2026-04-13T19:16:40Z'
