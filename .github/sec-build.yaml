@@ -239,6 +239,68 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-35469
     PublishedDate: '2026-04-16T22:16:37.92Z'
     LastModifiedDate: '2026-04-29T21:04:10.06Z'
+  - VulnerabilityID: CVE-2026-5773
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: d277059717700bf1
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.20.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5773
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:245aa421c1b47f66179191a2d3f4fd92148fa1e6d5db140ea6a8cb73c51cd985
+    Title: 'curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse'
+    Description: |-
+      libcurl might in some circumstances reuse the wrong connection for SMB(S)
+      transfers.
+
+      libcurl features a pool of recent connections so that subsequent requests can
+      reuse an existing connection to avoid overhead.
+
+      When reusing a connection a range of criteria must be met. Due to a logical
+      error in the code, a network transfer operation that was requested by an
+      application could wrongfully reuse an existing SMB connection to the same
+      server that was using a different 'share' than the new subsequent transfer
+      should.
+
+      This could in unlucky situations lead to the download of the wrong file or the
+      upload of a file to the wrong place. When this happens, the same credentials
+      are used and the server name is the same.
+    Severity: HIGH
+    CweIDs:
+    - CWE-918
+    VendorSeverity:
+      nvd: 3
+      photon: 2
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/9
+    - https://access.redhat.com/security/cve/CVE-2026-5773
+    - https://curl.se/docs/CVE-2026-5773.html
+    - https://curl.se/docs/CVE-2026-5773.json
+    - https://hackerone.com/reports/3650689
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5773
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5773
+    PublishedDate: '2026-05-13T13:01:56.307Z'
+    LastModifiedDate: '2026-05-13T19:13:14.097Z'
   - VulnerabilityID: CVE-2025-10148
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -550,7 +612,7 @@
     - CWE-125
     VendorSeverity:
       alma: 2
-      amazon: 1
+      amazon: 2
       julia: 3
       oracle-oval: 2
       photon: 3
@@ -837,8 +899,15 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:d1e916e636eda558c80f277d7d3e13bf645b2ed48a9308bf950daa16b287244c
     Title: 'curl: curl: Information disclosure due to incorrect TLS connection reuse'
-    Description: A flaw was found in curl. A remote attacker could exploit this by initiating an unencrypted connection (via IMAP, SMTP, or POP3) and then making a subsequent request to the same host that requires Transport Layer Security (TLS). Due to incorrect connection reuse, the subsequent request would bypass the TLS requirement, leading to the transmission of sensitive information in cleartext. This vulnerability, categorized as Cleartext Transmission of Sensitive Information (CWE-319), results in information disclosure.
+    Description: |-
+      A vulnerability exists where a connection requiring TLS incorrectly reuses an
+      existing unencrypted connection from the same connection pool. If an initial
+      transfer is made in clear-text (via IMAP, SMTP, or POP3), a subsequent request
+      to that same host bypasses the TLS requirement and instead transmit data
+      unencrypted.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-319
     VendorSeverity:
       photon: 2
       redhat: 2
@@ -848,11 +917,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N
         V3Score: 5.3
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/7
     - https://access.redhat.com/security/cve/CVE-2026-4873
     - https://curl.se/docs/CVE-2026-4873.html
+    - https://curl.se/docs/CVE-2026-4873.json
+    - https://hackerone.com/reports/3621851
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4873
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4873
+    PublishedDate: '2026-05-13T13:01:55.893Z'
+    LastModifiedDate: '2026-05-13T20:16:23.353Z'
   - VulnerabilityID: CVE-2026-5545
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -865,6 +939,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5545
     DataSource:
       ID: alpine
@@ -872,57 +947,51 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:21690fa34980ff91dd54f1f97d7a23b91361717f72c74bf7042ea36d61e3ac08
     Title: 'curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse'
-    Description: A flaw was found in libcurl. An application using libcurl that performs an authenticated HTTP(S) request after a Negotiate-authenticated one to the same host may incorrectly reuse the previous connection. This authentication bypass vulnerability allows the second request to be sent over a connection authenticated with different credentials, potentially leading to unauthorized access or information disclosure.
+    Description: |-
+      libcurl might in some circumstances reuse the wrong connection when asked to
+      do an authenticated HTTP(S) request after a Negotiate-authenticated one, when
+      both use the same host.
+
+      libcurl features a pool of recent connections so that subsequent requests can
+      reuse an existing connection to avoid overhead.
+
+      When reusing a connection a range of criteria must be met. Due to a logical
+      error in the code, a request that was issued by an application could
+      wrongfully reuse an existing connection to the same server that was
+      authenticated using different credentials.
+
+      An application that first uses Negotiate authentication to a server with
+      `user1:password1` and then does another operation to the same server asking
+      for any authentication method but for `user2:password2` (while the previous
+      connection is still alive) - the second request gets confused and wrongly
+      reuses the same connection and sends the new request over that connection
+      thinking it uses a mix of user1's and user2's credentials when it is in fact
+      still using the connection authenticated for user1...
     Severity: MEDIUM
+    CweIDs:
+    - CWE-613
     VendorSeverity:
+      nvd: 2
       photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N
+        V3Score: 6.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
         V3Score: 6.5
     References:
     - https://access.redhat.com/security/cve/CVE-2026-5545
     - https://curl.se/docs/CVE-2026-5545.html
+    - https://curl.se/docs/CVE-2026-5545.json
+    - https://hackerone.com/reports/3642555
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5545
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5545
-  - VulnerabilityID: CVE-2026-5773
-    PkgID: curl@8.15.0-r0
-    PkgName: curl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: d277059717700bf1
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.20.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5773
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:245aa421c1b47f66179191a2d3f4fd92148fa1e6d5db140ea6a8cb73c51cd985
-    Title: 'curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse'
-    Description: A flaw was found in libcurl. Due to a logical error in the connection reuse mechanism for SMB (Server Message Block) transfers, libcurl might reuse an existing SMB connection with a different share than intended. This vulnerability, categorized as CWE-488 (Exposure of Data Element to Wrong Session), could lead to the download of an incorrect file or the upload of a file to an unintended location when an application uses libcurl for SMB transfers.
-    Severity: MEDIUM
-    VendorSeverity:
-      photon: 2
-      redhat: 2
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
-        V3Score: 6.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-5773
-    - https://curl.se/docs/CVE-2026-5773.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-5773
-    - https://ubuntu.com/security/notices/USN-8227-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-5773
+    PublishedDate: '2026-05-13T13:01:56.19Z'
+    LastModifiedDate: '2026-05-13T19:31:07.633Z'
   - VulnerabilityID: CVE-2026-6253
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -942,7 +1011,18 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:f85856698b030b3f8783ea933a835b1bb7cf606e139cc53910c71acb669641c0
     Title: 'curl: curl: Proxy credential disclosure via redirects to unauthenticated proxies'
-    Description: A flaw was found in curl. When curl is configured to use distinct proxies for different URL schemes, a redirect from a URL using an authenticated proxy to one using an unauthenticated proxy can inadvertently expose the initial proxy's credentials. This improper credential management (CWE-522) may allow an attacker to gain unauthorized access or information by intercepting these disclosed credentials.
+    Description: |-
+      curl might erroneously pass on credentials for a first proxy to a second
+      proxy.
+
+      This can happen when the following conditions are true:
+
+      1. curl is setup to use specific different proxies for different URL schemes
+      2. the first proxy needs credentials
+      3. the second proxy uses no credentials
+      4. while using the first proxy (using say `http://`), curl is asked to follow
+         a redirect to a URL using another scheme (say `https://`), accessed using a
+         second, different, proxy
     Severity: MEDIUM
     VendorSeverity:
       photon: 3
@@ -953,11 +1033,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N
         V3Score: 5.3
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/11
     - https://access.redhat.com/security/cve/CVE-2026-6253
     - https://curl.se/docs/CVE-2026-6253.html
+    - https://curl.se/docs/CVE-2026-6253.json
+    - https://hackerone.com/reports/3669637
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6253
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6253
+    PublishedDate: '2026-05-13T13:01:56.57Z'
+    LastModifiedDate: '2026-05-13T18:16:20.09Z'
   - VulnerabilityID: CVE-2026-6429
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -977,7 +1062,10 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:32a80405d496ddaa696f8a70c34813c370996fa36f538f17e730260c20d9f44f
     Title: 'curl: libcurl: Credential leak via reused proxy connection during HTTP redirects'
-    Description: A flaw was found in libcurl. When configured to use a .netrc file for credentials and follow HTTP redirects, libcurl can inadvertently send the password from the initial connection to the redirected host. This sensitive information disclosure occurs when both the original and redirect URLs use clear text HTTP, are performed over the same HTTP proxy, and the same connection is reused. This vulnerability, categorized as an Exposure of Sensitive Information to an Unauthorized Actor (CWE-200), could allow an attacker to obtain user credentials.
+    Description: |-
+      When asked to both use a `.netrc` file for credentials and to follow HTTP
+      redirects, libcurl could leak the password used for the first host to the
+      followed-to host under certain circumstances.
     Severity: MEDIUM
     VendorSeverity:
       photon: 3
@@ -990,9 +1078,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-6429
     - https://curl.se/docs/CVE-2026-6429.html
+    - https://curl.se/docs/CVE-2026-6429.json
+    - https://hackerone.com/reports/3677759
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6429
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6429
+    PublishedDate: '2026-05-13T13:01:56.93Z'
+    LastModifiedDate: '2026-05-13T14:50:58.767Z'
   - VulnerabilityID: CVE-2026-7168
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -1011,13 +1103,24 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:349ff79b3eff992fc0167e292e9e7eed48e346431be7d232447ef5df614d779d
-    Description: cross-proxy Digest auth state leak
+    Description: |-
+      Successfully using libcurl to do a transfer over a specific HTTP proxy
+      (`proxyA`) with **Digest** authentication and then changing the proxy host to
+      a second one (`proxyB`) for a second transfer, reusing the same handle, makes
+      libcurl wrongly pass on the `Proxy-Authorization:` header field meant for
+      `proxyA`, to `proxyB`.
     Severity: MEDIUM
     VendorSeverity:
       ubuntu: 2
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/14
+    - https://curl.se/docs/CVE-2026-7168.html
+    - https://curl.se/docs/CVE-2026-7168.json
+    - https://hackerone.com/reports/3697719
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-7168
+    PublishedDate: '2026-05-13T13:01:57.2Z'
+    LastModifiedDate: '2026-05-13T16:17:02.437Z'
   - VulnerabilityID: CVE-2026-6276
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -1037,7 +1140,12 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:2e7c75635c8fbe3074004ac1cce603dd15a49db44b2231a0e8ccaba8f3437016
     Title: 'curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers'
-    Description: A flaw was found in libcurl. This vulnerability allows for information disclosure when a custom `Host:` header is used in an initial HTTP request, and a subsequent request reuses the same connection without specifying a new `Host:` header. This can lead to libcurl incorrectly sending cookies intended for the first host to the second host, resulting in a cookie leak. This issue is categorized as an Origin Validation Error (CWE-346). Exploitation typically requires specific debugging configurations.
+    Description: |-
+      Using libcurl, when a custom `Host:` header is first set for an HTTP request
+      and a second request is subsequently done using the same *easy handle* but
+      without the custom `Host:` header set, the second request would use stale
+      information and pass on cookies meant for the first host in the second
+      request. Leak them.
     Severity: LOW
     VendorSeverity:
       photon: 2
@@ -1048,11 +1156,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/13
     - https://access.redhat.com/security/cve/CVE-2026-6276
     - https://curl.se/docs/CVE-2026-6276.html
+    - https://curl.se/docs/CVE-2026-6276.json
+    - https://hackerone.com/reports/3671818
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6276
+    PublishedDate: '2026-05-13T13:01:56.8Z'
+    LastModifiedDate: '2026-05-13T18:16:20.403Z'
   - VulnerabilityID: CVE-2026-7009
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -1065,12 +1178,25 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7009
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:36b2138cfac3a47e72a5067d1fcb78383c88884eb5458d3814f2f113332a20c9
+    Description: |-
+      When curl is told to use the Certificate Status Request TLS extension, often
+      referred to as *OCSP stapling*, to verify that the server certificate is
+      valid, it fails to detect OCSP problems and instead wrongly consider the
+      response as fine.
     Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/12
+    - https://curl.se/docs/CVE-2026-7009.html
+    - https://curl.se/docs/CVE-2026-7009.json
+    - https://hackerone.com/reports/3694390
+    PublishedDate: '2026-05-13T13:01:57.1Z'
+    LastModifiedDate: '2026-05-13T16:17:02.257Z'
   - VulnerabilityID: CVE-2026-33747
     PkgID: docker@28.3.2-r0
     PkgName: docker
@@ -5389,7 +5515,7 @@
     - https://ubuntu.com/security/notices/USN-8155-1
     - https://www.cve.org/CVERecord?id=CVE-2026-2673
     PublishedDate: '2026-03-13T19:54:34.033Z'
-    LastModifiedDate: '2026-05-12T13:17:34.043Z'
+    LastModifiedDate: '2026-05-13T19:17:04.947Z'
   - VulnerabilityID: CVE-2026-31790
     PkgID: libcrypto3@3.5.1-r0
     PkgName: libcrypto3
@@ -5548,6 +5674,68 @@
     - https://www.cve.org/CVERecord?id=CVE-2025-9232
     PublishedDate: '2025-09-30T14:15:41.313Z'
     LastModifiedDate: '2026-05-12T13:17:30.117Z'
+  - VulnerabilityID: CVE-2026-5773
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f84f25314ce6d762
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.20.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5773
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:b88c0fe4d13403bdd4fbd3ecfa2a18246a349ce46f6a56a63f631b83e12cc612
+    Title: 'curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse'
+    Description: |-
+      libcurl might in some circumstances reuse the wrong connection for SMB(S)
+      transfers.
+
+      libcurl features a pool of recent connections so that subsequent requests can
+      reuse an existing connection to avoid overhead.
+
+      When reusing a connection a range of criteria must be met. Due to a logical
+      error in the code, a network transfer operation that was requested by an
+      application could wrongfully reuse an existing SMB connection to the same
+      server that was using a different 'share' than the new subsequent transfer
+      should.
+
+      This could in unlucky situations lead to the download of the wrong file or the
+      upload of a file to the wrong place. When this happens, the same credentials
+      are used and the server name is the same.
+    Severity: HIGH
+    CweIDs:
+    - CWE-918
+    VendorSeverity:
+      nvd: 3
+      photon: 2
+      redhat: 2
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/9
+    - https://access.redhat.com/security/cve/CVE-2026-5773
+    - https://curl.se/docs/CVE-2026-5773.html
+    - https://curl.se/docs/CVE-2026-5773.json
+    - https://hackerone.com/reports/3650689
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5773
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5773
+    PublishedDate: '2026-05-13T13:01:56.307Z'
+    LastModifiedDate: '2026-05-13T19:13:14.097Z'
   - VulnerabilityID: CVE-2025-10148
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -5859,7 +6047,7 @@
     - CWE-125
     VendorSeverity:
       alma: 2
-      amazon: 1
+      amazon: 2
       julia: 3
       oracle-oval: 2
       photon: 3
@@ -6146,8 +6334,15 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:c3def0769bcdf3bd84f900c01a25a407daa480e5e5ca89564a86a2dc61d9724c
     Title: 'curl: curl: Information disclosure due to incorrect TLS connection reuse'
-    Description: A flaw was found in curl. A remote attacker could exploit this by initiating an unencrypted connection (via IMAP, SMTP, or POP3) and then making a subsequent request to the same host that requires Transport Layer Security (TLS). Due to incorrect connection reuse, the subsequent request would bypass the TLS requirement, leading to the transmission of sensitive information in cleartext. This vulnerability, categorized as Cleartext Transmission of Sensitive Information (CWE-319), results in information disclosure.
+    Description: |-
+      A vulnerability exists where a connection requiring TLS incorrectly reuses an
+      existing unencrypted connection from the same connection pool. If an initial
+      transfer is made in clear-text (via IMAP, SMTP, or POP3), a subsequent request
+      to that same host bypasses the TLS requirement and instead transmit data
+      unencrypted.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-319
     VendorSeverity:
       photon: 2
       redhat: 2
@@ -6157,11 +6352,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N
         V3Score: 5.3
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/7
     - https://access.redhat.com/security/cve/CVE-2026-4873
     - https://curl.se/docs/CVE-2026-4873.html
+    - https://curl.se/docs/CVE-2026-4873.json
+    - https://hackerone.com/reports/3621851
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4873
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4873
+    PublishedDate: '2026-05-13T13:01:55.893Z'
+    LastModifiedDate: '2026-05-13T20:16:23.353Z'
   - VulnerabilityID: CVE-2026-5545
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6174,6 +6374,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5545
     DataSource:
       ID: alpine
@@ -6181,57 +6382,51 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:ffbd3c07eb9c8ce49dd1da8d8de5dbe3ad10a07120aa26ff0ed17fc58de7314d
     Title: 'curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse'
-    Description: A flaw was found in libcurl. An application using libcurl that performs an authenticated HTTP(S) request after a Negotiate-authenticated one to the same host may incorrectly reuse the previous connection. This authentication bypass vulnerability allows the second request to be sent over a connection authenticated with different credentials, potentially leading to unauthorized access or information disclosure.
+    Description: |-
+      libcurl might in some circumstances reuse the wrong connection when asked to
+      do an authenticated HTTP(S) request after a Negotiate-authenticated one, when
+      both use the same host.
+
+      libcurl features a pool of recent connections so that subsequent requests can
+      reuse an existing connection to avoid overhead.
+
+      When reusing a connection a range of criteria must be met. Due to a logical
+      error in the code, a request that was issued by an application could
+      wrongfully reuse an existing connection to the same server that was
+      authenticated using different credentials.
+
+      An application that first uses Negotiate authentication to a server with
+      `user1:password1` and then does another operation to the same server asking
+      for any authentication method but for `user2:password2` (while the previous
+      connection is still alive) - the second request gets confused and wrongly
+      reuses the same connection and sends the new request over that connection
+      thinking it uses a mix of user1's and user2's credentials when it is in fact
+      still using the connection authenticated for user1...
     Severity: MEDIUM
+    CweIDs:
+    - CWE-613
     VendorSeverity:
+      nvd: 2
       photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N
+        V3Score: 6.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
         V3Score: 6.5
     References:
     - https://access.redhat.com/security/cve/CVE-2026-5545
     - https://curl.se/docs/CVE-2026-5545.html
+    - https://curl.se/docs/CVE-2026-5545.json
+    - https://hackerone.com/reports/3642555
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5545
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5545
-  - VulnerabilityID: CVE-2026-5773
-    PkgID: libcurl@8.15.0-r0
-    PkgName: libcurl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f84f25314ce6d762
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.20.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5773
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:b88c0fe4d13403bdd4fbd3ecfa2a18246a349ce46f6a56a63f631b83e12cc612
-    Title: 'curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse'
-    Description: A flaw was found in libcurl. Due to a logical error in the connection reuse mechanism for SMB (Server Message Block) transfers, libcurl might reuse an existing SMB connection with a different share than intended. This vulnerability, categorized as CWE-488 (Exposure of Data Element to Wrong Session), could lead to the download of an incorrect file or the upload of a file to an unintended location when an application uses libcurl for SMB transfers.
-    Severity: MEDIUM
-    VendorSeverity:
-      photon: 2
-      redhat: 2
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
-        V3Score: 6.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-5773
-    - https://curl.se/docs/CVE-2026-5773.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-5773
-    - https://ubuntu.com/security/notices/USN-8227-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-5773
+    PublishedDate: '2026-05-13T13:01:56.19Z'
+    LastModifiedDate: '2026-05-13T19:31:07.633Z'
   - VulnerabilityID: CVE-2026-6253
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6251,7 +6446,18 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:5758a370a5559a92479a7eed8eaf655b3cccb95144b0ef1553e964e52bed94df
     Title: 'curl: curl: Proxy credential disclosure via redirects to unauthenticated proxies'
-    Description: A flaw was found in curl. When curl is configured to use distinct proxies for different URL schemes, a redirect from a URL using an authenticated proxy to one using an unauthenticated proxy can inadvertently expose the initial proxy's credentials. This improper credential management (CWE-522) may allow an attacker to gain unauthorized access or information by intercepting these disclosed credentials.
+    Description: |-
+      curl might erroneously pass on credentials for a first proxy to a second
+      proxy.
+
+      This can happen when the following conditions are true:
+
+      1. curl is setup to use specific different proxies for different URL schemes
+      2. the first proxy needs credentials
+      3. the second proxy uses no credentials
+      4. while using the first proxy (using say `http://`), curl is asked to follow
+         a redirect to a URL using another scheme (say `https://`), accessed using a
+         second, different, proxy
     Severity: MEDIUM
     VendorSeverity:
       photon: 3
@@ -6262,11 +6468,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N
         V3Score: 5.3
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/11
     - https://access.redhat.com/security/cve/CVE-2026-6253
     - https://curl.se/docs/CVE-2026-6253.html
+    - https://curl.se/docs/CVE-2026-6253.json
+    - https://hackerone.com/reports/3669637
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6253
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6253
+    PublishedDate: '2026-05-13T13:01:56.57Z'
+    LastModifiedDate: '2026-05-13T18:16:20.09Z'
   - VulnerabilityID: CVE-2026-6429
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6286,7 +6497,10 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:f233588a0ed802d746f16ee1d236582971c5012d61e2db1ae042cb3aaa54b373
     Title: 'curl: libcurl: Credential leak via reused proxy connection during HTTP redirects'
-    Description: A flaw was found in libcurl. When configured to use a .netrc file for credentials and follow HTTP redirects, libcurl can inadvertently send the password from the initial connection to the redirected host. This sensitive information disclosure occurs when both the original and redirect URLs use clear text HTTP, are performed over the same HTTP proxy, and the same connection is reused. This vulnerability, categorized as an Exposure of Sensitive Information to an Unauthorized Actor (CWE-200), could allow an attacker to obtain user credentials.
+    Description: |-
+      When asked to both use a `.netrc` file for credentials and to follow HTTP
+      redirects, libcurl could leak the password used for the first host to the
+      followed-to host under certain circumstances.
     Severity: MEDIUM
     VendorSeverity:
       photon: 3
@@ -6299,9 +6513,13 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-6429
     - https://curl.se/docs/CVE-2026-6429.html
+    - https://curl.se/docs/CVE-2026-6429.json
+    - https://hackerone.com/reports/3677759
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6429
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6429
+    PublishedDate: '2026-05-13T13:01:56.93Z'
+    LastModifiedDate: '2026-05-13T14:50:58.767Z'
   - VulnerabilityID: CVE-2026-7168
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6320,13 +6538,24 @@
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:7fc55e7682b0c6fe3ba2c0d7dd3249aad8b8f848d037f077406d3593b827a438
-    Description: cross-proxy Digest auth state leak
+    Description: |-
+      Successfully using libcurl to do a transfer over a specific HTTP proxy
+      (`proxyA`) with **Digest** authentication and then changing the proxy host to
+      a second one (`proxyB`) for a second transfer, reusing the same handle, makes
+      libcurl wrongly pass on the `Proxy-Authorization:` header field meant for
+      `proxyA`, to `proxyB`.
     Severity: MEDIUM
     VendorSeverity:
       ubuntu: 2
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/14
+    - https://curl.se/docs/CVE-2026-7168.html
+    - https://curl.se/docs/CVE-2026-7168.json
+    - https://hackerone.com/reports/3697719
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-7168
+    PublishedDate: '2026-05-13T13:01:57.2Z'
+    LastModifiedDate: '2026-05-13T16:17:02.437Z'
   - VulnerabilityID: CVE-2026-6276
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6346,7 +6575,12 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:2f0f0103060fdbdfc5176d73f3dafb2a1785281263194ef6d461eebc72f8234f
     Title: 'curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers'
-    Description: A flaw was found in libcurl. This vulnerability allows for information disclosure when a custom `Host:` header is used in an initial HTTP request, and a subsequent request reuses the same connection without specifying a new `Host:` header. This can lead to libcurl incorrectly sending cookies intended for the first host to the second host, resulting in a cookie leak. This issue is categorized as an Origin Validation Error (CWE-346). Exploitation typically requires specific debugging configurations.
+    Description: |-
+      Using libcurl, when a custom `Host:` header is first set for an HTTP request
+      and a second request is subsequently done using the same *easy handle* but
+      without the custom `Host:` header set, the second request would use stale
+      information and pass on cookies meant for the first host in the second
+      request. Leak them.
     Severity: LOW
     VendorSeverity:
       photon: 2
@@ -6357,11 +6591,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/13
     - https://access.redhat.com/security/cve/CVE-2026-6276
     - https://curl.se/docs/CVE-2026-6276.html
+    - https://curl.se/docs/CVE-2026-6276.json
+    - https://hackerone.com/reports/3671818
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6276
+    PublishedDate: '2026-05-13T13:01:56.8Z'
+    LastModifiedDate: '2026-05-13T18:16:20.403Z'
   - VulnerabilityID: CVE-2026-7009
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6374,12 +6613,25 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7009
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:1b0a4d962661bbaf08f45d7748b34fdf380a1b3b5ebabc88d03dc78c2ba1c86f
+    Description: |-
+      When curl is told to use the Certificate Status Request TLS extension, often
+      referred to as *OCSP stapling*, to verify that the server certificate is
+      valid, it fails to detect OCSP problems and instead wrongly consider the
+      response as fine.
     Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/12
+    - https://curl.se/docs/CVE-2026-7009.html
+    - https://curl.se/docs/CVE-2026-7009.json
+    - https://hackerone.com/reports/3694390
+    PublishedDate: '2026-05-13T13:01:57.1Z'
+    LastModifiedDate: '2026-05-13T16:17:02.257Z'
   - VulnerabilityID: CVE-2026-25210
     PkgID: libexpat@2.7.1-r0
     PkgName: libexpat
@@ -6719,6 +6971,34 @@
     - https://www.openwall.com/lists/oss-security/2026/04/26/1
     PublishedDate: '2026-04-16T17:16:54.917Z'
     LastModifiedDate: '2026-04-27T07:16:03.937Z'
+  - VulnerabilityID: CVE-2026-45186
+    PkgID: libexpat@2.7.1-r0
+    PkgName: libexpat
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: ba96e0052583823f
+    InstalledVersion: 2.7.1-r0
+    FixedVersion: 2.8.1-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45186
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:003a61251b5b03b1c57494563d45203276c9acf7ca16c6bf854e3ba752179724
+    Title: In libexpat before 2.8.1, the computational complexity of attribute na ...
+    Description: In libexpat before 2.8.1, the computational complexity of attribute name collision checks allows a denial of service via moderately sized crafted XML input.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-407
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/05/11/16
+    - https://github.com/libexpat/libexpat/pull/1216
+    PublishedDate: '2026-05-10T07:16:07.883Z'
+    LastModifiedDate: '2026-05-13T15:42:30.497Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libmount@2.41.1-r0
     PkgName: libmount
@@ -6790,7 +7070,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       oracle-oval: 3
@@ -7313,7 +7593,7 @@
     CweIDs:
     - CWE-125
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 2
       cbl-mariner: 2
       photon: 2
@@ -7394,6 +7674,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-34757
     DataSource:
       ID: alpine
@@ -7408,9 +7689,13 @@
     VendorSeverity:
       amazon: 2
       azure: 2
+      nvd: 2
       redhat: 2
       ubuntu: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 4.4
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N
         V3Score: 4.4
@@ -7426,7 +7711,7 @@
     - https://ubuntu.com/security/notices/USN-8251-1
     - https://www.cve.org/CVERecord?id=CVE-2026-34757
     PublishedDate: '2026-04-09T15:16:11.003Z'
-    LastModifiedDate: '2026-05-09T11:16:26.96Z'
+    LastModifiedDate: '2026-05-13T23:07:51.863Z'
   - VulnerabilityID: CVE-2025-15467
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -9517,7 +9802,7 @@
     - https://ubuntu.com/security/notices/USN-8155-1
     - https://www.cve.org/CVERecord?id=CVE-2026-2673
     PublishedDate: '2026-03-13T19:54:34.033Z'
-    LastModifiedDate: '2026-05-12T13:17:34.043Z'
+    LastModifiedDate: '2026-05-13T19:17:04.947Z'
   - VulnerabilityID: CVE-2026-31790
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -9935,12 +10220,13 @@
     - https://github.com/nghttp2/nghttp2/security/advisories/GHSA-6933-cjhr-5qg6
     - https://linux.oracle.com/cve/CVE-2026-27135.html
     - https://linux.oracle.com/errata/ELSA-2026-8339.html
+    - https://lists.debian.org/debian-lts-announce/2026/05/msg00025.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27135
     - https://ubuntu.com/security/notices/USN-8233-1
     - https://ubuntu.com/security/notices/USN-8233-2
     - https://www.cve.org/CVERecord?id=CVE-2026-27135
     PublishedDate: '2026-03-18T18:16:26.723Z'
-    LastModifiedDate: '2026-03-23T17:51:17.017Z'
+    LastModifiedDate: '2026-05-13T22:16:42.337Z'
   - VulnerabilityID: CVE-2026-21932
     PkgID: openjdk21-jre@21.0.8_p9-r0
     PkgName: openjdk21-jre
@@ -14039,7 +14325,7 @@
     - https://ubuntu.com/security/notices/USN-8155-1
     - https://www.cve.org/CVERecord?id=CVE-2026-2673
     PublishedDate: '2026-03-13T19:54:34.033Z'
-    LastModifiedDate: '2026-05-12T13:17:34.043Z'
+    LastModifiedDate: '2026-05-13T19:17:04.947Z'
   - VulnerabilityID: CVE-2026-31790
     PkgID: openssl@3.5.1-r0
     PkgName: openssl
@@ -15344,7 +15630,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0383
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
-    LastModifiedDate: '2026-05-08T23:16:36.777Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-44656
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -15373,7 +15659,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0435
     - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
     PublishedDate: '2026-05-08T23:16:39.783Z'
-    LastModifiedDate: '2026-05-08T23:16:39.783Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-45130
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -15403,7 +15689,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0450
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-08T23:16:40.053Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16177,7 +16463,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0383
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
-    LastModifiedDate: '2026-05-08T23:16:36.777Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-44656
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16206,7 +16492,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0435
     - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
     PublishedDate: '2026-05-08T23:16:39.783Z'
-    LastModifiedDate: '2026-05-08T23:16:39.783Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-45130
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16236,7 +16522,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0450
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-08T23:16:40.053Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -17010,7 +17296,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0383
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
-    LastModifiedDate: '2026-05-08T23:16:36.777Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-44656
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -17039,7 +17325,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0435
     - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
     PublishedDate: '2026-05-08T23:16:39.783Z'
-    LastModifiedDate: '2026-05-08T23:16:39.783Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-45130
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -17069,7 +17355,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0450
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-08T23:16:40.053Z'
+    LastModifiedDate: '2026-05-13T16:02:13.38Z'
   - VulnerabilityID: CVE-2026-34743
     PkgID: xz-libs@5.8.1-r0
     PkgName: xz-libs
@@ -18833,7 +19119,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -18907,7 +19193,7 @@
     - CWE-409
     VendorSeverity:
       alma: 3
-      amazon: 2
+      amazon: 3
       azure: 3
       cbl-mariner: 3
       ghsa: 3
@@ -19053,23 +19339,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
     Fingerprint: sha256:37a03b9a31bcaaebbbc13ec4b0c1d3e6f1ed3194d12a2a46e60a64c2a7d1e58c
     Title: 'urllib3: Sensitive headers forwarded across origins in proxied low-level redirects'
-    Description: |-
-      ### Impact
-
-      When following cross-origin redirects for requests made using urllib3’s high-level APIs, such as `urllib3.request()`, `PoolManager.request()`, and `ProxyManager.request()`, sensitive headers — `Authorization`, `Cookie`, and `Proxy-Authorization` (defined in `Retry.DEFAULT_REMOVE_HEADERS_ON_REDIRECT`) — are stripped by default, as expected.
-
-      However, cross-origin redirects followed from the low-level API via `ProxyManager.connection_from_url().urlopen(..., assert_same_host=False)` still forward these sensitive headers.
-
-      ### Affected usage
-
-      Applications and libraries using urllib3 versions earlier than 2.7.0 may be affected if they allow cross-origin redirects while making requests through `HTTPConnection.urlopen()` instances created via `ProxyManager.connection_from_url()`.
-
-      ### Remediation
-
-      Upgrade to urllib3 version 2.7.0 or later, in which sensitive headers are stripped from redirects followed by `HTTPConnection`.
-
-      If upgrading is not immediately possible, avoid using this low-level redirect flow for cross-origin redirects. If appropriate for your use case, switch to `ProxyManager.request()`.
+    Description: urllib3 is an HTTP client library for Python. From 1.23 to before 2.7.0, cross-origin redirects followed from the low-level API via ProxyManager.connection_from_url().urlopen(..., assert_same_host=False) still forward these sensitive headers. This vulnerability is fixed in 2.7.0.
     Severity: HIGH
+    CweIDs:
+    - CWE-200
     VendorSeverity:
       ghsa: 3
     CVSS:
@@ -19079,6 +19352,8 @@
     References:
     - https://github.com/urllib3/urllib3
     - https://github.com/urllib3/urllib3/security/advisories/GHSA-qccp-gfcp-xxvc
+    PublishedDate: '2026-05-13T16:16:57.15Z'
+    LastModifiedDate: '2026-05-13T17:06:37.307Z'
 - Target: usr/bin/grype
   Class: lang-pkgs
   Type: gobinary
@@ -19545,6 +19820,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-44740
+    VendorIDs:
+    - GHSA-m3xc-h892-ggx6
+    PkgID: github.com/go-git/go-billy/v5@v5.6.2
+    PkgName: github.com/go-git/go-billy/v5
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2
+      UID: 8066af4aa1b239cb
+    InstalledVersion: v5.6.2
+    FixedVersion: 5.9.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44740
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:5806f10b7374db763d9f1618fe12d9ec699ebb158d875c76f80b7648bc2bc853
+    Title: 'go-billy: Lack of depth and cycle detection in symlink resolution may lead to infinite loops and resource exhaustion'
+    Description: |-
+      ### Impact
+      Multiple components may improperly handle crafted or malformed input, resulting in panics, infinite loops, uncontrolled recursion, or excessive resource consumption.
+
+      These issues arise from insufficient validation and missing safety mechanisms such as cycle detection, recursion limits, or defensive handling of unexpected states when processing untrusted repository data and filesystem structures.
+
+      ### Patches
+      Users should upgrade to a patched version in order to mitigate this vulnerability. Versions prior to `v5` are likely to be affected, users are recommended to upgrade to a supported `go-billy` version.
+
+      ### Credits
+      Thanks to @faran66 for finding and reporting this issue privately to the go-git project. 🙇
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://github.com/go-git/go-billy
+    - https://github.com/go-git/go-billy/releases/tag/v5.9.0
+    - https://github.com/go-git/go-billy/releases/tag/v6.0.0-alpha.1
+    - https://github.com/go-git/go-billy/security/advisories/GHSA-m3xc-h892-ggx6
   - VulnerabilityID: CVE-2026-45022
     VendorIDs:
     - GHSA-389r-gv7p-r3rp
@@ -20843,7 +21163,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -20937,7 +21257,7 @@
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32280.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-16875.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
     - https://pkg.go.dev/vuln/GO-2026-4947
     - https://www.cve.org/CVERecord?id=CVE-2026-32280
@@ -21054,7 +21374,7 @@
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32283.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     - https://www.cve.org/CVERecord?id=CVE-2026-32283
@@ -21118,6 +21438,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-33814
     DataSource:
       ID: govulndb
@@ -21127,10 +21448,16 @@
     Title: When processing HTTP/2 SETTINGS frames, transport will enter an infini ...
     Description: When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.
     Severity: HIGH
+    CweIDs:
+    - CWE-835
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -21141,7 +21468,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33814
     - https://pkg.go.dev/vuln/GO-2026-4918
     PublishedDate: '2026-05-07T20:16:42.88Z'
-    LastModifiedDate: '2026-05-08T19:16:30.567Z'
+    LastModifiedDate: '2026-05-13T14:41:59.52Z'
   - VulnerabilityID: CVE-2026-39820
     VendorIDs:
     - GO-2026-4986
@@ -21156,6 +21483,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39820
     DataSource:
       ID: govulndb
@@ -21165,10 +21493,16 @@
     Title: Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ...
     Description: Well-crafted inputs reaching ParseAddress, ParseAddressList, and ParseDate were able to trigger excessive CPU exhaustion and memory allocations.
     Severity: HIGH
+    CweIDs:
+    - CWE-770
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -21178,7 +21512,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39820
     - https://pkg.go.dev/vuln/GO-2026-4986
     PublishedDate: '2026-05-07T20:16:43.187Z'
-    LastModifiedDate: '2026-05-08T15:16:37.323Z'
+    LastModifiedDate: '2026-05-13T15:10:58.65Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -21193,6 +21527,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39836
     DataSource:
       ID: govulndb
@@ -21202,10 +21537,16 @@
     Title: Panic in Dial and LookupPort when handling NUL byte on Windows in net
     Description: The Dial and LookupPort functions panic on Windows when provided with an input containing a NUL (0).
     Severity: HIGH
+    CweIDs:
+    - CWE-476
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -21215,7 +21556,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39836
     - https://pkg.go.dev/vuln/GO-2026-4971
     PublishedDate: '2026-05-07T20:16:43.593Z'
-    LastModifiedDate: '2026-05-08T22:16:29.723Z'
+    LastModifiedDate: '2026-05-13T15:11:10.31Z'
   - VulnerabilityID: CVE-2026-42499
     VendorIDs:
     - GO-2026-4977
@@ -21252,7 +21593,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42499
     - https://pkg.go.dev/vuln/GO-2026-4977
     PublishedDate: '2026-05-07T20:16:44.54Z'
-    LastModifiedDate: '2026-05-08T22:16:33.183Z'
+    LastModifiedDate: '2026-05-13T16:59:17.563Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -21856,7 +22197,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       redhat: 2
     CVSS:
@@ -21936,7 +22277,7 @@
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32282.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
     - https://pkg.go.dev/vuln/GO-2026-4864
     - https://www.cve.org/CVERecord?id=CVE-2026-32282
@@ -22070,6 +22411,8 @@
     Title: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly  ...
     Description: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly escaped inside of a <meta> tag's <content> attribute. If the URL content were to insert ASCII whitespaces around the '=' rune inside of the <content> attribute, the escaper would fail to similarly escape it, leading to XSS.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-79
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -22083,7 +22426,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39823
     - https://pkg.go.dev/vuln/GO-2026-4982
     PublishedDate: '2026-05-07T20:16:43.29Z'
-    LastModifiedDate: '2026-05-08T15:16:37.5Z'
+    LastModifiedDate: '2026-05-13T16:58:45.697Z'
   - VulnerabilityID: CVE-2026-39825
     VendorIDs:
     - GO-2026-4976
@@ -22120,7 +22463,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39825
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
-    LastModifiedDate: '2026-05-08T22:16:29.547Z'
+    LastModifiedDate: '2026-05-13T16:58:56.39Z'
   - VulnerabilityID: CVE-2026-39826
     VendorIDs:
     - GO-2026-4980
@@ -22144,6 +22487,8 @@
     Title: If a trusted template author were to write a <script> tag containing a ...
     Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-116
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -22157,7 +22502,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
     - https://pkg.go.dev/vuln/GO-2026-4980
     PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-08T15:16:37.68Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -22184,7 +22529,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 1
       redhat: 1
@@ -22630,6 +22975,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-44740
+    VendorIDs:
+    - GHSA-m3xc-h892-ggx6
+    PkgID: github.com/go-git/go-billy/v5@v5.6.2
+    PkgName: github.com/go-git/go-billy/v5
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2
+      UID: f4cd9b079e72f037
+    InstalledVersion: v5.6.2
+    FixedVersion: 5.9.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44740
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:7b0853fb26bd16fb38af7b290ca2c9a70c4c4afe169e26bd03d96ccfb5ef6e34
+    Title: 'go-billy: Lack of depth and cycle detection in symlink resolution may lead to infinite loops and resource exhaustion'
+    Description: |-
+      ### Impact
+      Multiple components may improperly handle crafted or malformed input, resulting in panics, infinite loops, uncontrolled recursion, or excessive resource consumption.
+
+      These issues arise from insufficient validation and missing safety mechanisms such as cycle detection, recursion limits, or defensive handling of unexpected states when processing untrusted repository data and filesystem structures.
+
+      ### Patches
+      Users should upgrade to a patched version in order to mitigate this vulnerability. Versions prior to `v5` are likely to be affected, users are recommended to upgrade to a supported `go-billy` version.
+
+      ### Credits
+      Thanks to @faran66 for finding and reporting this issue privately to the go-git project. 🙇
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://github.com/go-git/go-billy
+    - https://github.com/go-git/go-billy/releases/tag/v5.9.0
+    - https://github.com/go-git/go-billy/releases/tag/v6.0.0-alpha.1
+    - https://github.com/go-git/go-billy/security/advisories/GHSA-m3xc-h892-ggx6
   - VulnerabilityID: CVE-2026-45022
     VendorIDs:
     - GHSA-389r-gv7p-r3rp
@@ -23845,7 +24235,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -23939,7 +24329,7 @@
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32280.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-16875.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
     - https://pkg.go.dev/vuln/GO-2026-4947
     - https://www.cve.org/CVERecord?id=CVE-2026-32280
@@ -24056,7 +24446,7 @@
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32283.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     - https://www.cve.org/CVERecord?id=CVE-2026-32283
@@ -24120,6 +24510,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-33814
     DataSource:
       ID: govulndb
@@ -24129,10 +24520,16 @@
     Title: When processing HTTP/2 SETTINGS frames, transport will enter an infini ...
     Description: When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.
     Severity: HIGH
+    CweIDs:
+    - CWE-835
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -24143,7 +24540,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33814
     - https://pkg.go.dev/vuln/GO-2026-4918
     PublishedDate: '2026-05-07T20:16:42.88Z'
-    LastModifiedDate: '2026-05-08T19:16:30.567Z'
+    LastModifiedDate: '2026-05-13T14:41:59.52Z'
   - VulnerabilityID: CVE-2026-39820
     VendorIDs:
     - GO-2026-4986
@@ -24158,6 +24555,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39820
     DataSource:
       ID: govulndb
@@ -24167,10 +24565,16 @@
     Title: Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ...
     Description: Well-crafted inputs reaching ParseAddress, ParseAddressList, and ParseDate were able to trigger excessive CPU exhaustion and memory allocations.
     Severity: HIGH
+    CweIDs:
+    - CWE-770
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -24180,7 +24584,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39820
     - https://pkg.go.dev/vuln/GO-2026-4986
     PublishedDate: '2026-05-07T20:16:43.187Z'
-    LastModifiedDate: '2026-05-08T15:16:37.323Z'
+    LastModifiedDate: '2026-05-13T15:10:58.65Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -24195,6 +24599,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39836
     DataSource:
       ID: govulndb
@@ -24204,10 +24609,16 @@
     Title: Panic in Dial and LookupPort when handling NUL byte on Windows in net
     Description: The Dial and LookupPort functions panic on Windows when provided with an input containing a NUL (0).
     Severity: HIGH
+    CweIDs:
+    - CWE-476
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -24217,7 +24628,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39836
     - https://pkg.go.dev/vuln/GO-2026-4971
     PublishedDate: '2026-05-07T20:16:43.593Z'
-    LastModifiedDate: '2026-05-08T22:16:29.723Z'
+    LastModifiedDate: '2026-05-13T15:11:10.31Z'
   - VulnerabilityID: CVE-2026-42499
     VendorIDs:
     - GO-2026-4977
@@ -24254,7 +24665,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42499
     - https://pkg.go.dev/vuln/GO-2026-4977
     PublishedDate: '2026-05-07T20:16:44.54Z'
-    LastModifiedDate: '2026-05-08T22:16:33.183Z'
+    LastModifiedDate: '2026-05-13T16:59:17.563Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -24858,7 +25269,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       redhat: 2
     CVSS:
@@ -24938,7 +25349,7 @@
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32282.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
     - https://pkg.go.dev/vuln/GO-2026-4864
     - https://www.cve.org/CVERecord?id=CVE-2026-32282
@@ -25072,6 +25483,8 @@
     Title: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly  ...
     Description: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly escaped inside of a <meta> tag's <content> attribute. If the URL content were to insert ASCII whitespaces around the '=' rune inside of the <content> attribute, the escaper would fail to similarly escape it, leading to XSS.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-79
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -25085,7 +25498,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39823
     - https://pkg.go.dev/vuln/GO-2026-4982
     PublishedDate: '2026-05-07T20:16:43.29Z'
-    LastModifiedDate: '2026-05-08T15:16:37.5Z'
+    LastModifiedDate: '2026-05-13T16:58:45.697Z'
   - VulnerabilityID: CVE-2026-39825
     VendorIDs:
     - GO-2026-4976
@@ -25122,7 +25535,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39825
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
-    LastModifiedDate: '2026-05-08T22:16:29.547Z'
+    LastModifiedDate: '2026-05-13T16:58:56.39Z'
   - VulnerabilityID: CVE-2026-39826
     VendorIDs:
     - GO-2026-4980
@@ -25146,6 +25559,8 @@
     Title: If a trusted template author were to write a <script> tag containing a ...
     Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-116
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -25159,7 +25574,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
     - https://pkg.go.dev/vuln/GO-2026-4980
     PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-08T15:16:37.68Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -25186,7 +25601,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 1
       redhat: 1
@@ -25753,6 +26168,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-44740
+    VendorIDs:
+    - GHSA-m3xc-h892-ggx6
+    PkgID: github.com/go-git/go-billy/v5@v5.6.2
+    PkgName: github.com/go-git/go-billy/v5
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2
+      UID: d1472c35066fc22d
+    InstalledVersion: v5.6.2
+    FixedVersion: 5.9.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44740
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:d426c4a2902f38536128ac6e8cc5b0674baaa86925e87a1b097187247c00036b
+    Title: 'go-billy: Lack of depth and cycle detection in symlink resolution may lead to infinite loops and resource exhaustion'
+    Description: |-
+      ### Impact
+      Multiple components may improperly handle crafted or malformed input, resulting in panics, infinite loops, uncontrolled recursion, or excessive resource consumption.
+
+      These issues arise from insufficient validation and missing safety mechanisms such as cycle detection, recursion limits, or defensive handling of unexpected states when processing untrusted repository data and filesystem structures.
+
+      ### Patches
+      Users should upgrade to a patched version in order to mitigate this vulnerability. Versions prior to `v5` are likely to be affected, users are recommended to upgrade to a supported `go-billy` version.
+
+      ### Credits
+      Thanks to @faran66 for finding and reporting this issue privately to the go-git project. 🙇
+    Severity: MEDIUM
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://github.com/go-git/go-billy
+    - https://github.com/go-git/go-billy/releases/tag/v5.9.0
+    - https://github.com/go-git/go-billy/releases/tag/v6.0.0-alpha.1
+    - https://github.com/go-git/go-billy/security/advisories/GHSA-m3xc-h892-ggx6
   - VulnerabilityID: CVE-2026-45022
     VendorIDs:
     - GHSA-389r-gv7p-r3rp
@@ -27660,7 +28120,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -27754,7 +28214,7 @@
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32280.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-16875.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
     - https://pkg.go.dev/vuln/GO-2026-4947
     - https://www.cve.org/CVERecord?id=CVE-2026-32280
@@ -27871,7 +28331,7 @@
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32283.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     - https://www.cve.org/CVERecord?id=CVE-2026-32283
@@ -27935,6 +28395,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-33814
     DataSource:
       ID: govulndb
@@ -27944,10 +28405,16 @@
     Title: When processing HTTP/2 SETTINGS frames, transport will enter an infini ...
     Description: When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.
     Severity: HIGH
+    CweIDs:
+    - CWE-835
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -27958,7 +28425,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33814
     - https://pkg.go.dev/vuln/GO-2026-4918
     PublishedDate: '2026-05-07T20:16:42.88Z'
-    LastModifiedDate: '2026-05-08T19:16:30.567Z'
+    LastModifiedDate: '2026-05-13T14:41:59.52Z'
   - VulnerabilityID: CVE-2026-39820
     VendorIDs:
     - GO-2026-4986
@@ -27973,6 +28440,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39820
     DataSource:
       ID: govulndb
@@ -27982,10 +28450,16 @@
     Title: Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ...
     Description: Well-crafted inputs reaching ParseAddress, ParseAddressList, and ParseDate were able to trigger excessive CPU exhaustion and memory allocations.
     Severity: HIGH
+    CweIDs:
+    - CWE-770
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -27995,7 +28469,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39820
     - https://pkg.go.dev/vuln/GO-2026-4986
     PublishedDate: '2026-05-07T20:16:43.187Z'
-    LastModifiedDate: '2026-05-08T15:16:37.323Z'
+    LastModifiedDate: '2026-05-13T15:10:58.65Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -28010,6 +28484,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39836
     DataSource:
       ID: govulndb
@@ -28019,10 +28494,16 @@
     Title: Panic in Dial and LookupPort when handling NUL byte on Windows in net
     Description: The Dial and LookupPort functions panic on Windows when provided with an input containing a NUL (0).
     Severity: HIGH
+    CweIDs:
+    - CWE-476
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -28032,7 +28513,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39836
     - https://pkg.go.dev/vuln/GO-2026-4971
     PublishedDate: '2026-05-07T20:16:43.593Z'
-    LastModifiedDate: '2026-05-08T22:16:29.723Z'
+    LastModifiedDate: '2026-05-13T15:11:10.31Z'
   - VulnerabilityID: CVE-2026-42499
     VendorIDs:
     - GO-2026-4977
@@ -28069,7 +28550,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42499
     - https://pkg.go.dev/vuln/GO-2026-4977
     PublishedDate: '2026-05-07T20:16:44.54Z'
-    LastModifiedDate: '2026-05-08T22:16:33.183Z'
+    LastModifiedDate: '2026-05-13T16:59:17.563Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -28673,7 +29154,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       redhat: 2
     CVSS:
@@ -28753,7 +29234,7 @@
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32282.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
     - https://pkg.go.dev/vuln/GO-2026-4864
     - https://www.cve.org/CVERecord?id=CVE-2026-32282
@@ -28887,6 +29368,8 @@
     Title: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly  ...
     Description: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly escaped inside of a <meta> tag's <content> attribute. If the URL content were to insert ASCII whitespaces around the '=' rune inside of the <content> attribute, the escaper would fail to similarly escape it, leading to XSS.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-79
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -28900,7 +29383,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39823
     - https://pkg.go.dev/vuln/GO-2026-4982
     PublishedDate: '2026-05-07T20:16:43.29Z'
-    LastModifiedDate: '2026-05-08T15:16:37.5Z'
+    LastModifiedDate: '2026-05-13T16:58:45.697Z'
   - VulnerabilityID: CVE-2026-39825
     VendorIDs:
     - GO-2026-4976
@@ -28937,7 +29420,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39825
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
-    LastModifiedDate: '2026-05-08T22:16:29.547Z'
+    LastModifiedDate: '2026-05-13T16:58:56.39Z'
   - VulnerabilityID: CVE-2026-39826
     VendorIDs:
     - GO-2026-4980
@@ -28961,6 +29444,8 @@
     Title: If a trusted template author were to write a <script> tag containing a ...
     Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-116
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -28974,7 +29459,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
     - https://pkg.go.dev/vuln/GO-2026-4980
     PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-08T15:16:37.68Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -29001,7 +29486,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 1
       redhat: 1
@@ -29440,7 +29925,7 @@
     - CWE-425
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       azure: 3
       bitnami: 3
       oracle-oval: 3
@@ -29534,7 +30019,7 @@
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32280.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-16875.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32280
     - https://pkg.go.dev/vuln/GO-2026-4947
     - https://www.cve.org/CVERecord?id=CVE-2026-32280
@@ -29651,7 +30136,7 @@
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32283.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32283
     - https://pkg.go.dev/vuln/GO-2026-4870
     - https://www.cve.org/CVERecord?id=CVE-2026-32283
@@ -29715,6 +30200,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-33814
     DataSource:
       ID: govulndb
@@ -29724,10 +30210,16 @@
     Title: When processing HTTP/2 SETTINGS frames, transport will enter an infini ...
     Description: When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.
     Severity: HIGH
+    CweIDs:
+    - CWE-835
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -29738,7 +30230,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33814
     - https://pkg.go.dev/vuln/GO-2026-4918
     PublishedDate: '2026-05-07T20:16:42.88Z'
-    LastModifiedDate: '2026-05-08T19:16:30.567Z'
+    LastModifiedDate: '2026-05-13T14:41:59.52Z'
   - VulnerabilityID: CVE-2026-39820
     VendorIDs:
     - GO-2026-4986
@@ -29753,6 +30245,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39820
     DataSource:
       ID: govulndb
@@ -29762,10 +30255,16 @@
     Title: Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ...
     Description: Well-crafted inputs reaching ParseAddress, ParseAddressList, and ParseDate were able to trigger excessive CPU exhaustion and memory allocations.
     Severity: HIGH
+    CweIDs:
+    - CWE-770
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -29775,7 +30274,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39820
     - https://pkg.go.dev/vuln/GO-2026-4986
     PublishedDate: '2026-05-07T20:16:43.187Z'
-    LastModifiedDate: '2026-05-08T15:16:37.323Z'
+    LastModifiedDate: '2026-05-13T15:10:58.65Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -29790,6 +30289,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39836
     DataSource:
       ID: govulndb
@@ -29799,10 +30299,16 @@
     Title: Panic in Dial and LookupPort when handling NUL byte on Windows in net
     Description: The Dial and LookupPort functions panic on Windows when provided with an input containing a NUL (0).
     Severity: HIGH
+    CweIDs:
+    - CWE-476
     VendorSeverity:
       bitnami: 3
+      nvd: 3
     CVSS:
       bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
@@ -29812,7 +30318,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39836
     - https://pkg.go.dev/vuln/GO-2026-4971
     PublishedDate: '2026-05-07T20:16:43.593Z'
-    LastModifiedDate: '2026-05-08T22:16:29.723Z'
+    LastModifiedDate: '2026-05-13T15:11:10.31Z'
   - VulnerabilityID: CVE-2026-42499
     VendorIDs:
     - GO-2026-4977
@@ -29849,7 +30355,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42499
     - https://pkg.go.dev/vuln/GO-2026-4977
     PublishedDate: '2026-05-07T20:16:44.54Z'
-    LastModifiedDate: '2026-05-08T22:16:33.183Z'
+    LastModifiedDate: '2026-05-13T16:59:17.563Z'
   - VulnerabilityID: CVE-2025-47906
     VendorIDs:
     - GO-2025-3956
@@ -30453,7 +30959,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       redhat: 2
     CVSS:
@@ -30533,7 +31039,7 @@
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
     - https://linux.oracle.com/cve/CVE-2026-32282.html
-    - https://linux.oracle.com/errata/ELSA-2026-14200.html
+    - https://linux.oracle.com/errata/ELSA-2026-17075.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-32282
     - https://pkg.go.dev/vuln/GO-2026-4864
     - https://www.cve.org/CVERecord?id=CVE-2026-32282
@@ -30667,6 +31173,8 @@
     Title: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly  ...
     Description: CVE-2026-27142 fixed a vulnerability in which URLs were not correctly escaped inside of a <meta> tag's <content> attribute. If the URL content were to insert ASCII whitespaces around the '=' rune inside of the <content> attribute, the escaper would fail to similarly escape it, leading to XSS.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-79
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -30680,7 +31188,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39823
     - https://pkg.go.dev/vuln/GO-2026-4982
     PublishedDate: '2026-05-07T20:16:43.29Z'
-    LastModifiedDate: '2026-05-08T15:16:37.5Z'
+    LastModifiedDate: '2026-05-13T16:58:45.697Z'
   - VulnerabilityID: CVE-2026-39825
     VendorIDs:
     - GO-2026-4976
@@ -30717,7 +31225,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39825
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
-    LastModifiedDate: '2026-05-08T22:16:29.547Z'
+    LastModifiedDate: '2026-05-13T16:58:56.39Z'
   - VulnerabilityID: CVE-2026-39826
     VendorIDs:
     - GO-2026-4980
@@ -30741,6 +31249,8 @@
     Title: If a trusted template author were to write a <script> tag containing a ...
     Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
     Severity: MEDIUM
+    CweIDs:
+    - CWE-116
     VendorSeverity:
       bitnami: 2
     CVSS:
@@ -30754,7 +31264,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
     - https://pkg.go.dev/vuln/GO-2026-4980
     PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-08T15:16:37.68Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-27139
     VendorIDs:
     - GO-2026-4602
@@ -30781,7 +31291,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 1
       bitnami: 1
       redhat: 1
