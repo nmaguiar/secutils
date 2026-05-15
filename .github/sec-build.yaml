@@ -280,7 +280,7 @@
     - CWE-918
     VendorSeverity:
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -301,6 +301,58 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-5773
     PublishedDate: '2026-05-13T13:01:56.307Z'
     LastModifiedDate: '2026-05-13T19:13:14.097Z'
+  - VulnerabilityID: CVE-2026-6276
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: d277059717700bf1
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.20.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6276
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:2e7c75635c8fbe3074004ac1cce603dd15a49db44b2231a0e8ccaba8f3437016
+    Title: 'curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers'
+    Description: |-
+      Using libcurl, when a custom `Host:` header is first set for an HTTP request
+      and a second request is subsequently done using the same *easy handle* but
+      without the custom `Host:` header set, the second request would use stale
+      information and pass on cookies meant for the first host in the second
+      request. Leak them.
+    Severity: HIGH
+    CweIDs:
+    - CWE-319
+    VendorSeverity:
+      nvd: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 3.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/13
+    - https://access.redhat.com/security/cve/CVE-2026-6276
+    - https://curl.se/docs/CVE-2026-6276.html
+    - https://curl.se/docs/CVE-2026-6276.json
+    - https://hackerone.com/reports/3671818
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6276
+    PublishedDate: '2026-05-13T13:01:56.8Z'
+    LastModifiedDate: '2026-05-14T14:21:06.997Z'
   - VulnerabilityID: CVE-2025-10148
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -907,6 +959,7 @@
       unencrypted.
     Severity: MEDIUM
     CweIDs:
+    - CWE-295
     - CWE-319
     VendorSeverity:
       photon: 2
@@ -926,7 +979,7 @@
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4873
     PublishedDate: '2026-05-13T13:01:55.893Z'
-    LastModifiedDate: '2026-05-13T20:16:23.353Z'
+    LastModifiedDate: '2026-05-14T13:45:11.407Z'
   - VulnerabilityID: CVE-2026-5545
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -972,7 +1025,7 @@
     - CWE-613
     VendorSeverity:
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1024,8 +1077,10 @@
          a redirect to a URL using another scheme (say `https://`), accessed using a
          second, different, proxy
     Severity: MEDIUM
+    CweIDs:
+    - CWE-522
     VendorSeverity:
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1042,7 +1097,7 @@
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6253
     PublishedDate: '2026-05-13T13:01:56.57Z'
-    LastModifiedDate: '2026-05-13T18:16:20.09Z'
+    LastModifiedDate: '2026-05-14T13:40:53.19Z'
   - VulnerabilityID: CVE-2026-6429
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -1068,7 +1123,7 @@
       followed-to host under certain circumstances.
     Severity: MEDIUM
     VendorSeverity:
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1084,88 +1139,7 @@
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6429
     PublishedDate: '2026-05-13T13:01:56.93Z'
-    LastModifiedDate: '2026-05-13T14:50:58.767Z'
-  - VulnerabilityID: CVE-2026-7168
-    PkgID: curl@8.15.0-r0
-    PkgName: curl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: d277059717700bf1
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.20.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7168
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:349ff79b3eff992fc0167e292e9e7eed48e346431be7d232447ef5df614d779d
-    Description: |-
-      Successfully using libcurl to do a transfer over a specific HTTP proxy
-      (`proxyA`) with **Digest** authentication and then changing the proxy host to
-      a second one (`proxyB`) for a second transfer, reusing the same handle, makes
-      libcurl wrongly pass on the `Proxy-Authorization:` header field meant for
-      `proxyA`, to `proxyB`.
-    Severity: MEDIUM
-    VendorSeverity:
-      ubuntu: 2
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/04/29/14
-    - https://curl.se/docs/CVE-2026-7168.html
-    - https://curl.se/docs/CVE-2026-7168.json
-    - https://hackerone.com/reports/3697719
-    - https://ubuntu.com/security/notices/USN-8227-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-7168
-    PublishedDate: '2026-05-13T13:01:57.2Z'
-    LastModifiedDate: '2026-05-13T16:17:02.437Z'
-  - VulnerabilityID: CVE-2026-6276
-    PkgID: curl@8.15.0-r0
-    PkgName: curl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: d277059717700bf1
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.20.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6276
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:2e7c75635c8fbe3074004ac1cce603dd15a49db44b2231a0e8ccaba8f3437016
-    Title: 'curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers'
-    Description: |-
-      Using libcurl, when a custom `Host:` header is first set for an HTTP request
-      and a second request is subsequently done using the same *easy handle* but
-      without the custom `Host:` header set, the second request would use stale
-      information and pass on cookies meant for the first host in the second
-      request. Leak them.
-    Severity: LOW
-    VendorSeverity:
-      photon: 2
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 3.7
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/04/29/13
-    - https://access.redhat.com/security/cve/CVE-2026-6276
-    - https://curl.se/docs/CVE-2026-6276.html
-    - https://curl.se/docs/CVE-2026-6276.json
-    - https://hackerone.com/reports/3671818
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
-    - https://ubuntu.com/security/notices/USN-8227-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-6276
-    PublishedDate: '2026-05-13T13:01:56.8Z'
-    LastModifiedDate: '2026-05-13T18:16:20.403Z'
+    LastModifiedDate: '2026-05-14T14:18:02.24Z'
   - VulnerabilityID: CVE-2026-7009
     PkgID: curl@8.15.0-r0
     PkgName: curl
@@ -1178,6 +1152,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7009
     DataSource:
       ID: alpine
@@ -1189,14 +1164,67 @@
       referred to as *OCSP stapling*, to verify that the server certificate is
       valid, it fails to detect OCSP problems and instead wrongly consider the
       response as fine.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      nvd: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/04/29/12
     - https://curl.se/docs/CVE-2026-7009.html
     - https://curl.se/docs/CVE-2026-7009.json
     - https://hackerone.com/reports/3694390
     PublishedDate: '2026-05-13T13:01:57.1Z'
-    LastModifiedDate: '2026-05-13T16:17:02.257Z'
+    LastModifiedDate: '2026-05-14T14:17:05.223Z'
+  - VulnerabilityID: CVE-2026-7168
+    PkgID: curl@8.15.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: d277059717700bf1
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.20.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7168
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:349ff79b3eff992fc0167e292e9e7eed48e346431be7d232447ef5df614d779d
+    Title: Successfully using libcurl to do a transfer over a specific HTTP proxy ...
+    Description: |-
+      Successfully using libcurl to do a transfer over a specific HTTP proxy
+      (`proxyA`) with **Digest** authentication and then changing the proxy host to
+      a second one (`proxyB`) for a second transfer, reusing the same handle, makes
+      libcurl wrongly pass on the `Proxy-Authorization:` header field meant for
+      `proxyA`, to `proxyB`.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-294
+    VendorSeverity:
+      nvd: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/14
+    - https://curl.se/docs/CVE-2026-7168.html
+    - https://curl.se/docs/CVE-2026-7168.json
+    - https://hackerone.com/reports/3697719
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7168
+    PublishedDate: '2026-05-13T13:01:57.2Z'
+    LastModifiedDate: '2026-05-14T14:12:48.457Z'
   - VulnerabilityID: CVE-2026-33747
     PkgID: docker@28.3.2-r0
     PkgName: docker
@@ -1503,6 +1531,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -2036,6 +2065,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -2569,6 +2599,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -3102,6 +3133,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -3355,6 +3387,7 @@
     - CWE-696
     - CWE-190
     VendorSeverity:
+      amazon: 2
       azure: 2
       nvd: 3
       redhat: 2
@@ -3598,7 +3631,7 @@
     VendorSeverity:
       azure: 2
       nvd: 4
-      photon: 3
+      photon: 4
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -5501,8 +5534,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L
-        V3Score: 4.2
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L
+        V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/13/3
     - https://access.redhat.com/security/cve/CVE-2026-2673
@@ -5715,7 +5748,7 @@
     - CWE-918
     VendorSeverity:
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -5736,6 +5769,58 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-5773
     PublishedDate: '2026-05-13T13:01:56.307Z'
     LastModifiedDate: '2026-05-13T19:13:14.097Z'
+  - VulnerabilityID: CVE-2026-6276
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f84f25314ce6d762
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.20.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6276
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:2f0f0103060fdbdfc5176d73f3dafb2a1785281263194ef6d461eebc72f8234f
+    Title: 'curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers'
+    Description: |-
+      Using libcurl, when a custom `Host:` header is first set for an HTTP request
+      and a second request is subsequently done using the same *easy handle* but
+      without the custom `Host:` header set, the second request would use stale
+      information and pass on cookies meant for the first host in the second
+      request. Leak them.
+    Severity: HIGH
+    CweIDs:
+    - CWE-319
+    VendorSeverity:
+      nvd: 3
+      photon: 3
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 3.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/13
+    - https://access.redhat.com/security/cve/CVE-2026-6276
+    - https://curl.se/docs/CVE-2026-6276.html
+    - https://curl.se/docs/CVE-2026-6276.json
+    - https://hackerone.com/reports/3671818
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6276
+    PublishedDate: '2026-05-13T13:01:56.8Z'
+    LastModifiedDate: '2026-05-14T14:21:06.997Z'
   - VulnerabilityID: CVE-2025-10148
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6342,6 +6427,7 @@
       unencrypted.
     Severity: MEDIUM
     CweIDs:
+    - CWE-295
     - CWE-319
     VendorSeverity:
       photon: 2
@@ -6361,7 +6447,7 @@
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4873
     PublishedDate: '2026-05-13T13:01:55.893Z'
-    LastModifiedDate: '2026-05-13T20:16:23.353Z'
+    LastModifiedDate: '2026-05-14T13:45:11.407Z'
   - VulnerabilityID: CVE-2026-5545
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6407,7 +6493,7 @@
     - CWE-613
     VendorSeverity:
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -6459,8 +6545,10 @@
          a redirect to a URL using another scheme (say `https://`), accessed using a
          second, different, proxy
     Severity: MEDIUM
+    CweIDs:
+    - CWE-522
     VendorSeverity:
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -6477,7 +6565,7 @@
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6253
     PublishedDate: '2026-05-13T13:01:56.57Z'
-    LastModifiedDate: '2026-05-13T18:16:20.09Z'
+    LastModifiedDate: '2026-05-14T13:40:53.19Z'
   - VulnerabilityID: CVE-2026-6429
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6503,7 +6591,7 @@
       followed-to host under certain circumstances.
     Severity: MEDIUM
     VendorSeverity:
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -6519,88 +6607,7 @@
     - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6429
     PublishedDate: '2026-05-13T13:01:56.93Z'
-    LastModifiedDate: '2026-05-13T14:50:58.767Z'
-  - VulnerabilityID: CVE-2026-7168
-    PkgID: libcurl@8.15.0-r0
-    PkgName: libcurl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f84f25314ce6d762
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.20.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7168
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:7fc55e7682b0c6fe3ba2c0d7dd3249aad8b8f848d037f077406d3593b827a438
-    Description: |-
-      Successfully using libcurl to do a transfer over a specific HTTP proxy
-      (`proxyA`) with **Digest** authentication and then changing the proxy host to
-      a second one (`proxyB`) for a second transfer, reusing the same handle, makes
-      libcurl wrongly pass on the `Proxy-Authorization:` header field meant for
-      `proxyA`, to `proxyB`.
-    Severity: MEDIUM
-    VendorSeverity:
-      ubuntu: 2
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/04/29/14
-    - https://curl.se/docs/CVE-2026-7168.html
-    - https://curl.se/docs/CVE-2026-7168.json
-    - https://hackerone.com/reports/3697719
-    - https://ubuntu.com/security/notices/USN-8227-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-7168
-    PublishedDate: '2026-05-13T13:01:57.2Z'
-    LastModifiedDate: '2026-05-13T16:17:02.437Z'
-  - VulnerabilityID: CVE-2026-6276
-    PkgID: libcurl@8.15.0-r0
-    PkgName: libcurl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f84f25314ce6d762
-    InstalledVersion: 8.15.0-r0
-    FixedVersion: 8.20.0-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6276
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:2f0f0103060fdbdfc5176d73f3dafb2a1785281263194ef6d461eebc72f8234f
-    Title: 'curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers'
-    Description: |-
-      Using libcurl, when a custom `Host:` header is first set for an HTTP request
-      and a second request is subsequently done using the same *easy handle* but
-      without the custom `Host:` header set, the second request would use stale
-      information and pass on cookies meant for the first host in the second
-      request. Leak them.
-    Severity: LOW
-    VendorSeverity:
-      photon: 2
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
-        V3Score: 3.7
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/04/29/13
-    - https://access.redhat.com/security/cve/CVE-2026-6276
-    - https://curl.se/docs/CVE-2026-6276.html
-    - https://curl.se/docs/CVE-2026-6276.json
-    - https://hackerone.com/reports/3671818
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
-    - https://ubuntu.com/security/notices/USN-8227-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-6276
-    PublishedDate: '2026-05-13T13:01:56.8Z'
-    LastModifiedDate: '2026-05-13T18:16:20.403Z'
+    LastModifiedDate: '2026-05-14T14:18:02.24Z'
   - VulnerabilityID: CVE-2026-7009
     PkgID: libcurl@8.15.0-r0
     PkgName: libcurl
@@ -6613,6 +6620,7 @@
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
       DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7009
     DataSource:
       ID: alpine
@@ -6624,14 +6632,67 @@
       referred to as *OCSP stapling*, to verify that the server certificate is
       valid, it fails to detect OCSP problems and instead wrongly consider the
       response as fine.
-    Severity: UNKNOWN
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-295
+    VendorSeverity:
+      nvd: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
     - http://www.openwall.com/lists/oss-security/2026/04/29/12
     - https://curl.se/docs/CVE-2026-7009.html
     - https://curl.se/docs/CVE-2026-7009.json
     - https://hackerone.com/reports/3694390
     PublishedDate: '2026-05-13T13:01:57.1Z'
-    LastModifiedDate: '2026-05-13T16:17:02.257Z'
+    LastModifiedDate: '2026-05-14T14:17:05.223Z'
+  - VulnerabilityID: CVE-2026-7168
+    PkgID: libcurl@8.15.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f84f25314ce6d762
+    InstalledVersion: 8.15.0-r0
+    FixedVersion: 8.20.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7168
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:7fc55e7682b0c6fe3ba2c0d7dd3249aad8b8f848d037f077406d3593b827a438
+    Title: Successfully using libcurl to do a transfer over a specific HTTP proxy ...
+    Description: |-
+      Successfully using libcurl to do a transfer over a specific HTTP proxy
+      (`proxyA`) with **Digest** authentication and then changing the proxy host to
+      a second one (`proxyB`) for a second transfer, reusing the same handle, makes
+      libcurl wrongly pass on the `Proxy-Authorization:` header field meant for
+      `proxyA`, to `proxyB`.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-294
+    VendorSeverity:
+      nvd: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/29/14
+    - https://curl.se/docs/CVE-2026-7168.html
+    - https://curl.se/docs/CVE-2026-7168.json
+    - https://hackerone.com/reports/3697719
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7168
+    PublishedDate: '2026-05-13T13:01:57.2Z'
+    LastModifiedDate: '2026-05-14T14:12:48.457Z'
   - VulnerabilityID: CVE-2026-25210
     PkgID: libexpat@2.7.1-r0
     PkgName: libexpat
@@ -6661,7 +6722,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -6682,6 +6743,41 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-25210
     PublishedDate: '2026-01-30T07:16:15.57Z'
     LastModifiedDate: '2026-03-10T18:17:12.78Z'
+  - VulnerabilityID: CVE-2026-45186
+    PkgID: libexpat@2.7.1-r0
+    PkgName: libexpat
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: ba96e0052583823f
+    InstalledVersion: 2.7.1-r0
+    FixedVersion: 2.8.1-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45186
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:003a61251b5b03b1c57494563d45203276c9acf7ca16c6bf854e3ba752179724
+    Title: In libexpat before 2.8.1, the computational complexity of attribute na ...
+    Description: In libexpat before 2.8.1, the computational complexity of attribute name collision checks allows a denial of service via moderately sized crafted XML input.
+    Severity: HIGH
+    CweIDs:
+    - CWE-407
+    VendorSeverity:
+      nvd: 3
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/05/11/16
+    - https://github.com/libexpat/libexpat/pull/1216
+    PublishedDate: '2026-05-10T07:16:07.883Z'
+    LastModifiedDate: '2026-05-14T17:20:32.57Z'
   - VulnerabilityID: CVE-2025-59375
     PkgID: libexpat@2.7.1-r0
     PkgName: libexpat
@@ -6971,34 +7067,6 @@
     - https://www.openwall.com/lists/oss-security/2026/04/26/1
     PublishedDate: '2026-04-16T17:16:54.917Z'
     LastModifiedDate: '2026-04-27T07:16:03.937Z'
-  - VulnerabilityID: CVE-2026-45186
-    PkgID: libexpat@2.7.1-r0
-    PkgName: libexpat
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: ba96e0052583823f
-    InstalledVersion: 2.7.1-r0
-    FixedVersion: 2.8.1-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45186
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:003a61251b5b03b1c57494563d45203276c9acf7ca16c6bf854e3ba752179724
-    Title: In libexpat before 2.8.1, the computational complexity of attribute na ...
-    Description: In libexpat before 2.8.1, the computational complexity of attribute name collision checks allows a denial of service via moderately sized crafted XML input.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-407
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/05/11/16
-    - https://github.com/libexpat/libexpat/pull/1216
-    PublishedDate: '2026-05-10T07:16:07.883Z'
-    LastModifiedDate: '2026-05-13T15:42:30.497Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libmount@2.41.1-r0
     PkgName: libmount
@@ -7538,7 +7606,7 @@
       oracle-oval: 3
       photon: 3
       redhat: 2
-      rocky: 3
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -7547,18 +7615,10 @@
     References:
     - https://access.redhat.com/errata/RHSA-2026:9693
     - https://access.redhat.com/security/cve/CVE-2026-33636
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2451805
     - https://bugzilla.redhat.com/show_bug.cgi?id=2451819
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2455897
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2455901
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2455908
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33416
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33636
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5731
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5732
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5734
     - https://errata.almalinux.org/9/ALSA-2026-9693.html
-    - https://errata.rockylinux.org/RLSA-2026:8459
+    - https://errata.rockylinux.org/RLSA-2026:14791
     - https://github.com/pnggroup/libpng/commit/7734cda20cf1236aef60f3bbd2267c97bbb40869
     - https://github.com/pnggroup/libpng/commit/aba9f18eba870d14fb52c5ba5d73451349e339c3
     - https://github.com/pnggroup/libpng/security/advisories/GHSA-wjr5-c57x-95m2
@@ -7885,7 +7945,7 @@
     VendorSeverity:
       azure: 2
       nvd: 4
-      photon: 3
+      photon: 4
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -9788,8 +9848,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L
-        V3Score: 4.2
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L
+        V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/13/3
     - https://access.redhat.com/security/cve/CVE-2026-2673
@@ -12408,7 +12468,7 @@
     VendorSeverity:
       azure: 2
       nvd: 4
-      photon: 3
+      photon: 4
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -14311,8 +14371,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 7.5
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L
-        V3Score: 4.2
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L
+        V3Score: 6.5
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/13/3
     - https://access.redhat.com/security/cve/CVE-2026-2673
@@ -15247,7 +15307,7 @@
     VendorSeverity:
       azure: 2
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -15337,6 +15397,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       redhat: 2
       ubuntu: 2
@@ -15537,7 +15598,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
-      photon: 1
+      photon: 2
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -15557,6 +15618,42 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-32249
     PublishedDate: '2026-03-12T20:16:05.523Z'
     LastModifiedDate: '2026-03-18T11:50:06Z'
+  - VulnerabilityID: CVE-2026-44656
+    PkgID: vim@9.1.1557-r1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f37ace8bbf995058
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0437-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44656
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:835c8771414152de428a81769c2cab014b5ead3d51c8a90c133000d3f0162e17
+    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
+    Description: Vim is an open source, command line text editor. Prior to version 9.2.0435, an OS command injection vulnerability exists in Vim's :find command-line completion. When the path option contains backtick-enclosed shell commands, those commands are executed during file name completion. Because the path option lacks the P_SECURE flag, it can be set from a modeline, allowing an attacker who controls the contents of a file to execute arbitrary shell commands when the user opens that file in Vim and triggers :find completion. This issue has been patched in version 9.2.0435.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-78
+    VendorSeverity:
+      nvd: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
+    - https://github.com/vim/vim/releases/tag/v9.2.0435
+    - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
+    PublishedDate: '2026-05-08T23:16:39.783Z'
+    LastModifiedDate: '2026-05-14T13:59:30.12Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -15630,36 +15727,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0383
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
-  - VulnerabilityID: CVE-2026-44656
-    PkgID: vim@9.1.1557-r1
-    PkgName: vim
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f37ace8bbf995058
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0437-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44656
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:835c8771414152de428a81769c2cab014b5ead3d51c8a90c133000d3f0162e17
-    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
-    Description: Vim is an open source, command line text editor. Prior to version 9.2.0435, an OS command injection vulnerability exists in Vim's :find command-line completion. When the path option contains backtick-enclosed shell commands, those commands are executed during file name completion. Because the path option lacks the P_SECURE flag, it can be set from a modeline, allowing an attacker who controls the contents of a file to execute arbitrary shell commands when the user opens that file in Vim and triggers :find completion. This issue has been patched in version 9.2.0435.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-78
-    References:
-    - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
-    - https://github.com/vim/vim/releases/tag/v9.2.0435
-    - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
-    PublishedDate: '2026-05-08T23:16:39.783Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
+    LastModifiedDate: '2026-05-14T13:55:49.753Z'
   - VulnerabilityID: CVE-2026-45130
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -15685,11 +15753,12 @@
     - CWE-122
     - CWE-190
     References:
+    - http://www.openwall.com/lists/oss-security/2026/05/14/3
     - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
     - https://github.com/vim/vim/releases/tag/v9.2.0450
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
+    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16080,7 +16149,7 @@
     VendorSeverity:
       azure: 2
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -16170,6 +16239,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       redhat: 2
       ubuntu: 2
@@ -16370,7 +16440,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
-      photon: 1
+      photon: 2
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -16390,6 +16460,42 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-32249
     PublishedDate: '2026-03-12T20:16:05.523Z'
     LastModifiedDate: '2026-03-18T11:50:06Z'
+  - VulnerabilityID: CVE-2026-44656
+    PkgID: vim-common@9.1.1557-r1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f513f86f78716ce1
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0437-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44656
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:7eae628ebdfc33fc1d78b3ab446abb3bf18d64da66f8e32d40c23094be007c9e
+    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
+    Description: Vim is an open source, command line text editor. Prior to version 9.2.0435, an OS command injection vulnerability exists in Vim's :find command-line completion. When the path option contains backtick-enclosed shell commands, those commands are executed during file name completion. Because the path option lacks the P_SECURE flag, it can be set from a modeline, allowing an attacker who controls the contents of a file to execute arbitrary shell commands when the user opens that file in Vim and triggers :find completion. This issue has been patched in version 9.2.0435.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-78
+    VendorSeverity:
+      nvd: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
+    - https://github.com/vim/vim/releases/tag/v9.2.0435
+    - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
+    PublishedDate: '2026-05-08T23:16:39.783Z'
+    LastModifiedDate: '2026-05-14T13:59:30.12Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16463,36 +16569,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0383
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
-  - VulnerabilityID: CVE-2026-44656
-    PkgID: vim-common@9.1.1557-r1
-    PkgName: vim-common
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f513f86f78716ce1
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0437-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44656
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:7eae628ebdfc33fc1d78b3ab446abb3bf18d64da66f8e32d40c23094be007c9e
-    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
-    Description: Vim is an open source, command line text editor. Prior to version 9.2.0435, an OS command injection vulnerability exists in Vim's :find command-line completion. When the path option contains backtick-enclosed shell commands, those commands are executed during file name completion. Because the path option lacks the P_SECURE flag, it can be set from a modeline, allowing an attacker who controls the contents of a file to execute arbitrary shell commands when the user opens that file in Vim and triggers :find completion. This issue has been patched in version 9.2.0435.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-78
-    References:
-    - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
-    - https://github.com/vim/vim/releases/tag/v9.2.0435
-    - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
-    PublishedDate: '2026-05-08T23:16:39.783Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
+    LastModifiedDate: '2026-05-14T13:55:49.753Z'
   - VulnerabilityID: CVE-2026-45130
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16518,11 +16595,12 @@
     - CWE-122
     - CWE-190
     References:
+    - http://www.openwall.com/lists/oss-security/2026/05/14/3
     - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
     - https://github.com/vim/vim/releases/tag/v9.2.0450
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
+    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -16913,7 +16991,7 @@
     VendorSeverity:
       azure: 2
       nvd: 3
-      photon: 2
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -17003,6 +17081,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      amazon: 3
       azure: 2
       redhat: 2
       ubuntu: 2
@@ -17203,7 +17282,7 @@
       azure: 2
       cbl-mariner: 2
       nvd: 2
-      photon: 1
+      photon: 2
       redhat: 1
       ubuntu: 2
     CVSS:
@@ -17223,6 +17302,42 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-32249
     PublishedDate: '2026-03-12T20:16:05.523Z'
     LastModifiedDate: '2026-03-18T11:50:06Z'
+  - VulnerabilityID: CVE-2026-44656
+    PkgID: xxd@9.1.1557-r1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 67ee24b19424f9fd
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0437-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44656
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:9d5c4642edcefb1ad7ad5b01f4fe624deae40ea1ae297b880d3889216adb55d0
+    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
+    Description: Vim is an open source, command line text editor. Prior to version 9.2.0435, an OS command injection vulnerability exists in Vim's :find command-line completion. When the path option contains backtick-enclosed shell commands, those commands are executed during file name completion. Because the path option lacks the P_SECURE flag, it can be set from a modeline, allowing an attacker who controls the contents of a file to execute arbitrary shell commands when the user opens that file in Vim and triggers :find completion. This issue has been patched in version 9.2.0435.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-78
+    VendorSeverity:
+      nvd: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+        V3Score: 5.3
+    References:
+    - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
+    - https://github.com/vim/vim/releases/tag/v9.2.0435
+    - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
+    PublishedDate: '2026-05-08T23:16:39.783Z'
+    LastModifiedDate: '2026-05-14T13:59:30.12Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -17296,36 +17411,7 @@
     - https://github.com/vim/vim/releases/tag/v9.2.0383
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
-  - VulnerabilityID: CVE-2026-44656
-    PkgID: xxd@9.1.1557-r1
-    PkgName: xxd
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 67ee24b19424f9fd
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0437-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44656
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:9d5c4642edcefb1ad7ad5b01f4fe624deae40ea1ae297b880d3889216adb55d0
-    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
-    Description: Vim is an open source, command line text editor. Prior to version 9.2.0435, an OS command injection vulnerability exists in Vim's :find command-line completion. When the path option contains backtick-enclosed shell commands, those commands are executed during file name completion. Because the path option lacks the P_SECURE flag, it can be set from a modeline, allowing an attacker who controls the contents of a file to execute arbitrary shell commands when the user opens that file in Vim and triggers :find completion. This issue has been patched in version 9.2.0435.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-78
-    References:
-    - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
-    - https://github.com/vim/vim/releases/tag/v9.2.0435
-    - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
-    PublishedDate: '2026-05-08T23:16:39.783Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
+    LastModifiedDate: '2026-05-14T13:55:49.753Z'
   - VulnerabilityID: CVE-2026-45130
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -17351,11 +17437,12 @@
     - CWE-122
     - CWE-190
     References:
+    - http://www.openwall.com/lists/oss-security/2026/05/14/3
     - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
     - https://github.com/vim/vim/releases/tag/v9.2.0450
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-13T16:02:13.38Z'
+    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-34743
     PkgID: xz-libs@5.8.1-r0
     PkgName: xz-libs
@@ -17402,51 +17489,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-34743
     PublishedDate: '2026-04-02T19:21:33.187Z'
     LastModifiedDate: '2026-04-15T17:33:17.68Z'
-  - VulnerabilityID: CVE-2026-22184
-    PkgID: zlib@1.3.1-r2
-    PkgName: zlib
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: b954f4a027f289c1
-    InstalledVersion: 1.3.1-r2
-    FixedVersion: 1.3.2-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    SeveritySource: nvd
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15fc5bfe4c7675
-    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
-    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
-    Severity: HIGH
-    CweIDs:
-    - CWE-787
-    VendorSeverity:
-      nvd: 3
-      redhat: 3
-    CVSS:
-      nvd:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 7.8
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
-        V3Score: 8.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-22184
-    - https://github.com/madler/zlib
-    - https://github.com/madler/zlib/issues/1142
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
-    - https://seclists.org/fulldisclosure/2026/Jan/3
-    - https://www.cve.org/CVERecord?id=CVE-2026-22184
-    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
-    - https://zlib.net/
-    PublishedDate: '2026-01-07T21:16:01.563Z'
-    LastModifiedDate: '2026-03-18T16:26:31.14Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
@@ -18729,6 +18771,7 @@
     CweIDs:
     - CWE-611
     VendorSeverity:
+      amazon: 3
       azure: 3
       ghsa: 3
       redhat: 2
@@ -18921,6 +18964,7 @@
     CweIDs:
     - CWE-434
     VendorSeverity:
+      amazon: 3
       ghsa: 2
       redhat: 2
     CVSS:
@@ -18968,6 +19012,7 @@
     CweIDs:
     - CWE-829
     VendorSeverity:
+      amazon: 3
       ghsa: 2
       redhat: 2
     CVSS:
@@ -19338,22 +19383,29 @@
       Name: GitHub Security Advisory pip
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip
     Fingerprint: sha256:37a03b9a31bcaaebbbc13ec4b0c1d3e6f1ed3194d12a2a46e60a64c2a7d1e58c
-    Title: 'urllib3: Sensitive headers forwarded across origins in proxied low-level redirects'
+    Title: urllib3 is an HTTP client library for Python. From 1.23 to before 2.7. ...
     Description: urllib3 is an HTTP client library for Python. From 1.23 to before 2.7.0, cross-origin redirects followed from the low-level API via ProxyManager.connection_from_url().urlopen(..., assert_same_host=False) still forward these sensitive headers. This vulnerability is fixed in 2.7.0.
     Severity: HIGH
     CweIDs:
     - CWE-200
     VendorSeverity:
       ghsa: 3
+      nvd: 2
     CVSS:
       ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
+        V3Score: 5.3
         V40Score: 8.2
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
     - https://github.com/urllib3/urllib3
     - https://github.com/urllib3/urllib3/security/advisories/GHSA-qccp-gfcp-xxvc
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-44431
     PublishedDate: '2026-05-13T16:16:57.15Z'
-    LastModifiedDate: '2026-05-13T17:06:37.307Z'
+    LastModifiedDate: '2026-05-14T13:56:27.263Z'
 - Target: usr/bin/grype
   Class: lang-pkgs
   Type: gobinary
@@ -19820,6 +19872,55 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-44973
+    VendorIDs:
+    - GHSA-qw64-3x98-g7q2
+    PkgID: github.com/go-git/go-billy/v5@v5.6.2
+    PkgName: github.com/go-git/go-billy/v5
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2
+      UID: 8066af4aa1b239cb
+    InstalledVersion: v5.6.2
+    FixedVersion: 5.9.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44973
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:a6291f1c5d9e0034356f93c1d3820457134e9dd856f29d0a03c9fb811b83d99c
+    Title: go-billy has path traversal vulnerabilities
+    Description: |-
+      ### Impact
+      Multiple path traversal issues exist across different components of `go-billy`. Insufficient path sanitization and boundary enforcement may allow crafted paths (e.g., using `..`) to escape intended base directories.
+
+      While go-billy was not originally designed to provide a strong security boundary, some of these issues were inconsistent across some of the built-in implementations. This results in scenarios where applications relying on `go-billy` for some level of isolation may inadvertently expose access to unintended filesystem locations.
+
+      The `osfs.ChrootOS` implementation is notably affected by this vulnerability and is now deprecated in `v5`, removed at `v6`. Users are recommended to move on to `osfs.BoundOS` instead: `osfs.New(path, WithBoundOS())`.
+
+      Users requiring stronger security boundary enforcement are recommended to upgrade to `v6`, where the `osfs` implementation are backed by the [traversal-resistant](https://go.dev/blog/osroot) primitive [os.Root](https://pkg.go.dev/os#Root).
+
+      ### Patches
+      Users should upgrade to a patched version in order to mitigate this vulnerability. Versions prior to `v5` are likely to be affected, users are recommended to upgrade to a supported `go-billy` version.
+
+      ### Credits
+      Thanks to @faran66 and @vnykmshr for finding and separately reporting this issue privately to the go-git project. 🙇
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 8.1
+    References:
+    - https://github.com/go-git/go-billy
+    - https://github.com/go-git/go-billy/releases/tag/v5.9.0
+    - https://github.com/go-git/go-billy/releases/tag/v6.0.0-alpha.1
+    - https://github.com/go-git/go-billy/security/advisories/GHSA-qw64-3x98-g7q2
   - VulnerabilityID: CVE-2026-44740
     VendorIDs:
     - GHSA-m3xc-h892-ggx6
@@ -21221,7 +21322,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -21242,17 +21343,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -21290,7 +21385,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -21342,7 +21437,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -21366,10 +21461,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -22150,25 +22247,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:000852a4f50e1d5018c3e73d31906df429510c158f60789ce3a46a8757023e0e
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -22197,7 +22300,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -22245,7 +22348,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -22269,10 +22372,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -22310,11 +22415,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -22363,10 +22468,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -22529,7 +22634,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -22975,6 +23080,55 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-44973
+    VendorIDs:
+    - GHSA-qw64-3x98-g7q2
+    PkgID: github.com/go-git/go-billy/v5@v5.6.2
+    PkgName: github.com/go-git/go-billy/v5
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2
+      UID: f4cd9b079e72f037
+    InstalledVersion: v5.6.2
+    FixedVersion: 5.9.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44973
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:13a59d10115c548a45efac60d984d55f539b1c2f6b5e2948be06058490d1e5a9
+    Title: go-billy has path traversal vulnerabilities
+    Description: |-
+      ### Impact
+      Multiple path traversal issues exist across different components of `go-billy`. Insufficient path sanitization and boundary enforcement may allow crafted paths (e.g., using `..`) to escape intended base directories.
+
+      While go-billy was not originally designed to provide a strong security boundary, some of these issues were inconsistent across some of the built-in implementations. This results in scenarios where applications relying on `go-billy` for some level of isolation may inadvertently expose access to unintended filesystem locations.
+
+      The `osfs.ChrootOS` implementation is notably affected by this vulnerability and is now deprecated in `v5`, removed at `v6`. Users are recommended to move on to `osfs.BoundOS` instead: `osfs.New(path, WithBoundOS())`.
+
+      Users requiring stronger security boundary enforcement are recommended to upgrade to `v6`, where the `osfs` implementation are backed by the [traversal-resistant](https://go.dev/blog/osroot) primitive [os.Root](https://pkg.go.dev/os#Root).
+
+      ### Patches
+      Users should upgrade to a patched version in order to mitigate this vulnerability. Versions prior to `v5` are likely to be affected, users are recommended to upgrade to a supported `go-billy` version.
+
+      ### Credits
+      Thanks to @faran66 and @vnykmshr for finding and separately reporting this issue privately to the go-git project. 🙇
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 8.1
+    References:
+    - https://github.com/go-git/go-billy
+    - https://github.com/go-git/go-billy/releases/tag/v5.9.0
+    - https://github.com/go-git/go-billy/releases/tag/v6.0.0-alpha.1
+    - https://github.com/go-git/go-billy/security/advisories/GHSA-qw64-3x98-g7q2
   - VulnerabilityID: CVE-2026-44740
     VendorIDs:
     - GHSA-m3xc-h892-ggx6
@@ -24293,7 +24447,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -24314,17 +24468,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -24362,7 +24510,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -24414,7 +24562,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -24438,10 +24586,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -25222,25 +25372,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:eb0d91bc0ba311efd9b0e910722a4de32e2f8b93eb8aa9a8dd67e06fe4e7b78e
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -25269,7 +25425,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -25317,7 +25473,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -25341,10 +25497,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -25382,11 +25540,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -25435,10 +25593,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -25601,7 +25759,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -26168,6 +26326,55 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-33997
     PublishedDate: '2026-03-31T03:15:57.523Z'
     LastModifiedDate: '2026-04-03T17:23:21.307Z'
+  - VulnerabilityID: CVE-2026-44973
+    VendorIDs:
+    - GHSA-qw64-3x98-g7q2
+    PkgID: github.com/go-git/go-billy/v5@v5.6.2
+    PkgName: github.com/go-git/go-billy/v5
+    PkgIdentifier:
+      PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2
+      UID: d1472c35066fc22d
+    InstalledVersion: v5.6.2
+    FixedVersion: 5.9.0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44973
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Go
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
+    Fingerprint: sha256:c834e52e274727568624a8dc60b3ea549c37ab0e5014f5c906ea25268eabe787
+    Title: go-billy has path traversal vulnerabilities
+    Description: |-
+      ### Impact
+      Multiple path traversal issues exist across different components of `go-billy`. Insufficient path sanitization and boundary enforcement may allow crafted paths (e.g., using `..`) to escape intended base directories.
+
+      While go-billy was not originally designed to provide a strong security boundary, some of these issues were inconsistent across some of the built-in implementations. This results in scenarios where applications relying on `go-billy` for some level of isolation may inadvertently expose access to unintended filesystem locations.
+
+      The `osfs.ChrootOS` implementation is notably affected by this vulnerability and is now deprecated in `v5`, removed at `v6`. Users are recommended to move on to `osfs.BoundOS` instead: `osfs.New(path, WithBoundOS())`.
+
+      Users requiring stronger security boundary enforcement are recommended to upgrade to `v6`, where the `osfs` implementation are backed by the [traversal-resistant](https://go.dev/blog/osroot) primitive [os.Root](https://pkg.go.dev/os#Root).
+
+      ### Patches
+      Users should upgrade to a patched version in order to mitigate this vulnerability. Versions prior to `v5` are likely to be affected, users are recommended to upgrade to a supported `go-billy` version.
+
+      ### Credits
+      Thanks to @faran66 and @vnykmshr for finding and separately reporting this issue privately to the go-git project. 🙇
+    Severity: HIGH
+    VendorSeverity:
+      ghsa: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 8.1
+    References:
+    - https://github.com/go-git/go-billy
+    - https://github.com/go-git/go-billy/releases/tag/v5.9.0
+    - https://github.com/go-git/go-billy/releases/tag/v6.0.0-alpha.1
+    - https://github.com/go-git/go-billy/security/advisories/GHSA-qw64-3x98-g7q2
   - VulnerabilityID: CVE-2026-44740
     VendorIDs:
     - GHSA-m3xc-h892-ggx6
@@ -26770,6 +26977,7 @@
     - CWE-22
     - CWE-59
     VendorSeverity:
+      amazon: 2
       ghsa: 3
       nvd: 3
       redhat: 2
@@ -28178,7 +28386,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -28199,17 +28407,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -28247,7 +28449,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -28299,7 +28501,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -28323,10 +28525,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -29107,25 +29311,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:8558fa64b1674ddd498a2e24d867201edcd79c7399d1fd1ddc304cd918158f86
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -29154,7 +29364,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -29202,7 +29412,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -29226,10 +29436,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -29267,11 +29479,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -29320,10 +29532,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -29486,7 +29698,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
@@ -29983,7 +30195,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -30004,17 +30216,11 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456340
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456341
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2456342
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27140
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27143
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27144
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:10219
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/758320
     - https://go.dev/issue/78282
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -30052,7 +30258,7 @@
     CweIDs:
     - CWE-295
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       redhat: 2
@@ -30104,7 +30310,7 @@
     - CWE-770
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 3
       nvd: 3
       oracle-oval: 3
@@ -30128,10 +30334,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763767
     - https://go.dev/issue/78334
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -30912,25 +31120,31 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:3bf492d551d1d833bf74f1def85aa3eae09ae0ef6bf05e7928f2cbaa0e6a1cb1
-    Title: During the TLS 1.3 handshake if multiple messages are sent in records  ...
+    Title: 'crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls'
     Description: During the TLS 1.3 handshake if multiple messages are sent in records that span encryption level boundaries (for instance the Client Hello and Encrypted Extensions messages), the subsequent messages may be processed before the encryption level changes. This can cause some minor information disclosure if a network-local attacker can inject messages during the handshake.
     Severity: MEDIUM
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 2
       cbl-mariner: 1
       photon: 2
+      redhat: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
         V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 5.3
     References:
+    - https://access.redhat.com/security/cve/CVE-2025-61730
     - https://go.dev/cl/724120
     - https://go.dev/issue/76443
     - https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc
     - https://nvd.nist.gov/vuln/detail/CVE-2025-61730
     - https://pkg.go.dev/vuln/GO-2026-4340
+    - https://www.cve.org/CVERecord?id=CVE-2025-61730
     PublishedDate: '2026-01-28T20:16:09.94Z'
     LastModifiedDate: '2026-02-03T20:36:41.3Z'
   - VulnerabilityID: CVE-2026-27142
@@ -30959,7 +31173,7 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -31007,7 +31221,7 @@
     - CWE-59
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
       oracle-oval: 3
@@ -31031,10 +31245,12 @@
     - https://bugzilla.redhat.com/2456339
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456336
     - https://bugzilla.redhat.com/show_bug.cgi?id=2456338
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2456339
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32282
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283
     - https://errata.almalinux.org/9/ALSA-2026-14200.html
-    - https://errata.rockylinux.org/RLSA-2026:11711
+    - https://errata.rockylinux.org/RLSA-2026:14200
     - https://go.dev/cl/763761
     - https://go.dev/issue/78293
     - https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU
@@ -31072,11 +31288,11 @@
     CweIDs:
     - CWE-770
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       azure: 2
       bitnami: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -31125,10 +31341,10 @@
     CweIDs:
     - CWE-79
     VendorSeverity:
-      amazon: 3
+      amazon: 2
       bitnami: 2
       nvd: 2
-      photon: 4
+      photon: 2
       redhat: 2
     CVSS:
       bitnami:
@@ -31291,7 +31507,7 @@
     CweIDs:
     - CWE-22
     VendorSeverity:
-      amazon: 2
+      amazon: 3
       azure: 1
       bitnami: 1
       redhat: 1
