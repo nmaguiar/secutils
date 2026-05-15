@@ -313,7 +313,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-918 
 │                       │       ├ VendorSeverity   ╭ nvd   : 3 
-│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -332,7 +332,61 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-5773 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.307Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T19:13:14.097Z 
-│                       ├ [7]   ╭ VulnerabilityID : CVE-2025-10148 
+│                       ├ [7]   ╭ VulnerabilityID : CVE-2026-6276 
+│                       │       ├ PkgID           : curl@8.15.0-r0 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
+│                       │       │                  │       3.0_alpha20250612 
+│                       │       │                  ╰ UID : d277059717700bf1 
+│                       │       ├ InstalledVersion: 8.15.0-r0 
+│                       │       ├ FixedVersion    : 8.20.0-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6276 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:2e7c75635c8fbe3074004ac1cce603dd15a49db44b2231a0e8cc
+│                       │       │                   aba8f3437016 
+│                       │       ├ Title           : curl: libcurl: Information disclosure due to cookie leak
+│                       │       │                   when reusing connections with custom Host headers 
+│                       │       ├ Description     : Using libcurl, when a custom `Host:` header is first set
+│                       │       │                   for an HTTP request
+│                       │       │                   and a second request is subsequently done using the same
+│                       │       │                   *easy handle* but
+│                       │       │                   without the custom `Host:` header set, the second request
+│                       │       │                   would use stale
+│                       │       │                   information and pass on cookies meant for the first host in
+│                       │       │                    the second
+│                       │       │                   request. Leak them. 
+│                       │       ├ Severity        : HIGH 
+│                       │       ├ CweIDs           ─ [0]: CWE-319 
+│                       │       ├ VendorSeverity   ╭ nvd   : 3 
+│                       │       │                  ├ photon: 3 
+│                       │       │                  ├ redhat: 1 
+│                       │       │                  ╰ ubuntu: 1 
+│                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                  │        │           N/A:H 
+│                       │       │                  │        ╰ V3Score : 7.5 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
+│                       │       │                           │           N/A:N 
+│                       │       │                           ╰ V3Score : 3.7 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
+│                       │       │                  │      /13 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6276 
+│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-6276.html 
+│                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-6276.json 
+│                       │       │                  ├ [4]: https://hackerone.com/reports/3671818 
+│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-6276 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6276 
+│                       │       ├ PublishedDate   : 2026-05-13T13:01:56.8Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:21:06.997Z 
+│                       ├ [8]   ╭ VulnerabilityID : CVE-2025-10148 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -397,7 +451,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │       ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:55:47.997Z 
-│                       ├ [8]   ╭ VulnerabilityID : CVE-2025-10966 
+│                       ├ [9]   ╭ VulnerabilityID : CVE-2025-10966 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -450,7 +504,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-10966 
 │                       │       ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:57:03.173Z 
-│                       ├ [9]   ╭ VulnerabilityID : CVE-2025-14017 
+│                       ├ [10]  ╭ VulnerabilityID : CVE-2025-14017 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -507,7 +561,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-14017 
 │                       │       ├ PublishedDate   : 2026-01-08T10:15:45.667Z 
 │                       │       ╰ LastModifiedDate: 2026-01-27T21:29:39.953Z 
-│                       ├ [10]  ╭ VulnerabilityID : CVE-2025-14524 
+│                       ├ [11]  ╭ VulnerabilityID : CVE-2025-14524 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -561,7 +615,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-14524 
 │                       │       ├ PublishedDate   : 2026-01-08T10:15:46.607Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:53:11.017Z 
-│                       ├ [11]  ╭ VulnerabilityID : CVE-2025-14819 
+│                       ├ [12]  ╭ VulnerabilityID : CVE-2025-14819 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -615,7 +669,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-14819 
 │                       │       ├ PublishedDate   : 2026-01-08T10:15:46.73Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:51:26.263Z 
-│                       ├ [12]  ╭ VulnerabilityID : CVE-2025-9086 
+│                       ├ [13]  ╭ VulnerabilityID : CVE-2025-9086 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -703,7 +757,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │       ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:58:01.347Z 
-│                       ├ [13]  ╭ VulnerabilityID : CVE-2026-1965 
+│                       ├ [14]  ╭ VulnerabilityID : CVE-2026-1965 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -790,7 +844,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-1965 
 │                       │       ├ PublishedDate   : 2026-03-11T11:15:59.177Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:11:19.07Z 
-│                       ├ [14]  ╭ VulnerabilityID : CVE-2026-3783 
+│                       ├ [15]  ╭ VulnerabilityID : CVE-2026-3783 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -848,7 +902,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-3783 
 │                       │       ├ PublishedDate   : 2026-03-11T11:16:00.08Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:10:37.3Z 
-│                       ├ [15]  ╭ VulnerabilityID : CVE-2026-3784 
+│                       ├ [16]  ╭ VulnerabilityID : CVE-2026-3784 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -900,7 +954,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-3784 
 │                       │       ├ PublishedDate   : 2026-03-11T11:16:00.437Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:09:50.47Z 
-│                       ├ [16]  ╭ VulnerabilityID : CVE-2026-3805 
+│                       ├ [17]  ╭ VulnerabilityID : CVE-2026-3805 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -947,7 +1001,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-3805 
 │                       │       ├ PublishedDate   : 2026-03-11T11:16:00.967Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:08:56.79Z 
-│                       ├ [17]  ╭ VulnerabilityID : CVE-2026-4873 
+│                       ├ [18]  ╭ VulnerabilityID : CVE-2026-4873 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -978,7 +1032,8 @@
 │                       │       │                   transmit data
 │                       │       │                   unencrypted. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-319 
+│                       │       ├ CweIDs           ╭ [0]: CWE-295 
+│                       │       │                  ╰ [1]: CWE-319 
 │                       │       ├ VendorSeverity   ╭ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
@@ -994,8 +1049,8 @@
 │                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-4873 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:55.893Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T20:16:23.353Z 
-│                       ├ [18]  ╭ VulnerabilityID : CVE-2026-5545 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:45:11.407Z 
+│                       ├ [19]  ╭ VulnerabilityID : CVE-2026-5545 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -1049,7 +1104,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-613 
 │                       │       ├ VendorSeverity   ╭ nvd   : 2 
-│                       │       │                  ├ photon: 3 
+│                       │       │                  ├ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
@@ -1067,7 +1122,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-5545 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.19Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T19:31:07.633Z 
-│                       ├ [19]  ╭ VulnerabilityID : CVE-2026-6253 
+│                       ├ [20]  ╭ VulnerabilityID : CVE-2026-6253 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -1103,7 +1158,8 @@
 │                       │       │                   `https://`), accessed using a
 │                       │       │                      second, different, proxy 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ CweIDs           ─ [0]: CWE-522 
+│                       │       ├ VendorSeverity   ╭ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:
@@ -1119,8 +1175,8 @@
 │                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6253 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.57Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T18:16:20.09Z 
-│                       ├ [20]  ╭ VulnerabilityID : CVE-2026-6429 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:40:53.19Z 
+│                       ├ [21]  ╭ VulnerabilityID : CVE-2026-6429 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -1147,7 +1203,7 @@
 │                       │       │                   first host to the
 │                       │       │                   followed-to host under certain circumstances. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ VendorSeverity   ╭ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
@@ -1161,8 +1217,8 @@
 │                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-8227-1 
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6429 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.93Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T14:50:58.767Z 
-│                       ├ [21]  ╭ VulnerabilityID : CVE-2026-7168 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:18:02.24Z 
+│                       ├ [22]  ╭ VulnerabilityID : CVE-2026-7009 
 │                       │       ├ PkgID           : curl@8.15.0-r0 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
@@ -1175,93 +1231,7 @@
 │                       │       │                  │         3501dd6062bd50a4b6afe 
 │                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
 │                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7168 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:349ff79b3eff992fc0167e292e9e7eed48e346431be7d232447e
-│                       │       │                   f5df614d779d 
-│                       │       ├ Description     : Successfully using libcurl to do a transfer over a specific
-│                       │       │                    HTTP proxy
-│                       │       │                   (`proxyA`) with **Digest** authentication and then changing
-│                       │       │                    the proxy host to
-│                       │       │                   a second one (`proxyB`) for a second transfer, reusing the
-│                       │       │                   same handle, makes
-│                       │       │                   libcurl wrongly pass on the `Proxy-Authorization:` header
-│                       │       │                   field meant for
-│                       │       │                   `proxyA`, to `proxyB`. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
-│                       │       │                  │      /14 
-│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-7168.html 
-│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-7168.json 
-│                       │       │                  ├ [3]: https://hackerone.com/reports/3697719 
-│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-8227-1 
-│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-7168 
-│                       │       ├ PublishedDate   : 2026-05-13T13:01:57.2Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:17:02.437Z 
-│                       ├ [22]  ╭ VulnerabilityID : CVE-2026-6276 
-│                       │       ├ PkgID           : curl@8.15.0-r0 
-│                       │       ├ PkgName         : curl 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
-│                       │       │                  │       3.0_alpha20250612 
-│                       │       │                  ╰ UID : d277059717700bf1 
-│                       │       ├ InstalledVersion: 8.15.0-r0 
-│                       │       ├ FixedVersion    : 8.20.0-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6276 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:2e7c75635c8fbe3074004ac1cce603dd15a49db44b2231a0e8cc
-│                       │       │                   aba8f3437016 
-│                       │       ├ Title           : curl: libcurl: Information disclosure due to cookie leak
-│                       │       │                   when reusing connections with custom Host headers 
-│                       │       ├ Description     : Using libcurl, when a custom `Host:` header is first set
-│                       │       │                   for an HTTP request
-│                       │       │                   and a second request is subsequently done using the same
-│                       │       │                   *easy handle* but
-│                       │       │                   without the custom `Host:` header set, the second request
-│                       │       │                   would use stale
-│                       │       │                   information and pass on cookies meant for the first host in
-│                       │       │                    the second
-│                       │       │                   request. Leak them. 
-│                       │       ├ Severity        : LOW 
-│                       │       ├ VendorSeverity   ╭ photon: 2 
-│                       │       │                  ├ redhat: 1 
-│                       │       │                  ╰ ubuntu: 1 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
-│                       │       │                           │           N/A:N 
-│                       │       │                           ╰ V3Score : 3.7 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
-│                       │       │                  │      /13 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6276 
-│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-6276.html 
-│                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-6276.json 
-│                       │       │                  ├ [4]: https://hackerone.com/reports/3671818 
-│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-6276 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6276 
-│                       │       ├ PublishedDate   : 2026-05-13T13:01:56.8Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T18:16:20.403Z 
-│                       ├ [23]  ╭ VulnerabilityID : CVE-2026-7009 
-│                       │       ├ PkgID           : curl@8.15.0-r0 
-│                       │       ├ PkgName         : curl 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
-│                       │       │                  │       3.0_alpha20250612 
-│                       │       │                  ╰ UID : d277059717700bf1 
-│                       │       ├ InstalledVersion: 8.15.0-r0 
-│                       │       ├ FixedVersion    : 8.20.0-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
 │                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7009 
 │                       │       ├ DataSource       ╭ ID  : alpine 
 │                       │       │                  ├ Name: Alpine Secdb 
@@ -1275,14 +1245,64 @@
 │                       │       │                   valid, it fails to detect OCSP problems and instead wrongly
 │                       │       │                    consider the
 │                       │       │                   response as fine. 
-│                       │       ├ Severity        : UNKNOWN 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-295 
+│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 
+│                       │       │                        ╰ V3Score : 5.3 
 │                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
 │                       │       │                  │      /12 
 │                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-7009.html 
 │                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-7009.json 
 │                       │       │                  ╰ [3]: https://hackerone.com/reports/3694390 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:57.1Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:17:02.257Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:17:05.223Z 
+│                       ├ [23]  ╭ VulnerabilityID : CVE-2026-7168 
+│                       │       ├ PkgID           : curl@8.15.0-r0 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r0?arch=x86_64&distro=3.2
+│                       │       │                  │       3.0_alpha20250612 
+│                       │       │                  ╰ UID : d277059717700bf1 
+│                       │       ├ InstalledVersion: 8.15.0-r0 
+│                       │       ├ FixedVersion    : 8.20.0-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7168 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:349ff79b3eff992fc0167e292e9e7eed48e346431be7d232447e
+│                       │       │                   f5df614d779d 
+│                       │       ├ Title           : Successfully using libcurl to do a transfer over a specific
+│                       │       │                    HTTP proxy ... 
+│                       │       ├ Description     : Successfully using libcurl to do a transfer over a specific
+│                       │       │                    HTTP proxy
+│                       │       │                   (`proxyA`) with **Digest** authentication and then changing
+│                       │       │                    the proxy host to
+│                       │       │                   a second one (`proxyB`) for a second transfer, reusing the
+│                       │       │                   same handle, makes
+│                       │       │                   libcurl wrongly pass on the `Proxy-Authorization:` header
+│                       │       │                   field meant for
+│                       │       │                   `proxyA`, to `proxyB`. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-294 
+│                       │       ├ VendorSeverity   ╭ nvd   : 2 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 
+│                       │       │                        ╰ V3Score : 5.3 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
+│                       │       │                  │      /14 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-7168.html 
+│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-7168.json 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3697719 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-8227-1 
+│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-7168 
+│                       │       ├ PublishedDate   : 2026-05-13T13:01:57.2Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:12:48.457Z 
 │                       ├ [24]  ╭ VulnerabilityID : CVE-2026-33747 
 │                       │       ├ PkgID           : docker@28.3.2-r0 
 │                       │       ├ PkgName         : docker 
@@ -1713,7 +1733,8 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ╭ [0]: CWE-22 
 │                       │       │                  ╰ [1]: CWE-59 
-│                       │       ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ ghsa  : 3 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
@@ -2405,7 +2426,8 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ╭ [0]: CWE-22 
 │                       │       │                  ╰ [1]: CWE-59 
-│                       │       ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ ghsa  : 3 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
@@ -3097,7 +3119,8 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ╭ [0]: CWE-22 
 │                       │       │                  ╰ [1]: CWE-59 
-│                       │       ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ ghsa  : 3 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
@@ -3789,7 +3812,8 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ╭ [0]: CWE-22 
 │                       │       │                  ╰ [1]: CWE-59 
-│                       │       ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ ghsa  : 3 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
@@ -4080,7 +4104,8 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ╭ [0]: CWE-696 
 │                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ azure : 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ azure : 2 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
@@ -4389,7 +4414,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 4 
-│                       │       │                  ├ photon: 3 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -6719,9 +6744,9 @@
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                  │        │           N/A:N 
 │                       │       │                  │        ╰ V3Score : 7.5 
-│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 4.2 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │       │                           │           N/A:L 
+│                       │       │                           ╰ V3Score : 6.5 
 │                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
 │                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
 │                       │       │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-
@@ -6973,7 +6998,7 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-918 
 │                       │       ├ VendorSeverity   ╭ nvd   : 3 
-│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -6992,7 +7017,61 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-5773 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.307Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T19:13:14.097Z 
-│                       ├ [81]  ╭ VulnerabilityID : CVE-2025-10148 
+│                       ├ [81]  ╭ VulnerabilityID : CVE-2026-6276 
+│                       │       ├ PkgID           : libcurl@8.15.0-r0 
+│                       │       ├ PkgName         : libcurl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
+│                       │       │                  │       3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : f84f25314ce6d762 
+│                       │       ├ InstalledVersion: 8.15.0-r0 
+│                       │       ├ FixedVersion    : 8.20.0-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6276 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:2f0f0103060fdbdfc5176d73f3dafb2a1785281263194ef6d461
+│                       │       │                   eebc72f8234f 
+│                       │       ├ Title           : curl: libcurl: Information disclosure due to cookie leak
+│                       │       │                   when reusing connections with custom Host headers 
+│                       │       ├ Description     : Using libcurl, when a custom `Host:` header is first set
+│                       │       │                   for an HTTP request
+│                       │       │                   and a second request is subsequently done using the same
+│                       │       │                   *easy handle* but
+│                       │       │                   without the custom `Host:` header set, the second request
+│                       │       │                   would use stale
+│                       │       │                   information and pass on cookies meant for the first host in
+│                       │       │                    the second
+│                       │       │                   request. Leak them. 
+│                       │       ├ Severity        : HIGH 
+│                       │       ├ CweIDs           ─ [0]: CWE-319 
+│                       │       ├ VendorSeverity   ╭ nvd   : 3 
+│                       │       │                  ├ photon: 3 
+│                       │       │                  ├ redhat: 1 
+│                       │       │                  ╰ ubuntu: 1 
+│                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                  │        │           N/A:H 
+│                       │       │                  │        ╰ V3Score : 7.5 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
+│                       │       │                           │           N/A:N 
+│                       │       │                           ╰ V3Score : 3.7 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
+│                       │       │                  │      /13 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6276 
+│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-6276.html 
+│                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-6276.json 
+│                       │       │                  ├ [4]: https://hackerone.com/reports/3671818 
+│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-6276 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6276 
+│                       │       ├ PublishedDate   : 2026-05-13T13:01:56.8Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:21:06.997Z 
+│                       ├ [82]  ╭ VulnerabilityID : CVE-2025-10148 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7057,7 +7136,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-10148 
 │                       │       ├ PublishedDate   : 2025-09-12T06:15:40.02Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:55:47.997Z 
-│                       ├ [82]  ╭ VulnerabilityID : CVE-2025-10966 
+│                       ├ [83]  ╭ VulnerabilityID : CVE-2025-10966 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7110,7 +7189,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-10966 
 │                       │       ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:57:03.173Z 
-│                       ├ [83]  ╭ VulnerabilityID : CVE-2025-14017 
+│                       ├ [84]  ╭ VulnerabilityID : CVE-2025-14017 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7167,7 +7246,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-14017 
 │                       │       ├ PublishedDate   : 2026-01-08T10:15:45.667Z 
 │                       │       ╰ LastModifiedDate: 2026-01-27T21:29:39.953Z 
-│                       ├ [84]  ╭ VulnerabilityID : CVE-2025-14524 
+│                       ├ [85]  ╭ VulnerabilityID : CVE-2025-14524 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7221,7 +7300,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-14524 
 │                       │       ├ PublishedDate   : 2026-01-08T10:15:46.607Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:53:11.017Z 
-│                       ├ [85]  ╭ VulnerabilityID : CVE-2025-14819 
+│                       ├ [86]  ╭ VulnerabilityID : CVE-2025-14819 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7275,7 +7354,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-14819 
 │                       │       ├ PublishedDate   : 2026-01-08T10:15:46.73Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:51:26.263Z 
-│                       ├ [86]  ╭ VulnerabilityID : CVE-2025-9086 
+│                       ├ [87]  ╭ VulnerabilityID : CVE-2025-9086 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7363,7 +7442,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
 │                       │       ├ PublishedDate   : 2025-09-12T06:15:44.1Z 
 │                       │       ╰ LastModifiedDate: 2026-01-20T14:58:01.347Z 
-│                       ├ [87]  ╭ VulnerabilityID : CVE-2026-1965 
+│                       ├ [88]  ╭ VulnerabilityID : CVE-2026-1965 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7450,7 +7529,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-1965 
 │                       │       ├ PublishedDate   : 2026-03-11T11:15:59.177Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:11:19.07Z 
-│                       ├ [88]  ╭ VulnerabilityID : CVE-2026-3783 
+│                       ├ [89]  ╭ VulnerabilityID : CVE-2026-3783 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7508,7 +7587,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-3783 
 │                       │       ├ PublishedDate   : 2026-03-11T11:16:00.08Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:10:37.3Z 
-│                       ├ [89]  ╭ VulnerabilityID : CVE-2026-3784 
+│                       ├ [90]  ╭ VulnerabilityID : CVE-2026-3784 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7560,7 +7639,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-3784 
 │                       │       ├ PublishedDate   : 2026-03-11T11:16:00.437Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:09:50.47Z 
-│                       ├ [90]  ╭ VulnerabilityID : CVE-2026-3805 
+│                       ├ [91]  ╭ VulnerabilityID : CVE-2026-3805 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7607,7 +7686,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-3805 
 │                       │       ├ PublishedDate   : 2026-03-11T11:16:00.967Z 
 │                       │       ╰ LastModifiedDate: 2026-03-12T14:08:56.79Z 
-│                       ├ [91]  ╭ VulnerabilityID : CVE-2026-4873 
+│                       ├ [92]  ╭ VulnerabilityID : CVE-2026-4873 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7638,7 +7717,8 @@
 │                       │       │                   transmit data
 │                       │       │                   unencrypted. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ CweIDs           ─ [0]: CWE-319 
+│                       │       ├ CweIDs           ╭ [0]: CWE-295 
+│                       │       │                  ╰ [1]: CWE-319 
 │                       │       ├ VendorSeverity   ╭ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
@@ -7654,8 +7734,8 @@
 │                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-4873 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:55.893Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T20:16:23.353Z 
-│                       ├ [92]  ╭ VulnerabilityID : CVE-2026-5545 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:45:11.407Z 
+│                       ├ [93]  ╭ VulnerabilityID : CVE-2026-5545 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7709,7 +7789,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-613 
 │                       │       ├ VendorSeverity   ╭ nvd   : 2 
-│                       │       │                  ├ photon: 3 
+│                       │       │                  ├ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
@@ -7727,7 +7807,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-5545 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.19Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T19:31:07.633Z 
-│                       ├ [93]  ╭ VulnerabilityID : CVE-2026-6253 
+│                       ├ [94]  ╭ VulnerabilityID : CVE-2026-6253 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7763,7 +7843,8 @@
 │                       │       │                   `https://`), accessed using a
 │                       │       │                      second, different, proxy 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ CweIDs           ─ [0]: CWE-522 
+│                       │       ├ VendorSeverity   ╭ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:
@@ -7779,8 +7860,8 @@
 │                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6253 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.57Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T18:16:20.09Z 
-│                       ├ [94]  ╭ VulnerabilityID : CVE-2026-6429 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:40:53.19Z 
+│                       ├ [95]  ╭ VulnerabilityID : CVE-2026-6429 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7807,7 +7888,7 @@
 │                       │       │                   first host to the
 │                       │       │                   followed-to host under certain circumstances. 
 │                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ VendorSeverity   ╭ photon: 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:
@@ -7821,8 +7902,8 @@
 │                       │       │                  ├ [5]: https://ubuntu.com/security/notices/USN-8227-1 
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6429 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:56.93Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T14:50:58.767Z 
-│                       ├ [95]  ╭ VulnerabilityID : CVE-2026-7168 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:18:02.24Z 
+│                       ├ [96]  ╭ VulnerabilityID : CVE-2026-7009 
 │                       │       ├ PkgID           : libcurl@8.15.0-r0 
 │                       │       ├ PkgName         : libcurl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
@@ -7835,93 +7916,7 @@
 │                       │       │                  │         3501dd6062bd50a4b6afe 
 │                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
 │                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7168 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:7fc55e7682b0c6fe3ba2c0d7dd3249aad8b8f848d037f077406d
-│                       │       │                   3593b827a438 
-│                       │       ├ Description     : Successfully using libcurl to do a transfer over a specific
-│                       │       │                    HTTP proxy
-│                       │       │                   (`proxyA`) with **Digest** authentication and then changing
-│                       │       │                    the proxy host to
-│                       │       │                   a second one (`proxyB`) for a second transfer, reusing the
-│                       │       │                   same handle, makes
-│                       │       │                   libcurl wrongly pass on the `Proxy-Authorization:` header
-│                       │       │                   field meant for
-│                       │       │                   `proxyA`, to `proxyB`. 
-│                       │       ├ Severity        : MEDIUM 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
-│                       │       │                  │      /14 
-│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-7168.html 
-│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-7168.json 
-│                       │       │                  ├ [3]: https://hackerone.com/reports/3697719 
-│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-8227-1 
-│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-7168 
-│                       │       ├ PublishedDate   : 2026-05-13T13:01:57.2Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:17:02.437Z 
-│                       ├ [96]  ╭ VulnerabilityID : CVE-2026-6276 
-│                       │       ├ PkgID           : libcurl@8.15.0-r0 
-│                       │       ├ PkgName         : libcurl 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
-│                       │       │                  │       3.23.0_alpha20250612 
-│                       │       │                  ╰ UID : f84f25314ce6d762 
-│                       │       ├ InstalledVersion: 8.15.0-r0 
-│                       │       ├ FixedVersion    : 8.20.0-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6276 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:2f0f0103060fdbdfc5176d73f3dafb2a1785281263194ef6d461
-│                       │       │                   eebc72f8234f 
-│                       │       ├ Title           : curl: libcurl: Information disclosure due to cookie leak
-│                       │       │                   when reusing connections with custom Host headers 
-│                       │       ├ Description     : Using libcurl, when a custom `Host:` header is first set
-│                       │       │                   for an HTTP request
-│                       │       │                   and a second request is subsequently done using the same
-│                       │       │                   *easy handle* but
-│                       │       │                   without the custom `Host:` header set, the second request
-│                       │       │                   would use stale
-│                       │       │                   information and pass on cookies meant for the first host in
-│                       │       │                    the second
-│                       │       │                   request. Leak them. 
-│                       │       ├ Severity        : LOW 
-│                       │       ├ VendorSeverity   ╭ photon: 2 
-│                       │       │                  ├ redhat: 1 
-│                       │       │                  ╰ ubuntu: 1 
-│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
-│                       │       │                           │           N/A:N 
-│                       │       │                           ╰ V3Score : 3.7 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
-│                       │       │                  │      /13 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6276 
-│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-6276.html 
-│                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-6276.json 
-│                       │       │                  ├ [4]: https://hackerone.com/reports/3671818 
-│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-6276 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8227-1 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6276 
-│                       │       ├ PublishedDate   : 2026-05-13T13:01:56.8Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T18:16:20.403Z 
-│                       ├ [97]  ╭ VulnerabilityID : CVE-2026-7009 
-│                       │       ├ PkgID           : libcurl@8.15.0-r0 
-│                       │       ├ PkgName         : libcurl 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
-│                       │       │                  │       3.23.0_alpha20250612 
-│                       │       │                  ╰ UID : f84f25314ce6d762 
-│                       │       ├ InstalledVersion: 8.15.0-r0 
-│                       │       ├ FixedVersion    : 8.20.0-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
 │                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7009 
 │                       │       ├ DataSource       ╭ ID  : alpine 
 │                       │       │                  ├ Name: Alpine Secdb 
@@ -7935,14 +7930,64 @@
 │                       │       │                   valid, it fails to detect OCSP problems and instead wrongly
 │                       │       │                    consider the
 │                       │       │                   response as fine. 
-│                       │       ├ Severity        : UNKNOWN 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-295 
+│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 
+│                       │       │                        ╰ V3Score : 5.3 
 │                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
 │                       │       │                  │      /12 
 │                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-7009.html 
 │                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-7009.json 
 │                       │       │                  ╰ [3]: https://hackerone.com/reports/3694390 
 │                       │       ├ PublishedDate   : 2026-05-13T13:01:57.1Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:17:02.257Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:17:05.223Z 
+│                       ├ [97]  ╭ VulnerabilityID : CVE-2026-7168 
+│                       │       ├ PkgID           : libcurl@8.15.0-r0 
+│                       │       ├ PkgName         : libcurl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r0?arch=x86_64&distro=
+│                       │       │                  │       3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : f84f25314ce6d762 
+│                       │       ├ InstalledVersion: 8.15.0-r0 
+│                       │       ├ FixedVersion    : 8.20.0-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7168 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:7fc55e7682b0c6fe3ba2c0d7dd3249aad8b8f848d037f077406d
+│                       │       │                   3593b827a438 
+│                       │       ├ Title           : Successfully using libcurl to do a transfer over a specific
+│                       │       │                    HTTP proxy ... 
+│                       │       ├ Description     : Successfully using libcurl to do a transfer over a specific
+│                       │       │                    HTTP proxy
+│                       │       │                   (`proxyA`) with **Digest** authentication and then changing
+│                       │       │                    the proxy host to
+│                       │       │                   a second one (`proxyB`) for a second transfer, reusing the
+│                       │       │                   same handle, makes
+│                       │       │                   libcurl wrongly pass on the `Proxy-Authorization:` header
+│                       │       │                   field meant for
+│                       │       │                   `proxyA`, to `proxyB`. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-294 
+│                       │       ├ VendorSeverity   ╭ nvd   : 2 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 
+│                       │       │                        ╰ V3Score : 5.3 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/29
+│                       │       │                  │      /14 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-7168.html 
+│                       │       │                  ├ [2]: https://curl.se/docs/CVE-2026-7168.json 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3697719 
+│                       │       │                  ├ [4]: https://ubuntu.com/security/notices/USN-8227-1 
+│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-7168 
+│                       │       ├ PublishedDate   : 2026-05-13T13:01:57.2Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T14:12:48.457Z 
 │                       ├ [98]  ╭ VulnerabilityID : CVE-2026-25210 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
@@ -7975,7 +8020,7 @@
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ nvd        : 3 
-│                       │       │                  ├ photon     : 2 
+│                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
@@ -7995,7 +8040,42 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-25210 
 │                       │       ├ PublishedDate   : 2026-01-30T07:16:15.57Z 
 │                       │       ╰ LastModifiedDate: 2026-03-10T18:17:12.78Z 
-│                       ├ [99]  ╭ VulnerabilityID : CVE-2025-59375 
+│                       ├ [99]  ╭ VulnerabilityID : CVE-2026-45186 
+│                       │       ├ PkgID           : libexpat@2.7.1-r0 
+│                       │       ├ PkgName         : libexpat 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
+│                       │       │                  │       3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : ba96e0052583823f 
+│                       │       ├ InstalledVersion: 2.7.1-r0 
+│                       │       ├ FixedVersion    : 2.8.1-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45186 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:003a61251b5b03b1c57494563d45203276c9acf7ca16c6bf854e
+│                       │       │                   3ba752179724 
+│                       │       ├ Title           : In libexpat before 2.8.1, the computational complexity of
+│                       │       │                   attribute na ... 
+│                       │       ├ Description     : In libexpat before 2.8.1, the computational complexity of
+│                       │       │                   attribute name collision checks allows a denial of service
+│                       │       │                   via moderately sized crafted XML input. 
+│                       │       ├ Severity        : HIGH 
+│                       │       ├ CweIDs           ─ [0]: CWE-407 
+│                       │       ├ VendorSeverity   ─ nvd: 3 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+│                       │       │                        ╰ V3Score : 7.5 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/11
+│                       │       │                  │      /16 
+│                       │       │                  ╰ [1]: https://github.com/libexpat/libexpat/pull/1216 
+│                       │       ├ PublishedDate   : 2026-05-10T07:16:07.883Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T17:20:32.57Z 
+│                       ├ [100] ╭ VulnerabilityID : CVE-2025-59375 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -8069,7 +8149,7 @@
 │                       │       │                          -24/#CVE-2025-59375 
 │                       │       ├ PublishedDate   : 2025-09-15T03:15:40.92Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:22.64Z 
-│                       ├ [100] ╭ VulnerabilityID : CVE-2026-32776 
+│                       ├ [101] ╭ VulnerabilityID : CVE-2026-32776 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -8113,7 +8193,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-32776 
 │                       │       ├ PublishedDate   : 2026-03-16T14:19:44.6Z 
 │                       │       ╰ LastModifiedDate: 2026-03-17T15:52:09.023Z 
-│                       ├ [101] ╭ VulnerabilityID : CVE-2026-32777 
+│                       ├ [102] ╭ VulnerabilityID : CVE-2026-32777 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -8159,7 +8239,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32777 
 │                       │       ├ PublishedDate   : 2026-03-16T14:19:44.78Z 
 │                       │       ╰ LastModifiedDate: 2026-03-17T15:52:34.357Z 
-│                       ├ [102] ╭ VulnerabilityID : CVE-2026-32778 
+│                       ├ [103] ╭ VulnerabilityID : CVE-2026-32778 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -8204,7 +8284,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-32778 
 │                       │       ├ PublishedDate   : 2026-03-16T14:19:44.97Z 
 │                       │       ╰ LastModifiedDate: 2026-03-17T15:52:53.16Z 
-│                       ├ [103] ╭ VulnerabilityID : CVE-2026-24515 
+│                       ├ [104] ╭ VulnerabilityID : CVE-2026-24515 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -8250,7 +8330,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-24515 
 │                       │       ├ PublishedDate   : 2026-01-23T08:16:01.49Z 
 │                       │       ╰ LastModifiedDate: 2026-02-05T17:27:53.29Z 
-│                       ├ [104] ╭ VulnerabilityID : CVE-2026-41080 
+│                       ├ [105] ╭ VulnerabilityID : CVE-2026-41080 
 │                       │       ├ PkgID           : libexpat@2.7.1-r0 
 │                       │       ├ PkgName         : libexpat 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
@@ -8291,37 +8371,6 @@
 │                       │       │                         6/1 
 │                       │       ├ PublishedDate   : 2026-04-16T17:16:54.917Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T07:16:03.937Z 
-│                       ├ [105] ╭ VulnerabilityID : CVE-2026-45186 
-│                       │       ├ PkgID           : libexpat@2.7.1-r0 
-│                       │       ├ PkgName         : libexpat 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libexpat@2.7.1-r0?arch=x86_64&distro=
-│                       │       │                  │       3.23.0_alpha20250612 
-│                       │       │                  ╰ UID : ba96e0052583823f 
-│                       │       ├ InstalledVersion: 2.7.1-r0 
-│                       │       ├ FixedVersion    : 2.8.1-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45186 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:003a61251b5b03b1c57494563d45203276c9acf7ca16c6bf854e
-│                       │       │                   3ba752179724 
-│                       │       ├ Title           : In libexpat before 2.8.1, the computational complexity of
-│                       │       │                   attribute na ... 
-│                       │       ├ Description     : In libexpat before 2.8.1, the computational complexity of
-│                       │       │                   attribute name collision checks allows a denial of service
-│                       │       │                   via moderately sized crafted XML input. 
-│                       │       ├ Severity        : UNKNOWN 
-│                       │       ├ CweIDs           ─ [0]: CWE-407 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/11
-│                       │       │                  │      /16 
-│                       │       │                  ╰ [1]: https://github.com/libexpat/libexpat/pull/1216 
-│                       │       ├ PublishedDate   : 2026-05-10T07:16:07.883Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T15:42:30.497Z 
 │                       ├ [106] ╭ VulnerabilityID : CVE-2026-27456 
 │                       │       ├ PkgID           : libmount@2.41.1-r0 
 │                       │       ├ PkgName         : libmount 
@@ -9007,41 +9056,29 @@
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 3 
 │                       │       │                  ├ redhat     : 2 
-│                       │       │                  ├ rocky      : 3 
+│                       │       │                  ├ rocky      : 2 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:H 
 │                       │       │                           ╰ V3Score : 7.6 
 │                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:9693 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-33636 
-│                       │       │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2451805 
-│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2451819 
-│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2455897 
-│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2455901 
-│                       │       │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2455908 
-│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       026-33416 
-│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2451819 
+│                       │       │                  ├ [3] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-33636 
-│                       │       │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       026-5731 
-│                       │       │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       026-5732 
-│                       │       │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                       │       │                  │       026-5734 
-│                       │       │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-9693.html 
-│                       │       │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:8459 
-│                       │       │                  ├ [14]: https://github.com/pnggroup/libpng/commit/7734cda20c
+│                       │       │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2026-9693.html 
+│                       │       │                  ├ [5] : https://errata.rockylinux.org/RLSA-2026:14791 
+│                       │       │                  ├ [6] : https://github.com/pnggroup/libpng/commit/7734cda20c
 │                       │       │                  │       f1236aef60f3bbd2267c97bbb40869 
-│                       │       │                  ├ [15]: https://github.com/pnggroup/libpng/commit/aba9f18eba
+│                       │       │                  ├ [7] : https://github.com/pnggroup/libpng/commit/aba9f18eba
 │                       │       │                  │       870d14fb52c5ba5d73451349e339c3 
-│                       │       │                  ├ [16]: https://github.com/pnggroup/libpng/security/advisori
+│                       │       │                  ├ [8] : https://github.com/pnggroup/libpng/security/advisori
 │                       │       │                  │       es/GHSA-wjr5-c57x-95m2 
-│                       │       │                  ├ [17]: https://linux.oracle.com/cve/CVE-2026-33636.html 
-│                       │       │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-9693.html 
-│                       │       │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2026-33636 
-│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-8251-1 
-│                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-33636 
+│                       │       │                  ├ [9] : https://linux.oracle.com/cve/CVE-2026-33636.html 
+│                       │       │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2026-9693.html 
+│                       │       │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-33636 
+│                       │       │                  ├ [12]: https://ubuntu.com/security/notices/USN-8251-1 
+│                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-33636 
 │                       │       ├ PublishedDate   : 2026-03-26T17:16:41.477Z 
 │                       │       ╰ LastModifiedDate: 2026-04-02T18:42:02.667Z 
 │                       ├ [115] ╭ VulnerabilityID : CVE-2025-64505 
@@ -9438,7 +9475,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 4 
-│                       │       │                  ├ photon: 3 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -11768,9 +11805,9 @@
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                  │        │           N/A:N 
 │                       │       │                  │        ╰ V3Score : 7.5 
-│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 4.2 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │       │                           │           N/A:L 
+│                       │       │                           ╰ V3Score : 6.5 
 │                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
 │                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
 │                       │       │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-
@@ -15340,7 +15377,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 4 
-│                       │       │                  ├ photon: 3 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -17670,9 +17707,9 @@
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                  │        │           N/A:N 
 │                       │       │                  │        ╰ V3Score : 7.5 
-│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
-│                       │       │                           │           L/A:L 
-│                       │       │                           ╰ V3Score : 4.2 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │       │                           │           N/A:L 
+│                       │       │                           ╰ V3Score : 6.5 
 │                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
 │                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
 │                       │       │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-
@@ -18795,7 +18832,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-22 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 3 
-│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -18898,7 +18935,8 @@
 │                       │       │                   user. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ╭ azure : 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ azure : 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:
@@ -19125,7 +19163,7 @@
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ nvd        : 2 
-│                       │       │                  ├ photon     : 1 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -19145,7 +19183,52 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [217] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [217] ╭ VulnerabilityID : CVE-2026-44656 
+│                       │       ├ PkgID           : vim@9.1.1557-r1 
+│                       │       ├ PkgName         : vim 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : f37ace8bbf995058 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0437-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44656 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:835c8771414152de428a81769c2cab014b5ead3d51c8a90c1330
+│                       │       │                   00d3f0162e17 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2.0435, an OS command injection vulnerability
+│                       │       │                   exists in Vim's :find command-line completion. When the
+│                       │       │                   path option contains backtick-enclosed shell commands,
+│                       │       │                   those commands are executed during file name completion.
+│                       │       │                   Because the path option lacks the P_SECURE flag, it can be
+│                       │       │                   set from a modeline, allowing an attacker who controls the
+│                       │       │                   contents of a file to execute arbitrary shell commands when
+│                       │       │                    the user opens that file in Vim and triggers :find
+│                       │       │                   completion. This issue has been patched in version
+│                       │       │                   9.2.0435. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-78 
+│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L 
+│                       │       │                        ╰ V3Score : 5.3 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
+│                       │       │                  │      bcfd991a7b5b6cb771ef0 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
+│                       │       │                         wg5-3cxw-wvvg 
+│                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
+│                       ├ [218] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19194,7 +19277,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [218] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [219] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19231,48 +19314,7 @@
 │                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-8
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
-│                       ├ [219] ╭ VulnerabilityID : CVE-2026-44656 
-│                       │       ├ PkgID           : vim@9.1.1557-r1 
-│                       │       ├ PkgName         : vim 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
-│                       │       │                  │       23.0_alpha20250612 
-│                       │       │                  ╰ UID : f37ace8bbf995058 
-│                       │       ├ InstalledVersion: 9.1.1557-r1 
-│                       │       ├ FixedVersion    : 9.2.0437-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44656 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:835c8771414152de428a81769c2cab014b5ead3d51c8a90c1330
-│                       │       │                   00d3f0162e17 
-│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2. ... 
-│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2.0435, an OS command injection vulnerability
-│                       │       │                   exists in Vim's :find command-line completion. When the
-│                       │       │                   path option contains backtick-enclosed shell commands,
-│                       │       │                   those commands are executed during file name completion.
-│                       │       │                   Because the path option lacks the P_SECURE flag, it can be
-│                       │       │                   set from a modeline, allowing an attacker who controls the
-│                       │       │                   contents of a file to execute arbitrary shell commands when
-│                       │       │                    the user opens that file in Vim and triggers :find
-│                       │       │                   completion. This issue has been patched in version
-│                       │       │                   9.2.0435. 
-│                       │       ├ Severity        : UNKNOWN 
-│                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
-│                       │       │                  │      bcfd991a7b5b6cb771ef0 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
-│                       │       │                         wg5-3cxw-wvvg 
-│                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
 │                       ├ [220] ╭ VulnerabilityID : CVE-2026-45130 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
@@ -19310,13 +19352,14 @@
 │                       │       ├ Severity        : UNKNOWN 
 │                       │       ├ CweIDs           ╭ [0]: CWE-122 
 │                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/92993329178cb1f72d7
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
 │                       │       │                  │      00fff45ca86e1c2d369f8 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0450 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-q
+│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
+│                       │       │                  ╰ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
 │                       │       │                         4jv-r9gj-6cwv 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
 │                       ├ [221] ╭ VulnerabilityID : CVE-2026-25749 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
@@ -19761,7 +19804,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-22 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 3 
-│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -19864,7 +19907,8 @@
 │                       │       │                   user. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ╭ azure : 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ azure : 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:
@@ -20091,7 +20135,7 @@
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ nvd        : 2 
-│                       │       │                  ├ photon     : 1 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -20111,7 +20155,52 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [234] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [234] ╭ VulnerabilityID : CVE-2026-44656 
+│                       │       ├ PkgID           : vim-common@9.1.1557-r1 
+│                       │       ├ PkgName         : vim-common 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
+│                       │       │                  │       stro=3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : f513f86f78716ce1 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0437-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44656 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:7eae628ebdfc33fc1d78b3ab446abb3bf18d64da66f8e32d40c2
+│                       │       │                   3094be007c9e 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2.0435, an OS command injection vulnerability
+│                       │       │                   exists in Vim's :find command-line completion. When the
+│                       │       │                   path option contains backtick-enclosed shell commands,
+│                       │       │                   those commands are executed during file name completion.
+│                       │       │                   Because the path option lacks the P_SECURE flag, it can be
+│                       │       │                   set from a modeline, allowing an attacker who controls the
+│                       │       │                   contents of a file to execute arbitrary shell commands when
+│                       │       │                    the user opens that file in Vim and triggers :find
+│                       │       │                   completion. This issue has been patched in version
+│                       │       │                   9.2.0435. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-78 
+│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L 
+│                       │       │                        ╰ V3Score : 5.3 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
+│                       │       │                  │      bcfd991a7b5b6cb771ef0 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
+│                       │       │                         wg5-3cxw-wvvg 
+│                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
+│                       ├ [235] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20160,7 +20249,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [235] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [236] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20197,48 +20286,7 @@
 │                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-8
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
-│                       ├ [236] ╭ VulnerabilityID : CVE-2026-44656 
-│                       │       ├ PkgID           : vim-common@9.1.1557-r1 
-│                       │       ├ PkgName         : vim-common 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
-│                       │       │                  │       stro=3.23.0_alpha20250612 
-│                       │       │                  ╰ UID : f513f86f78716ce1 
-│                       │       ├ InstalledVersion: 9.1.1557-r1 
-│                       │       ├ FixedVersion    : 9.2.0437-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44656 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:7eae628ebdfc33fc1d78b3ab446abb3bf18d64da66f8e32d40c2
-│                       │       │                   3094be007c9e 
-│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2. ... 
-│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2.0435, an OS command injection vulnerability
-│                       │       │                   exists in Vim's :find command-line completion. When the
-│                       │       │                   path option contains backtick-enclosed shell commands,
-│                       │       │                   those commands are executed during file name completion.
-│                       │       │                   Because the path option lacks the P_SECURE flag, it can be
-│                       │       │                   set from a modeline, allowing an attacker who controls the
-│                       │       │                   contents of a file to execute arbitrary shell commands when
-│                       │       │                    the user opens that file in Vim and triggers :find
-│                       │       │                   completion. This issue has been patched in version
-│                       │       │                   9.2.0435. 
-│                       │       ├ Severity        : UNKNOWN 
-│                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
-│                       │       │                  │      bcfd991a7b5b6cb771ef0 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
-│                       │       │                         wg5-3cxw-wvvg 
-│                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
 │                       ├ [237] ╭ VulnerabilityID : CVE-2026-45130 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
@@ -20276,13 +20324,14 @@
 │                       │       ├ Severity        : UNKNOWN 
 │                       │       ├ CweIDs           ╭ [0]: CWE-122 
 │                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/92993329178cb1f72d7
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
 │                       │       │                  │      00fff45ca86e1c2d369f8 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0450 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-q
+│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
+│                       │       │                  ╰ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
 │                       │       │                         4jv-r9gj-6cwv 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
 │                       ├ [238] ╭ VulnerabilityID : CVE-2026-25749 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
@@ -20727,7 +20776,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-22 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 3 
-│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -20830,7 +20879,8 @@
 │                       │       │                   user. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ╭ azure : 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ azure : 2 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:
@@ -21057,7 +21107,7 @@
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
 │                       │       │                  ├ nvd        : 2 
-│                       │       │                  ├ photon     : 1 
+│                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 1 
 │                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -21077,7 +21127,52 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [251] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [251] ╭ VulnerabilityID : CVE-2026-44656 
+│                       │       ├ PkgID           : xxd@9.1.1557-r1 
+│                       │       ├ PkgName         : xxd 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : 67ee24b19424f9fd 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0437-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44656 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:9d5c4642edcefb1ad7ad5b01f4fe624deae40ea1ae297b880d38
+│                       │       │                   89216adb55d0 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2.0435, an OS command injection vulnerability
+│                       │       │                   exists in Vim's :find command-line completion. When the
+│                       │       │                   path option contains backtick-enclosed shell commands,
+│                       │       │                   those commands are executed during file name completion.
+│                       │       │                   Because the path option lacks the P_SECURE flag, it can be
+│                       │       │                   set from a modeline, allowing an attacker who controls the
+│                       │       │                   contents of a file to execute arbitrary shell commands when
+│                       │       │                    the user opens that file in Vim and triggers :find
+│                       │       │                   completion. This issue has been patched in version
+│                       │       │                   9.2.0435. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-78 
+│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L 
+│                       │       │                        ╰ V3Score : 5.3 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
+│                       │       │                  │      bcfd991a7b5b6cb771ef0 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
+│                       │       │                         wg5-3cxw-wvvg 
+│                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
+│                       ├ [252] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21126,7 +21221,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [252] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [253] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21163,48 +21258,7 @@
 │                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-8
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
-│                       ├ [253] ╭ VulnerabilityID : CVE-2026-44656 
-│                       │       ├ PkgID           : xxd@9.1.1557-r1 
-│                       │       ├ PkgName         : xxd 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
-│                       │       │                  │       23.0_alpha20250612 
-│                       │       │                  ╰ UID : 67ee24b19424f9fd 
-│                       │       ├ InstalledVersion: 9.1.1557-r1 
-│                       │       ├ FixedVersion    : 9.2.0437-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44656 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:9d5c4642edcefb1ad7ad5b01f4fe624deae40ea1ae297b880d38
-│                       │       │                   89216adb55d0 
-│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2. ... 
-│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2.0435, an OS command injection vulnerability
-│                       │       │                   exists in Vim's :find command-line completion. When the
-│                       │       │                   path option contains backtick-enclosed shell commands,
-│                       │       │                   those commands are executed during file name completion.
-│                       │       │                   Because the path option lacks the P_SECURE flag, it can be
-│                       │       │                   set from a modeline, allowing an attacker who controls the
-│                       │       │                   contents of a file to execute arbitrary shell commands when
-│                       │       │                    the user opens that file in Vim and triggers :find
-│                       │       │                   completion. This issue has been patched in version
-│                       │       │                   9.2.0435. 
-│                       │       ├ Severity        : UNKNOWN 
-│                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
-│                       │       │                  │      bcfd991a7b5b6cb771ef0 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
-│                       │       │                         wg5-3cxw-wvvg 
-│                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
 │                       ├ [254] ╭ VulnerabilityID : CVE-2026-45130 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
@@ -21242,13 +21296,14 @@
 │                       │       ├ Severity        : UNKNOWN 
 │                       │       ├ CweIDs           ╭ [0]: CWE-122 
 │                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/92993329178cb1f72d7
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
 │                       │       │                  │      00fff45ca86e1c2d369f8 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0450 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-q
+│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
+│                       │       │                  ╰ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
 │                       │       │                         4jv-r9gj-6cwv 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
-│                       │       ╰ LastModifiedDate: 2026-05-13T16:02:13.38Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
 │                       ├ [255] ╭ VulnerabilityID : CVE-2026-34743 
 │                       │       ├ PkgID           : xz-libs@5.8.1-r0 
 │                       │       ├ PkgName         : xz-libs 
@@ -21303,58 +21358,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34743 
 │                       │       ├ PublishedDate   : 2026-04-02T19:21:33.187Z 
 │                       │       ╰ LastModifiedDate: 2026-04-15T17:33:17.68Z 
-│                       ├ [256] ╭ VulnerabilityID : CVE-2026-22184 
-│                       │       ├ PkgID           : zlib@1.3.1-r2 
-│                       │       ├ PkgName         : zlib 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
-│                       │       │                  │       .0_alpha20250612 
-│                       │       │                  ╰ UID : b954f4a027f289c1 
-│                       │       ├ InstalledVersion: 1.3.1-r2 
-│                       │       ├ FixedVersion    : 1.3.2-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ SeveritySource  : nvd 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15
-│                       │       │                   fc5bfe4c7675 
-│                       │       ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
-│                       │       │                    untgz utility 
-│                       │       ├ Description     : zlib versions up to and including 1.3.1.2 include a global
-│                       │       │                   buffer overflow in the untgz utility located under
-│                       │       │                   contrib/untgz. The vulnerability is limited to the
-│                       │       │                   standalone demonstration utility and does not affect the
-│                       │       │                   core zlib compression library. The flaw occurs when a user
-│                       │       │                   executes the untgz command with an excessively long archive
-│                       │       │                    name supplied via the command line, leading to an
-│                       │       │                   out-of-bounds write in a fixed-size global buffer. 
-│                       │       ├ Severity        : HIGH 
-│                       │       ├ CweIDs           ─ [0]: CWE-787 
-│                       │       ├ VendorSeverity   ╭ nvd   : 3 
-│                       │       │                  ╰ redhat: 3 
-│                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
-│                       │       │                  │        │           H/A:H 
-│                       │       │                  │        ╰ V3Score : 7.8 
-│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │       │                           │           L/A:H 
-│                       │       │                           ╰ V3Score : 8.6 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
-│                       │       │                  ├ [1]: https://github.com/madler/zlib 
-│                       │       │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
-│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
-│                       │       │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
-│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
-│                       │       │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-globa
-│                       │       │                  │      l-buffer-overflow-in-tgzfname 
-│                       │       │                  ╰ [7]: https://zlib.net/ 
-│                       │       ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
-│                       │       ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
-│                       ╰ [257] ╭ VulnerabilityID : CVE-2026-27171 
+│                       ╰ [256] ╭ VulnerabilityID : CVE-2026-27171 
 │                               ├ PkgID           : zlib@1.3.1-r2 
 │                               ├ PkgName         : zlib 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
@@ -23170,7 +23174,8 @@
 │                       │      │                   in 6.1.0. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-611 
-│                       │      ├ VendorSeverity   ╭ azure : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ azure : 3 
 │                       │      │                  ├ ghsa  : 3 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
@@ -23404,7 +23409,8 @@
 │                       │      │                   as a ZIP or tar archive, not as both. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-434 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:N/
 │                       │      │                  │        │            VI:L/VA:N/SC:N/SI:N/SA:N 
@@ -23461,7 +23467,8 @@
 │                       │      │                   review package contents prior to installation. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-829 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:L/AC:L/AT:P/PR:H/UI:A/VC:H/
 │                       │      │                  │        │            VI:H/VA:N/SC:N/SI:N/SA:N 
@@ -23913,8 +23920,8 @@
 │                              │                          cosystem%3Apip 
 │                              ├ Fingerprint     : sha256:37a03b9a31bcaaebbbc13ec4b0c1d3e6f1ed3194d12a2a46e60a6
 │                              │                   4c2a7d1e58c 
-│                              ├ Title           : urllib3: Sensitive headers forwarded across origins in
-│                              │                   proxied low-level redirects 
+│                              ├ Title           : urllib3 is an HTTP client library for Python. From 1.23 to
+│                              │                   before 2.7. ... 
 │                              ├ Description     : urllib3 is an HTTP client library for Python. From 1.23 to
 │                              │                   before 2.7.0, cross-origin redirects followed from the
 │                              │                   low-level API via
@@ -23923,15 +23930,22 @@
 │                              │                   headers. This vulnerability is fixed in 2.7.0. 
 │                              ├ Severity        : HIGH 
 │                              ├ CweIDs           ─ [0]: CWE-200 
-│                              ├ VendorSeverity   ─ ghsa: 3 
-│                              ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI
-│                              │                         │            :N/VA:N/SC:N/SI:N/SA:N 
-│                              │                         ╰ V40Score : 8.2 
+│                              ├ VendorSeverity   ╭ ghsa: 3 
+│                              │                  ╰ nvd : 2 
+│                              ├ CVSS             ╭ ghsa ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/
+│                              │                  │      │            A:N 
+│                              │                  │      ├ V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI
+│                              │                  │      │            :N/VA:N/SC:N/SI:N/SA:N 
+│                              │                  │      ├ V3Score  : 5.3 
+│                              │                  │      ╰ V40Score : 8.2 
+│                              │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 
+│                              │                         ╰ V3Score : 5.3 
 │                              ├ References       ╭ [0]: https://github.com/urllib3/urllib3 
-│                              │                  ╰ [1]: https://github.com/urllib3/urllib3/security/advisories
-│                              │                         /GHSA-qccp-gfcp-xxvc 
+│                              │                  ├ [1]: https://github.com/urllib3/urllib3/security/advisories
+│                              │                  │      /GHSA-qccp-gfcp-xxvc 
+│                              │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-44431 
 │                              ├ PublishedDate   : 2026-05-13T16:16:57.15Z 
-│                              ╰ LastModifiedDate: 2026-05-13T17:06:37.307Z 
+│                              ╰ LastModifiedDate: 2026-05-14T13:56:27.263Z 
 ├ [3] ╭ Target         : usr/bin/grype 
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : gobinary 
@@ -24489,7 +24503,68 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-33997 
 │                       │      ├ PublishedDate   : 2026-03-31T03:15:57.523Z 
 │                       │      ╰ LastModifiedDate: 2026-04-03T17:23:21.307Z 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2026-44740 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2026-44973 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-qw64-3x98-g7q2 
+│                       │      ├ PkgID           : github.com/go-git/go-billy/v5@v5.6.2 
+│                       │      ├ PkgName         : github.com/go-git/go-billy/v5 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2 
+│                       │      │                  ╰ UID : 8066af4aa1b239cb 
+│                       │      ├ InstalledVersion: v5.6.2 
+│                       │      ├ FixedVersion    : 5.9.0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44973 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Go 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:a6291f1c5d9e0034356f93c1d3820457134e9dd856f29d0a03c9f
+│                       │      │                   b811b83d99c 
+│                       │      ├ Title           : go-billy has path traversal vulnerabilities 
+│                       │      ├ Description     : ### Impact
+│                       │      │                   Multiple path traversal issues exist across different
+│                       │      │                   components of `go-billy`. Insufficient path sanitization and
+│                       │      │                    boundary enforcement may allow crafted paths (e.g., using
+│                       │      │                   `..`) to escape intended base directories.
+│                       │      │                   
+│                       │      │                   While go-billy was not originally designed to provide a
+│                       │      │                   strong security boundary, some of these issues were
+│                       │      │                   inconsistent across some of the built-in implementations.
+│                       │      │                   This results in scenarios where applications relying on
+│                       │      │                   `go-billy` for some level of isolation may inadvertently
+│                       │      │                   expose access to unintended filesystem locations.
+│                       │      │                   The `osfs.ChrootOS` implementation is notably affected by
+│                       │      │                   this vulnerability and is now deprecated in `v5`, removed at
+│                       │      │                    `v6`. Users are recommended to move on to `osfs.BoundOS`
+│                       │      │                   instead: `osfs.New(path, WithBoundOS())`.
+│                       │      │                   Users requiring stronger security boundary enforcement are
+│                       │      │                   recommended to upgrade to `v6`, where the `osfs`
+│                       │      │                   implementation are backed by the
+│                       │      │                   [traversal-resistant](https://go.dev/blog/osroot) primitive
+│                       │      │                   [os.Root](https://pkg.go.dev/os#Root).
+│                       │      │                   ### Patches
+│                       │      │                   Users should upgrade to a patched version in order to
+│                       │      │                   mitigate this vulnerability. Versions prior to `v5` are
+│                       │      │                   likely to be affected, users are recommended to upgrade to a
+│                       │      │                    supported `go-billy` version.
+│                       │      │                   ### Credits
+│                       │      │                   Thanks to @faran66 and @vnykmshr for finding and separately
+│                       │      │                   reporting this issue privately to the go-git project. 🙇 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N 
+│                       │      │                         ╰ V3Score : 8.1 
+│                       │      ╰ References       ╭ [0]: https://github.com/go-git/go-billy 
+│                       │                         ├ [1]: https://github.com/go-git/go-billy/releases/tag/v5.9.0 
+│                       │                         ├ [2]: https://github.com/go-git/go-billy/releases/tag/v6.0.0
+│                       │                         │      -alpha.1 
+│                       │                         ╰ [3]: https://github.com/go-git/go-billy/security/advisories
+│                       │                                /GHSA-qw64-3x98-g7q2 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2026-44740 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-m3xc-h892-ggx6 
 │                       │      ├ PkgID           : github.com/go-git/go-billy/v5@v5.6.2 
 │                       │      ├ PkgName         : github.com/go-git/go-billy/v5 
@@ -24540,7 +24615,7 @@
 │                       │                         │      -alpha.1 
 │                       │                         ╰ [3]: https://github.com/go-git/go-billy/security/advisories
 │                       │                                /GHSA-m3xc-h892-ggx6 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2026-45022 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2026-45022 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-389r-gv7p-r3rp 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -24601,7 +24676,7 @@
 │                       │      ╰ References       ╭ [0]: https://github.com/go-git/go-git 
 │                       │                         ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
 │                       │                                HSA-389r-gv7p-r3rp 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2026-25934 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2026-25934 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-37cx-329c-33x3 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -24663,7 +24738,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-25934 
 │                       │      ├ PublishedDate   : 2026-02-09T23:16:05.937Z 
 │                       │      ╰ LastModifiedDate: 2026-02-20T20:21:19.26Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2026-34165 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2026-34165 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-jhf3-xxhw-2wpp 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -24715,7 +24790,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-34165 
 │                       │      ├ PublishedDate   : 2026-03-31T15:16:17.343Z 
 │                       │      ╰ LastModifiedDate: 2026-04-02T16:49:16.047Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2026-41506 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2026-41506 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-3xc5-wrhm-f963 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -24761,7 +24836,7 @@
 │                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
 │                       │      ├ PublishedDate   : 2026-05-08T14:16:33.983Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T14:33:02.04Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2026-33762 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2026-33762 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-gm2x-2g9h-ccm8 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -24813,7 +24888,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-33762 
 │                       │      ├ PublishedDate   : 2026-03-31T15:16:15.597Z 
 │                       │      ╰ LastModifiedDate: 2026-04-02T16:49:29.7Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-11065 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-11065 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-2464-8j7c-4cjm 
 │                       │      ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.3.0 
 │                       │      ├ PkgName         : github.com/go-viper/mapstructure/v2 
@@ -24868,7 +24943,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11065 
 │                       │      ├ PublishedDate   : 2026-01-26T20:16:06.84Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2025-8959 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2025-8959 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-wjrx-6529-hcj3 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
 │                       │      ├ PkgName         : github.com/hashicorp/go-getter 
@@ -24919,7 +24994,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-8959 
 │                       │      ├ PublishedDate   : 2025-08-15T21:15:37.347Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:56:22.32Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2026-4660 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2026-4660 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-92mm-2pjq-r785 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
 │                       │      ├ PkgName         : github.com/hashicorp/go-getter 
@@ -24967,7 +25042,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-4660 
 │                       │      ├ PublishedDate   : 2026-04-09T14:16:32.993Z 
 │                       │      ╰ LastModifiedDate: 2026-04-13T15:02:47.353Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-11579 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-11579 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-rwvp-r38j-9rgg 
 │                       │      ├ PkgID           : github.com/nwaples/rardecode@v1.1.3 
 │                       │      ├ PkgName         : github.com/nwaples/rardecode 
@@ -25016,7 +25091,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
 │                       │      ╰ LastModifiedDate: 2026-01-16T20:56:26.367Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-11579 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-11579 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-rwvp-r38j-9rgg 
 │                       │      ├ PkgID           : github.com/nwaples/rardecode/v2@v2.1.0 
 │                       │      ├ PkgName         : github.com/nwaples/rardecode/v2 
@@ -25066,7 +25141,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
 │                       │      ╰ LastModifiedDate: 2026-01-16T20:56:26.367Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-52881 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-cgrx-mc8f-2prm 
 │                       │      ├ PkgID           : github.com/opencontainers/selinux@v1.11.0 
 │                       │      ├ PkgName         : github.com/opencontainers/selinux 
@@ -25202,7 +25277,7 @@
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
 │                       │      ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58058 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2025-58058 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-jc7w-c686-c4v9 
 │                       │      ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │      ├ PkgName         : github.com/ulikunitz/xz 
@@ -25258,7 +25333,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58058 
 │                       │      ├ PublishedDate   : 2025-08-28T22:15:32.577Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2026-29181 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2026-29181 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-mh2q-q3fh-2475 
 │                       │      ├ PkgID           : go.opentelemetry.io/otel@v1.36.0 
 │                       │      ├ PkgName         : go.opentelemetry.io/otel 
@@ -25306,7 +25381,7 @@
 │                       │      │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-29181 
 │                       │      ├ PublishedDate   : 2026-04-07T21:17:16.003Z 
 │                       │      ╰ LastModifiedDate: 2026-04-14T18:45:01.363Z 
-│                       ├ [23] ╭ VulnerabilityID : CVE-2026-24051 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2026-24051 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-9h8m-3fm2-qjrq 
 │                       │      ├ PkgID           : go.opentelemetry.io/otel/sdk@v1.36.0 
 │                       │      ├ PkgName         : go.opentelemetry.io/otel/sdk 
@@ -25352,7 +25427,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4394 
 │                       │      ├ PublishedDate   : 2026-02-02T23:16:07.963Z 
 │                       │      ╰ LastModifiedDate: 2026-02-27T20:32:10.693Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2026-39883 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2026-39883 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-hfvc-g4fc-pqhx 
 │                       │      ├ PkgID           : go.opentelemetry.io/otel/sdk@v1.36.0 
 │                       │      ├ PkgName         : go.opentelemetry.io/otel/sdk 
@@ -25398,7 +25473,7 @@
 │                       │      │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-39883 
 │                       │      ├ PublishedDate   : 2026-04-08T21:17:00.697Z 
 │                       │      ╰ LastModifiedDate: 2026-04-10T21:16:27.12Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2025-47914 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-47914 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-f6x5-jh6r-wrfv 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.40.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -25447,7 +25522,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47914 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.517Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:36:41.373Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2025-58181 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2025-58181 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-j5w8-q4qc-rx2x 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.40.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -25503,7 +25578,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:29:24.9Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2026-33186 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2026-33186 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-p77j-4mvh-x3m3 
 │                       │      ├ PkgID           : google.golang.org/grpc@v1.67.3 
 │                       │      ├ PkgName         : google.golang.org/grpc 
@@ -25579,7 +25654,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-33186 
 │                       │      ├ PublishedDate   : 2026-03-20T23:16:45.18Z 
 │                       │      ╰ LastModifiedDate: 2026-04-10T20:49:17.737Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2025-68121 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2025-68121 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4337 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -25659,7 +25734,7 @@
 │                       │      │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2025-68121 
 │                       │      ├ PublishedDate   : 2026-02-05T18:16:10.857Z 
 │                       │      ╰ LastModifiedDate: 2026-04-29T14:16:16.17Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3849 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -25720,7 +25795,7 @@
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │      ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T19:11:50.67Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2025-58183 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2025-58183 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4014 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -25784,7 +25859,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2025-61726 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2025-61726 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4341 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -25852,7 +25927,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:47:34.52Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2025-61728 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -25925,7 +26000,7 @@
 │                       │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2025-61729 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4155 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -25996,7 +26071,7 @@
 │                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2026-25679 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2026-25679 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4601 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26052,7 +26127,7 @@
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25679 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:00.72Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:43:03.8Z 
-│                       ├ [35] ╭ VulnerabilityID : CVE-2026-32280 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2026-32280 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4947 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26081,7 +26156,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 3 
@@ -26100,35 +26175,26 @@
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
 │                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-│                       │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2456340 
-│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2456341 
-│                       │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2456342 
-│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27140 
-│                       │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27143 
-│                       │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27144 
-│                       │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32280 
-│                       │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32282 
-│                       │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [18]: https://errata.rockylinux.org/RLSA-2026:10219 
-│                       │      │                  ├ [19]: https://go.dev/cl/758320 
-│                       │      │                  ├ [20]: https://go.dev/issue/78282 
-│                       │      │                  ├ [21]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/758320 
+│                       │      │                  ├ [14]: https://go.dev/issue/78282 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [22]: https://linux.oracle.com/cve/CVE-2026-32280.html 
-│                       │      │                  ├ [23]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
-│                       │      │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
-│                       │      │                  ├ [25]: https://pkg.go.dev/vuln/GO-2026-4947 
-│                       │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32280.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4947 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.247Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:16:42.18Z 
-│                       ├ [36] ╭ VulnerabilityID : CVE-2026-32281 
+│                       ├ [37] ╭ VulnerabilityID : CVE-2026-32281 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4946 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26159,7 +26225,7 @@
 │                       │      │                   certificate pool. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-295 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ bitnami: 3 
 │                       │      │                  ├ nvd    : 3 
 │                       │      │                  ╰ redhat : 2 
@@ -26182,7 +26248,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32281 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.35Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:57.75Z 
-│                       ├ [37] ╭ VulnerabilityID : CVE-2026-32283 
+│                       ├ [38] ╭ VulnerabilityID : CVE-2026-32283 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4870 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26212,7 +26278,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 3 
 │                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
@@ -26234,24 +26300,27 @@
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-32282 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32280 
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32282 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-│                       │      │                  ├ [11]: https://go.dev/cl/763767 
-│                       │      │                  ├ [12]: https://go.dev/issue/78334 
-│                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/763767 
+│                       │      │                  ├ [14]: https://go.dev/issue/78334 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32283.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
-│                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4870 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32283.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4870 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.58Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:12:10.54Z 
-│                       ├ [38] ╭ VulnerabilityID : CVE-2026-33811 
+│                       ├ [39] ╭ VulnerabilityID : CVE-2026-33811 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4981 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26294,7 +26363,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4981 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:42.77Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T20:23:02.333Z 
-│                       ├ [39] ╭ VulnerabilityID : CVE-2026-33814 
+│                       ├ [40] ╭ VulnerabilityID : CVE-2026-33814 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4918 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26338,7 +26407,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2026-4918 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:42.88Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T14:41:59.52Z 
-│                       ├ [40] ╭ VulnerabilityID : CVE-2026-39820 
+│                       ├ [41] ╭ VulnerabilityID : CVE-2026-39820 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4986 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26381,7 +26450,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4986 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.187Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:10:58.65Z 
-│                       ├ [41] ╭ VulnerabilityID : CVE-2026-39836 
+│                       ├ [42] ╭ VulnerabilityID : CVE-2026-39836 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4971 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26423,7 +26492,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4971 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-│                       ├ [42] ╭ VulnerabilityID : CVE-2026-42499 
+│                       ├ [43] ╭ VulnerabilityID : CVE-2026-42499 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4977 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26459,7 +26528,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4977 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-│                       ├ [43] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26519,7 +26588,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [44] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26569,7 +26638,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26617,7 +26686,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2025-58186 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4012 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26665,7 +26734,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58186 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26715,7 +26784,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26765,7 +26834,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26812,7 +26881,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26861,7 +26930,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26909,7 +26978,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -26956,7 +27025,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2025-61727 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2025-61727 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27004,7 +27073,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2025-61730 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2025-61730 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27023,8 +27092,8 @@
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                       │      ├ Fingerprint     : sha256:000852a4f50e1d5018c3e73d31906df429510c158f60789ce3a46
 │                       │      │                   a8757023e0e 
-│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records  ... 
+│                       │      ├ Title           : crypto/tls: Handshake messages may be processed at the
+│                       │      │                   incorrect encryption level in crypto/tls 
 │                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
 │                       │      │                   in records that span encryption level boundaries (for
 │                       │      │                   instance the Client Hello and Encrypted Extensions
@@ -27033,23 +27102,29 @@
 │                       │      │                   information disclosure if a network-local attacker can
 │                       │      │                   inject messages during the handshake. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ cbl-mariner: 1 
-│                       │      │                  ╰ photon     : 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  ├ photon     : 2 
+│                       │      │                  ╰ redhat     : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           N/A:N 
+│                       │      │                  │         ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                            │           N/A:N 
 │                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-│                       │      │                  ├ [1]: https://go.dev/issue/76443 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61730 
+│                       │      │                  ├ [1]: https://go.dev/cl/724120 
+│                       │      │                  ├ [2]: https://go.dev/issue/76443 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
 │                       │      │                  │      eUc 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
 │                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ├ [55] ╭ VulnerabilityID : CVE-2026-27142 
+│                       ├ [56] ╭ VulnerabilityID : CVE-2026-27142 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4603 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27079,7 +27154,7 @@
 │                       │      │                    follow "url=" by setting htmlmetacontenturlescape=0. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-79 
-│                       │      ├ VendorSeverity   ╭ amazon : 2 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
@@ -27098,7 +27173,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-27142 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:01.177Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:30:01.38Z 
-│                       ├ [56] ╭ VulnerabilityID : CVE-2026-32282 
+│                       ├ [57] ╭ VulnerabilityID : CVE-2026-32282 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4864 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27133,7 +27208,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-59 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ oracle-oval: 3 
@@ -27155,24 +27230,27 @@
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-32282 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32280 
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32282 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-│                       │      │                  ├ [11]: https://go.dev/cl/763761 
-│                       │      │                  ├ [12]: https://go.dev/issue/78293 
-│                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/763761 
+│                       │      │                  ├ [14]: https://go.dev/issue/78293 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32282.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
-│                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4864 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32282.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4864 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
-│                       ├ [57] ╭ VulnerabilityID : CVE-2026-32288 
+│                       ├ [58] ╭ VulnerabilityID : CVE-2026-32288 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4869 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27200,11 +27278,11 @@
 │                       │      │                    format. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ azure  : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ├ nvd    : 2 
-│                       │      │                  ├ photon : 3 
+│                       │      │                  ├ photon : 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                       │      │                  │         │           N/A:H 
@@ -27225,7 +27303,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32288 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.707Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:08:52.24Z 
-│                       ├ [58] ╭ VulnerabilityID : CVE-2026-32289 
+│                       ├ [59] ╭ VulnerabilityID : CVE-2026-32289 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4865 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27258,10 +27336,10 @@
 │                       │      │                   escaped, leading to XSS vulnerabilities. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-79 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ├ nvd    : 2 
-│                       │      │                  ├ photon : 4 
+│                       │      │                  ├ photon : 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
 │                       │      │                  │         │           L/A:N 
@@ -27282,7 +27360,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32289 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.82Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:06:57.367Z 
-│                       ├ [59] ╭ VulnerabilityID : CVE-2026-39823 
+│                       ├ [60] ╭ VulnerabilityID : CVE-2026-39823 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4982 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27323,7 +27401,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4982 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.29Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:45.697Z 
-│                       ├ [60] ╭ VulnerabilityID : CVE-2026-39825 
+│                       ├ [61] ╭ VulnerabilityID : CVE-2026-39825 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4976 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27370,7 +27448,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4976 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-│                       ├ [61] ╭ VulnerabilityID : CVE-2026-39826 
+│                       ├ [62] ╭ VulnerabilityID : CVE-2026-39826 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -27410,7 +27488,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4980 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-│                       ╰ [62] ╭ VulnerabilityID : CVE-2026-27139 
+│                       ╰ [63] ╭ VulnerabilityID : CVE-2026-27139 
 │                              ├ VendorIDs        ─ [0]: GO-2026-4602 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -27439,7 +27517,7 @@
 │                              │                   outside the root. 
 │                              ├ Severity        : LOW 
 │                              ├ CweIDs           ─ [0]: CWE-22 
-│                              ├ VendorSeverity   ╭ amazon : 2 
+│                              ├ VendorSeverity   ╭ amazon : 3 
 │                              │                  ├ azure  : 1 
 │                              │                  ├ bitnami: 1 
 │                              │                  ╰ redhat : 1 
@@ -27966,7 +28044,68 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-33997 
 │                       │      ├ PublishedDate   : 2026-03-31T03:15:57.523Z 
 │                       │      ╰ LastModifiedDate: 2026-04-03T17:23:21.307Z 
-│                       ├ [8]  ╭ VulnerabilityID : CVE-2026-44740 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2026-44973 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-qw64-3x98-g7q2 
+│                       │      ├ PkgID           : github.com/go-git/go-billy/v5@v5.6.2 
+│                       │      ├ PkgName         : github.com/go-git/go-billy/v5 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2 
+│                       │      │                  ╰ UID : f4cd9b079e72f037 
+│                       │      ├ InstalledVersion: v5.6.2 
+│                       │      ├ FixedVersion    : 5.9.0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44973 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Go 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:13a59d10115c548a45efac60d984d55f539b1c2f6b5e2948be060
+│                       │      │                   58490d1e5a9 
+│                       │      ├ Title           : go-billy has path traversal vulnerabilities 
+│                       │      ├ Description     : ### Impact
+│                       │      │                   Multiple path traversal issues exist across different
+│                       │      │                   components of `go-billy`. Insufficient path sanitization and
+│                       │      │                    boundary enforcement may allow crafted paths (e.g., using
+│                       │      │                   `..`) to escape intended base directories.
+│                       │      │                   
+│                       │      │                   While go-billy was not originally designed to provide a
+│                       │      │                   strong security boundary, some of these issues were
+│                       │      │                   inconsistent across some of the built-in implementations.
+│                       │      │                   This results in scenarios where applications relying on
+│                       │      │                   `go-billy` for some level of isolation may inadvertently
+│                       │      │                   expose access to unintended filesystem locations.
+│                       │      │                   The `osfs.ChrootOS` implementation is notably affected by
+│                       │      │                   this vulnerability and is now deprecated in `v5`, removed at
+│                       │      │                    `v6`. Users are recommended to move on to `osfs.BoundOS`
+│                       │      │                   instead: `osfs.New(path, WithBoundOS())`.
+│                       │      │                   Users requiring stronger security boundary enforcement are
+│                       │      │                   recommended to upgrade to `v6`, where the `osfs`
+│                       │      │                   implementation are backed by the
+│                       │      │                   [traversal-resistant](https://go.dev/blog/osroot) primitive
+│                       │      │                   [os.Root](https://pkg.go.dev/os#Root).
+│                       │      │                   ### Patches
+│                       │      │                   Users should upgrade to a patched version in order to
+│                       │      │                   mitigate this vulnerability. Versions prior to `v5` are
+│                       │      │                   likely to be affected, users are recommended to upgrade to a
+│                       │      │                    supported `go-billy` version.
+│                       │      │                   ### Credits
+│                       │      │                   Thanks to @faran66 and @vnykmshr for finding and separately
+│                       │      │                   reporting this issue privately to the go-git project. 🙇 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N 
+│                       │      │                         ╰ V3Score : 8.1 
+│                       │      ╰ References       ╭ [0]: https://github.com/go-git/go-billy 
+│                       │                         ├ [1]: https://github.com/go-git/go-billy/releases/tag/v5.9.0 
+│                       │                         ├ [2]: https://github.com/go-git/go-billy/releases/tag/v6.0.0
+│                       │                         │      -alpha.1 
+│                       │                         ╰ [3]: https://github.com/go-git/go-billy/security/advisories
+│                       │                                /GHSA-qw64-3x98-g7q2 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2026-44740 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-m3xc-h892-ggx6 
 │                       │      ├ PkgID           : github.com/go-git/go-billy/v5@v5.6.2 
 │                       │      ├ PkgName         : github.com/go-git/go-billy/v5 
@@ -28017,7 +28156,7 @@
 │                       │                         │      -alpha.1 
 │                       │                         ╰ [3]: https://github.com/go-git/go-billy/security/advisories
 │                       │                                /GHSA-m3xc-h892-ggx6 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2026-45022 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2026-45022 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-389r-gv7p-r3rp 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -28078,7 +28217,7 @@
 │                       │      ╰ References       ╭ [0]: https://github.com/go-git/go-git 
 │                       │                         ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
 │                       │                                HSA-389r-gv7p-r3rp 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2026-25934 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2026-25934 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-37cx-329c-33x3 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -28140,7 +28279,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-25934 
 │                       │      ├ PublishedDate   : 2026-02-09T23:16:05.937Z 
 │                       │      ╰ LastModifiedDate: 2026-02-20T20:21:19.26Z 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2026-34165 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2026-34165 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-jhf3-xxhw-2wpp 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -28192,7 +28331,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-34165 
 │                       │      ├ PublishedDate   : 2026-03-31T15:16:17.343Z 
 │                       │      ╰ LastModifiedDate: 2026-04-02T16:49:16.047Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2026-41506 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2026-41506 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-3xc5-wrhm-f963 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -28238,7 +28377,7 @@
 │                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
 │                       │      ├ PublishedDate   : 2026-05-08T14:16:33.983Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T14:33:02.04Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2026-33762 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2026-33762 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-gm2x-2g9h-ccm8 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -28290,7 +28429,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-33762 
 │                       │      ├ PublishedDate   : 2026-03-31T15:16:15.597Z 
 │                       │      ╰ LastModifiedDate: 2026-04-02T16:49:29.7Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2025-11065 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2025-11065 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-2464-8j7c-4cjm 
 │                       │      ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.3.0 
 │                       │      ├ PkgName         : github.com/go-viper/mapstructure/v2 
@@ -28345,7 +28484,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11065 
 │                       │      ├ PublishedDate   : 2026-01-26T20:16:06.84Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2025-8959 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2025-8959 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-wjrx-6529-hcj3 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
 │                       │      ├ PkgName         : github.com/hashicorp/go-getter 
@@ -28396,7 +28535,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-8959 
 │                       │      ├ PublishedDate   : 2025-08-15T21:15:37.347Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:56:22.32Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2026-4660 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2026-4660 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-92mm-2pjq-r785 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
 │                       │      ├ PkgName         : github.com/hashicorp/go-getter 
@@ -28444,7 +28583,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-4660 
 │                       │      ├ PublishedDate   : 2026-04-09T14:16:32.993Z 
 │                       │      ╰ LastModifiedDate: 2026-04-13T15:02:47.353Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-11579 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-11579 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-rwvp-r38j-9rgg 
 │                       │      ├ PkgID           : github.com/nwaples/rardecode@v1.1.3 
 │                       │      ├ PkgName         : github.com/nwaples/rardecode 
@@ -28493,7 +28632,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
 │                       │      ╰ LastModifiedDate: 2026-01-16T20:56:26.367Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-11579 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-11579 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-rwvp-r38j-9rgg 
 │                       │      ├ PkgID           : github.com/nwaples/rardecode/v2@v2.1.0 
 │                       │      ├ PkgName         : github.com/nwaples/rardecode/v2 
@@ -28543,7 +28682,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-11579 
 │                       │      ├ PublishedDate   : 2025-10-10T12:15:37.743Z 
 │                       │      ╰ LastModifiedDate: 2026-01-16T20:56:26.367Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2025-52881 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-cgrx-mc8f-2prm 
 │                       │      ├ PkgID           : github.com/opencontainers/selinux@v1.11.0 
 │                       │      ├ PkgName         : github.com/opencontainers/selinux 
@@ -28679,7 +28818,7 @@
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
 │                       │      ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2025-58058 
+│                       ├ [21] ╭ VulnerabilityID : CVE-2025-58058 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-jc7w-c686-c4v9 
 │                       │      ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │      ├ PkgName         : github.com/ulikunitz/xz 
@@ -28735,7 +28874,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58058 
 │                       │      ├ PublishedDate   : 2025-08-28T22:15:32.577Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2026-29181 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2026-29181 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-mh2q-q3fh-2475 
 │                       │      ├ PkgID           : go.opentelemetry.io/otel@v1.36.0 
 │                       │      ├ PkgName         : go.opentelemetry.io/otel 
@@ -28783,7 +28922,7 @@
 │                       │      │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-29181 
 │                       │      ├ PublishedDate   : 2026-04-07T21:17:16.003Z 
 │                       │      ╰ LastModifiedDate: 2026-04-14T18:45:01.363Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2025-47914 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2025-47914 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-f6x5-jh6r-wrfv 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.39.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -28832,7 +28971,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47914 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.517Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:36:41.373Z 
-│                       ├ [23] ╭ VulnerabilityID : CVE-2025-58181 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2025-58181 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-j5w8-q4qc-rx2x 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.39.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -28888,7 +29027,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:29:24.9Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2026-33186 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2026-33186 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-p77j-4mvh-x3m3 
 │                       │      ├ PkgID           : google.golang.org/grpc@v1.67.3 
 │                       │      ├ PkgName         : google.golang.org/grpc 
@@ -28964,7 +29103,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-33186 
 │                       │      ├ PublishedDate   : 2026-03-20T23:16:45.18Z 
 │                       │      ╰ LastModifiedDate: 2026-04-10T20:49:17.737Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2025-68121 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2025-68121 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4337 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29044,7 +29183,7 @@
 │                       │      │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2025-68121 
 │                       │      ├ PublishedDate   : 2026-02-05T18:16:10.857Z 
 │                       │      ╰ LastModifiedDate: 2026-04-29T14:16:16.17Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3849 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29105,7 +29244,7 @@
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │      ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T19:11:50.67Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2025-58183 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2025-58183 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4014 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29169,7 +29308,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2025-61726 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2025-61726 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4341 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29237,7 +29376,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:47:34.52Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2025-61728 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29310,7 +29449,7 @@
 │                       │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2025-61729 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4155 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29381,7 +29520,7 @@
 │                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2026-25679 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2026-25679 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4601 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29437,7 +29576,7 @@
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25679 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:00.72Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:43:03.8Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2026-32280 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2026-32280 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4947 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29466,7 +29605,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 3 
@@ -29485,35 +29624,26 @@
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
 │                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-│                       │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2456340 
-│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2456341 
-│                       │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2456342 
-│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27140 
-│                       │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27143 
-│                       │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27144 
-│                       │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32280 
-│                       │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32282 
-│                       │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [18]: https://errata.rockylinux.org/RLSA-2026:10219 
-│                       │      │                  ├ [19]: https://go.dev/cl/758320 
-│                       │      │                  ├ [20]: https://go.dev/issue/78282 
-│                       │      │                  ├ [21]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/758320 
+│                       │      │                  ├ [14]: https://go.dev/issue/78282 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [22]: https://linux.oracle.com/cve/CVE-2026-32280.html 
-│                       │      │                  ├ [23]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
-│                       │      │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
-│                       │      │                  ├ [25]: https://pkg.go.dev/vuln/GO-2026-4947 
-│                       │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32280.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4947 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.247Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:16:42.18Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2026-32281 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2026-32281 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4946 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29544,7 +29674,7 @@
 │                       │      │                   certificate pool. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-295 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ bitnami: 3 
 │                       │      │                  ├ nvd    : 3 
 │                       │      │                  ╰ redhat : 2 
@@ -29567,7 +29697,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32281 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.35Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:57.75Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2026-32283 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2026-32283 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4870 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29597,7 +29727,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 3 
 │                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
@@ -29619,24 +29749,27 @@
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-32282 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32280 
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32282 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-│                       │      │                  ├ [11]: https://go.dev/cl/763767 
-│                       │      │                  ├ [12]: https://go.dev/issue/78334 
-│                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/763767 
+│                       │      │                  ├ [14]: https://go.dev/issue/78334 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32283.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
-│                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4870 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32283.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4870 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.58Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:12:10.54Z 
-│                       ├ [35] ╭ VulnerabilityID : CVE-2026-33811 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2026-33811 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4981 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29679,7 +29812,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4981 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:42.77Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T20:23:02.333Z 
-│                       ├ [36] ╭ VulnerabilityID : CVE-2026-33814 
+│                       ├ [37] ╭ VulnerabilityID : CVE-2026-33814 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4918 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29723,7 +29856,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2026-4918 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:42.88Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T14:41:59.52Z 
-│                       ├ [37] ╭ VulnerabilityID : CVE-2026-39820 
+│                       ├ [38] ╭ VulnerabilityID : CVE-2026-39820 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4986 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29766,7 +29899,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4986 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.187Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:10:58.65Z 
-│                       ├ [38] ╭ VulnerabilityID : CVE-2026-39836 
+│                       ├ [39] ╭ VulnerabilityID : CVE-2026-39836 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4971 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29808,7 +29941,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4971 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-│                       ├ [39] ╭ VulnerabilityID : CVE-2026-42499 
+│                       ├ [40] ╭ VulnerabilityID : CVE-2026-42499 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4977 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29844,7 +29977,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4977 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-│                       ├ [40] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [41] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29904,7 +30037,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [41] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [42] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29954,7 +30087,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [42] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [43] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30002,7 +30135,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
-│                       ├ [43] ╭ VulnerabilityID : CVE-2025-58186 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4012 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30050,7 +30183,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58186 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [44] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30100,7 +30233,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30150,7 +30283,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30197,7 +30330,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30246,7 +30379,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30294,7 +30427,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30341,7 +30474,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2025-61727 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2025-61727 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30389,7 +30522,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2025-61730 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2025-61730 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30408,8 +30541,8 @@
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                       │      ├ Fingerprint     : sha256:eb0d91bc0ba311efd9b0e910722a4de32e2f8b93eb8aa9a8dd67e
 │                       │      │                   06fe4e7b78e 
-│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records  ... 
+│                       │      ├ Title           : crypto/tls: Handshake messages may be processed at the
+│                       │      │                   incorrect encryption level in crypto/tls 
 │                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
 │                       │      │                   in records that span encryption level boundaries (for
 │                       │      │                   instance the Client Hello and Encrypted Extensions
@@ -30418,23 +30551,29 @@
 │                       │      │                   information disclosure if a network-local attacker can
 │                       │      │                   inject messages during the handshake. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ cbl-mariner: 1 
-│                       │      │                  ╰ photon     : 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  ├ photon     : 2 
+│                       │      │                  ╰ redhat     : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           N/A:N 
+│                       │      │                  │         ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                            │           N/A:N 
 │                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-│                       │      │                  ├ [1]: https://go.dev/issue/76443 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61730 
+│                       │      │                  ├ [1]: https://go.dev/cl/724120 
+│                       │      │                  ├ [2]: https://go.dev/issue/76443 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
 │                       │      │                  │      eUc 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
 │                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2026-27142 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2026-27142 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4603 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30464,7 +30603,7 @@
 │                       │      │                    follow "url=" by setting htmlmetacontenturlescape=0. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-79 
-│                       │      ├ VendorSeverity   ╭ amazon : 2 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
@@ -30483,7 +30622,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-27142 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:01.177Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:30:01.38Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2026-32282 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2026-32282 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4864 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30518,7 +30657,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-59 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ oracle-oval: 3 
@@ -30540,24 +30679,27 @@
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-32282 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32280 
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32282 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-│                       │      │                  ├ [11]: https://go.dev/cl/763761 
-│                       │      │                  ├ [12]: https://go.dev/issue/78293 
-│                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/763761 
+│                       │      │                  ├ [14]: https://go.dev/issue/78293 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32282.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
-│                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4864 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32282.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4864 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2026-32288 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2026-32288 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4869 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30585,11 +30727,11 @@
 │                       │      │                    format. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ azure  : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ├ nvd    : 2 
-│                       │      │                  ├ photon : 3 
+│                       │      │                  ├ photon : 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                       │      │                  │         │           N/A:H 
@@ -30610,7 +30752,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32288 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.707Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:08:52.24Z 
-│                       ├ [55] ╭ VulnerabilityID : CVE-2026-32289 
+│                       ├ [56] ╭ VulnerabilityID : CVE-2026-32289 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4865 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30643,10 +30785,10 @@
 │                       │      │                   escaped, leading to XSS vulnerabilities. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-79 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ├ nvd    : 2 
-│                       │      │                  ├ photon : 4 
+│                       │      │                  ├ photon : 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
 │                       │      │                  │         │           L/A:N 
@@ -30667,7 +30809,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32289 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.82Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:06:57.367Z 
-│                       ├ [56] ╭ VulnerabilityID : CVE-2026-39823 
+│                       ├ [57] ╭ VulnerabilityID : CVE-2026-39823 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4982 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30708,7 +30850,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4982 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.29Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:45.697Z 
-│                       ├ [57] ╭ VulnerabilityID : CVE-2026-39825 
+│                       ├ [58] ╭ VulnerabilityID : CVE-2026-39825 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4976 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30755,7 +30897,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4976 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-│                       ├ [58] ╭ VulnerabilityID : CVE-2026-39826 
+│                       ├ [59] ╭ VulnerabilityID : CVE-2026-39826 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30795,7 +30937,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4980 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-│                       ╰ [59] ╭ VulnerabilityID : CVE-2026-27139 
+│                       ╰ [60] ╭ VulnerabilityID : CVE-2026-27139 
 │                              ├ VendorIDs        ─ [0]: GO-2026-4602 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -30824,7 +30966,7 @@
 │                              │                   outside the root. 
 │                              ├ Severity        : LOW 
 │                              ├ CweIDs           ─ [0]: CWE-22 
-│                              ├ VendorSeverity   ╭ amazon : 2 
+│                              ├ VendorSeverity   ╭ amazon : 3 
 │                              │                  ├ azure  : 1 
 │                              │                  ├ bitnami: 1 
 │                              │                  ╰ redhat : 1 
@@ -31485,7 +31627,68 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-33997 
 │                       │      ├ PublishedDate   : 2026-03-31T03:15:57.523Z 
 │                       │      ╰ LastModifiedDate: 2026-04-03T17:23:21.307Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2026-44740 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2026-44973 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-qw64-3x98-g7q2 
+│                       │      ├ PkgID           : github.com/go-git/go-billy/v5@v5.6.2 
+│                       │      ├ PkgName         : github.com/go-git/go-billy/v5 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/go-git/go-billy/v5@v5.6.2 
+│                       │      │                  ╰ UID : d1472c35066fc22d 
+│                       │      ├ InstalledVersion: v5.6.2 
+│                       │      ├ FixedVersion    : 5.9.0 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-44973 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Go 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Ago 
+│                       │      ├ Fingerprint     : sha256:c834e52e274727568624a8dc60b3ea549c37ab0e5014f5c906ea2
+│                       │      │                   5268eabe787 
+│                       │      ├ Title           : go-billy has path traversal vulnerabilities 
+│                       │      ├ Description     : ### Impact
+│                       │      │                   Multiple path traversal issues exist across different
+│                       │      │                   components of `go-billy`. Insufficient path sanitization and
+│                       │      │                    boundary enforcement may allow crafted paths (e.g., using
+│                       │      │                   `..`) to escape intended base directories.
+│                       │      │                   
+│                       │      │                   While go-billy was not originally designed to provide a
+│                       │      │                   strong security boundary, some of these issues were
+│                       │      │                   inconsistent across some of the built-in implementations.
+│                       │      │                   This results in scenarios where applications relying on
+│                       │      │                   `go-billy` for some level of isolation may inadvertently
+│                       │      │                   expose access to unintended filesystem locations.
+│                       │      │                   The `osfs.ChrootOS` implementation is notably affected by
+│                       │      │                   this vulnerability and is now deprecated in `v5`, removed at
+│                       │      │                    `v6`. Users are recommended to move on to `osfs.BoundOS`
+│                       │      │                   instead: `osfs.New(path, WithBoundOS())`.
+│                       │      │                   Users requiring stronger security boundary enforcement are
+│                       │      │                   recommended to upgrade to `v6`, where the `osfs`
+│                       │      │                   implementation are backed by the
+│                       │      │                   [traversal-resistant](https://go.dev/blog/osroot) primitive
+│                       │      │                   [os.Root](https://pkg.go.dev/os#Root).
+│                       │      │                   ### Patches
+│                       │      │                   Users should upgrade to a patched version in order to
+│                       │      │                   mitigate this vulnerability. Versions prior to `v5` are
+│                       │      │                   likely to be affected, users are recommended to upgrade to a
+│                       │      │                    supported `go-billy` version.
+│                       │      │                   ### Credits
+│                       │      │                   Thanks to @faran66 and @vnykmshr for finding and separately
+│                       │      │                   reporting this issue privately to the go-git project. 🙇 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N 
+│                       │      │                         ╰ V3Score : 8.1 
+│                       │      ╰ References       ╭ [0]: https://github.com/go-git/go-billy 
+│                       │                         ├ [1]: https://github.com/go-git/go-billy/releases/tag/v5.9.0 
+│                       │                         ├ [2]: https://github.com/go-git/go-billy/releases/tag/v6.0.0
+│                       │                         │      -alpha.1 
+│                       │                         ╰ [3]: https://github.com/go-git/go-billy/security/advisories
+│                       │                                /GHSA-qw64-3x98-g7q2 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2026-44740 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-m3xc-h892-ggx6 
 │                       │      ├ PkgID           : github.com/go-git/go-billy/v5@v5.6.2 
 │                       │      ├ PkgName         : github.com/go-git/go-billy/v5 
@@ -31536,7 +31739,7 @@
 │                       │                         │      -alpha.1 
 │                       │                         ╰ [3]: https://github.com/go-git/go-billy/security/advisories
 │                       │                                /GHSA-m3xc-h892-ggx6 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2026-45022 
+│                       ├ [12] ╭ VulnerabilityID : CVE-2026-45022 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-389r-gv7p-r3rp 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -31597,7 +31800,7 @@
 │                       │      ╰ References       ╭ [0]: https://github.com/go-git/go-git 
 │                       │                         ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
 │                       │                                HSA-389r-gv7p-r3rp 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2026-25934 
+│                       ├ [13] ╭ VulnerabilityID : CVE-2026-25934 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-37cx-329c-33x3 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -31659,7 +31862,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-25934 
 │                       │      ├ PublishedDate   : 2026-02-09T23:16:05.937Z 
 │                       │      ╰ LastModifiedDate: 2026-02-20T20:21:19.26Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2026-34165 
+│                       ├ [14] ╭ VulnerabilityID : CVE-2026-34165 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-jhf3-xxhw-2wpp 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -31711,7 +31914,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-34165 
 │                       │      ├ PublishedDate   : 2026-03-31T15:16:17.343Z 
 │                       │      ╰ LastModifiedDate: 2026-04-02T16:49:16.047Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2026-41506 
+│                       ├ [15] ╭ VulnerabilityID : CVE-2026-41506 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-3xc5-wrhm-f963 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -31757,7 +31960,7 @@
 │                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
 │                       │      ├ PublishedDate   : 2026-05-08T14:16:33.983Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T14:33:02.04Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2026-33762 
+│                       ├ [16] ╭ VulnerabilityID : CVE-2026-33762 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-gm2x-2g9h-ccm8 
 │                       │      ├ PkgID           : github.com/go-git/go-git/v5@v5.16.2 
 │                       │      ├ PkgName         : github.com/go-git/go-git/v5 
@@ -31809,7 +32012,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-33762 
 │                       │      ├ PublishedDate   : 2026-03-31T15:16:15.597Z 
 │                       │      ╰ LastModifiedDate: 2026-04-02T16:49:29.7Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2026-34986 
+│                       ├ [17] ╭ VulnerabilityID : CVE-2026-34986 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-78h2-9frx-2jm8 
 │                       │      ├ PkgID           : github.com/go-jose/go-jose/v4@v4.0.5 
 │                       │      ├ PkgName         : github.com/go-jose/go-jose/v4 
@@ -31888,7 +32091,7 @@
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-34986 
 │                       │      ├ PublishedDate   : 2026-04-06T17:17:11.87Z 
 │                       │      ╰ LastModifiedDate: 2026-05-04T15:20:44.337Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2025-11065 
+│                       ├ [18] ╭ VulnerabilityID : CVE-2025-11065 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-2464-8j7c-4cjm 
 │                       │      ├ PkgID           : github.com/go-viper/mapstructure/v2@v2.3.0 
 │                       │      ├ PkgName         : github.com/go-viper/mapstructure/v2 
@@ -31943,7 +32146,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11065 
 │                       │      ├ PublishedDate   : 2026-01-26T20:16:06.84Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2025-8959 
+│                       ├ [19] ╭ VulnerabilityID : CVE-2025-8959 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-wjrx-6529-hcj3 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
 │                       │      ├ PkgName         : github.com/hashicorp/go-getter 
@@ -31994,7 +32197,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-8959 
 │                       │      ├ PublishedDate   : 2025-08-15T21:15:37.347Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:56:22.32Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2026-4660 
+│                       ├ [20] ╭ VulnerabilityID : CVE-2026-4660 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-92mm-2pjq-r785 
 │                       │      ├ PkgID           : github.com/hashicorp/go-getter@v1.7.8 
 │                       │      ├ PkgName         : github.com/hashicorp/go-getter 
@@ -32042,7 +32245,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-4660 
 │                       │      ├ PublishedDate   : 2026-04-09T14:16:32.993Z 
 │                       │      ╰ LastModifiedDate: 2026-04-13T15:02:47.353Z 
-│                       ├ [20] ╭ VulnerabilityID : GHSA-pmwq-pjrm-6p5r 
+│                       ├ [21] ╭ VulnerabilityID : GHSA-pmwq-pjrm-6p5r 
 │                       │      ├ PkgID           : github.com/in-toto/in-toto-golang@v0.9.0 
 │                       │      ├ PkgName         : github.com/in-toto/in-toto-golang 
 │                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/github.com/in-toto/in-toto-golang@v0.9.0 
@@ -32101,7 +32304,7 @@
 │                       │      │                         isories/GHSA-pmwq-pjrm-6p5r 
 │                       │      ├ PublishedDate   : 2026-05-08T22:24:19Z 
 │                       │      ╰ LastModifiedDate: 2026-05-08T22:24:19Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2026-33747 
+│                       ├ [22] ╭ VulnerabilityID : CVE-2026-33747 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-4c29-8rgm-jvjj 
 │                       │      ├ PkgID           : github.com/moby/buildkit@v0.23.1 
 │                       │      ├ PkgName         : github.com/moby/buildkit 
@@ -32159,7 +32362,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-33747 
 │                       │      ├ PublishedDate   : 2026-03-27T01:16:21.33Z 
 │                       │      ╰ LastModifiedDate: 2026-04-01T14:34:48.21Z 
-│                       ├ [22] ╭ VulnerabilityID : CVE-2026-33748 
+│                       ├ [23] ╭ VulnerabilityID : CVE-2026-33748 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-4vrq-3vrq-g6gg 
 │                       │      ├ PkgID           : github.com/moby/buildkit@v0.23.1 
 │                       │      ├ PkgName         : github.com/moby/buildkit 
@@ -32197,7 +32400,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ╭ [0]: CWE-22 
 │                       │      │                  ╰ [1]: CWE-59 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ ghsa  : 3 
 │                       │      │                  ├ nvd   : 3 
 │                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
@@ -32225,7 +32429,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-33748 
 │                       │      ├ PublishedDate   : 2026-03-27T15:16:57.127Z 
 │                       │      ╰ LastModifiedDate: 2026-04-20T12:37:46.22Z 
-│                       ├ [23] ╭ VulnerabilityID : CVE-2026-35469 
+│                       ├ [24] ╭ VulnerabilityID : CVE-2026-35469 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-pc3f-x583-g7j2 
 │                       │      ├ PkgID           : github.com/moby/spdystream@v0.5.0 
 │                       │      ├ PkgName         : github.com/moby/spdystream 
@@ -32282,7 +32486,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35469 
 │                       │      ├ PublishedDate   : 2026-04-16T22:16:37.92Z 
 │                       │      ╰ LastModifiedDate: 2026-04-29T21:04:10.06Z 
-│                       ├ [24] ╭ VulnerabilityID : CVE-2025-52881 
+│                       ├ [25] ╭ VulnerabilityID : CVE-2025-52881 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-cgrx-mc8f-2prm 
 │                       │      ├ PkgID           : github.com/opencontainers/selinux@v1.12.0 
 │                       │      ├ PkgName         : github.com/opencontainers/selinux 
@@ -32418,7 +32622,7 @@
 │                       │      │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │      ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
 │                       │      ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
-│                       ├ [25] ╭ VulnerabilityID : CVE-2026-22703 
+│                       ├ [26] ╭ VulnerabilityID : CVE-2026-22703 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-whqx-f9j3-ch6m 
 │                       │      ├ PkgID           : github.com/sigstore/cosign/v2@v2.2.4 
 │                       │      ├ PkgName         : github.com/sigstore/cosign/v2 
@@ -32487,7 +32691,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-22703 
 │                       │      ├ PublishedDate   : 2026-01-10T07:16:03.03Z 
 │                       │      ╰ LastModifiedDate: 2026-02-05T20:59:07.633Z 
-│                       ├ [26] ╭ VulnerabilityID : CVE-2026-23831 
+│                       ├ [27] ╭ VulnerabilityID : CVE-2026-23831 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-273p-m2cw-6833 
 │                       │      ├ PkgID           : github.com/sigstore/rekor@v1.3.10 
 │                       │      ├ PkgName         : github.com/sigstore/rekor 
@@ -32542,7 +32746,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-23831 
 │                       │      ├ PublishedDate   : 2026-01-22T22:16:19.523Z 
 │                       │      ╰ LastModifiedDate: 2026-02-02T15:06:43.427Z 
-│                       ├ [27] ╭ VulnerabilityID : CVE-2026-24117 
+│                       ├ [28] ╭ VulnerabilityID : CVE-2026-24117 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-4c4x-jm2x-pf9j 
 │                       │      ├ PkgID           : github.com/sigstore/rekor@v1.3.10 
 │                       │      ├ PkgName         : github.com/sigstore/rekor 
@@ -32599,7 +32803,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-24117 
 │                       │      ├ PublishedDate   : 2026-01-22T22:16:21.577Z 
 │                       │      ╰ LastModifiedDate: 2026-02-02T15:07:44.88Z 
-│                       ├ [28] ╭ VulnerabilityID : CVE-2026-24137 
+│                       ├ [29] ╭ VulnerabilityID : CVE-2026-24137 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-fcv2-xgw5-pqxf 
 │                       │      ├ PkgID           : github.com/sigstore/sigstore@v1.9.1 
 │                       │      ├ PkgName         : github.com/sigstore/sigstore 
@@ -32667,7 +32871,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-24137 
 │                       │      ├ PublishedDate   : 2026-01-23T00:15:52.553Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [29] ╭ VulnerabilityID : CVE-2025-66564 
+│                       ├ [30] ╭ VulnerabilityID : CVE-2025-66564 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-4qg8-fj49-pxjh 
 │                       │      ├ PkgID           : github.com/sigstore/timestamp-authority@v1.2.2 
 │                       │      ├ PkgName         : github.com/sigstore/timestamp-authority 
@@ -32727,7 +32931,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-66564 
 │                       │      ├ PublishedDate   : 2025-12-04T23:15:47.43Z 
 │                       │      ╰ LastModifiedDate: 2026-03-17T20:38:33.343Z 
-│                       ├ [30] ╭ VulnerabilityID : CVE-2025-58058 
+│                       ├ [31] ╭ VulnerabilityID : CVE-2025-58058 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-jc7w-c686-c4v9 
 │                       │      ├ PkgID           : github.com/ulikunitz/xz@v0.5.12 
 │                       │      ├ PkgName         : github.com/ulikunitz/xz 
@@ -32783,7 +32987,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58058 
 │                       │      ├ PublishedDate   : 2025-08-28T22:15:32.577Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [31] ╭ VulnerabilityID : CVE-2026-29181 
+│                       ├ [32] ╭ VulnerabilityID : CVE-2026-29181 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-mh2q-q3fh-2475 
 │                       │      ├ PkgID           : go.opentelemetry.io/otel@v1.36.0 
 │                       │      ├ PkgName         : go.opentelemetry.io/otel 
@@ -32831,7 +33035,7 @@
 │                       │      │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-29181 
 │                       │      ├ PublishedDate   : 2026-04-07T21:17:16.003Z 
 │                       │      ╰ LastModifiedDate: 2026-04-14T18:45:01.363Z 
-│                       ├ [32] ╭ VulnerabilityID : CVE-2026-24051 
+│                       ├ [33] ╭ VulnerabilityID : CVE-2026-24051 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-9h8m-3fm2-qjrq 
 │                       │      ├ PkgID           : go.opentelemetry.io/otel/sdk@v1.36.0 
 │                       │      ├ PkgName         : go.opentelemetry.io/otel/sdk 
@@ -32877,7 +33081,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4394 
 │                       │      ├ PublishedDate   : 2026-02-02T23:16:07.963Z 
 │                       │      ╰ LastModifiedDate: 2026-02-27T20:32:10.693Z 
-│                       ├ [33] ╭ VulnerabilityID : CVE-2026-39883 
+│                       ├ [34] ╭ VulnerabilityID : CVE-2026-39883 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-hfvc-g4fc-pqhx 
 │                       │      ├ PkgID           : go.opentelemetry.io/otel/sdk@v1.36.0 
 │                       │      ├ PkgName         : go.opentelemetry.io/otel/sdk 
@@ -32923,7 +33127,7 @@
 │                       │      │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-39883 
 │                       │      ├ PublishedDate   : 2026-04-08T21:17:00.697Z 
 │                       │      ╰ LastModifiedDate: 2026-04-10T21:16:27.12Z 
-│                       ├ [34] ╭ VulnerabilityID : CVE-2025-47914 
+│                       ├ [35] ╭ VulnerabilityID : CVE-2025-47914 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-f6x5-jh6r-wrfv 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.39.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -32972,7 +33176,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47914 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.517Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:36:41.373Z 
-│                       ├ [35] ╭ VulnerabilityID : CVE-2025-58181 
+│                       ├ [36] ╭ VulnerabilityID : CVE-2025-58181 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-j5w8-q4qc-rx2x 
 │                       │      ├ PkgID           : golang.org/x/crypto@v0.39.0 
 │                       │      ├ PkgName         : golang.org/x/crypto 
@@ -33028,7 +33232,7 @@
 │                       │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-58181 
 │                       │      ├ PublishedDate   : 2025-11-19T21:15:50.85Z 
 │                       │      ╰ LastModifiedDate: 2025-12-11T19:29:24.9Z 
-│                       ├ [36] ╭ VulnerabilityID : CVE-2026-33186 
+│                       ├ [37] ╭ VulnerabilityID : CVE-2026-33186 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-p77j-4mvh-x3m3 
 │                       │      ├ PkgID           : google.golang.org/grpc@v1.72.2 
 │                       │      ├ PkgName         : google.golang.org/grpc 
@@ -33104,7 +33308,7 @@
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-33186 
 │                       │      ├ PublishedDate   : 2026-03-20T23:16:45.18Z 
 │                       │      ╰ LastModifiedDate: 2026-04-10T20:49:17.737Z 
-│                       ├ [37] ╭ VulnerabilityID : CVE-2025-53547 
+│                       ├ [38] ╭ VulnerabilityID : CVE-2025-53547 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-557j-xg8c-q2mm 
 │                       │      ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                       │      ├ PkgName         : helm.sh/helm/v3 
@@ -33170,7 +33374,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-53547 
 │                       │      ├ PublishedDate   : 2025-07-08T22:15:27.897Z 
 │                       │      ╰ LastModifiedDate: 2025-09-03T16:26:24.77Z 
-│                       ├ [38] ╭ VulnerabilityID : CVE-2025-55198 
+│                       ├ [39] ╭ VulnerabilityID : CVE-2025-55198 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-f9f8-9pmf-xv68 
 │                       │      ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                       │      ├ PkgName         : helm.sh/helm/v3 
@@ -33223,7 +33427,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-55198 
 │                       │      ├ PublishedDate   : 2025-08-14T00:15:26.557Z 
 │                       │      ╰ LastModifiedDate: 2025-08-21T21:28:21.383Z 
-│                       ├ [39] ╭ VulnerabilityID : CVE-2025-55199 
+│                       ├ [40] ╭ VulnerabilityID : CVE-2025-55199 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-9h84-qmv7-982p 
 │                       │      ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                       │      ├ PkgName         : helm.sh/helm/v3 
@@ -33277,7 +33481,7 @@
 │                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-55199 
 │                       │      ├ PublishedDate   : 2025-08-14T00:15:27.96Z 
 │                       │      ╰ LastModifiedDate: 2025-08-21T21:25:20.793Z 
-│                       ├ [40] ╭ VulnerabilityID : CVE-2026-35206 
+│                       ├ [41] ╭ VulnerabilityID : CVE-2026-35206 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-hr2v-4r36-88hr 
 │                       │      ├ PkgID           : helm.sh/helm/v3@v3.18.3 
 │                       │      ├ PkgName         : helm.sh/helm/v3 
@@ -33337,7 +33541,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-35206 
 │                       │      ├ PublishedDate   : 2026-04-09T21:16:09.993Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T20:36:08.77Z 
-│                       ├ [41] ╭ VulnerabilityID : CVE-2025-68121 
+│                       ├ [42] ╭ VulnerabilityID : CVE-2025-68121 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4337 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33417,7 +33621,7 @@
 │                       │      │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2025-68121 
 │                       │      ├ PublishedDate   : 2026-02-05T18:16:10.857Z 
 │                       │      ╰ LastModifiedDate: 2026-04-29T14:16:16.17Z 
-│                       ├ [42] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [43] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3849 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33478,7 +33682,7 @@
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │      ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T19:11:50.67Z 
-│                       ├ [43] ╭ VulnerabilityID : CVE-2025-58183 
+│                       ├ [44] ╭ VulnerabilityID : CVE-2025-58183 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4014 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33542,7 +33746,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [44] ╭ VulnerabilityID : CVE-2025-61726 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2025-61726 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4341 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33610,7 +33814,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-61726 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.713Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:47:34.52Z 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2025-61728 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33683,7 +33887,7 @@
 │                       │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2025-61729 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2025-61729 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4155 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33754,7 +33958,7 @@
 │                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2025-61729 
 │                       │      ├ PublishedDate   : 2025-12-02T19:15:51.447Z 
 │                       │      ╰ LastModifiedDate: 2025-12-19T18:25:28.283Z 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2026-25679 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2026-25679 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4601 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33810,7 +34014,7 @@
 │                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25679 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:00.72Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:43:03.8Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2026-32280 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2026-32280 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4947 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33839,7 +34043,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 3 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 3 
@@ -33858,35 +34062,26 @@
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
 │                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-│                       │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2456340 
-│                       │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2456341 
-│                       │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2456342 
-│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27140 
-│                       │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27143 
-│                       │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-27144 
-│                       │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32280 
-│                       │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32282 
-│                       │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [18]: https://errata.rockylinux.org/RLSA-2026:10219 
-│                       │      │                  ├ [19]: https://go.dev/cl/758320 
-│                       │      │                  ├ [20]: https://go.dev/issue/78282 
-│                       │      │                  ├ [21]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/758320 
+│                       │      │                  ├ [14]: https://go.dev/issue/78282 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [22]: https://linux.oracle.com/cve/CVE-2026-32280.html 
-│                       │      │                  ├ [23]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
-│                       │      │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
-│                       │      │                  ├ [25]: https://pkg.go.dev/vuln/GO-2026-4947 
-│                       │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32280.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4947 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.247Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:16:42.18Z 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2026-32281 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2026-32281 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4946 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33917,7 +34112,7 @@
 │                       │      │                   certificate pool. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-295 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ bitnami: 3 
 │                       │      │                  ├ nvd    : 3 
 │                       │      │                  ╰ redhat : 2 
@@ -33940,7 +34135,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32281 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.35Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:57.75Z 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2026-32283 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2026-32283 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4870 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33970,7 +34165,7 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 3 
 │                       │      │                  ├ nvd        : 3 
 │                       │      │                  ├ oracle-oval: 3 
@@ -33992,24 +34187,27 @@
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-32282 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32280 
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32282 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-│                       │      │                  ├ [11]: https://go.dev/cl/763767 
-│                       │      │                  ├ [12]: https://go.dev/issue/78334 
-│                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/763767 
+│                       │      │                  ├ [14]: https://go.dev/issue/78334 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32283.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
-│                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4870 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32283.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4870 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.58Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:12:10.54Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2026-33811 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2026-33811 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4981 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34052,7 +34250,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4981 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:42.77Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T20:23:02.333Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2026-33814 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2026-33814 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4918 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34096,7 +34294,7 @@
 │                       │      │                  ╰ [5]: https://pkg.go.dev/vuln/GO-2026-4918 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:42.88Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T14:41:59.52Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2026-39820 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2026-39820 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4986 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34139,7 +34337,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4986 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.187Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:10:58.65Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2026-39836 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2026-39836 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4971 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34181,7 +34379,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4971 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-│                       ├ [55] ╭ VulnerabilityID : CVE-2026-42499 
+│                       ├ [56] ╭ VulnerabilityID : CVE-2026-42499 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4977 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34217,7 +34415,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4977 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-│                       ├ [56] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [57] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34277,7 +34475,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [57] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [58] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34327,7 +34525,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [58] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [59] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34375,7 +34573,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
-│                       ├ [59] ╭ VulnerabilityID : CVE-2025-58186 
+│                       ├ [60] ╭ VulnerabilityID : CVE-2025-58186 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4012 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34423,7 +34621,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58186 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.547Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [60] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [61] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34473,7 +34671,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [61] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [62] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34523,7 +34721,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [62] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [63] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34570,7 +34768,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [63] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [64] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34619,7 +34817,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [64] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [65] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34667,7 +34865,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [65] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [66] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34714,7 +34912,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [66] ╭ VulnerabilityID : CVE-2025-61727 
+│                       ├ [67] ╭ VulnerabilityID : CVE-2025-61727 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34762,7 +34960,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [67] ╭ VulnerabilityID : CVE-2025-61730 
+│                       ├ [68] ╭ VulnerabilityID : CVE-2025-61730 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34781,8 +34979,8 @@
 │                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
 │                       │      ├ Fingerprint     : sha256:8558fa64b1674ddd498a2e24d867201edcd79c7399d1fd1ddc304
 │                       │      │                   cd918158f86 
-│                       │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-│                       │      │                   in records  ... 
+│                       │      ├ Title           : crypto/tls: Handshake messages may be processed at the
+│                       │      │                   incorrect encryption level in crypto/tls 
 │                       │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
 │                       │      │                   in records that span encryption level boundaries (for
 │                       │      │                   instance the Client Hello and Encrypted Extensions
@@ -34791,23 +34989,29 @@
 │                       │      │                   information disclosure if a network-local attacker can
 │                       │      │                   inject messages during the handshake. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ amazon     : 2 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
 │                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ cbl-mariner: 1 
-│                       │      │                  ╰ photon     : 2 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  ├ photon     : 2 
+│                       │      │                  ╰ redhat     : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │      │                  │         │           N/A:N 
+│                       │      │                  │         ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
 │                       │      │                            │           N/A:N 
 │                       │      │                            ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-│                       │      │                  ├ [1]: https://go.dev/issue/76443 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61730 
+│                       │      │                  ├ [1]: https://go.dev/cl/724120 
+│                       │      │                  ├ [2]: https://go.dev/issue/76443 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
 │                       │      │                  │      eUc 
-│                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-│                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+│                       │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4340 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
 │                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ├ [68] ╭ VulnerabilityID : CVE-2026-27142 
+│                       ├ [69] ╭ VulnerabilityID : CVE-2026-27142 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4603 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34837,7 +35041,7 @@
 │                       │      │                    follow "url=" by setting htmlmetacontenturlescape=0. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-79 
-│                       │      ├ VendorSeverity   ╭ amazon : 2 
+│                       │      ├ VendorSeverity   ╭ amazon : 3 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
@@ -34856,7 +35060,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-27142 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:01.177Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:30:01.38Z 
-│                       ├ [69] ╭ VulnerabilityID : CVE-2026-32282 
+│                       ├ [70] ╭ VulnerabilityID : CVE-2026-32282 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4864 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34891,7 +35095,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-59 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 3 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ bitnami    : 2 
 │                       │      │                  ├ nvd        : 2 
 │                       │      │                  ├ oracle-oval: 3 
@@ -34913,24 +35117,27 @@
 │                       │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
 │                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
 │                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-32282 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32280 
+│                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-32282 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-32283 
-│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-│                       │      │                  ├ [11]: https://go.dev/cl/763761 
-│                       │      │                  ├ [12]: https://go.dev/issue/78293 
-│                       │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+│                       │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+│                       │      │                  ├ [13]: https://go.dev/cl/763761 
+│                       │      │                  ├ [14]: https://go.dev/issue/78293 
+│                       │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
 │                       │      │                  │       ZRWU 
-│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32282.html 
-│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
-│                       │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4864 
-│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
+│                       │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32282.html 
+│                       │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+│                       │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
+│                       │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4864 
+│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
-│                       ├ [70] ╭ VulnerabilityID : CVE-2026-32288 
+│                       ├ [71] ╭ VulnerabilityID : CVE-2026-32288 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4869 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34958,11 +35165,11 @@
 │                       │      │                    format. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ azure  : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ├ nvd    : 2 
-│                       │      │                  ├ photon : 3 
+│                       │      │                  ├ photon : 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
 │                       │      │                  │         │           N/A:H 
@@ -34983,7 +35190,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32288 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.707Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:08:52.24Z 
-│                       ├ [71] ╭ VulnerabilityID : CVE-2026-32289 
+│                       ├ [72] ╭ VulnerabilityID : CVE-2026-32289 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4865 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -35016,10 +35223,10 @@
 │                       │      │                   escaped, leading to XSS vulnerabilities. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-79 
-│                       │      ├ VendorSeverity   ╭ amazon : 3 
+│                       │      ├ VendorSeverity   ╭ amazon : 2 
 │                       │      │                  ├ bitnami: 2 
 │                       │      │                  ├ nvd    : 2 
-│                       │      │                  ├ photon : 4 
+│                       │      │                  ├ photon : 2 
 │                       │      │                  ╰ redhat : 2 
 │                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
 │                       │      │                  │         │           L/A:N 
@@ -35040,7 +35247,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32289 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.82Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:06:57.367Z 
-│                       ├ [72] ╭ VulnerabilityID : CVE-2026-39823 
+│                       ├ [73] ╭ VulnerabilityID : CVE-2026-39823 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4982 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -35081,7 +35288,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4982 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.29Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:45.697Z 
-│                       ├ [73] ╭ VulnerabilityID : CVE-2026-39825 
+│                       ├ [74] ╭ VulnerabilityID : CVE-2026-39825 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4976 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -35128,7 +35335,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4976 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-│                       ├ [74] ╭ VulnerabilityID : CVE-2026-39826 
+│                       ├ [75] ╭ VulnerabilityID : CVE-2026-39826 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -35168,7 +35375,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4980 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-│                       ╰ [75] ╭ VulnerabilityID : CVE-2026-27139 
+│                       ╰ [76] ╭ VulnerabilityID : CVE-2026-27139 
 │                              ├ VendorIDs        ─ [0]: GO-2026-4602 
 │                              ├ PkgID           : stdlib@v1.24.4 
 │                              ├ PkgName         : stdlib 
@@ -35197,7 +35404,7 @@
 │                              │                   outside the root. 
 │                              ├ Severity        : LOW 
 │                              ├ CweIDs           ─ [0]: CWE-22 
-│                              ├ VendorSeverity   ╭ amazon : 2 
+│                              ├ VendorSeverity   ╭ amazon : 3 
 │                              │                  ├ azure  : 1 
 │                              │                  ├ bitnami: 1 
 │                              │                  ╰ redhat : 1 
@@ -35723,7 +35930,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-770 
                         │      ├ VendorSeverity   ╭ alma       : 3 
-                        │      │                  ├ amazon     : 3 
+                        │      │                  ├ amazon     : 2 
                         │      │                  ├ bitnami    : 3 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ redhat     : 3 
@@ -35742,32 +35949,23 @@
                         │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
                         │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
                         │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2456340 
-                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2456341 
-                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2456342 
-                        │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-27140 
-                        │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-27143 
-                        │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-27144 
-                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-32280 
-                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-32282 
-                        │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-32283 
-                        │      │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
-                        │      │                  ├ [18]: https://errata.rockylinux.org/RLSA-2026:10219 
-                        │      │                  ├ [19]: https://go.dev/cl/758320 
-                        │      │                  ├ [20]: https://go.dev/issue/78282 
-                        │      │                  ├ [21]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+                        │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+                        │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+                        │      │                  ├ [13]: https://go.dev/cl/758320 
+                        │      │                  ├ [14]: https://go.dev/issue/78282 
+                        │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
                         │      │                  │       ZRWU 
-                        │      │                  ├ [22]: https://linux.oracle.com/cve/CVE-2026-32280.html 
-                        │      │                  ├ [23]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
-                        │      │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
-                        │      │                  ├ [25]: https://pkg.go.dev/vuln/GO-2026-4947 
-                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
+                        │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32280.html 
+                        │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-16875.html 
+                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32280 
+                        │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4947 
+                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32280 
                         │      ├ PublishedDate   : 2026-04-08T02:16:03.247Z 
                         │      ╰ LastModifiedDate: 2026-04-16T19:16:42.18Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-32281 
@@ -35801,7 +35999,7 @@
                         │      │                   certificate pool. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-295 
-                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      ├ VendorSeverity   ╭ amazon : 2 
                         │      │                  ├ bitnami: 3 
                         │      │                  ├ nvd    : 3 
                         │      │                  ╰ redhat : 2 
@@ -35854,7 +36052,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-770 
                         │      ├ VendorSeverity   ╭ alma       : 3 
-                        │      │                  ├ amazon     : 3 
+                        │      │                  ├ amazon     : 2 
                         │      │                  ├ bitnami    : 3 
                         │      │                  ├ nvd        : 3 
                         │      │                  ├ oracle-oval: 3 
@@ -35876,21 +36074,24 @@
                         │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
                         │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
                         │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-32282 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
                         │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-32280 
+                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-32282 
+                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-32283 
-                        │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-                        │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-                        │      │                  ├ [11]: https://go.dev/cl/763767 
-                        │      │                  ├ [12]: https://go.dev/issue/78334 
-                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+                        │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+                        │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+                        │      │                  ├ [13]: https://go.dev/cl/763767 
+                        │      │                  ├ [14]: https://go.dev/issue/78334 
+                        │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
                         │      │                  │       ZRWU 
-                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32283.html 
-                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
-                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4870 
-                        │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
+                        │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32283.html 
+                        │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32283 
+                        │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4870 
+                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32283 
                         │      ├ PublishedDate   : 2026-04-08T02:16:03.58Z 
                         │      ╰ LastModifiedDate: 2026-04-16T19:12:10.54Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-33811 
@@ -36665,8 +36866,8 @@
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
                         │      ├ Fingerprint     : sha256:3bf492d551d1d833bf74f1def85aa3eae09ae0ef6bf05e7928f2c
                         │      │                   baa0e6a1cb1 
-                        │      ├ Title           : During the TLS 1.3 handshake if multiple messages are sent
-                        │      │                   in records  ... 
+                        │      ├ Title           : crypto/tls: Handshake messages may be processed at the
+                        │      │                   incorrect encryption level in crypto/tls 
                         │      ├ Description     : During the TLS 1.3 handshake if multiple messages are sent
                         │      │                   in records that span encryption level boundaries (for
                         │      │                   instance the Client Hello and Encrypted Extensions
@@ -36675,20 +36876,26 @@
                         │      │                   information disclosure if a network-local attacker can
                         │      │                   inject messages during the handshake. 
                         │      ├ Severity        : MEDIUM 
-                        │      ├ VendorSeverity   ╭ amazon     : 2 
+                        │      ├ VendorSeverity   ╭ amazon     : 3 
                         │      │                  ├ azure      : 1 
                         │      │                  ├ bitnami    : 2 
                         │      │                  ├ cbl-mariner: 1 
-                        │      │                  ╰ photon     : 2 
-                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                        │      │                  ├ photon     : 2 
+                        │      │                  ╰ redhat     : 2 
+                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+                        │      │                  │         │           N/A:N 
+                        │      │                  │         ╰ V3Score : 5.3 
+                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
                         │      │                            │           N/A:N 
                         │      │                            ╰ V3Score : 5.3 
-                        │      ├ References       ╭ [0]: https://go.dev/cl/724120 
-                        │      │                  ├ [1]: https://go.dev/issue/76443 
-                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-61730 
+                        │      │                  ├ [1]: https://go.dev/cl/724120 
+                        │      │                  ├ [2]: https://go.dev/issue/76443 
+                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/Vd2tYVM8
                         │      │                  │      eUc 
-                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
-                        │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-4340 
+                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-61730 
+                        │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4340 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
                         │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
                         │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
                         ├ [27] ╭ VulnerabilityID : CVE-2026-27142 
@@ -36721,7 +36928,7 @@
                         │      │                    follow "url=" by setting htmlmetacontenturlescape=0. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-79 
-                        │      ├ VendorSeverity   ╭ amazon : 2 
+                        │      ├ VendorSeverity   ╭ amazon : 3 
                         │      │                  ├ bitnami: 2 
                         │      │                  ╰ redhat : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
@@ -36775,7 +36982,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-59 
                         │      ├ VendorSeverity   ╭ alma       : 3 
-                        │      │                  ├ amazon     : 3 
+                        │      │                  ├ amazon     : 2 
                         │      │                  ├ bitnami    : 2 
                         │      │                  ├ nvd        : 2 
                         │      │                  ├ oracle-oval: 3 
@@ -36797,21 +37004,24 @@
                         │      │                  ├ [4] : https://bugzilla.redhat.com/2456339 
                         │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2456336 
                         │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456338 
-                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-32282 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
                         │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-32280 
+                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-32282 
+                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-32283 
-                        │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-14200.html 
-                        │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:11711 
-                        │      │                  ├ [11]: https://go.dev/cl/763761 
-                        │      │                  ├ [12]: https://go.dev/issue/78293 
-                        │      │                  ├ [13]: https://groups.google.com/g/golang-announce/c/0uYbvbP
+                        │      │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-14200.html 
+                        │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:14200 
+                        │      │                  ├ [13]: https://go.dev/cl/763761 
+                        │      │                  ├ [14]: https://go.dev/issue/78293 
+                        │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/0uYbvbP
                         │      │                  │       ZRWU 
-                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-32282.html 
-                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
-                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
-                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-4864 
-                        │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
+                        │      │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-32282.html 
+                        │      │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-17075.html 
+                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-32282 
+                        │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-4864 
+                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
                         │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
                         │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
                         ├ [29] ╭ VulnerabilityID : CVE-2026-32288 
@@ -36842,11 +37052,11 @@
                         │      │                    format. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-770 
-                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      ├ VendorSeverity   ╭ amazon : 2 
                         │      │                  ├ azure  : 2 
                         │      │                  ├ bitnami: 2 
                         │      │                  ├ nvd    : 2 
-                        │      │                  ├ photon : 3 
+                        │      │                  ├ photon : 2 
                         │      │                  ╰ redhat : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
@@ -36900,10 +37110,10 @@
                         │      │                   escaped, leading to XSS vulnerabilities. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-79 
-                        │      ├ VendorSeverity   ╭ amazon : 3 
+                        │      ├ VendorSeverity   ╭ amazon : 2 
                         │      │                  ├ bitnami: 2 
                         │      │                  ├ nvd    : 2 
-                        │      │                  ├ photon : 4 
+                        │      │                  ├ photon : 2 
                         │      │                  ╰ redhat : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
                         │      │                  │         │           L/A:N 
@@ -37081,7 +37291,7 @@
                                │                   outside the root. 
                                ├ Severity        : LOW 
                                ├ CweIDs           ─ [0]: CWE-22 
-                               ├ VendorSeverity   ╭ amazon : 2 
+                               ├ VendorSeverity   ╭ amazon : 3 
                                │                  ├ azure  : 1 
                                │                  ├ bitnami: 1 
                                │                  ╰ redhat : 1 
