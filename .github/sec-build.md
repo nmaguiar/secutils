@@ -1440,7 +1440,7 @@
 │                       │       │                  │       .23.0_alpha20250612 
 │                       │       │                  ╰ UID : bb5b135412858614 
 │                       │       ├ InstalledVersion: 28.3.2-r0 
-│                       │       ├ FixedVersion    : 29.4.3-r0 
+│                       │       ├ FixedVersion    : 29.4.2-r0 
 │                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
 │                       │       │                  │         3501dd6062bd50a4b6afe 
@@ -2133,7 +2133,7 @@
 │                       │       │                  │       =x86_64&distro=3.23.0_alpha20250612 
 │                       │       │                  ╰ UID : 70bc09f63a22e5aa 
 │                       │       ├ InstalledVersion: 28.3.2-r0 
-│                       │       ├ FixedVersion    : 29.4.3-r0 
+│                       │       ├ FixedVersion    : 29.4.2-r0 
 │                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
 │                       │       │                  │         3501dd6062bd50a4b6afe 
@@ -2826,7 +2826,7 @@
 │                       │       │                  │       ro=3.23.0_alpha20250612 
 │                       │       │                  ╰ UID : ca3b787a58b614a1 
 │                       │       ├ InstalledVersion: 28.3.2-r0 
-│                       │       ├ FixedVersion    : 29.4.3-r0 
+│                       │       ├ FixedVersion    : 29.4.2-r0 
 │                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
 │                       │       │                  │         3501dd6062bd50a4b6afe 
@@ -3519,7 +3519,7 @@
 │                       │       │                  │       istro=3.23.0_alpha20250612 
 │                       │       │                  ╰ UID : a7174fed4c49a45c 
 │                       │       ├ InstalledVersion: 28.3.2-r0 
-│                       │       ├ FixedVersion    : 29.4.3-r0 
+│                       │       ├ FixedVersion    : 29.4.2-r0 
 │                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
 │                       │       │                  │         3501dd6062bd50a4b6afe 
@@ -18425,7 +18425,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
-│                       │       │                  ├ oracle-oval: 2 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ├ rocky      : 2 
@@ -18447,7 +18447,7 @@
 │                       │       │                  ├ [9] : https://github.com/vim/vim/security/advisories/GHSA-
 │                       │       │                  │       5w93-4g67-mm43 
 │                       │       │                  ├ [10]: https://linux.oracle.com/cve/CVE-2026-25749.html 
-│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-5602.html 
+│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-6617.html 
 │                       │       │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-25749 
 │                       │       │                  ├ [13]: https://ubuntu.com/security/notices/USN-8101-1 
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25749 
@@ -19315,7 +19315,27 @@
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
-│                       ├ [220] ╭ VulnerabilityID : CVE-2026-45130 
+│                       ├ [220] ╭ VulnerabilityID : CVE-2026-43961 
+│                       │       ├ PkgID           : vim@9.1.1557-r1 
+│                       │       ├ PkgName         : vim 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : f37ace8bbf995058 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0481-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-43961 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:c602acd7b1a9a020d744796702b41d6fda14c6c1f95e7a2f8409
+│                       │       │                   b1ff62d652b1 
+│                       │       ╰ Severity        : UNKNOWN 
+│                       ├ [221] ╭ VulnerabilityID : CVE-2026-45130 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19360,7 +19380,48 @@
 │                       │       │                         4jv-r9gj-6cwv 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
-│                       ├ [221] ╭ VulnerabilityID : CVE-2026-25749 
+│                       ├ [222] ╭ VulnerabilityID : CVE-2026-46483 
+│                       │       ├ PkgID           : vim@9.1.1557-r1 
+│                       │       ├ PkgName         : vim 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : f37ace8bbf995058 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0481-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-46483 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:3505707ec1704e5f5a228a8b3ddee848c66450c7f092081b1191
+│                       │       │                   91e785bd46c8 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   9.2.0479, a  ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   9.2.0479, a command injection vulnerability exists in
+│                       │       │                   tar#Vimuntar() in
+│                       │       │                   runtime/autoload/tar.vim when decompressing .tgz archives
+│                       │       │                   on Unix-like systems. The function builds :!gunzip and
+│                       │       │                   :!gzip -d commands using shellescape(tartail) without the
+│                       │       │                   {special} flag, allowing a crafted archive filename to
+│                       │       │                   trigger Vim cmdline-special expansion and execute shell
+│                       │       │                   commands in the user's context. This vulnerability is fixed
+│                       │       │                    in 9.2.0479. 
+│                       │       ├ Severity        : UNKNOWN 
+│                       │       ├ CweIDs           ╭ [0]: CWE-78 
+│                       │       │                  ╰ [1]: CWE-88 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/3fb5e58fbc63d86a3e6
+│                       │       │                  │      5f1a141b0d67af2aa38a1 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0479 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-2
+│                       │       │                         fpv-9ff7-xg5w 
+│                       │       ├ PublishedDate   : 2026-05-15T15:16:54.237Z 
+│                       │       ╰ LastModifiedDate: 2026-05-15T15:16:54.237Z 
+│                       ├ [223] ╭ VulnerabilityID : CVE-2026-25749 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19397,7 +19458,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
-│                       │       │                  ├ oracle-oval: 2 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ├ rocky      : 2 
@@ -19419,13 +19480,13 @@
 │                       │       │                  ├ [9] : https://github.com/vim/vim/security/advisories/GHSA-
 │                       │       │                  │       5w93-4g67-mm43 
 │                       │       │                  ├ [10]: https://linux.oracle.com/cve/CVE-2026-25749.html 
-│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-5602.html 
+│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-6617.html 
 │                       │       │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-25749 
 │                       │       │                  ├ [13]: https://ubuntu.com/security/notices/USN-8101-1 
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25749 
 │                       │       ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
 │                       │       ╰ LastModifiedDate: 2026-02-20T15:45:19.21Z 
-│                       ├ [222] ╭ VulnerabilityID : CVE-2026-28417 
+│                       ├ [224] ╭ VulnerabilityID : CVE-2026-28417 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19503,7 +19564,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28417 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:24.833Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:50:29.827Z 
-│                       ├ [223] ╭ VulnerabilityID : CVE-2026-28421 
+│                       ├ [225] ╭ VulnerabilityID : CVE-2026-28421 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19579,7 +19640,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28421 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.493Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:36.62Z 
-│                       ├ [224] ╭ VulnerabilityID : CVE-2026-33412 
+│                       ├ [226] ╭ VulnerabilityID : CVE-2026-33412 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19656,7 +19717,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-33412 
 │                       │       ├ PublishedDate   : 2026-03-24T20:16:29.74Z 
 │                       │       ╰ LastModifiedDate: 2026-03-25T21:59:14.98Z 
-│                       ├ [225] ╭ VulnerabilityID : CVE-2026-34714 
+│                       ├ [227] ╭ VulnerabilityID : CVE-2026-34714 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19709,7 +19770,7 @@
 │                       │       │                         0/3 
 │                       │       ├ PublishedDate   : 2026-03-30T19:16:26.853Z 
 │                       │       ╰ LastModifiedDate: 2026-04-03T12:16:18.5Z 
-│                       ├ [226] ╭ VulnerabilityID : CVE-2026-34982 
+│                       ├ [228] ╭ VulnerabilityID : CVE-2026-34982 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19772,7 +19833,7 @@
 │                       │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-34982 
 │                       │       ├ PublishedDate   : 2026-04-06T16:16:38.777Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T20:10:01.92Z 
-│                       ├ [227] ╭ VulnerabilityID : CVE-2026-35177 
+│                       ├ [229] ╭ VulnerabilityID : CVE-2026-35177 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19822,7 +19883,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35177 
 │                       │       ├ PublishedDate   : 2026-04-06T18:16:44.003Z 
 │                       │       ╰ LastModifiedDate: 2026-04-20T18:28:03.593Z 
-│                       ├ [228] ╭ VulnerabilityID : CVE-2026-39881 
+│                       ├ [230] ╭ VulnerabilityID : CVE-2026-39881 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19875,7 +19936,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-39881 
 │                       │       ├ PublishedDate   : 2026-04-08T21:17:00.4Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T16:50:17.39Z 
-│                       ├ [229] ╭ VulnerabilityID : CVE-2026-41411 
+│                       ├ [231] ╭ VulnerabilityID : CVE-2026-41411 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19927,7 +19988,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-41411 
 │                       │       ├ PublishedDate   : 2026-04-24T17:16:22.037Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T13:39:23.25Z 
-│                       ├ [230] ╭ VulnerabilityID : CVE-2026-28418 
+│                       ├ [232] ╭ VulnerabilityID : CVE-2026-28418 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19984,7 +20045,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28418 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.003Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:49:55.213Z 
-│                       ├ [231] ╭ VulnerabilityID : CVE-2026-28419 
+│                       ├ [233] ╭ VulnerabilityID : CVE-2026-28419 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20041,7 +20102,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28419 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.163Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T21:22:05.74Z 
-│                       ├ [232] ╭ VulnerabilityID : CVE-2026-28420 
+│                       ├ [234] ╭ VulnerabilityID : CVE-2026-28420 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20096,7 +20157,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28420 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.33Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:23.017Z 
-│                       ├ [233] ╭ VulnerabilityID : CVE-2026-32249 
+│                       ├ [235] ╭ VulnerabilityID : CVE-2026-32249 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20155,7 +20216,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [234] ╭ VulnerabilityID : CVE-2026-44656 
+│                       ├ [236] ╭ VulnerabilityID : CVE-2026-44656 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20200,7 +20261,7 @@
 │                       │       │                         wg5-3cxw-wvvg 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
-│                       ├ [235] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [237] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20249,7 +20310,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [236] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [238] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20287,7 +20348,27 @@
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
-│                       ├ [237] ╭ VulnerabilityID : CVE-2026-45130 
+│                       ├ [239] ╭ VulnerabilityID : CVE-2026-43961 
+│                       │       ├ PkgID           : vim-common@9.1.1557-r1 
+│                       │       ├ PkgName         : vim-common 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
+│                       │       │                  │       stro=3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : f513f86f78716ce1 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0481-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-43961 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:9a3e2390e01d0437d873564aab7199b977ff0d33ed13c4e58e1d
+│                       │       │                   b413afffcdc7 
+│                       │       ╰ Severity        : UNKNOWN 
+│                       ├ [240] ╭ VulnerabilityID : CVE-2026-45130 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20332,7 +20413,48 @@
 │                       │       │                         4jv-r9gj-6cwv 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
-│                       ├ [238] ╭ VulnerabilityID : CVE-2026-25749 
+│                       ├ [241] ╭ VulnerabilityID : CVE-2026-46483 
+│                       │       ├ PkgID           : vim-common@9.1.1557-r1 
+│                       │       ├ PkgName         : vim-common 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
+│                       │       │                  │       stro=3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : f513f86f78716ce1 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0481-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-46483 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:d4a4ce4759ba31d022ff646a8129ffdea985a33f1185df5912f1
+│                       │       │                   2533425a8a19 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   9.2.0479, a  ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   9.2.0479, a command injection vulnerability exists in
+│                       │       │                   tar#Vimuntar() in
+│                       │       │                   runtime/autoload/tar.vim when decompressing .tgz archives
+│                       │       │                   on Unix-like systems. The function builds :!gunzip and
+│                       │       │                   :!gzip -d commands using shellescape(tartail) without the
+│                       │       │                   {special} flag, allowing a crafted archive filename to
+│                       │       │                   trigger Vim cmdline-special expansion and execute shell
+│                       │       │                   commands in the user's context. This vulnerability is fixed
+│                       │       │                    in 9.2.0479. 
+│                       │       ├ Severity        : UNKNOWN 
+│                       │       ├ CweIDs           ╭ [0]: CWE-78 
+│                       │       │                  ╰ [1]: CWE-88 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/3fb5e58fbc63d86a3e6
+│                       │       │                  │      5f1a141b0d67af2aa38a1 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0479 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-2
+│                       │       │                         fpv-9ff7-xg5w 
+│                       │       ├ PublishedDate   : 2026-05-15T15:16:54.237Z 
+│                       │       ╰ LastModifiedDate: 2026-05-15T15:16:54.237Z 
+│                       ├ [242] ╭ VulnerabilityID : CVE-2026-25749 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20369,7 +20491,7 @@
 │                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ cbl-mariner: 2 
-│                       │       │                  ├ oracle-oval: 2 
+│                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ photon     : 2 
 │                       │       │                  ├ redhat     : 2 
 │                       │       │                  ├ rocky      : 2 
@@ -20391,13 +20513,13 @@
 │                       │       │                  ├ [9] : https://github.com/vim/vim/security/advisories/GHSA-
 │                       │       │                  │       5w93-4g67-mm43 
 │                       │       │                  ├ [10]: https://linux.oracle.com/cve/CVE-2026-25749.html 
-│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-5602.html 
+│                       │       │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2026-6617.html 
 │                       │       │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-25749 
 │                       │       │                  ├ [13]: https://ubuntu.com/security/notices/USN-8101-1 
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25749 
 │                       │       ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
 │                       │       ╰ LastModifiedDate: 2026-02-20T15:45:19.21Z 
-│                       ├ [239] ╭ VulnerabilityID : CVE-2026-28417 
+│                       ├ [243] ╭ VulnerabilityID : CVE-2026-28417 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20475,7 +20597,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28417 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:24.833Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:50:29.827Z 
-│                       ├ [240] ╭ VulnerabilityID : CVE-2026-28421 
+│                       ├ [244] ╭ VulnerabilityID : CVE-2026-28421 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20551,7 +20673,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28421 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.493Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:36.62Z 
-│                       ├ [241] ╭ VulnerabilityID : CVE-2026-33412 
+│                       ├ [245] ╭ VulnerabilityID : CVE-2026-33412 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20628,7 +20750,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-33412 
 │                       │       ├ PublishedDate   : 2026-03-24T20:16:29.74Z 
 │                       │       ╰ LastModifiedDate: 2026-03-25T21:59:14.98Z 
-│                       ├ [242] ╭ VulnerabilityID : CVE-2026-34714 
+│                       ├ [246] ╭ VulnerabilityID : CVE-2026-34714 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20681,7 +20803,7 @@
 │                       │       │                         0/3 
 │                       │       ├ PublishedDate   : 2026-03-30T19:16:26.853Z 
 │                       │       ╰ LastModifiedDate: 2026-04-03T12:16:18.5Z 
-│                       ├ [243] ╭ VulnerabilityID : CVE-2026-34982 
+│                       ├ [247] ╭ VulnerabilityID : CVE-2026-34982 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20744,7 +20866,7 @@
 │                       │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-34982 
 │                       │       ├ PublishedDate   : 2026-04-06T16:16:38.777Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T20:10:01.92Z 
-│                       ├ [244] ╭ VulnerabilityID : CVE-2026-35177 
+│                       ├ [248] ╭ VulnerabilityID : CVE-2026-35177 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20794,7 +20916,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35177 
 │                       │       ├ PublishedDate   : 2026-04-06T18:16:44.003Z 
 │                       │       ╰ LastModifiedDate: 2026-04-20T18:28:03.593Z 
-│                       ├ [245] ╭ VulnerabilityID : CVE-2026-39881 
+│                       ├ [249] ╭ VulnerabilityID : CVE-2026-39881 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20847,7 +20969,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-39881 
 │                       │       ├ PublishedDate   : 2026-04-08T21:17:00.4Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T16:50:17.39Z 
-│                       ├ [246] ╭ VulnerabilityID : CVE-2026-41411 
+│                       ├ [250] ╭ VulnerabilityID : CVE-2026-41411 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20899,7 +21021,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-41411 
 │                       │       ├ PublishedDate   : 2026-04-24T17:16:22.037Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T13:39:23.25Z 
-│                       ├ [247] ╭ VulnerabilityID : CVE-2026-28418 
+│                       ├ [251] ╭ VulnerabilityID : CVE-2026-28418 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20956,7 +21078,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28418 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.003Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:49:55.213Z 
-│                       ├ [248] ╭ VulnerabilityID : CVE-2026-28419 
+│                       ├ [252] ╭ VulnerabilityID : CVE-2026-28419 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21013,7 +21135,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28419 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.163Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T21:22:05.74Z 
-│                       ├ [249] ╭ VulnerabilityID : CVE-2026-28420 
+│                       ├ [253] ╭ VulnerabilityID : CVE-2026-28420 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21068,7 +21190,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28420 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.33Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:23.017Z 
-│                       ├ [250] ╭ VulnerabilityID : CVE-2026-32249 
+│                       ├ [254] ╭ VulnerabilityID : CVE-2026-32249 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21127,7 +21249,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [251] ╭ VulnerabilityID : CVE-2026-44656 
+│                       ├ [255] ╭ VulnerabilityID : CVE-2026-44656 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21172,7 +21294,7 @@
 │                       │       │                         wg5-3cxw-wvvg 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
-│                       ├ [252] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [256] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21221,7 +21343,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [253] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [257] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21259,7 +21381,27 @@
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
-│                       ├ [254] ╭ VulnerabilityID : CVE-2026-45130 
+│                       ├ [258] ╭ VulnerabilityID : CVE-2026-43961 
+│                       │       ├ PkgID           : xxd@9.1.1557-r1 
+│                       │       ├ PkgName         : xxd 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : 67ee24b19424f9fd 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0481-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-43961 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:d76dc49de35f04eeb6869454da56455abcb9ff38456f79a6b7f4
+│                       │       │                   069944f0ad25 
+│                       │       ╰ Severity        : UNKNOWN 
+│                       ├ [259] ╭ VulnerabilityID : CVE-2026-45130 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21304,7 +21446,48 @@
 │                       │       │                         4jv-r9gj-6cwv 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
-│                       ├ [255] ╭ VulnerabilityID : CVE-2026-34743 
+│                       ├ [260] ╭ VulnerabilityID : CVE-2026-46483 
+│                       │       ├ PkgID           : xxd@9.1.1557-r1 
+│                       │       ├ PkgName         : xxd 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : 67ee24b19424f9fd 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0481-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-46483 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:2a0e084d9c61782f21081a2976fd2162abbbb162b7c3a5ffa7af
+│                       │       │                   884f7c622502 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   9.2.0479, a  ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   9.2.0479, a command injection vulnerability exists in
+│                       │       │                   tar#Vimuntar() in
+│                       │       │                   runtime/autoload/tar.vim when decompressing .tgz archives
+│                       │       │                   on Unix-like systems. The function builds :!gunzip and
+│                       │       │                   :!gzip -d commands using shellescape(tartail) without the
+│                       │       │                   {special} flag, allowing a crafted archive filename to
+│                       │       │                   trigger Vim cmdline-special expansion and execute shell
+│                       │       │                   commands in the user's context. This vulnerability is fixed
+│                       │       │                    in 9.2.0479. 
+│                       │       ├ Severity        : UNKNOWN 
+│                       │       ├ CweIDs           ╭ [0]: CWE-78 
+│                       │       │                  ╰ [1]: CWE-88 
+│                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/3fb5e58fbc63d86a3e6
+│                       │       │                  │      5f1a141b0d67af2aa38a1 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0479 
+│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-2
+│                       │       │                         fpv-9ff7-xg5w 
+│                       │       ├ PublishedDate   : 2026-05-15T15:16:54.237Z 
+│                       │       ╰ LastModifiedDate: 2026-05-15T15:16:54.237Z 
+│                       ├ [261] ╭ VulnerabilityID : CVE-2026-34743 
 │                       │       ├ PkgID           : xz-libs@5.8.1-r0 
 │                       │       ├ PkgName         : xz-libs 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xz-libs@5.8.1-r0?arch=x86_64&distro=3
@@ -21358,7 +21541,58 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34743 
 │                       │       ├ PublishedDate   : 2026-04-02T19:21:33.187Z 
 │                       │       ╰ LastModifiedDate: 2026-04-15T17:33:17.68Z 
-│                       ╰ [256] ╭ VulnerabilityID : CVE-2026-27171 
+│                       ├ [262] ╭ VulnerabilityID : CVE-2026-22184 
+│                       │       ├ PkgID           : zlib@1.3.1-r2 
+│                       │       ├ PkgName         : zlib 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
+│                       │       │                  │       .0_alpha20250612 
+│                       │       │                  ╰ UID : b954f4a027f289c1 
+│                       │       ├ InstalledVersion: 1.3.1-r2 
+│                       │       ├ FixedVersion    : 1.3.2-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ SeveritySource  : nvd 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15
+│                       │       │                   fc5bfe4c7675 
+│                       │       ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
+│                       │       │                    untgz utility 
+│                       │       ├ Description     : zlib versions up to and including 1.3.1.2 include a global
+│                       │       │                   buffer overflow in the untgz utility located under
+│                       │       │                   contrib/untgz. The vulnerability is limited to the
+│                       │       │                   standalone demonstration utility and does not affect the
+│                       │       │                   core zlib compression library. The flaw occurs when a user
+│                       │       │                   executes the untgz command with an excessively long archive
+│                       │       │                    name supplied via the command line, leading to an
+│                       │       │                   out-of-bounds write in a fixed-size global buffer. 
+│                       │       ├ Severity        : HIGH 
+│                       │       ├ CweIDs           ─ [0]: CWE-787 
+│                       │       ├ VendorSeverity   ╭ nvd   : 3 
+│                       │       │                  ╰ redhat: 3 
+│                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
+│                       │       │                  │        │           H/A:H 
+│                       │       │                  │        ╰ V3Score : 7.8 
+│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
+│                       │       │                           │           L/A:H 
+│                       │       │                           ╰ V3Score : 8.6 
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
+│                       │       │                  ├ [1]: https://github.com/madler/zlib 
+│                       │       │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
+│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
+│                       │       │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
+│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
+│                       │       │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-globa
+│                       │       │                  │      l-buffer-overflow-in-tgzfname 
+│                       │       │                  ╰ [7]: https://zlib.net/ 
+│                       │       ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
+│                       │       ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
+│                       ╰ [263] ╭ VulnerabilityID : CVE-2026-27171 
 │                               ├ PkgID           : zlib@1.3.1-r2 
 │                               ├ PkgName         : zlib 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
