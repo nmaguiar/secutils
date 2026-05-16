@@ -1345,7 +1345,7 @@
       PURL: pkg:apk/alpine/docker@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
       UID: bb5b135412858614
     InstalledVersion: 28.3.2-r0
-    FixedVersion: 29.4.3-r0
+    FixedVersion: 29.4.2-r0
     Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
@@ -1879,7 +1879,7 @@
       PURL: pkg:apk/alpine/docker-bash-completion@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
       UID: 70bc09f63a22e5aa
     InstalledVersion: 28.3.2-r0
-    FixedVersion: 29.4.3-r0
+    FixedVersion: 29.4.2-r0
     Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
@@ -2413,7 +2413,7 @@
       PURL: pkg:apk/alpine/docker-cli@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
       UID: ca3b787a58b614a1
     InstalledVersion: 28.3.2-r0
-    FixedVersion: 29.4.3-r0
+    FixedVersion: 29.4.2-r0
     Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
@@ -2947,7 +2947,7 @@
       PURL: pkg:apk/alpine/docker-engine@28.3.2-r0?arch=x86_64&distro=3.23.0_alpha20250612
       UID: a7174fed4c49a45c
     InstalledVersion: 28.3.2-r0
-    FixedVersion: 29.4.3-r0
+    FixedVersion: 29.4.2-r0
     Status: fixed
     Layer:
       Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
@@ -14945,7 +14945,7 @@
       amazon: 3
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 2
+      oracle-oval: 3
       photon: 2
       redhat: 2
       rocky: 2
@@ -14966,7 +14966,7 @@
     - https://github.com/vim/vim/releases/tag/v9.1.2132
     - https://github.com/vim/vim/security/advisories/GHSA-5w93-4g67-mm43
     - https://linux.oracle.com/cve/CVE-2026-25749.html
-    - https://linux.oracle.com/errata/ELSA-2026-5602.html
+    - https://linux.oracle.com/errata/ELSA-2026-6617.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25749
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25749
@@ -15728,6 +15728,25 @@
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
     LastModifiedDate: '2026-05-14T13:55:49.753Z'
+  - VulnerabilityID: CVE-2026-43961
+    PkgID: vim@9.1.1557-r1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f37ace8bbf995058
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0481-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43961
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:c602acd7b1a9a020d744796702b41d6fda14c6c1f95e7a2f8409b1ff62d652b1
+    Severity: UNKNOWN
   - VulnerabilityID: CVE-2026-45130
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -15759,6 +15778,38 @@
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
     LastModifiedDate: '2026-05-14T06:16:23.48Z'
+  - VulnerabilityID: CVE-2026-46483
+    PkgID: vim@9.1.1557-r1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f37ace8bbf995058
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0481-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-46483
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3505707ec1704e5f5a228a8b3ddee848c66450c7f092081b119191e785bd46c8
+    Title: Vim is an open source, command line text editor. Prior to 9.2.0479, a  ...
+    Description: |-
+      Vim is an open source, command line text editor. Prior to 9.2.0479, a command injection vulnerability exists in tar#Vimuntar() in
+      runtime/autoload/tar.vim when decompressing .tgz archives on Unix-like systems. The function builds :!gunzip and :!gzip -d commands using shellescape(tartail) without the {special} flag, allowing a crafted archive filename to trigger Vim cmdline-special expansion and execute shell commands in the user's context. This vulnerability is fixed in 9.2.0479.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-78
+    - CWE-88
+    References:
+    - https://github.com/vim/vim/commit/3fb5e58fbc63d86a3e65f1a141b0d67af2aa38a1
+    - https://github.com/vim/vim/releases/tag/v9.2.0479
+    - https://github.com/vim/vim/security/advisories/GHSA-2fpv-9ff7-xg5w
+    PublishedDate: '2026-05-15T15:16:54.237Z'
+    LastModifiedDate: '2026-05-15T15:16:54.237Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -15787,7 +15838,7 @@
       amazon: 3
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 2
+      oracle-oval: 3
       photon: 2
       redhat: 2
       rocky: 2
@@ -15808,7 +15859,7 @@
     - https://github.com/vim/vim/releases/tag/v9.1.2132
     - https://github.com/vim/vim/security/advisories/GHSA-5w93-4g67-mm43
     - https://linux.oracle.com/cve/CVE-2026-25749.html
-    - https://linux.oracle.com/errata/ELSA-2026-5602.html
+    - https://linux.oracle.com/errata/ELSA-2026-6617.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25749
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25749
@@ -16570,6 +16621,25 @@
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
     LastModifiedDate: '2026-05-14T13:55:49.753Z'
+  - VulnerabilityID: CVE-2026-43961
+    PkgID: vim-common@9.1.1557-r1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f513f86f78716ce1
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0481-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43961
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:9a3e2390e01d0437d873564aab7199b977ff0d33ed13c4e58e1db413afffcdc7
+    Severity: UNKNOWN
   - VulnerabilityID: CVE-2026-45130
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16601,6 +16671,38 @@
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
     LastModifiedDate: '2026-05-14T06:16:23.48Z'
+  - VulnerabilityID: CVE-2026-46483
+    PkgID: vim-common@9.1.1557-r1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f513f86f78716ce1
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0481-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-46483
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d4a4ce4759ba31d022ff646a8129ffdea985a33f1185df5912f12533425a8a19
+    Title: Vim is an open source, command line text editor. Prior to 9.2.0479, a  ...
+    Description: |-
+      Vim is an open source, command line text editor. Prior to 9.2.0479, a command injection vulnerability exists in tar#Vimuntar() in
+      runtime/autoload/tar.vim when decompressing .tgz archives on Unix-like systems. The function builds :!gunzip and :!gzip -d commands using shellescape(tartail) without the {special} flag, allowing a crafted archive filename to trigger Vim cmdline-special expansion and execute shell commands in the user's context. This vulnerability is fixed in 9.2.0479.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-78
+    - CWE-88
+    References:
+    - https://github.com/vim/vim/commit/3fb5e58fbc63d86a3e65f1a141b0d67af2aa38a1
+    - https://github.com/vim/vim/releases/tag/v9.2.0479
+    - https://github.com/vim/vim/security/advisories/GHSA-2fpv-9ff7-xg5w
+    PublishedDate: '2026-05-15T15:16:54.237Z'
+    LastModifiedDate: '2026-05-15T15:16:54.237Z'
   - VulnerabilityID: CVE-2026-25749
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -16629,7 +16731,7 @@
       amazon: 3
       azure: 2
       cbl-mariner: 2
-      oracle-oval: 2
+      oracle-oval: 3
       photon: 2
       redhat: 2
       rocky: 2
@@ -16650,7 +16752,7 @@
     - https://github.com/vim/vim/releases/tag/v9.1.2132
     - https://github.com/vim/vim/security/advisories/GHSA-5w93-4g67-mm43
     - https://linux.oracle.com/cve/CVE-2026-25749.html
-    - https://linux.oracle.com/errata/ELSA-2026-5602.html
+    - https://linux.oracle.com/errata/ELSA-2026-6617.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-25749
     - https://ubuntu.com/security/notices/USN-8101-1
     - https://www.cve.org/CVERecord?id=CVE-2026-25749
@@ -17412,6 +17514,25 @@
     - https://github.com/vim/vim/security/advisories/GHSA-85ch-p2qr-m5gx
     PublishedDate: '2026-05-08T23:16:36.777Z'
     LastModifiedDate: '2026-05-14T13:55:49.753Z'
+  - VulnerabilityID: CVE-2026-43961
+    PkgID: xxd@9.1.1557-r1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 67ee24b19424f9fd
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0481-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43961
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d76dc49de35f04eeb6869454da56455abcb9ff38456f79a6b7f4069944f0ad25
+    Severity: UNKNOWN
   - VulnerabilityID: CVE-2026-45130
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -17443,6 +17564,38 @@
     - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
     PublishedDate: '2026-05-08T23:16:40.053Z'
     LastModifiedDate: '2026-05-14T06:16:23.48Z'
+  - VulnerabilityID: CVE-2026-46483
+    PkgID: xxd@9.1.1557-r1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 67ee24b19424f9fd
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0481-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-46483
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:2a0e084d9c61782f21081a2976fd2162abbbb162b7c3a5ffa7af884f7c622502
+    Title: Vim is an open source, command line text editor. Prior to 9.2.0479, a  ...
+    Description: |-
+      Vim is an open source, command line text editor. Prior to 9.2.0479, a command injection vulnerability exists in tar#Vimuntar() in
+      runtime/autoload/tar.vim when decompressing .tgz archives on Unix-like systems. The function builds :!gunzip and :!gzip -d commands using shellescape(tartail) without the {special} flag, allowing a crafted archive filename to trigger Vim cmdline-special expansion and execute shell commands in the user's context. This vulnerability is fixed in 9.2.0479.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-78
+    - CWE-88
+    References:
+    - https://github.com/vim/vim/commit/3fb5e58fbc63d86a3e65f1a141b0d67af2aa38a1
+    - https://github.com/vim/vim/releases/tag/v9.2.0479
+    - https://github.com/vim/vim/security/advisories/GHSA-2fpv-9ff7-xg5w
+    PublishedDate: '2026-05-15T15:16:54.237Z'
+    LastModifiedDate: '2026-05-15T15:16:54.237Z'
   - VulnerabilityID: CVE-2026-34743
     PkgID: xz-libs@5.8.1-r0
     PkgName: xz-libs
@@ -17489,6 +17642,51 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-34743
     PublishedDate: '2026-04-02T19:21:33.187Z'
     LastModifiedDate: '2026-04-15T17:33:17.68Z'
+  - VulnerabilityID: CVE-2026-22184
+    PkgID: zlib@1.3.1-r2
+    PkgName: zlib
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: b954f4a027f289c1
+    InstalledVersion: 1.3.1-r2
+    FixedVersion: 1.3.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15fc5bfe4c7675
+    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
+    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
+    Severity: HIGH
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 3
+      redhat: 3
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
+        V3Score: 8.6
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-22184
+    - https://github.com/madler/zlib
+    - https://github.com/madler/zlib/issues/1142
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
+    - https://seclists.org/fulldisclosure/2026/Jan/3
+    - https://www.cve.org/CVERecord?id=CVE-2026-22184
+    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
+    - https://zlib.net/
+    PublishedDate: '2026-01-07T21:16:01.563Z'
+    LastModifiedDate: '2026-03-18T16:26:31.14Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
