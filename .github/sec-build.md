@@ -980,7 +980,8 @@
 │                       │       │                   a data pointer pointing into already freed memory. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ julia : 3 
 │                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
@@ -7665,7 +7666,8 @@
 │                       │       │                   a data pointer pointing into already freed memory. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
-│                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ julia : 3 
 │                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
@@ -8355,7 +8357,8 @@
 │                       │       │                   hash flooding can occur via a crafted XML document. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-331 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 1 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ╰ redhat: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -9262,7 +9265,27 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-34757 
 │                       │       ├ PublishedDate   : 2026-04-09T15:16:11.003Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T23:07:51.863Z 
-│                       ├ [118] ╭ VulnerabilityID : CVE-2025-15467 
+│                       ├ [118] ╭ VulnerabilityID : CVE-2026-40930 
+│                       │       ├ PkgID           : libpng@1.6.49-r0 
+│                       │       ├ PkgName         : libpng 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3
+│                       │       │                  │       .23.0_alpha20250612 
+│                       │       │                  ╰ UID : 7634c89e07a8aec5 
+│                       │       ├ InstalledVersion: 1.6.49-r0 
+│                       │       ├ FixedVersion    : 1.6.58-r1 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40930 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:3c15d9f6c5bdb07062b4447e009bb949fde9eee15dc66f79dc93
+│                       │       │                   a0d367ed5110 
+│                       │       ╰ Severity        : UNKNOWN 
+│                       ├ [119] ╭ VulnerabilityID : CVE-2025-15467 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -9415,7 +9438,7 @@
 │                       │       │                  ╰ [54]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
 │                       │       ╰ LastModifiedDate: 2026-05-07T18:12:43.253Z 
-│                       ├ [119] ╭ VulnerabilityID : CVE-2026-31789 
+│                       ├ [120] ╭ VulnerabilityID : CVE-2026-31789 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -9506,7 +9529,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:34.57Z 
-│                       ├ [120] ╭ VulnerabilityID : CVE-2025-69419 
+│                       ├ [121] ╭ VulnerabilityID : CVE-2025-69419 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -9660,7 +9683,7 @@
 │                       │       │                  ╰ [42]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:26.19Z 
-│                       ├ [121] ╭ VulnerabilityID : CVE-2025-69421 
+│                       ├ [122] ╭ VulnerabilityID : CVE-2025-69421 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -9807,7 +9830,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:26.71Z 
-│                       ├ [122] ╭ VulnerabilityID : CVE-2026-28387 
+│                       ├ [123] ╭ VulnerabilityID : CVE-2026-28387 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -9897,7 +9920,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.27Z 
-│                       ├ [123] ╭ VulnerabilityID : CVE-2026-28388 
+│                       ├ [124] ╭ VulnerabilityID : CVE-2026-28388 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -9996,7 +10019,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.453Z 
-│                       ├ [124] ╭ VulnerabilityID : CVE-2026-28389 
+│                       ├ [125] ╭ VulnerabilityID : CVE-2026-28389 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -10086,7 +10109,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.637Z 
-│                       ├ [125] ╭ VulnerabilityID : CVE-2026-28390 
+│                       ├ [126] ╭ VulnerabilityID : CVE-2026-28390 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -10177,7 +10200,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.81Z 
-│                       ├ [126] ╭ VulnerabilityID : CVE-2025-11187 
+│                       ├ [127] ╭ VulnerabilityID : CVE-2025-11187 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -10324,7 +10347,7 @@
 │                       │       │                  ╰ [50]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
 │                       │       ╰ LastModifiedDate: 2026-03-20T14:16:13.89Z 
-│                       ├ [127] ╭ VulnerabilityID : CVE-2025-15468 
+│                       ├ [128] ╭ VulnerabilityID : CVE-2025-15468 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -10463,7 +10486,7 @@
 │                       │       │                  ╰ [50]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
 │                       │       ╰ LastModifiedDate: 2026-02-02T18:38:00.947Z 
-│                       ├ [128] ╭ VulnerabilityID : CVE-2025-15469 
+│                       ├ [129] ╭ VulnerabilityID : CVE-2025-15469 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -10606,7 +10629,7 @@
 │                       │       │                  ╰ [48]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
 │                       │       ╰ LastModifiedDate: 2026-02-02T18:37:39.313Z 
-│                       ├ [129] ╭ VulnerabilityID : CVE-2025-66199 
+│                       ├ [130] ╭ VulnerabilityID : CVE-2025-66199 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -10760,7 +10783,7 @@
 │                       │       │                  ╰ [50]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
 │                       │       ╰ LastModifiedDate: 2026-02-02T18:37:19.613Z 
-│                       ├ [130] ╭ VulnerabilityID : CVE-2025-68160 
+│                       ├ [131] ╭ VulnerabilityID : CVE-2025-68160 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -10906,7 +10929,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:24.08Z 
-│                       ├ [131] ╭ VulnerabilityID : CVE-2025-69418 
+│                       ├ [132] ╭ VulnerabilityID : CVE-2025-69418 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11052,7 +11075,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:24.297Z 
-│                       ├ [132] ╭ VulnerabilityID : CVE-2025-69420 
+│                       ├ [133] ╭ VulnerabilityID : CVE-2025-69420 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11203,7 +11226,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:26.427Z 
-│                       ├ [133] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [134] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11313,7 +11336,7 @@
 │                       │       │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │       ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:29.767Z 
-│                       ├ [134] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [135] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11397,7 +11420,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │       ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:29.927Z 
-│                       ├ [135] ╭ VulnerabilityID : CVE-2026-22795 
+│                       ├ [136] ╭ VulnerabilityID : CVE-2026-22795 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11548,7 +11571,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:32.247Z 
-│                       ├ [136] ╭ VulnerabilityID : CVE-2026-22796 
+│                       ├ [137] ╭ VulnerabilityID : CVE-2026-22796 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11699,7 +11722,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:32.48Z 
-│                       ├ [137] ╭ VulnerabilityID : CVE-2026-2673 
+│                       ├ [138] ╭ VulnerabilityID : CVE-2026-2673 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11823,7 +11846,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
 │                       │       ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T19:17:04.947Z 
-│                       ├ [138] ╭ VulnerabilityID : CVE-2026-31790 
+│                       ├ [139] ╭ VulnerabilityID : CVE-2026-31790 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -11916,7 +11939,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:34.75Z 
-│                       ├ [139] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [140] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │       ├ PkgID           : libssl3@3.5.1-r0 
 │                       │       ├ PkgName         : libssl3 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=3
@@ -12013,7 +12036,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │       ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:30.117Z 
-│                       ├ [140] ╭ VulnerabilityID : CVE-2025-13151 
+│                       ├ [141] ╭ VulnerabilityID : CVE-2025-13151 
 │                       │       ├ PkgID           : libtasn1@4.20.0-r0 
 │                       │       ├ PkgName         : libtasn1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libtasn1@4.20.0-r0?arch=x86_64&distro
@@ -12060,7 +12083,7 @@
 │                       │       │                  ╰ [8]: https://www.kb.cert.org/vuls/id/271649 
 │                       │       ├ PublishedDate   : 2026-01-07T22:15:43.2Z 
 │                       │       ╰ LastModifiedDate: 2026-02-02T19:27:23.07Z 
-│                       ├ [141] ╭ VulnerabilityID : CVE-2026-40200 
+│                       ├ [142] ╭ VulnerabilityID : CVE-2026-40200 
 │                       │       ├ PkgID           : musl@1.2.5-r14 
 │                       │       ├ PkgName         : musl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r14?arch=x86_64&distro=3.2
@@ -12104,7 +12127,7 @@
 │                       │       │                         0/13 
 │                       │       ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T19:18:46.69Z 
-│                       ├ [142] ╭ VulnerabilityID : CVE-2026-6042 
+│                       ├ [143] ╭ VulnerabilityID : CVE-2026-6042 
 │                       │       ├ PkgID           : musl@1.2.5-r14 
 │                       │       ├ PkgName         : musl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r14?arch=x86_64&distro=3.2
@@ -12153,7 +12176,7 @@
 │                       │       │                         3/2 
 │                       │       ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
 │                       │       ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
-│                       ├ [143] ╭ VulnerabilityID : CVE-2026-40200 
+│                       ├ [144] ╭ VulnerabilityID : CVE-2026-40200 
 │                       │       ├ PkgID           : musl-utils@1.2.5-r14 
 │                       │       ├ PkgName         : musl-utils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r14?arch=x86_64&dist
@@ -12197,7 +12220,7 @@
 │                       │       │                         0/13 
 │                       │       ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T19:18:46.69Z 
-│                       ├ [144] ╭ VulnerabilityID : CVE-2026-6042 
+│                       ├ [145] ╭ VulnerabilityID : CVE-2026-6042 
 │                       │       ├ PkgID           : musl-utils@1.2.5-r14 
 │                       │       ├ PkgName         : musl-utils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r14?arch=x86_64&dist
@@ -12246,7 +12269,7 @@
 │                       │       │                         3/2 
 │                       │       ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
 │                       │       ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
-│                       ├ [145] ╭ VulnerabilityID : CVE-2026-27135 
+│                       ├ [146] ╭ VulnerabilityID : CVE-2026-27135 
 │                       │       ├ PkgID           : nghttp2-libs@1.66.0-r0 
 │                       │       ├ PkgName         : nghttp2-libs 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nghttp2-libs@1.66.0-r0?arch=x86_64&di
@@ -12322,7 +12345,7 @@
 │                       │       │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2026-27135 
 │                       │       ├ PublishedDate   : 2026-03-18T18:16:26.723Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T22:16:42.337Z 
-│                       ├ [146] ╭ VulnerabilityID : CVE-2026-21932 
+│                       ├ [147] ╭ VulnerabilityID : CVE-2026-21932 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -12401,7 +12424,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.793Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.337Z 
-│                       ├ [147] ╭ VulnerabilityID : CVE-2026-21945 
+│                       ├ [148] ╭ VulnerabilityID : CVE-2026-21945 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -12498,7 +12521,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:57.39Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.613Z 
-│                       ├ [148] ╭ VulnerabilityID : CVE-2026-22016 
+│                       ├ [149] ╭ VulnerabilityID : CVE-2026-22016 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -12594,7 +12617,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:28.47Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:16:20.87Z 
-│                       ├ [149] ╭ VulnerabilityID : CVE-2026-34282 
+│                       ├ [150] ╭ VulnerabilityID : CVE-2026-34282 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -12689,7 +12712,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:32.643Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:20:14.86Z 
-│                       ├ [150] ╭ VulnerabilityID : CVE-2025-53057 
+│                       ├ [151] ╭ VulnerabilityID : CVE-2025-53057 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -12785,7 +12808,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2025-10-21T20:20:45.24Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:21.593Z 
-│                       ├ [151] ╭ VulnerabilityID : CVE-2025-53066 
+│                       ├ [152] ╭ VulnerabilityID : CVE-2025-53066 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -12880,7 +12903,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2025-10-21T20:20:47.177Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:21.753Z 
-│                       ├ [152] ╭ VulnerabilityID : CVE-2026-21925 
+│                       ├ [153] ╭ VulnerabilityID : CVE-2026-21925 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -12979,7 +13002,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:54.917Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.18Z 
-│                       ├ [153] ╭ VulnerabilityID : CVE-2026-21933 
+│                       ├ [154] ╭ VulnerabilityID : CVE-2026-21933 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13084,7 +13107,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.917Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.473Z 
-│                       ├ [154] ╭ VulnerabilityID : CVE-2026-22013 
+│                       ├ [155] ╭ VulnerabilityID : CVE-2026-22013 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13181,7 +13204,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:27.923Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:15:33.847Z 
-│                       ├ [155] ╭ VulnerabilityID : CVE-2026-22021 
+│                       ├ [156] ╭ VulnerabilityID : CVE-2026-22021 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13276,7 +13299,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:29.193Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:18:05.093Z 
-│                       ├ [156] ╭ VulnerabilityID : CVE-2026-23865 
+│                       ├ [157] ╭ VulnerabilityID : CVE-2026-23865 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13371,7 +13394,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-03-02T17:16:32.1Z 
 │                       │       ╰ LastModifiedDate: 2026-05-01T17:41:13.433Z 
-│                       ├ [157] ╭ VulnerabilityID : CVE-2025-61748 
+│                       ├ [158] ╭ VulnerabilityID : CVE-2025-61748 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13459,7 +13482,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2025-10-21T20:20:51.057Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:23.393Z 
-│                       ├ [158] ╭ VulnerabilityID : CVE-2026-22007 
+│                       ├ [159] ╭ VulnerabilityID : CVE-2026-22007 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13554,7 +13577,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:26.44Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:14:24.013Z 
-│                       ├ [159] ╭ VulnerabilityID : CVE-2026-22018 
+│                       ├ [160] ╭ VulnerabilityID : CVE-2026-22018 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13649,7 +13672,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:28.833Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:17:18.483Z 
-│                       ├ [160] ╭ VulnerabilityID : CVE-2026-34268 
+│                       ├ [161] ╭ VulnerabilityID : CVE-2026-34268 
 │                       │       ├ PkgID           : openjdk21-jre@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre@21.0.8_p9-r0?arch=x86_6
@@ -13743,7 +13766,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:30.353Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:19:01.973Z 
-│                       ├ [161] ╭ VulnerabilityID : CVE-2026-21932 
+│                       ├ [162] ╭ VulnerabilityID : CVE-2026-21932 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -13822,7 +13845,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.793Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.337Z 
-│                       ├ [162] ╭ VulnerabilityID : CVE-2026-21945 
+│                       ├ [163] ╭ VulnerabilityID : CVE-2026-21945 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -13919,7 +13942,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:57.39Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.613Z 
-│                       ├ [163] ╭ VulnerabilityID : CVE-2026-22016 
+│                       ├ [164] ╭ VulnerabilityID : CVE-2026-22016 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14015,7 +14038,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:28.47Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:16:20.87Z 
-│                       ├ [164] ╭ VulnerabilityID : CVE-2026-34282 
+│                       ├ [165] ╭ VulnerabilityID : CVE-2026-34282 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14110,7 +14133,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:32.643Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:20:14.86Z 
-│                       ├ [165] ╭ VulnerabilityID : CVE-2025-53057 
+│                       ├ [166] ╭ VulnerabilityID : CVE-2025-53057 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14206,7 +14229,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2025-10-21T20:20:45.24Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:21.593Z 
-│                       ├ [166] ╭ VulnerabilityID : CVE-2025-53066 
+│                       ├ [167] ╭ VulnerabilityID : CVE-2025-53066 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14301,7 +14324,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2025-10-21T20:20:47.177Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:21.753Z 
-│                       ├ [167] ╭ VulnerabilityID : CVE-2026-21925 
+│                       ├ [168] ╭ VulnerabilityID : CVE-2026-21925 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14400,7 +14423,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:54.917Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.18Z 
-│                       ├ [168] ╭ VulnerabilityID : CVE-2026-21933 
+│                       ├ [169] ╭ VulnerabilityID : CVE-2026-21933 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14505,7 +14528,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-01-20T22:15:55.917Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:31.473Z 
-│                       ├ [169] ╭ VulnerabilityID : CVE-2026-22013 
+│                       ├ [170] ╭ VulnerabilityID : CVE-2026-22013 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14602,7 +14625,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:27.923Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:15:33.847Z 
-│                       ├ [170] ╭ VulnerabilityID : CVE-2026-22021 
+│                       ├ [171] ╭ VulnerabilityID : CVE-2026-22021 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14697,7 +14720,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:29.193Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:18:05.093Z 
-│                       ├ [171] ╭ VulnerabilityID : CVE-2026-23865 
+│                       ├ [172] ╭ VulnerabilityID : CVE-2026-23865 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14792,7 +14815,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-03-02T17:16:32.1Z 
 │                       │       ╰ LastModifiedDate: 2026-05-01T17:41:13.433Z 
-│                       ├ [172] ╭ VulnerabilityID : CVE-2025-61748 
+│                       ├ [173] ╭ VulnerabilityID : CVE-2025-61748 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14880,7 +14903,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2025-10-21T20:20:51.057Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:23.393Z 
-│                       ├ [173] ╭ VulnerabilityID : CVE-2026-22007 
+│                       ├ [174] ╭ VulnerabilityID : CVE-2026-22007 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -14975,7 +14998,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:26.44Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:14:24.013Z 
-│                       ├ [174] ╭ VulnerabilityID : CVE-2026-22018 
+│                       ├ [175] ╭ VulnerabilityID : CVE-2026-22018 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -15070,7 +15093,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:28.833Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:17:18.483Z 
-│                       ├ [175] ╭ VulnerabilityID : CVE-2026-34268 
+│                       ├ [176] ╭ VulnerabilityID : CVE-2026-34268 
 │                       │       ├ PkgID           : openjdk21-jre-headless@21.0.8_p9-r0 
 │                       │       ├ PkgName         : openjdk21-jre-headless 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openjdk21-jre-headless@21.0.8_p9-r0?a
@@ -15164,7 +15187,7 @@
 │                       │       │                          ml#AppendixJAVA 
 │                       │       ├ PublishedDate   : 2026-04-21T21:16:30.353Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T12:19:01.973Z 
-│                       ├ [176] ╭ VulnerabilityID : CVE-2025-15467 
+│                       ├ [177] ╭ VulnerabilityID : CVE-2025-15467 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -15317,7 +15340,7 @@
 │                       │       │                  ╰ [54]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
 │                       │       ╰ LastModifiedDate: 2026-05-07T18:12:43.253Z 
-│                       ├ [177] ╭ VulnerabilityID : CVE-2026-31789 
+│                       ├ [178] ╭ VulnerabilityID : CVE-2026-31789 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -15408,7 +15431,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:34.57Z 
-│                       ├ [178] ╭ VulnerabilityID : CVE-2025-69419 
+│                       ├ [179] ╭ VulnerabilityID : CVE-2025-69419 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -15562,7 +15585,7 @@
 │                       │       │                  ╰ [42]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:26.19Z 
-│                       ├ [179] ╭ VulnerabilityID : CVE-2025-69421 
+│                       ├ [180] ╭ VulnerabilityID : CVE-2025-69421 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -15709,7 +15732,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:26.71Z 
-│                       ├ [180] ╭ VulnerabilityID : CVE-2026-28387 
+│                       ├ [181] ╭ VulnerabilityID : CVE-2026-28387 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -15799,7 +15822,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.27Z 
-│                       ├ [181] ╭ VulnerabilityID : CVE-2026-28388 
+│                       ├ [182] ╭ VulnerabilityID : CVE-2026-28388 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -15898,7 +15921,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.453Z 
-│                       ├ [182] ╭ VulnerabilityID : CVE-2026-28389 
+│                       ├ [183] ╭ VulnerabilityID : CVE-2026-28389 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -15988,7 +16011,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.637Z 
-│                       ├ [183] ╭ VulnerabilityID : CVE-2026-28390 
+│                       ├ [184] ╭ VulnerabilityID : CVE-2026-28390 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -16079,7 +16102,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:33.81Z 
-│                       ├ [184] ╭ VulnerabilityID : CVE-2025-11187 
+│                       ├ [185] ╭ VulnerabilityID : CVE-2025-11187 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -16226,7 +16249,7 @@
 │                       │       │                  ╰ [50]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
 │                       │       ╰ LastModifiedDate: 2026-03-20T14:16:13.89Z 
-│                       ├ [185] ╭ VulnerabilityID : CVE-2025-15468 
+│                       ├ [186] ╭ VulnerabilityID : CVE-2025-15468 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -16365,7 +16388,7 @@
 │                       │       │                  ╰ [50]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
 │                       │       ╰ LastModifiedDate: 2026-02-02T18:38:00.947Z 
-│                       ├ [186] ╭ VulnerabilityID : CVE-2025-15469 
+│                       ├ [187] ╭ VulnerabilityID : CVE-2025-15469 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -16508,7 +16531,7 @@
 │                       │       │                  ╰ [48]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
 │                       │       ╰ LastModifiedDate: 2026-02-02T18:37:39.313Z 
-│                       ├ [187] ╭ VulnerabilityID : CVE-2025-66199 
+│                       ├ [188] ╭ VulnerabilityID : CVE-2025-66199 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -16662,7 +16685,7 @@
 │                       │       │                  ╰ [50]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
 │                       │       ╰ LastModifiedDate: 2026-02-02T18:37:19.613Z 
-│                       ├ [188] ╭ VulnerabilityID : CVE-2025-68160 
+│                       ├ [189] ╭ VulnerabilityID : CVE-2025-68160 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -16808,7 +16831,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:24.08Z 
-│                       ├ [189] ╭ VulnerabilityID : CVE-2025-69418 
+│                       ├ [190] ╭ VulnerabilityID : CVE-2025-69418 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -16954,7 +16977,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:24.297Z 
-│                       ├ [190] ╭ VulnerabilityID : CVE-2025-69420 
+│                       ├ [191] ╭ VulnerabilityID : CVE-2025-69420 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17105,7 +17128,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:26.427Z 
-│                       ├ [191] ╭ VulnerabilityID : CVE-2025-9230 
+│                       ├ [192] ╭ VulnerabilityID : CVE-2025-9230 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17215,7 +17238,7 @@
 │                       │       │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
 │                       │       ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:29.767Z 
-│                       ├ [192] ╭ VulnerabilityID : CVE-2025-9231 
+│                       ├ [193] ╭ VulnerabilityID : CVE-2025-9231 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17299,7 +17322,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
 │                       │       ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:29.927Z 
-│                       ├ [193] ╭ VulnerabilityID : CVE-2026-22795 
+│                       ├ [194] ╭ VulnerabilityID : CVE-2026-22795 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17450,7 +17473,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:32.247Z 
-│                       ├ [194] ╭ VulnerabilityID : CVE-2026-22796 
+│                       ├ [195] ╭ VulnerabilityID : CVE-2026-22796 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17601,7 +17624,7 @@
 │                       │       │                  ╰ [53]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
 │                       │       ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:32.48Z 
-│                       ├ [195] ╭ VulnerabilityID : CVE-2026-2673 
+│                       ├ [196] ╭ VulnerabilityID : CVE-2026-2673 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17725,7 +17748,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
 │                       │       ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
 │                       │       ╰ LastModifiedDate: 2026-05-13T19:17:04.947Z 
-│                       ├ [196] ╭ VulnerabilityID : CVE-2026-31790 
+│                       ├ [197] ╭ VulnerabilityID : CVE-2026-31790 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17818,7 +17841,7 @@
 │                       │       │                          07/11 
 │                       │       ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:34.75Z 
-│                       ├ [197] ╭ VulnerabilityID : CVE-2025-9232 
+│                       ├ [198] ╭ VulnerabilityID : CVE-2025-9232 
 │                       │       ├ PkgID           : openssl@3.5.1-r0 
 │                       │       ├ PkgName         : openssl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.1-r0?arch=x86_64&distro=3
@@ -17915,7 +17938,7 @@
 │                       │       │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
 │                       │       ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
 │                       │       ╰ LastModifiedDate: 2026-05-12T13:17:30.117Z 
-│                       ├ [198] ╭ VulnerabilityID : CVE-2025-58050 
+│                       ├ [199] ╭ VulnerabilityID : CVE-2025-58050 
 │                       │       ├ PkgID           : pcre2@10.43-r1 
 │                       │       ├ PkgName         : pcre2 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/pcre2@10.43-r1?arch=x86_64&distro=3.2
@@ -17976,7 +17999,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-58050 
 │                       │       ├ PublishedDate   : 2025-08-27T19:15:37.56Z 
 │                       │       ╰ LastModifiedDate: 2025-09-09T15:27:39.573Z 
-│                       ├ [199] ╭ VulnerabilityID : CVE-2025-31133 
+│                       ├ [200] ╭ VulnerabilityID : CVE-2025-31133 
 │                       │       ├ PkgID           : runc@1.3.0-r2 
 │                       │       ├ PkgName         : runc 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23
@@ -18066,7 +18089,7 @@
 │                       │       │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2025-31133 
 │                       │       ├ PublishedDate   : 2025-11-06T19:15:41.343Z 
 │                       │       ╰ LastModifiedDate: 2025-12-03T18:30:15.43Z 
-│                       ├ [200] ╭ VulnerabilityID : CVE-2025-52565 
+│                       ├ [201] ╭ VulnerabilityID : CVE-2025-52565 
 │                       │       ├ PkgID           : runc@1.3.0-r2 
 │                       │       ├ PkgName         : runc 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23
@@ -18172,7 +18195,7 @@
 │                       │       │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2025-52565 
 │                       │       ├ PublishedDate   : 2025-11-06T20:15:49.24Z 
 │                       │       ╰ LastModifiedDate: 2025-12-03T18:33:33.357Z 
-│                       ├ [201] ╭ VulnerabilityID : CVE-2025-52881 
+│                       ├ [202] ╭ VulnerabilityID : CVE-2025-52881 
 │                       │       ├ PkgID           : runc@1.3.0-r2 
 │                       │       ├ PkgName         : runc 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/runc@1.3.0-r2?arch=x86_64&distro=3.23
@@ -18307,7 +18330,7 @@
 │                       │       │                  ╰ [43]: https://youtu.be/y1PaBzxwRWQ 
 │                       │       ├ PublishedDate   : 2025-11-06T21:15:42.817Z 
 │                       │       ╰ LastModifiedDate: 2025-12-03T18:37:17.917Z 
-│                       ├ [202] ╭ VulnerabilityID : CVE-2024-58251 
+│                       ├ [203] ╭ VulnerabilityID : CVE-2024-58251 
 │                       │       ├ PkgID           : ssl_client@1.37.0-r19 
 │                       │       ├ PkgName         : ssl_client 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dis
@@ -18343,7 +18366,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
 │                       │       ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
 │                       │       ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [203] ╭ VulnerabilityID : CVE-2025-46394 
+│                       ├ [204] ╭ VulnerabilityID : CVE-2025-46394 
 │                       │       ├ PkgID           : ssl_client@1.37.0-r19 
 │                       │       ├ PkgName         : ssl_client 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&dis
@@ -18388,7 +18411,7 @@
 │                       │       │                         3/1 
 │                       │       ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
 │                       │       ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
-│                       ├ [204] ╭ VulnerabilityID : CVE-2026-25749 
+│                       ├ [205] ╭ VulnerabilityID : CVE-2026-25749 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18453,7 +18476,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25749 
 │                       │       ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
 │                       │       ╰ LastModifiedDate: 2026-02-20T15:45:19.21Z 
-│                       ├ [205] ╭ VulnerabilityID : CVE-2026-28417 
+│                       ├ [206] ╭ VulnerabilityID : CVE-2026-28417 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18531,7 +18554,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28417 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:24.833Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:50:29.827Z 
-│                       ├ [206] ╭ VulnerabilityID : CVE-2026-28421 
+│                       ├ [207] ╭ VulnerabilityID : CVE-2026-28421 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18607,7 +18630,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28421 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.493Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:36.62Z 
-│                       ├ [207] ╭ VulnerabilityID : CVE-2026-33412 
+│                       ├ [208] ╭ VulnerabilityID : CVE-2026-33412 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18684,7 +18707,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-33412 
 │                       │       ├ PublishedDate   : 2026-03-24T20:16:29.74Z 
 │                       │       ╰ LastModifiedDate: 2026-03-25T21:59:14.98Z 
-│                       ├ [208] ╭ VulnerabilityID : CVE-2026-34714 
+│                       ├ [209] ╭ VulnerabilityID : CVE-2026-34714 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18737,7 +18760,7 @@
 │                       │       │                         0/3 
 │                       │       ├ PublishedDate   : 2026-03-30T19:16:26.853Z 
 │                       │       ╰ LastModifiedDate: 2026-04-03T12:16:18.5Z 
-│                       ├ [209] ╭ VulnerabilityID : CVE-2026-34982 
+│                       ├ [210] ╭ VulnerabilityID : CVE-2026-34982 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18800,7 +18823,7 @@
 │                       │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-34982 
 │                       │       ├ PublishedDate   : 2026-04-06T16:16:38.777Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T20:10:01.92Z 
-│                       ├ [210] ╭ VulnerabilityID : CVE-2026-35177 
+│                       ├ [211] ╭ VulnerabilityID : CVE-2026-35177 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18850,7 +18873,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35177 
 │                       │       ├ PublishedDate   : 2026-04-06T18:16:44.003Z 
 │                       │       ╰ LastModifiedDate: 2026-04-20T18:28:03.593Z 
-│                       ├ [211] ╭ VulnerabilityID : CVE-2026-39881 
+│                       ├ [212] ╭ VulnerabilityID : CVE-2026-39881 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18903,7 +18926,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-39881 
 │                       │       ├ PublishedDate   : 2026-04-08T21:17:00.4Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T16:50:17.39Z 
-│                       ├ [212] ╭ VulnerabilityID : CVE-2026-41411 
+│                       ├ [213] ╭ VulnerabilityID : CVE-2026-41411 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -18955,7 +18978,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-41411 
 │                       │       ├ PublishedDate   : 2026-04-24T17:16:22.037Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T13:39:23.25Z 
-│                       ├ [213] ╭ VulnerabilityID : CVE-2026-28418 
+│                       ├ [214] ╭ VulnerabilityID : CVE-2026-28418 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19012,7 +19035,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28418 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.003Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:49:55.213Z 
-│                       ├ [214] ╭ VulnerabilityID : CVE-2026-28419 
+│                       ├ [215] ╭ VulnerabilityID : CVE-2026-28419 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19069,7 +19092,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28419 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.163Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T21:22:05.74Z 
-│                       ├ [215] ╭ VulnerabilityID : CVE-2026-28420 
+│                       ├ [216] ╭ VulnerabilityID : CVE-2026-28420 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19124,7 +19147,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28420 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.33Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:23.017Z 
-│                       ├ [216] ╭ VulnerabilityID : CVE-2026-32249 
+│                       ├ [217] ╭ VulnerabilityID : CVE-2026-32249 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19183,7 +19206,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [217] ╭ VulnerabilityID : CVE-2026-44656 
+│                       ├ [218] ╭ VulnerabilityID : CVE-2026-44656 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19218,17 +19241,66 @@
 │                       │       │                   9.2.0435. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ VendorSeverity   ╭ azure: 2 
+│                       │       │                  ╰ nvd  : 2 
 │                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L 
 │                       │       │                        ╰ V3Score : 5.3 
 │                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
 │                       │       │                  │      bcfd991a7b5b6cb771ef0 
 │                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
-│                       │       │                         wg5-3cxw-wvvg 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
+│                       │       │                  │      wg5-3cxw-wvvg 
+│                       │       │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-44656 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
-│                       ├ [218] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [219] ╭ VulnerabilityID : CVE-2026-45130 
+│                       │       ├ PkgID           : vim@9.1.1557-r1 
+│                       │       ├ PkgName         : vim 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : f37ace8bbf995058 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0452-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45130 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:5d6c8ccad21fdc066ab9d90682c5fc7fbecd73139b5671d2512c
+│                       │       │                   5b477fd22bf1 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2.0450, a heap buffer overflow exists in
+│                       │       │                   read_compound() in src/spellfile.c when loading a crafted
+│                       │       │                   spell file (.spl) with UTF-8 encoding active. An
+│                       │       │                   attacker-controlled length field in the spell file's
+│                       │       │                   compound section overflows a 32-bit signed integer
+│                       │       │                   multiplication, causing a small buffer to be allocated for
+│                       │       │                   a write loop that runs many iterations, overflowing the
+│                       │       │                   heap. Because the 'spelllang' option can be set from a
+│                       │       │                   modeline, a text file modeline can trigger spell file
+│                       │       │                   loading if a malicious .spl file has been planted on the
+│                       │       │                   runtimepath. This issue has been patched in version
+│                       │       │                   9.2.0450. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ╭ [0]: CWE-122 
+│                       │       │                  ╰ [1]: CWE-190 
+│                       │       ├ VendorSeverity   ─ azure: 2 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
+│                       │       │                  │      00fff45ca86e1c2d369f8 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
+│                       │       │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
+│                       │       │                  │      4jv-r9gj-6cwv 
+│                       │       │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-45130 
+│                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
+│                       ├ [220] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19277,7 +19349,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [219] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [221] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19315,7 +19387,7 @@
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
-│                       ├ [220] ╭ VulnerabilityID : CVE-2026-43961 
+│                       ├ [222] ╭ VulnerabilityID : CVE-2026-43961 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19335,52 +19407,7 @@
 │                       │       ├ Fingerprint     : sha256:c602acd7b1a9a020d744796702b41d6fda14c6c1f95e7a2f8409
 │                       │       │                   b1ff62d652b1 
 │                       │       ╰ Severity        : UNKNOWN 
-│                       ├ [221] ╭ VulnerabilityID : CVE-2026-45130 
-│                       │       ├ PkgID           : vim@9.1.1557-r1 
-│                       │       ├ PkgName         : vim 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
-│                       │       │                  │       23.0_alpha20250612 
-│                       │       │                  ╰ UID : f37ace8bbf995058 
-│                       │       ├ InstalledVersion: 9.1.1557-r1 
-│                       │       ├ FixedVersion    : 9.2.0452-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45130 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:5d6c8ccad21fdc066ab9d90682c5fc7fbecd73139b5671d2512c
-│                       │       │                   5b477fd22bf1 
-│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2. ... 
-│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2.0450, a heap buffer overflow exists in
-│                       │       │                   read_compound() in src/spellfile.c when loading a crafted
-│                       │       │                   spell file (.spl) with UTF-8 encoding active. An
-│                       │       │                   attacker-controlled length field in the spell file's
-│                       │       │                   compound section overflows a 32-bit signed integer
-│                       │       │                   multiplication, causing a small buffer to be allocated for
-│                       │       │                   a write loop that runs many iterations, overflowing the
-│                       │       │                   heap. Because the 'spelllang' option can be set from a
-│                       │       │                   modeline, a text file modeline can trigger spell file
-│                       │       │                   loading if a malicious .spl file has been planted on the
-│                       │       │                   runtimepath. This issue has been patched in version
-│                       │       │                   9.2.0450. 
-│                       │       ├ Severity        : UNKNOWN 
-│                       │       ├ CweIDs           ╭ [0]: CWE-122 
-│                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
-│                       │       │                  │      00fff45ca86e1c2d369f8 
-│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
-│                       │       │                  ╰ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
-│                       │       │                         4jv-r9gj-6cwv 
-│                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
-│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
-│                       ├ [222] ╭ VulnerabilityID : CVE-2026-46483 
+│                       ├ [223] ╭ VulnerabilityID : CVE-2026-46483 
 │                       │       ├ PkgID           : vim@9.1.1557-r1 
 │                       │       ├ PkgName         : vim 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.
@@ -19421,7 +19448,7 @@
 │                       │       │                         fpv-9ff7-xg5w 
 │                       │       ├ PublishedDate   : 2026-05-15T15:16:54.237Z 
 │                       │       ╰ LastModifiedDate: 2026-05-15T15:16:54.237Z 
-│                       ├ [223] ╭ VulnerabilityID : CVE-2026-25749 
+│                       ├ [224] ╭ VulnerabilityID : CVE-2026-25749 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19486,7 +19513,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25749 
 │                       │       ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
 │                       │       ╰ LastModifiedDate: 2026-02-20T15:45:19.21Z 
-│                       ├ [224] ╭ VulnerabilityID : CVE-2026-28417 
+│                       ├ [225] ╭ VulnerabilityID : CVE-2026-28417 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19564,7 +19591,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28417 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:24.833Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:50:29.827Z 
-│                       ├ [225] ╭ VulnerabilityID : CVE-2026-28421 
+│                       ├ [226] ╭ VulnerabilityID : CVE-2026-28421 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19640,7 +19667,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28421 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.493Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:36.62Z 
-│                       ├ [226] ╭ VulnerabilityID : CVE-2026-33412 
+│                       ├ [227] ╭ VulnerabilityID : CVE-2026-33412 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19717,7 +19744,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-33412 
 │                       │       ├ PublishedDate   : 2026-03-24T20:16:29.74Z 
 │                       │       ╰ LastModifiedDate: 2026-03-25T21:59:14.98Z 
-│                       ├ [227] ╭ VulnerabilityID : CVE-2026-34714 
+│                       ├ [228] ╭ VulnerabilityID : CVE-2026-34714 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19770,7 +19797,7 @@
 │                       │       │                         0/3 
 │                       │       ├ PublishedDate   : 2026-03-30T19:16:26.853Z 
 │                       │       ╰ LastModifiedDate: 2026-04-03T12:16:18.5Z 
-│                       ├ [228] ╭ VulnerabilityID : CVE-2026-34982 
+│                       ├ [229] ╭ VulnerabilityID : CVE-2026-34982 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19833,7 +19860,7 @@
 │                       │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-34982 
 │                       │       ├ PublishedDate   : 2026-04-06T16:16:38.777Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T20:10:01.92Z 
-│                       ├ [229] ╭ VulnerabilityID : CVE-2026-35177 
+│                       ├ [230] ╭ VulnerabilityID : CVE-2026-35177 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19883,7 +19910,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35177 
 │                       │       ├ PublishedDate   : 2026-04-06T18:16:44.003Z 
 │                       │       ╰ LastModifiedDate: 2026-04-20T18:28:03.593Z 
-│                       ├ [230] ╭ VulnerabilityID : CVE-2026-39881 
+│                       ├ [231] ╭ VulnerabilityID : CVE-2026-39881 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19936,7 +19963,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-39881 
 │                       │       ├ PublishedDate   : 2026-04-08T21:17:00.4Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T16:50:17.39Z 
-│                       ├ [231] ╭ VulnerabilityID : CVE-2026-41411 
+│                       ├ [232] ╭ VulnerabilityID : CVE-2026-41411 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -19988,7 +20015,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-41411 
 │                       │       ├ PublishedDate   : 2026-04-24T17:16:22.037Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T13:39:23.25Z 
-│                       ├ [232] ╭ VulnerabilityID : CVE-2026-28418 
+│                       ├ [233] ╭ VulnerabilityID : CVE-2026-28418 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20045,7 +20072,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28418 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.003Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:49:55.213Z 
-│                       ├ [233] ╭ VulnerabilityID : CVE-2026-28419 
+│                       ├ [234] ╭ VulnerabilityID : CVE-2026-28419 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20102,7 +20129,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28419 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.163Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T21:22:05.74Z 
-│                       ├ [234] ╭ VulnerabilityID : CVE-2026-28420 
+│                       ├ [235] ╭ VulnerabilityID : CVE-2026-28420 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20157,7 +20184,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28420 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.33Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:23.017Z 
-│                       ├ [235] ╭ VulnerabilityID : CVE-2026-32249 
+│                       ├ [236] ╭ VulnerabilityID : CVE-2026-32249 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20216,7 +20243,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [236] ╭ VulnerabilityID : CVE-2026-44656 
+│                       ├ [237] ╭ VulnerabilityID : CVE-2026-44656 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20251,17 +20278,66 @@
 │                       │       │                   9.2.0435. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ VendorSeverity   ╭ azure: 2 
+│                       │       │                  ╰ nvd  : 2 
 │                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L 
 │                       │       │                        ╰ V3Score : 5.3 
 │                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
 │                       │       │                  │      bcfd991a7b5b6cb771ef0 
 │                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
-│                       │       │                         wg5-3cxw-wvvg 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
+│                       │       │                  │      wg5-3cxw-wvvg 
+│                       │       │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-44656 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
-│                       ├ [237] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [238] ╭ VulnerabilityID : CVE-2026-45130 
+│                       │       ├ PkgID           : vim-common@9.1.1557-r1 
+│                       │       ├ PkgName         : vim-common 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
+│                       │       │                  │       stro=3.23.0_alpha20250612 
+│                       │       │                  ╰ UID : f513f86f78716ce1 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0452-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45130 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:55667ee53576f3e1d22a73802f2e50fd8bf31b3c2732b4afb7d1
+│                       │       │                   e3232f699b2c 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2.0450, a heap buffer overflow exists in
+│                       │       │                   read_compound() in src/spellfile.c when loading a crafted
+│                       │       │                   spell file (.spl) with UTF-8 encoding active. An
+│                       │       │                   attacker-controlled length field in the spell file's
+│                       │       │                   compound section overflows a 32-bit signed integer
+│                       │       │                   multiplication, causing a small buffer to be allocated for
+│                       │       │                   a write loop that runs many iterations, overflowing the
+│                       │       │                   heap. Because the 'spelllang' option can be set from a
+│                       │       │                   modeline, a text file modeline can trigger spell file
+│                       │       │                   loading if a malicious .spl file has been planted on the
+│                       │       │                   runtimepath. This issue has been patched in version
+│                       │       │                   9.2.0450. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ╭ [0]: CWE-122 
+│                       │       │                  ╰ [1]: CWE-190 
+│                       │       ├ VendorSeverity   ─ azure: 2 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
+│                       │       │                  │      00fff45ca86e1c2d369f8 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
+│                       │       │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
+│                       │       │                  │      4jv-r9gj-6cwv 
+│                       │       │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-45130 
+│                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
+│                       ├ [239] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20310,7 +20386,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [238] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [240] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20348,7 +20424,7 @@
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
-│                       ├ [239] ╭ VulnerabilityID : CVE-2026-43961 
+│                       ├ [241] ╭ VulnerabilityID : CVE-2026-43961 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20368,52 +20444,7 @@
 │                       │       ├ Fingerprint     : sha256:9a3e2390e01d0437d873564aab7199b977ff0d33ed13c4e58e1d
 │                       │       │                   b413afffcdc7 
 │                       │       ╰ Severity        : UNKNOWN 
-│                       ├ [240] ╭ VulnerabilityID : CVE-2026-45130 
-│                       │       ├ PkgID           : vim-common@9.1.1557-r1 
-│                       │       ├ PkgName         : vim-common 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
-│                       │       │                  │       stro=3.23.0_alpha20250612 
-│                       │       │                  ╰ UID : f513f86f78716ce1 
-│                       │       ├ InstalledVersion: 9.1.1557-r1 
-│                       │       ├ FixedVersion    : 9.2.0452-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45130 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:55667ee53576f3e1d22a73802f2e50fd8bf31b3c2732b4afb7d1
-│                       │       │                   e3232f699b2c 
-│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2. ... 
-│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2.0450, a heap buffer overflow exists in
-│                       │       │                   read_compound() in src/spellfile.c when loading a crafted
-│                       │       │                   spell file (.spl) with UTF-8 encoding active. An
-│                       │       │                   attacker-controlled length field in the spell file's
-│                       │       │                   compound section overflows a 32-bit signed integer
-│                       │       │                   multiplication, causing a small buffer to be allocated for
-│                       │       │                   a write loop that runs many iterations, overflowing the
-│                       │       │                   heap. Because the 'spelllang' option can be set from a
-│                       │       │                   modeline, a text file modeline can trigger spell file
-│                       │       │                   loading if a malicious .spl file has been planted on the
-│                       │       │                   runtimepath. This issue has been patched in version
-│                       │       │                   9.2.0450. 
-│                       │       ├ Severity        : UNKNOWN 
-│                       │       ├ CweIDs           ╭ [0]: CWE-122 
-│                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
-│                       │       │                  │      00fff45ca86e1c2d369f8 
-│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
-│                       │       │                  ╰ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
-│                       │       │                         4jv-r9gj-6cwv 
-│                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
-│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
-│                       ├ [241] ╭ VulnerabilityID : CVE-2026-46483 
+│                       ├ [242] ╭ VulnerabilityID : CVE-2026-46483 
 │                       │       ├ PkgID           : vim-common@9.1.1557-r1 
 │                       │       ├ PkgName         : vim-common 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&di
@@ -20454,7 +20485,7 @@
 │                       │       │                         fpv-9ff7-xg5w 
 │                       │       ├ PublishedDate   : 2026-05-15T15:16:54.237Z 
 │                       │       ╰ LastModifiedDate: 2026-05-15T15:16:54.237Z 
-│                       ├ [242] ╭ VulnerabilityID : CVE-2026-25749 
+│                       ├ [243] ╭ VulnerabilityID : CVE-2026-25749 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20519,7 +20550,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-25749 
 │                       │       ├ PublishedDate   : 2026-02-06T23:15:54.23Z 
 │                       │       ╰ LastModifiedDate: 2026-02-20T15:45:19.21Z 
-│                       ├ [243] ╭ VulnerabilityID : CVE-2026-28417 
+│                       ├ [244] ╭ VulnerabilityID : CVE-2026-28417 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20597,7 +20628,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28417 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:24.833Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:50:29.827Z 
-│                       ├ [244] ╭ VulnerabilityID : CVE-2026-28421 
+│                       ├ [245] ╭ VulnerabilityID : CVE-2026-28421 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20673,7 +20704,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-28421 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.493Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:36.62Z 
-│                       ├ [245] ╭ VulnerabilityID : CVE-2026-33412 
+│                       ├ [246] ╭ VulnerabilityID : CVE-2026-33412 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20750,7 +20781,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-33412 
 │                       │       ├ PublishedDate   : 2026-03-24T20:16:29.74Z 
 │                       │       ╰ LastModifiedDate: 2026-03-25T21:59:14.98Z 
-│                       ├ [246] ╭ VulnerabilityID : CVE-2026-34714 
+│                       ├ [247] ╭ VulnerabilityID : CVE-2026-34714 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20803,7 +20834,7 @@
 │                       │       │                         0/3 
 │                       │       ├ PublishedDate   : 2026-03-30T19:16:26.853Z 
 │                       │       ╰ LastModifiedDate: 2026-04-03T12:16:18.5Z 
-│                       ├ [247] ╭ VulnerabilityID : CVE-2026-34982 
+│                       ├ [248] ╭ VulnerabilityID : CVE-2026-34982 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20866,7 +20897,7 @@
 │                       │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-34982 
 │                       │       ├ PublishedDate   : 2026-04-06T16:16:38.777Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T20:10:01.92Z 
-│                       ├ [248] ╭ VulnerabilityID : CVE-2026-35177 
+│                       ├ [249] ╭ VulnerabilityID : CVE-2026-35177 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20916,7 +20947,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35177 
 │                       │       ├ PublishedDate   : 2026-04-06T18:16:44.003Z 
 │                       │       ╰ LastModifiedDate: 2026-04-20T18:28:03.593Z 
-│                       ├ [249] ╭ VulnerabilityID : CVE-2026-39881 
+│                       ├ [250] ╭ VulnerabilityID : CVE-2026-39881 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -20969,7 +21000,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-39881 
 │                       │       ├ PublishedDate   : 2026-04-08T21:17:00.4Z 
 │                       │       ╰ LastModifiedDate: 2026-04-22T16:50:17.39Z 
-│                       ├ [250] ╭ VulnerabilityID : CVE-2026-41411 
+│                       ├ [251] ╭ VulnerabilityID : CVE-2026-41411 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21021,7 +21052,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-41411 
 │                       │       ├ PublishedDate   : 2026-04-24T17:16:22.037Z 
 │                       │       ╰ LastModifiedDate: 2026-04-27T13:39:23.25Z 
-│                       ├ [251] ╭ VulnerabilityID : CVE-2026-28418 
+│                       ├ [252] ╭ VulnerabilityID : CVE-2026-28418 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21078,7 +21109,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28418 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.003Z 
 │                       │       ╰ LastModifiedDate: 2026-03-03T17:49:55.213Z 
-│                       ├ [252] ╭ VulnerabilityID : CVE-2026-28419 
+│                       ├ [253] ╭ VulnerabilityID : CVE-2026-28419 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21135,7 +21166,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28419 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.163Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T21:22:05.74Z 
-│                       ├ [253] ╭ VulnerabilityID : CVE-2026-28420 
+│                       ├ [254] ╭ VulnerabilityID : CVE-2026-28420 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21190,7 +21221,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28420 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.33Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:47:23.017Z 
-│                       ├ [254] ╭ VulnerabilityID : CVE-2026-32249 
+│                       ├ [255] ╭ VulnerabilityID : CVE-2026-32249 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21249,7 +21280,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32249 
 │                       │       ├ PublishedDate   : 2026-03-12T20:16:05.523Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T11:50:06Z 
-│                       ├ [255] ╭ VulnerabilityID : CVE-2026-44656 
+│                       ├ [256] ╭ VulnerabilityID : CVE-2026-44656 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21284,17 +21315,66 @@
 │                       │       │                   9.2.0435. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-78 
-│                       │       ├ VendorSeverity   ─ nvd: 2 
+│                       │       ├ VendorSeverity   ╭ azure: 2 
+│                       │       │                  ╰ nvd  : 2 
 │                       │       ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L 
 │                       │       │                        ╰ V3Score : 5.3 
 │                       │       ├ References       ╭ [0]: https://github.com/vim/vim/commit/190cb3c2b9c769a3972
 │                       │       │                  │      bcfd991a7b5b6cb771ef0 
 │                       │       │                  ├ [1]: https://github.com/vim/vim/releases/tag/v9.2.0435 
-│                       │       │                  ╰ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
-│                       │       │                         wg5-3cxw-wvvg 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/security/advisories/GHSA-h
+│                       │       │                  │      wg5-3cxw-wvvg 
+│                       │       │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-44656 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:39.783Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:59:30.12Z 
-│                       ├ [256] ╭ VulnerabilityID : CVE-2026-28422 
+│                       ├ [257] ╭ VulnerabilityID : CVE-2026-45130 
+│                       │       ├ PkgID           : xxd@9.1.1557-r1 
+│                       │       ├ PkgName         : xxd 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
+│                       │       │                  │       23.0_alpha20250612 
+│                       │       │                  ╰ UID : 67ee24b19424f9fd 
+│                       │       ├ InstalledVersion: 9.1.1557-r1 
+│                       │       ├ FixedVersion    : 9.2.0452-r0 
+│                       │       ├ Status          : fixed 
+│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
+│                       │       │                  │         3501dd6062bd50a4b6afe 
+│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
+│                       │       │                            7c7d38461b41e40aab9e7 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45130 
+│                       │       ├ DataSource       ╭ ID  : alpine 
+│                       │       │                  ├ Name: Alpine Secdb 
+│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │       ├ Fingerprint     : sha256:f92b1dfd1a176f0cfdcfbb058e76250f4d6ea24069238c5afc49
+│                       │       │                   a97542544fba 
+│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2. ... 
+│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
+│                       │       │                   version 9.2.0450, a heap buffer overflow exists in
+│                       │       │                   read_compound() in src/spellfile.c when loading a crafted
+│                       │       │                   spell file (.spl) with UTF-8 encoding active. An
+│                       │       │                   attacker-controlled length field in the spell file's
+│                       │       │                   compound section overflows a 32-bit signed integer
+│                       │       │                   multiplication, causing a small buffer to be allocated for
+│                       │       │                   a write loop that runs many iterations, overflowing the
+│                       │       │                   heap. Because the 'spelllang' option can be set from a
+│                       │       │                   modeline, a text file modeline can trigger spell file
+│                       │       │                   loading if a malicious .spl file has been planted on the
+│                       │       │                   runtimepath. This issue has been patched in version
+│                       │       │                   9.2.0450. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ╭ [0]: CWE-122 
+│                       │       │                  ╰ [1]: CWE-190 
+│                       │       ├ VendorSeverity   ─ azure: 2 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
+│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
+│                       │       │                  │      00fff45ca86e1c2d369f8 
+│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
+│                       │       │                  ├ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
+│                       │       │                  │      4jv-r9gj-6cwv 
+│                       │       │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-45130 
+│                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
+│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
+│                       ├ [258] ╭ VulnerabilityID : CVE-2026-28422 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21343,7 +21423,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28422 
 │                       │       ├ PublishedDate   : 2026-02-27T22:16:25.667Z 
 │                       │       ╰ LastModifiedDate: 2026-03-04T20:44:22.99Z 
-│                       ├ [257] ╭ VulnerabilityID : CVE-2026-42307 
+│                       ├ [259] ╭ VulnerabilityID : CVE-2026-42307 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21381,7 +21461,7 @@
 │                       │       │                         5ch-p2qr-m5gx 
 │                       │       ├ PublishedDate   : 2026-05-08T23:16:36.777Z 
 │                       │       ╰ LastModifiedDate: 2026-05-14T13:55:49.753Z 
-│                       ├ [258] ╭ VulnerabilityID : CVE-2026-43961 
+│                       ├ [260] ╭ VulnerabilityID : CVE-2026-43961 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21401,52 +21481,7 @@
 │                       │       ├ Fingerprint     : sha256:d76dc49de35f04eeb6869454da56455abcb9ff38456f79a6b7f4
 │                       │       │                   069944f0ad25 
 │                       │       ╰ Severity        : UNKNOWN 
-│                       ├ [259] ╭ VulnerabilityID : CVE-2026-45130 
-│                       │       ├ PkgID           : xxd@9.1.1557-r1 
-│                       │       ├ PkgName         : xxd 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
-│                       │       │                  │       23.0_alpha20250612 
-│                       │       │                  ╰ UID : 67ee24b19424f9fd 
-│                       │       ├ InstalledVersion: 9.1.1557-r1 
-│                       │       ├ FixedVersion    : 9.2.0452-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45130 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:f92b1dfd1a176f0cfdcfbb058e76250f4d6ea24069238c5afc49
-│                       │       │                   a97542544fba 
-│                       │       ├ Title           : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2. ... 
-│                       │       ├ Description     : Vim is an open source, command line text editor. Prior to
-│                       │       │                   version 9.2.0450, a heap buffer overflow exists in
-│                       │       │                   read_compound() in src/spellfile.c when loading a crafted
-│                       │       │                   spell file (.spl) with UTF-8 encoding active. An
-│                       │       │                   attacker-controlled length field in the spell file's
-│                       │       │                   compound section overflows a 32-bit signed integer
-│                       │       │                   multiplication, causing a small buffer to be allocated for
-│                       │       │                   a write loop that runs many iterations, overflowing the
-│                       │       │                   heap. Because the 'spelllang' option can be set from a
-│                       │       │                   modeline, a text file modeline can trigger spell file
-│                       │       │                   loading if a malicious .spl file has been planted on the
-│                       │       │                   runtimepath. This issue has been patched in version
-│                       │       │                   9.2.0450. 
-│                       │       ├ Severity        : UNKNOWN 
-│                       │       ├ CweIDs           ╭ [0]: CWE-122 
-│                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/14/3 
-│                       │       │                  ├ [1]: https://github.com/vim/vim/commit/92993329178cb1f72d7
-│                       │       │                  │      00fff45ca86e1c2d369f8 
-│                       │       │                  ├ [2]: https://github.com/vim/vim/releases/tag/v9.2.0450 
-│                       │       │                  ╰ [3]: https://github.com/vim/vim/security/advisories/GHSA-q
-│                       │       │                         4jv-r9gj-6cwv 
-│                       │       ├ PublishedDate   : 2026-05-08T23:16:40.053Z 
-│                       │       ╰ LastModifiedDate: 2026-05-14T06:16:23.48Z 
-│                       ├ [260] ╭ VulnerabilityID : CVE-2026-46483 
+│                       ├ [261] ╭ VulnerabilityID : CVE-2026-46483 
 │                       │       ├ PkgID           : xxd@9.1.1557-r1 
 │                       │       ├ PkgName         : xxd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.
@@ -21487,7 +21522,7 @@
 │                       │       │                         fpv-9ff7-xg5w 
 │                       │       ├ PublishedDate   : 2026-05-15T15:16:54.237Z 
 │                       │       ╰ LastModifiedDate: 2026-05-15T15:16:54.237Z 
-│                       ├ [261] ╭ VulnerabilityID : CVE-2026-34743 
+│                       ├ [262] ╭ VulnerabilityID : CVE-2026-34743 
 │                       │       ├ PkgID           : xz-libs@5.8.1-r0 
 │                       │       ├ PkgName         : xz-libs 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/xz-libs@5.8.1-r0?arch=x86_64&distro=3
@@ -21541,7 +21576,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34743 
 │                       │       ├ PublishedDate   : 2026-04-02T19:21:33.187Z 
 │                       │       ╰ LastModifiedDate: 2026-04-15T17:33:17.68Z 
-│                       ├ [262] ╭ VulnerabilityID : CVE-2026-22184 
+│                       ├ [263] ╭ VulnerabilityID : CVE-2026-22184 
 │                       │       ├ PkgID           : zlib@1.3.1-r2 
 │                       │       ├ PkgName         : zlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
@@ -21592,7 +21627,7 @@
 │                       │       │                  ╰ [7]: https://zlib.net/ 
 │                       │       ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
 │                       │       ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
-│                       ╰ [263] ╭ VulnerabilityID : CVE-2026-27171 
+│                       ╰ [264] ╭ VulnerabilityID : CVE-2026-27171 
 │                               ├ PkgID           : zlib@1.3.1-r2 
 │                               ├ PkgName         : zlib 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
@@ -25045,8 +25080,9 @@
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Fingerprint     : sha256:b1c94a4f129cbd101141791323583756abc5a5912c101ea9dda0b
 │                       │      │                   e39e06ffa14 
-│                       │      ├ Title           : go-git is an extensible git implementation library written
-│                       │      │                   in pure Go. ... 
+│                       │      ├ Title           : golang: github.com/go-git/go-git: go-git: Information
+│                       │      │                   disclosure of HTTP authentication credentials via
+│                       │      │                   redirects 
 │                       │      ├ Description     : go-git is an extensible git implementation library written
 │                       │      │                   in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2,
 │                       │      │                   go-git may leak HTTP authentication credentials when
@@ -25055,19 +25091,27 @@
 │                       │      │                   and 6.0.0-alpha.2. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-522 
-│                       │      ├ VendorSeverity   ╭ ghsa: 2 
-│                       │      │                  ╰ nvd : 3 
-│                       │      ├ CVSS             ╭ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N 
-│                       │      │                  │      ╰ V3Score : 4.7 
-│                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N 
-│                       │      │                         ╰ V3Score : 7.4 
-│                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ├ [1]: https://github.com/go-git/go-git/releases/tag/v5.18.0 
-│                       │      │                  ├ [2]: https://github.com/go-git/go-git/releases/tag/v6.0.0-a
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ├ nvd   : 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 7.4 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-41506 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git 
+│                       │      │                  ├ [2]: https://github.com/go-git/go-git/releases/tag/v5.18.0 
+│                       │      │                  ├ [3]: https://github.com/go-git/go-git/releases/tag/v6.0.0-a
 │                       │      │                  │      lpha.2 
-│                       │      │                  ├ [3]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  ├ [4]: https://github.com/go-git/go-git/security/advisories/G
 │                       │      │                  │      HSA-3xc5-wrhm-f963 
-│                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-41506 
 │                       │      ├ PublishedDate   : 2026-05-08T14:16:33.983Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T14:33:02.04Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2026-33762 
@@ -28586,8 +28630,9 @@
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Fingerprint     : sha256:ea6f0f029a322b4fbf9595ad1ed71cd3f672c7f23b5198f8a5348
 │                       │      │                   b52ec9cf9f6 
-│                       │      ├ Title           : go-git is an extensible git implementation library written
-│                       │      │                   in pure Go. ... 
+│                       │      ├ Title           : golang: github.com/go-git/go-git: go-git: Information
+│                       │      │                   disclosure of HTTP authentication credentials via
+│                       │      │                   redirects 
 │                       │      ├ Description     : go-git is an extensible git implementation library written
 │                       │      │                   in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2,
 │                       │      │                   go-git may leak HTTP authentication credentials when
@@ -28596,19 +28641,27 @@
 │                       │      │                   and 6.0.0-alpha.2. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-522 
-│                       │      ├ VendorSeverity   ╭ ghsa: 2 
-│                       │      │                  ╰ nvd : 3 
-│                       │      ├ CVSS             ╭ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N 
-│                       │      │                  │      ╰ V3Score : 4.7 
-│                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N 
-│                       │      │                         ╰ V3Score : 7.4 
-│                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ├ [1]: https://github.com/go-git/go-git/releases/tag/v5.18.0 
-│                       │      │                  ├ [2]: https://github.com/go-git/go-git/releases/tag/v6.0.0-a
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ├ nvd   : 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 7.4 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-41506 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git 
+│                       │      │                  ├ [2]: https://github.com/go-git/go-git/releases/tag/v5.18.0 
+│                       │      │                  ├ [3]: https://github.com/go-git/go-git/releases/tag/v6.0.0-a
 │                       │      │                  │      lpha.2 
-│                       │      │                  ├ [3]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  ├ [4]: https://github.com/go-git/go-git/security/advisories/G
 │                       │      │                  │      HSA-3xc5-wrhm-f963 
-│                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-41506 
 │                       │      ├ PublishedDate   : 2026-05-08T14:16:33.983Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T14:33:02.04Z 
 │                       ├ [14] ╭ VulnerabilityID : CVE-2026-33762 
@@ -32169,8 +32222,9 @@
 │                       │      │                          cosystem%3Ago 
 │                       │      ├ Fingerprint     : sha256:44e651ba6ed43396470ef45d3bb7f84f76a93c9f9a8fbdd3a69ec
 │                       │      │                   71e32609cab 
-│                       │      ├ Title           : go-git is an extensible git implementation library written
-│                       │      │                   in pure Go. ... 
+│                       │      ├ Title           : golang: github.com/go-git/go-git: go-git: Information
+│                       │      │                   disclosure of HTTP authentication credentials via
+│                       │      │                   redirects 
 │                       │      ├ Description     : go-git is an extensible git implementation library written
 │                       │      │                   in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2,
 │                       │      │                   go-git may leak HTTP authentication credentials when
@@ -32179,19 +32233,27 @@
 │                       │      │                   and 6.0.0-alpha.2. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-522 
-│                       │      ├ VendorSeverity   ╭ ghsa: 2 
-│                       │      │                  ╰ nvd : 3 
-│                       │      ├ CVSS             ╭ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N 
-│                       │      │                  │      ╰ V3Score : 4.7 
-│                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N 
-│                       │      │                         ╰ V3Score : 7.4 
-│                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ├ [1]: https://github.com/go-git/go-git/releases/tag/v5.18.0 
-│                       │      │                  ├ [2]: https://github.com/go-git/go-git/releases/tag/v6.0.0-a
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ├ nvd   : 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 7.4 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 6.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-41506 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git 
+│                       │      │                  ├ [2]: https://github.com/go-git/go-git/releases/tag/v5.18.0 
+│                       │      │                  ├ [3]: https://github.com/go-git/go-git/releases/tag/v6.0.0-a
 │                       │      │                  │      lpha.2 
-│                       │      │                  ├ [3]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  ├ [4]: https://github.com/go-git/go-git/security/advisories/G
 │                       │      │                  │      HSA-3xc5-wrhm-f963 
-│                       │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-41506 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-41506 
 │                       │      ├ PublishedDate   : 2026-05-08T14:16:33.983Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T14:33:02.04Z 
 │                       ├ [16] ╭ VulnerabilityID : CVE-2026-33762 
