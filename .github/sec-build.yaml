@@ -909,6 +909,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      amazon: 2
       julia: 3
       photon: 3
       redhat: 2
@@ -6377,6 +6378,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      amazon: 2
       julia: 3
       photon: 3
       redhat: 2
@@ -7050,6 +7052,7 @@
     CweIDs:
     - CWE-331
     VendorSeverity:
+      amazon: 1
       photon: 3
       redhat: 1
     CVSS:
@@ -7772,6 +7775,25 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-34757
     PublishedDate: '2026-04-09T15:16:11.003Z'
     LastModifiedDate: '2026-05-13T23:07:51.863Z'
+  - VulnerabilityID: CVE-2026-40930
+    PkgID: libpng@1.6.49-r0
+    PkgName: libpng
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libpng@1.6.49-r0?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 7634c89e07a8aec5
+    InstalledVersion: 1.6.49-r0
+    FixedVersion: 1.6.58-r1
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-40930
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3c15d9f6c5bdb07062b4447e009bb949fde9eee15dc66f79dc93a0d367ed5110
+    Severity: UNKNOWN
   - VulnerabilityID: CVE-2025-15467
     PkgID: libssl3@3.5.1-r0
     PkgName: libssl3
@@ -15643,6 +15665,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      azure: 2
       nvd: 2
     CVSS:
       nvd:
@@ -15652,8 +15675,43 @@
     - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
     - https://github.com/vim/vim/releases/tag/v9.2.0435
     - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-44656
     PublishedDate: '2026-05-08T23:16:39.783Z'
     LastModifiedDate: '2026-05-14T13:59:30.12Z'
+  - VulnerabilityID: CVE-2026-45130
+    PkgID: vim@9.1.1557-r1
+    PkgName: vim
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f37ace8bbf995058
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0452-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45130
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:5d6c8ccad21fdc066ab9d90682c5fc7fbecd73139b5671d2512c5b477fd22bf1
+    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
+    Description: Vim is an open source, command line text editor. Prior to version 9.2.0450, a heap buffer overflow exists in read_compound() in src/spellfile.c when loading a crafted spell file (.spl) with UTF-8 encoding active. An attacker-controlled length field in the spell file's compound section overflows a 32-bit signed integer multiplication, causing a small buffer to be allocated for a write loop that runs many iterations, overflowing the heap. Because the 'spelllang' option can be set from a modeline, a text file modeline can trigger spell file loading if a malicious .spl file has been planted on the runtimepath. This issue has been patched in version 9.2.0450.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    - CWE-190
+    VendorSeverity:
+      azure: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/05/14/3
+    - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
+    - https://github.com/vim/vim/releases/tag/v9.2.0450
+    - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45130
+    PublishedDate: '2026-05-08T23:16:40.053Z'
+    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -15747,37 +15805,6 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:c602acd7b1a9a020d744796702b41d6fda14c6c1f95e7a2f8409b1ff62d652b1
     Severity: UNKNOWN
-  - VulnerabilityID: CVE-2026-45130
-    PkgID: vim@9.1.1557-r1
-    PkgName: vim
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f37ace8bbf995058
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0452-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45130
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:5d6c8ccad21fdc066ab9d90682c5fc7fbecd73139b5671d2512c5b477fd22bf1
-    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
-    Description: Vim is an open source, command line text editor. Prior to version 9.2.0450, a heap buffer overflow exists in read_compound() in src/spellfile.c when loading a crafted spell file (.spl) with UTF-8 encoding active. An attacker-controlled length field in the spell file's compound section overflows a 32-bit signed integer multiplication, causing a small buffer to be allocated for a write loop that runs many iterations, overflowing the heap. Because the 'spelllang' option can be set from a modeline, a text file modeline can trigger spell file loading if a malicious .spl file has been planted on the runtimepath. This issue has been patched in version 9.2.0450.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-122
-    - CWE-190
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/05/14/3
-    - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
-    - https://github.com/vim/vim/releases/tag/v9.2.0450
-    - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
-    PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-46483
     PkgID: vim@9.1.1557-r1
     PkgName: vim
@@ -16536,6 +16563,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      azure: 2
       nvd: 2
     CVSS:
       nvd:
@@ -16545,8 +16573,43 @@
     - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
     - https://github.com/vim/vim/releases/tag/v9.2.0435
     - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-44656
     PublishedDate: '2026-05-08T23:16:39.783Z'
     LastModifiedDate: '2026-05-14T13:59:30.12Z'
+  - VulnerabilityID: CVE-2026-45130
+    PkgID: vim-common@9.1.1557-r1
+    PkgName: vim-common
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: f513f86f78716ce1
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0452-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45130
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:55667ee53576f3e1d22a73802f2e50fd8bf31b3c2732b4afb7d1e3232f699b2c
+    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
+    Description: Vim is an open source, command line text editor. Prior to version 9.2.0450, a heap buffer overflow exists in read_compound() in src/spellfile.c when loading a crafted spell file (.spl) with UTF-8 encoding active. An attacker-controlled length field in the spell file's compound section overflows a 32-bit signed integer multiplication, causing a small buffer to be allocated for a write loop that runs many iterations, overflowing the heap. Because the 'spelllang' option can be set from a modeline, a text file modeline can trigger spell file loading if a malicious .spl file has been planted on the runtimepath. This issue has been patched in version 9.2.0450.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    - CWE-190
+    VendorSeverity:
+      azure: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/05/14/3
+    - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
+    - https://github.com/vim/vim/releases/tag/v9.2.0450
+    - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45130
+    PublishedDate: '2026-05-08T23:16:40.053Z'
+    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -16640,37 +16703,6 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:9a3e2390e01d0437d873564aab7199b977ff0d33ed13c4e58e1db413afffcdc7
     Severity: UNKNOWN
-  - VulnerabilityID: CVE-2026-45130
-    PkgID: vim-common@9.1.1557-r1
-    PkgName: vim-common
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/vim-common@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: f513f86f78716ce1
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0452-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45130
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:55667ee53576f3e1d22a73802f2e50fd8bf31b3c2732b4afb7d1e3232f699b2c
-    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
-    Description: Vim is an open source, command line text editor. Prior to version 9.2.0450, a heap buffer overflow exists in read_compound() in src/spellfile.c when loading a crafted spell file (.spl) with UTF-8 encoding active. An attacker-controlled length field in the spell file's compound section overflows a 32-bit signed integer multiplication, causing a small buffer to be allocated for a write loop that runs many iterations, overflowing the heap. Because the 'spelllang' option can be set from a modeline, a text file modeline can trigger spell file loading if a malicious .spl file has been planted on the runtimepath. This issue has been patched in version 9.2.0450.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-122
-    - CWE-190
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/05/14/3
-    - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
-    - https://github.com/vim/vim/releases/tag/v9.2.0450
-    - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
-    PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-46483
     PkgID: vim-common@9.1.1557-r1
     PkgName: vim-common
@@ -17429,6 +17461,7 @@
     CweIDs:
     - CWE-78
     VendorSeverity:
+      azure: 2
       nvd: 2
     CVSS:
       nvd:
@@ -17438,8 +17471,43 @@
     - https://github.com/vim/vim/commit/190cb3c2b9c769a3972bcfd991a7b5b6cb771ef0
     - https://github.com/vim/vim/releases/tag/v9.2.0435
     - https://github.com/vim/vim/security/advisories/GHSA-hwg5-3cxw-wvvg
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-44656
     PublishedDate: '2026-05-08T23:16:39.783Z'
     LastModifiedDate: '2026-05-14T13:59:30.12Z'
+  - VulnerabilityID: CVE-2026-45130
+    PkgID: xxd@9.1.1557-r1
+    PkgName: xxd
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
+      UID: 67ee24b19424f9fd
+    InstalledVersion: 9.1.1557-r1
+    FixedVersion: 9.2.0452-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45130
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:f92b1dfd1a176f0cfdcfbb058e76250f4d6ea24069238c5afc49a97542544fba
+    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
+    Description: Vim is an open source, command line text editor. Prior to version 9.2.0450, a heap buffer overflow exists in read_compound() in src/spellfile.c when loading a crafted spell file (.spl) with UTF-8 encoding active. An attacker-controlled length field in the spell file's compound section overflows a 32-bit signed integer multiplication, causing a small buffer to be allocated for a write loop that runs many iterations, overflowing the heap. Because the 'spelllang' option can be set from a modeline, a text file modeline can trigger spell file loading if a malicious .spl file has been planted on the runtimepath. This issue has been patched in version 9.2.0450.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    - CWE-190
+    VendorSeverity:
+      azure: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/05/14/3
+    - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
+    - https://github.com/vim/vim/releases/tag/v9.2.0450
+    - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45130
+    PublishedDate: '2026-05-08T23:16:40.053Z'
+    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-28422
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -17533,37 +17601,6 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:d76dc49de35f04eeb6869454da56455abcb9ff38456f79a6b7f4069944f0ad25
     Severity: UNKNOWN
-  - VulnerabilityID: CVE-2026-45130
-    PkgID: xxd@9.1.1557-r1
-    PkgName: xxd
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/xxd@9.1.1557-r1?arch=x86_64&distro=3.23.0_alpha20250612
-      UID: 67ee24b19424f9fd
-    InstalledVersion: 9.1.1557-r1
-    FixedVersion: 9.2.0452-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-45130
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:f92b1dfd1a176f0cfdcfbb058e76250f4d6ea24069238c5afc49a97542544fba
-    Title: Vim is an open source, command line text editor. Prior to version 9.2. ...
-    Description: Vim is an open source, command line text editor. Prior to version 9.2.0450, a heap buffer overflow exists in read_compound() in src/spellfile.c when loading a crafted spell file (.spl) with UTF-8 encoding active. An attacker-controlled length field in the spell file's compound section overflows a 32-bit signed integer multiplication, causing a small buffer to be allocated for a write loop that runs many iterations, overflowing the heap. Because the 'spelllang' option can be set from a modeline, a text file modeline can trigger spell file loading if a malicious .spl file has been planted on the runtimepath. This issue has been patched in version 9.2.0450.
-    Severity: UNKNOWN
-    CweIDs:
-    - CWE-122
-    - CWE-190
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/05/14/3
-    - https://github.com/vim/vim/commit/92993329178cb1f72d700fff45ca86e1c2d369f8
-    - https://github.com/vim/vim/releases/tag/v9.2.0450
-    - https://github.com/vim/vim/security/advisories/GHSA-q4jv-r9gj-6cwv
-    PublishedDate: '2026-05-08T23:16:40.053Z'
-    LastModifiedDate: '2026-05-14T06:16:23.48Z'
   - VulnerabilityID: CVE-2026-46483
     PkgID: xxd@9.1.1557-r1
     PkgName: xxd
@@ -20330,7 +20367,7 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:b1c94a4f129cbd101141791323583756abc5a5912c101ea9dda0be39e06ffa14
-    Title: go-git is an extensible git implementation library written in pure Go. ...
+    Title: 'golang: github.com/go-git/go-git: go-git: Information disclosure of HTTP authentication credentials via redirects'
     Description: go-git is an extensible git implementation library written in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2, go-git may leak HTTP authentication credentials when following redirects during smart-HTTP clone and fetch operations. This issue has been patched in versions 5.18.0 and 6.0.0-alpha.2.
     Severity: MEDIUM
     CweIDs:
@@ -20338,6 +20375,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 3
+      redhat: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N
@@ -20345,12 +20383,17 @@
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
         V3Score: 7.4
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
+        V3Score: 6.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-41506
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/releases/tag/v5.18.0
     - https://github.com/go-git/go-git/releases/tag/v6.0.0-alpha.2
     - https://github.com/go-git/go-git/security/advisories/GHSA-3xc5-wrhm-f963
     - https://nvd.nist.gov/vuln/detail/CVE-2026-41506
+    - https://www.cve.org/CVERecord?id=CVE-2026-41506
     PublishedDate: '2026-05-08T14:16:33.983Z'
     LastModifiedDate: '2026-05-12T14:33:02.04Z'
   - VulnerabilityID: CVE-2026-33762
@@ -23538,7 +23581,7 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:ea6f0f029a322b4fbf9595ad1ed71cd3f672c7f23b5198f8a5348b52ec9cf9f6
-    Title: go-git is an extensible git implementation library written in pure Go. ...
+    Title: 'golang: github.com/go-git/go-git: go-git: Information disclosure of HTTP authentication credentials via redirects'
     Description: go-git is an extensible git implementation library written in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2, go-git may leak HTTP authentication credentials when following redirects during smart-HTTP clone and fetch operations. This issue has been patched in versions 5.18.0 and 6.0.0-alpha.2.
     Severity: MEDIUM
     CweIDs:
@@ -23546,6 +23589,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 3
+      redhat: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N
@@ -23553,12 +23597,17 @@
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
         V3Score: 7.4
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
+        V3Score: 6.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-41506
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/releases/tag/v5.18.0
     - https://github.com/go-git/go-git/releases/tag/v6.0.0-alpha.2
     - https://github.com/go-git/go-git/security/advisories/GHSA-3xc5-wrhm-f963
     - https://nvd.nist.gov/vuln/detail/CVE-2026-41506
+    - https://www.cve.org/CVERecord?id=CVE-2026-41506
     PublishedDate: '2026-05-08T14:16:33.983Z'
     LastModifiedDate: '2026-05-12T14:33:02.04Z'
   - VulnerabilityID: CVE-2026-33762
@@ -26784,7 +26833,7 @@
       Name: GitHub Security Advisory Go
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:44e651ba6ed43396470ef45d3bb7f84f76a93c9f9a8fbdd3a69ec71e32609cab
-    Title: go-git is an extensible git implementation library written in pure Go. ...
+    Title: 'golang: github.com/go-git/go-git: go-git: Information disclosure of HTTP authentication credentials via redirects'
     Description: go-git is an extensible git implementation library written in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2, go-git may leak HTTP authentication credentials when following redirects during smart-HTTP clone and fetch operations. This issue has been patched in versions 5.18.0 and 6.0.0-alpha.2.
     Severity: MEDIUM
     CweIDs:
@@ -26792,6 +26841,7 @@
     VendorSeverity:
       ghsa: 2
       nvd: 3
+      redhat: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N
@@ -26799,12 +26849,17 @@
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
         V3Score: 7.4
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
+        V3Score: 6.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-41506
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/releases/tag/v5.18.0
     - https://github.com/go-git/go-git/releases/tag/v6.0.0-alpha.2
     - https://github.com/go-git/go-git/security/advisories/GHSA-3xc5-wrhm-f963
     - https://nvd.nist.gov/vuln/detail/CVE-2026-41506
+    - https://www.cve.org/CVERecord?id=CVE-2026-41506
     PublishedDate: '2026-05-08T14:16:33.983Z'
     LastModifiedDate: '2026-05-12T14:33:02.04Z'
   - VulnerabilityID: CVE-2026-33762
