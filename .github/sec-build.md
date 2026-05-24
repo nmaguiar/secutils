@@ -1774,24 +1774,28 @@
 │                       │       │                  │        es-available 
 │                       │       │                  ├ [109]: https://ubuntu.com/security/notices/USN-8226-1 
 │                       │       │                  ├ [110]: https://ubuntu.com/security/notices/USN-8277-1 
-│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8278-1 
-│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8279-1 
-│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8280-1 
-│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8281-1 
-│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8289-1 
-│                       │       │                  ├ [116]: https://websec.net/blog/cve-2026-31431-linux-algifa
+│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8277-2 
+│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8278-1 
+│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8279-1 
+│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8279-2 
+│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8280-1 
+│                       │       │                  ├ [116]: https://ubuntu.com/security/notices/USN-8280-2 
+│                       │       │                  ├ [117]: https://ubuntu.com/security/notices/USN-8281-1 
+│                       │       │                  ├ [118]: https://ubuntu.com/security/notices/USN-8281-2 
+│                       │       │                  ├ [119]: https://ubuntu.com/security/notices/USN-8289-1 
+│                       │       │                  ├ [120]: https://websec.net/blog/cve-2026-31431-linux-algifa
 │                       │       │                  │        ead-page-cache-write-to-root-69f38a4ccddd2db1f520f1
 │                       │       │                  │        70 
-│                       │       │                  ├ [117]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [121]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog 
-│                       │       │                  ├ [118]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [122]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog?field_cve=CVE-2026-31431 
-│                       │       │                  ├ [119]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
-│                       │       │                  ├ [120]: https://www.kb.cert.org/vuls/id/260001 
-│                       │       │                  ├ [121]: https://www.openwall.com/lists/oss-security/2026/04
+│                       │       │                  ├ [123]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
+│                       │       │                  ├ [124]: https://www.kb.cert.org/vuls/id/260001 
+│                       │       │                  ├ [125]: https://www.openwall.com/lists/oss-security/2026/04
 │                       │       │                  │        /29/23 
-│                       │       │                  ├ [122]: https://xint.io/blog/copy-fail-linux-distributions 
-│                       │       │                  ╰ [123]: https://xint.io/blog/copy-fail-linux-distributions#
+│                       │       │                  ├ [126]: https://xint.io/blog/copy-fail-linux-distributions 
+│                       │       │                  ╰ [127]: https://xint.io/blog/copy-fail-linux-distributions#
 │                       │       │                           the-fix-6 
 │                       │       ├ PublishedDate   : 2026-04-22T09:16:21.27Z 
 │                       │       ╰ LastModifiedDate: 2026-05-21T19:52:35.217Z 
@@ -2704,24 +2708,28 @@
 │                       │       │                  │        es-available 
 │                       │       │                  ├ [109]: https://ubuntu.com/security/notices/USN-8226-1 
 │                       │       │                  ├ [110]: https://ubuntu.com/security/notices/USN-8277-1 
-│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8278-1 
-│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8279-1 
-│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8280-1 
-│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8281-1 
-│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8289-1 
-│                       │       │                  ├ [116]: https://websec.net/blog/cve-2026-31431-linux-algifa
+│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8277-2 
+│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8278-1 
+│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8279-1 
+│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8279-2 
+│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8280-1 
+│                       │       │                  ├ [116]: https://ubuntu.com/security/notices/USN-8280-2 
+│                       │       │                  ├ [117]: https://ubuntu.com/security/notices/USN-8281-1 
+│                       │       │                  ├ [118]: https://ubuntu.com/security/notices/USN-8281-2 
+│                       │       │                  ├ [119]: https://ubuntu.com/security/notices/USN-8289-1 
+│                       │       │                  ├ [120]: https://websec.net/blog/cve-2026-31431-linux-algifa
 │                       │       │                  │        ead-page-cache-write-to-root-69f38a4ccddd2db1f520f1
 │                       │       │                  │        70 
-│                       │       │                  ├ [117]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [121]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog 
-│                       │       │                  ├ [118]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [122]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog?field_cve=CVE-2026-31431 
-│                       │       │                  ├ [119]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
-│                       │       │                  ├ [120]: https://www.kb.cert.org/vuls/id/260001 
-│                       │       │                  ├ [121]: https://www.openwall.com/lists/oss-security/2026/04
+│                       │       │                  ├ [123]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
+│                       │       │                  ├ [124]: https://www.kb.cert.org/vuls/id/260001 
+│                       │       │                  ├ [125]: https://www.openwall.com/lists/oss-security/2026/04
 │                       │       │                  │        /29/23 
-│                       │       │                  ├ [122]: https://xint.io/blog/copy-fail-linux-distributions 
-│                       │       │                  ╰ [123]: https://xint.io/blog/copy-fail-linux-distributions#
+│                       │       │                  ├ [126]: https://xint.io/blog/copy-fail-linux-distributions 
+│                       │       │                  ╰ [127]: https://xint.io/blog/copy-fail-linux-distributions#
 │                       │       │                           the-fix-6 
 │                       │       ├ PublishedDate   : 2026-04-22T09:16:21.27Z 
 │                       │       ╰ LastModifiedDate: 2026-05-21T19:52:35.217Z 
@@ -3634,24 +3642,28 @@
 │                       │       │                  │        es-available 
 │                       │       │                  ├ [109]: https://ubuntu.com/security/notices/USN-8226-1 
 │                       │       │                  ├ [110]: https://ubuntu.com/security/notices/USN-8277-1 
-│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8278-1 
-│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8279-1 
-│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8280-1 
-│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8281-1 
-│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8289-1 
-│                       │       │                  ├ [116]: https://websec.net/blog/cve-2026-31431-linux-algifa
+│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8277-2 
+│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8278-1 
+│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8279-1 
+│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8279-2 
+│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8280-1 
+│                       │       │                  ├ [116]: https://ubuntu.com/security/notices/USN-8280-2 
+│                       │       │                  ├ [117]: https://ubuntu.com/security/notices/USN-8281-1 
+│                       │       │                  ├ [118]: https://ubuntu.com/security/notices/USN-8281-2 
+│                       │       │                  ├ [119]: https://ubuntu.com/security/notices/USN-8289-1 
+│                       │       │                  ├ [120]: https://websec.net/blog/cve-2026-31431-linux-algifa
 │                       │       │                  │        ead-page-cache-write-to-root-69f38a4ccddd2db1f520f1
 │                       │       │                  │        70 
-│                       │       │                  ├ [117]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [121]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog 
-│                       │       │                  ├ [118]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [122]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog?field_cve=CVE-2026-31431 
-│                       │       │                  ├ [119]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
-│                       │       │                  ├ [120]: https://www.kb.cert.org/vuls/id/260001 
-│                       │       │                  ├ [121]: https://www.openwall.com/lists/oss-security/2026/04
+│                       │       │                  ├ [123]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
+│                       │       │                  ├ [124]: https://www.kb.cert.org/vuls/id/260001 
+│                       │       │                  ├ [125]: https://www.openwall.com/lists/oss-security/2026/04
 │                       │       │                  │        /29/23 
-│                       │       │                  ├ [122]: https://xint.io/blog/copy-fail-linux-distributions 
-│                       │       │                  ╰ [123]: https://xint.io/blog/copy-fail-linux-distributions#
+│                       │       │                  ├ [126]: https://xint.io/blog/copy-fail-linux-distributions 
+│                       │       │                  ╰ [127]: https://xint.io/blog/copy-fail-linux-distributions#
 │                       │       │                           the-fix-6 
 │                       │       ├ PublishedDate   : 2026-04-22T09:16:21.27Z 
 │                       │       ╰ LastModifiedDate: 2026-05-21T19:52:35.217Z 
@@ -4564,24 +4576,28 @@
 │                       │       │                  │        es-available 
 │                       │       │                  ├ [109]: https://ubuntu.com/security/notices/USN-8226-1 
 │                       │       │                  ├ [110]: https://ubuntu.com/security/notices/USN-8277-1 
-│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8278-1 
-│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8279-1 
-│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8280-1 
-│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8281-1 
-│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8289-1 
-│                       │       │                  ├ [116]: https://websec.net/blog/cve-2026-31431-linux-algifa
+│                       │       │                  ├ [111]: https://ubuntu.com/security/notices/USN-8277-2 
+│                       │       │                  ├ [112]: https://ubuntu.com/security/notices/USN-8278-1 
+│                       │       │                  ├ [113]: https://ubuntu.com/security/notices/USN-8279-1 
+│                       │       │                  ├ [114]: https://ubuntu.com/security/notices/USN-8279-2 
+│                       │       │                  ├ [115]: https://ubuntu.com/security/notices/USN-8280-1 
+│                       │       │                  ├ [116]: https://ubuntu.com/security/notices/USN-8280-2 
+│                       │       │                  ├ [117]: https://ubuntu.com/security/notices/USN-8281-1 
+│                       │       │                  ├ [118]: https://ubuntu.com/security/notices/USN-8281-2 
+│                       │       │                  ├ [119]: https://ubuntu.com/security/notices/USN-8289-1 
+│                       │       │                  ├ [120]: https://websec.net/blog/cve-2026-31431-linux-algifa
 │                       │       │                  │        ead-page-cache-write-to-root-69f38a4ccddd2db1f520f1
 │                       │       │                  │        70 
-│                       │       │                  ├ [117]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [121]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog 
-│                       │       │                  ├ [118]: https://www.cisa.gov/known-exploited-vulnerabilitie
+│                       │       │                  ├ [122]: https://www.cisa.gov/known-exploited-vulnerabilitie
 │                       │       │                  │        s-catalog?field_cve=CVE-2026-31431 
-│                       │       │                  ├ [119]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
-│                       │       │                  ├ [120]: https://www.kb.cert.org/vuls/id/260001 
-│                       │       │                  ├ [121]: https://www.openwall.com/lists/oss-security/2026/04
+│                       │       │                  ├ [123]: https://www.cve.org/CVERecord?id=CVE-2026-31431 
+│                       │       │                  ├ [124]: https://www.kb.cert.org/vuls/id/260001 
+│                       │       │                  ├ [125]: https://www.openwall.com/lists/oss-security/2026/04
 │                       │       │                  │        /29/23 
-│                       │       │                  ├ [122]: https://xint.io/blog/copy-fail-linux-distributions 
-│                       │       │                  ╰ [123]: https://xint.io/blog/copy-fail-linux-distributions#
+│                       │       │                  ├ [126]: https://xint.io/blog/copy-fail-linux-distributions 
+│                       │       │                  ╰ [127]: https://xint.io/blog/copy-fail-linux-distributions#
 │                       │       │                           the-fix-6 
 │                       │       ├ PublishedDate   : 2026-04-22T09:16:21.27Z 
 │                       │       ╰ LastModifiedDate: 2026-05-21T19:52:35.217Z 
@@ -22711,58 +22727,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34743 
 │                       │       ├ PublishedDate   : 2026-04-02T19:21:33.187Z 
 │                       │       ╰ LastModifiedDate: 2026-04-15T17:33:17.68Z 
-│                       ├ [276] ╭ VulnerabilityID : CVE-2026-22184 
-│                       │       ├ PkgID           : zlib@1.3.1-r2 
-│                       │       ├ PkgName         : zlib 
-│                       │       ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
-│                       │       │                  │       .0_alpha20250612 
-│                       │       │                  ╰ UID : b954f4a027f289c1 
-│                       │       ├ InstalledVersion: 1.3.1-r2 
-│                       │       ├ FixedVersion    : 1.3.2-r0 
-│                       │       ├ Status          : fixed 
-│                       │       ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac326744364
-│                       │       │                  │         3501dd6062bd50a4b6afe 
-│                       │       │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc
-│                       │       │                            7c7d38461b41e40aab9e7 
-│                       │       ├ SeveritySource  : nvd 
-│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
-│                       │       ├ DataSource       ╭ ID  : alpine 
-│                       │       │                  ├ Name: Alpine Secdb 
-│                       │       │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │       ├ Fingerprint     : sha256:3e21490ddd80f091eee82652f56c5b6de503c3deb52c6de84d15
-│                       │       │                   fc5bfe4c7675 
-│                       │       ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
-│                       │       │                    untgz utility 
-│                       │       ├ Description     : zlib versions up to and including 1.3.1.2 include a global
-│                       │       │                   buffer overflow in the untgz utility located under
-│                       │       │                   contrib/untgz. The vulnerability is limited to the
-│                       │       │                   standalone demonstration utility and does not affect the
-│                       │       │                   core zlib compression library. The flaw occurs when a user
-│                       │       │                   executes the untgz command with an excessively long archive
-│                       │       │                    name supplied via the command line, leading to an
-│                       │       │                   out-of-bounds write in a fixed-size global buffer. 
-│                       │       ├ Severity        : HIGH 
-│                       │       ├ CweIDs           ─ [0]: CWE-787 
-│                       │       ├ VendorSeverity   ╭ nvd   : 3 
-│                       │       │                  ╰ redhat: 3 
-│                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
-│                       │       │                  │        │           H/A:H 
-│                       │       │                  │        ╰ V3Score : 7.8 
-│                       │       │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
-│                       │       │                           │           L/A:H 
-│                       │       │                           ╰ V3Score : 8.6 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
-│                       │       │                  ├ [1]: https://github.com/madler/zlib 
-│                       │       │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
-│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
-│                       │       │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
-│                       │       │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
-│                       │       │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-globa
-│                       │       │                  │      l-buffer-overflow-in-tgzfname 
-│                       │       │                  ╰ [7]: https://zlib.net/ 
-│                       │       ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
-│                       │       ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
-│                       ╰ [277] ╭ VulnerabilityID : CVE-2026-27171 
+│                       ╰ [276] ╭ VulnerabilityID : CVE-2026-27171 
 │                               ├ PkgID           : zlib@1.3.1-r2 
 │                               ├ PkgName         : zlib 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23
