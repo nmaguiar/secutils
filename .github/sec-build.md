@@ -264,11 +264,13 @@
 │                       │       │                           ╰ V3Score : 6.5 
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-35469 
 │                       │       │                  ├ [1]: https://github.com/moby/spdystream 
-│                       │       │                  ├ [2]: https://github.com/moby/spdystream/releases/tag/v0.5.1 
-│                       │       │                  ├ [3]: https://github.com/moby/spdystream/security/advisorie
+│                       │       │                  ├ [2]: https://github.com/moby/spdystream/commit/ef6121f62c7
+│                       │       │                  │      30110bf5ae604a865a8613bfb787f 
+│                       │       │                  ├ [3]: https://github.com/moby/spdystream/releases/tag/v0.5.1 
+│                       │       │                  ├ [4]: https://github.com/moby/spdystream/security/advisorie
 │                       │       │                  │      s/GHSA-pc3f-x583-g7j2 
-│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-35469 
-│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35469 
+│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-35469 
+│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-35469 
 │                       │       ├ PublishedDate   : 2026-04-16T22:16:37.92Z 
 │                       │       ╰ LastModifiedDate: 2026-04-29T21:04:10.06Z 
 │                       ├ [6]   ╭ VulnerabilityID : CVE-2026-46680 
@@ -10396,7 +10398,8 @@
 │                       │       │                   m 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-436 
-│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/05/15
 │                       │       │                  │      /21 
 │                       │       │                  ├ [1]: https://github.com/pnggroup/libpng/commit/faf06924688
@@ -10438,7 +10441,8 @@
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ╭ [0]: CWE-189 
 │                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ azure : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ azure : 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -25069,7 +25073,7 @@
 │                       │      │                  ╰ [1]: https://github.com/kjd/idna/security/advisories/GHSA-6
 │                       │      │                         5pc-fj4g-8rjx 
 │                       │      ├ PublishedDate   : 2026-06-05T23:16:43.343Z 
-│                       │      ╰ LastModifiedDate: 2026-06-05T23:16:43.343Z 
+│                       │      ╰ LastModifiedDate: 2026-06-08T15:02:26.293Z 
 │                       ├ [5]  ╭ VulnerabilityID : CVE-2026-41066 
 │                       │      ├ VendorIDs        ─ [0]: GHSA-vfmq-68hx-4jfw 
 │                       │      ├ PkgName         : lxml 
@@ -26479,60 +26483,57 @@
 │                       │      │                   b7c84495470 
 │                       │      ├ Title           : Docker: Race condition in docker cp allows bind mount
 │                       │      │                   redirection to host path 
-│                       │      ├ Description     : ## Summary
+│                       │      ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+│                       │      │                    the following vulnerabilities:
+│                       │      │                   CVE-2026-46595:
+│                       │      │                   	Previously, CVE-2024-45337 fixed an authorization bypass
+│                       │      │                   for misused ssh server configurations; if any other type of
+│                       │      │                   callback is passed other than public key, then the
+│                       │      │                   source-address validation would be skipped.
 │                       │      │                   
-│                       │      │                   A race condition during `docker cp` mount setup allows a
-│                       │      │                   malicious container to redirect a bind mount target to an
-│                       │      │                   arbitrary host path, potentially overwriting host files or
-│                       │      │                   causing denial of service.
-│                       │      │                   ## Details
-│                       │      │                   When copying files into a container, the daemon sets up a
-│                       │      │                   temporary filesystem view by bind-mounting volumes into a
-│                       │      │                   private mount namespace. During this setup, the mount
-│                       │      │                   destination is created inside the container root and then a
-│                       │      │                   bind mount is attached using the container-relative path
-│                       │      │                   resolved to an absolute host path.
-│                       │      │                   Between mountpoint creation and the `mount()` syscall, a
-│                       │      │                   process running inside the container can replace the
-│                       │      │                   destination (or a parent path component) with a symlink
-│                       │      │                   pointing to an arbitrary location on the host. The `mount()`
-│                       │      │                    syscall follows the symlink, causing the volume to be
-│                       │      │                   bind-mounted onto an arbitrary host path instead of the
-│                       │      │                   intended container path.
-│                       │      │                   ## Impact
-│                       │      │                   A malicious container can redirect a volume bind mount to an
-│                       │      │                    arbitrary host path. The impact depends on the volume
-│                       │      │                   content and mount options:
-│                       │      │                   - If the volume is writable, arbitrary host files at the
-│                       │      │                   redirected path could be overwritten with the volume's
-│                       │      │                   contents.
-│                       │      │                   - If the volume is read-only, the host path is masked by the
-│                       │      │                    mount for the duration of the operation, causing denial of
-│                       │      │                   service.
-│                       │      │                   - In all cases the mount is temporary (torn down after the
-│                       │      │                   `docker cp` completes), but the effects of any writes
-│                       │      │                   persist.
-│                       │      │                   ### Conditions for exploitation
-│                       │      │                   - A container must have at least one volume mount.
-│                       │      │                   - A process inside the container must be able to rapidly
-│                       │      │                   create and swap symlinks at the volume mount destination
-│                       │      │                   path.
-│                       │      │                   - An operator must initiate a `docker cp` into that
-│                       │      │                   container, or call the `PUT /containers/{id}/archive` or
-│                       │      │                   `HEAD /containers/{id}/archive` API endpoints.
-│                       │      │                   ### Not affected
-│                       │      │                   - Containers that do not have volume mounts are not
-│                       │      │                   affected, as the race occurs during volume bind-mount
-│                       │      │                   setup.
-│                       │      │                   ## Workarounds
-│                       │      │                   - Only run containers from trusted images.
-│                       │      │                   - Avoid using `docker cp` with untrusted running
-│                       │      │                   containers.
-│                       │      │                   - Use authorization plugins to restrict access to the
-│                       │      │                   archive API endpoints (`PUT /containers/{id}/archive`, `HEAD
-│                       │      │                    /containers/{id}/archive`). 
+│                       │      │                   CVE-2026-42508:
+│                       │      │                   	Previously, a revoked 'SignatureKey' belonging to a CA was
+│                       │      │                   not correctly checked for revocation. Now, both the 'key'
+│                       │      │                   and 'key.SignatureKey' are checked for @revoked.
+│                       │      │                   CVE-2026-42306:
+│                       │      │                   	Docker: Race condition in docker cp allows bind mount
+│                       │      │                   redirection to host path
+│                       │      │                   CVE-2026-39833:
+│                       │      │                   	The in-memory keyring returned by NewKeyring() silently
+│                       │      │                   accepted keys with the ConfirmBeforeUse constraint but never
+│                       │      │                    enforced it. The key would sign without any confirmation
+│                       │      │                   prompt, with no indication to the caller that the constraint
+│                       │      │                    was not in effect. NewKeyring() now returns an error when
+│                       │      │                   unsupported constraints are requested.
+│                       │      │                   CVE-2026-39831:
+│                       │      │                   	The Verify() method for FIDO/U2F security key types
+│                       │      │                   (sk-ecdsa-sha2-nistp256@openssh.com,
+│                       │      │                   sk-ssh-ed25519@openssh.com) did not check the User Presence
+│                       │      │                   flag. Signatures generated without physical touch were
+│                       │      │                   accepted, allowing unattended use of a hardware security
+│                       │      │                   key. To restore the previous behavior, return a
+│                       │      │                   "no-touch-required" extension in Permissions.Extensions from
+│                       │      │                    PublicKeyCallback.
+│                       │      │                   CVE-2026-39830:
+│                       │      │                   	A malicious SSH peer could send unsolicited global request
+│                       │      │                   responses to fill an internal buffer, blocking the
+│                       │      │                   connection's read loop. The blocked goroutine could not be
+│                       │      │                   released by calling Close(), resulting in a resource leak
+│                       │      │                   per connection. Unsolicited global responses are now
+│                       │      │                   discarded.
+│                       │      │                   CVE-2026-39829:
+│                       │      │                   	The RSA and DSA public key parsers did not enforce size
+│                       │      │                   limits on key parameters. A crafted public key with an
+│                       │      │                   excessively large modulus or DSA parameter could cause
+│                       │      │                   several minutes of CPU consumption during signature
+│                       │      │                   verification. This could be triggered by unauthenticated
+│                       │      │                   clients during public key authentication. RSA moduli are now
+│                       │      │                    limited to 8192 bits, and DSA parameters are validated per
+│                       │      │                   FIPS 186-2.
+│                       │      │                    
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ ghsa  : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.2 
 │                       │      ╰ References       ╭ [0]: https://github.com/moby/moby 
@@ -26908,8 +26909,9 @@
 │                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
 │                       │      │                         ╰ V3Score : 7.5 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-389r-gv7p-r3rp 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-389r-gv7p-r3rp 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45022 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:29.98Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T17:57:46.58Z 
 │                       ├ [16] ╭ VulnerabilityID : CVE-2026-25934 
@@ -27118,8 +27120,9 @@
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L 
 │                       │      │                         ╰ V3Score : 5.4 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-crhj-59gh-8x96 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-crhj-59gh-8x96 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45571 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:30.387Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T18:01:41.563Z 
 │                       ├ [20] ╭ VulnerabilityID : GHSA-w5pp-99ch-qj29 
@@ -27271,8 +27274,9 @@
 │                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 9.6 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-m7cr-m3pv-hgrp 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-m7cr-m3pv-hgrp 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45570 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:30.24Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T18:00:39.48Z 
 │                       ├ [23] ╭ VulnerabilityID : CVE-2025-11065 
@@ -27811,8 +27815,7 @@
 │                       │      │                   A fix was released with v1.40.0. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-426 
-│                       │      ├ VendorSeverity   ╭ amazon: 3 
-│                       │      │                  ╰ ghsa  : 3 
+│                       │      ├ VendorSeverity   ─ ghsa: 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7 
 │                       │      ├ References       ╭ [0]: https://github.com/open-telemetry/opentelemetry-go 
@@ -28884,51 +28887,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4976 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2026-39826 
-│                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : c8a49abd00c2b8a3 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.25.10, 1.26.3 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:1b2213fd2f9a5d168d4be57a5fab73724d47caa4e7de0a253be0c
-│                       │      │                   2c0ba7c7a67 
-│                       │      ├ Title           : If a trusted template author were to write a <script> tag
-│                       │      │                   containing a ... 
-│                       │      ├ Description     : If a trusted template author were to write a <script> tag
-│                       │      │                   containing an empty 'type' attribute or a 'type' attribute
-│                       │      │                   with an ASCII whitespace, the execution of the template
-│                       │      │                   would incorrectly escape any data passed into the <script>
-│                       │      │                   block. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ CweIDs           ─ [0]: CWE-116 
-│                       │      ├ VendorSeverity   ╭ amazon     : 3 
-│                       │      │                  ├ bitnami    : 2 
-│                       │      │                  ╰ oracle-oval: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
-│                       │      │                            │           L/A:N 
-│                       │      │                            ╰ V3Score : 6.1 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/771180 
-│                       │      │                  ├ [1]: https://go.dev/issue/78981 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/qcCIEXso
-│                       │      │                  │      47M 
-│                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2026-39826.html 
-│                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
-│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
-│                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4980 
-│                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
-│                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2026-39836 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2026-39836 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4971 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -28972,7 +28931,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4971 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2026-42499 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2026-42499 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4977 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29012,7 +28971,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4977 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2026-42504 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2026-42504 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5038 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29049,7 +29008,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5038 
 │                       │      ├ PublishedDate   : 2026-06-02T23:16:37.927Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29109,7 +29068,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3849 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29178,7 +29137,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │      ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T19:11:50.67Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29228,7 +29187,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [55] ╭ VulnerabilityID : CVE-2025-58183 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2025-58183 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4014 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29292,7 +29251,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [56] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29340,7 +29299,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
-│                       ├ [57] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [56] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29390,7 +29349,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [58] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [57] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29440,7 +29399,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [59] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [58] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29487,7 +29446,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [60] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [59] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29536,7 +29495,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [61] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [60] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29584,7 +29543,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [62] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [61] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29631,7 +29590,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [63] ╭ VulnerabilityID : CVE-2025-61727 
+│                       ├ [62] ╭ VulnerabilityID : CVE-2025-61727 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29679,7 +29638,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [64] ╭ VulnerabilityID : CVE-2025-61728 
+│                       ├ [63] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29752,7 +29711,7 @@
 │                       │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
-│                       ├ [65] ╭ VulnerabilityID : CVE-2025-61730 
+│                       ├ [64] ╭ VulnerabilityID : CVE-2025-61730 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29803,7 +29762,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
 │                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ├ [66] ╭ VulnerabilityID : CVE-2026-27142 
+│                       ├ [65] ╭ VulnerabilityID : CVE-2026-27142 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4603 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29852,7 +29811,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-27142 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:01.177Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:30:01.38Z 
-│                       ├ [67] ╭ VulnerabilityID : CVE-2026-27145 
+│                       ├ [66] ╭ VulnerabilityID : CVE-2026-27145 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5037 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29895,7 +29854,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5037 
 │                       │      ├ PublishedDate   : 2026-06-02T23:16:35.57Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-│                       ├ [68] ╭ VulnerabilityID : CVE-2026-32282 
+│                       ├ [67] ╭ VulnerabilityID : CVE-2026-32282 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4864 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -29992,7 +29951,7 @@
 │                       │      │                  ╰ [35]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
-│                       ├ [69] ╭ VulnerabilityID : CVE-2026-32288 
+│                       ├ [68] ╭ VulnerabilityID : CVE-2026-32288 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4869 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30046,7 +30005,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32288 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.707Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:08:52.24Z 
-│                       ├ [70] ╭ VulnerabilityID : CVE-2026-32289 
+│                       ├ [69] ╭ VulnerabilityID : CVE-2026-32289 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4865 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -30090,7 +30049,9 @@
 │                       │      │                  ├ nvd     ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
 │                       │      │                  │         │           L/A:N 
 │                       │      │                  │         ╰ V3Score : 6.1 
-
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │      │                            │           L/A:N 
+│                       │      │                            ╰ V3Score : 5.4 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-32289 
 │                       │      │                  ├ [1]: https://go.dev/cl/763762 
 │                       │      │                  ├ [2]: https://go.dev/issue/78331 
@@ -30101,6 +30062,56 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32289 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.82Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:06:57.367Z 
+│                       ├ [70] ╭ VulnerabilityID : CVE-2026-39826 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : c8a49abd00c2b8a3 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.25.10, 1.26.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:1b2213fd2f9a5d168d4be57a5fab73724d47caa4e7de0a253be0c
+│                       │      │                   2c0ba7c7a67 
+│                       │      ├ Title           : html/template: golang: html/template: Cross-site scripting
+│                       │      │                   due to incorrect script tag escaping 
+│                       │      ├ Description     : If a trusted template author were to write a <script> tag
+│                       │      │                   containing an empty 'type' attribute or a 'type' attribute
+│                       │      │                   with an ASCII whitespace, the execution of the template
+│                       │      │                   would incorrectly escape any data passed into the <script>
+│                       │      │                   block. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-116 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ bitnami    : 2 
+│                       │      │                  ├ oracle-oval: 3 
+│                       │      │                  ╰ redhat     : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
+│                       │      │                  │         │           L/A:N 
+│                       │      │                  │         ╰ V3Score : 6.1 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │      │                            │           L/A:N 
+│                       │      │                            ╰ V3Score : 5.4 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-39826 
+│                       │      │                  ├ [1]: https://go.dev/cl/771180 
+│                       │      │                  ├ [2]: https://go.dev/issue/78981 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/qcCIEXso
+│                       │      │                  │      47M 
+│                       │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2026-39826.html 
+│                       │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2026-4980 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-39826 
+│                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
+│                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
 │                       ├ [71] ╭ VulnerabilityID : CVE-2026-42507 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5039 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -30767,60 +30778,57 @@
 │                       │      │                   666699e07ac 
 │                       │      ├ Title           : Docker: Race condition in docker cp allows bind mount
 │                       │      │                   redirection to host path 
-│                       │      ├ Description     : ## Summary
+│                       │      ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+│                       │      │                    the following vulnerabilities:
+│                       │      │                   CVE-2026-46595:
+│                       │      │                   	Previously, CVE-2024-45337 fixed an authorization bypass
+│                       │      │                   for misused ssh server configurations; if any other type of
+│                       │      │                   callback is passed other than public key, then the
+│                       │      │                   source-address validation would be skipped.
 │                       │      │                   
-│                       │      │                   A race condition during `docker cp` mount setup allows a
-│                       │      │                   malicious container to redirect a bind mount target to an
-│                       │      │                   arbitrary host path, potentially overwriting host files or
-│                       │      │                   causing denial of service.
-│                       │      │                   ## Details
-│                       │      │                   When copying files into a container, the daemon sets up a
-│                       │      │                   temporary filesystem view by bind-mounting volumes into a
-│                       │      │                   private mount namespace. During this setup, the mount
-│                       │      │                   destination is created inside the container root and then a
-│                       │      │                   bind mount is attached using the container-relative path
-│                       │      │                   resolved to an absolute host path.
-│                       │      │                   Between mountpoint creation and the `mount()` syscall, a
-│                       │      │                   process running inside the container can replace the
-│                       │      │                   destination (or a parent path component) with a symlink
-│                       │      │                   pointing to an arbitrary location on the host. The `mount()`
-│                       │      │                    syscall follows the symlink, causing the volume to be
-│                       │      │                   bind-mounted onto an arbitrary host path instead of the
-│                       │      │                   intended container path.
-│                       │      │                   ## Impact
-│                       │      │                   A malicious container can redirect a volume bind mount to an
-│                       │      │                    arbitrary host path. The impact depends on the volume
-│                       │      │                   content and mount options:
-│                       │      │                   - If the volume is writable, arbitrary host files at the
-│                       │      │                   redirected path could be overwritten with the volume's
-│                       │      │                   contents.
-│                       │      │                   - If the volume is read-only, the host path is masked by the
-│                       │      │                    mount for the duration of the operation, causing denial of
-│                       │      │                   service.
-│                       │      │                   - In all cases the mount is temporary (torn down after the
-│                       │      │                   `docker cp` completes), but the effects of any writes
-│                       │      │                   persist.
-│                       │      │                   ### Conditions for exploitation
-│                       │      │                   - A container must have at least one volume mount.
-│                       │      │                   - A process inside the container must be able to rapidly
-│                       │      │                   create and swap symlinks at the volume mount destination
-│                       │      │                   path.
-│                       │      │                   - An operator must initiate a `docker cp` into that
-│                       │      │                   container, or call the `PUT /containers/{id}/archive` or
-│                       │      │                   `HEAD /containers/{id}/archive` API endpoints.
-│                       │      │                   ### Not affected
-│                       │      │                   - Containers that do not have volume mounts are not
-│                       │      │                   affected, as the race occurs during volume bind-mount
-│                       │      │                   setup.
-│                       │      │                   ## Workarounds
-│                       │      │                   - Only run containers from trusted images.
-│                       │      │                   - Avoid using `docker cp` with untrusted running
-│                       │      │                   containers.
-│                       │      │                   - Use authorization plugins to restrict access to the
-│                       │      │                   archive API endpoints (`PUT /containers/{id}/archive`, `HEAD
-│                       │      │                    /containers/{id}/archive`). 
+│                       │      │                   CVE-2026-42508:
+│                       │      │                   	Previously, a revoked 'SignatureKey' belonging to a CA was
+│                       │      │                   not correctly checked for revocation. Now, both the 'key'
+│                       │      │                   and 'key.SignatureKey' are checked for @revoked.
+│                       │      │                   CVE-2026-42306:
+│                       │      │                   	Docker: Race condition in docker cp allows bind mount
+│                       │      │                   redirection to host path
+│                       │      │                   CVE-2026-39833:
+│                       │      │                   	The in-memory keyring returned by NewKeyring() silently
+│                       │      │                   accepted keys with the ConfirmBeforeUse constraint but never
+│                       │      │                    enforced it. The key would sign without any confirmation
+│                       │      │                   prompt, with no indication to the caller that the constraint
+│                       │      │                    was not in effect. NewKeyring() now returns an error when
+│                       │      │                   unsupported constraints are requested.
+│                       │      │                   CVE-2026-39831:
+│                       │      │                   	The Verify() method for FIDO/U2F security key types
+│                       │      │                   (sk-ecdsa-sha2-nistp256@openssh.com,
+│                       │      │                   sk-ssh-ed25519@openssh.com) did not check the User Presence
+│                       │      │                   flag. Signatures generated without physical touch were
+│                       │      │                   accepted, allowing unattended use of a hardware security
+│                       │      │                   key. To restore the previous behavior, return a
+│                       │      │                   "no-touch-required" extension in Permissions.Extensions from
+│                       │      │                    PublicKeyCallback.
+│                       │      │                   CVE-2026-39830:
+│                       │      │                   	A malicious SSH peer could send unsolicited global request
+│                       │      │                   responses to fill an internal buffer, blocking the
+│                       │      │                   connection's read loop. The blocked goroutine could not be
+│                       │      │                   released by calling Close(), resulting in a resource leak
+│                       │      │                   per connection. Unsolicited global responses are now
+│                       │      │                   discarded.
+│                       │      │                   CVE-2026-39829:
+│                       │      │                   	The RSA and DSA public key parsers did not enforce size
+│                       │      │                   limits on key parameters. A crafted public key with an
+│                       │      │                   excessively large modulus or DSA parameter could cause
+│                       │      │                   several minutes of CPU consumption during signature
+│                       │      │                   verification. This could be triggered by unauthenticated
+│                       │      │                   clients during public key authentication. RSA moduli are now
+│                       │      │                    limited to 8192 bits, and DSA parameters are validated per
+│                       │      │                   FIPS 186-2.
+│                       │      │                    
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ ghsa  : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.2 
 │                       │      ╰ References       ╭ [0]: https://github.com/moby/moby 
@@ -31196,8 +31204,9 @@
 │                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
 │                       │      │                         ╰ V3Score : 7.5 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-389r-gv7p-r3rp 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-389r-gv7p-r3rp 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45022 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:29.98Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T17:57:46.58Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2026-25934 
@@ -31406,8 +31415,9 @@
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L 
 │                       │      │                         ╰ V3Score : 5.4 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-crhj-59gh-8x96 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-crhj-59gh-8x96 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45571 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:30.387Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T18:01:41.563Z 
 │                       ├ [19] ╭ VulnerabilityID : GHSA-w5pp-99ch-qj29 
@@ -31559,8 +31569,9 @@
 │                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 9.6 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-m7cr-m3pv-hgrp 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-m7cr-m3pv-hgrp 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45570 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:30.24Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T18:00:39.48Z 
 │                       ├ [22] ╭ VulnerabilityID : CVE-2025-11065 
@@ -33079,51 +33090,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4976 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-│                       ├ [45] ╭ VulnerabilityID : CVE-2026-39826 
-│                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : 4bef6a299358baaf 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.25.10, 1.26.3 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:1a7a1834c261c7ef73d6c73b6a0169f0db0e9f6d3ecef182c07bb
-│                       │      │                   5b1fd1223ce 
-│                       │      ├ Title           : If a trusted template author were to write a <script> tag
-│                       │      │                   containing a ... 
-│                       │      ├ Description     : If a trusted template author were to write a <script> tag
-│                       │      │                   containing an empty 'type' attribute or a 'type' attribute
-│                       │      │                   with an ASCII whitespace, the execution of the template
-│                       │      │                   would incorrectly escape any data passed into the <script>
-│                       │      │                   block. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ CweIDs           ─ [0]: CWE-116 
-│                       │      ├ VendorSeverity   ╭ amazon     : 3 
-│                       │      │                  ├ bitnami    : 2 
-│                       │      │                  ╰ oracle-oval: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
-│                       │      │                            │           L/A:N 
-│                       │      │                            ╰ V3Score : 6.1 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/771180 
-│                       │      │                  ├ [1]: https://go.dev/issue/78981 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/qcCIEXso
-│                       │      │                  │      47M 
-│                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2026-39826.html 
-│                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
-│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
-│                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4980 
-│                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
-│                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-│                       ├ [46] ╭ VulnerabilityID : CVE-2026-39836 
+│                       ├ [45] ╭ VulnerabilityID : CVE-2026-39836 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4971 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33167,7 +33134,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4971 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-│                       ├ [47] ╭ VulnerabilityID : CVE-2026-42499 
+│                       ├ [46] ╭ VulnerabilityID : CVE-2026-42499 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4977 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33207,7 +33174,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4977 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-│                       ├ [48] ╭ VulnerabilityID : CVE-2026-42504 
+│                       ├ [47] ╭ VulnerabilityID : CVE-2026-42504 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5038 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33244,7 +33211,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5038 
 │                       │      ├ PublishedDate   : 2026-06-02T23:16:37.927Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-│                       ├ [49] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [48] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33304,7 +33271,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [50] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [49] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3849 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33373,7 +33340,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │      ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T19:11:50.67Z 
-│                       ├ [51] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [50] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33423,7 +33390,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [52] ╭ VulnerabilityID : CVE-2025-58183 
+│                       ├ [51] ╭ VulnerabilityID : CVE-2025-58183 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4014 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33487,7 +33454,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [53] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [52] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33535,7 +33502,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
-│                       ├ [54] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [53] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33585,7 +33552,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [55] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [54] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33635,7 +33602,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [56] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [55] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33682,7 +33649,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [57] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [56] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33731,7 +33698,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [58] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [57] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33779,7 +33746,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [59] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [58] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33826,7 +33793,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [60] ╭ VulnerabilityID : CVE-2025-61727 
+│                       ├ [59] ╭ VulnerabilityID : CVE-2025-61727 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33874,7 +33841,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [61] ╭ VulnerabilityID : CVE-2025-61728 
+│                       ├ [60] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33947,7 +33914,7 @@
 │                       │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
-│                       ├ [62] ╭ VulnerabilityID : CVE-2025-61730 
+│                       ├ [61] ╭ VulnerabilityID : CVE-2025-61730 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -33998,7 +33965,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
 │                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ├ [63] ╭ VulnerabilityID : CVE-2026-27142 
+│                       ├ [62] ╭ VulnerabilityID : CVE-2026-27142 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4603 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34047,7 +34014,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-27142 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:01.177Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:30:01.38Z 
-│                       ├ [64] ╭ VulnerabilityID : CVE-2026-27145 
+│                       ├ [63] ╭ VulnerabilityID : CVE-2026-27145 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5037 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34090,7 +34057,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5037 
 │                       │      ├ PublishedDate   : 2026-06-02T23:16:35.57Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-│                       ├ [65] ╭ VulnerabilityID : CVE-2026-32282 
+│                       ├ [64] ╭ VulnerabilityID : CVE-2026-32282 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4864 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34187,7 +34154,7 @@
 │                       │      │                  ╰ [35]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
-│                       ├ [66] ╭ VulnerabilityID : CVE-2026-32288 
+│                       ├ [65] ╭ VulnerabilityID : CVE-2026-32288 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4869 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34241,7 +34208,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32288 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.707Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:08:52.24Z 
-│                       ├ [67] ╭ VulnerabilityID : CVE-2026-32289 
+│                       ├ [66] ╭ VulnerabilityID : CVE-2026-32289 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4865 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -34298,6 +34265,56 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32289 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.82Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:06:57.367Z 
+│                       ├ [67] ╭ VulnerabilityID : CVE-2026-39826 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : 4bef6a299358baaf 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.25.10, 1.26.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:1a7a1834c261c7ef73d6c73b6a0169f0db0e9f6d3ecef182c07bb
+│                       │      │                   5b1fd1223ce 
+│                       │      ├ Title           : html/template: golang: html/template: Cross-site scripting
+│                       │      │                   due to incorrect script tag escaping 
+│                       │      ├ Description     : If a trusted template author were to write a <script> tag
+│                       │      │                   containing an empty 'type' attribute or a 'type' attribute
+│                       │      │                   with an ASCII whitespace, the execution of the template
+│                       │      │                   would incorrectly escape any data passed into the <script>
+│                       │      │                   block. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-116 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ bitnami    : 2 
+│                       │      │                  ├ oracle-oval: 3 
+│                       │      │                  ╰ redhat     : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
+│                       │      │                  │         │           L/A:N 
+│                       │      │                  │         ╰ V3Score : 6.1 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │      │                            │           L/A:N 
+│                       │      │                            ╰ V3Score : 5.4 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-39826 
+│                       │      │                  ├ [1]: https://go.dev/cl/771180 
+│                       │      │                  ├ [2]: https://go.dev/issue/78981 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/qcCIEXso
+│                       │      │                  │      47M 
+│                       │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2026-39826.html 
+│                       │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2026-4980 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-39826 
+│                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
+│                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
 │                       ├ [68] ╭ VulnerabilityID : CVE-2026-42507 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5039 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -35179,60 +35196,57 @@
 │                       │      │                   d6a8aaec2bd 
 │                       │      ├ Title           : Docker: Race condition in docker cp allows bind mount
 │                       │      │                   redirection to host path 
-│                       │      ├ Description     : ## Summary
+│                       │      ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+│                       │      │                    the following vulnerabilities:
+│                       │      │                   CVE-2026-46595:
+│                       │      │                   	Previously, CVE-2024-45337 fixed an authorization bypass
+│                       │      │                   for misused ssh server configurations; if any other type of
+│                       │      │                   callback is passed other than public key, then the
+│                       │      │                   source-address validation would be skipped.
 │                       │      │                   
-│                       │      │                   A race condition during `docker cp` mount setup allows a
-│                       │      │                   malicious container to redirect a bind mount target to an
-│                       │      │                   arbitrary host path, potentially overwriting host files or
-│                       │      │                   causing denial of service.
-│                       │      │                   ## Details
-│                       │      │                   When copying files into a container, the daemon sets up a
-│                       │      │                   temporary filesystem view by bind-mounting volumes into a
-│                       │      │                   private mount namespace. During this setup, the mount
-│                       │      │                   destination is created inside the container root and then a
-│                       │      │                   bind mount is attached using the container-relative path
-│                       │      │                   resolved to an absolute host path.
-│                       │      │                   Between mountpoint creation and the `mount()` syscall, a
-│                       │      │                   process running inside the container can replace the
-│                       │      │                   destination (or a parent path component) with a symlink
-│                       │      │                   pointing to an arbitrary location on the host. The `mount()`
-│                       │      │                    syscall follows the symlink, causing the volume to be
-│                       │      │                   bind-mounted onto an arbitrary host path instead of the
-│                       │      │                   intended container path.
-│                       │      │                   ## Impact
-│                       │      │                   A malicious container can redirect a volume bind mount to an
-│                       │      │                    arbitrary host path. The impact depends on the volume
-│                       │      │                   content and mount options:
-│                       │      │                   - If the volume is writable, arbitrary host files at the
-│                       │      │                   redirected path could be overwritten with the volume's
-│                       │      │                   contents.
-│                       │      │                   - If the volume is read-only, the host path is masked by the
-│                       │      │                    mount for the duration of the operation, causing denial of
-│                       │      │                   service.
-│                       │      │                   - In all cases the mount is temporary (torn down after the
-│                       │      │                   `docker cp` completes), but the effects of any writes
-│                       │      │                   persist.
-│                       │      │                   ### Conditions for exploitation
-│                       │      │                   - A container must have at least one volume mount.
-│                       │      │                   - A process inside the container must be able to rapidly
-│                       │      │                   create and swap symlinks at the volume mount destination
-│                       │      │                   path.
-│                       │      │                   - An operator must initiate a `docker cp` into that
-│                       │      │                   container, or call the `PUT /containers/{id}/archive` or
-│                       │      │                   `HEAD /containers/{id}/archive` API endpoints.
-│                       │      │                   ### Not affected
-│                       │      │                   - Containers that do not have volume mounts are not
-│                       │      │                   affected, as the race occurs during volume bind-mount
-│                       │      │                   setup.
-│                       │      │                   ## Workarounds
-│                       │      │                   - Only run containers from trusted images.
-│                       │      │                   - Avoid using `docker cp` with untrusted running
-│                       │      │                   containers.
-│                       │      │                   - Use authorization plugins to restrict access to the
-│                       │      │                   archive API endpoints (`PUT /containers/{id}/archive`, `HEAD
-│                       │      │                    /containers/{id}/archive`). 
+│                       │      │                   CVE-2026-42508:
+│                       │      │                   	Previously, a revoked 'SignatureKey' belonging to a CA was
+│                       │      │                   not correctly checked for revocation. Now, both the 'key'
+│                       │      │                   and 'key.SignatureKey' are checked for @revoked.
+│                       │      │                   CVE-2026-42306:
+│                       │      │                   	Docker: Race condition in docker cp allows bind mount
+│                       │      │                   redirection to host path
+│                       │      │                   CVE-2026-39833:
+│                       │      │                   	The in-memory keyring returned by NewKeyring() silently
+│                       │      │                   accepted keys with the ConfirmBeforeUse constraint but never
+│                       │      │                    enforced it. The key would sign without any confirmation
+│                       │      │                   prompt, with no indication to the caller that the constraint
+│                       │      │                    was not in effect. NewKeyring() now returns an error when
+│                       │      │                   unsupported constraints are requested.
+│                       │      │                   CVE-2026-39831:
+│                       │      │                   	The Verify() method for FIDO/U2F security key types
+│                       │      │                   (sk-ecdsa-sha2-nistp256@openssh.com,
+│                       │      │                   sk-ssh-ed25519@openssh.com) did not check the User Presence
+│                       │      │                   flag. Signatures generated without physical touch were
+│                       │      │                   accepted, allowing unattended use of a hardware security
+│                       │      │                   key. To restore the previous behavior, return a
+│                       │      │                   "no-touch-required" extension in Permissions.Extensions from
+│                       │      │                    PublicKeyCallback.
+│                       │      │                   CVE-2026-39830:
+│                       │      │                   	A malicious SSH peer could send unsolicited global request
+│                       │      │                   responses to fill an internal buffer, blocking the
+│                       │      │                   connection's read loop. The blocked goroutine could not be
+│                       │      │                   released by calling Close(), resulting in a resource leak
+│                       │      │                   per connection. Unsolicited global responses are now
+│                       │      │                   discarded.
+│                       │      │                   CVE-2026-39829:
+│                       │      │                   	The RSA and DSA public key parsers did not enforce size
+│                       │      │                   limits on key parameters. A crafted public key with an
+│                       │      │                   excessively large modulus or DSA parameter could cause
+│                       │      │                   several minutes of CPU consumption during signature
+│                       │      │                   verification. This could be triggered by unauthenticated
+│                       │      │                   clients during public key authentication. RSA moduli are now
+│                       │      │                    limited to 8192 bits, and DSA parameters are validated per
+│                       │      │                   FIPS 186-2.
+│                       │      │                    
 │                       │      ├ Severity        : HIGH 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ╰ ghsa  : 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7.2 
 │                       │      ╰ References       ╭ [0]: https://github.com/moby/moby 
@@ -35608,8 +35622,9 @@
 │                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
 │                       │      │                         ╰ V3Score : 7.5 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-389r-gv7p-r3rp 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-389r-gv7p-r3rp 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45022 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:29.98Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T17:57:46.58Z 
 │                       ├ [18] ╭ VulnerabilityID : CVE-2026-25934 
@@ -35818,8 +35833,9 @@
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L 
 │                       │      │                         ╰ V3Score : 5.4 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-crhj-59gh-8x96 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-crhj-59gh-8x96 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45571 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:30.387Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T18:01:41.563Z 
 │                       ├ [22] ╭ VulnerabilityID : GHSA-w5pp-99ch-qj29 
@@ -35971,8 +35987,9 @@
 │                       │      │                  ╰ nvd  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 9.6 
 │                       │      ├ References       ╭ [0]: https://github.com/go-git/go-git 
-│                       │      │                  ╰ [1]: https://github.com/go-git/go-git/security/advisories/G
-│                       │      │                         HSA-m7cr-m3pv-hgrp 
+│                       │      │                  ├ [1]: https://github.com/go-git/go-git/security/advisories/G
+│                       │      │                  │      HSA-m7cr-m3pv-hgrp 
+│                       │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-45570 
 │                       │      ├ PublishedDate   : 2026-05-27T15:16:30.24Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T18:00:39.48Z 
 │                       ├ [25] ╭ VulnerabilityID : CVE-2026-34986 
@@ -36470,11 +36487,13 @@
 │                       │      │                           ╰ V3Score : 6.5 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-35469 
 │                       │      │                  ├ [1]: https://github.com/moby/spdystream 
-│                       │      │                  ├ [2]: https://github.com/moby/spdystream/releases/tag/v0.5.1 
-│                       │      │                  ├ [3]: https://github.com/moby/spdystream/security/advisories
+│                       │      │                  ├ [2]: https://github.com/moby/spdystream/commit/ef6121f62c73
+│                       │      │                  │      0110bf5ae604a865a8613bfb787f 
+│                       │      │                  ├ [3]: https://github.com/moby/spdystream/releases/tag/v0.5.1 
+│                       │      │                  ├ [4]: https://github.com/moby/spdystream/security/advisories
 │                       │      │                  │      /GHSA-pc3f-x583-g7j2 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-35469 
-│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35469 
+│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-35469 
+│                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-35469 
 │                       │      ├ PublishedDate   : 2026-04-16T22:16:37.92Z 
 │                       │      ╰ LastModifiedDate: 2026-04-29T21:04:10.06Z 
 │                       ├ [33] ╭ VulnerabilityID : CVE-2025-52881 
@@ -37069,8 +37088,7 @@
 │                       │      │                   A fix was released with v1.40.0. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-426 
-│                       │      ├ VendorSeverity   ╭ amazon: 3 
-│                       │      │                  ╰ ghsa  : 3 
+│                       │      ├ VendorSeverity   ─ ghsa: 3 
 │                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H 
 │                       │      │                         ╰ V3Score : 7 
 │                       │      ├ References       ╭ [0]: https://github.com/open-telemetry/opentelemetry-go 
@@ -38375,51 +38393,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4976 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-│                       ├ [62] ╭ VulnerabilityID : CVE-2026-39826 
-│                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
-│                       │      ├ PkgID           : stdlib@v1.24.4 
-│                       │      ├ PkgName         : stdlib 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
-│                       │      │                  ╰ UID : f86edb9664e32d65 
-│                       │      ├ InstalledVersion: v1.24.4 
-│                       │      ├ FixedVersion    : 1.25.10, 1.26.3 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-│                       │      │                  │         501dd6062bd50a4b6afe 
-│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-│                       │      │                            c7d38461b41e40aab9e7 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
-│                       │      ├ DataSource       ╭ ID  : govulndb 
-│                       │      │                  ├ Name: The Go Vulnerability Database 
-│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-│                       │      ├ Fingerprint     : sha256:d46b8d9c282adf5df5747aaf8177d9d3022a3af4ec6a1153c79da
-│                       │      │                   b9ac8143f41 
-│                       │      ├ Title           : If a trusted template author were to write a <script> tag
-│                       │      │                   containing a ... 
-│                       │      ├ Description     : If a trusted template author were to write a <script> tag
-│                       │      │                   containing an empty 'type' attribute or a 'type' attribute
-│                       │      │                   with an ASCII whitespace, the execution of the template
-│                       │      │                   would incorrectly escape any data passed into the <script>
-│                       │      │                   block. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ CweIDs           ─ [0]: CWE-116 
-│                       │      ├ VendorSeverity   ╭ amazon     : 3 
-│                       │      │                  ├ bitnami    : 2 
-│                       │      │                  ╰ oracle-oval: 3 
-│                       │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
-│                       │      │                            │           L/A:N 
-│                       │      │                            ╰ V3Score : 6.1 
-│                       │      ├ References       ╭ [0]: https://go.dev/cl/771180 
-│                       │      │                  ├ [1]: https://go.dev/issue/78981 
-│                       │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/qcCIEXso
-│                       │      │                  │      47M 
-│                       │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2026-39826.html 
-│                       │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
-│                       │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
-│                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4980 
-│                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
-│                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-│                       ├ [63] ╭ VulnerabilityID : CVE-2026-39836 
+│                       ├ [62] ╭ VulnerabilityID : CVE-2026-39836 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4971 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38463,7 +38437,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4971 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-│                       ├ [64] ╭ VulnerabilityID : CVE-2026-42499 
+│                       ├ [63] ╭ VulnerabilityID : CVE-2026-42499 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4977 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38503,7 +38477,7 @@
 │                       │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4977 
 │                       │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
 │                       │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-│                       ├ [65] ╭ VulnerabilityID : CVE-2026-42504 
+│                       ├ [64] ╭ VulnerabilityID : CVE-2026-42504 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5038 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38540,7 +38514,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5038 
 │                       │      ├ PublishedDate   : 2026-06-02T23:16:37.927Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-│                       ├ [66] ╭ VulnerabilityID : CVE-2025-47906 
+│                       ├ [65] ╭ VulnerabilityID : CVE-2025-47906 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3956 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38600,7 +38574,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
 │                       │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
 │                       │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-│                       ├ [67] ╭ VulnerabilityID : CVE-2025-47907 
+│                       ├ [66] ╭ VulnerabilityID : CVE-2025-47907 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-3849 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38669,7 +38643,7 @@
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
 │                       │      ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T19:11:50.67Z 
-│                       ├ [68] ╭ VulnerabilityID : CVE-2025-47912 
+│                       ├ [67] ╭ VulnerabilityID : CVE-2025-47912 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4010 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38719,7 +38693,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-│                       ├ [69] ╭ VulnerabilityID : CVE-2025-58183 
+│                       ├ [68] ╭ VulnerabilityID : CVE-2025-58183 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4014 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38783,7 +38757,7 @@
 │                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [70] ╭ VulnerabilityID : CVE-2025-58185 
+│                       ├ [69] ╭ VulnerabilityID : CVE-2025-58185 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4011 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38831,7 +38805,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
-│                       ├ [71] ╭ VulnerabilityID : CVE-2025-58187 
+│                       ├ [70] ╭ VulnerabilityID : CVE-2025-58187 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4007 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38881,7 +38855,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-│                       ├ [72] ╭ VulnerabilityID : CVE-2025-58188 
+│                       ├ [71] ╭ VulnerabilityID : CVE-2025-58188 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4013 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38931,7 +38905,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-│                       ├ [73] ╭ VulnerabilityID : CVE-2025-58189 
+│                       ├ [72] ╭ VulnerabilityID : CVE-2025-58189 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4008 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -38978,7 +38952,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-│                       ├ [74] ╭ VulnerabilityID : CVE-2025-61723 
+│                       ├ [73] ╭ VulnerabilityID : CVE-2025-61723 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4009 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39027,7 +39001,7 @@
 │                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-│                       ├ [75] ╭ VulnerabilityID : CVE-2025-61724 
+│                       ├ [74] ╭ VulnerabilityID : CVE-2025-61724 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4015 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39075,7 +39049,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
 │                       │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-│                       ├ [76] ╭ VulnerabilityID : CVE-2025-61725 
+│                       ├ [75] ╭ VulnerabilityID : CVE-2025-61725 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4006 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39122,7 +39096,7 @@
 │                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
 │                       │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-│                       ├ [77] ╭ VulnerabilityID : CVE-2025-61727 
+│                       ├ [76] ╭ VulnerabilityID : CVE-2025-61727 
 │                       │      ├ VendorIDs        ─ [0]: GO-2025-4175 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39170,7 +39144,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
 │                       │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
 │                       │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-│                       ├ [78] ╭ VulnerabilityID : CVE-2025-61728 
+│                       ├ [77] ╭ VulnerabilityID : CVE-2025-61728 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4342 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39243,7 +39217,7 @@
 │                       │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
 │                       │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
-│                       ├ [79] ╭ VulnerabilityID : CVE-2025-61730 
+│                       ├ [78] ╭ VulnerabilityID : CVE-2025-61730 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4340 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39294,7 +39268,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
 │                       │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
 │                       │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-│                       ├ [80] ╭ VulnerabilityID : CVE-2026-27142 
+│                       ├ [79] ╭ VulnerabilityID : CVE-2026-27142 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4603 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39343,7 +39317,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-27142 
 │                       │      ├ PublishedDate   : 2026-03-06T22:16:01.177Z 
 │                       │      ╰ LastModifiedDate: 2026-04-21T14:30:01.38Z 
-│                       ├ [81] ╭ VulnerabilityID : CVE-2026-27145 
+│                       ├ [80] ╭ VulnerabilityID : CVE-2026-27145 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5037 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39386,7 +39360,7 @@
 │                       │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5037 
 │                       │      ├ PublishedDate   : 2026-06-02T23:16:35.57Z 
 │                       │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-│                       ├ [82] ╭ VulnerabilityID : CVE-2026-32282 
+│                       ├ [81] ╭ VulnerabilityID : CVE-2026-32282 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4864 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39483,7 +39457,7 @@
 │                       │      │                  ╰ [35]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
-│                       ├ [83] ╭ VulnerabilityID : CVE-2026-32288 
+│                       ├ [82] ╭ VulnerabilityID : CVE-2026-32288 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4869 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39537,7 +39511,7 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32288 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.707Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:08:52.24Z 
-│                       ├ [84] ╭ VulnerabilityID : CVE-2026-32289 
+│                       ├ [83] ╭ VulnerabilityID : CVE-2026-32289 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-4865 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
 │                       │      ├ PkgName         : stdlib 
@@ -39594,6 +39568,56 @@
 │                       │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32289 
 │                       │      ├ PublishedDate   : 2026-04-08T02:16:03.82Z 
 │                       │      ╰ LastModifiedDate: 2026-04-16T19:06:57.367Z 
+│                       ├ [84] ╭ VulnerabilityID : CVE-2026-39826 
+│                       │      ├ VendorIDs        ─ [0]: GO-2026-4980 
+│                       │      ├ PkgID           : stdlib@v1.24.4 
+│                       │      ├ PkgName         : stdlib 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.4 
+│                       │      │                  ╰ UID : f86edb9664e32d65 
+│                       │      ├ InstalledVersion: v1.24.4 
+│                       │      ├ FixedVersion    : 1.25.10, 1.26.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+│                       │      │                  │         501dd6062bd50a4b6afe 
+│                       │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+│                       │      │                            c7d38461b41e40aab9e7 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
+│                       │      ├ DataSource       ╭ ID  : govulndb 
+│                       │      │                  ├ Name: The Go Vulnerability Database 
+│                       │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+│                       │      ├ Fingerprint     : sha256:d46b8d9c282adf5df5747aaf8177d9d3022a3af4ec6a1153c79da
+│                       │      │                   b9ac8143f41 
+│                       │      ├ Title           : html/template: golang: html/template: Cross-site scripting
+│                       │      │                   due to incorrect script tag escaping 
+│                       │      ├ Description     : If a trusted template author were to write a <script> tag
+│                       │      │                   containing an empty 'type' attribute or a 'type' attribute
+│                       │      │                   with an ASCII whitespace, the execution of the template
+│                       │      │                   would incorrectly escape any data passed into the <script>
+│                       │      │                   block. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-116 
+│                       │      ├ VendorSeverity   ╭ amazon     : 3 
+│                       │      │                  ├ bitnami    : 2 
+│                       │      │                  ├ oracle-oval: 3 
+│                       │      │                  ╰ redhat     : 2 
+│                       │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
+│                       │      │                  │         │           L/A:N 
+│                       │      │                  │         ╰ V3Score : 6.1 
+│                       │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │      │                            │           L/A:N 
+│                       │      │                            ╰ V3Score : 5.4 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-39826 
+│                       │      │                  ├ [1]: https://go.dev/cl/771180 
+│                       │      │                  ├ [2]: https://go.dev/issue/78981 
+│                       │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/qcCIEXso
+│                       │      │                  │      47M 
+│                       │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2026-39826.html 
+│                       │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
+│                       │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2026-4980 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-39826 
+│                       │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
+│                       │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
 │                       ├ [85] ╭ VulnerabilityID : CVE-2026-42507 
 │                       │      ├ VendorIDs        ─ [0]: GO-2026-5039 
 │                       │      ├ PkgID           : stdlib@v1.24.4 
@@ -40529,51 +40553,7 @@
                         │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4976 
                         │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
                         │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-                        ├ [12] ╭ VulnerabilityID : CVE-2026-39826 
-                        │      ├ VendorIDs        ─ [0]: GO-2026-4980 
-                        │      ├ PkgID           : stdlib@v1.24.5 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
-                        │      │                  ╰ UID : c395cea322d363d5 
-                        │      ├ InstalledVersion: v1.24.5 
-                        │      ├ FixedVersion    : 1.25.10, 1.26.3 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
-                        │      │                  │         501dd6062bd50a4b6afe 
-                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
-                        │      │                            c7d38461b41e40aab9e7 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:a07ea3cf624afafd2ed025001e9fed9e63dfff13d9e5c939b4086
-                        │      │                   94310326ad7 
-                        │      ├ Title           : If a trusted template author were to write a <script> tag
-                        │      │                   containing a ... 
-                        │      ├ Description     : If a trusted template author were to write a <script> tag
-                        │      │                   containing an empty 'type' attribute or a 'type' attribute
-                        │      │                   with an ASCII whitespace, the execution of the template
-                        │      │                   would incorrectly escape any data passed into the <script>
-                        │      │                   block. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ CweIDs           ─ [0]: CWE-116 
-                        │      ├ VendorSeverity   ╭ amazon     : 3 
-                        │      │                  ├ bitnami    : 2 
-                        │      │                  ╰ oracle-oval: 3 
-                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
-                        │      │                            │           L/A:N 
-                        │      │                            ╰ V3Score : 6.1 
-                        │      ├ References       ╭ [0]: https://go.dev/cl/771180 
-                        │      │                  ├ [1]: https://go.dev/issue/78981 
-                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/qcCIEXso
-                        │      │                  │      47M 
-                        │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2026-39826.html 
-                        │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
-                        │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4980 
-                        │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-                        ├ [13] ╭ VulnerabilityID : CVE-2026-39836 
+                        ├ [12] ╭ VulnerabilityID : CVE-2026-39836 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4971 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40617,7 +40597,7 @@
                         │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4971 
                         │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
                         │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-                        ├ [14] ╭ VulnerabilityID : CVE-2026-42499 
+                        ├ [13] ╭ VulnerabilityID : CVE-2026-42499 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4977 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40657,7 +40637,7 @@
                         │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4977 
                         │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
                         │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-                        ├ [15] ╭ VulnerabilityID : CVE-2026-42504 
+                        ├ [14] ╭ VulnerabilityID : CVE-2026-42504 
                         │      ├ VendorIDs        ─ [0]: GO-2026-5038 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40694,7 +40674,7 @@
                         │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5038 
                         │      ├ PublishedDate   : 2026-06-02T23:16:37.927Z 
                         │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-                        ├ [16] ╭ VulnerabilityID : CVE-2025-47906 
+                        ├ [15] ╭ VulnerabilityID : CVE-2025-47906 
                         │      ├ VendorIDs        ─ [0]: GO-2025-3956 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40754,7 +40734,7 @@
                         │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-47906 
                         │      ├ PublishedDate   : 2025-09-18T19:15:37.66Z 
                         │      ╰ LastModifiedDate: 2026-01-27T19:56:17.707Z 
-                        ├ [17] ╭ VulnerabilityID : CVE-2025-47907 
+                        ├ [16] ╭ VulnerabilityID : CVE-2025-47907 
                         │      ├ VendorIDs        ─ [0]: GO-2025-3849 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40823,7 +40803,7 @@
                         │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2025-47907 
                         │      ├ PublishedDate   : 2025-08-07T16:15:30.357Z 
                         │      ╰ LastModifiedDate: 2026-01-29T19:11:50.67Z 
-                        ├ [18] ╭ VulnerabilityID : CVE-2025-47912 
+                        ├ [17] ╭ VulnerabilityID : CVE-2025-47912 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4010 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40873,7 +40853,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-47912 
                         │      ├ PublishedDate   : 2025-10-29T23:16:18.187Z 
                         │      ╰ LastModifiedDate: 2026-01-29T13:57:18.69Z 
-                        ├ [19] ╭ VulnerabilityID : CVE-2025-58183 
+                        ├ [18] ╭ VulnerabilityID : CVE-2025-58183 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4014 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40937,7 +40917,7 @@
                         │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2025-58183 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.357Z 
                         │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-                        ├ [20] ╭ VulnerabilityID : CVE-2025-58185 
+                        ├ [19] ╭ VulnerabilityID : CVE-2025-58185 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4011 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -40985,7 +40965,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58185 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.45Z 
                         │      ╰ LastModifiedDate: 2026-02-06T20:26:41.997Z 
-                        ├ [21] ╭ VulnerabilityID : CVE-2025-58187 
+                        ├ [20] ╭ VulnerabilityID : CVE-2025-58187 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4007 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41035,7 +41015,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58187 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.643Z 
                         │      ╰ LastModifiedDate: 2026-01-29T16:02:27.08Z 
-                        ├ [22] ╭ VulnerabilityID : CVE-2025-58188 
+                        ├ [21] ╭ VulnerabilityID : CVE-2025-58188 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4013 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41085,7 +41065,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-58188 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.74Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:55:11.97Z 
-                        ├ [23] ╭ VulnerabilityID : CVE-2025-58189 
+                        ├ [22] ╭ VulnerabilityID : CVE-2025-58189 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4008 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41132,7 +41112,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-58189 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.833Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:49:24.543Z 
-                        ├ [24] ╭ VulnerabilityID : CVE-2025-61723 
+                        ├ [23] ╭ VulnerabilityID : CVE-2025-61723 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4009 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41181,7 +41161,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-61723 
                         │      ├ PublishedDate   : 2025-10-29T23:16:19.927Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:49:05.343Z 
-                        ├ [25] ╭ VulnerabilityID : CVE-2025-61724 
+                        ├ [24] ╭ VulnerabilityID : CVE-2025-61724 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4015 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41229,7 +41209,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61724 
                         │      ├ PublishedDate   : 2025-10-29T23:16:20.02Z 
                         │      ╰ LastModifiedDate: 2026-01-29T15:30:53.69Z 
-                        ├ [26] ╭ VulnerabilityID : CVE-2025-61725 
+                        ├ [25] ╭ VulnerabilityID : CVE-2025-61725 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4006 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41276,7 +41256,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-61725 
                         │      ├ PublishedDate   : 2025-10-29T23:16:20.113Z 
                         │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
-                        ├ [27] ╭ VulnerabilityID : CVE-2025-61727 
+                        ├ [26] ╭ VulnerabilityID : CVE-2025-61727 
                         │      ├ VendorIDs        ─ [0]: GO-2025-4175 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41324,7 +41304,7 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61727 
                         │      ├ PublishedDate   : 2025-12-03T20:16:25.607Z 
                         │      ╰ LastModifiedDate: 2025-12-18T20:15:10.957Z 
-                        ├ [28] ╭ VulnerabilityID : CVE-2025-61728 
+                        ├ [27] ╭ VulnerabilityID : CVE-2025-61728 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4342 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41397,7 +41377,7 @@
                         │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-61728 
                         │      ├ PublishedDate   : 2026-01-28T20:16:09.83Z 
                         │      ╰ LastModifiedDate: 2026-02-06T18:45:10.42Z 
-                        ├ [29] ╭ VulnerabilityID : CVE-2025-61730 
+                        ├ [28] ╭ VulnerabilityID : CVE-2025-61730 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4340 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41448,7 +41428,7 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-61730 
                         │      ├ PublishedDate   : 2026-01-28T20:16:09.94Z 
                         │      ╰ LastModifiedDate: 2026-02-03T20:36:41.3Z 
-                        ├ [30] ╭ VulnerabilityID : CVE-2026-27142 
+                        ├ [29] ╭ VulnerabilityID : CVE-2026-27142 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4603 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41497,7 +41477,7 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-27142 
                         │      ├ PublishedDate   : 2026-03-06T22:16:01.177Z 
                         │      ╰ LastModifiedDate: 2026-04-21T14:30:01.38Z 
-                        ├ [31] ╭ VulnerabilityID : CVE-2026-27145 
+                        ├ [30] ╭ VulnerabilityID : CVE-2026-27145 
                         │      ├ VendorIDs        ─ [0]: GO-2026-5037 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41540,7 +41520,7 @@
                         │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5037 
                         │      ├ PublishedDate   : 2026-06-02T23:16:35.57Z 
                         │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-                        ├ [32] ╭ VulnerabilityID : CVE-2026-32282 
+                        ├ [31] ╭ VulnerabilityID : CVE-2026-32282 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4864 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41637,7 +41617,7 @@
                         │      │                  ╰ [35]: https://www.cve.org/CVERecord?id=CVE-2026-32282 
                         │      ├ PublishedDate   : 2026-04-08T02:16:03.467Z 
                         │      ╰ LastModifiedDate: 2026-04-16T19:15:39.4Z 
-                        ├ [33] ╭ VulnerabilityID : CVE-2026-32288 
+                        ├ [32] ╭ VulnerabilityID : CVE-2026-32288 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4869 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41691,7 +41671,7 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32288 
                         │      ├ PublishedDate   : 2026-04-08T02:16:03.707Z 
                         │      ╰ LastModifiedDate: 2026-04-16T19:08:52.24Z 
-                        ├ [34] ╭ VulnerabilityID : CVE-2026-32289 
+                        ├ [33] ╭ VulnerabilityID : CVE-2026-32289 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4865 
                         │      ├ PkgID           : stdlib@v1.24.5 
                         │      ├ PkgName         : stdlib 
@@ -41748,6 +41728,56 @@
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-32289 
                         │      ├ PublishedDate   : 2026-04-08T02:16:03.82Z 
                         │      ╰ LastModifiedDate: 2026-04-16T19:06:57.367Z 
+                        ├ [34] ╭ VulnerabilityID : CVE-2026-39826 
+                        │      ├ VendorIDs        ─ [0]: GO-2026-4980 
+                        │      ├ PkgID           : stdlib@v1.24.5 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.24.5 
+                        │      │                  ╰ UID : c395cea322d363d5 
+                        │      ├ InstalledVersion: v1.24.5 
+                        │      ├ FixedVersion    : 1.25.10, 1.26.3 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643
+                        │      │                  │         501dd6062bd50a4b6afe 
+                        │      │                  ╰ DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7
+                        │      │                            c7d38461b41e40aab9e7 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:a07ea3cf624afafd2ed025001e9fed9e63dfff13d9e5c939b4086
+                        │      │                   94310326ad7 
+                        │      ├ Title           : html/template: golang: html/template: Cross-site scripting
+                        │      │                   due to incorrect script tag escaping 
+                        │      ├ Description     : If a trusted template author were to write a <script> tag
+                        │      │                   containing an empty 'type' attribute or a 'type' attribute
+                        │      │                   with an ASCII whitespace, the execution of the template
+                        │      │                   would incorrectly escape any data passed into the <script>
+                        │      │                   block. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-116 
+                        │      ├ VendorSeverity   ╭ amazon     : 3 
+                        │      │                  ├ bitnami    : 2 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ╰ redhat     : 2 
+                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
+                        │      │                  │         │           L/A:N 
+                        │      │                  │         ╰ V3Score : 6.1 
+                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+                        │      │                            │           L/A:N 
+                        │      │                            ╰ V3Score : 5.4 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-39826 
+                        │      │                  ├ [1]: https://go.dev/cl/771180 
+                        │      │                  ├ [2]: https://go.dev/issue/78981 
+                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/qcCIEXso
+                        │      │                  │      47M 
+                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2026-39826.html 
+                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
+                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2026-4980 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-39826 
+                        │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
+                        │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
                         ├ [35] ╭ VulnerabilityID : CVE-2026-42507 
                         │      ├ VendorIDs        ─ [0]: GO-2026-5039 
                         │      ├ PkgID           : stdlib@v1.24.5 
