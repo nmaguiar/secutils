@@ -235,6 +235,7 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-35469
     - https://github.com/moby/spdystream
+    - https://github.com/moby/spdystream/commit/ef6121f62c730110bf5ae604a865a8613bfb787f
     - https://github.com/moby/spdystream/releases/tag/v0.5.1
     - https://github.com/moby/spdystream/security/advisories/GHSA-pc3f-x583-g7j2
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35469
@@ -8653,6 +8654,7 @@
     CweIDs:
     - CWE-436
     VendorSeverity:
+      amazon: 3
       ubuntu: 2
     References:
     - http://www.openwall.com/lists/oss-security/2026/05/15/21
@@ -8686,6 +8688,7 @@
     - CWE-189
     - CWE-190
     VendorSeverity:
+      amazon: 2
       azure: 3
       redhat: 3
       ubuntu: 2
@@ -20351,7 +20354,7 @@
     - https://github.com/kjd/idna
     - https://github.com/kjd/idna/security/advisories/GHSA-65pc-fj4g-8rjx
     PublishedDate: '2026-06-05T23:16:43.343Z'
-    LastModifiedDate: '2026-06-05T23:16:43.343Z'
+    LastModifiedDate: '2026-06-08T15:02:26.293Z'
   - VulnerabilityID: CVE-2026-41066
     VendorIDs:
     - GHSA-vfmq-68hx-4jfw
@@ -21517,42 +21520,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:f49bc95b715b424ab5fd48e064b2bd57d7eb8d27f481736468141b7c84495470
     Title: 'Docker: Race condition in docker cp allows bind mount redirection to host path'
-    Description: |-
-      ## Summary
-
-      A race condition during `docker cp` mount setup allows a malicious container to redirect a bind mount target to an arbitrary host path, potentially overwriting host files or causing denial of service.
-
-      ## Details
-
-      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination is created inside the container root and then a bind mount is attached using the container-relative path resolved to an absolute host path.
-
-      Between mountpoint creation and the `mount()` syscall, a process running inside the container can replace the destination (or a parent path component) with a symlink pointing to an arbitrary location on the host. The `mount()` syscall follows the symlink, causing the volume to be bind-mounted onto an arbitrary host path instead of the intended container path.
-
-      ## Impact
-
-      A malicious container can redirect a volume bind mount to an arbitrary host path. The impact depends on the volume content and mount options:
-
-      - If the volume is writable, arbitrary host files at the redirected path could be overwritten with the volume's contents.
-      - If the volume is read-only, the host path is masked by the mount for the duration of the operation, causing denial of service.
-      - In all cases the mount is temporary (torn down after the `docker cp` completes), but the effects of any writes persist.
-
-      ### Conditions for exploitation
-
-      - A container must have at least one volume mount.
-      - A process inside the container must be able to rapidly create and swap symlinks at the volume mount destination path.
-      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
-
-      ### Not affected
-
-      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
-
-      ## Workarounds
-
-      - Only run containers from trusted images.
-      - Avoid using `docker cp` with untrusted running containers.
-      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Description: "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-46595:\n\tPreviously, CVE-2024-45337 fixed an authorization bypass for misused ssh server configurations; if any other type of callback is passed other than public key, then the source-address validation would be skipped.\n\nCVE-2026-42508:\n\tPreviously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for @revoked.\n\nCVE-2026-42306:\n\tDocker: Race condition in docker cp allows bind mount redirection to host path\n\nCVE-2026-39833:\n\tThe in-memory keyring returned by NewKeyring() silently accepted keys with the ConfirmBeforeUse constraint but never enforced it. The key would sign without any confirmation prompt, with no indication to the caller that the constraint was not in effect. NewKeyring() now returns an error when unsupported constraints are requested.\n\nCVE-2026-39831:\n\tThe Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nistp256@openssh.com, sk-ssh-ed25519@openssh.com) did not check the User Presence flag. Signatures generated without physical touch were accepted, allowing unattended use of a hardware security key. To restore the previous behavior, return a \"no-touch-required\" extension in Permissions.Extensions from PublicKeyCallback.\n\nCVE-2026-39830:\n\tA malicious SSH peer could send unsolicited global request responses to fill an internal buffer, blocking the connection's read loop. The blocked goroutine could not be released by calling Close(), resulting in a resource leak per connection. Unsolicited global responses are now discarded.\n\nCVE-2026-39829:\n\tThe RSA and DSA public key parsers did not enforce size limits on key parameters. A crafted public key with an excessively large modulus or DSA parameter could cause several minutes of CPU consumption during signature verification. This could be triggered by unauthenticated clients during public key authentication. RSA moduli are now limited to 8192 bits, and DSA parameters are validated per FIPS 186-2.\n"
     Severity: HIGH
     VendorSeverity:
+      amazon: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -21859,6 +21830,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-389r-gv7p-r3rp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45022
     PublishedDate: '2026-05-27T15:16:29.98Z'
     LastModifiedDate: '2026-06-04T17:57:46.58Z'
   - VulnerabilityID: CVE-2026-25934
@@ -22043,6 +22015,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45571
     PublishedDate: '2026-05-27T15:16:30.387Z'
     LastModifiedDate: '2026-06-04T18:01:41.563Z'
   - VulnerabilityID: GHSA-w5pp-99ch-qj29
@@ -22176,6 +22149,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-m7cr-m3pv-hgrp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45570
     PublishedDate: '2026-05-27T15:16:30.24Z'
     LastModifiedDate: '2026-06-04T18:00:39.48Z'
   - VulnerabilityID: CVE-2025-11065
@@ -22634,7 +22608,6 @@
     CweIDs:
     - CWE-426
     VendorSeverity:
-      amazon: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -23607,49 +23580,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
     LastModifiedDate: '2026-05-13T16:58:56.39Z'
-  - VulnerabilityID: CVE-2026-39826
-    VendorIDs:
-    - GO-2026-4980
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: c8a49abd00c2b8a3
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.10, 1.26.3
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:1b2213fd2f9a5d168d4be57a5fab73724d47caa4e7de0a253be0c2c0ba7c7a67
-    Title: If a trusted template author were to write a <script> tag containing a ...
-    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
-    Severity: HIGH
-    CweIDs:
-    - CWE-116
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      oracle-oval: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-        V3Score: 6.1
-    References:
-    - https://go.dev/cl/771180
-    - https://go.dev/issue/78981
-    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
-    - https://linux.oracle.com/cve/CVE-2026-39826.html
-    - https://linux.oracle.com/errata/ELSA-2026-22112.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
-    - https://pkg.go.dev/vuln/GO-2026-4980
-    PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -24777,6 +24707,55 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-16T19:06:57.367Z'
+  - VulnerabilityID: CVE-2026-39826
+    VendorIDs:
+    - GO-2026-4980
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: c8a49abd00c2b8a3
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.10, 1.26.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1b2213fd2f9a5d168d4be57a5fab73724d47caa4e7de0a253be0c2c0ba7c7a67
+    Title: 'html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping'
+    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39826
+    - https://go.dev/cl/771180
+    - https://go.dev/issue/78981
+    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
+    - https://linux.oracle.com/cve/CVE-2026-39826.html
+    - https://linux.oracle.com/errata/ELSA-2026-22112.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
+    - https://pkg.go.dev/vuln/GO-2026-4980
+    - https://www.cve.org/CVERecord?id=CVE-2026-39826
+    PublishedDate: '2026-05-07T20:16:43.49Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
@@ -25349,42 +25328,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:0cc1cd4295f15c415b9803384f953ea6a5ac06654ca8ce7639be1666699e07ac
     Title: 'Docker: Race condition in docker cp allows bind mount redirection to host path'
-    Description: |-
-      ## Summary
-
-      A race condition during `docker cp` mount setup allows a malicious container to redirect a bind mount target to an arbitrary host path, potentially overwriting host files or causing denial of service.
-
-      ## Details
-
-      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination is created inside the container root and then a bind mount is attached using the container-relative path resolved to an absolute host path.
-
-      Between mountpoint creation and the `mount()` syscall, a process running inside the container can replace the destination (or a parent path component) with a symlink pointing to an arbitrary location on the host. The `mount()` syscall follows the symlink, causing the volume to be bind-mounted onto an arbitrary host path instead of the intended container path.
-
-      ## Impact
-
-      A malicious container can redirect a volume bind mount to an arbitrary host path. The impact depends on the volume content and mount options:
-
-      - If the volume is writable, arbitrary host files at the redirected path could be overwritten with the volume's contents.
-      - If the volume is read-only, the host path is masked by the mount for the duration of the operation, causing denial of service.
-      - In all cases the mount is temporary (torn down after the `docker cp` completes), but the effects of any writes persist.
-
-      ### Conditions for exploitation
-
-      - A container must have at least one volume mount.
-      - A process inside the container must be able to rapidly create and swap symlinks at the volume mount destination path.
-      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
-
-      ### Not affected
-
-      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
-
-      ## Workarounds
-
-      - Only run containers from trusted images.
-      - Avoid using `docker cp` with untrusted running containers.
-      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Description: "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-46595:\n\tPreviously, CVE-2024-45337 fixed an authorization bypass for misused ssh server configurations; if any other type of callback is passed other than public key, then the source-address validation would be skipped.\n\nCVE-2026-42508:\n\tPreviously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for @revoked.\n\nCVE-2026-42306:\n\tDocker: Race condition in docker cp allows bind mount redirection to host path\n\nCVE-2026-39833:\n\tThe in-memory keyring returned by NewKeyring() silently accepted keys with the ConfirmBeforeUse constraint but never enforced it. The key would sign without any confirmation prompt, with no indication to the caller that the constraint was not in effect. NewKeyring() now returns an error when unsupported constraints are requested.\n\nCVE-2026-39831:\n\tThe Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nistp256@openssh.com, sk-ssh-ed25519@openssh.com) did not check the User Presence flag. Signatures generated without physical touch were accepted, allowing unattended use of a hardware security key. To restore the previous behavior, return a \"no-touch-required\" extension in Permissions.Extensions from PublicKeyCallback.\n\nCVE-2026-39830:\n\tA malicious SSH peer could send unsolicited global request responses to fill an internal buffer, blocking the connection's read loop. The blocked goroutine could not be released by calling Close(), resulting in a resource leak per connection. Unsolicited global responses are now discarded.\n\nCVE-2026-39829:\n\tThe RSA and DSA public key parsers did not enforce size limits on key parameters. A crafted public key with an excessively large modulus or DSA parameter could cause several minutes of CPU consumption during signature verification. This could be triggered by unauthenticated clients during public key authentication. RSA moduli are now limited to 8192 bits, and DSA parameters are validated per FIPS 186-2.\n"
     Severity: HIGH
     VendorSeverity:
+      amazon: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -25691,6 +25638,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-389r-gv7p-r3rp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45022
     PublishedDate: '2026-05-27T15:16:29.98Z'
     LastModifiedDate: '2026-06-04T17:57:46.58Z'
   - VulnerabilityID: CVE-2026-25934
@@ -25875,6 +25823,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45571
     PublishedDate: '2026-05-27T15:16:30.387Z'
     LastModifiedDate: '2026-06-04T18:01:41.563Z'
   - VulnerabilityID: GHSA-w5pp-99ch-qj29
@@ -26008,6 +25957,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-m7cr-m3pv-hgrp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45570
     PublishedDate: '2026-05-27T15:16:30.24Z'
     LastModifiedDate: '2026-06-04T18:00:39.48Z'
   - VulnerabilityID: CVE-2025-11065
@@ -27355,49 +27305,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
     LastModifiedDate: '2026-05-13T16:58:56.39Z'
-  - VulnerabilityID: CVE-2026-39826
-    VendorIDs:
-    - GO-2026-4980
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: 4bef6a299358baaf
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.10, 1.26.3
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:1a7a1834c261c7ef73d6c73b6a0169f0db0e9f6d3ecef182c07bb5b1fd1223ce
-    Title: If a trusted template author were to write a <script> tag containing a ...
-    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
-    Severity: HIGH
-    CweIDs:
-    - CWE-116
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      oracle-oval: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-        V3Score: 6.1
-    References:
-    - https://go.dev/cl/771180
-    - https://go.dev/issue/78981
-    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
-    - https://linux.oracle.com/cve/CVE-2026-39826.html
-    - https://linux.oracle.com/errata/ELSA-2026-22112.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
-    - https://pkg.go.dev/vuln/GO-2026-4980
-    PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -28525,6 +28432,55 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-16T19:06:57.367Z'
+  - VulnerabilityID: CVE-2026-39826
+    VendorIDs:
+    - GO-2026-4980
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: 4bef6a299358baaf
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.10, 1.26.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:1a7a1834c261c7ef73d6c73b6a0169f0db0e9f6d3ecef182c07bb5b1fd1223ce
+    Title: 'html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping'
+    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39826
+    - https://go.dev/cl/771180
+    - https://go.dev/issue/78981
+    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
+    - https://linux.oracle.com/cve/CVE-2026-39826.html
+    - https://linux.oracle.com/errata/ELSA-2026-22112.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
+    - https://pkg.go.dev/vuln/GO-2026-4980
+    - https://www.cve.org/CVERecord?id=CVE-2026-39826
+    PublishedDate: '2026-05-07T20:16:43.49Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
@@ -29285,42 +29241,10 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago
     Fingerprint: sha256:b2d7804f68b533a3a5184ba43d4baf6bee2a783b85610b0b51bcbd6a8aaec2bd
     Title: 'Docker: Race condition in docker cp allows bind mount redirection to host path'
-    Description: |-
-      ## Summary
-
-      A race condition during `docker cp` mount setup allows a malicious container to redirect a bind mount target to an arbitrary host path, potentially overwriting host files or causing denial of service.
-
-      ## Details
-
-      When copying files into a container, the daemon sets up a temporary filesystem view by bind-mounting volumes into a private mount namespace. During this setup, the mount destination is created inside the container root and then a bind mount is attached using the container-relative path resolved to an absolute host path.
-
-      Between mountpoint creation and the `mount()` syscall, a process running inside the container can replace the destination (or a parent path component) with a symlink pointing to an arbitrary location on the host. The `mount()` syscall follows the symlink, causing the volume to be bind-mounted onto an arbitrary host path instead of the intended container path.
-
-      ## Impact
-
-      A malicious container can redirect a volume bind mount to an arbitrary host path. The impact depends on the volume content and mount options:
-
-      - If the volume is writable, arbitrary host files at the redirected path could be overwritten with the volume's contents.
-      - If the volume is read-only, the host path is masked by the mount for the duration of the operation, causing denial of service.
-      - In all cases the mount is temporary (torn down after the `docker cp` completes), but the effects of any writes persist.
-
-      ### Conditions for exploitation
-
-      - A container must have at least one volume mount.
-      - A process inside the container must be able to rapidly create and swap symlinks at the volume mount destination path.
-      - An operator must initiate a `docker cp` into that container, or call the `PUT /containers/{id}/archive` or `HEAD /containers/{id}/archive` API endpoints.
-
-      ### Not affected
-
-      - Containers that do not have volume mounts are not affected, as the race occurs during volume bind-mount setup.
-
-      ## Workarounds
-
-      - Only run containers from trusted images.
-      - Avoid using `docker cp` with untrusted running containers.
-      - Use authorization plugins to restrict access to the archive API endpoints (`PUT /containers/{id}/archive`, `HEAD /containers/{id}/archive`).
+    Description: "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-46595:\n\tPreviously, CVE-2024-45337 fixed an authorization bypass for misused ssh server configurations; if any other type of callback is passed other than public key, then the source-address validation would be skipped.\n\nCVE-2026-42508:\n\tPreviously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for @revoked.\n\nCVE-2026-42306:\n\tDocker: Race condition in docker cp allows bind mount redirection to host path\n\nCVE-2026-39833:\n\tThe in-memory keyring returned by NewKeyring() silently accepted keys with the ConfirmBeforeUse constraint but never enforced it. The key would sign without any confirmation prompt, with no indication to the caller that the constraint was not in effect. NewKeyring() now returns an error when unsupported constraints are requested.\n\nCVE-2026-39831:\n\tThe Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nistp256@openssh.com, sk-ssh-ed25519@openssh.com) did not check the User Presence flag. Signatures generated without physical touch were accepted, allowing unattended use of a hardware security key. To restore the previous behavior, return a \"no-touch-required\" extension in Permissions.Extensions from PublicKeyCallback.\n\nCVE-2026-39830:\n\tA malicious SSH peer could send unsolicited global request responses to fill an internal buffer, blocking the connection's read loop. The blocked goroutine could not be released by calling Close(), resulting in a resource leak per connection. Unsolicited global responses are now discarded.\n\nCVE-2026-39829:\n\tThe RSA and DSA public key parsers did not enforce size limits on key parameters. A crafted public key with an excessively large modulus or DSA parameter could cause several minutes of CPU consumption during signature verification. This could be triggered by unauthenticated clients during public key authentication. RSA moduli are now limited to 8192 bits, and DSA parameters are validated per FIPS 186-2.\n"
     Severity: HIGH
     VendorSeverity:
+      amazon: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -29627,6 +29551,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-389r-gv7p-r3rp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45022
     PublishedDate: '2026-05-27T15:16:29.98Z'
     LastModifiedDate: '2026-06-04T17:57:46.58Z'
   - VulnerabilityID: CVE-2026-25934
@@ -29811,6 +29736,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45571
     PublishedDate: '2026-05-27T15:16:30.387Z'
     LastModifiedDate: '2026-06-04T18:01:41.563Z'
   - VulnerabilityID: GHSA-w5pp-99ch-qj29
@@ -29944,6 +29870,7 @@
     References:
     - https://github.com/go-git/go-git
     - https://github.com/go-git/go-git/security/advisories/GHSA-m7cr-m3pv-hgrp
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-45570
     PublishedDate: '2026-05-27T15:16:30.24Z'
     LastModifiedDate: '2026-06-04T18:00:39.48Z'
   - VulnerabilityID: CVE-2026-34986
@@ -30358,6 +30285,7 @@
     References:
     - https://access.redhat.com/security/cve/CVE-2026-35469
     - https://github.com/moby/spdystream
+    - https://github.com/moby/spdystream/commit/ef6121f62c730110bf5ae604a865a8613bfb787f
     - https://github.com/moby/spdystream/releases/tag/v0.5.1
     - https://github.com/moby/spdystream/security/advisories/GHSA-pc3f-x583-g7j2
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35469
@@ -30825,7 +30753,6 @@
     CweIDs:
     - CWE-426
     VendorSeverity:
-      amazon: 3
       ghsa: 3
     CVSS:
       ghsa:
@@ -32006,49 +31933,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
     LastModifiedDate: '2026-05-13T16:58:56.39Z'
-  - VulnerabilityID: CVE-2026-39826
-    VendorIDs:
-    - GO-2026-4980
-    PkgID: stdlib@v1.24.4
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.4
-      UID: f86edb9664e32d65
-    InstalledVersion: v1.24.4
-    FixedVersion: 1.25.10, 1.26.3
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:d46b8d9c282adf5df5747aaf8177d9d3022a3af4ec6a1153c79dab9ac8143f41
-    Title: If a trusted template author were to write a <script> tag containing a ...
-    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
-    Severity: HIGH
-    CweIDs:
-    - CWE-116
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      oracle-oval: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-        V3Score: 6.1
-    References:
-    - https://go.dev/cl/771180
-    - https://go.dev/issue/78981
-    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
-    - https://linux.oracle.com/cve/CVE-2026-39826.html
-    - https://linux.oracle.com/errata/ELSA-2026-22112.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
-    - https://pkg.go.dev/vuln/GO-2026-4980
-    PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -33176,6 +33060,55 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-16T19:06:57.367Z'
+  - VulnerabilityID: CVE-2026-39826
+    VendorIDs:
+    - GO-2026-4980
+    PkgID: stdlib@v1.24.4
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.4
+      UID: f86edb9664e32d65
+    InstalledVersion: v1.24.4
+    FixedVersion: 1.25.10, 1.26.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d46b8d9c282adf5df5747aaf8177d9d3022a3af4ec6a1153c79dab9ac8143f41
+    Title: 'html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping'
+    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39826
+    - https://go.dev/cl/771180
+    - https://go.dev/issue/78981
+    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
+    - https://linux.oracle.com/cve/CVE-2026-39826.html
+    - https://linux.oracle.com/errata/ELSA-2026-22112.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
+    - https://pkg.go.dev/vuln/GO-2026-4980
+    - https://www.cve.org/CVERecord?id=CVE-2026-39826
+    PublishedDate: '2026-05-07T20:16:43.49Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
@@ -34052,49 +33985,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
     LastModifiedDate: '2026-05-13T16:58:56.39Z'
-  - VulnerabilityID: CVE-2026-39826
-    VendorIDs:
-    - GO-2026-4980
-    PkgID: stdlib@v1.24.5
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.24.5
-      UID: c395cea322d363d5
-    InstalledVersion: v1.24.5
-    FixedVersion: 1.25.10, 1.26.3
-    Status: fixed
-    Layer:
-      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
-      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:a07ea3cf624afafd2ed025001e9fed9e63dfff13d9e5c939b408694310326ad7
-    Title: If a trusted template author were to write a <script> tag containing a ...
-    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
-    Severity: HIGH
-    CweIDs:
-    - CWE-116
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      oracle-oval: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-        V3Score: 6.1
-    References:
-    - https://go.dev/cl/771180
-    - https://go.dev/issue/78981
-    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
-    - https://linux.oracle.com/cve/CVE-2026-39826.html
-    - https://linux.oracle.com/errata/ELSA-2026-22112.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
-    - https://pkg.go.dev/vuln/GO-2026-4980
-    PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -35222,6 +35112,55 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-32289
     PublishedDate: '2026-04-08T02:16:03.82Z'
     LastModifiedDate: '2026-04-16T19:06:57.367Z'
+  - VulnerabilityID: CVE-2026-39826
+    VendorIDs:
+    - GO-2026-4980
+    PkgID: stdlib@v1.24.5
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.24.5
+      UID: c395cea322d363d5
+    InstalledVersion: v1.24.5
+    FixedVersion: 1.25.10, 1.26.3
+    Status: fixed
+    Layer:
+      Digest: sha256:c9aa02a097bcc2f3b15d59a445e2530cac3267443643501dd6062bd50a4b6afe
+      DiffID: sha256:91d87e0c10c73b9d231ea18fd376e9b8495522228fc7c7d38461b41e40aab9e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:a07ea3cf624afafd2ed025001e9fed9e63dfff13d9e5c939b408694310326ad7
+    Title: 'html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping'
+    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39826
+    - https://go.dev/cl/771180
+    - https://go.dev/issue/78981
+    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
+    - https://linux.oracle.com/cve/CVE-2026-39826.html
+    - https://linux.oracle.com/errata/ELSA-2026-22112.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
+    - https://pkg.go.dev/vuln/GO-2026-4980
+    - https://www.cve.org/CVERecord?id=CVE-2026-39826
+    PublishedDate: '2026-05-07T20:16:43.49Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
